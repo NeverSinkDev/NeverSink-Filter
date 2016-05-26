@@ -1,2 +1,2 @@
 # NeverSink-Filter
-This is a custom "lootfilter" I designed for the game Path of Exile.
+HI! This is a custom "lootfilter" I've designed for the game "Path of Exile"
