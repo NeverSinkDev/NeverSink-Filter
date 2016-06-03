@@ -1,6 +1,6 @@
 #---------------------------------------------------------------------------------------------------------------
 # NeverSink's Indepth Loot Filter
-# VERSION 3.12 - Full Version
+# VERSION 3.2 - FULL VERSION
 #---------------------------------------------------------------------------------------------------------------
 #
 # You can always find the latest version here:
@@ -84,7 +84,8 @@
 # 0303 # MEDIUM-LOW ORBS
 # 0304 # BOTTOM TIER: LOW ORB VARIATIONS
 # 0305 # DIVINATION CARD TIER LIST
-# 0306 # REST
+# 0306 # SPECIAL CURRENCY
+# 0307 # REST
 # 0400 # SOCKET/LINK BASED stuff
 # 0500 # SKILL GEMS
 # 0600 # RARE ITEM HIGHLIGHTING
@@ -239,40 +240,6 @@
 
 Show
 	BaseType "Talisman"
-	SetBorderColor 0 255 150 255
-	SetBackgroundColor 0 75 75 255
-	SetFontSize 42
-	PlayAlertSound 6 300
-	Rarity Unique
-	ItemLevel > 78
-
-Show
-	BaseType "Talisman"
-	SetBorderColor 0 255 150 255
-	SetBackgroundColor 0 75 75 255
-	SetFontSize 40
-	PlayAlertSound 1 300
-	Rarity Rare
-	ItemLevel > 78
-
-Show
-	BaseType "Talisman"
-	SetBorderColor 0 255 150 255
-	SetBackgroundColor 0 75 75 255
-	SetFontSize 38
-	Rarity Magic
-	ItemLevel > 78
-
-Show
-	BaseType "Talisman"
-	SetBorderColor 0 255 150 255
-	SetBackgroundColor 0 75 75 255
-	SetFontSize 36
-	Rarity Normal
-	ItemLevel > 78
-
-Show
-	BaseType "Talisman"
 	SetBorderColor 109 200 130 255
 	SetBackgroundColor 0 0 0 255
 	SetFontSize 42
@@ -307,18 +274,26 @@ Show
 
 Show
 	Class Microtransactions
-
-#------------------------------------------------------------------------
-# Section: 0001 # LABYRINTH MATERIAL
-#------------------------------------------------------------------------	
 	
 Show
 	Class Quest Items
 	SetFontSize 40
-	SetBorderColor 74 230 58
+	SetBorderColor 74 230 58	
+
+#------------------------------------------------------------------------
+# Section: 0001 # LABYRINTH MATERIAL
+#------------------------------------------------------------------------
 
 Show
-	BaseType "Treasure Key" "Golden Key" "Silver Key" "Bane of the Loyal" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity" "Heart of the Gargoyle" "Cube Of Absorption" "Cogs of Disruption"
+	BaseType "Offering to the Goddess"
+	PlayAlertSound 4 300
+	SetFontSize 40
+    SetBorderColor 0 0 0
+    SetTextColor 0 0 0
+    SetBackgroundColor 180 0 0 255
+	
+Show
+	Class "Labyrinth"
 	SetFontSize 40
 	SetBorderColor 74 230 58
 	SetTextColor 74 230 58
@@ -372,7 +347,7 @@ Show
 #----------------------------------------------------
 
 Show # T1 - These uniques are have a consistent price of ~0.5++ ex
-	BaseType "Varnished Coat" "Gold Ring" "Ursine Pelt" "Champion Kite Shield" "Slaughter Knife" "Sapphire Flask" "Desert Brigandine" "Occultist" "Glorious" "Titanium"  "Judgement Staff" "Siege Axe" "Spine Bow" "Prophecy Wand" "Sacrificial Garb" "Sorcerer Boots" "Topaz Flask" "Deicide Mask" "Imperial Skean" "Rawhide Boots" "Fiend Dagger"
+	BaseType "Varnished Coat" "Gold Ring" "Ursine Pelt" "Champion Kite Shield" "Sapphire Flask" "Desert Brigandine" "Occultist" "Glorious" "Titanium" "Judgement Staff" "Siege Axe" "Spine Bow" "Prophecy Wand" "Sacrificial Garb" "Sorcerer Boots" "Topaz Flask" "Deicide Mask" "Imperial Skean" "Slaughter Knife" "Rawhide Boots" "Fiend Dagger" "Assassin's Garb" "Penetrating"
 	Rarity Unique
 	PlayAlertSound 6 300
 	SetBackgroundColor 255 255 255 255
@@ -381,7 +356,7 @@ Show # T1 - These uniques are have a consistent price of ~0.5++ ex
 	SetFontSize 45
 
 Show # T2 - These uniques usually are worth ~0.5-1 ex at the start of the league and drop to ~5c++ (sometimes ranging to an ex and up) over 1-2 month.
-	BaseType "Golden Plate" "Nubuck Boots" "Serpentine Staff" "Vile Staff" "Terror Maul" "Full Wyrmscale" "Gavel" "Archon Kite Shield" "Opal Wand" "Reinforced Greaves" "Vaal Gauntlets" "Imperial Bow" "Conjurer Boots" "Steelscale Gauntlets" "Amethyst Ring" "Crusader Plate" "Ezomyte Burgonet" "Nightmare Bascinet" "Sharkskin Boots" "Two-Stone" "Granite Flask" "Imperial Staff" "Penetrating" "Deerskin Gloves" "Sinner Tricorne" "Karui Sceptre"  "Large Hybrid Flask" "Paua Ring" "Hubris"
+	BaseType "Golden Plate" "Nubuck Boots" "Serpentine Staff" "Vile Staff" "Terror Maul" "Full Wyrmscale" "Gavel" "Archon Kite Shield" "Reinforced Greaves" "Imperial Bow" "Conjurer Boots" "Steelscale Gauntlets" "Amethyst Ring" "Crusader Plate" "Ezomyte Burgonet" "Nightmare Bascinet" "Sharkskin Boots" "Two-Stone" "Granite Flask" "Imperial Staff" "Deerskin Gloves" "Sinner Tricorne" "Karui Sceptre"  "Large Hybrid Flask" "Paua Ring" "Hubris" "Savant's Robe" "Vaal Regalia" "Reaver Sword" "Silver Flask" "Vaal Axe"
 	Rarity Unique
 	PlayAlertSound 6 300
 	SetBackgroundColor 200 96 37 255
@@ -411,37 +386,37 @@ Show # Maps:T1
 	Class Maps
 	BaseType "Crypt" "Desert" "Dunes" "Dungeon" "Grotto" "Pit Map" "Tropical Island"
 	SetFontSize 34
-	PlayAlertSound 4 300
+	PlayAlertSound 4 200
 
 Show # Maps:T2
 	Class Maps
 	BaseType "Arcade" "Cemetery" "Channel" "Mountain Ledge" "Sewer" "Thicket" "Wharf"
-	SetFontSize 35
-	PlayAlertSound 4 300
+	SetFontSize 34
+	PlayAlertSound 4 200
 
 Show # Maps:T3
 	Class Maps
 	BaseType "Ghetto" "Mud Geyser" "Museum" "Quarry" "Reef" "Spider Lair" "Vaal Pyramid"
-	SetFontSize 36
-	PlayAlertSound 4 300
+	SetFontSize 35
+	PlayAlertSound 4 200
 
 Show # Maps:T4
 	Class Maps
 	BaseType "Arena" "Overgrown Shrine" "Promenade" "Shore" "Spider Forest" "Tunnel" "Phantasmagoria"
-	SetFontSize 37
-	PlayAlertSound 4 300
+	SetFontSize 35
+	PlayAlertSound 4 200
 
 Show # Maps:T5
 	Class Maps
 	BaseType "Bog Map" "Coves" "Graveyard" "Pier" "Underground Sea" "Villa Map"
-	SetFontSize 38
-	PlayAlertSound 4 300
+	SetFontSize 36
+	PlayAlertSound 4 200
 
 Show # Maps:T6
 	Class Maps
 	BaseType "Arachnid" "Catacomb" "Colonnade" "Dry Woods" "Strand" "Temple"
-	SetFontSize 39
-	PlayAlertSound 4 300
+	SetFontSize 38
+	PlayAlertSound 4 200
 
 Show # Maps:T7
 	Class Maps
@@ -504,7 +479,7 @@ Show # Maps:T13
 
 Show # Maps:T14
 	Class Maps
-	BaseType "Shrine" "Conservatory" "Palace"
+	BaseType "Shrine" "Conservatory" "Palace" "Plaza" "Vaal Temple"
 	SetFontSize 45
 	PlayAlertSound 4 300
 	SetTextColor 0 0 0 255
@@ -541,18 +516,30 @@ Show
 	SetBackgroundColor 255 255 255 255
 
 Show
+	BaseType "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
+	Class "Map Fragments"
+	PlayAlertSound 4 300
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 0 0 255
+
+Show
 	BaseType "Sacrifice at Midnight"
 	Class "Map Fragments"
 	PlayAlertSound 4 300
 	SetFontSize 40
-	SetBorderColor 255 255 255 255
-	SetTextColor 255 255 255 255
-	SetBackgroundColor 0 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 0 0 255
 
 Show
 	Class "Map Fragments"
 	PlayAlertSound 4 300
 	SetFontSize 38
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 0 0 255
 
 #------------------------------------------------------------------------
 # Section: 0300 # CURRENCY
@@ -594,13 +581,6 @@ Show
 	SetBorderColor 190 178 135 135
 	SetFontSize 38
 
-Show
-	Class Currency
-	BaseType "Perandus"
-	SetTextColor 255 178 135 255
-	SetBorderColor 255 178 135 135
-	SetFontSize 38
-
 #----------------------------------------------------
 # 0304 # BOTTOM TIER: LOW ORB VARIATIONS
 #----------------------------------------------------
@@ -614,19 +594,17 @@ Show
 	BaseType "Scroll Fragment"
 	SetTextColor 170 158 130 165
 	SetFontSize 29
-
+	
 #	170 158 130	default currency color
-
 #----------------------------------------------------
 # 0305 # DIVINATION CARD TIER LIST
 #----------------------------------------------------
-# Old puple color: "SetTextColor 150 50 190"
+# Old purple color: "SetTextColor 150 50 190"
 
 #TIER 1: 15C+++
-
 Show
 	Class "Divination"
-	BaseType "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor" "The Wind" "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist"  "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy" "The Spoiled Prince" "Abandoned Wealth" "The Enlightened" "Last Hope"
+	BaseType "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor" "The Wind" "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist"  "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy" "The Spoiled Prince" "Abandoned Wealth" "The Enlightened" "Last Hope" "The Devastator" "The Immortal" "Emperor of Purity" 
 	SetFontSize 45
 	SetBorderColor 0 0 255 255
 	SetBackgroundColor 255 255 255 255
@@ -634,10 +612,9 @@ Show
 	PlayAlertSound 6 300
 
 #TIER 2: ~7C+
-
 Show
 	Class "Divination"
-	BaseType "The Aesthete" "The Risk" "Chains that Bind" "The Hunger" "The Incantation" "The Pact" "The Road to Power" "The Watcher" "The Betrayal" "The Pack Leader" "Merciless Armament" "Pride Before the Fall" "The King's Heart" "The Surveyor" "Rats" "Tranquillity" "The Vast" "Vinia's Token" "Chaotic Disposition" "The Sigil"
+	BaseType "The Aesthete" "The Risk" "Chains that Bind" "The Hunger" "The Incantation" "The Pact" "The Road to Power" "The Watcher" "The Betrayal" "The Pack Leader" "Merciless Armament" "Pride Before the Fall" "The King's Heart" "The Surveyor" "Rats" "Tranquillity" "The Vast" "Chaotic Disposition" "The Throne" "Heterochromia"  "Lysah's Respite" "The Harvester" "Cursed King"
 	SetFontSize 44
 	SetBorderColor 0 0 255 255
 	SetBackgroundColor 0 210 255 255
@@ -645,10 +622,9 @@ Show
 	PlayAlertSound 1 300
 
 #TIER 3: ~2C+
-
 Show
 	Class "Divination"
-	BaseType "Glimmer" "The Demoness" "The Drunken Aristocrat" "The Fletcher" "Avenger" "Time-Lost Relic" "Earth Drinker" "The Arena Champion" "The Mercenary" "The Trial" "Grave Knowledge" "The Siren" "Encroaching Darkness" "Doedre's Madness" "Humility" "The Union"   "Lucky Connections" "Jack in the Box" "The Inventor" "Hope" "The Hoarder" "Gemcutter's Promise" "The Explorer" "Anarchy's Price"   "Blind Venture" "The Cartographer" "Scholar of the Seas" "Volatile Power" "Lost Worlds" "The Body" "Birth of the Three"
+	BaseType "Glimmer" "The Demoness" "The Drunken Aristocrat" "The Fletcher" "Avenger" "Time-Lost Relic" "Earth Drinker" "The Arena Champion" "The Mercenary" "The Trial" "Grave Knowledge" "The Siren" "Encroaching Darkness" "Doedre's Madness" "Humility" "The Union"   "Lucky Connections" "Jack in the Box" "The Inventor" "Hope" "The Hoarder" "Gemcutter's Promise" "The Explorer" "Anarchy's Price"   "Blind Venture" "The Cartographer" "Scholar of the Seas" "Volatile Power" "Lost Worlds" "The Body" "Birth of the Three" "Vinia's Token" "The Sigil" "Boundless Realms" "The Web" "The Stormcaller" "The Lunaris Priestess" "The Jester"
 	SetFontSize 40
 	SetBorderColor 0 110 255 255
 	SetBackgroundColor 110 215 230 235
@@ -666,7 +642,6 @@ Show
 	SetFontSize 32
 
 #TIER 4: Rest. <2c
-
 Show
 	Class "Divination"
 	SetBackgroundColor 145 215 230 225
@@ -676,7 +651,36 @@ Show
 	PlayAlertSound 1 300
 
 #----------------------------------------------------
-# 0306 # REST
+# 0306 # SPECIAL
+#----------------------------------------------------	
+
+Show
+    Class Currency
+    BaseType "Prophecy"
+    SetBackgroundColor 159 15 213
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+	PlayAlertSound 1 300
+    SetFontSize 40
+
+Show
+    Class Currency
+    BaseType "Silver Coin"
+    SetBackgroundColor 190 178 135
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+	PlayAlertSound 1 200
+    SetFontSize 40
+
+Show
+	Class Currency
+	BaseType "Perandus"
+	SetTextColor 255 178 135 255
+	SetBorderColor 255 178 135 135
+	SetFontSize 38
+	
+#----------------------------------------------------
+# 0307 # REST
 #----------------------------------------------------
 
 Show
@@ -690,6 +694,7 @@ Show
 #------------------------------------------------------------------------
 # Section: 0400 # SOCKET/LINK BASED stuff
 #------------------------------------------------------------------------
+
 # 5-links (6 links are handled at the start)
 Show
 	LinkedSockets 5
@@ -1148,7 +1153,7 @@ Show #$bad
 	SetBackgroundColor 120 20 20 150
 	SetBorderColor 0 0 0 220
 	SetFontSize 28
-
+	
 Show #$bad, small
 	Class "One Hand Swords"
 	Rarity Rare
@@ -1158,17 +1163,6 @@ Show #$bad, small
 	SetBorderColor 150 150 150 150
 	Height <= 3
 	Width <= 1
-	SetFontSize 28
-
-Show #$bad, small
-	Class "One Hand Swords"
-	Rarity Rare
-	DropLevel <= 54
-	ItemLevel >= 65
-	SetBackgroundColor 120 20 20 150
-	SetBorderColor 150 150 150 150
-	Height <= 2
-	Width <= 2
 	SetFontSize 28
 
 Show #$bad
@@ -2384,7 +2378,7 @@ Show
 
 # Sorcerer Boots - Skyforth
 
-### PRIORITY CHANCE ITGEMS ### THESE ITEMS PLAY A SOUND WHEN FOUND ###
+### PRIORITY CHANCE ITEMS ### THESE ITEMS PLAY A SOUND WHEN FOUND ###
 Show # SKYFORTH - You can add your own items here. The items will cause a drop sound.
 	BaseType "Sorcerer Boots"
 	SetBorderColor 0 210 0 210
@@ -2398,10 +2392,11 @@ Show # SKYFORTH - You can add your own items here. The items will cause a drop s
 # Prophecy wand - Void Battery
 # Judgement Staff - Hegemony's/Pledge of Hands
 # Desert Brigandine - Can be chanced into Lightning Coil	
+# Assassin's Garb - Corspri's Will
 	
 ### REGULAR CHANCE BASES ###	
 Show # T2 UNIQUES:
-	BaseType "Occultist's Vestment" "Imperial Bow" "Prophecy Wand" "Judgement Staff" "Agate Amulet" "Lapis Amulet" "Amber Amulet" "Leather Belt" "Desert Brigandine"
+	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Leather Belt"
 	SetBorderColor 0 150 0 150
 	SetTextColor 255 255 255 255
 	Rarity Normal
@@ -2417,7 +2412,6 @@ Show
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 150 0 150
 	Rarity Normal
-
 
 #------------------------------------------------------------------------
 # 0704 # HIGH LEVEL WHITE RINGS/AMULETS FOR ALCHING
@@ -3236,7 +3230,7 @@ Show
 # Section: 0900 # LEVELING
 #------------------------------------------------------------------------
 #Until itemlevel 12 you will see everything
-#Then NORMAL items under your level will SLOWLY start getting filtered out.
+#Then NORMAL items under your level will start getting filtered out.
 #We will still see all 3L's until level 30 and all 4L's until level 69
 #All magic items will be visible without further filtering until level 67
 #
@@ -3280,9 +3274,9 @@ Show
 	SetBorderColor 100 100 100
 
 Show # Leveling: Show magic rings, amulets and belts. Don't reduce font size
-	Class Rings Amulets Belts
+	Class Rings Amulets Belts Quivers
 	Rarity Magic
-	ItemLevel <= 66		
+	ItemLevel <= 66
 
 #------------------------------------------------------------------------
 # 0902 # HIGHLIGHT LEVELING SPECIFIC ITEMS
@@ -3368,61 +3362,61 @@ Show
 Show
 	Rarity Normal
 	ItemLevel < 13
-	DropLevel >= 2
-	SetBorderColor 0 0 0
-
-Show
-	Rarity Normal
-	ItemLevel < 14
-	DropLevel >= 4
-	SetBorderColor 0 0 0
-
-Show
-	Rarity Normal
-	ItemLevel < 16
-	DropLevel >= 6
-	SetBorderColor 0 0 0
-
-Show
-	Rarity Normal
-	ItemLevel < 18
 	DropLevel >= 8
 	SetBorderColor 0 0 0
 
 Show
 	Rarity Normal
+	ItemLevel < 14
+	DropLevel >= 9
+	SetBorderColor 0 0 0
+
+Show
+	Rarity Normal
+	ItemLevel < 16
+	DropLevel >= 11
+	SetBorderColor 0 0 0
+
+Show
+	Rarity Normal
+	ItemLevel < 18
+	DropLevel >= 14
+	SetBorderColor 0 0 0
+
+Show
+	Rarity Normal
 	ItemLevel < 20
-	DropLevel >= 10
+	DropLevel >= 17
 	SetBorderColor 0 0 0
 
 Show
 	Rarity Normal
 	ItemLevel < 22
-	DropLevel >= 13
-	SetBorderColor 0 0 0
-
-Show
-	Rarity Normal
-	ItemLevel < 24
-	DropLevel >= 16
-	SetBorderColor 0 0 0
-
-Show
-	Rarity Normal
-	ItemLevel < 26
 	DropLevel >= 19
 	SetBorderColor 0 0 0
 
 Show
 	Rarity Normal
+	ItemLevel < 24
+	DropLevel >= 21
+	SetBorderColor 0 0 0
+
+Show
+	Rarity Normal
+	ItemLevel < 26
+	DropLevel >= 24
+	SetBorderColor 0 0 0
+
+Show
+	Rarity Normal
 	ItemLevel < 28
-	DropLevel >= 22
+	DropLevel >= 26
 	SetBorderColor 0 0 0
 
 Show
 	LinkedSockets >= 3
 	ItemLevel < 30
-	DropLevel >= 24
+	DropLevel >= 27
 	SetFontSize 32
 	Rarity <= Magic
 	SetBorderColor 75 75 75
@@ -3688,15 +3682,15 @@ Show
 	DropLevel >= 66
 	SetFontSize 32
 	SetBorderColor 0 0 0
-
+	
 Show
-	LinkedSockets >= 3
+	LinkedSockets >= 4
 	ItemLevel < 68
 	DropLevel >= 67
 	SetFontSize 32
 	Rarity <= Magic
-	SetBorderColor 75 75 75
-
+	SetBorderColor 75 75 75	
+	
 #------------------------------------------------------------------------
 # 0905 # LEVELING GENERAL RULES
 #------------------------------------------------------------------------
@@ -3769,26 +3763,31 @@ SetFontSize 20
 SetBackgroundColor 0 0 0 100
 SetBorderColor 0 0 0 100
 
-# This filter should classify every single item ingame. In case I somehow forgot an item (unlikely after monthes of testing) or something completely new gets added (such as a new rarity like "setitems" or a new itemslot, idk. "wings", this line will ensure, that you'll notice it). Though once again, highly unlikely.
+# This filter should classify every single item ingame. In case I somehow forgot an item (unlikely after over a year of testing) or something completely new gets added (such as a new rarity like "setitems" or a new itemslot, idk. "wings", this line will ensure, that you'll notice it). Though once again, highly unlikely.
 # Still I doubt it'll ever happen. However, if it will, please inform me!
 Show # SafetyLine!
 SetFontSize 45
 SetBorderColor 255 0 0 255
 
 #---------------------------------------------------------------------------------------------------------------
-# CREDITS
+# THANKS TO:
 #---------------------------------------------------------------------------------------------------------------
 # SCRIPT by NeverSink ( the-dude- on reddit )
 #
+# COMMUNITY:
+# Special highlight for my Streamviewers, Redditors and Forum Pals
+#
+# DEVELOPERS:
 # GGG - Thanks for the awesome game!
 # "GGG_Bex" - Special thanks for providing information to keep the filter running well on league starts!
 #
-# My awesome stream/reddit audience and for their energy!
-#
-# "c4pture" - Special thank you for helping out with the testing of the filter, for his advise and for the fact that he's annoying ONLY half of the time :P.
-#
-# "Helmannn" - for helping to test the filter during the Ascendancy Alpha!
+# FRIENDS:
+# "c4pture" - Thanks for all the advise, help and for the fact that you're annoying only 75% of the time
+# "Haggis & Tobnac" - Thanks for being good pals and POE-Teammembers
 # "Malchron" - for helping out with his advice. And stuff.
+#
+# SUGGESTIONS / HELP:
+# "Helmannn" - for helping to test the filter during the Ascendancy Alpha!
 # "Antnee" - adapted some of his ideas. Also helped with feedback. He also has a nice lootfilter himself, check it out.
 # "Ghudda" - I took his script as a template. It made learning the syntax even easier.
 # "StarRune" - Found several flaws and improvement possibilities. Thanks!
