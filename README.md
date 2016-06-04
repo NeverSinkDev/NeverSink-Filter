@@ -2,7 +2,7 @@
 
 CURRENT VERSIONS:
 ----------------
-FULL:       3.2   All features. Fairly colorful
+FULL/STANDARD:       3.2   All features. Fairly colorful
 
 MF:         3.2   Harsh  rare filtering
 
