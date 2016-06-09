@@ -2,8 +2,9 @@
 INSTALLATION INSTRUCTIONS:
 --------------------------
 
-Select one or several filters from this folder
-2) Paste the file into the following folder:
+Select one or several filters from the latest release folder/archive..
+
+Paste the file into the following folder:
 
 %userprofile%/Documents/My Games/Path of Exile
 
