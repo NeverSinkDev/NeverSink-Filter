@@ -11,17 +11,18 @@ INGAME: Escape -> Options -> UI -> Scroll down -> Select NeverSink.filter
 
 Done. Enjoy. There are different versions to pick from: filterversions you can use:
 
+--------------------------
 FILTER VERSIONS:
 --------------------------
 
-Standard = All features
-Slick = Less Background Colors (more GGG-styled)
-Personal = My personal version
-MF=Magic Find (very strict endgame filtering)
+###Standard = All features
+###Slick = Less Background Colors (more GGG-styled)
+###Personal = My personal version
+###MF=Magic Find (very strict endgame filtering)
 
-Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
+###Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
-If you guys enjoy my work a lot, feel free to buy me a beer (evil donate button). Thanks:
+###If you guys enjoy my work a lot, feel free to buy me a beer (evil donate button). Thanks:
 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2
 
