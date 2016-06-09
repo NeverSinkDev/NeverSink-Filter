@@ -1,5 +1,7 @@
 --------------------------
+
 INSTALLATION INSTRUCTIONS:
+
 --------------------------
 
 Select one or several filters from the latest release folder/archive..
@@ -13,7 +15,9 @@ INGAME: Escape -> Options -> UI -> Scroll down -> Select NeverSink.filter
 Done. Enjoy.
 
 --------------------------
+
 FILTER VERSIONS:
+
 --------------------------
 
 - Standard = All features
@@ -27,7 +31,9 @@ FILTER VERSIONS:
 NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
 
 --------------------------
+
 FAQ:
+
 --------------------------
 
 Q: Your filter doesn't filter white/blue items!
