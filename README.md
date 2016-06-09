@@ -9,7 +9,7 @@ Select one or several filters from this folder
 
 INGAME: Escape -> Options -> UI -> Scroll down -> Select NeverSink.filter
 
-Done. Enjoy. There are different versions to pick from: filterversions you can use:
+Done. Enjoy.
 
 --------------------------
 FILTER VERSIONS:
