@@ -15,16 +15,14 @@ Done. Enjoy. There are different versions to pick from: filterversions you can u
 FILTER VERSIONS:
 --------------------------
 
-###Standard = All features
-###Slick = Less Background Colors (more GGG-styled)
-###Personal = My personal version
-###MF=Magic Find (very strict endgame filtering)
+- Standard = All features
+- Slick = Less Background Colors (more GGG-styled)
+- Personal = My personal version
+- MF=Magic Find (very strict endgame filtering)
 
-###Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
+- Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
-###If you guys enjoy my work a lot, feel free to buy me a beer (evil donate button). Thanks:
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2
+- If you guys enjoy my work a lot, feel free to buy me a beer using the [evil-donation-button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
 
 NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
 
