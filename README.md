@@ -26,21 +26,12 @@ FILTER VERSIONS:
 - MF=Magic Find (very strict endgame filtering)
 - Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
-- If you guys enjoy my work a lot, feel free to buy me a beer using the [evil-donation-button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
+- If you guys enjoy my work a lot, feel free to buy me a beer using the [donation-button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
 
-NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
-
---------------------------
-
-FAQ:
+NOTE: The filter itself will always be free, including updates. There will NOT be any premium/donator versions or options!
 
 --------------------------
 
-Q: Your filter doesn't filter white/blue items!
+For additional details, FAQ (read it before asking questions), previous changelogs, screenshots etc. please refer to the forum thread in the POE forum ([clicky here to get there](https://www.pathofexile.com/forum/view-thread/1246208))
 
-A: It does. However, don't test it in low level areas. In low level areas it shows pretty much everything (it becomes stricter as you level)
-
-
-Q: My items disappear after a few seconds?!
-
-A: Hit the "Z" button. You're welcome.
+--------------------------
