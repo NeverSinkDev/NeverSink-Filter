@@ -1,6 +1,6 @@
 #---------------------------------------------------------------------------------------------------------------
 # NeverSink's Indepth Loot Filter
-# VERSION 3.3a - FULL VERSION
+# VERSION 3.3b - FULL VERSION
 #---------------------------------------------------------------------------------------------------------------
 #
 # You can always find the latest version here:
@@ -559,7 +559,7 @@ Show
 #----------------------------------------------------
 
 Show
-	BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Stacked Deck" "Albino Rhoa Feather"
+	BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
 	SetBackgroundColor 255 255 255 255
@@ -567,21 +567,7 @@ Show
 	SetFontSize 45
 
 #----------------------------------------------------
-# 0302 # HIGH TIER: STACKED DECK
-#----------------------------------------------------
-
-Show
-	BaseType "Stacked Deck"
-    SetBackgroundColor 15 213 159 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 6 300
-	SetFontSize 45
-
-#	200 158 130 this is the old background color, if you like it more use it instead	
-	
-#----------------------------------------------------
-# 0303 # HIGH TIER: FROM ALCHEMY TO REGAL
+# 0302 # HIGH TIER: FROM ALCHEMY TO REGAL
 #----------------------------------------------------
 
 Show
@@ -595,7 +581,7 @@ Show
 #	200 158 130 this is the old background color, if you like it more use it instead
 
 #----------------------------------------------------
-# 0304 # MEDIUM-LOW ORBS
+# 0303 # MEDIUM-LOW ORBS
 #----------------------------------------------------
 
 Show
@@ -605,7 +591,7 @@ Show
 	SetFontSize 38
 
 #----------------------------------------------------
-# 0305 # BOTTOM TIER: LOW ORB VARIATIONS
+# 0304 # BOTTOM TIER: LOW ORB VARIATIONS
 #----------------------------------------------------
 
 Show
@@ -622,15 +608,24 @@ Show
 #	170 158 130	default currency color
 
 #----------------------------------------------------
-# 0306 # DIVINATION CARD TIER LIST
+# 0305 # DIVINATION CARD TIER LIST
 #----------------------------------------------------
 # Old purple color: "SetTextColor 150 50 190"
 
-#TIER 1: 15C+++
-
+#EXCEPTIONS - This line is here to prevent the "The Wolf" entry from making the cheap Wolf's Shadow card appear huge and expensive.
 Show
 	Class "Divination"
-	BaseType "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor"  "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy"  "Abandoned Wealth" "The Enlightened" "Last Hope" "The Devastator" "The Immortal" "The Aesthete" "The Hunger" "Pride Before the Fall" "The King's Heart" "Lysah's Respite" "Cursed King" "Time-Lost Relic"
+	BaseType "The Wolf's Shadow"
+	SetBackgroundColor 145 215 230 225
+	SetBorderColor 0 100 215 255
+	SetTextColor 0 0 0
+	SetFontSize 38
+	PlayAlertSound 1 300
+
+#TIER 1: 15C+++
+Show
+	Class "Divination"
+	BaseType "House of Mirrors" "Wealth and Power" "The Dragon's Heart" "The Brittle Emperor"  "Celestial Justicar" "Dark Mage" "Doctor" "Fiend" "The Queen" "The Artist" "The Last One Standing" "The Artist" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "The Ethereal" "The Dapper Prodigy"  "Abandoned Wealth" "The Enlightened" "Last Hope" "The Devastator" "The Immortal" "The Aesthete" "The Hunger" "Pride Before the Fall" "The King's Heart" "Lysah's Respite" "Cursed King" "Time-Lost Relic" "Lucky Deck" "Formless Sea" "Sephirot" "The Valkyrie" "The Wolf"
 	SetFontSize 45
 	SetBorderColor 0 0 255 255
 	SetBackgroundColor 255 255 255 255
@@ -641,7 +636,7 @@ Show
 
 Show
 	Class "Divination"
-	BaseType  "The Risk" "Chains that Bind" "The Road to Power" "The Watcher" "Merciless Armament"   "The Surveyor" "Rats"  "The Vast" "Chaotic Disposition"  "Heterochromia" "The Harvester" "The Wind" "Emperor of Purity" "The Mercenary"
+	BaseType  "The Risk" "Chains that Bind" "The Road to Power" "The Watcher" "Merciless Armament"   "The Surveyor" "Rats"  "The Vast" "Chaotic Disposition"  "Heterochromia" "The Harvester" "The Wind" "Emperor of Purity" "The Mercenary" "The Calling" "Dialla's Subjugation"
 	SetFontSize 44
 	SetBorderColor 0 0 255 255
 	SetBackgroundColor 0 210 255 255
@@ -652,7 +647,7 @@ Show
 
 Show
 	Class "Divination"
-	BaseType "The Throne" "Tranquillity" "The Pack Leader" "The Spoiled Prince" "Glimmer" "The Demoness" "The Drunken Aristocrat" "The Fletcher" "Avenger"  "Earth Drinker" "The Arena Champion"  "The Trial" "Grave Knowledge" "Encroaching Darkness" "Doedre's Madness" "Humility" "The Union"   "Lucky Connections" "Jack in the Box" "The Inventor" "Hope" "The Hoarder" "Gemcutter's Promise" "The Explorer" "Blind Venture" "The Cartographer" "Scholar of the Seas" "Volatile Power" "Lost Worlds" "The Body" "Birth of the Three" "Vinia's Token" "The Sigil" "Boundless Realms" "The Stormcaller" "The Lunaris Priestess" "The Jester" "Cartographer's Delight"
+	BaseType "The Throne" "Tranquillity" "The Pack Leader" "The Spoiled Prince" "Glimmer" "The Demoness" "The Drunken Aristocrat" "The Fletcher" "Avenger"  "Earth Drinker" "The Arena Champion"  "The Trial" "Grave Knowledge" "Encroaching Darkness" "Doedre's Madness" "Humility" "The Union"   "Lucky Connections" "Jack in the Box" "The Inventor" "Hope" "The Hoarder" "Gemcutter's Promise" "The Explorer" "Blind Venture" "The Cartographer" "Scholar of the Seas" "Volatile Power" "Lost Worlds" "The Body" "Birth of the Three" "Vinia's Token" "The Sigil" "Boundless Realms" "The Stormcaller" "The Lunaris Priestess" "The Jester" "Cartographer's Delight" "Penitent" "The Soul" "The Tyrant"
 	SetFontSize 40
 	SetBorderColor 0 110 255 255
 	SetBackgroundColor 110 215 230 235
@@ -680,7 +675,7 @@ Show
 	PlayAlertSound 1 300
 
 #----------------------------------------------------
-# 0307 # SPECIAL
+# 0306 # SPECIAL
 #----------------------------------------------------	
 
 Show
@@ -707,6 +702,14 @@ Show
 	SetTextColor 255 178 135 255
 	SetBorderColor 255 178 135 135
 	SetFontSize 38
+	
+Show
+	BaseType "Stacked Deck"
+    SetBackgroundColor 255 120 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 6 300
+	SetFontSize 45	
 	
 #----------------------------------------------------
 # 0308 # REST
