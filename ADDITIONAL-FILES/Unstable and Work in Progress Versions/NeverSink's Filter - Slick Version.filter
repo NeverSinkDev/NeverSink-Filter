@@ -531,22 +531,22 @@ Show
 #----------------------------------------------------
 
 Show
-	BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
+	BaseType "Eternal Orb" "Divine Orb" "Exalted Orb" "Stacked Deck" "Albino Rhoa Feather"
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
 	SetBackgroundColor 255 255 255 255
 	PlayAlertSound 6 300
-	SetFontSize 45
-
+	SetFontSize 45	
+	
 #----------------------------------------------------
-# 0302 # HIGH TIER: FROM JEWELLER'S TO REGAL
+# 0302 # HIGH TIER: FROM ALCHEMY TO REGAL
 #----------------------------------------------------
 
 Show
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Glassblower's Bauble" "Vaal Orb" "Cartographer's Chisel"
-	SetBackgroundColor 190 178 135 255
-	SetTextColor 0 0 0
-	SetBorderColor 0 0 0
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel" "Stacked Deck"
+	SetBackgroundColor 190 178 135 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
 	PlayAlertSound 1 300
 	SetFontSize 40
 
@@ -557,10 +557,12 @@ Show
 #----------------------------------------------------
 
 Show
-	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb"
+	Class Currency
+	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble" "Coin"
 	SetTextColor 190 178 135 255
 	SetBorderColor 190 178 135 135
 	SetFontSize 38
+
 
 #----------------------------------------------------
 # 0304 # BOTTOM TIER: LOW ORB VARIATIONS
@@ -575,7 +577,6 @@ Show
 	BaseType "Scroll Fragment"
 	SetTextColor 170 158 130 165
 	SetFontSize 29
-
 #	170 158 130	default currency color
 
 #----------------------------------------------------
