@@ -24,9 +24,8 @@ FILTER VERSIONS:
 - Semi-Strict = Hides several bulky and bad-based rares in the endgame and is designed for experienced players.
 - Strict - Hides the majority of all rares in the endgame. It only shows the very best rares.
 - Slick = Less Background Colors (more GGG-styled).
-- Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
-- If you guys enjoy my work a lot, feel free to buy me a beer using the [donation-button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
+- If you want to support the the project or show your appreciation feel free to [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
 
 NOTE: The filter itself will always be free, including updates. There will NOT be any premium/donator versions or options!
 
