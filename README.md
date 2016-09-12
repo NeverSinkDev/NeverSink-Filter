@@ -4,10 +4,10 @@
 
 --------------------------
 
-- **Regular** = The normal version. Nice balance of hidden/shown items in the endgame.
-- **Semi-Strict** = Hides several bulky and bad-based rares in the endgame and is designed for experienced players.
-- **Strict** - Hides the majority of all rares in the endgame. It only shows the very best rares.
-- **Slick** = Less Background Colors (more GGG-styled).
+- **Regular** = The normal version. Nice balance of hidden/shown items in the endgame. Perfect for beginners and experts alike.
+- **Semi-Strict** = Hides several bulky/bad rares. Designed for experienced players and speedrunners. Not recommended for beginners.
+- **Strict** - Hides the majority of all rares in the endgame. Designed for high-magic-find characters and cull-parties.
+- **Slick** = The regular version with less background colors (more GGG-styled). Also good for colorblind players.
 
 If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
