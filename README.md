@@ -20,10 +20,10 @@ FILTER VERSIONS:
 
 --------------------------
 
-- Standard = All features
-- Slick = Less Background Colors (more GGG-styled)
-- Personal = My personal version
-- MF=Magic Find (very strict endgame filtering)
+- Regular = The normal version. Nice balance of hidden/shown items in the endgame.
+- Semi-Strict = Hides several bulky and bad-based rares in the endgame and is designed for experienced players.
+- Strict - Hides the majority of all rares in the endgame. It only shows the very best rares.
+- Slick = Less Background Colors (more GGG-styled).
 - Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
 - If you guys enjoy my work a lot, feel free to buy me a beer using the [donation-button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
