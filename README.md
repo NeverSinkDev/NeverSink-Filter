@@ -5,7 +5,9 @@
 --------------------------
 
 1) Download the latest filter from the "releases" section. 
+
 2) Extract the files using WinRar/7zip or a similar tool.
+
 3) Paste the .filter files into the following folder:
 
 - %userprofile%/Documents/My Games/Path of Exile
