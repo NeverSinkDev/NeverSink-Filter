@@ -4,15 +4,17 @@
 
 --------------------------
 
-Download the latest filter from the "releases" section. Extract the files using WinRar/7zip or a similar tool.
+1) Download the latest filter from the "releases" section. 
+2) Extract the files using WinRar/7zip or a similar tool.
+3) Paste the .filter files into the following folder:
 
-Paste the .filter files into the following folder:
+- %userprofile%/Documents/My Games/Path of Exile
 
-%userprofile%/Documents/My Games/Path of Exile
+4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
 
-INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
+5) Done. Enjoy.
 
-Done. Enjoy.
+I recommend using NotePad++ to edit the filter.
 
 --------------------------
 
