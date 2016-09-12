@@ -8,7 +8,7 @@
 
 2) Extract the files using WinRar/7zip or a similar tool.
 
-3) Paste the .filter files into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
+3) Paste the .filter files (or just the folder content) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
 
 4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
 
