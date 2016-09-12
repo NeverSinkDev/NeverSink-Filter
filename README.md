@@ -25,7 +25,7 @@ FILTER VERSIONS:
 - Strict - Hides the majority of all rares in the endgame. It only shows the very best rares.
 - Slick = Less Background Colors (more GGG-styled).
 
-- If you want to support the the project or show your appreciation feel free to [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
+If you want to support the the project or show your appreciation feel free to [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)
 
 NOTE: The filter itself will always be free, including updates. There will NOT be any premium/donator versions or options!
 
