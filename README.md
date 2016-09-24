@@ -8,7 +8,8 @@
 - **Semi-Strict** = Hides several bulky/bad rares. Designed for experienced players and speedrunners. Not recommended for beginners.
 - **Strict** - Hides the majority of all rares in the endgame. Designed for high-magic-find characters and cull-parties.
 - **Slick** = The regular version with less background colors (more GGG-styled). Also good for colorblind players.
-
+- **Uber-Strict** = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, low maps, most rares... You've been warned.
+- 
 If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
 **NOTE:** The filter itself will always be free, including updates. There will never be any premium/donator versions or options!
