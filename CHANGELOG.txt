@@ -1,12 +1,23 @@
 ----------------------------------
-NeverSink's itemfilter - version 4.1 (for POE 2.4/atlas ECONOMY UPDATE)
+NeverSink's itemfilter - version 4.2 (for POE 2.4/atlas POLISHING UPDATE)
 ----------------------------------
+
+**GENERAL** :
+
+NOTE: The slick version is not updated in this version. Reason can be found below.
+
+I've finally finished a small tool that auto-generates non-regular versions for me, allowing me to update easier, safer, introduce better filtering mechanics (as seen in this update) into the non-regular versions and potentially have more versions.
+
+This update improves the filtering of the semi-strict/strict/UBERstrict a lotversions, reintroduces warband helmets markup (high level only, see below), adds a new block for highlighting selected 6S ilvl 84/83 items, slighlty improves the markup of maps and currency and fixes some bugs.
+
+The next update will enable me to have easy stylesheet and color-table generations, I'll update the slick version, once it's done.
 
 **Filterversions** :
 
 - **Regular** - displays all rares
 - **Semi-Strict** - hides all "*/bad rares" in the endgame and also all "clunky/ok" rares. Also hides clunky chromatic recipes, still shows gavels and a very small asortment of crafting trinkets (twostone, onyx, diamond)
 - **Strict** - hides all non-good and even the good/2h items that are not top-tier. Recommended for large parties and heavy magic find characters. NOT recommended for beginners.
+- **UBER-Strict** - [**NEW**] Crazy filtering level. You've been warned. It displays only the Creme de la Creme. Hides >90% rares, portals, wisdoms, armorers, agumentations, most recipes etc.
 - **Slick** - same as regular, however less colors.
 
 You can get more information and the filter itself:
@@ -23,27 +34,30 @@ CHANGELOG:
 
 **CONTENT:**
 
-- Reworked the divination card tier list. The new tier list is more suited to represent the current economy.
-- Updated the unique item tier list to better fit the current economy.
-- Added ilvl >= 50 crude bows, since those are meta now.
-- The semi-strict version now displays all chisel recipes
-- The semi-strict version now has a small assortment of pre 83/84 crafting trinkets (twostone, onyx, diamond - only 75+)
+- Added the UBER-strict version. You can find more details in the version description above.
+- The code is now even more tidy, displays correctly in NotePad and is easier to keep up-to-date.
+- Improved the filtering of the Semi-Strict version. It's a little bit more strict now
+- Improved the filtering of the Strict version. It now differs between top tier and other items (the other items have no green backgrounds)
+- The strict version now has a significantly smaller 83/84 crafting item list.
+- Added Kris to the crafting lists
+- Updated all versions to switch to non-leveling-mode at level 66. The dried lake is now a tiny bit cleaner. 
+- Added 4 cards to the "trash-tier" divination cards (hermit, king's blade, prosperity, metalsmith's gift). They no longer give off sounds. I apologize if this upsets the creaters of those cards.
+- Added new section that highlights selected ilvl 83/84 bases.
+- Added a section for redblade warband helmets. To see them, you have to click alt/F (or whatever the key to display hidden items is for you). Magic helmets (ilvl 80+) will get highlighted in a red hue. Note that this affects ALL helmets, no matter who dropped them. Only use this when fighting redblade warbands (beacon map). If you want to enable other warbands you can do it in the code manually
 
 **VISUAL:**
 
-- Slightly tweaked the divination card appearances. Higher divination cards now stand out a little more.
-- Changed the rare jewel appearance to have a tiny bit more contrast
+- Changed up some item-sizes (maps mostly to distinguish different map tiers better)
+- Low maps have a weaker background
+- Mid-High currency (chaos, vaal, regret, GCP, regal and some special ones) have a slightly more orangish hue on drop. -  I'm considering reintroducing the GONG sound on those, feedback welcome.
 
 **SOUNDS:**
 
-- Stacked decks, shrieking essences and master cartographers sextants , now give off a mid tier (2) sound, instead of an high tier (6) drop sound.
-- Random map fragments now make a mid tier (2) sound instead of a map drop sound (4). This way boss kills in corrupted maps, don't give the illusion of dropping maps.
+- Guardian map fragments don't give off the high-tier-item sound anymore (they still have the white background). The drop is expected and takes away a bit excitement.
 
 **BUGFIXES:**
 
-- The Semi-strict version, now correctly hides clunky rares.
-- The Semi-strict version, now correctly displays mediocre rares (ilvl 75+) in the orangish hue
-- The Slick version now uses the correct borders for top tier rares.
+- This and that. I programmed 7 hours straight today and totally forgot what else I did o_O
 
 ----------------------------------
 SPECIAL THANKS:
