@@ -1,6 +1,6 @@
 #---------------------------------------------------------------------------------------------------------------
 # NeverSink's Indepth Loot Filter
-# VERSION:	4.2
+# VERSION:	4.24
 # TYPE:		STRICT
 #---------------------------------------------------------------------------------------------------------------
 #
@@ -365,7 +365,7 @@ Show # Maps:Unique
 	PlayAlertSound 4 300
 
 Show # T1 - These uniques are have a consistent price of ~0.5++ ex
-	BaseType "Varnished Coat" "Gold Ring" "Ursine Pelt" "Champion Kite Shield" "Sapphire Flask" "Desert Brigandine" "Occultist" "Glorious" "Titanium" "Siege Axe" "Prophecy Wand" "Sacrificial Garb" "Sorcerer Boots" "Topaz Flask" "Deicide Mask" "Imperial Skean" "Rawhide Boots" "Assassin's Garb" "Ezomyte Burgonet" "Two-Stone" "Savant's Robe" "Vaal Regalia" "Silver Flask" "Jewelled Foil" "Fiend Dagger" "Gladiator Plate" "Exquisite Leather" "Prismatic Jewel" "Lion Pelt" "Stibnite Flask" "Crusader Boots"
+	BaseType "Varnished Coat" "Gold Ring" "Ursine Pelt" "Champion Kite Shield" "Sapphire Flask" "Occultist" "Glorious" "Titanium" "Siege Axe" "Prophecy Wand" "Sacrificial Garb" "Sorcerer Boots" "Topaz Flask" "Deicide Mask" "Imperial Skean" "Rawhide Boots" "Assassin's Garb" "Ezomyte Burgonet" "Two-Stone" "Savant's Robe" "Vaal Regalia" "Silver Flask" "Jewelled Foil" "Gladiator Plate" "Prismatic Jewel" "Crusader Boots" "Jasper Chopper"
 	Rarity Unique
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
@@ -374,7 +374,7 @@ Show # T1 - These uniques are have a consistent price of ~0.5++ ex
 	PlayAlertSound 6 300
 
 Show # T2 - These uniques usually are worth ~0.5-1 ex at the start of the league and drop to ~5c++ (sometimes ranging to an ex and up) over 1-2 month.
-	BaseType "Judgement Staff" "Golden Plate" "Nubuck Boots" "Terror Maul" "Full Wyrmscale" "Gavel" "Archon Kite Shield" "Reinforced Greaves" "Imperial Bow" "Conjurer Boots" "Steelscale Gauntlets" "Nightmare Bascinet" "Sharkskin Boots" "Granite Flask" "Imperial Staff" "Deerskin Gloves" "Karui Sceptre" "Paua Ring" "Vaal Axe" "Spine Bow" "Slaughter Knife" "Sinner Tricorne" "Hubris" "Strapped Mitts" "Eternal Sword" "Onyx Amulet" "Penetrating Arrow Quiver" "Broadhead Arrow Quiver"
+	BaseType "Judgement Staff" "Golden Plate" "Nubuck Boots" "Terror Maul" "Full Wyrmscale" "Gavel" "Archon Kite Shield" "Reinforced Greaves" "Imperial Bow" "Conjurer Boots" "Steelscale Gauntlets" "Nightmare Bascinet" "Sharkskin Boots" "Granite Flask" "Imperial Staff" "Deerskin Gloves" "Karui Sceptre" "Paua Ring" "Vaal Axe" "Spine Bow" "Slaughter Knife" "Sinner Tricorne" "Hubris" "Strapped Mitts" "Eternal Sword" "Onyx Amulet" "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Fiend Dagger" "Exquisite Leather" "Stibnite Flask" "Desert Brigandine"
 	Rarity Unique
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -924,7 +924,7 @@ Show # Drop only good gems
 	SetFontSize 42
 	PlayAlertSound 3 300
 
-Show # Drop only meh gems #%H3
+Show # Drop only meh gems
 	Class Gem
 	BaseType "Detonate Mines" "Added Chaos Damage" "Vaal" "Enhance"
 	SetBorderColor 30 150 180 150
@@ -3058,11 +3058,11 @@ Show #$flask, recipe, glass
 #	SetBorderColor 0 0 0
 #	SetBackgroundColor 75 75 75
 
-#Show #$flask, utility %D1
-#	Class "Utility Flasks"
-#	ItemLevel < 67
-#	SetBorderColor 0 0 0
-#	SetBackgroundColor 75 75 75
+Show #$flask, utility
+	Class "Utility Flasks"
+	ItemLevel < 67
+	SetBorderColor 0 0 0
+	SetBackgroundColor 75 75 75
 
 #------------------------------------------------------------------------
 # 0801 # HIDE OUTDATED FLASKS
