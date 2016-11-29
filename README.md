@@ -19,13 +19,15 @@ If you want to support the the project or show your appreciation feel free to **
 
 --------------------------
 
-(*coming very soon*)
+(*coming very soon, move variations will be added over time*)
 
 Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
 
 - **Normal** = The good ol' filter.
 - **Slick** = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 - **Blue** = Mostly the same, but the rare color scheme is tuned towards blue colors.
+
+(*coming very soon, move variations will be added over time*)
 
 --------------------------
 
