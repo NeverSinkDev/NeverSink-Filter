@@ -1,4 +1,55 @@
 ----------------------------------
+NeverSink's itemfilter - version 4.3 breach & architecture overhaul
+----------------------------------
+
+Special thanks to GGG and Bex&Jonathan in specific for forwarding and answering my questions about the filtering algorithm. You guys rock!
+
+STYLES:
+
+- The filter now supports styles!
+- Styles are alternative filters, with the same 4 strictness versions (regular, semi-strict...), but with different visuals
+- The Slick Filter - is now a whole style and has all 4 strictness versions!
+- Added new style: (BLUE) - same as regular, bad rares have a transparent background and good rares a blue one. First style to test the feature :)
+- The styles are located in folders, starting with (STYLE)
+
+CHANGES:
+
+- Added breach rings
+- Added breachstones, breach blessings (shouldn't those be curses, I mean those guys are kinda hellish), splinters
+- Added vaal breach with a little bit of extra highlight
+- Revamped the warband item section. 
+- ILVL 82 identified, noncorrupted boots and helmets and ILVL 84 sceptres, wands and daggers will be treated as warband items and will have a light purple border
+- Adjusted some colors
+- Made the filter a bit stricter
+- Reworked the crafting tier list - removed less demanded items, added foils
+- Moved rare foils up several tiers
+- Adjusted divination card tier list
+- Adjusted unique tier list
+- Removed dropsounds from lvl1 and 2 essences
+- Moved journeyman sextants up a tier
+
+STRUCTURE:
+
+- Completely reworked the filter structure - based on the official information provided by GGG_Jonathan
+- The new structure should be -significantly- faster. I suspect that the time needed to classify an endgame drop is 10 times smaller or even faster. This is a buff.
+- Added a polished table of contents, that is auto-updated, thanks to a little C# tool.
+- The filter syntax is a LOT more cleaner and commented now. The filter file has become a tiny bit larger, but this should not affect performance, since comments are not only parsed during the initial load (confirmed by GGG_Jonathan)
+- Added comments and descriptions to every visual identifier: those are autoupdated, thanks to the same tool.
+- The filter now supports alternative stylesheets (guess the tool). Those are located in folders called (STYLE) *stylename* and also have the 4 basic subversions (regular, semistrict, strict, uberstrict)
+- The stylesheets are also kept up to date and provide the filter with a different appearance.
+- For now only the "blue" stylesheet is added. More stylesheets coming soon.
+- The new filter structure is easier to edit for users and easier to maintain for me
+- Fixed several rare bugs
+
+STYLE:
+
+- Polished up the appearance of the filter thanks to the stylesheets. Removed or grouped similar colors, to provide a more uniform, polished appearance
+- Implemented the new warband items. Identified boots and helmets of the ilvl 82 and sceptres, daggers and wands of the ilvl 84 will now appear with a special border
+- Fix a few bugs.
+
+PS: The raw alpha version of my FilterPolish tool can be found on: https://github.com/NeverSinkDev/Filterpolish-Release
+
+----------------------------------
 NeverSink's itemfilter - version 4.24 minor update/bugfix
 ----------------------------------
 
