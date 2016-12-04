@@ -351,7 +351,8 @@ Show #$crafting, trinkets, regal %D2
 #------------------------------------
 #   [0208] Warband items
 #------------------------------------
-# This section handles additional crafting bases.	
+# This section handles warband items, with special warband mods.
+# We're showing identified items of the right level, this may cause the filter to highlight a few other items
 
 Show
 	Corrupted False
@@ -409,7 +410,7 @@ Show #$chancing (with sound), top %D2
 	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
 
 #Show #$chancing (no sound) %D1
-#	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil"
+#	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil" "Leather Belt"
 #	Rarity Normal
 #	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
 #	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
@@ -630,6 +631,7 @@ Show
 # Crude bows are a meta weapon for SRS summoners, so we'll highlight them no matter the rarity post level 49
 Show #$meta, exception
 	BaseType "Crude Bow"
+	Rarity <= Rare
 	ItemLevel >= 50
 	SetFontSize 42
 	SetBorderColor 25 235 25 255         # BORDERCOLOR:	 Rares - Size - Tiny, special base
@@ -1935,14 +1937,7 @@ Show # Drop only good gems
 
 Show
 	Quality >= 14
-	Class "Gems"
-	SetFontSize 40
-	SetBorderColor 30 150 180 255        # BORDERCOLOR:	 T1 Gems
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments	
-
-Show
-	Quality >= 14
-	Class "Gems"
+	Class Gems
 	SetFontSize 40
 	SetBorderColor 30 150 180 255        # BORDERCOLOR:	 T1 Gems
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
@@ -1950,6 +1945,12 @@ Show
 #------------------------------------
 #   [0702] Other gems
 #------------------------------------
+
+Show
+	Quality >= 1
+	Class Gems
+	SetFontSize 38
+	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
 
 Show # Drop only meh gems
 	Class Gem
