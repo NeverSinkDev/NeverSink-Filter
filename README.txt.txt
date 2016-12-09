@@ -8,6 +8,8 @@ INSTALLATION INSTRUCTIONS:
 4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
 5) Done. Enjoy.
 
+You can also try out the filters in the (STYLE) folders. They use the same filtering patterns, but use slightly different colors :)
+
 If you enjoy my work a lot, feel free to buy me a beer, say thanks on my stream or help me update the GitHub wiki.
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2
 
@@ -18,7 +20,6 @@ FILTER VERSIONS:
 Regular = The normal version. Nice balance of hidden/shown items in the endgame. Perfect for beginners and experts alike.
 Semi-Strict = Hides several bulky/bad rares. Designed for experienced players and speedrunners. Not recommended for beginners.
 Strict = Hides the majority of all rares in the endgame. Designed for high-magic-find characters and cull-parties.
-Slick = The regular version with less background colors (more GGG-styled). Also good for colorblind players.
 Uber-Strict = Crazy filtering level. You've been warned. It displays only the Creme de la Creme. Hides >90% rares, portals, wisdoms, armorers, agumentations, most recipes etc.
 
 Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
