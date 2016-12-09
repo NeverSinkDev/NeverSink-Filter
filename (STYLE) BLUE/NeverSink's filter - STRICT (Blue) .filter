@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		4.3
+# VERSION:		4.4
 # TYPE:			STRICT
 # TYPE:			BLUE
 # AUTHOR:		NeverSink
@@ -44,10 +44,10 @@
 #   [0204] Exclusive bases: Atlas bases, talismans
 #   [0205] Corrupted Amulets
 #   [0206] 83/84+ Endgame crafting rules 
-#   [0207] 60+ Crafting rules for 60++ trinkets
-#   [0208] Warband items
-#   [0209] Remaining crafting rules - add your own bases here!
-#   [0210] Chancing items
+#   [0207] Chancing items
+#   [0208] 60+ Crafting rules for 60++ trinkets
+#   [0209] Warband items
+#   [0210] Remaining crafting rules - add your own bases here!
 #   [0211] Chisel recipe items
 #   [0212] Chromatic recipe items ("RGB Recipe")
 #   [0213] Endgame-start 4-links
@@ -108,7 +108,6 @@
 #   [1403] Tier 2 uniques
 #   [1404] Prophecy-Material Uniques
 #   [1405] Random Uniques
-#   [1406] Random Uniques
 # [[1500]] Exceptions - Quest Items etc.
 # [[1600]] LEVELING - Flasks
 #   [1601] Hide outdated flasks
@@ -198,7 +197,7 @@ Show # 6-Sockets - best crafting weapons
 
 Show # 6-Sockets
 	Sockets 6
-	Rarity <= Rare
+	Rarity = Rare
 	ItemLevel >= 75
 	SetFontSize 40
 	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
@@ -261,12 +260,12 @@ Show
 #------------------------------------
 # Corrupted amulets for rare lab shrines (to turn them rare)
 
-#Show #$crafting, trinkets, regal %D2
-#	Corrupted True
-#	Class Amulet
-#	Rarity < Rare
-#	SetFontSize 34
-#	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item	
+Show #$crafting, trinkets, regal %D3
+	Corrupted True
+	Class Amulet Belt
+	Rarity < Rare
+	SetFontSize 34
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item	
 
 #------------------------------------
 #   [0206] 83/84+ Endgame crafting rules 
@@ -303,7 +302,38 @@ Show #$crafting, egc %D3
 #	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
 
 #------------------------------------
-#   [0207] 60+ Crafting rules for 60++ trinkets
+#   [0207] Chancing items
+#------------------------------------
+# You can add your own items here. The items in this section have a dropsound
+
+# LEGACY UNIQUES: THESE UNIQUES CAN ONLY BE CHANCED IN THE CORRECT ZANA-LEAGUE MODS
+# Agate Amulet - ANARCHY ONLY - can be chance to voll's in anarchy maps
+# Leather belt - NEMESIS only - can be chanced into a headhunter belt!
+
+# EXAMPLE OF NON LEGACY UNIQUES:
+# Prophecy wand - Void Battery
+# Judgement Staff - Hegemony's/Pledge of Hands
+
+# TO ADD AN ITEM ATTACH IT'S NAME TO THE BASAETYPE'S IN ONE OF THE 2 ENTRIES BELOW.
+# Example, to add Agate amulet: 
+# BaseType "Sorcerer Boots" "Agate Amulet"
+
+#Show #$chancing (with sound), top %D2
+#	BaseType "Sorcerer Boots"
+#	Rarity Normal
+#	SetFontSize 38
+#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
+#	SetBorderColor 0 210 0 210           # BORDERCOLOR:	 T1 Chancing
+#	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
+
+#Show #$chancing (no sound) %D1
+#	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil" "Leather Belt"
+#	Rarity Normal
+#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
+#	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing	
+
+#------------------------------------
+#   [0208] 60+ Crafting rules for 60++ trinkets
 #------------------------------------
 # This section handles the crafting bases for the entry level endgame
 
@@ -349,10 +379,11 @@ Show #$trinkets, jewels
 #	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
-#   [0208] Warband items
+#   [0209] Warband items
 #------------------------------------
 # This section handles warband items, with special warband mods.
 # We're showing identified items of the right level, this may cause the filter to highlight a few other items
+# If you want to see the other items: click alt.
 
 Show
 	Corrupted False
@@ -361,7 +392,7 @@ Show
 	Rarity Magic
 	ItemLevel = 82
 	SetFontSize 34
-	SetBorderColor 159 15 213            # BORDERCOLOR:	 Warband Item
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
 
 Show
 	Corrupted False
@@ -370,10 +401,26 @@ Show
 	Rarity Magic
 	ItemLevel = 84
 	SetFontSize 34
-	SetBorderColor 159 15 213            # BORDERCOLOR:	 Warband Item
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
+
+Hide
+	Corrupted False
+	Identified True
+	Class "Helmets" "Boots"
+	Rarity Magic
+	SetFontSize 34
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
+
+Hide
+	Corrupted False
+	Identified True
+	Class "Daggers" "Wands" "Sceptres"
+	Rarity Magic
+	SetFontSize 34
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item	
 
 #------------------------------------
-#   [0209] Remaining crafting rules - add your own bases here!
+#   [0210] Remaining crafting rules - add your own bases here!
 #------------------------------------
 # This section handles additional crafting bases.
 
@@ -383,37 +430,6 @@ Show
 #	ItemLevel >= 75
 #	SetFontSize 32
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-
-#------------------------------------
-#   [0210] Chancing items
-#------------------------------------
-# You can add your own items here. The items in this section have a dropsound
-
-# LEGACY UNIQUES: THESE UNIQUES CAN ONLY BE CHANCED IN THE CORRECT ZANA-LEAGUE MODS
-# Agate Amulet - ANARCHY ONLY - can be chance to voll's in anarchy maps
-# Leather belt - NEMESIS only - can be chanced into a headhunter belt!
-
-# EXAMPLE OF NON LEGACY UNIQUES:
-# Prophecy wand - Void Battery
-# Judgement Staff - Hegemony's/Pledge of Hands
-
-# TO ADD AN ITEM ATTACH IT'S NAME TO THE BASAETYPE'S IN ONE OF THE 2 ENTRIES BELOW.
-# Example, to add Agate amulet: 
-# BaseType "Sorcerer Boots" "Agate Amulet"
-
-#Show #$chancing (with sound), top %D2
-#	BaseType "Sorcerer Boots"
-#	Rarity Normal
-#	SetFontSize 38
-#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-#	SetBorderColor 0 210 0 210           # BORDERCOLOR:	 T1 Chancing
-#	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
-
-#Show #$chancing (no sound) %D1
-#	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil" "Leather Belt"
-#	Rarity Normal
-#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-#	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
 
 #------------------------------------
 #   [0211] Chisel recipe items
@@ -663,9 +679,9 @@ Hide # Minimize junk instead of hiding (if "Show")
 Show
 	Class Currency
 	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb"
-	SetFontSize 38
-	SetTextColor 190 178 135 255         # TEXTCOLOR:	 Low currency T1
-	SetBorderColor 190 178 135 185       # BORDERCOLOR:	 T1 LOW currency
+	SetFontSize 40
+	SetTextColor 210 178 135 255         # TEXTCOLOR:	 Low currency T1
+	SetBorderColor 213 159 100 200       # BORDERCOLOR:	 T1 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
 Show
@@ -774,7 +790,7 @@ Show #$crafting, egc, top
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, weapons, small
-	BaseType "Ambusher" "Kris" "Imbued Wand" "Profane Wand" "Kris" "Jewelled Foil"
+	BaseType "Ambusher" "Kris" "Imbued Wand" "Profane Wand" "Jewelled Foil"
 	Rarity Rare
 	ItemLevel >= 75
 	SetFontSize 38
@@ -801,7 +817,7 @@ Show #$great, armor, small
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, armor, bulky
-	BaseType "Vaal Regalia"
+	BaseType "Vaal Regalia" "Astral Plate" "Spike-Point Arrow Quiver"
 	Rarity Rare
 	ItemLevel >= 75
 	SetFontSize 38
@@ -825,7 +841,7 @@ Show #$crafting, egc, top
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, weapons, small
-	BaseType "Ambusher" "Kris" "Imbued Wand" "Profane Wand"
+	BaseType "Ambusher" "Kris" "Imbued Wand" "Profane Wand" "Jewelled Foil"
 	Rarity Rare
 	SetFontSize 38
 	SetBorderColor 210 210 210 255       # BORDERCOLOR:	 Rares - Size - Small (+Amazing basetype)
@@ -2213,6 +2229,15 @@ Show # Safetyline
 #------------------------------------
 #   [1006] Map fragments
 #------------------------------------
+# I have no idea what Class "Breachstones" are. "Map Fragment" fails to work here
+
+Show
+	BaseType "Breachstone"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
+	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show
 	Class "Map Fragments"
@@ -2287,7 +2312,7 @@ Show
 Show
 	Class Currency
 	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Cartographer's Sextant" "Silver Coin"
-	SetFontSize 40
+	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 213 159 0 255     # BACKGROUND:	 T3 Currency
@@ -2373,7 +2398,7 @@ Show # Blessing
 	SetTextColor 130 25 255 255          # TEXTCOLOR:	 Breach Currency
 	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	PlayAlertSound 6 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # Splinter
 	Class Currency
@@ -2432,7 +2457,7 @@ Show
 
 Show
 	Class "Divination"
-	BaseType "The Doctor" "The Fiend" "House of Mirrors" "Hunter's Reward" "Abandoned Wealth" "The Artist" "Bowyer's Dream" "The Brittle Emperor" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dragon's Heart" "The Ethereal" "The Formless Sea" "Heterochromia" "The Hunger" "The Immortal" "The Last One Standing" "The Offering" "The Queen" "The Thaumaturgist" "Wealth and Power" "The Enlightened"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2445,7 +2470,7 @@ Show
 
 Show
 	Class "Divination"
-	BaseType "The Cartographer" "The Chains that Bind" "Chaotic Disposition" "Emperor of Purity" "The Harvester" "The Hoarder" "The King's Heart" "Last Hope" "Mawr Blaidd" "The Penitent" "Pride Before the Fall" "The Scavenger" "The Sephirot" "The Valkyrie" "The Vast" "The Warlord" "The Wolf" "Stormcaller" "Earth Drinker" "The Surveyor" "The Void"
+	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Fletcher" "The Aesthete" "Earth Drinker"
 	SetFontSize 44
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -2458,7 +2483,7 @@ Show
 
 Show
 	Class "Divination"
-	BaseType "The Aesthete" "The Arena Champion" "The Avenger" "Blind Venture" "The Body" "Boundless Realms" "The Calling" "Coveted Possession" "The Cursed King" "The Encroaching Darkness" "The Fletcher" "Gemcutter's Promise" "The Gladiator" "Glimmer of Hope" "Grave Knowledge" "Hope" "Humility" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Survivalist" "Time-Lost Relic" "Tranquillity" "The Tyrant" "The Union" "The Wind" "The Wrath" "Lucky Deck" "Treasure Hunter" "Vinia's Token" "Trial" "Dialla's Subjugation"
+	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born"
 	SetFontSize 40
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2471,7 +2496,7 @@ Show
 
 Show #%H3
 	Class "Divination"
-	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Prosperity" "Metalsmith's Gift"
+	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
 	SetFontSize 32
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
@@ -2539,7 +2564,7 @@ Show # 6-Links
 #------------------------------------
 
 Show # T1
-	BaseType "Varnished Coat" "Gold Ring" "Ursine Pelt" "Champion Kite Shield" "Sapphire Flask" "Occultist" "Glorious" "Titanium" "Siege Axe" "Prophecy Wand" "Sacrificial Garb" "Sorcerer Boots" "Topaz Flask" "Deicide Mask" "Imperial Skean" "Rawhide Boots" "Assassin's Garb" "Ezomyte Burgonet" "Vaal Regalia" "Silver Flask" "Jewelled Foil" "Gladiator Plate" "Prismatic Jewel" "Crusader Boots" "Jasper Chopper" "Slaughter Knife"
+	BaseType "Sapphire Flask" "Topaz Flask" "Silver Flask" "Stibnite Flask" "Cutlass" "Jewelled Foil" "Prophecy Wand" "Slaughter Knife" "Karui Sceptre" "Jasper Chopper" "Siege Axe" "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Glorious Plate" "Gladiator Plate" "Deicide Mask" "Assassin's Garb" "Ezomyte Burgonet" "Vaal Regalia" "Rawhide Boots" "Citrine Amulet"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -2561,7 +2586,7 @@ Show # 6-Links
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # T2
-	BaseType "Corrugated Buckler" "Savant's Robe" "Two-Stone" "Judgement Staff" "Full Wyrmscale" "Gavel" "Archon Kite Shield" "Conjurer Boots" "Nightmare Bascinet" "Sharkskin Boots" "Granite Flask" "Imperial Staff" "Deerskin Gloves" "Karui Sceptre" "Paua Ring" "Vaal Axe" "Spine Bow" "Sinner Tricorne" "Hubris" "Strapped Mitts" "Eternal Sword" "Onyx Amulet" "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Fiend Dagger" "Exquisite Leather" "Stibnite Flask" "Desert Brigandine" "Terror Claw"
+	BaseType "Granite Flask" "Vaal Axe" "Vaal Sceptre" "Void Axe" "Fiend Dagger" "Imperial Staff" "Judgement Staff" "Midnight Blade" "Eternal Sword" "Imperial Skean" "Ebony Tower Shield" "Sacrificial Garb" "Ezomyte Tower Shield" "Vaal Regalia" "Titanium Spirit Shield" "Full Wyrmscale" "Varnished Coat" "Nightmare Bascinet" "Champion Kite Shield" "Ursine Pelt" "Penetrating Arrow Quiver" "Hubris Circlet" "Corrugated Buckler" "Deerskin Gloves" "Savant's Robe" "Two-Stone Ring" "Onyx Amulet" "Vanguard Belt" "Lapis Amulet" "Gold Ring"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2584,18 +2609,6 @@ Show # TFated
 
 #------------------------------------
 #   [1405] Random Uniques
-#------------------------------------
-
-Show # T3
-	Rarity Unique
-	SetFontSize 40
-	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
-	SetBorderColor 175 96 37 255         # BORDERCOLOR:	 Unique Item
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 3 300                 # DROPSOUND:	 Random uniques, 20qual gems
-
-#------------------------------------
-#   [1406] Random Uniques
 #------------------------------------
 
 Show # T3
