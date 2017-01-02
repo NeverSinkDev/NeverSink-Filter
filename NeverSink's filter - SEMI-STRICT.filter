@@ -327,7 +327,7 @@ Show #$chancing (with sound), top %D3
 	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
 
 #Show #$chancing (no sound) %D1
-#	BaseType "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil" "Leather Belt"
+#	BaseType "Leather Belt"
 #	Rarity Normal
 #	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
 #	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing	
@@ -454,137 +454,6 @@ Show #$chisel, recipes, top %D3
 	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
-Show #$chisel, recipes %D3
-	Quality > 17
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Magic
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D3
-	Quality > 14
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Normal
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D2
-	Quality > 11
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Magic
-	SetFontSize 32
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$chisel, recipes %D2
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	Rarity Normal
-	SetFontSize 32
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#------------------------------------
-#   [0212] Chromatic recipe items ("RGB Recipe")
-#------------------------------------
-# These items have a RGB link and sell for a chromatic orb each.
-
-Show #$rgb, small, lvl
-	SocketGroup RGB
-	Width <= 2
-	Height <= 2
-	Rarity < Rare
-	ItemLevel <= 65
-	SetFontSize 38
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, small, lvl
-	SocketGroup RGB
-	Width <= 1
-	Height <= 3
-	Rarity < Rare
-	ItemLevel <= 65
-	SetFontSize 38
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, bulky, lvl
-	SocketGroup RGB
-	Width >= 2
-	Height >= 4
-	Rarity < Rare
-	ItemLevel <= 65
-	SetFontSize 34
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb %D2
-	SocketGroup RGB
-	Rarity < Rare
-	ItemLevel <= 65
-	SetFontSize 36
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, small %H3
-	SocketGroup RGB
-	Width <= 2
-	Height <= 2
-	Rarity < Rare
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, small %H3
-	SocketGroup RGB
-	Width <= 1
-	Height <= 3
-	Rarity < Rare
-	SetFontSize 36
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, bulky
-	SocketGroup RGB
-	Width >= 2
-	Height >= 4
-	Rarity < Rare
-	ItemLevel <= 65
-	SetFontSize 30
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Hide #$rgb, bulky %H1
-	SocketGroup RGB
-	Width >= 2
-	Height >= 4
-	Rarity < Rare
-	SetFontSize 30
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb %H2
-	SocketGroup RGB
-	Rarity < Rare
-	SetFontSize 32
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#------------------------------------
-#   [0213] Endgame-start 4-links
-#------------------------------------
-
-#Show #$nonmf %D1
-#	LinkedSockets >= 4
-#	DropLevel >= 64
-#	Class "Boots" "Gloves" "Body Armour" "Helmets"
-#	Rarity < Rare
-#	ItemLevel < 72
-#	SetFontSize 32
-#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-#	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
 #   [0214] Animate Weapon script - deactivated by default
@@ -691,9 +560,16 @@ Show
 	SetBorderColor 190 178 135 110       # BORDERCOLOR:	 T2 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
+Hide #SCROLLS
+	Class Currency
+	BaseType "Portal Scroll" "Scroll of Wisdom"
+	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
+	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
+	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+
 Show #%H3
 	Class Currency
-	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's" "Orb of Augmentation"
+	BaseType  "Armourer's" "Orb of Augmentation"
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
