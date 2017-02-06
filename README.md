@@ -4,10 +4,11 @@
 
 --------------------------
 
-- **Regular** = The normal version. Nice balance of hidden/shown items in the endgame. Perfect for beginners and experts alike.
-- **Semi-Strict** = Hides several bulky/bad rares. Designed for experienced players and speedrunners. Not recommended for beginners.
-- **Strict** = Hides the majority of all rares in the endgame. Designed for high-magic-find characters and cull-parties.
-- **Uber-Strict** = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, low maps, most rares... You've been warned.
+- **Regular** = The normal version. Perfect for beginners and experts alike, especially if you like Chaos recipes.
+- **Semi-Strict** = Hides several bulky/bad rares. Nice balance of hidden/shown items in the endgame.
+- **Strict** = Hides the majority of all rares in the endgame. Designed for well geared players.
+- **Very Strict** = Hides the majority of all rares in the endgame, portal scrolls, wisdom scrolls. Great for speedrunning.
+- **Uber Strict** = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, most rares... You've been warned.
 
 If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
