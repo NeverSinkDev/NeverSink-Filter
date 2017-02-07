@@ -17,14 +17,24 @@ https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQG
 FILTER VERSIONS:
 --------------------------
 
-Regular = The normal version. Nice balance of hidden/shown items in the endgame. Perfect for beginners and experts alike.
-Semi-Strict = Hides several bulky/bad rares. Designed for experienced players and speedrunners. Not recommended for beginners.
-Strict = Hides the majority of all rares in the endgame. Designed for high-magic-find characters and cull-parties.
-Uber-Strict = Crazy filtering level. You've been warned. It displays only the Creme de la Creme. Hides >90% rares, portals, wisdoms, armorers, agumentations, most recipes etc.
+Regular = The normal version. Perfect for beginners and experts alike, especially if you like Chaos recipes.
+Semi-Strict = Hides several bulky/bad rares. Nice balance of hidden/shown items in the endgame.
+Strict = Hides the majority of all rares in the endgame. Designed for well geared players.
+Very-Strict = Hides the majority of all rares in the endgame, portal scrolls, wisdom scrolls. Great for speedrunning.
+Uber-Strict = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, most rares... You've been warned.
 
-Template = DO NOT USE FOR GAMEPLAY. Special version design for creating your own filters.
 
 NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
+
+--------------------------
+STYLE VARIATIONS:
+--------------------------
+
+Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
+Styles can be found in the subfolders.
+
+Slick = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
+Blue = Mostly the same, but the rare color scheme is tuned towards blue colors.
 
 --------------------------
 FAQ AND QUESTIONS
