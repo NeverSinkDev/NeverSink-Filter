@@ -23,7 +23,6 @@ Strict = Hides the majority of all rares in the endgame. Designed for well geare
 Very-Strict = Hides the majority of all rares in the endgame, portal scrolls, wisdom scrolls. Great for speedrunning.
 Uber-Strict = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, most rares... You've been warned.
 
-
 NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
 
 --------------------------
@@ -33,6 +32,7 @@ STYLE VARIATIONS:
 Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
 Styles can be found in the subfolders.
 
+Streamsound = Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop
 Slick = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 Blue = Mostly the same, but the rare color scheme is tuned towards blue colors.
 
