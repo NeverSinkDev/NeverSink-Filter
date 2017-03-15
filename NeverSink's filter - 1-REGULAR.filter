@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		4.61
+# VERSION:		4.62
 # TYPE:			1-REGULAR
 # STYLE:		NORMAL
 # AUTHOR:		NeverSink
@@ -159,7 +159,7 @@
 
 Show # 6-Links
 	LinkedSockets 6
-	Rarity < Unique
+	Rarity < Rare
 	SetFontSize 45
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
@@ -699,16 +699,16 @@ Show # %TB-Currency-T4
 	SetBorderColor 213 159 100 200       # BORDERCOLOR:	 T1 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
-Show # %TB-Currency-T5
+Show # %H4 %TB-Currency-T5
 	Class Currency
-	BaseType "Orb of Transmutation" "Blacksmith's"
+	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard"
 	SetFontSize 36
 	SetBorderColor 190 178 135 110       # BORDERCOLOR:	 T2 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
-Show # %H4 %TB-Currency-T6
+Show # %H3 %TB-Currency-T6
 	Class Currency
-	BaseType "Armourer's" "Orb of Augmentation"
+	BaseType "Armourer's Scrap" "Orb of Augmentation" "Alteration Shard"
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
@@ -846,7 +846,7 @@ Show #$crafting, egc, top %TB-Atlas-Bases
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, weapons, small %TB-RARE-T1-WepSmall
-	BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Imperial Skean" "Ezomyte Dagger"
+	BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Skean" "Ezomyte Dagger"
 	Rarity Rare
 	ItemLevel >= 75
 	SetFontSize 40
@@ -855,7 +855,7 @@ Show #$great, weapons, small %TB-RARE-T1-WepSmall
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, weapons, small %TB-RARE-T1-WepSmall
-	BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Imperial Skean" "Ezomyte Dagger"
+	BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Skean" "Ezomyte Dagger"
 	Rarity Rare
 	SetFontSize 40
 	SetBorderColor 210 210 210 255       # BORDERCOLOR:	 Rares - Size - Small (+Amazing basetype)
@@ -1883,7 +1883,7 @@ Hide # Hide remaining rare endgame items (note: on the regular version this line
 
 Show # %TB-Qual-Top-Gem
 	Quality >= 15
-	Class Gem
+	Class Gems
 	BaseType "Empower" "Enlighten"
 	SetFontSize 45
 	SetTextColor 30 200 200 255          # TEXTCOLOR:	 T1 Gem
@@ -1893,7 +1893,7 @@ Show # %TB-Qual-Top-Gem
 
 Show
 	Quality >= 20
-	Class Gem
+	Class Gems
 	SetFontSize 45
 	SetTextColor 30 200 200 255          # TEXTCOLOR:	 T1 Gem
 	SetBorderColor 30 150 180 255        # BORDERCOLOR:	 T1 Gems
@@ -1901,7 +1901,7 @@ Show
 	PlayAlertSound 3 300                 # DROPSOUND:	 Random uniques, 20qual gems
 
 Show # Drop only good gems %TB-Top-Gem
-	Class Gem
+	Class Gems
 	BaseType "Portal" "Empower" "Enlighten" "Vaal Haste" "Vaal Discipline" "Item Quantity" "Vaal Breach"
 	SetFontSize 42
 	SetTextColor 30 200 200 255          # TEXTCOLOR:	 T1 Gem
@@ -1927,7 +1927,7 @@ Show
 	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
 
 Show # Drop only meh gems %TB-DropOnly-Gem
-	Class Gem
+	Class Gems
 	BaseType "Detonate Mines" "Added Chaos Damage" "Vaal" "Enhance"
 	SetFontSize 38
 	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
@@ -1970,7 +1970,7 @@ Show #$flask, recipe, glass %H4
 
 Show #$flask, utility, lvl, top %TB-T1-Leveling-Flask
 	Quality >= 1
-	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask"
+	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask" "Diamond Flask"
 	Rarity <= Magic
 	ItemLevel >= 5
 	ItemLevel < 60
@@ -1979,7 +1979,7 @@ Show #$flask, utility, lvl, top %TB-T1-Leveling-Flask
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 Show #$flask, utility, lvl %TB-T1-Leveling-Flask
-	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask"
+	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask" "Diamond Flask"
 	Rarity <= Magic
 	ItemLevel < 60
 	SetFontSize 40
@@ -2374,8 +2374,8 @@ Show # Safetyline
 Show # "Ancient Reliquary Key" - the following section handles it (it's classified as a ""Misc Map Items" by GGG). No it's not hidden, stop asking me, crazy people.
 	Class "Misc Map Items"
 	SetFontSize 45
-	SetTextColor 0 255 100 255           # TEXTCOLOR:	 Relic Keys, Breachstones
-	SetBorderColor 0 255 100 255         # BORDERCOLOR:	 Relic Keys, Breachstones
+	SetTextColor 230 120 0 255           # TEXTCOLOR:	 Relic Keys, Breachstones
+	SetBorderColor 230 120 0 255         # BORDERCOLOR:	 Relic Keys, Breachstones
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
@@ -2605,7 +2605,7 @@ Show # %TB-Divination-T2
 
 Show # %TB-Divination-T3
 	Class "Divination"
-	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
+	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
 	SetFontSize 40
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2640,18 +2640,14 @@ Show
 # [[1500]] Currency - PART 4 - remaining items
 #===============================================================================================================
 
-Show # %H3 %TB-Currency-T8
+Show # %H2 %TB-Currency-T8
 	Class Currency
-	BaseType "Scroll Fragment"
+	BaseType "Scroll Fragment" "Transmutation Shard"
 	SetFontSize 28
 	SetTextColor 170 158 130 165         # TEXTCOLOR:	 Low currency T4
 
 Show # %H3
 	Class Currency
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
-
-Show # %H3
-	Class Stackable Currency
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 
 #===============================================================================================================
@@ -2660,9 +2656,9 @@ Show # %H3
 
 Show # %TB-Leaguestone-Value
 	Class Leaguestone
-	BaseType "Perandus" "Breach" "Nemesis"
+	BaseType "Perandus" "Breach" "Nemesis" "Bloodline"
 	Rarity = Magic
-	ItemLevel >= 66
+	ItemLevel >= 67
 	SetFontSize 45
 	SetTextColor 50 0 100 255            # TEXTCOLOR:	 LeagueStone Magic
 	SetBorderColor 50 0 100 255          # BORDERCOLOR:	 LeagueStone Magic
@@ -2680,9 +2676,9 @@ Show
 
 Show # %TB-Leaguestone-Value
 	Class Leaguestone
-	BaseType "Perandus" "Breach" "Nemesis"
+	BaseType "Perandus" "Breach" "Nemesis" "Bloodline"
 	Rarity = Normal
-	ItemLevel >= 66
+	ItemLevel >= 67
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -2797,7 +2793,7 @@ Show # %TB-Uniques-T2-Wep
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2-Arm
-	BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Clasped Mitts"
+	BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Clasped Mitts" "Wyrmscale Doublet"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2806,7 +2802,7 @@ Show # %TB-Uniques-T2-Arm
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2-Misc
-	BaseType "Penetrating Arrow Quiver" "Two-Stone Ring" "Gold Ring" "Crystal Belt" "Citrine Amulet"
+	BaseType "Gold Ring" "Crystal Belt" "Citrine Amulet"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2822,7 +2818,7 @@ Show # %TB-Uniques-T2-Misc
 # Sound to prevent false excitement.
 
 Show # %TB-MultiBase-Uniques
-	BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots"
+	BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -3018,7 +3014,7 @@ Show #$flask, lvl
 #------------------------------------
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Small"
 	Rarity Normal
 	ItemLevel <= 5
@@ -3027,7 +3023,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Medium"
 	Rarity Normal
 	ItemLevel <= 8
@@ -3037,7 +3033,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Large"
 	Rarity Normal
 	ItemLevel <= 12
@@ -3047,7 +3043,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Greater"
 	Rarity Normal
 	ItemLevel <= 18
@@ -3057,7 +3053,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Grand"
 	Rarity Normal
 	ItemLevel <= 24
@@ -3067,7 +3063,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Giant"
 	Rarity Normal
 	ItemLevel <= 30
@@ -3077,7 +3073,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Colossal"
 	Rarity Normal
 	ItemLevel <= 37
@@ -3087,7 +3083,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Sacred"
 	Rarity Normal
 	ItemLevel <= 42
@@ -3097,7 +3093,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Hallowed"
 	Rarity Normal
 	ItemLevel <= 48
@@ -3107,7 +3103,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Sanctified"
 	Rarity Normal
 	ItemLevel <= 55
@@ -3117,7 +3113,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Divine"
 	Rarity Normal
 	ItemLevel <= 66
@@ -3127,7 +3123,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Eternal"
 	Rarity Normal
 	ItemLevel <= 66
@@ -3141,7 +3137,7 @@ Show #$flask, lvl
 #------------------------------------
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Small"
 	Rarity Magic
 	ItemLevel <= 5
@@ -3150,7 +3146,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Medium"
 	Rarity Magic
 	ItemLevel <= 8
@@ -3160,7 +3156,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Large"
 	Rarity Magic
 	ItemLevel <= 12
@@ -3170,7 +3166,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Greater"
 	Rarity Magic
 	ItemLevel <= 18
@@ -3180,7 +3176,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Grand"
 	Rarity Magic
 	ItemLevel <= 24
@@ -3190,7 +3186,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Giant"
 	Rarity Magic
 	ItemLevel <= 30
@@ -3200,7 +3196,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Colossal"
 	Rarity Magic
 	ItemLevel <= 37
@@ -3210,7 +3206,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Sacred"
 	Rarity Magic
 	ItemLevel <= 42
@@ -3220,7 +3216,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Hallowed"
 	Rarity Magic
 	ItemLevel <= 48
@@ -3230,7 +3226,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Sanctified"
 	Rarity Magic
 	ItemLevel <= 55
@@ -3240,7 +3236,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Divine"
 	Rarity Magic
 	ItemLevel <= 67
@@ -3250,7 +3246,7 @@ Show #$flask, lvl
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 Show #$flask, lvl
-	Class Flask
+	Class Flasks
 	BaseType "Eternal"
 	Rarity Magic
 	ItemLevel <= 66
