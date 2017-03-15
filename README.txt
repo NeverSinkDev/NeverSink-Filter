@@ -32,6 +32,7 @@ STYLE VARIATIONS:
 Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
 Styles can be found in the subfolders.
 
+Purple = Heavily styled lootfilter, heavily inspired by prophecy/breach/necrotic themes.
 Streamsound = Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop
 Slick = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 Blue = Mostly the same, but the rare color scheme is tuned towards blue colors.
