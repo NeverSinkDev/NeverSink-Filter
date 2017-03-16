@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		4.62
+# VERSION:		4.63
 # TYPE:			4-VERY-STRICT
 # STYLE:			PURPLE
 # AUTHOR:		NeverSink
@@ -159,7 +159,7 @@
 
 Show # 6-Links
 	LinkedSockets 6
-	Rarity < Rare
+	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
@@ -171,7 +171,7 @@ Show # 6-Links
 #------------------------------------
 # Very useful at the start of the league. Otherwise often trash. Still, highlight material.
 # There’s a lot of exceptions we can introduce here, such as 6S, high value bases, but this
-# Is a rare occurance, so we won’t be doing it for performance reasons.
+# Is a rare occurrence, so we won’t be doing it for performance reasons.
 
 Show # 5-Links
 	LinkedSockets 5
@@ -183,7 +183,7 @@ Show # 5-Links
 #------------------------------------
 #   [0203] 6-Socket Items
 #------------------------------------
-# Can be sold for 7 jeweler orbs. We also highlight the ilvl83/84 ones that are OK for crafting.
+# Can be sold for 7 jeweller orbs. We also highlight the ilvl83/84 ones that are OK for crafting.
 # Chances are high that people will want to buy those.
 
 Show # 6-Sockets %TB-6S-Rare-Armors
@@ -2418,7 +2418,7 @@ Show # %TB-Currency-T2
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 180 50 200 255    # BACKGROUND:	 T2 Currency
+	SetBackgroundColor 249 150 25 255    # BACKGROUND:	 T2 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-T3
@@ -2427,7 +2427,7 @@ Show # %TB-Currency-T3
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 160 50 170 230    # BACKGROUND:	 T3 Currency
+	SetBackgroundColor 213 159 0 255     # BACKGROUND:	 T3 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #------------------------------------
@@ -2453,7 +2453,7 @@ Show # %TB-Essence-T1
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 180 50 200 255    # BACKGROUND:	 T2 Currency
+	SetBackgroundColor 249 150 50 255    # BACKGROUND:	 T2 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show
@@ -2534,7 +2534,7 @@ Show # %TB-Currency-NonDrop1
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 180 50 200 255    # BACKGROUND:	 T2 Currency
+	SetBackgroundColor 249 150 50 255    # BACKGROUND:	 T2 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-NonDrop2
@@ -2569,7 +2569,7 @@ Show # %TB-Divination-Exception
 
 Show # %TB-Divination-T1
 	Class "Divination"
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2582,7 +2582,7 @@ Show # %TB-Divination-T1
 
 Show # %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
+	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul" "Emperor of Purity"
 	SetFontSize 44
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
