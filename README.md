@@ -27,9 +27,9 @@ If you want to support the the project or show your appreciation feel free to **
 Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
 
 - **Normal** = The good ol' filter.
-- **Purple** = Purple themed lootfilter, heavily inspired by prophecy/breach/necrotic themes.
 - **Slick** = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 - **Blue** = Mostly the same, but the rare color scheme is tuned towards blue colors.
+- **[Purple](https://www.youtube.com/watch?v=7TbcuBcv6H4&feature=youtu.be)** = Purple themed lootfilter, heavily inspired by prophecy/breach/necrotic themes.
 - **Streamsound** = Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop
 
 --------------------------
