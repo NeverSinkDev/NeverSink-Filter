@@ -4,11 +4,13 @@
 
 --------------------------
 
-- **Regular** = The normal version. Perfect for beginners and experts alike, especially if you like Chaos recipes.
-- **Semi-Strict** = Hides several bulky/bad rares. Nice balance of hidden/shown items in the endgame.
-- **Strict** = Hides the majority of all rares in the endgame. Designed for well geared players.
-- **Very Strict** = Hides the majority of all rares in the endgame, portal scrolls, wisdom scrolls. Great for speedrunning.
-- **Uber Strict** = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, most rares... You've been warned.
+- **Regular** = Shows all rares and a lot of "potentially useful items", great for new leagues, new players and solo selffound environments.
+- **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
+- **Strict** = Shows the top ~35% of all rares, hides most recipes and crafting bases. Designed for optimized builds, that want to farm/grind effectively.
+- **Very Strict** = Shows the top ~15% of all rares, hides scrolls, armorers and augmentations. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
+- **Uber Strict** = Shows the top ~5% of all rares, hides transmutations and whetstones. Advised for insanely fast builds, such as vaal spark and well organized parties.
+
+You can find more details about the individual versions [here](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0) to get more details.
 
 If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
