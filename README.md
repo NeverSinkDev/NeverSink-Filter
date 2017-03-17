@@ -4,13 +4,15 @@
 
 --------------------------
 
+You can see a filter demo that demonstrates differences and features here in **[this video](https://www.youtube.com/watch?v=Dr6zy1mV0qY)**!
+
 - **Regular** = Shows all rares and a lot of "potentially useful items", great for new leagues, new players and solo selffound environments.
 - **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
 - **Strict** = Shows the top ~35% of all rares, hides most recipes and crafting bases. Designed for optimized builds, that want to farm/grind effectively.
 - **Very Strict** = Shows the top ~15% of all rares, hides scrolls, armorers and augmentations. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
 - **Uber Strict** = Shows the top ~5% of all rares, hides transmutations and whetstones. Advised for insanely fast builds, such as vaal spark and well organized parties.
 
-You can find more details about the individual versions [here](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0) to get more details.
+You can find more details about the differences of the individual versions **[here](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)**.
 
 If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
