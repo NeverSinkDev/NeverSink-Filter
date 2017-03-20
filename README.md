@@ -24,9 +24,9 @@ If you want to support the the project or show your appreciation feel free to **
 
 --------------------------
 
-Different styles have the same filtering pattern and also have the same filter versions (seen above), but use different colors.
+Different styles have the same filtering pattern and also have the same filter subversions (seen above), but use different highlighting settings. The subversions can be found in the subdirectories.
 
-- **Normal** = The good ol' filter.
+- **Normal** = The good ol' filter. Located in the main directory.
 - **Slick** = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 - **Blue** = The rare color scheme is tuned towards blue colors, instead of green ones. Otherwise the same as normal.
 - **[Purple/Necrotic](https://www.youtube.com/watch?v=7TbcuBcv6H4&feature=youtu.be)** = Purple themed lootfilter, heavily inspired by prophecy/breach/necrotic themes.
@@ -42,7 +42,7 @@ Different styles have the same filtering pattern and also have the same filter v
 
 2) Extract the files using WinRar/7zip or a similar tool.
 
-3) Paste the .filter files (or just the folder content) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
+3) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
 
 4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
 
