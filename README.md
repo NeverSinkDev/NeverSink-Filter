@@ -54,6 +54,14 @@ I recommend using NotePad++ to edit the filter.
 
 --------------------------
 
+**FILTERBLADE:**
+
+--------------------------
+
+Coming soon...
+
+--------------------------
+
 For additional details, the FAQ (read it before asking questions), previous changelogs, screenshots etc. please refer to the forum thread in the POE forum ([clicky here to get there](https://www.pathofexile.com/forum/view-thread/1246208))
 
 --------------------------
