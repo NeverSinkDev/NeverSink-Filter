@@ -1,10 +1,12 @@
+[ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ]
+
 --------------------------
 
 **FILTER VERSIONS:**
 
 --------------------------
 
-You can see a filter demo that demonstrates differences and features here in **[this video](https://www.youtube.com/watch?v=Dr6zy1mV0qY)**!
+
 
 - **Regular** = Shows all rares and a lot of "potentially useful items", great for new leagues, new players and solo selffound environments.
 - **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
