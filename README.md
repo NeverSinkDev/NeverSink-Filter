@@ -16,7 +16,7 @@
 
 You can find more details about the differences of the individual versions **[here](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)**.
 
-If you want to support the the project or show your appreciation feel free to **[buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
+If you want to support the the project or show your appreciation feel free to **[buy me a beer / donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
 **NOTE:** The filter itself will always be free, including updates. There will never be any premium/donator versions or options!
 
