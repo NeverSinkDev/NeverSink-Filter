@@ -58,7 +58,7 @@ I recommend using NotePad++ to edit the filter.
 
 --------------------------
 
-Yes, it's not public yet ;).Coming soon... **[filterblade.xyz](www.filterblade.xyz)**
+Yes, it's not public yet ;).Coming soon... **[filterblade.xyz](https://www.filterblade.xyz)**
 
 --------------------------
 
