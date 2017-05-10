@@ -58,7 +58,7 @@ I recommend using NotePad++ to edit the filter.
 
 --------------------------
 
-Yes, it's not public yet ;).Coming soon... **filterblade.xyz(https://www.pathofexile.com/forum/view-thread/1246208)** 
+Yes, it's not public yet ;).Coming soon... **[filterblade.xyz](filterblade.xyz)**
 
 --------------------------
 
