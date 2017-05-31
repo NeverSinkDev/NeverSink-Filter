@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		4.7
+# VERSION:		4.71
 # TYPE:			4-VERY-STRICT
 # STYLE:			PURPLE
 # AUTHOR:		NeverSink
@@ -41,22 +41,23 @@
 #   [0201] 6-Linked items
 #   [0202] 5-Linked items
 #   [0203] 6-Socket Items
-#   [0204] Exclusive bases: Atlas bases, talismans
-#   [0205] Corrupted Amulets
-#   [0206] Chancing items
-#   [0207] Add your own crafting rules here
-#   [0208] 83/84+ Endgame crafting rules
-#   [0209] 60+ Crafting rules for 60++ trinkets
-#   [0210] Warband items
-#   [0211] Remaining crafting rules - add your own bases here!
-#   [0212] Chisel recipe items
-#   [0213] Fishing Rod
-#   [0214] SRS Crude Bow
-#   [0215] Chromatic recipe items ("RGB Recipe")
-#   [0216] Endgame-start 4-links
-#   [0217] Animate Weapon script - deactivated by default
-#   [0218] W-soc offhand weapons
-#   [0219] Sacrificial Garb
+#   [0204] Exclusive bases: Atlas bases, talismans (includes Rare rarity)
+#   [0205] FLASKS (Endgame rules)
+#   [0206] Corrupted Amulets
+#   [0207] Chancing items
+#   [0208] Add your own crafting rules here
+#   [0209] 83/84+ Endgame crafting rules
+#   [0210] 60+ Crafting rules for 60++ trinkets
+#   [0211] Warband items
+#   [0212] Remaining crafting rules - add your own bases here!
+#   [0213] Chisel recipe items
+#   [0214] Fishing Rod
+#   [0215] SRS Crude Bow
+#   [0216] Chromatic recipe items ("RGB Recipe")
+#   [0217] Endgame-start 4-links
+#   [0218] Animate Weapon script - deactivated by default
+#   [0219] W-soc offhand weapons
+#   [0220] Sacrificial Garb
 # [[0300]] HIDE LAYER 1 - MAGIC AND NORMAL ITEMS
 # [[0400]] Currency - PART 1 - Common currency
 # [[0500]] OVERRIDE AREA 2 - Override the default rare rulesets here
@@ -87,7 +88,7 @@
 # [[0900]] Gems
 #   [0901] Value gems
 #   [0902] Other gems
-# [[1000]] FLASKS (Endgame rules)
+# [[1000]] FLASKS (Levelling Rules)
 # [[1100]] HIDE LAYER 3: Random Endgame Flasks
 # [[1200]] Maps, fragments and labyrinth items
 #   [1201] Unique Maps
@@ -119,24 +120,24 @@
 #   [1705] Prophecy-Material Uniques
 #   [1706] Random Uniques
 # [[1800]] Exceptions - Quest Items etc.
-# [[1900]] OVERRIDE AREA 4 - Insert your custom leveling adjustments here
-# [[2000]] LEVELING - Flasks
+# [[1900]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
+# [[2000]] Leveling - Flasks
 #   [2001] Hide outdated flasks
 #   [2002] Hybrid flasks (normal)
 #   [2003] Hybrid flasks (magic)
 #   [2004] Life/Mana Flask - Normal (Kudos to Antnee)
 #   [2005] Life/Mana Flask - Magic (Kudos to Antnee)
 #   [2006] Show remaining flasks
-# [[2100]] LEVELING - RARES
+# [[2100]] Leveling - RARES
 #   [2101] Leveling rares - tier list
 #   [2102] Leveling rares - remaining rules
-# [[2200]] LEVELING - Useful items
+# [[2200]] Leveling - Useful items
 #   [2201] Leveling RGB Exceptions 3L
-#   [2202] Jewellery & Helpful leveling and racing gear
+#   [2202] Jewellery & Helpful Leveling and racing gear
 #   [2203] Caster weapons
 #   [2204] Linked gear
 #   [2205] 20% quality items for those strange people who want them
-# [[2300]] Levelling - normal and magic item progression
+# [[2300]] Leveling - normal and magic item progression
 #   [2301] Normal items - First 12 levels - exceptions
 #   [2302] Normal weapons - progression
 #   [2303] Magic items - progression
@@ -191,7 +192,7 @@ Show # 6-Sockets %TB-6S-Rare-Armors
 	BaseType "Assassin's Garb" "Glorious Plate" "Astral Plate" "Vaal Regalia" "Zodiac Leather"
 	Rarity <= Rare
 	ItemLevel >= 84
-	SetFontSize 43
+	SetFontSize 42
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
@@ -210,54 +211,65 @@ Show # 6-Sockets
 	Sockets 6
 	Rarity = Rare
 	ItemLevel >= 75
-	SetFontSize 40
+	SetFontSize 42
 	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
+	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # 6-Sockets
 	Sockets 6
 	Rarity <= Rare
-	SetFontSize 40
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
+	SetFontSize 42
+	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #------------------------------------
-#   [0204] Exclusive bases: Atlas bases, talismans
+#   [0204] Exclusive bases: Atlas bases, talismans (includes Rare rarity)
 #------------------------------------
 # These bases are valuable crafting due to their rarity and strong implicit.
 
 Show #$crafting %TB-Top-Atlas-Bases
 	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
-	Rarity < Rare
+	Rarity <= Rare
 	ItemLevel >= 84
 	SetFontSize 45
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
+	SetTextColor 255 125 0 255           # TEXTCOLOR:	 Atlas bases
+	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
+	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show #$crafting %TB-Top-Atlas-Bases
 	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
-	Rarity < Rare
+	Rarity <= Rare
 	SetFontSize 42
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 Atlas bases
+	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show #$crafting %TB-Atlas-Bases
 	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	Rarity < Rare
+	Rarity <= Rare
 	ItemLevel >= 84
 	SetFontSize 42
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
+	SetTextColor 255 125 0 255           # TEXTCOLOR:	 Atlas bases
+	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
+
+Show #$crafting %TB-Atlas-Bases
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	Rarity = Rare
+	ItemLevel >= 75
+	SetFontSize 42
+	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
 
 Show #$crafting %TB-Atlas-Bases %D4
 	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	Rarity < Rare
+	Rarity <= Rare
 	SetFontSize 38
-	SetBorderColor 255 125 0 200         # BORDERCOLOR:	 T2 Atlas bases
+	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
 
 Show # %TB-Talisman
 	Class Amulets
@@ -269,7 +281,44 @@ Show # %TB-Talisman
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #------------------------------------
-#   [0205] Corrupted Amulets
+#   [0205] FLASKS (Endgame rules)
+#------------------------------------
+
+#Show #$flask, recipe, glass, top %D3
+#	Quality = 20
+#	BaseType "Flask"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	SetFontSize 40
+#	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
+#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#Show #$flask, recipe, glass %D2
+#	Quality >= 15
+#	BaseType "Flask"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	SetFontSize 38
+#	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
+#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#Show #$flask, recipe, glass %D1
+#	Quality >= 1
+#	BaseType "Flask"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#Show #$flask, utility %D2
+#	Class "Utility Flasks"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#------------------------------------
+#   [0206] Corrupted Amulets
 #------------------------------------
 # Corrupted amulets for rare lab shrines (to turn them rare)
 
@@ -281,7 +330,7 @@ Show #$lead to gold bases %TC-Corrupted-Bases
 	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
 
 #------------------------------------
-#   [0206] Chancing items
+#   [0207] Chancing items
 #------------------------------------
 # You can add your own items here. The items in this section have a dropsound
 
@@ -318,9 +367,9 @@ Show #$chancing (no sound) %TB-T2-Chancing %D4
 #	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
 
 #------------------------------------
-#   [0207] Add your own crafting rules here
+#   [0208] Add your own crafting rules here
 #------------------------------------
-# Please use ItemLevel >= 65 if you DON'T want your rules to affect levelling progression.
+# Please use ItemLevel >= 65 if you DON'T want your rules to affect Leveling progression.
 # Example: To highlight all white "Vaal Claw" and "Gemini Claw" in the endgame, uncomment the following section (remove the '#')
 
 # Show
@@ -331,7 +380,7 @@ Show #$chancing (no sound) %TB-T2-Chancing %D4
 # SetFontSize 40
 
 #------------------------------------
-#   [0208] 83/84+ Endgame crafting rules
+#   [0209] 83/84+ Endgame crafting rules
 #------------------------------------
 # These entries are non-exclusive bases that are popular for crafting
 
@@ -365,7 +414,7 @@ Show #$crafting %TB-T1-Crafting
 #	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
 
 #------------------------------------
-#   [0209] 60+ Crafting rules for 60++ trinkets
+#   [0210] 60+ Crafting rules for 60++ trinkets
 #------------------------------------
 # This section handles the crafting bases for the entry level endgame
 
@@ -420,7 +469,7 @@ Show #$trinkets, jewels %H4
 #	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
-#   [0210] Warband items
+#   [0211] Warband items
 #------------------------------------
 # This section handles warband items, with special warband mods.
 # We're showing identified items of the right level, this may cause the filter to highlight a few other items
@@ -465,7 +514,7 @@ Hide # %TC-Chaos-Warband-Bases
 	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
 
 #------------------------------------
-#   [0211] Remaining crafting rules - add your own bases here!
+#   [0212] Remaining crafting rules - add your own bases here!
 #------------------------------------
 # This section handles additional crafting bases.
 
@@ -476,26 +525,16 @@ Hide # %TC-Chaos-Warband-Bases
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #------------------------------------
-#   [0212] Chisel recipe items
+#   [0213] Chisel recipe items
 #------------------------------------
 # Chisel Recipe: You can sell a 20% hammer + random map for 1 chisel
 
 #Show #$chisel, recipes %TB-Gavels %D3
 #	Quality = 20
 #	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-#	Rarity Magic
+#	Rarity < Unique
 #	SetFontSize 38
-#	SetTextColor 100 100 255 255         # TEXTCOLOR: Magic Items: Strong Highlight
-#	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
-#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#Show #$chisel, recipes %TB-Gavels %D3
-#	Quality = 20
-#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-#	Rarity Normal
-#	SetFontSize 38
-#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-#	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
+#	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
 #	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #Show #$chisel, recipes %TB-Gavels %D3
@@ -530,7 +569,7 @@ Hide # %TC-Chaos-Warband-Bases
 #	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #------------------------------------
-#   [0213] Fishing Rod
+#   [0214] Fishing Rod
 #------------------------------------
 # Give a man a fish and he won't be hungy for a day, teach a man to fish and GGG will ban you for disclosing fishing secrets.
 
@@ -543,7 +582,7 @@ Show # %TC-Secret
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 #------------------------------------
-#   [0214] SRS Crude Bow
+#   [0215] SRS Crude Bow
 #------------------------------------
 # Crude bows are a meta weapon for SRS summoners, so we'll highlight them no matter the rarity post level 49
 
@@ -555,7 +594,7 @@ Show #$meta %TB-Low-BaseType-Crafting %D4
 	SetBorderColor 50 100 200 255        # BORDERCOLOR:	 Rares - Size - Tiny, special base
 
 #------------------------------------
-#   [0215] Chromatic recipe items ("RGB Recipe")
+#   [0216] Chromatic recipe items ("RGB Recipe")
 #------------------------------------
 # These items have a RGB link and sell for a chromatic orb each.
 
@@ -598,7 +637,7 @@ Hide #$rgb %H2
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #------------------------------------
-#   [0216] Endgame-start 4-links
+#   [0217] Endgame-start 4-links
 #------------------------------------
 
 #Show #$nonmf %D1
@@ -612,7 +651,7 @@ Hide #$rgb %H2
 #	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
-#   [0217] Animate Weapon script - deactivated by default
+#   [0218] Animate Weapon script - deactivated by default
 #------------------------------------
 # UNCOMMENT THIS SCRIPT TO MAKE IT WORK (remove the # in front of the next 7 lines)
 
@@ -651,11 +690,11 @@ Hide #$rgb %H2
 #	Identified True
 
 #------------------------------------
-#   [0218] W-soc offhand weapons
+#   [0219] W-soc offhand weapons
 #------------------------------------
-# Useful for gem leveling.
+# Useful for gem Leveling.
 
-# Corrupted items with white sockets for offhand gem levelling.
+# Corrupted items with white sockets for offhand gem Leveling.
 #Show # %D3 %TC-Offslot-Gem-Leveling
 #	Sockets >= 3
 #	SocketGroup W
@@ -664,7 +703,7 @@ Hide #$rgb %H2
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #------------------------------------
-#   [0219] Sacrificial Garb
+#   [0220] Sacrificial Garb
 #------------------------------------
 # Generally not useful, but so rare, that some people still might want to see it
 
@@ -679,7 +718,7 @@ Show #$crafting, exception %TB-Special-AlwaysShow-Bases
 #===============================================================================================================
 
 Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
-	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets"
+	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets" "Flask"
 	Rarity < Rare
 	ItemLevel > 60
 	SetFontSize 18
@@ -733,7 +772,6 @@ Hide # %H3 %TB-Currency-T7
 # Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets"
 # Rarity Rare
 # ItemLevel >= 60
-# ItemLevel < 75
 # SetFontSize 42
 # SetBorderColor 0 255 255 255         # BORDERCOLOR:	 Crafting: T1
 # SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
@@ -745,26 +783,6 @@ Hide # %H3 %TB-Currency-T7
 #------------------------------------
 #   [0601] Rare Atlas bases (84+)
 #------------------------------------
-
-Show #$crafting, egc, top %TB-Top-Atlas-Bases
-	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
-	Rarity Rare
-	ItemLevel >= 84
-	SetFontSize 44
-	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
-	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
-
-Show #$crafting, egc, top %TB-Atlas-Bases
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	Rarity Rare
-	ItemLevel >= 84
-	SetFontSize 44
-	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #------------------------------------
 #   [0602] Rare crafting bases
@@ -810,40 +828,6 @@ Show #$topcrafting, ilvl84 %D4 %TB-T2-Crafting-Jwl
 #------------------------------------
 #   [0603] T1 rare items
 #------------------------------------
-
-Show #$crafting, egc, top %TB-Top-Atlas-Bases
-	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
-	Rarity Rare
-	ItemLevel >= 75
-	SetFontSize 42
-	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
-
-Show #$crafting, egc, top %TB-Top-Atlas-Bases
-	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
-	Rarity Rare
-	SetFontSize 44
-	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 T1 Atlas bases
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 T1 Atlas bases
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
-
-Show #$crafting, egc, top %TB-Atlas-Bases
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	Rarity Rare
-	ItemLevel >= 75
-	SetFontSize 40
-	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 255 125 0 200         # BORDERCOLOR:	 T2 Atlas bases
-	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
-
-Show #$crafting, egc, top %TB-Atlas-Bases
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-	Rarity Rare
-	SetFontSize 40
-	SetBorderColor 255 125 0 200         # BORDERCOLOR:	 T2 Atlas bases
-	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
 
 Show #$great, weapons, small %TB-RARE-T1-WepSmall
 	BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Skean" "Ezomyte Dagger"
@@ -1928,32 +1912,23 @@ Hide # %H2
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #===============================================================================================================
-# [[1000]] FLASKS (Endgame rules)
+# [[1000]] FLASKS (Levelling Rules)
 #===============================================================================================================
 
-Show #$flask, recipe, glass, top %H4
+Show #$flask, recipe, glass, top
 	Quality = 20
 	BaseType "Flask"
-	Rarity Normal
-	SetFontSize 38
-	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
+	Rarity <= Magic
+	ItemLevel <= 65
+	SetFontSize 42
+	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
-Show #$flask, recipe, glass, top %H4
-	Quality = 20
-	BaseType "Flask"
-	Rarity Magic
-	SetFontSize 38
-	SetTextColor 100 100 255 255         # TEXTCOLOR: Magic Items: Strong Highlight
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$flask, recipe, glass %H4
+Show #$flask, recipe, glass
 	Quality >= 15
 	BaseType "Flask"
 	Rarity <= Magic
-	ItemLevel < 60
+	ItemLevel <= 65
 	SetFontSize 40
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
@@ -1963,54 +1938,33 @@ Show #$flask, utility, lvl, top %TB-T1-Leveling-Flask
 	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask" "Diamond Flask"
 	Rarity <= Magic
 	ItemLevel >= 5
-	ItemLevel < 60
+	ItemLevel <= 65
 	SetFontSize 42
-	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong leveling highlight
+	SetBorderColor 250 250 250           # BORDERCOLOR:	 Recipes: top component / very strong Leveling highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 Show #$flask, utility, lvl %TB-T1-Leveling-Flask
 	BaseType "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask" "Diamond Flask"
 	Rarity <= Magic
-	ItemLevel < 60
+	ItemLevel <= 65
 	SetFontSize 40
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#Show #$flask, recipe, glass %D2
-#	Quality >= 15
-#	BaseType "Flask"
-#	Rarity <= Magic
-#	SetFontSize 38
-#	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 Show #$flask, recipe, glass
 	Quality > 1
 	BaseType "Flask"
 	Rarity <= Magic
-	ItemLevel < 60
+	ItemLevel <= 65
 	SetFontSize 38
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
-#Show #$flask, recipe, glass %D2
-#	Quality >= 1
-#	BaseType "Flask"
-#	Rarity <= Magic
-#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#Show #$flask, utility %D2
-#	Class "Utility Flasks"
-#	Rarity <= Magic
-#	ItemLevel > 66
-#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-#	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
 Show #$flask, utility
 	Class "Utility Flasks"
 	Rarity <= Magic
-	ItemLevel < 67
+	ItemLevel <= 65
+	SetFontSize 38
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
@@ -2071,9 +2025,9 @@ Show
 #   [1203] Top tier maps (T15-16)
 #------------------------------------
 
-Show # Maps:T16 %TB-Maps-T16
+Show # Maps:T16
+	DropLevel >= 83
 	Class Maps
-	BaseType "Forge of the Phoenix Map" "Maze of the Minotaur Map" "Lair of the Hydra Map" "Pit of the Chimera Map" "Vaal Temple Map"
 	SetFontSize 45
 	SetTextColor 100 0 122 255           # TEXTCOLOR:	 Cosmetic: T16 guardian maps
 	SetBorderColor 100 0 255 255         # BORDERCOLOR:	 Cosmetic: T16 guardian maps
@@ -2352,6 +2306,9 @@ Hide # Maps:T1 %H3
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
 
+# This should never happen. If it happens, you probably deleted/commented sections above
+# Instead of switching their "Show" to "Hide"
+
 Show # Safetyline
 	Class Maps
 	SetFontSize 42
@@ -2414,7 +2371,7 @@ Show
 
 Show # %TB-Currency-T1.5
 	Class Currency
-	BaseType "Master Cartographer" "Journeyman Cartographer"
+	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant"
 	SetFontSize 45
 	SetTextColor 29 0 67 255             # TEXTCOLOR:	 Cosmetic: T1.5 Currency
 	SetBorderColor 29 0 67 255           # BORDERCOLOR:	 Cosmetic: T1.5 Currency
@@ -2423,7 +2380,7 @@ Show # %TB-Currency-T1.5
 
 Show # %TB-Currency-T2
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Sextant" "Stacked Deck" "Orb of Scouring"
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring"
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -2591,7 +2548,7 @@ Show # %TB-Divination-T1
 
 Show # %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Lucky Deck" "Pride Before the Fall" "Saint's Treasure" "The Aesthete" "The Brittle Emperor" "The Cartographer" "The Cursed King" "The Dapper Prodigy" "The Enlightened" "The Hoarder" "The Hunger" "The King's Heart" "The Standoff" "The Valley of Steel Boxes" "The Void" "Time-Lost Relic"
+	BaseType "Chaotic Disposition" "Lucky Deck" "Pride Before the Fall" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Cursed King" "The Dapper Prodigy" "The Enlightened" "The Fletcher" "The Hoarder" "The Hunger" "The King's Heart" "The Standoff" "The Union" "The Void" "Time-Lost Relic"
 	SetFontSize 44
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -2604,7 +2561,7 @@ Show # %TB-Divination-T2
 
 Show # %TB-Divination-T3
 	Class "Divination"
-	BaseType "Emperor of Purity" "Heterochromia" "Humility" "Jack in the Box" "Merciless Armament" "Scholar of the Seas" "Standoff" "The Body" "The Chains that Bind" "The Dark Mage" "The Formless Sea" "The Inventor" "The Porcupine" "The Risk" "The Road to Power" "The Stormcaller" "The Trial" "The Warlord" "The Watcher" "The Wind" "The Wolf" "The Wolven King's Bite" "The Wretched" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
+	BaseType "Emperor of Purity" "Heterochromia" "Humility" "Jack in the Box" "Merciless Armament" "Scholar of the Seas" "Standoff" "The Aesthete" "The Body" "The Chains that Bind" "The Dark Mage" "The Formless Sea" "The Inventor" "The Porcupine" "The Risk" "The Road to Power" "The Stormcaller" "The Trial" "The Valley of Steel Boxes" "The Warlord" "The Watcher" "The Wind" "The Wolf" "The Wolven King's Bite" "The Wretched" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
 	SetFontSize 40
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2707,7 +2664,7 @@ Show
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0 255
+	SetBorderColor 0 50 100 255          # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 T2 unique
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
@@ -2725,7 +2682,7 @@ Show # 6-Links
 #------------------------------------
 
 Show # %TB-Uniques-T1
-	BaseType "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Hubris Circlet" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Sorcerer Boots" "Topaz Flask" "Wereclaw Talisman"
+	BaseType "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Hubris Circlet" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Sorcerer Boots" "Topaz Flask" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -2747,7 +2704,7 @@ Show # 5-Links
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2
-	BaseType "Arcanist Gloves" "Bismuth Flask" "Carnal Sceptre" "Clasped Mitts" "Coiled Staff" "Crystal Belt" "Cutlass" "Deicide Mask" "Gladiator Plate" "Gold Ring" "Highborn Staff" "Imperial Maul" "Imperial Staff" "Jingling Spirit Shield" "Sacrificial Garb" "Sacrificial Garb" "Siege Axe" "Stibnite Flask" "Trapper Boots" "Void Axe" "Wyrmscale Doublet"
+	BaseType "Arcanist Gloves" "Assassin's Garb" "Bismuth Flask" "Carnal Sceptre" "Clasped Mitts" "Crystal Belt" "Deicide Mask" "Gladiator Plate" "Gold Ring" "Highborn Staff" "Imperial Maul" "Imperial Staff" "Jingling Spirit Shield" "Sacrificial Garb" "Sacrificial Garb" "Siege Axe" "Stibnite Flask" "Trapper Boots"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2813,11 +2770,11 @@ Show
 	SetBorderColor 74 230 58             # BORDERCOLOR:	 Labyrinth, Quest, Shaper Orbs
 
 #===============================================================================================================
-# [[1900]] OVERRIDE AREA 4 - Insert your custom leveling adjustments here
+# [[1900]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
 #===============================================================================================================
 
 #===============================================================================================================
-# [[2000]] LEVELING - Flasks
+# [[2000]] Leveling - Flasks
 #===============================================================================================================
 
 #------------------------------------
@@ -3211,14 +3168,14 @@ Show #$flask, lvl
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #===============================================================================================================
-# [[2100]] LEVELING - RARES
+# [[2100]] Leveling - RARES
 #===============================================================================================================
 
 #------------------------------------
 #   [2101] Leveling rares - tier list
 #------------------------------------
 
-Show #$leveling, small, autosmall, bhg, great
+Show #$Leveling, small, autosmall, bhg, great
 	LinkedSockets >= 4
 	Rarity Rare
 	ItemLevel < 65
@@ -3226,7 +3183,7 @@ Show #$leveling, small, autosmall, bhg, great
 	SetBorderColor 100 255 255 255       # BORDERCOLOR:	 Leveling: 4-linked rare
 	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
 
-Show #$leveling, small, autosmall, bhg, great
+Show #$Leveling, small, autosmall, bhg, great
 	Class "Boots"
 	Rarity Rare
 	ItemLevel < 30
@@ -3234,7 +3191,7 @@ Show #$leveling, small, autosmall, bhg, great
 	SetBorderColor 220 220 220           # BORDERCOLOR:	 Leveling: very useful rares
 	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
 
-Show #$leveling, small, autosmall, bhg, great
+Show #$Leveling, small, autosmall, bhg, great
 	Class "Boots" "Helmets" "Gloves"
 	Rarity Rare
 	ItemLevel < 65
@@ -3242,7 +3199,7 @@ Show #$leveling, small, autosmall, bhg, great
 	SetBorderColor 220 220 220           # BORDERCOLOR:	 Leveling: very useful rares
 	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
 
-Show #$leveling, good, exception
+Show #$Leveling, good, exception
 	Class "Sceptres" "Daggers" "Wands"
 	Rarity Rare
 	ItemLevel < 65
@@ -3250,7 +3207,7 @@ Show #$leveling, good, exception
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - Basetype - Great
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	Rarity Rare
@@ -3259,7 +3216,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	Rarity Rare
@@ -3268,14 +3225,14 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	Rarity Rare
 	ItemLevel < 10
 	SetFontSize 38
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 5
@@ -3285,7 +3242,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 5
@@ -3295,7 +3252,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 5
 	Rarity Rare
 	ItemLevel < 15
@@ -3303,7 +3260,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 10
@@ -3313,7 +3270,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 10
@@ -3323,7 +3280,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 10
 	Rarity Rare
 	ItemLevel < 20
@@ -3331,7 +3288,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 15
@@ -3341,7 +3298,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 15
@@ -3351,7 +3308,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 15
 	Rarity Rare
 	ItemLevel < 25
@@ -3359,7 +3316,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 20
@@ -3369,7 +3326,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 20
@@ -3379,7 +3336,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 20
 	Rarity Rare
 	ItemLevel < 30
@@ -3387,7 +3344,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 25
@@ -3397,7 +3354,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 25
@@ -3407,7 +3364,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 25
 	Rarity Rare
 	ItemLevel < 35
@@ -3415,7 +3372,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 30
@@ -3425,7 +3382,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 30
@@ -3435,7 +3392,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 30
 	Rarity Rare
 	ItemLevel < 40
@@ -3443,7 +3400,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 35
@@ -3453,7 +3410,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 35
@@ -3463,7 +3420,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 35
 	Rarity Rare
 	ItemLevel < 45
@@ -3471,7 +3428,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 40
@@ -3481,7 +3438,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 40
@@ -3491,7 +3448,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 40
 	Rarity Rare
 	ItemLevel < 50
@@ -3499,7 +3456,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 45
@@ -3509,7 +3466,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 45
@@ -3519,7 +3476,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 45
 	Rarity Rare
 	ItemLevel < 55
@@ -3527,7 +3484,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 50
@@ -3537,7 +3494,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 50
@@ -3547,7 +3504,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 50
 	Rarity Rare
 	ItemLevel < 60
@@ -3555,7 +3512,7 @@ Show #$leveling, good
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 2
 	Height <= 2
 	DropLevel > 55
@@ -3565,7 +3522,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, small, good
+Show #$Leveling, small, good
 	Width <= 1
 	Height <= 3
 	DropLevel > 55
@@ -3575,7 +3532,7 @@ Show #$leveling, small, good
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 65 20 80 230      # BACKGROUND:	 Rares - Basetype - Good
 
-Show #$leveling, good
+Show #$Leveling, good
 	DropLevel > 55
 	Rarity Rare
 	ItemLevel < 65
@@ -3587,7 +3544,7 @@ Show #$leveling, good
 #   [2102] Leveling rares - remaining rules
 #------------------------------------
 
-Show #$leveling, small
+Show #$Leveling, small
 	Width <= 1
 	Height <= 3
 	Rarity Rare
@@ -3596,7 +3553,7 @@ Show #$leveling, small
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
-Show #$leveling, small
+Show #$Leveling, small
 	Width <= 2
 	Height <= 2
 	Rarity Rare
@@ -3605,7 +3562,7 @@ Show #$leveling, small
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
-Show #leveling, ok, small
+Show #Leveling, ok, small
 	Width <= 2
 	Height <= 2
 	Rarity Rare
@@ -3614,7 +3571,7 @@ Show #leveling, ok, small
 	SetBorderColor 150 150 150 200       # BORDERCOLOR:	 Rares - Size - Small (+OK basetype)
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
-Show #leveling, ok, small
+Show #Leveling, ok, small
 	Width <= 1
 	Height <= 3
 	Rarity Rare
@@ -3623,14 +3580,14 @@ Show #leveling, ok, small
 	SetBorderColor 150 150 150 200       # BORDERCOLOR:	 Rares - Size - Small (+OK basetype)
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
-Show #leveling, ok
+Show #Leveling, ok
 	Rarity Rare
 	ItemLevel < 20
 	SetFontSize 35
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
-Show #leveling, ok
+Show #Leveling, ok
 	Rarity Rare
 	ItemLevel < 65
 	SetFontSize 32
@@ -3638,7 +3595,7 @@ Show #leveling, ok
 	SetBackgroundColor 0 0 30 200        # BACKGROUND:	 Rares - Basetype - OK
 
 #===============================================================================================================
-# [[2200]] LEVELING - Useful items
+# [[2200]] Leveling - Useful items
 #===============================================================================================================
 
 #------------------------------------
@@ -3684,7 +3641,7 @@ Show #$rgb, lvl
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #------------------------------------
-#   [2202] Jewellery & Helpful leveling and racing gear
+#   [2202] Jewellery & Helpful Leveling and racing gear
 #------------------------------------
 
 Show #topaz ring for act 2+3 racing %TB-LVL35-Trinkets
@@ -3901,7 +3858,7 @@ Show #$recipe, quality, lvl, nonmf
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #===============================================================================================================
-# [[2300]] Levelling - normal and magic item progression
+# [[2300]] Leveling - normal and magic item progression
 #===============================================================================================================
 
 #------------------------------------
@@ -4249,9 +4206,9 @@ Show
 #===============================================================================================================
 
 Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
-	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Flask" "Daggers" "Shields" "Belts" "Rings" "Amulets"
+	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Flask" "Daggers" "Shields" "Belts" "Rings" "Amulets" "Jewel"
 	SetFontSize 26
-	SetBorderColor 0 0 0 150             # BORDERCOLOR:	 Cosmetic: Levelling-Trash
+	SetBorderColor 0 0 0 150             # BORDERCOLOR:	 Cosmetic: Leveling-Trash
 	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #===============================================================================================================
