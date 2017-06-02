@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		4.71
+# VERSION:		4.72
 # TYPE:			2-SEMI-STRICT
 # STYLE:		NORMAL
 # AUTHOR:		NeverSink
@@ -62,27 +62,26 @@
 # [[0400]] Currency - PART 1 - Common currency
 # [[0500]] OVERRIDE AREA 2 - Override the default rare rulesets here
 # [[0600]] RARE ITEMS (ENDGAME)
-#   [0601] Rare Atlas bases (84+)
-#   [0602] Rare crafting bases
-#   [0603] T1 rare items
-#   [0604] T1.5 rare items
-#   [0605] T2 rare items
-#   [0606] Breach Rings
-#   [0607] Amulets, Jewels, Rings, Belts
-#   [0608] 1H Daggers
-#   [0609] 1H Claws
-#   [0610] 1H Wands
-#   [0611] 1H Swords and Foils
-#   [0612] 1H Axes and Maces
-#   [0613] 1H Sceptres
-#   [0614] 2H Staves
-#   [0615] 2H Swords, Axes, Maces
-#   [0616] 2H Bows
-#   [0617] AR: Gloves, Boots, Helmets
-#   [0618] AR: Body Armors
-#   [0619] OH: Shields
-#   [0620] OH: Quivers
-#   [0621] Rare endgame items - remaining rules
+#   [0601] Rare crafting bases
+#   [0602] T1 rare items
+#   [0603] T1.5 rare items
+#   [0604] T2 rare items
+#   [0605] Breach Rings
+#   [0606] Amulets, Jewels, Rings, Belts
+#   [0607] 1H Daggers
+#   [0608] 1H Claws
+#   [0609] 1H Wands
+#   [0610] 1H Swords and Foils
+#   [0611] 1H Axes and Maces
+#   [0612] 1H Sceptres
+#   [0613] 2H Staves
+#   [0614] 2H Swords, Axes, Maces
+#   [0615] 2H Bows
+#   [0616] AR: Gloves, Boots, Helmets
+#   [0617] AR: Body Armors
+#   [0618] OH: Shields
+#   [0619] OH: Quivers
+#   [0620] Rare endgame items - remaining rules
 # [[0700]] HIDE LAYER 2 - RARE ITEMS (65+ ONLY FOR NON-REGULAR VERSIONS)
 # [[0800]] OVERRIDE AREA 3 - Override Map, Gem and Flask drops here
 # [[0900]] Gems
@@ -128,22 +127,22 @@
 #   [2004] Life/Mana Flask - Normal (Kudos to Antnee)
 #   [2005] Life/Mana Flask - Magic (Kudos to Antnee)
 #   [2006] Show remaining flasks
-# [[2100]] Leveling - RARES
-#   [2101] Leveling rares - tier list
-#   [2102] Leveling rares - remaining rules
-# [[2200]] Leveling - Useful items
-#   [2201] Leveling RGB Exceptions 3L
-#   [2202] Jewellery & Helpful Leveling and racing gear
-#   [2203] Caster weapons
-#   [2204] Linked gear
-#   [2205] 20% quality items for those strange people who want them
-# [[2300]] Leveling - normal and magic item progression
-#   [2301] Normal items - First 12 levels - exceptions
-#   [2302] Normal weapons - progression
-#   [2303] Magic items - progression
-# [[2400]] HIDE LAYER 5 - Remaining Items
-# [[2500]] CATCHALL - if you see pink items - send me a mail please - should never happen
-# [[2600]] Special thanks to!
+# [[2100]] Leveling - Exceptions
+# [[2200]] Leveling - RARES
+#   [2201] Leveling rares - tier list
+#   [2202] Leveling rares - remaining rules
+# [[2300]] Leveling - Useful items
+#   [2301] Jewellery & Helpful Leveling and racing gear
+#   [2302] Caster weapons
+#   [2303] Linked gear
+#   [2304] 20% quality items for those strange people who want them
+# [[2400]] Leveling - normal and magic item progression
+#   [2401] Normal items - First 12 levels - exceptions
+#   [2402] Normal weapons - progression
+#   [2403] Magic items - progression
+# [[2500]] HIDE LAYER 5 - Remaining Items
+# [[2600]] CATCHALL - if you see pink items - send me a mail please - should never happen
+# [[2700]] Special thanks to!
 
 #===============================================================================================================
 # [[0100]] OVERRIDE AREA 1 - Override ALL rules here (includes 6links etc, be careful)
@@ -244,9 +243,9 @@ Show #$crafting %TB-Top-Atlas-Bases
 	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
 	Rarity <= Rare
 	SetFontSize 42
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 100 75 0 255      # BACKGROUND:	 Atlas bases
+	SetTextColor 255 255 255             # TEXTCOLOR:	 Atlas cosmetic highlight
+	SetBorderColor 255 255 255           # BORDERCOLOR:	 Atlas cosmetic highlight
+	SetBackgroundColor 255 125 0 255     # BACKGROUND:	 Atlas bases
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show #$crafting %TB-Atlas-Bases
@@ -571,7 +570,7 @@ Show #$chisel, recipes %TB-Gavels %D2
 #------------------------------------
 #   [0214] Fishing Rod
 #------------------------------------
-# Give a man a fish and he won't be hungy for a day, teach a man to fish and GGG will ban you for disclosing fishing secrets.
+# Give a man a fish and he won't be hungry for a day, teach a man to fish and GGG will ban you for disclosing fishing secrets.
 
 Show # %TC-Secret
 	Class "Fishing Rod"
@@ -781,11 +780,7 @@ Show # %H3 %TB-Currency-T7
 #===============================================================================================================
 
 #------------------------------------
-#   [0601] Rare Atlas bases (84+)
-#------------------------------------
-
-#------------------------------------
-#   [0602] Rare crafting bases
+#   [0601] Rare crafting bases
 #------------------------------------
 
 Show #$topcrafting, ilvl84 %TB-T1-Crafting
@@ -826,7 +821,7 @@ Show #$topcrafting, ilvl83 %D2 %TB-T2-Crafting-83
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 #------------------------------------
-#   [0603] T1 rare items
+#   [0602] T1 rare items
 #------------------------------------
 
 Show #$great, weapons, small %TB-RARE-T1-WepSmall
@@ -878,7 +873,7 @@ Show #$great, armor, bulky %TB-RARE-T1-Arm
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 #------------------------------------
-#   [0604] T1.5 rare items
+#   [0603] T1.5 rare items
 #------------------------------------
 
 Show #$great, armor, small %H4 %TB-RARE-T1.5-Arm
@@ -898,7 +893,7 @@ Show #$great, armor, small %H4 %TB-RARE-T1.5-Arm
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 #------------------------------------
-#   [0605] T2 rare items
+#   [0604] T2 rare items
 #------------------------------------
 
 Show #$great, weapons, small %HB3 %TB-RARE-T2-WepSmall
@@ -987,7 +982,7 @@ Show #$great, armor, bulky %HB3 %TB-RARE-T2-Arm
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 #------------------------------------
-#   [0606] Breach Rings
+#   [0605] Breach Rings
 #------------------------------------
 
 Show #$great, tiny, breach
@@ -1009,7 +1004,7 @@ Show #$great, tiny, breach
 	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
 
 #------------------------------------
-#   [0607] Amulets, Jewels, Rings, Belts
+#   [0606] Amulets, Jewels, Rings, Belts
 #------------------------------------
 #Amulets, rings and jewels don't care much about the droplevel
 #Also they're small, making them the ideal loottype. Always highlight them in a special (lime-green) hue
@@ -1039,7 +1034,7 @@ Show #$great, tiny %TC-Rare-Trinkets
 	SetBackgroundColor 30 90 45 225      # BACKGROUND:	 Rares - Basetype - Great
 
 #------------------------------------
-#   [0608] 1H Daggers
+#   [0607] 1H Daggers
 #------------------------------------
 
 Show #$good, small, autosmall %HB2 %TD-Rare-Good-Daggers
@@ -1062,7 +1057,7 @@ Show #$good, small, autosmall %HB2 %TD-Rare-Good-Daggers
 	SetBackgroundColor 30 90 45 255      # BACKGROUND:	 Rares - Basetype - Good
 
 #------------------------------------
-#   [0609] 1H Claws
+#   [0608] 1H Claws
 #------------------------------------
 
 Show #$good, small, autosmall %HB2 %TD-Rare-Good-Claws
@@ -1104,7 +1099,7 @@ Hide #$bad, small, autosmall %H1 %TD-Rare-Bad-Claws
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0610] 1H Wands
+#   [0609] 1H Wands
 #------------------------------------
 
 Show #$good, small, autosmall %HB2 %TD-Rare-Good-Wands
@@ -1127,7 +1122,7 @@ Show #$good, small, autosmall %HB2 %TD-Rare-Good-Wands
 	SetBackgroundColor 30 90 45 255      # BACKGROUND:	 Rares - Basetype - Good
 
 #------------------------------------
-#   [0611] 1H Swords and Foils
+#   [0610] 1H Swords and Foils
 #------------------------------------
 
 Show #$good, small %D2 %TD-Rare-Good-Swords
@@ -1215,7 +1210,7 @@ Hide #$bad %H1 %TD-Rare-Bad-Swords
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0612] 1H Axes and Maces
+#   [0611] 1H Axes and Maces
 #------------------------------------
 Show #$good %HB2 %TB-Rare-Good-Maces-Axes
 	Class "One Hand Axes" "One Hand Maces"
@@ -1279,7 +1274,7 @@ Hide #$bad %H1 %TD-Rare-Bad-Maces-Axes
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0613] 1H Sceptres
+#   [0612] 1H Sceptres
 #------------------------------------
 
 Show #$good %HB2 %TD-Rare-Good-Sceptres
@@ -1302,7 +1297,7 @@ Show #$good %HB2 %TD-Rare-Good-Sceptres
 	SetBackgroundColor 30 90 45 255      # BACKGROUND:	 Rares - Basetype - Good
 
 #------------------------------------
-#   [0614] 2H Staves
+#   [0613] 2H Staves
 #------------------------------------
 
 #Show #$good, bulky %D1 %TD-Rare-Good-Staves
@@ -1363,7 +1358,7 @@ Hide #$bad, bulky %H1 %TD-Rare-Bad-Staves
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0615] 2H Swords, Axes, Maces
+#   [0614] 2H Swords, Axes, Maces
 #------------------------------------
 
 Show #$good, bulky %HB1 %TD-Rare-Good-2H-Axes-Maces-Swords
@@ -1403,7 +1398,7 @@ Hide #$bad, bulky %H1 %TD-Rare-Bad-2H-Axes-Maces-Swords
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0616] 2H Bows
+#   [0615] 2H Bows
 #------------------------------------
 
 Show #$good, bulky %D2 %TD-Rare-Good-Bows
@@ -1445,7 +1440,7 @@ Hide #$bad, bulky %H1 %TD-Rare-Bad-Bows
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0617] AR: Gloves, Boots, Helmets
+#   [0616] AR: Gloves, Boots, Helmets
 #------------------------------------
 
 Show #$good, small, autosmall %HB2 %TD-Rare-Good-SmallArmor
@@ -1487,7 +1482,7 @@ Hide #$bad, small, autosmall %H1 %TD-Rare-Bad-SmallArmor
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0618] AR: Body Armors
+#   [0617] AR: Body Armors
 #------------------------------------
 
 Hide #ok, hybrid %H1 %TB-Rare-Hybrid-Exceptions
@@ -1546,7 +1541,7 @@ Hide #$bad %H1 %TD-Rare-Bad-Armor
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0619] OH: Shields
+#   [0618] OH: Shields
 #------------------------------------
 
 Show #$good, small %HB2 %TD-Rare-Good-Shields
@@ -1712,7 +1707,7 @@ Hide #$bad %H1 %TD-Rare-Bad-Shields
 	SetBackgroundColor 120 20 20 150     # BACKGROUND:	 Rares - Basetypes - Bad.
 
 #------------------------------------
-#   [0620] OH: Quivers
+#   [0619] OH: Quivers
 #------------------------------------
 
 Show #$good %HB2 %TB-Rare-Good-Quivers
@@ -1735,7 +1730,7 @@ Show #$good %HB2 %TB-Rare-Good-Quivers
 	SetBackgroundColor 30 90 45 255      # BACKGROUND:	 Rares - Basetype - Good
 
 #------------------------------------
-#   [0621] Rare endgame items - remaining rules
+#   [0620] Rare endgame items - remaining rules
 #------------------------------------
 #Catch rares that didn't match any of the entries above
 
@@ -3176,11 +3171,53 @@ Show #$flask, lvl
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #===============================================================================================================
-# [[2100]] Leveling - RARES
+# [[2100]] Leveling - Exceptions
+#===============================================================================================================
+
+Show #$rgb, small, lvl
+	LinkedSockets = 4
+	SocketGroup RGB
+	Class "Gloves" "Boots" "Helmets" "Body Armour"
+	SetFontSize 40
+	SetBorderColor 100 100 200 255       # BORDERCOLOR:	 Leveling: 4-link
+	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+Show #$rgb, small, lvl
+	SocketGroup RGB
+	Width <= 2
+	Height <= 2
+	SetFontSize 38
+	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
+	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+Show #$rgb, small, lvl
+	SocketGroup RGB
+	Width <= 1
+	Height <= 3
+	SetFontSize 38
+	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
+	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+Show #$rgb, bulky, lvl
+	SocketGroup RGB
+	Width >= 2
+	Height >= 4
+	SetFontSize 34
+	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+Show #$rgb, lvl
+	SocketGroup RGB
+	SetFontSize 36
+	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#===============================================================================================================
+# [[2200]] Leveling - RARES
 #===============================================================================================================
 
 #------------------------------------
-#   [2101] Leveling rares - tier list
+#   [2201] Leveling rares - tier list
 #------------------------------------
 
 Show #$Leveling, small, autosmall, bhg, great
@@ -3549,7 +3586,7 @@ Show #$Leveling, good
 	SetBackgroundColor 30 90 45 255      # BACKGROUND:	 Rares - Basetype - Good
 
 #------------------------------------
-#   [2102] Leveling rares - remaining rules
+#   [2202] Leveling rares - remaining rules
 #------------------------------------
 
 Show #$Leveling, small
@@ -3603,53 +3640,11 @@ Show #Leveling, ok
 	SetBackgroundColor 0 0 0 225         # BACKGROUND:	 Rares - Basetype - OK
 
 #===============================================================================================================
-# [[2200]] Leveling - Useful items
+# [[2300]] Leveling - Useful items
 #===============================================================================================================
 
 #------------------------------------
-#   [2201] Leveling RGB Exceptions 3L
-#------------------------------------
-
-Show #$rgb, small, lvl
-	LinkedSockets = 4
-	SocketGroup RGB
-	Class "Gloves" "Boots" "Helmets" "Body Armour"
-	SetFontSize 40
-	SetBorderColor 100 100 200 255       # BORDERCOLOR:	 Leveling: 4-link
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, small, lvl
-	SocketGroup RGB
-	Width <= 2
-	Height <= 2
-	SetFontSize 38
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, small, lvl
-	SocketGroup RGB
-	Width <= 1
-	Height <= 3
-	SetFontSize 38
-	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, bulky, lvl
-	SocketGroup RGB
-	Width >= 2
-	Height >= 4
-	SetFontSize 34
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-Show #$rgb, lvl
-	SocketGroup RGB
-	SetFontSize 36
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#------------------------------------
-#   [2202] Jewellery & Helpful Leveling and racing gear
+#   [2301] Jewellery & Helpful Leveling and racing gear
 #------------------------------------
 
 Show #topaz ring for act 2+3 racing %TB-LVL35-Trinkets
@@ -3755,7 +3750,7 @@ Show #$trinkets, lvl, quivers
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #------------------------------------
-#   [2203] Caster weapons
+#   [2302] Caster weapons
 #------------------------------------
 
 Show #$lvl, caster
@@ -3774,7 +3769,7 @@ Show #$lvl, caster
 	SetBorderColor 100 100 100 255       # BORDERCOLOR:	 Leveling: strong highlight
 
 #------------------------------------
-#   [2204] Linked gear
+#   [2303] Linked gear
 #------------------------------------
 
 Show #$lvl, links
@@ -3854,7 +3849,7 @@ Show #$lvl, other
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
 
 #------------------------------------
-#   [2205] 20% quality items for those strange people who want them
+#   [2304] 20% quality items for those strange people who want them
 #------------------------------------
 
 Show #$recipe, quality, lvl, nonmf
@@ -3866,11 +3861,11 @@ Show #$recipe, quality, lvl, nonmf
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
 #===============================================================================================================
-# [[2300]] Leveling - normal and magic item progression
+# [[2400]] Leveling - normal and magic item progression
 #===============================================================================================================
 
 #------------------------------------
-#   [2301] Normal items - First 12 levels - exceptions
+#   [2401] Normal items - First 12 levels - exceptions
 #------------------------------------
 
 Show #$start, lvl, bulky
@@ -3918,7 +3913,7 @@ Show #$start, lvl
 	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
-#   [2302] Normal weapons - progression
+#   [2402] Normal weapons - progression
 #------------------------------------
 
 Show # %TC-LVL-Weapons
@@ -4147,7 +4142,7 @@ Show # %TC-LVL-Weapons
 	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #------------------------------------
-#   [2303] Magic items - progression
+#   [2403] Magic items - progression
 #------------------------------------
 
 Show #$start, lvl, bulky
@@ -4210,7 +4205,7 @@ Show
 	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #===============================================================================================================
-# [[2400]] HIDE LAYER 5 - Remaining Items
+# [[2500]] HIDE LAYER 5 - Remaining Items
 #===============================================================================================================
 
 Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
@@ -4220,7 +4215,7 @@ Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
 	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
 
 #===============================================================================================================
-# [[2500]] CATCHALL - if you see pink items - send me a mail please - should never happen
+# [[2600]] CATCHALL - if you see pink items - send me a mail please - should never happen
 #===============================================================================================================
 
 Show # SafetyLine!
@@ -4229,7 +4224,7 @@ Show # SafetyLine!
 	SetBorderColor 255 0 255 255         # BORDERCOLOR:	 SAFETY LINE
 
 #===============================================================================================================
-# [[2600]] Special thanks to!
+# [[2700]] Special thanks to!
 #===============================================================================================================
 #
 # COMMUNITY:
