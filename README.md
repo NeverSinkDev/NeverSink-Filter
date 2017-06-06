@@ -1,12 +1,10 @@
-[ FILTERBLADE ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[SUBVERSIONS](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ]
+[ **[FILTERBLADE](FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[SUBVERSIONS](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ]
 
 --------------------------
 
 **FILTER VERSIONS:**
 
 --------------------------
-
-
 
 - **Regular** = Shows all rares and a lot of "potentially useful items", great for new leagues, new players and solo selffound environments.
 - **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
@@ -19,6 +17,14 @@ You can find more details about the differences of the individual versions **[he
 If you want to support the the project or show your appreciation feel free to **[buy me a beer / donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**
 
 **NOTE:** The filter itself will always be free, including updates. There will never be any premium/donator versions or options!
+
+--------------------------
+
+**FILTERBLADE:**
+
+--------------------------
+
+This is a project we've been working on for the past monthes: *[filterblade.xyz](http://www.filterblade.xyz)** . You can download and customize and do tons of awesome things to the lootfilter in a super comfy interface here.
 
 --------------------------
 
@@ -51,14 +57,6 @@ Different styles have the same filtering pattern and also have the same filter s
 5) Done. Enjoy.
 
 I recommend using NotePad++ to edit the filter.
-
---------------------------
-
-**FILTERBLADE:**
-
---------------------------
-
-Yes, it's not public yet ;).Coming soon... **[filterblade.xyz](http://www.filterblade.xyz)**
 
 --------------------------
 
