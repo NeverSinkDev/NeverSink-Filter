@@ -11,6 +11,7 @@
 - **Strict** = Shows the top ~35% of all rares, hides most recipes and crafting bases. Designed for optimized builds, that want to farm/grind effectively.
 - **Very Strict** = Shows the top ~15% of all rares, hides scrolls, armorers and augmentations. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
 - **Uber Strict** = Shows the top ~5% of all rares, hides transmutations and whetstones. Advised for insanely fast builds, such as vaal spark and well organized parties.
+- **Uber Strict** = No rares, no currency under an alch, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Customize on filterblade and don't complain if it's too strict.
 
 You can find more details about the differences of the individual versions **[here](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)**.
 
