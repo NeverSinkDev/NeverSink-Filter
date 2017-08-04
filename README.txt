@@ -22,6 +22,7 @@ Semi-Strict = Hides several bulky/bad rares. Nice balance of hidden/shown items 
 Strict = Hides the majority of all rares in the endgame. Designed for well geared players.
 Very-Strict = Hides the majority of all rares in the endgame, portal scrolls, wisdom scrolls. Great for speedrunning.
 Uber-Strict = Crazy filtering level. It displays only the Creme de la Creme. Hides low orbs, most rares... You've been warned.
+Uber-Plus-Strict = No rares. Nothing under a chaos/alch tier. Don't complain, it's a clear screen 99% of the time.
 
 NOTE: The filter itself will always be free, including updates. There will NOT be premium/donator versions or options!
 
