@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.0.1
+# VERSION:		5.1
 # TYPE:			6-UBER-PLUS-STRICT
 # STYLE:			SLICK
 # AUTHOR:		NeverSink
@@ -206,9 +206,9 @@ Show # 6-Sockets %TB-6S-Rare-Weapons
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
-Show # 6-Sockets %UP
+Show # 6-Sockets
 	Sockets 6
-	Rarity <= Rare
+	Rarity = Rare
 	ItemLevel >= 75
 	SetFontSize 45
 	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
@@ -216,7 +216,7 @@ Show # 6-Sockets %UP
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
-Show
+Show # 6-Sockets
 	Sockets 6
 	Rarity <= Rare
 	SetFontSize 45
@@ -297,7 +297,7 @@ Show #$crafting %TB-Atlas-Bases
 #	BaseType "Flask"
 #	Rarity <= Magic
 #	ItemLevel > 65
-#	SetFontSize 36
+#	SetFontSize 38
 #	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
 
@@ -306,8 +306,27 @@ Show #$crafting %TB-Atlas-Bases
 #	BaseType "Flask"
 #	Rarity <= Magic
 #	ItemLevel > 65
+#	SetFontSize 36
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
+
+#Show #$flask, utility %D1
+#	Class "Life Flasks"
+#	BaseType "Divine" "Eternal"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	ItemLevel < 72
+#	SetFontSize 36
+#	SetBorderColor 120 0 0
+
+#Show #$flask, utility %D1
+#	Class "Mana Flasks"
+#	BaseType "Divine" "Eternal"
+#	Rarity <= Magic
+#	ItemLevel > 65
+#	ItemLevel < 72
+#	SetFontSize 36
+#	SetBorderColor 0 0 120
 
 #Show #$flask, utility %D2
 #	Class "Utility Flasks"
@@ -344,7 +363,7 @@ Show #$lead to gold bases %TC-Corrupted-Bases
 
 # TO ADD AN ITEM ATTACH IT'S NAME TO THE BASAETYPE'S IN ONE OF THE 2 ENTRIES BELOW.
 # Example, to add Agate amulet:
-# BaseType "Sorcerer Boots" "Agate Amulet"
+# BaseType "Sorcerer Boots"
 
 #Show #$chancing (with sound) %TB-T1-Chancing %D4
 #	BaseType "Glorious Plate"
@@ -361,7 +380,7 @@ Show #$lead to gold bases %TC-Corrupted-Bases
 #	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
 
 #Show #$chancing (no sound) %TB-T2-Chancing %D1
-#	BaseType "Occultist's Vestment" "Prophecy Wand" "Goathide Boots" "Sorcerer Boots"
+#	BaseType "Occultist's Vestment" "Prophecy Wand" "Goathide Boots" "Sorcerer Boots" "Glorious Plate"
 #	Rarity Normal
 #	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
 #	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
@@ -718,7 +737,7 @@ Show #$crafting, exception %TB-Special-AlwaysShow-Bases
 #===============================================================================================================
 
 Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
-	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets" "Flask"
+	Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Daggers" "Shields" "Belts" "Rings" "Amulets"
 	Rarity < Rare
 	ItemLevel > 60
 	SetFontSize 18
@@ -747,7 +766,7 @@ Hide # %H4 %TB-Currency-T5
 
 Hide # %H2 %TB-Currency-T6
 	Class Currency
-	BaseType "Armourer's Scrap" "Orb of Augmentation" "Alteration Shard"
+	BaseType "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
 	SetFontSize 40
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
@@ -756,18 +775,18 @@ Hide # %H2 %TB-Currency-T6
 Hide # %H3 %TB-Currency-T7
 	Class Currency
 	BaseType "Portal Scroll"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
-	SetBorderColor 120 50 30 255         # BORDERCOLOR: T3 Portal scroll
-	SetBackgroundColor 0 0 0 200         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetBorderColor 30 50 80 255          # BORDERCOLOR: T3 Portal scroll
+	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
-Hide # %H1 %TB-Currency-T8
+Hide # %H2 %TB-Currency-T8
 	Class Currency
 	BaseType "Scroll of Wisdom"
-	SetFontSize 38
+	SetFontSize 36
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
-	SetBackgroundColor 0 0 0 200         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 
 #===============================================================================================================
 # [[0500]] OVERRIDE AREA 2 - Override the default rare rulesets here
@@ -864,7 +883,7 @@ Hide # %H1 %TB-Currency-T8
 #	BaseType "Gemini Claw" "Imperial Claw" "Tornado Wand" "Opal Wand" "Prophecy Wand" "Vaal Rapier" "Harpy Rapier" "Profane Wand" "Jewelled Foil" "Spiraled Foil" "Skean" "Kris" "Demon Dagger" "Siege Axe"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 38
+#	SetFontSize 40
 #	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
 #	SetBackgroundColor 10 60 25 255      # BACKGROUND:	 Rares - T2
 
@@ -872,7 +891,7 @@ Hide # %H1 %TB-Currency-T8
 #	BaseType "Vaal Axe" "Coronal Maul" "Harbinger Bow"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 38
+#	SetFontSize 40
 #	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 #	SetBackgroundColor 10 60 25 255      # BACKGROUND:	 Rares - T2
 
@@ -880,7 +899,7 @@ Hide # %H1 %TB-Currency-T8
 #	BaseType "Void Sceptre" "Sambar Sceptre"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 38
+#	SetFontSize 40
 #	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 #	SetBackgroundColor 10 60 25 255      # BACKGROUND:	 Rares - T2
 
@@ -888,15 +907,15 @@ Hide # %H1 %TB-Currency-T8
 #	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Sinner Tricorne" "Solaris Circlet" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 38
+#	SetFontSize 40
 #	SetBorderColor 180 180 180 255       # BORDERCOLOR:	 Rares - Size - Small (+Great basetype)
 #	SetBackgroundColor 10 60 25 255      # BACKGROUND:	 Rares - T2
 
 #Show #$great, armor, bulky %D3 %TB-RARE-T2-Arm %UP
-#	BaseType "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield"
+#	BaseType "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 38
+#	SetFontSize 40
 #	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 #	SetBackgroundColor 10 60 25 255      # BACKGROUND:	 Rares - T2
 
@@ -909,7 +928,7 @@ Hide # %H1 %TB-Currency-T8
 #	BaseType "Breach"
 #	Rarity <= Rare
 #	ItemLevel >= 75
-#	SetFontSize 38
+#	SetFontSize 36
 #	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
 #	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
 #	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
@@ -918,7 +937,7 @@ Hide # %H1 %TB-Currency-T8
 #	Class Rings
 #	BaseType "Breach"
 #	Rarity <= Rare
-#	SetFontSize 38
+#	SetFontSize 36
 #	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
 #	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
 
@@ -961,7 +980,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class Daggers
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -982,7 +1001,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class Claws
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -1003,7 +1022,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class Wands
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -1026,7 +1045,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "One Hand Swords"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -1049,8 +1068,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "One Hand Swords"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1070,8 +1089,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "One Hand Maces"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1091,8 +1110,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "One Hand Maces"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1112,8 +1131,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Sceptres"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1133,8 +1152,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Staves"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1154,8 +1173,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Two Hand"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1175,8 +1194,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Bows"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1184,7 +1203,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #------------------------------------
 
 #Show #$R-T3, small, autosmall %D2 %TD-Rare-Good-SmallArmor %UP
-#	DropLevel >= 40
+#	DropLevel >= 15
 #	Class "Gloves" "Boots" "Helmets"
 #	Rarity Rare
 #	ItemLevel >= 65
@@ -1196,7 +1215,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Gloves" "Boots" "Helmets"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -1205,7 +1224,7 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #------------------------------------
 
 #Show #$R-T3 %D2 %TD-Rare-Good-Armor %UP
-#	DropLevel >= 59
+#	DropLevel >= 50
 #	Class "Body Armour"
 #	Rarity Rare
 #	ItemLevel >= 65
@@ -1217,8 +1236,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Body Armour"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1242,8 +1261,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Shields"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #Show #$R-T3, small %D2 %UP %TD-Rare-Good-Big-Shields
@@ -1259,8 +1278,8 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 #	Class "Shields"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetFontSize 30
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 #------------------------------------
@@ -1269,18 +1288,18 @@ Show #$trinkets, jewels, tiny %TC-Rare-Jewels
 
 #Show #$RT3 %D2 %TB-Rare-Good-Quivers %UP
 #	Class "Quivers"
-#	BaseType "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
+#	BaseType "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver"
 #	Rarity Rare
 #	ItemLevel >= 65
 #	SetFontSize 34
-#	SetBorderColor 0 0 0 220             # BORDERCOLOR:	 Rares - Size - OK (+Bad base)
+#	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 219         # BACKGROUND:	 Rares - T3
 
 #Show #$R-T4 %D1 %UP
 #	Class "Quivers"
 #	Rarity Rare
 #	ItemLevel >= 65
-#	SetFontSize 26
+#	SetFontSize 30
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 #	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
@@ -1399,7 +1418,7 @@ Show
 #   [0902] Other gems
 #------------------------------------
 
-Show
+Hide # %H5
 	Quality >= 1
 	Class Gems
 	SetFontSize 40
@@ -1595,7 +1614,7 @@ Show # Maps:T11
 Show # Maps:T10
 	DropLevel >= 77
 	Class Maps
-	SetFontSize 42
+	SetFontSize 45
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Mid tier maps
 
@@ -1615,7 +1634,7 @@ Show # Maps:T9
 	DropLevel >= 76
 	Class Maps
 	BaseType "Shaped"
-	SetFontSize 40
+	SetFontSize 42
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Mid tier maps
 
@@ -1643,7 +1662,7 @@ Show # Maps:T8
 	DropLevel >= 75
 	Class Maps
 	BaseType "Shaped"
-	SetFontSize 40
+	SetFontSize 42
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Mid tier maps
 
@@ -1671,7 +1690,7 @@ Show # Maps:T7
 	DropLevel >= 74
 	Class Maps
 	BaseType "Shaped"
-	SetFontSize 40
+	SetFontSize 42
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Mid tier maps
 
@@ -1699,7 +1718,7 @@ Show # Maps:T6
 	DropLevel >= 73
 	Class Maps
 	BaseType "Shaped"
-	SetFontSize 40
+	SetFontSize 42
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Mid tier maps
 
@@ -1720,7 +1739,7 @@ Hide # Maps:T6 %H4
 #	Class Maps
 #	ItemLevel < 79
 #	SetFontSize 38
-#	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
+#	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
 #	PlayAlertSound 4 100                 # DROPSOUND:	 Low tier maps
 
 Hide # Maps:T5 %H3
@@ -1740,7 +1759,7 @@ Hide # Maps:T4 - OnLevel %H5
 	Class Maps
 	ItemLevel < 78
 	SetFontSize 38
-	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
+	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
 
 Hide # Maps:T4 %H3
 	DropLevel >= 71
@@ -1759,7 +1778,7 @@ Hide # Maps:T3 - OnLevel %H5
 	Class Maps
 	ItemLevel < 77
 	SetFontSize 38
-	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
+	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
 
 Hide # Maps:T3 %H3
 	DropLevel >= 70
@@ -1778,7 +1797,7 @@ Hide # Maps:T2 - OnLevel %H5
 	Class Maps
 	ItemLevel < 76
 	SetFontSize 38
-	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
+	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
 
 Hide # Maps:T2 %H3
 	DropLevel = 69
@@ -1797,7 +1816,7 @@ Hide # Maps:T1 - OnLevel %H5
 	Class Maps
 	ItemLevel < 75
 	SetFontSize 38
-	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Highlight - low maps, low priority items
+	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
 
 Hide # Maps:T1 %H3
 	DropLevel < 69
@@ -1855,8 +1874,25 @@ Show # %TB-Fragments-T2
 	SetBackgroundColor 180 0 0 255       # BACKGROUND:	 Fragments - valuable
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
+Show # %TB-Fragments-Vessel
+	Class "Map Fragments"
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 180 0 0 255       # BACKGROUND:	 Fragments - valuable
+	PlayAlertSound 2 300
+
 Show
-	Class "Map Fragments" "Pantheon Soul"
+	Class "Pantheon Soul"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 180 0 0 255       # BACKGROUND:	 Fragments - valuable
+	PlayAlertSound 2 300
+
+Show
+	Class "Map Fragments"
 	SetFontSize 42
 	SetTextColor 180 0 0 255             # TEXTCOLOR:	 Map fragments
 	SetBorderColor 180 0 0 255           # BORDERCOLOR:	 Fragments: Random
@@ -1882,7 +1918,7 @@ Show # %TB-Currency-T1.5
 
 Show # %TB-Currency-T2
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard"
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -1900,26 +1936,25 @@ Show # %TB-Currency-T3
 
 Show # %TB-Currency-Harbinger-ShardsT1
 	Class Currency
-	BaseType "Annulment Shard" "Harbinger's Shard"
+	BaseType "Annulment Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+	SetBorderColor 40 220 255 255        # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 190 158 130 255   # BACKGROUND:	 Harbinger Item - Shard
 	PlayAlertSound 12 300                # DROPSOUND:	 Shard Dropsound
 
-Show # %TB-Currency-Harbinger-ShardsT2
+Hide # %TB-Currency-Harbinger-ShardsT2 %H5
 	Class Currency
-	BaseType "Horizon Shard" "Engineer's Shard" "Ancient Shard" "Binding Shard"
-	SetFontSize 40
+	BaseType "Horizon Shard" "Engineer's Shard" "Binding Shard"
+	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 190 158 130 255   # BACKGROUND:	 Harbinger Item - Shard
-	PlayAlertSound 12 300                # DROPSOUND:	 Shard Dropsound
+	SetBackgroundColor 135 140 100 255   # BACKGROUND:	 Currency Shards Old
 
-Hide # %TB-Currency-Harbinger-ShardsT2 %HS4
+Hide # %TB-Currency-Harbinger-ShardsT2 %H5
 	Class Currency
 	BaseType "Regal Shard" "Chaos Shard"
-	SetFontSize 40
+	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 135 140 100 255   # BACKGROUND:	 Currency Shards Old
@@ -1944,7 +1979,7 @@ Show #$top %TB-Voiced-Mirror
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound ShMirror 300          # DROPSOUND:	 MIRROR
+	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show #$top %TB-Voiced-Exalted
 	Class Currency
@@ -1953,7 +1988,7 @@ Show #$top %TB-Voiced-Exalted
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound ShExalted 300         # DROPSOUND:	 EXALTED
+	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show #$top %TB-Voiced-Divine
 	Class Currency
@@ -1962,7 +1997,7 @@ Show #$top %TB-Voiced-Divine
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound ShDivine 300          # DROPSOUND:	 DIVINE
+	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 #------------------------------------
 #   [1303] Essence Tier List
@@ -2053,7 +2088,7 @@ Hide # Splinter %HS4
 Show
 	Class Currency
 	BaseType "Perandus Coin"
-	SetFontSize 40
+	SetFontSize 42
 	SetTextColor 255 178 135 255         # TEXTCOLOR:	 Perandus Coins
 	SetBorderColor 255 178 135 135       # BORDERCOLOR:	 Perandus Coin
 
@@ -2069,7 +2104,7 @@ Show # %TB-Currency-NonDrop1
 Show # %TB-Currency-NonDrop2
 	Class Currency
 	BaseType "Prophecy"
-	SetFontSize 40
+	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 159 15 213        # BACKGROUND:	 Itemized Prophecy
@@ -2098,7 +2133,7 @@ Show # %TB-Divination-Exception
 
 Show # %TB-Divination-T1
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Bowyer's Dream" "House of Mirrors" "Hunter's Reward" "Last Hope" "Mawr Blaidd" "Polymath" "Spark and the Flame" "The Artist" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Ethereal" "The Fiend" "The Immortal" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Bowyer's Dream" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Vast" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2111,7 +2146,7 @@ Show # %TB-Divination-T1
 
 Show # %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Lucky Deck" "Pride Before the Fall" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Cursed King" "The Dapper Prodigy" "The Enlightened" "The Fletcher" "The Hoarder" "The Hunger" "The King's Heart" "The Standoff" "The Union" "The Void" "Time-Lost Relic"
+	BaseType "Chaotic Disposition" "Emperor of Purity" "Heterochromia" "Last Hope" "Saint's Treasure" "The Cartographer" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Porcupine" "The Saint's Treasure" "The Sephirot" "The Soul" "The Standoff" "The Void" "The Warlord" "The Wolf" "The Wolven King's Bite"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -2124,7 +2159,7 @@ Show # %TB-Divination-T2
 
 Show # %TB-Divination-T3
 	Class "Divination"
-	BaseType "Emperor of Purity" "Heterochromia" "Humility" "Jack in the Box" "Merciless Armament" "Scholar of the Seas" "Standoff" "The Aesthete" "The Body" "The Chains that Bind" "The Dark Mage" "The Formless Sea" "The Inventor" "The Porcupine" "The Risk" "The Road to Power" "The Stormcaller" "The Trial" "The Valley of Steel Boxes" "The Warlord" "The Watcher" "The Wind" "The Wolf" "The Wolven King's Bite" "The Wretched" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
+	BaseType "Earth Drinker" "Humility" "Jack in the Box" "Lucky Deck" "Merciless Armament" "Rats" "Standoff" "The Aesthete" "The Body" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Risk" "The Scavenger" "The Stormcaller" "The Sun" "The Trial" "The Tyrant" "The Valley of Steel Boxes" "The Watcher" "The Wind" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2160,7 +2195,7 @@ Hide # %HS4
 
 Hide # %H2 %TB-Currency-T8
 	Class Currency
-	BaseType "Scroll Fragment" "Transmutation Shard"
+	BaseType "Scroll Fragment"
 	SetFontSize 28
 	SetTextColor 170 158 130 165         # TEXTCOLOR:	 Low currency T4
 
@@ -2244,7 +2279,7 @@ Show # 6-Links
 #------------------------------------
 
 Show # %TB-Uniques-T1
-	BaseType "Bismuth Flask" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Greatwolf Talisman" "Hubris Circlet" "Imperial Maul" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Sorcerer Boots" "Topaz Flask" "Vaal Mask" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet"
+	BaseType "Arcanist Gloves" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Cutlass" "Eternal Sword" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Greatwolf Talisman" "Imperial Maul" "Jewelled Foil" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Sorcerer Boots" "Topaz Flask" "Void Axe"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -2266,7 +2301,7 @@ Show # 5-Links
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2
-	BaseType "Abyssal Axe" "Arcanist Gloves" "Assassin's Garb" "Carnal Sceptre" "Citrine Amulet" "Crystal Belt" "Deicide Mask" "Gold Ring" "Highborn Staff" "Imperial Staff" "Jingling Spirit Shield" "Sacrificial Garb" "Sacrificial Garb" "Silver Flask" "Stibnite Flask" "Trapper Boots" "Ursine Pelt" "Vaal Axe" "Close Helmet"
+	BaseType "Abyssal Axe" "Archon Kite Shield Piece" "Assassin's Garb" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Carnal Sceptre" "Champion Kite Shield" "Citrine Amulet" "Cloth Belt Piece" "Corrugated Buckler" "Crystal Belt" "Deicide Mask" "Exquisite Leather" "Ezomyte Burgonet" "Highborn Staff" "Imperial Skean" "Imperial Staff" "Judgement Staff" "Maelström Staff" "Mosaic Kite Shield" "Nightmare Bascinet" "Rawhide Tower Shield" "Sacrificial Garb" "Sacrificial Garb" "Stibnite Flask" "Terror Maul" "Ursine Pelt" "Vaal Axe" "Vaal Mask" "Vaal Sceptre" "Vanguard Belt" "Varnished Coat" "Wereclaw Talisman" "Wyrmscale Doublet"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2282,7 +2317,7 @@ Show # %TB-Uniques-T2
 # Sound to prevent false excitement.
 
 Show # %TB-Uniques-T2-MultiBase
-	BaseType "Ebony Tower Shield" "Goathide Boots" "Leather Belt" "Onyx Amulet" "Two-Stone Ring"
+	BaseType "Ebony Tower Shield" "Goathide Boots" "Onyx Amulet"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
