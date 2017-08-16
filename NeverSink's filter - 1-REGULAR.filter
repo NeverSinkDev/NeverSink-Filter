@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.1.1
+# VERSION:		5.1.2
 # TYPE:			1-REGULAR
 # STYLE:		NORMAL
 # AUTHOR:		NeverSink
@@ -42,9 +42,9 @@
 #   [0202] 5-Linked items
 #   [0203] 6-Socket Items
 #   [0204] Exclusive bases: Atlas bases, talismans (includes Rare rarity)
-#   [0205] FLASKS (Endgame rules)
-#   [0206] Corrupted Amulets
-#   [0207] Chancing items
+#   [0205] Corrupted Amulets
+#   [0206] Chancing items
+#   [0207] FLASKS (Endgame rules)
 #   [0208] Add your own crafting rules here
 #   [0209] 83/84+ Endgame crafting rules
 #   [0210] 60+ Crafting rules for 60++ trinkets
@@ -280,7 +280,56 @@ Show # %TB-Talisman %D5
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #------------------------------------
-#   [0205] FLASKS (Endgame rules)
+#   [0205] Corrupted Amulets
+#------------------------------------
+# Corrupted amulets for rare lab shrines (to turn them rare)
+
+Show #$lead to gold bases %TC-Corrupted-Bases
+	Corrupted True
+	Class Amulet Belt
+	Rarity = Normal
+	SetFontSize 36
+	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
+
+#------------------------------------
+#   [0206] Chancing items
+#------------------------------------
+# You can add your own items here. The items in this section have a dropsound
+
+# LEGACY UNIQUES: THESE UNIQUES CAN ONLY BE CHANCED IN THE CORRECT ZANA-LEAGUE MODS
+# Agate Amulet - ANARCHY ONLY - can be chance to voll's in anarchy maps
+# Leather belt - NEMESIS only - can be chanced into a headhunter belt!
+
+# EXAMPLE OF NON LEGACY UNIQUES:
+# Prophecy wand - Void Battery
+# Judgement Staff - Hegemony's/Pledge of Hands
+
+# TO ADD AN ITEM ATTACH IT'S NAME TO THE BASAETYPE'S IN ONE OF THE 2 ENTRIES BELOW.
+# Example, to add Agate amulet:
+# BaseType "Sorcerer Boots"
+
+#Show #$chancing (with sound) %TB-T1-Chancing %D4
+#	BaseType "Glorious Plate"
+#	Rarity Normal
+#	SetFontSize 38
+#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
+#	SetBorderColor 0 210 0 210           # BORDERCOLOR:	 T1 Chancing
+#	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
+
+Show #$chancing (no sound) %TB-T2-Chancing %D3
+	BaseType "Leather Belt"
+	Rarity Normal
+	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
+	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
+
+Show #$chancing (no sound) %TB-T2-Chancing %D2
+	BaseType "Occultist's Vestment" "Ebony Tower Shield" "Glorious Plate" "Sorcerer Boots" "Close Helmet"
+	Rarity Normal
+	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
+	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
+
+#------------------------------------
+#   [0207] FLASKS (Endgame rules)
 #------------------------------------
 
 Show #$flask, recipe, glass, top %D3
@@ -314,18 +363,16 @@ Show #$flask, utility %D1
 	Class "Life Flasks"
 	BaseType "Divine" "Eternal"
 	Rarity <= Magic
-	ItemLevel > 65
 	ItemLevel < 72
-	SetFontSize 36
+	ItemLevel > 65
 	SetBorderColor 120 0 0               # BORDERCOLOR:	 Life Flask Indicator
 
 Show #$flask, utility %D1
 	Class "Mana Flasks"
 	BaseType "Divine" "Eternal"
 	Rarity <= Magic
-	ItemLevel > 65
 	ItemLevel < 72
-	SetFontSize 36
+	ItemLevel > 65
 	SetBorderColor 0 0 120               # BORDERCOLOR:	 Mana Flask Border
 
 Show #$flask, utility %D2
@@ -335,55 +382,6 @@ Show #$flask, utility %D2
 	SetFontSize 36
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 75 75 75          # BACKGROUND:	 Recipes
-
-#------------------------------------
-#   [0206] Corrupted Amulets
-#------------------------------------
-# Corrupted amulets for rare lab shrines (to turn them rare)
-
-Show #$lead to gold bases %TC-Corrupted-Bases
-	Corrupted True
-	Class Amulet Belt
-	Rarity = Normal
-	SetFontSize 36
-	SetBorderColor 129 15 213 200        # BORDERCOLOR:	 Warband Item
-
-#------------------------------------
-#   [0207] Chancing items
-#------------------------------------
-# You can add your own items here. The items in this section have a dropsound
-
-# LEGACY UNIQUES: THESE UNIQUES CAN ONLY BE CHANCED IN THE CORRECT ZANA-LEAGUE MODS
-# Agate Amulet - ANARCHY ONLY - can be chance to voll's in anarchy maps
-# Leather belt - NEMESIS only - can be chanced into a headhunter belt!
-
-# EXAMPLE OF NON LEGACY UNIQUES:
-# Prophecy wand - Void Battery
-# Judgement Staff - Hegemony's/Pledge of Hands
-
-# TO ADD AN ITEM ATTACH IT'S NAME TO THE BASAETYPE'S IN ONE OF THE 2 ENTRIES BELOW.
-# Example, to add Agate amulet:
-# BaseType "Sorcerer Boots"
-
-#Show #$chancing (with sound) %TB-T1-Chancing %D4
-#	BaseType "Glorious Plate"
-#	Rarity Normal
-#	SetFontSize 38
-#	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-#	SetBorderColor 0 210 0 210           # BORDERCOLOR:	 T1 Chancing
-#	PlayAlertSound 7 300                 # DROPSOUND:	 T1 chancing items
-
-Show #$chancing (no sound) %TB-T2-Chancing %D4
-	BaseType "Leather Belt"
-	Rarity Normal
-	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
-
-Show #$chancing (no sound) %TB-T2-Chancing %D1
-	BaseType "Occultist's Vestment" "Ebony Tower Shield" "Glorious Plate" "Sorcerer Boots" "Close Helmet"
-	Rarity Normal
-	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
-	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 T2 Chancing
 
 #------------------------------------
 #   [0208] Add your own crafting rules here
@@ -404,7 +402,7 @@ Show #$chancing (no sound) %TB-T2-Chancing %D1
 # These entries are non-exclusive bases that are popular for crafting
 
 Show #$crafting %TB-T1-Crafting %D5
-	BaseType "Onyx" "Diamond Ring" "Prismatic" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia" "Two-Stone"
+	BaseType "Onyx Amulet" "Diamond" "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots"
 	Rarity < Rare
 	ItemLevel >= 84
 	SetFontSize 40
@@ -418,8 +416,15 @@ Show #$crafting %TB-T2-Trinket-Bases %D3
 	SetFontSize 38
 	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
 
+Show #$crafting %TB-T2-Crafting-84-ES %D1
+	BaseType "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
+	Rarity < Rare
+	ItemLevel >= 84
+	SetFontSize 36
+	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
+
 Show #$crafting %TB-T2-Crafting-84 %D2
-	BaseType "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Kris"
+	BaseType "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Pinnacle Tower Shield" "Kris" "Prismatic" "Two-Stone" "Astral Plate" "Assassin's Garb"
 	Rarity < Rare
 	ItemLevel >= 84
 	SetFontSize 36
@@ -814,7 +819,7 @@ Show # %H2 %TB-Currency-T8
 #------------------------------------
 
 Show #$topcrafting, ilvl84 %D5 %TB-T1-Crafting
-	BaseType "Onyx Amulet" "Diamond" "Prismatic" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia" "Two-Stone"
+	BaseType "Onyx Amulet" "Diamond" "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots"
 	Rarity Rare
 	ItemLevel >= 84
 	SetFontSize 42
@@ -832,8 +837,17 @@ Show #$topcrafting, ilvl84 %D5 %TB-T2-Crafting-Jwl
 	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
 	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
 
-Show #$topcrafting, ilvl84 %D2 %TB-T2-Crafting-84
-	BaseType "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Pinnacle Tower Shield" "Kris"
+Show #$topcrafting, ilvl84 %D1 %TB-T2-Crafting-84-ES
+	BaseType "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
+	Rarity Rare
+	ItemLevel >= 84
+	SetFontSize 42
+	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 255 255 0 190         # BORDERCOLOR:	 Crafting: T2
+	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
+
+Show #$topcrafting, ilvl84 %D2 %TB-T2-Crafting-84-Rest
+	BaseType "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Pinnacle Tower Shield" "Kris" "Prismatic" "Two-Stone" "Astral Plate" "Assassin's Garb"
 	Rarity Rare
 	ItemLevel >= 84
 	SetFontSize 42
@@ -1316,7 +1330,7 @@ Show
 	SetBackgroundColor 0 0 0 219         # BACKGROUND:	 Rares - T3
 
 Show #$R-T4 %D1 %UP
-	Class "One Hand Maces"
+	Class "One Hand Axes"
 	Rarity Rare
 	ItemLevel >= 75
 	SetFontSize 30
@@ -1325,7 +1339,7 @@ Show #$R-T4 %D1 %UP
 	SetBackgroundColor 0 0 0 120         # BACKGROUND:	 Rares - T4
 
 Show
-	Class "One Hand Maces"
+	Class "One Hand Axes"
 	Rarity Rare
 	ItemLevel >= 65
 	SetFontSize 30
@@ -2306,7 +2320,7 @@ Show
 
 Show # %TB-Currency-T1.5
 	Class Currency
-	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb"
+	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Orb of Annulment" "Ancient Orb"
 	SetFontSize 45
 	SetTextColor 29 0 67 255             # TEXTCOLOR:	 Cosmetic: T1.5 Currency
 	SetBorderColor 29 0 67 255           # BORDERCOLOR:	 Cosmetic: T1.5 Currency
@@ -2315,7 +2329,7 @@ Show # %TB-Currency-T1.5
 
 Show # %TB-Currency-T2
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding"
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Orb of Horizons" "Orb of Binding"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -2362,7 +2376,7 @@ Show # %TB-Currency-Harbinger-ShardsT2 %H5
 
 Show #$top %TB-Currency-T1
 	Class Currency
-	BaseType "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
+	BaseType "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather"
 	SetFontSize 45
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
@@ -2531,7 +2545,7 @@ Show # %TB-Divination-Exception
 
 Show # %TB-Divination-T1
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Bowyer's Dream" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Dapper Prodigy" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Thaumaturgist" "The Vast" "Wealth and Power"
+	BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Spark and the Flame" "The Wolf" "The Wolven King's Bite" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2544,7 +2558,7 @@ Show # %TB-Divination-T1
 
 Show # %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Emperor of Purity" "Heterochromia" "Last Hope" "Saint's Treasure" "The Cartographer" "The Ethereal" "The Hoarder" "The Sephirot" "The Soul" "The Valkyrie" "The Void" "The Wolf" "The Wolven King's Bite"
+	BaseType "Bowyer's Dream" "Chaotic Disposition" "Emperor of Purity" "Heterochromia" "Last Hope" "Saint's Treasure" "The Artist" "The Cartographer" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Saint's Treasure" "The Sephirot" "The Soul" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Void"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -2557,7 +2571,7 @@ Show # %TB-Divination-T2
 
 Show # %TB-Divination-T3
 	Class "Divination"
-	BaseType "Earth Drinker" "Humility" "Jack in the Box" "Lucky Deck" "Merciless Armament" "Rats" "Standoff" "The Body" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Porcupine" "The Risk" "The Scavenger" "The Standoff" "The Stormcaller" "The Sun" "The Trial" "The Tyrant" "The Valley of Steel Boxes" "The Warlord" "The Watcher" "The Wind" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
+	BaseType "Earth Drinker" "Humility" "Jack in the Box" "Lucky Deck" "Rats" "Standoff" "The Body" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Porcupine" "The Risk" "The Scavenger" "The Stormcaller" "The Trial" "The Valley of Steel Boxes" "The Warlord" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite" "Wretched"
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2691,7 +2705,7 @@ Show # Harbinger League Pieces
 #------------------------------------
 
 Show # %TB-Uniques-T1
-	BaseType "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Cutlass" "Eternal Sword" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Sorcerer Boots" "Topaz Flask" "Void Axe"
+	BaseType "Callous Mask" "Carnal Sceptre" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Burgonet" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -2713,7 +2727,7 @@ Show # 5-Links
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2
-	BaseType "Abyssal Axe" "Ancient Gauntlets" "Arcanist Gloves" "Arcanist Slippers" "Assassin's Garb" "Auric Mace" "Bismuth Flask" "Carnal Sceptre" "Champion Kite Shield" "Citrine Amulet" "Cloth Belt Piece" "Corrugated Buckler" "Crystal Belt" "Deicide Mask" "Despot Axe" "Exquisite Leather" "Ezomyte Burgonet" "Highborn Staff" "Imperial Skean" "Imperial Staff" "Jewelled Foil" "Jingling Spirit Shield" "Meatgrinder" "Mosaic Kite Shield" "Nightmare Bascinet" "Opal Wand" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Sacrificial Garb" "Sacrificial Garb" "Stibnite Flask" "Terror Maul" "Ursine Pelt" "Vaal Mask" "Vaal Sceptre" "Vanguard Belt" "Varnished Coat" "War Sword" "Wereclaw Talisman" "Wyrmscale Doublet" "Zealot Gloves" "Maelstr"
+	BaseType "Abyssal Axe" "Ancient Gauntlets" "Arcanist Gloves" "Arcanist Slippers" "Bismuth Flask" "Cedar Tower Shield" "Citadel Bow" "Crystal Belt" "Deicide Mask" "Eternal Sword" "Exquisite Leather" "Gladiator Plate" "Imperial Staff" "Ironscale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Maelstr" "Nightmare Bascinet" "Opal Wand" "Rawhide Tower Shield" "Royal Burgonet" "Sacrificial Garb" "Sacrificial Garb" "Sanctified Life Flask" "Sanctified Mana Flask" "Sorcerer Boots" "Steelhead" "Stibnite Flask" "Terror Maul" "Ursine Pelt" "Vaal Sceptre" "Wyrmscale Doublet" "Zealot Gloves"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2729,7 +2743,7 @@ Show # %TB-Uniques-T2
 # Sound to prevent false excitement.
 
 Show # %TB-Uniques-T2-MultiBase
-	BaseType "Ebony Tower Shield" "Goathide Boots" "Onyx Amulet"
+	BaseType "Citrine Amulet" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Imperial Claw" "Onyx Amulet"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2805,7 +2819,7 @@ Hide #$flask, lvl
 Hide #$flask, lvl
 	Class "Life Flask" "Mana Flask"
 	BaseType Hallowed Sanctified Divine Eternal
-	ItemLevel >= 70
+	ItemLevel >= 67
 	SetFontSize 20
 
 #------------------------------------
