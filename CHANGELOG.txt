@@ -1,25 +1,81 @@
 ----------------------------------
-NeverSink's itemfilter - version 5.1.4 - Minor improvements
+NeverSink's itemfilter - version 5.2 - Racing Update, completely new levelling section, HUGE FilterBlade update
 ----------------------------------
 
 **Filter changelog:**
 
-- Retiered the T1 and T2 rare weapons
-- Moved Stibnite Flask to the multibase-uniques
+- COMPLETELY, entirely reworked the levelling section. It is now much more strict, has more prominent highlights. It took a lot of trial and error and feedback to get it a state, I was pleased in.
 
-----------------------------------
-NeverSink's itemfilter - version 5.1.3 - Finetuning, Filterblade update - (likely) the XBOX version too
-----------------------------------
+- Added a leveling section specific dropsound.
 
-**Filter changelog:**
+- Introduced a lot of flask-related changes. New Utility Flask Background color
 
-- Retiered uniques and divination cards as usual - most noteworthy: Incantation moved to T5 - feel free to move it back on FilterBlade
-- Breach rings are now properly hidden on higher strictness versions (instead of turning "green" instead of purple, like other rare rings)
-- 5-links no longer get a special highlight on uber-strict (the filter still identifies 5L6S correctly and has an exception for 5L-uniques)
-- Fixed a minor bug related to warband items in FilterBlade
-- Crystal Belts are now treated like "regular" atlas bases. The T1 Atlas bases are now - Opal Ring and Steel Ring (only).
-- Added Broadhead quivers to the T2 rare items, due to their popularity shift (thanks to Doomfletch being meta right now)
-- Moved Hubris Circlets to T1 crafting bases (both rare ilvl84 and normal/magic ilvl84)
+- Rebalance the sizes of a lot of items
+
+- Merged some redundant filter sections
+
+- Disabled some redundant sections
+
+- Completely retiered all uniques
+
+- Completely retiered all divination cards - several new cards added to the T5 layers
+
+- Retiered all rares. It now contains more high attack speed bases, more shields and has become more strict in a few other sections.
+
+- Chayula/Uul-Nethol Blessings now have their own appearance
+
+- Chayula splinters have a stronger highlight
+
+- Rebalanced the distribution of map fragments (Guardian fragments are now longer T1)
+
+- I probably forgot to list a lot of changes. I'm sleepy, but this is one of the largest updates so far.
+
+**FilterBlade changelog:**
+
+- [New Tiers]: You can now add new tiers into existing tierlists (example: Currency, Chancing Bases, ...)
+
+- [Improved Augmentations]: "Augmentations" - rules added by the user - now also support multi-rules. (e.g.: You can have multiple different "Highlight and Hide Rares" rulesets)
+
+- [Full Rare Item Coverage]: The customizer now detect all rare rules, including T3 and T4 settings.
+
+- [More Options]: Added tons of new options, tools and gadgets to play around with. It'
+s way too much to cover. I'm sure you'll discover some :). We tried covering all (sensible) requests.
+
+- [Performance Optimizations]: In short: It's. so. much. faster. Switched to cached async queries, improved the loading strategy, optimized queries and reduced algorithm complexity, refactored the autocomplete UI imlementation and did a ton of other performance improvements. Next update we're minimizing our assets.
+
+- We also updated the file requesting system. this should boost loading times if you access FilterBlade from e.g. South America (feedback appreciated since we obviously cant verify this outself)
+
+- [Filter Structure]: (Prototype) The advanced screen now maps the entire filter. It's not quite ready yet and doesn't use the existing save/load system yet. Tell us what you think.
+
+- [Armortype Filtering]: (Prototype) You can now highlight by item type, such as "ES armors".
+
+- (experimental) Save State Visualization. Display all changes in your current save-state in a list. Find it on the advanced screen
+
+- Tons of bug fixes! Most were very niche, but we addressed every known bug in our todo-list. We're sure you'll eventually find some new ones, feel free to post/mail those. (Note: those were minor things like "reset button sometimes doesn't work" or "something was laggy". We hotfix anything that affects the actual generated code or ingame aspects).
+
+- The performance improvements allowed us to replace all "simple" editors in the customizer (the ones without color pickers etc.) with the normal ones.
+
+- Added a ToolTip for TagList + Drag&Drop lists. It's quite handy for T1/T2 rares and leveling basetypes.
+
+- Added a "BaseType list" for dropLevel sliders to see the affected basetypes
+
+- Users can switch between screens using the following keys: A/D, left/right, 1-7.
+
+- Added 2 new functions to the Quick Functions and the Command Builder (Advanced) to increase/decrease font sizes by a flat value
+
+- The slider in the "Compact Overview Mode", now has fixed steps.
+
+- Extracted the Save/Load UI to a screen of it's own and moved the "Code" screen into "Advanced".
+
+- Updated the Overview screen a bit (also added a new box with explanation for rare color identifiers: border, background and text)
+
+- Improved the saveStates: now correctly updates info and deletes invalidated changes
+
+- Improved the invalidation system, added a method to keep appearance-related changes for smaller updates.
+
+- Fixed a bug in the loot simulator that caused items to be displayed incorrectly if they had 2 ItemLevel lines with different operators (such as "ItemLevel < 65" AND "ItemLevle > 5" in one rule). This did not affect anything ingame, yet it displayed some items that should've been hidden.
+
+- Implemented additional internal markers that tests filter syntax for invalid/"stupid" values.
 
 ----------------------------------
 NeverSink's itemfilter - version 5.1.2 - Improvements, adjustments for the economy + major FilterBlade update
