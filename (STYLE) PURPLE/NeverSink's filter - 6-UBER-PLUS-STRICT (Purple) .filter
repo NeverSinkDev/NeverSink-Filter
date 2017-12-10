@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.4
+# VERSION:		5.41
 # TYPE:			6-UBER-PLUS-STRICT
 # STYLE:			PURPLE
 # AUTHOR:		NeverSink
@@ -338,7 +338,7 @@ Show #$ %TB-Vise
 	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
 	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Cosmetic: Highlight good drops
 	SetBackgroundColor 255 125 0 255     # BACKGROUND:	 Atlas bases
-	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
+	PlayAlertSound 2 300                 # DROPSOUND:	 T1 Drop
 
 Show #$ %TB-Vise
 	BaseType "Stygian Vise"
@@ -347,14 +347,14 @@ Show #$ %TB-Vise
 	SetFontSize 45
 	SetTextColor 255 190 100             # TEXTCOLOR:	 Rares - Level - 75+
 	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - T1
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Hide #$ %TB-Vise %H5
 	BaseType "Stygian Vise"
 	SetFontSize 42
 	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetBackgroundColor 65 20 80 255      # BACKGROUND:	 Rares - T1
 
 #------------------------------------
 #   [0206] Abyss Jewels (Rare and Magic)
@@ -2216,6 +2216,24 @@ Show # Maps:T10
 	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 #------------------------------------
+#  Shaped Maps Temporary Workaround
+#------------------------------------
+
+Show # Maps:T9 - Shaped Workaround
+	ShapedMap True
+	Class Maps
+	SetFontSize 42
+	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+
+#Show # Maps:T9 - Shaped Workaround
+#	Class Maps
+#	BaseType "Shaped"
+#	SetFontSize 42
+#	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+#	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+
+#------------------------------------
 #  T9 - Maps
 #------------------------------------
 
@@ -2228,13 +2246,13 @@ Show # Maps:T9 - OnLevel
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
-Show # Maps:T9
-	ShapedMap True
-	DropLevel >= 76
-	Class Maps
-	SetFontSize 42
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+#Show # Maps:T9
+#	ShapedMap True
+#	DropLevel >= 76
+#	Class Maps
+#	SetFontSize 42
+#	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+#	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Hide # Maps:T9 %H4
 	DropLevel >= 76
@@ -2256,13 +2274,13 @@ Hide # Maps:T9 %H4
 #	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 #	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
-Show # Maps:T8
-	ShapedMap True
-	DropLevel >= 75
-	Class Maps
-	SetFontSize 42
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+#Show # Maps:T8
+#	ShapedMap True
+#	DropLevel >= 75
+#	Class Maps
+#	SetFontSize 42
+#	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+#	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Hide # Maps:T8 %H4
 	DropLevel >= 75
@@ -2284,13 +2302,13 @@ Hide # Maps:T8 %H4
 #	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 #	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
-Show # Maps:T7
-	ShapedMap True
-	DropLevel >= 74
-	Class Maps
-	SetFontSize 42
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+#Show # Maps:T7
+#	ShapedMap True
+#	DropLevel >= 74
+#	Class Maps
+#	SetFontSize 42
+#	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+#	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Hide # Maps:T7 %H4
 	DropLevel >= 74
@@ -2312,13 +2330,13 @@ Hide # Maps:T7 %H4
 #	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
 #	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
-Show # Maps:T6
-	ShapedMap True
-	DropLevel >= 73
-	Class Maps
-	SetFontSize 42
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
+#Show # Maps:T6
+#	ShapedMap True
+#	DropLevel >= 73
+#	Class Maps
+#	SetFontSize 42
+#	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+#	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Hide # Maps:T6 %H4
 	DropLevel >= 73
@@ -2691,7 +2709,7 @@ Show # %TB-Divination-Exception
 
 Show # %TB-Divination-T1
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Bowyer's Dream" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Queen" "The Spark and the Flame" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Queen" "The Soul" "The Spark and the Flame" "The Thaumaturgist" "The Vast" "The Wind" "The Wolven King's Bite" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2704,7 +2722,7 @@ Show # %TB-Divination-T1
 
 Show # %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Emperor of Purity" "Heterochromia" "Last Hope" "Lucky Deck" "Saint's Treasure" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Ethereal" "The Forsaken" "The Hoarder" "The Risk" "The Saint's Treasure" "The Sephirot" "The Soul" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "The Wretched"
+	BaseType "Bowyer's Dream" "Chaotic Disposition" "Emperor of Purity" "Heterochromia" "Last Hope" "Left to Fate" "Saint's Treasure" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Dragon" "The Enlightened" "The Ethereal" "The Forsaken" "The Hoarder" "The Polymath" "The Risk" "The Saint's Treasure" "The Sephirot" "The Standoff" "The Throne" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wolf" "The Wretched"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -2717,7 +2735,7 @@ Show # %TB-Divination-T2
 
 Show # %TB-Divination-T3
 	Class "Divination"
-	BaseType "Dialla's Subjugation" "Earth Drinker" "Humility" "Jack in the Box" "Left to Fate" "Merciless Armament" "No Traces" "Scholar of the Seas" "Standoff" "The Body" "The Cursed King" "The Dark Mage" "The Fletcher" "The Gladiator" "The Inventor" "The Jester" "The Porcupine" "The Scavenger" "The Stormcaller" "The Warlord" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
+	BaseType "Dialla's Subjugation" "Earth Drinker" "Humility" "Jack in the Box" "Lost Worlds" "Lucky Deck" "Merciless Armament" "No Traces" "Scholar of the Seas" "Standoff" "The Arena Champion" "The Body" "The Cursed King" "The Dark Mage" "The Demoness" "The Fletcher" "The Gladiator" "The Harvester" "The Inventor" "The Jester" "The Porcupine" "The Scavenger" "The Surveyor" "The Trial" "The Tyrant" "The Warlord" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -2730,7 +2748,7 @@ Show # %TB-Divination-T3
 
 Hide # %H3 %TB-Divination-T5
 	Class "Divination"
-	BaseType "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Metalsmith's Gift" "Other Cheek" "Prosperity" "Rain of Chaos" "Struck by Lightning" "The Feast" "The Incantation" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Scholar" "The Sigil" "The Surgeon" "The Twins" "The Warden" "Thunderous Skies"
+	BaseType "A Mother's Parting Gift" "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Metalsmith's Gift" "Other Cheek" "Prosperity" "Rain of Chaos" "Shard of Fate" "Struck by Lightning" "The Blazing Fire" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scholar" "The Sigil" "The Sun" "The Surgeon" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 170 230 230 180   # BACKGROUND:	 T5 Divination
@@ -2850,7 +2868,7 @@ Show # Harbinger League Pieces
 #------------------------------------
 
 Show # %TB-Uniques-T1
-	BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Thorium Spirit Shield" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet"
+	BaseType "Abyssal Axe" "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Murder Boots" "Necromancer Silks" "Nightmare Mace" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Thorium Spirit Shield" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet" "Zealot Gloves"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -2872,7 +2890,7 @@ Show # 5-Links
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # %TB-Uniques-T2
-	BaseType "Abyssal Axe" "Arcanist Gloves" "Assassin's Garb" "Bismuth Flask" "Champion Kite Shield" "Citrine Amulet" "Corrugated Buckler" "Crystal Belt" "Cutlass" "Deicide Mask" "Ezomyte Burgonet" "Granite Flask" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Staff" "Ironscale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Maelstr" "Meatgrinder" "Mosaic Kite Shield" "Necromancer Silks" "Nightmare Bascinet" "Penetrating Arrow Quiver" "Regicide Mask" "Sacrificial Garb" "Sacrificial Garb" "Sharkskin Tunic" "Terror Maul" "Tornado Wand" "Ursine Pelt" "Vaal Sceptre" "Vanguard Belt" "Nubuck Gloves"
+	BaseType "Arcanist Gloves" "Bismuth Flask" "Cardinal Round Shield" "Champion Kite Shield" "Citrine Amulet" "Corrugated Buckler" "Corsair Sword" "Deicide Mask" "Destiny Leather" "Ezomyte Burgonet" "Granite Flask" "Harlequin Mask" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Staff" "Ironscale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Karui Sceptre" "Maelstr" "Meatgrinder" "Nightmare Bascinet" "Nubuck Gloves" "Penetrating Arrow Quiver" "Regicide Mask" "Sacrificial Garb" "Sacrificial Garb" "Sharkskin Tunic" "Silken Hood" "Sorcerer Gloves" "Stygian Vise" "Titan Greaves" "Titanium Spirit Shield" "Tornado Wand" "Ursine Pelt" "Vaal Mask" "Vaal Sceptre" "Vanguard Belt"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -2888,7 +2906,7 @@ Show # %TB-Uniques-T2
 # Sound to prevent false excitement.
 
 Show # %TB-Uniques-T2-MultiBase
-	BaseType "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Onyx Amulet" "Sorcerer Boots" "Stibnite Flask" "Carved Wand" "Unset Ring"
+	BaseType "Carved Wand" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Onyx Amulet" "Sorcerer Boots" "Stibnite Flask" "Unset Ring"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
