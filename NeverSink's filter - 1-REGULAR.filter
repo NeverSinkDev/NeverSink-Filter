@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.6
+# VERSION:		5.61
 # TYPE:			1-REGULAR
 # STYLE:		NORMAL
 # AUTHOR:		NeverSink
@@ -2512,6 +2512,15 @@ Show #
 #------------------------------------
 #   [1503] Shaped Maps
 #------------------------------------
+
+Show # $maps->elder->Top
+	Class Maps
+	ElderMap True
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
+	PlayAlertSound 5 300                 # DROPSOUND:	 High tier maps
 
 Show # $maps->shaped->Top
 	ShapedMap True
