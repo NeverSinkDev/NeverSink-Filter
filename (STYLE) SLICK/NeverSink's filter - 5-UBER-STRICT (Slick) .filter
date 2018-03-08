@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.61
+# VERSION:		5.62
 # TYPE:			5-UBER-STRICT
 # STYLE:			SLICK
 # AUTHOR:		NeverSink
@@ -2917,19 +2917,27 @@ Hide # $Currency->Harbinger->T2 %TB-Currency-Harbinger-ShardsT2 %H4
 
 Show #$Currency->Net->T1
 	Class Currency
-	BaseType "Thaumaturgical Net"
+	BaseType "Necromancer"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 170 158 130 240   # BACKGROUND:	 T3 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
+Show #$Currency->Net->T1
+	Class Currency
+	BaseType "Thaumaturgical Net"
+	SetFontSize 45
+	SetTextColor 155 210 135 255
+	SetBorderColor 0 255 36 255
+	SetBackgroundColor 0 0 0 255
+
 Show #$Currency->Net->T2
 	Class Currency
 	BaseType "Simple Steel Net" "Reinforced Steel Net" "Strong Steel Net"
 	SetFontSize 42
 	SetTextColor 155 210 135 255
-	SetBorderColor 0 255 36 255
+	SetBorderColor 0 120 16 255
 	SetBackgroundColor 0 0 0 255
 
 Show #$Currency->Net->T3
@@ -2937,7 +2945,7 @@ Show #$Currency->Net->T3
 	BaseType "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net"
 	SetFontSize 42
 	SetTextColor 155 210 135 255
-	SetBorderColor 220 220 220 255
+	SetBorderColor 110 110 110 255
 	SetBackgroundColor 0 0 0 255
 
 Show #$Currency->Net->T4
