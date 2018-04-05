@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		5.72
+# VERSION:		5.73
 # TYPE:			6-UBER-PLUS-STRICT
 # STYLE:			PURPLE
 # AUTHOR:		NeverSink
@@ -650,6 +650,12 @@ Show # $x->Atlas->T1 %TB-Top-Atlas-Bases
 #	SetBorderColor 0 240 190 240
 #	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
 
+#Show # $x->Atlas->T2Exceptions %TB-Atlas-Bases-Exceptions %D5
+#	BaseType "Blue Pearl Amulet" "Marble Amulet"
+#	Rarity <= Rare
+#	SetFontSize 45
+#	SetBorderColor 0 240 190 240
+
 #Show # $x->Atlas->T2 %TB-Atlas-Bases %D1
 #	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
 #	Rarity <= Magic
@@ -1188,7 +1194,7 @@ Hide # $Currency->Low->T1 %H5 %TB-Currency-SilverCoin
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 135 140 100 255   # BACKGROUND:	 Currency Shards Old
+	SetBackgroundColor 112 90 143 255    # BACKGROUND:	 Silver Coin
 
 Hide # $Currency->Low->T1 %H5 %TB-Currency-T4
 	Class Currency
@@ -2854,7 +2860,7 @@ Show # $Fragments->Vessel
 
 Show # $Currency->High-T1 %TB-Currency-T1.5
 	Class Currency
-	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb" "Orb of Annulment"
+	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -2909,8 +2915,8 @@ Hide #$Currency->Net->T1 %H5
 	BaseType "Necromancy Net"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 255 36 255          # BORDERCOLOR:	 Net Color 4
-	SetBackgroundColor 135 140 100 255   # BACKGROUND:	 Currency Shards Old
+	SetBorderColor 0 30 75               # BORDERCOLOR:	 Cosmetic: Neutral Highlight
+	SetBackgroundColor 213 159 0 255     # BACKGROUND:	 T3 Currency
 
 Hide #$Currency->Net->T1 %H4
 	Class Currency
@@ -2954,7 +2960,7 @@ Hide #$Currency->Net->T4 %H3
 
 Show # $Currency->Harbinger->Top %TB-Currency-T1
 	Class Currency
-	BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather"
+	BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
 	SetFontSize 45
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
@@ -3095,7 +3101,7 @@ Show # $Div->T4 %TB-Divination-Exception
 
 Show # $Div->T1 %TB-Divination-T1
 	Class "Divination"
-	BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Spark and the Flame" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Cosmetic: T1 Divination card
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -3108,7 +3114,7 @@ Show # $Div->T1 %TB-Divination-T1
 
 Show # $Div->T2 %TB-Divination-T2
 	Class "Divination"
-	BaseType "Bowyer's Dream" "Chaotic Disposition" "Heterochromia" "Last Hope" "Left to Fate" "Saint's Treasure" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Ethereal" "The Hoarder" "The Offering" "The Polymath" "The Risk" "The Sephirot" "The Thaumaturgist" "The Valkyrie" "The Void"
+	BaseType "Bowyer's Dream" "Chaotic Disposition" "Last Hope" "Left to Fate" "Saint's Treasure" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dreamer" "The Ethereal" "The Formless Sea" "The Hoarder" "The Hunger" "The Offering" "The Risk" "The Thaumaturgist" "The Void"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 255 255 0 255         # BORDERCOLOR:	 Crafting: T1
@@ -3121,7 +3127,7 @@ Show # $Div->T2 %TB-Divination-T2
 
 Show # $Div->T3 %TB-Divination-T3
 	Class "Divination"
-	BaseType "Blessing of God" "Emperor of Purity" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dark Mage" "The Dragon" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
+	BaseType "Blessing of God" "Dialla's Subjugation" "Emperor of Purity" "Hope" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "Standoff" "The Breach" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Fletcher" "The Forsaken" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Polymath" "The Porcupine" "The Soul" "The Standoff" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
@@ -3254,7 +3260,7 @@ Show # $uniques->Harbinger
 #------------------------------------
 
 Show # $uniques->T1 %TB-Uniques-T1
-	BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Nubuck Gloves" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Savant's Robe" "Steel Ring" "Thorium Spirit Shield" "Vaal Spirit Shield" "Void Axe" "Wereclaw Talisman"
+	BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Legion Gloves" "Nubuck Gloves" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Thorium Spirit Shield" "Vaal Spirit Shield" "Void Axe" "Wereclaw Talisman"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
@@ -3276,7 +3282,7 @@ Show # $uniques->T2
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # $uniques->T2 %TB-Uniques-T2
-	BaseType "Arcanist Gloves" "Bismuth Flask" "Cutlass" "Deicide Mask" "Destiny Leather" "Ezomyte Burgonet" "Hydrascale Gauntlets" "Jewelled Foil" "Maelstr" "Nubuck Boots" "Royal Burgonet" "Sacrificial Garb" "Sanctified Life Flask" "Siege Axe" "Titan Greaves" "Topaz Flask" "Ursine Pelt" "Vaal Mask" "Wyrmscale Doublet" "Zealot Gloves"
+	BaseType "Arcanist Gloves" "Cutlass" "Full Wyrmscale" "Imperial Maul" "Maelstr" "Nubuck Boots" "Sacrificial Garb" "Sanctified Life Flask" "Savant's Robe" "Siege Axe" "Topaz Flask" "Vaal Mask" "Zealot Gloves"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -3292,7 +3298,7 @@ Show # $uniques->T2 %TB-Uniques-T2
 # Sound to prevent false excitement.
 
 Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase
-	BaseType "Amber Amulet" "Carved Wand" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Judgement Staff" "Leather Belt" "Onyx Amulet" "Paua Ring" "Sorcerer Boots" "Stibnite Flask" "Two-Stone Ring"
+	BaseType "Amber Amulet" "Carved Wand" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Judgement Staff" "Leather Belt" "Onyx Amulet" "Paua Ring" "Sorcerer Boots" "Stibnite Flask" "Titan Greaves" "Two-Stone Ring"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
@@ -3305,7 +3311,7 @@ Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase
 #------------------------------------
 
 Show # $uniques->Prophecy %TB-Uniques-Fated
-	BaseType "Coral Amulet" "Coral Ring" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Goathide Gloves" "Golden Buckler" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+	BaseType "Coral Amulet" "Coral Ring" "Crude Bow" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Iron Hat" "Iron Ring" "Iron Staff" "Jade Amulet" "Jade Hatchet" "Jagged Maul" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Scholar Boots" "Serrated Arrow Quiver" "Sledgehammer" "Spiraled Wand" "Studded Belt" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
 	Rarity Unique
 	SetFontSize 42
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Uniques
