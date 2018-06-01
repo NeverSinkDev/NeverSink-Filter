@@ -17,6 +17,9 @@ https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQG
 FILTER VERSIONS:
 --------------------------
 
+I highly recommend starting new leagues with Regular/Semi-Strict or Strict and switching to a higher strictness if you feel like you're seeing too much.
+
+Soft = A very low strictness version, that shows extra bases and recipes.
 Regular = The normal version. Perfect for beginners and experts alike, especially if you like Chaos recipes.
 Semi-Strict = Hides several bulky/bad rares. Nice balance of hidden/shown items in the endgame.
 Strict = Hides the majority of all rares in the endgame. Designed for well geared players.

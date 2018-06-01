@@ -6,7 +6,11 @@
 
 --------------------------
 
-- **Regular** = Shows all rares and a lot of "potentially useful items", great for new leagues, new players and solo selffound environments.
+I highly recommend starting new leagues with Regular/Semi-Strict or Strict and switching to a higher strictness if you feel like you're seeing too much.
+
+- **Soft** = A very low strictness version, that shows extra bases and recipes. Shows a lot of items
+- **Regular** = Shows all rares and some "potentially useful items", great for 
+solo selffound environments. Still shows a lot of items
 - **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
 - **Strict** = Shows the top ~35% of all rares, hides most recipes and crafting bases. Designed for optimized builds, that want to farm/grind effectively.
 - **Very Strict** = Shows the top ~15% of all rares, hides scrolls, armorers and augmentations. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
