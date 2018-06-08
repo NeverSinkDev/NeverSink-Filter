@@ -41,6 +41,8 @@ Streamsound = Same visuals, but all sounds are different. Designed for streamers
 Slick = The normal version with less background colors (more GGG-styled). Also good for colorblind players.
 Blue = Mostly the same, but the rare color scheme is tuned towards blue colors.
 
+Velvet and Vaal are currently beta and will likely get changed or removed.
+
 --------------------------
 FAQ AND QUESTIONS
 --------------------------
