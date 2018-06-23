@@ -12,8 +12,8 @@ I highly recommend starting new leagues with Regular/Semi-Strict or Strict and s
 - **Regular** = Shows all rares and some "potentially useful items", great for 
 solo selffound environments. Still shows a lot of items
 - **Semi-Strict** = Shows the top ~65% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version.
-- **Strict** = Shows the top ~35% of all rares, hides most recipes and crafting bases. Designed for optimized builds, that want to farm/grind effectively.
-- **Very Strict** = Shows the top ~15% of all rares, hides scrolls, armorers and augmentations. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
+- **Strict** = Shows the top ~35% of all rares, hides most recipes, crafting bases, armorers and augmentations. Designed for optimized builds, that want to farm/grind effectively.
+- **Very Strict** = Shows the top ~15% of all rares, hides scrolls. Only shows the best crafting bases and recipes. Designed for very fast, well geared meta builds.
 - **Uber Strict** = Shows the top ~5% of all rares, hides transmutations and whetstones. Advised for insanely fast builds, such as vaal spark and well organized parties.
 - **Uber+ Strict** = No rares, no currency under an alch, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Customize on filterblade and don't complain if it's too strict.
 
