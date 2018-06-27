@@ -1,4 +1,44 @@
 ----------------------------------
+NeverSink's itemfilter - version 6.10 - Mid-League update. Polished incursion integration.
+----------------------------------
+
+This patch focuses on the smoothening out all the incursion related things. Incursion has been included in the existing color style (the "red" color is reserved for new leagues). I've added a tier list for vials, special highlight for magic/rare incursion mods (maps included) and a lot of polishing. This patch also addresses the sound issues that were introduced in 3.3 and adjusts the filter to match the crazy economy (180c chaos, 10c shavronne...)
+
+- Retiered all uniques. This is very tricky due to the highly volatile chaos price.
+
+- Retiered all divination cards to match the current economy. This is very tricky due to the highly volatile chaos price.
+
+- Removed the default dropsounds (the one given by GGG) Chaos/Alchemy-tier orbs and tier 1-10 and hidden maps. This has been done to remove the "Double Sound" that has been caused by GGG increasing the dropsound volume on these drops.
+
+- The following currencies are now hidden on Uber Strict (not only Uber-Plus-Strict): "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble"
+
+- Low breach splinters are no longer hidden on Uber-Plus-Strict. Instead they no longer make a sound upon dropping.
+
+- Split the Incursion-Vials into 2 tiers. Tier 1 and rest. Also added a safety entry in case new vials get added. 
+
+- Tier 1 vials are: "Vial of Awakening" "Vial of Sacrifice" "Vial of the Ghost". These cost between 50c and 35ex on ISC right now. They have the Exalted Orb appearance
+
+- Tier 2 vials are the remaining vials. They have the purple background of special purpose currency (such as Blessing, Prophecies etc). Added a failsave, so that new vials (in case GGG adds some) will still be shown.
+
+- Moved "Harbinger Orb", "Ancient Orb", "Apprentice Cartographer's Sextant" a tier up.
+
+- Moved  "Orb of Annulment" a tier down. I have no idea what to do with the "Divine Orb" in this league. It's staying in the ex-tier for now. I don't want to add an extra sound (sound polution is not a good idea and reduces recognition too) and it's "too big to get moved down" with a 20c price. Still a decent find.
+
+- Adjusted the T4 Vaal-Style divination card color to be red-ish, not blue.
+
+- "Vaal" maps found in the cartographer room in incursions (that have a 10% chance to drop items corrupted and thus usually yield 1-2 6-links every ~3 maps) now have the "special" teal border to indicate a "special purpose item". This rule has lower priority than level 11+ map rules.
+
+- The MAGIC incursion mod items have the teal "special purpose item".
+
+- The RARE incursion mod items now have the teal "special purpose item" and the good rare green item background.
+
+- White/Magic rustic sashes now get highlighted longer while leveling to help attack builds with crafting
+
+- Removed the DROPlevel requirement from identified, non-corrupted magic caster weapons with twin T1 mods.
+
+- Structure and performance improvements!
+
+----------------------------------
 NeverSink's itemfilter - version 6.02 - Incursion Polishing + Style Polishing + FilterBlade Features
 ----------------------------------
 
