@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		6.1
+# VERSION:		6.2
 # TYPE:			1-REGULAR
 # STYLE:			BLUE
 # AUTHOR:		NeverSink
@@ -61,29 +61,30 @@
 #   [0502] Magic Mod Permutations
 #   [0503] Rare Item Permutations
 # [[0600]] Recipes, Magic and Normal items (endgame!)
-#   [0601] 5-Linked items
-#   [0602] 6-Socket Items
-#   [0603] Exclusive bases: Stygian Vise
-#   [0604] Abyss Jewels (Rare and Magic)
-#   [0605] Exclusive bases: Top Value
-#   [0606] Exclusive bases: Trinkets
-#   [0607] Exclusive bases: Others
-#   [0608] Corrupted Amulets
-#   [0609] Chancing items
-#   [0610] FLASKS (Endgame rules)
-#   [0611] Add your own crafting rules here
-#   [0612] 86+ Endgame crafting rules
-#   [0613] 83/84+ Endgame crafting rules
-#   [0614] 60+ Crafting rules for 60++ trinkets
-#   [0615] Remaining crafting rules - add your own bases here!
-#   [0616] Chisel recipe items
-#   [0617] Fishing Rod
-#   [0618] SRS Crude Bow
-#   [0619] Chromatic recipe items ("RGB Recipe")
-#   [0620] Endgame-start 4-links
-#   [0621] Animate Weapon script - deactivated by default
-#   [0622] W-soc offhand weapons
-#   [0623] Sacrificial Garb
+#   [0601] Overqualitied Items
+#   [0602] 5-Linked items
+#   [0603] 6-Socket Items
+#   [0604] Exclusive bases: Stygian Vise
+#   [0605] Abyss Jewels (Rare and Magic)
+#   [0606] Exclusive bases: Top Value
+#   [0607] Exclusive bases: Trinkets
+#   [0608] Exclusive bases: Others
+#   [0609] Corrupted Amulets
+#   [0610] Chancing items
+#   [0611] FLASKS (Endgame rules)
+#   [0612] Add your own crafting rules here
+#   [0613] 86+ Endgame crafting rules
+#   [0614] 83/84+ Endgame crafting rules
+#   [0615] 60+ Crafting rules for 60++ trinkets
+#   [0616] Remaining crafting rules - add your own bases here!
+#   [0617] Chisel recipe items
+#   [0618] Fishing Rod
+#   [0619] SRS Crude Bow
+#   [0620] Chromatic recipe items ("RGB Recipe")
+#   [0621] Endgame-start 4-links
+#   [0622] Animate Weapon script - deactivated by default
+#   [0623] W-soc offhand weapons
+#   [0624] Sacrificial Garb
 # [[0700]] HIDE LAYER 1 - MAGIC AND NORMAL ITEMS
 # [[0800]] Currency - PART 1 - Common currency
 # [[0900]] OVERRIDE AREA 2 - Override the default rare rulesets here
@@ -147,8 +148,9 @@
 #   [1902] T1 - Top tier cards
 #   [1903] T2 - Great cards
 #   [1904] T3 - Decent cards
-#   [1905] T5 - Format trash tier cards... before
-#   [1906] T4 - ...showing the remaining cards
+#   [1905] Special - Special Currency Cards
+#   [1906] T5 - Format trash tier cards... before
+#   [1907] T4 - ...showing the remaining cards
 # [[2000]] Currency - PART 4 - remaining items
 # [[2100]] Leaguestones - Tierlists
 # [[2200]] Uniques!
@@ -314,6 +316,17 @@ Show # $Rare->Shaper->T2 $x->ShaperElder
 
 Show # $Rare->Shaper->T2 $x->ShaperElder
 	ShaperItem True
+	ItemLevel >= 86
+	Rarity <= Rare
+	Class "Gloves" "Boots" "Helmets"
+	SetFontSize 45
+	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 20 110 220        # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+
+Show # $Rare->Shaper->T2 $x->ShaperElder
+	ShaperItem True
 	ItemLevel >= 83
 	DropLevel >= 62
 	Rarity <= Rare
@@ -429,6 +442,17 @@ Show # $Rare->Elder->T2 $x->ShaperElder
 	SetFontSize 45
 	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 25 235 25 255         # BORDERCOLOR:	 Shaper Elder Ring
+	SetBackgroundColor 20 110 220        # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+
+Show # $Rare->Elder->T2 $x->ShaperElder
+	ElderItem True
+	ItemLevel >= 86
+	Rarity <= Rare
+	Class "Gloves" "Boots" "Helmets"
+	SetFontSize 45
+	SetTextColor 255 255 255 255         # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 20 110 220        # BACKGROUND:	 ShaperElder T2
 	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
 
@@ -695,7 +719,19 @@ Show
 #===============================================================================================================
 
 #------------------------------------
-#   [0601] 5-Linked items
+#   [0601] Overqualitied Items
+#------------------------------------
+
+Show
+	Corrupted False
+	Quality >= 25
+	ItemLevel >= 75
+	DropLevel >= 50
+	SetFontSize 40
+	SetBorderColor 0 240 190 240         # BORDERCOLOR:	 Special Base
+
+#------------------------------------
+#   [0602] 5-Linked items
 #------------------------------------
 # Very useful at the start of the league. Otherwise often trash. Still, highlight material.
 # There’s a lot of exceptions we can introduce here, such as 6S, high value bases, but this
@@ -727,14 +763,14 @@ Show # $linked->5L $lvl %D5
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 #------------------------------------
-#   [0602] 6-Socket Items
+#   [0603] 6-Socket Items
 #------------------------------------
 # Can be sold for 7 jeweller orbs. We also highlight the ilvl83/84 ones that are OK for crafting.
 # Chances are high that people will want to buy those.
 
-Show # $EGC->84 $recipe->6S %TB-6S-Rare-Armors %D5
+Show # $EGC->86 $recipe->6S %TB-6S-Rare-Armors %D5
 	Sockets 6
-	ItemLevel >= 84
+	ItemLevel >= 86
 	Rarity <= Rare
 	BaseType "Assassin's Garb" "Glorious Plate" "Astral Plate" "Vaal Regalia" "Zodiac Leather"
 	SetFontSize 45
@@ -743,9 +779,9 @@ Show # $EGC->84 $recipe->6S %TB-6S-Rare-Armors %D5
 	SetBackgroundColor 100 100 100 255   # BACKGROUND:	 Recipe T1
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
-Show # $EGC->83 $recipe->6S %TB-6S-Rare-Weapons %D5
+Show # $EGC->85 $recipe->6S %TB-6S-Rare-Weapons %D5
 	Sockets 6
-	ItemLevel >= 83
+	ItemLevel >= 85
 	Rarity <= Rare
 	BaseType "Harbinger Bow" "Vaal Axe" "Coronal Maul" "Exquisite Blade"
 	SetFontSize 45
@@ -764,7 +800,7 @@ Show # $recipe->6S %D5
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 #------------------------------------
-#   [0603] Exclusive bases: Stygian Vise
+#   [0604] Exclusive bases: Stygian Vise
 #------------------------------------
 
 Show # $rare $x->Abyss->Stygian $EGC->86 %TB-Vise
@@ -797,7 +833,7 @@ Show # $Rare->tiny $x->Abyss->Stygian %TB-Vise %H5
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 #------------------------------------
-#   [0604] Abyss Jewels (Rare and Magic)
+#   [0605] Abyss Jewels (Rare and Magic)
 #------------------------------------
 
 Show # $EGC->82 $x->Abyss->Jewel $Jewels->Rare
@@ -846,7 +882,7 @@ Show # $Jewels->Rare %TC-Rare-Jewels
 	SetBackgroundColor 120 120 0 225     # BACKGROUND:	 Rare Jewel
 
 #------------------------------------
-#   [0605] Exclusive bases: Top Value
+#   [0606] Exclusive bases: Top Value
 #------------------------------------
 # These bases are valuable crafting due to their rarity and strong implicit.
 
@@ -870,7 +906,7 @@ Show # $x->Atlas->T1 %TB-Top-Atlas-Bases
 	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
 
 #------------------------------------
-#   [0606] Exclusive bases: Trinkets
+#   [0607] Exclusive bases: Trinkets
 #------------------------------------
 # These bases are valuable crafting due to their rarity and strong implicit.
 
@@ -928,7 +964,7 @@ Show # $x->Talismans %TB-Talisman
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [0607] Exclusive bases: Others
+#   [0608] Exclusive bases: Others
 #------------------------------------
 # These bases are valuable crafting due to their rarity and strong implicit.
 
@@ -973,7 +1009,7 @@ Show # $x->Atlas->T2 %TB-Atlas-Bases %D2
 	SetBorderColor 0 240 190 240         # BORDERCOLOR:	 Special Base
 
 #------------------------------------
-#   [0608] Corrupted Amulets
+#   [0609] Corrupted Amulets
 #------------------------------------
 # Corrupted amulets for rare lab shrines (to turn them rare)
 
@@ -985,7 +1021,7 @@ Show # $x->Atlas->T2 %TB-Atlas-Bases %D2
 #	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Crafting: T0
 
 #------------------------------------
-#   [0609] Chancing items
+#   [0610] Chancing items
 #------------------------------------
 # You can add your own items here. The items in this section have a dropsound
 
@@ -1027,7 +1063,7 @@ Show # $Chancing %TB-T2-Chancing %D2
 	SetBorderColor 0 150 0 150           # BORDERCOLOR:	 Chancing
 
 #------------------------------------
-#   [0610] FLASKS (Endgame rules)
+#   [0611] FLASKS (Endgame rules)
 #------------------------------------
 
 Show # $Recipes->Glassblower->20% %D3
@@ -1084,7 +1120,7 @@ Show # $Flasks->Utility %D2
 	SetBackgroundColor 25 100 75         # BACKGROUND:	 Flasks
 
 #------------------------------------
-#   [0611] Add your own crafting rules here
+#   [0612] Add your own crafting rules here
 #------------------------------------
 # Please use ItemLevel >= 65if you DON'T want your rules to affect Leveling progression.
 # Example: To highlight all white "Vaal Claw" and "Gemini Claw" in the endgame, uncomment the following section (remove the '#')
@@ -1097,7 +1133,7 @@ Show # $Flasks->Utility %D2
 # SetFontSize 40
 
 #------------------------------------
-#   [0612] 86+ Endgame crafting rules
+#   [0613] 86+ Endgame crafting rules
 #------------------------------------
 
 Show # $EGC->86->T1 %D5
@@ -1112,12 +1148,12 @@ Show # $EGC->86->T2 %D4
 	ItemLevel >= 86
 	Rarity < Rare
 	BaseType "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Titan Greaves" "Slink Boots" "Hubris Circlet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Prismatic" "Gold Ring" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Coral Ring" "Moonstone Ring" "Leather Belt" "Heavy Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Rustic Sash" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Siege Axe" "Harpy Rapier" "Demon Dagger" "Skean" "Spiraled Foil" "Jewelled Foil" "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Pinnacle Tower Shield" "Kris" "Prismatic" "Astral Plate" "Assassin's Garb" "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
-	SetFontSize 36
+	SetFontSize 40
 	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Aspect High Base
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0613] 83/84+ Endgame crafting rules
+#   [0614] 83/84+ Endgame crafting rules
 #------------------------------------
 # These entries are non-exclusive bases that are popular for crafting
 
@@ -1165,7 +1201,7 @@ Show # $EGC->84->T4 %TB-T2-Crafting-84-ES %D1
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0614] 60+ Crafting rules for 60++ trinkets
+#   [0615] 60+ Crafting rules for 60++ trinkets
 #------------------------------------
 # This section handles the crafting bases for the entry level endgame
 
@@ -1189,9 +1225,9 @@ Show # $Craft->75 %TB-T1-Trinket-Bases %D1
 
 #Show # $Craft->75 $mid %TB-T2-Trinket-Bases %D0
 #	ItemLevel >= 75
+#	Rarity Normal
 #	Class Rings Amulet Belts
 #	BaseType "Ruby" "Sapphire" "Topaz" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
-#	Rarity Normal
 #	SetTextColor 200 200 200 210         # TEXTCOLOR:	 Neutral Priority
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
@@ -1199,9 +1235,9 @@ Show # $Craft->75 %TB-T1-Trinket-Bases %D1
 #Show # $Craft->65 $low %TB-T1-Trinket-Bases %D0
 #	ItemLevel >= 65
 #	ItemLevel <= 74
+#	Rarity Normal
 #	Class Rings Amulet Belts
 #	BaseType "Onyx" "Two-Stone" "Diamond" "Prismatic"
-#	Rarity Normal
 #	SetTextColor 200 200 200 210         # TEXTCOLOR:	 Neutral Priority
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
@@ -1209,22 +1245,22 @@ Show # $Craft->75 %TB-T1-Trinket-Bases %D1
 #Show # $Craft->65 $mid %TB-T2-Trinket-Bases %D0
 #	ItemLevel >= 65
 #	ItemLevel <= 74
+#	Rarity Normal
 #	Class Rings Amulet Belts
 #	BaseType "Ruby" "Sapphire" "Topaz" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Chain Belt"
-#	Rarity Normal
 #	SetTextColor 200 200 200 210         # TEXTCOLOR:	 Neutral Priority
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #Show # $Craft->65 $low %D0
 #	ItemLevel >= 65
-#	Class Rings Amulets Belts
 #	Rarity Magic
+#	Class Rings Amulets Belts
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0615] Remaining crafting rules - add your own bases here!
+#   [0616] Remaining crafting rules - add your own bases here!
 #------------------------------------
 # This section handles additional crafting bases.
 
@@ -1234,7 +1270,7 @@ Show # $Craft->75 %TB-T1-Trinket-Bases %D1
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
 #------------------------------------
-#   [0616] Chisel recipe items
+#   [0617] Chisel recipe items
 #------------------------------------
 # Chisel Recipe: You can sell a 20% hammer + random map for 1 chisel
 
@@ -1265,20 +1301,20 @@ Show # %TB-Gavels %D1 $Recipe->Chisel->15
 #Show # %TB-Gavels %D0 $Recipe->Chisel
 #	Corrupted False
 #	Quality > 11
-#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
 #	Rarity Magic
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipe T2
 
 #Show # %TB-Gavels %D0 $Recipe->Chisel
 #	Corrupted False
-#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
 #	Rarity Normal
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipe T2
 
 #------------------------------------
-#   [0617] Fishing Rod
+#   [0618] Fishing Rod
 #------------------------------------
 
 # Give a man a fish and he won't be hungry for a day, teach a man to fish and GGG will ban you for disclosing fishing secrets.
@@ -1292,7 +1328,7 @@ Show # $x->Fish %TC-Secret
 	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
 
 #------------------------------------
-#   [0618] SRS Crude Bow
+#   [0619] SRS Crude Bow
 #------------------------------------
 # Crude bows are a meta weapon for SRS summoners, so we'll highlight them no matter the rarity post level 49
 
@@ -1305,7 +1341,7 @@ Show # $x->SrsBow $crafting %TB-Low-BaseType-Crafting %D3
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0619] Chromatic recipe items ("RGB Recipe")
+#   [0620] Chromatic recipe items ("RGB Recipe")
 #------------------------------------
 # These items have a RGB link and sell for a chromatic orb each.
 
@@ -1346,20 +1382,20 @@ Show # %H1 $Recipe->RGB
 	SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipe T2
 
 #------------------------------------
-#   [0620] Endgame-start 4-links
+#   [0621] Endgame-start 4-links
 #------------------------------------
 
 #Show # %D0 $Crafting->Low $Links->4
 #	LinkedSockets >= 4
 #	ItemLevel < 72
 #	DropLevel >= 65
-#	Class "Boots" "Gloves" "Body Armour" "Helmets"
 #	Rarity < Rare
+#	Class "Boots" "Gloves" "Body Armour" "Helmets"
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0621] Animate Weapon script - deactivated by default
+#   [0622] Animate Weapon script - deactivated by default
 #------------------------------------
 # UNCOMMENT THIS SCRIPT TO MAKE IT WORK (remove the # in front of the next 7 lines)
 
@@ -1398,7 +1434,7 @@ Show # %H1 $Recipe->RGB
 #	Identified True
 
 #------------------------------------
-#   [0622] W-soc offhand weapons
+#   [0623] W-soc offhand weapons
 #------------------------------------
 # Useful for gem Leveling.
 
@@ -1419,7 +1455,7 @@ Show # $x->WhiteSoc %D1 %TC-Offslot-Gem-Leveling
 	SetBackgroundColor 0 0 0 185         # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [0623] Sacrificial Garb
+#   [0624] Sacrificial Garb
 #------------------------------------
 # Generally not useful, but very specific drop-location, some people still might want to see it
 
@@ -1643,7 +1679,7 @@ Show # $Rare->Crafting $EGC->86 %D5 %TB-T1-Crafting
 	ItemLevel >= 86
 	Rarity Rare
 	BaseType "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Titan Greaves" "Slink Boots" "Hubris Circlet" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Siege Axe" "Harpy Rapier" "Demon Dagger" "Skean" "Spiraled Foil" "Jewelled Foil" "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Pinnacle Tower Shield" "Kris" "Prismatic" "Astral Plate" "Assassin's Garb" "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 255 125 0               # TEXTCOLOR:	 Rare 86
 	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Aspect High Base
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rare T1
@@ -1713,7 +1749,7 @@ Show
 Show # $Rare->T1 $Rare->Small  %D4 %TB-RARE-T1-ArmSmall %UP
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Titanium Spirit Shield" "Crusader Buckler" "Eternal Burgonet" "Goliath Greaves" "Vaal Gauntlets"
+	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Crusader Buckler" "Eternal Burgonet" "Goliath Greaves" "Vaal Gauntlets"
 	SetFontSize 40
 	SetTextColor 255 190 0 255           # TEXTCOLOR:	 Rares - Level - 75+
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
@@ -1722,7 +1758,7 @@ Show # $Rare->T1 $Rare->Small  %D4 %TB-RARE-T1-ArmSmall %UP
 Show
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Titanium Spirit Shield" "Crusader Buckler" "Eternal Burgonet" "Goliath Greaves" "Vaal Gauntlets"
+	BaseType "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Crusader Buckler" "Eternal Burgonet" "Goliath Greaves" "Vaal Gauntlets"
 	SetFontSize 40
 	SetTextColor 255 255 119 255         # TEXTCOLOR:	 T2 Rare
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
@@ -1807,7 +1843,7 @@ Show
 Show # $Rare->T2 %D3 %TB-RARE-T2-Wep %UP
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Vaal Sceptre" "Void Sceptre" "Eternal Sword" "Behemoth Mace" "Vaal Hatchet" "Runic Hatchet" "Sambar Sceptre"
+	BaseType "Vaal Sceptre" "Eternal Sword" "Behemoth Mace" "Vaal Hatchet" "Runic Hatchet" "Sambar Sceptre"
 	SetFontSize 40
 	SetTextColor 255 190 0 255           # TEXTCOLOR:	 Rares - Level - 75+
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -1816,7 +1852,7 @@ Show # $Rare->T2 %D3 %TB-RARE-T2-Wep %UP
 Show
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Vaal Sceptre" "Void Sceptre" "Eternal Sword" "Behemoth Mace" "Vaal Hatchet" "Runic Hatchet" "Sambar Sceptre"
+	BaseType "Vaal Sceptre" "Eternal Sword" "Behemoth Mace" "Vaal Hatchet" "Runic Hatchet" "Sambar Sceptre"
 	SetFontSize 40
 	SetTextColor 255 255 119 255         # TEXTCOLOR:	 T2 Rare
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -1825,7 +1861,7 @@ Show
 Show # $Rare->T2 $Rare->Small %D3 %TB-RARE-T2-ArmSmall %UP
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Praetor Crown" "Deicide Mask" "Sinner Tricorne" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Shagreen Boots" "Imperial Buckler" "Ancient Greaves" "Ancient Gauntlets" "Ezomyte Burgonet" "Fossilised Spirit Shield"
+	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Praetor Crown" "Deicide Mask" "Sinner Tricorne" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Shagreen Boots" "Imperial Buckler" "Ancient Greaves" "Ancient Gauntlets" "Ezomyte Burgonet" "Vaal Spirit Shield"
 	SetFontSize 40
 	SetTextColor 255 190 0 255           # TEXTCOLOR:	 Rares - Level - 75+
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
@@ -1834,7 +1870,7 @@ Show # $Rare->T2 $Rare->Small %D3 %TB-RARE-T2-ArmSmall %UP
 Show
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Praetor Crown" "Deicide Mask" "Sinner Tricorne" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Shagreen Boots" "Imperial Buckler" "Ancient Greaves" "Ancient Gauntlets" "Ezomyte Burgonet" "Fossilised Spirit Shield"
+	BaseType "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Praetor Crown" "Deicide Mask" "Sinner Tricorne" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Shagreen Boots" "Imperial Buckler" "Ancient Greaves" "Ancient Gauntlets" "Ezomyte Burgonet" "Vaal Spirit Shield"
 	SetFontSize 40
 	SetTextColor 255 255 119 255         # TEXTCOLOR:	 T2 Rare
 	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
@@ -1843,7 +1879,7 @@ Show
 Show # $Rare->T2 %D3 %TB-RARE-T2-Arm %UP
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb" "Broadhead Arrow Quiver" "Mosaic Kite Shield" "Colossal Tower Shield" "Cardinal Round Shield"
+	BaseType "Glorious Plate" "Spike-Point Arrow Quiver" "Vaal Regalia" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb" "Broadhead Arrow Quiver" "Mosaic Kite Shield" "Colossal Tower Shield" "Cardinal Round Shield"
 	SetFontSize 40
 	SetTextColor 255 190 0 255           # TEXTCOLOR:	 Rares - Level - 75+
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -1852,7 +1888,7 @@ Show # $Rare->T2 %D3 %TB-RARE-T2-Arm %UP
 Show
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb" "Broadhead Arrow Quiver" "Mosaic Kite Shield" "Colossal Tower Shield" "Cardinal Round Shield"
+	BaseType "Glorious Plate" "Spike-Point Arrow Quiver" "Vaal Regalia" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb" "Broadhead Arrow Quiver" "Mosaic Kite Shield" "Colossal Tower Shield" "Cardinal Round Shield"
 	SetFontSize 40
 	SetTextColor 255 255 119 255         # TEXTCOLOR:	 T2 Rare
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -2629,6 +2665,7 @@ Hide # $Rare->Hidden Hide remaining rare endgame items (note: on the regular ver
 #------------------------------------
 
 Show # $Gem->T1->Qual %TB-Qual-Top-Gem
+	Corrupted False
 	Class Gems
 	BaseType "Empower" "Enlighten" "Enhance"
 	GemLevel >= 2
@@ -2772,14 +2809,24 @@ Hide #
 #   [1701] Unique Maps
 #------------------------------------
 
-Show # $uniques->T1 $maps->unique Maps:Unique - T1 - only museum is needed, but legacy might have some surprises.
+Show # $uniques->T1 $maps->unique
 	Rarity Unique
 	Class Maps
-	BaseType "Chateau Map" "Museum Map" "Courtyard Map"
+	BaseType "Chateau Map" "Museum Map"
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255         # BORDERCOLOR:	 Aspect Unique
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T0 Drop
+	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
+
+Show # $uniques->T2  $maps->unique
+	Rarity Unique
+	Class Maps
+	BaseType "Moon Temple Map" "Courtyard Map" "Temple Map" "Shore Map"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 Unique T2
 	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
 
 Show # $uniques $maps->unique Maps:Unique
@@ -3358,7 +3405,6 @@ Show # $Currency->Ess->T3
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 30 159 200 255    # BACKGROUND:	 Ess T3
-	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 Show # $Currency->Ess->T4
 	Class Currency
@@ -3367,7 +3413,6 @@ Show # $Currency->Ess->T4
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 30 159 200 225    # BACKGROUND:	 Ess T4
-	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 Show # $Currency->Ess->T5
 	Class Currency
@@ -3418,7 +3463,7 @@ Show # $x->PerandusCoin $Currency->Special
 
 Show # $x->Breach->Blessing->T1
 	Class Currency
-	BaseType "Blessing of Chayula" "Blessing of Uul-Netol"
+	BaseType "Blessing of Chayula"
 	SetFontSize 45
 	SetTextColor 130 25 255 255          # TEXTCOLOR:	 Blessing
 	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach
@@ -3427,7 +3472,7 @@ Show # $x->Breach->Blessing->T1
 
 Show # $x->Breach->Blessing->T2
 	Class Currency
-	BaseType "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul"
+	BaseType "Blessing of Xoph" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -3488,7 +3533,7 @@ Show # $Div->T4 %TB-Divination-Exception
 
 Show # $Div->T1 %TB-Divination-T1
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Perfection" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Artist" "The Celestial Justicar" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Porcupine" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Undaunted" "The Valkyrie" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Heterochromia" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Polymath" "Pride Before the Fall" "Spark and the Flame" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Undaunted" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255             # TEXTCOLOR:	 Divi T1
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Divi T1
@@ -3501,7 +3546,7 @@ Show # $Div->T1 %TB-Divination-T1
 
 Show # $Div->T2 %TB-Divination-T2
 	Class "Divination"
-	BaseType "Bowyer's Dream" "Chaotic Disposition" "Last Hope" "Left to Fate" "Saint's Treasure" "The Breach" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hoarder" "The Hunger" "The Jeweller's Boon" "The Risk" "The Sephirot" "The Thaumaturgist" "The Undisputed" "The Valley of Steel Boxes" "The Vast" "The Void" "Time-Lost Relic"
+	BaseType "Bowyer's Dream" "Chaotic Disposition" "Left to Fate" "Perfection" "Saint's Treasure" "The Artist" "The Breach" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Dapper Prodigy" "The Dreamer" "The Enlightened" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hoarder" "The Hunger" "The Jeweller's Boon" "The Polymath" "The Risk" "The Thaumaturgist" "The Undisputed" "The Valley of Steel Boxes" "The Void" "The World Eater" "Time-Lost Relic"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 200 200 0 255         # BORDERCOLOR:	 Aspect: 83plus
@@ -3514,7 +3559,7 @@ Show # $Div->T2 %TB-Divination-T2
 
 Show # $Div->T3 %TB-Divination-T3
 	Class "Divination"
-	BaseType "Blessing of God" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" "Hope" "Hubris" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "Merciless Armament" "No Traces" "Rebirth" "Scholar of the Seas" "Shard of Fate" "Standoff" "The Admirer" "The Aesthete" "The Avenger" "The Beast" "The Body" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Forsaken" "The Insatiable" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Offering" "The One With All" "The Penitent" "The Poet" "The Polymath" "The Realm" "The Road to Power" "The Soul" "The Standoff" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Throne" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Wrath" "The Wretched" "Three Voices" "Treasure Hunter" "Valley of Steel Boxes" "Vinia's Token" "Wolven King's Bite"
+	BaseType "Audacity" "Blessing of God" "Blind Venture" "Emperor of Purity" "Gemcutter's Promise" "Glimmer of Hope" "Harmony of Souls" "Hope" "Hubris" "Humility" "Jack in the Box" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "Merciless Armament" "No Traces" "Rebirth" "Scholar of the Seas" "Shard of Fate" "Standoff" "The Admirer" "The Aesthete" "The Avenger" "The Beast" "The Blazing Fire" "The Body" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Forsaken" "The Insatiable" "The Inventor" "The Jester" "The Lion" "The Obscured" "The Offering" "The One With All" "The Penitent" "The Poet" "The Porcupine" "The Realm" "The Road to Power" "The Soul" "The Standoff" "The Surveyor" "The Sword King's Salute" "The Throne" "The Traitor" "The Trial" "The Tyrant" "The Warlord" "The Wrath" "The Wretched" "Treasure Hunter" "Valley of Steel Boxes" "Vinia's Token"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 255 255           # BORDERCOLOR:	 Divi T1
@@ -3522,7 +3567,28 @@ Show # $Div->T3 %TB-Divination-T3
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 
 #------------------------------------
-#   [1905] T5 - Format trash tier cards... before
+#   [1905] Special - Special Currency Cards
+#------------------------------------
+
+Show # $Div->T4Currency %HS5 %TB-Divination-T4Currency
+	Class "Divination"
+	BaseType "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "Three Faces in the Dark" "Three Voices"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 100 150 255         # BORDERCOLOR:	 Divi T4
+	SetBackgroundColor 145 215 230 225   # BACKGROUND:	 Divi T4
+	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
+
+Show # $Div->T5Currency %H4 %TB-Divination-T5Currency
+	Class "Divination"
+	BaseType "Rain of Chaos" "The Puzzle" "The Scholar"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 175 215 230 180   # BACKGROUND:	 Divi T5
+
+#------------------------------------
+#   [1906] T5 - Format trash tier cards... before
 #------------------------------------
 
 Show # $Div->T5 %H3 %TB-Divination-T5
@@ -3534,7 +3600,7 @@ Show # $Div->T5 %H3 %TB-Divination-T5
 	SetBackgroundColor 175 215 230 180   # BACKGROUND:	 Divi T5
 
 #------------------------------------
-#   [1906] T4 - ...showing the remaining cards
+#   [1907] T4 - ...showing the remaining cards
 #------------------------------------
 
 Show # $Div->T4 %HS4
@@ -3651,7 +3717,7 @@ Show # $uniques->Harbinger
 
 Show # $uniques->T1 %TB-Uniques-T1
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Cloth Belt Piece" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Harlequin Mask" "Hydrascale Gauntlets" "Jewelled Foil" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Savant's Robe" "Thorium Spirit Shield" "Wereclaw Talisman"
+	BaseType "Ambush Mitts" "Callous Mask" "Cloth Belt Piece" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Harlequin Mask" "Hydrascale Gauntlets" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Sharkskin Tunic" "Thorium Spirit Shield" "Wereclaw Talisman"
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255         # BORDERCOLOR:	 Aspect Unique
@@ -3662,6 +3728,15 @@ Show # $uniques->T1 %TB-Uniques-T1
 #   [2204] Tier 2 uniques
 #------------------------------------
 
+Show # $uniques->T2 %TB-Uniques-T2
+	Rarity Unique
+	BaseType "Arcanist Slippers" "Archon Kite Shield Piece" "Assassin's Boots" "Bismuth Flask" "Blood Raiment" "Blunt Arrow Quiver Piece" "Carnal Boots" "Gemstone Sword" "Hydrascale Boots" "Legion Gloves" "Magistrate Crown" "Occultist's Vestment" "Ritual Sceptre" "Sacrificial Garb" "Savant's Robe" "Vaal Mask"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 Unique T2
+	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
+
 Show # $uniques->T2
 	LinkedSockets = 5
 	Rarity Unique
@@ -3669,16 +3744,7 @@ Show # $uniques->T2
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 Unique T2
-	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
-
-Show # $uniques->T2 %TB-Uniques-T2
-	Rarity Unique
-	BaseType "Arcanist Slippers" "Archon Kite Shield Piece" "Assassin's Boots" "Blood Raiment" "Blunt Arrow Quiver Piece" "Carnal Boots" "Cutlass" "Destiny Leather" "Gemstone Sword" "Hydrascale Boots" "Legion Gloves" "Magistrate Crown" "Nubuck Boots" "Occultist's Vestment" "Ritual Sceptre" "Sacrificial Garb" "Siege Axe" "Vaal Mask" "Vaal Spirit Shield"
-	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 Unique T2
-	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
+	PlayAlertSound 3 300                 # DROPSOUND:	 T0 Drop
 
 #------------------------------------
 #   [2205] Multi-Unique bases.
@@ -3687,9 +3753,18 @@ Show # $uniques->T2 %TB-Uniques-T2
 # While others are cheap. We give them a high quality display, while making a normal unique
 # Sound to prevent false excitement.
 
-Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase
+Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase-League
 	Rarity Unique
-	BaseType "Amber Amulet" "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Exquisite Leather" "Full Wyrmscale" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Hubris Circlet" "Imperial Bow" "Imperial Staff" "Lapis Amulet" "Leather Belt" "Midnight Blade" "Onyx Amulet" "Opal Ring" "Paua Ring" "Sadist Garb" "Sorcerer Boots" "Stibnite Flask" "Topaz Flask" "Topaz Ring" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Zealot Gloves"
+	BaseType "Amber Amulet" "Lapis Amulet" "Onyx Amulet" "Topaz Ring" "Leather Belt" "Exquisite Leather"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 175 96 37 255     # BACKGROUND:	 Unique T2
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+
+Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase-Special
+	Rarity Unique
+	BaseType "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Full Wyrmscale" "Goathide Boots" "Gold Amulet" "Gold Ring" "Hubris Circlet" "Imperial Bow" "Murder Boots" "Paua Ring" "Sadist Garb" "Sorcerer Boots" "Two-Stone Ring" "Unset Ring" "Zealot Gloves" "Stibnite Flask" "Tornado Wand"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
@@ -5284,3 +5359,4 @@ Show # SafetyLine!
 # Also thanks to http://bschug.github.io/poedit/poedit.html - I used this site to test my setup
 #
 # Script by NeverSink
+
