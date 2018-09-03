@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		6.3
+# VERSION:		6.31
 # TYPE:			4-VERY-STRICT
 # STYLE:			SLICK
 # AUTHOR:		NeverSink
@@ -546,7 +546,6 @@ Show # $Rare->Elder->T3 $x->ShaperElder
 
 Show # Delve Mod Items
 	Identified True
-	Rarity Rare
 	HasExplicitMod "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground" "Subterranean"
 	SetFontSize 45
 	SetTextColor 255 190 0               # TEXTCOLOR:	 Rare 75+
@@ -1836,10 +1835,20 @@ Hide # $Currency->Low->T3 %H2 %TB-Currency-T6
 	SetBorderColor 75 75 75 255          # BORDERCOLOR:	 Currency Augment
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
 
-Hide # $Currency->Scroll->Portal %RF1 %H2 %TB-Currency-T8
+Hide # $Currency->Scroll->Wisdom %RF1 %H2 %TB-Currency-T8
 	Class Currency
 	BaseType "Scroll of Wisdom"
+	StackSize = 1
 	SetFontSize 36
+	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Currency Cosmetic 2
+	SetBorderColor 100 50 30 255         # BORDERCOLOR:	 Wisdom
+	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
+
+Show # $Currency->Scroll->Wisdoms
+	Class Currency
+	BaseType "Scroll of Wisdom"
+	StackSize > 1
+	SetFontSize 45
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Currency Cosmetic 2
 	SetBorderColor 100 50 30 255         # BORDERCOLOR:	 Wisdom
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
@@ -4100,7 +4109,7 @@ Show # $Div->T4 %HS4
 	SetBackgroundColor 170 230 230 200   # BACKGROUND:	 Divi T4
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 	MinimapIcon 2 White Triangle
-	PlayEffect White
+	PlayEffect White Temp
 
 #===============================================================================================================
 # [[2100]] Currency - PART 4 - remaining items
