@@ -21,12 +21,10 @@ contexts:
   comment:
     - match: '#'
       scope: punctuation.definition.comment.poe-filter
-      push: line_comment
-
-  line_comment:
-    - meta_scope: comment.line.poe-filter
-    - match: $
-      pop: true
+      push:
+        - meta_scope: comment.line.poe-filter
+        - match: $
+          pop: true
 
   prototype:
     - include: comment
@@ -101,10 +99,8 @@ contexts:
   string:
     - match: '"'
       scope: punctuation.definition.string.begin.poe-filter
-      push: double_quoted_string
-
-  double_quoted_string:
-    - meta_scope: string.quoted.double.poe-filter
-    - match: '"'
-      scope: punctuation.definition.string.end.poe-filter
-      pop: true
+      push:
+        - meta_scope: string.quoted.double.poe-filter
+        - match: '"'
+          scope: punctuation.definition.string.end.poe-filter
+          pop: true
