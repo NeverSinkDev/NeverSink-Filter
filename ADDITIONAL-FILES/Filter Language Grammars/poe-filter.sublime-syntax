@@ -1,0 +1,90 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html and https://pathofexile.gamepedia.com/Item_filter
+name: Path of Exile Filter
+file_extensions:
+  - filter
+scope: source.poe-filter
+
+variables:
+  whitespace: '[ \t]'
+  block: 'Show|Hide'
+
+contexts:
+  comment:
+    - match: '#'
+      scope: punctuation.definition.comment.poe-filter
+      push: line_comment
+
+  line_comment:
+    - meta_scope: comment.line.poe-filter
+    - match: $
+      pop: true
+
+  prototype:
+    - include: comment
+
+  main:
+    - match: '^{{whitespace}}*({{block}})\b'
+      scope: keyword.other.poe-filter
+      push: block
+
+  block:
+    - meta_content_scope: meta.block.poe-filter
+
+    - match: '(?=^{{whitespace}}*(?:{{block}})\b)'
+      pop: true
+
+    - match: '^{{whitespace}}*'
+      push: block_line
+
+  block_line:
+    - match: $
+      pop: true
+
+    # Conditions
+    - match: (Class|BaseType|SocketGroup|HasExplicitMod)\b
+      captures:
+        1: entity.name.constant.poe-filter
+      embed: parameters
+      embed_scope: variable.parameter.poe-filter
+      escape: $
+
+      # Conditions - operators
+    - match: '(ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier){{whitespace}}*(<=|>=|<|>|=){{whitespace}}*(?:(\d+)|(.+))'
+      captures:
+        1: entity.name.constant.poe-filter
+        2: keyword.operator.comparison.poe-filter
+        3: constant.numeric.poe-filter
+
+    # Conditions - boolean
+    - match: '(Identified|Corrupted|ElderItem|ShaperItem|ShapedMap){{whitespace}}(True|False)'
+      captures:
+        1: entity.name.constant.poe-filter
+        2: constant.language.poe-filter
+
+    # Actions
+    - match: (SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\b
+      scope: meta.function-call.poe-filter
+      captures:
+        1: variable.function.poe-filter
+      embed: parameters
+      embed_scope: variable.parameter.poe-filter
+      escape: $
+
+  parameters:
+    - match: \b\d+\b
+      scope: constant.numeric.poe-filter
+
+    - match: \b(True|False)\b
+      scope: constant.language.poe-filter
+
+    - match: '"'
+      scope: punctuation.definition.string.begin.poe-filter
+      push: double_quoted_string
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.poe-filter
+    - match: '"'
+      scope: punctuation.definition.string.end.poe-filter
+      pop: true
