@@ -50,7 +50,7 @@ contexts:
       pop: true
 
     # Conditions
-    - match: ({{conditions}})\b
+    - match: ({{conditions}}){{whitespace}}+
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
@@ -58,7 +58,7 @@ contexts:
       escape: $
 
       # Conditions - comparisons
-    - match: ({{comp_conditions}})(?:{{whitespace}}*({{comp_operators}}))?{{whitespace}}*(?:(\d+)|(.+))
+    - match: ({{comp_conditions}})(?:{{whitespace}}+({{comp_operators}}))?{{whitespace}}+(?:(\d+)|(.+))
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
@@ -66,7 +66,7 @@ contexts:
         3: constant.numeric.poe-filter
 
     # Conditions - boolean
-    - match: ({{bool_conditions}}){{whitespace}}({{bool_consts}})
+    - match: ({{bool_conditions}}){{whitespace}}+({{bool_consts}})
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
