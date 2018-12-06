@@ -54,8 +54,7 @@ contexts:
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
-      embed: parameters
-      escape: $
+      push: condition_value
 
       # Conditions - comparisons
     - match: ({{comp_conditions}})(?:{{whitespace}}+({{comp_operators}}))?{{whitespace}}+(?:(\d+)|(.+))
@@ -73,18 +72,33 @@ contexts:
         2: constant.language.poe-filter
 
     # Actions
-    - match: ({{actions}})\b
+    - match: ({{actions}}){{whitespace}}+
       scope: meta.function-call.poe-filter
       captures:
         1: variable.function.poe-filter
-      embed: parameters
-      embed_scope: variable.parameter.poe-filter
-      escape: $
+      push: parameters
+
+  condition_value:
+    - match: $
+      pop: true
+
+    - include: number
+    - include: string
 
   parameters:
+    - meta_content_scope: variable.parameter.poe-filter
+
+    - match: $
+      pop: true
+
+    - include: number
+    - include: string
+
+  number:
     - match: \b\d+\b
       scope: constant.numeric.poe-filter
 
+  string:
     - match: '"'
       scope: punctuation.definition.string.begin.poe-filter
       push: double_quoted_string
