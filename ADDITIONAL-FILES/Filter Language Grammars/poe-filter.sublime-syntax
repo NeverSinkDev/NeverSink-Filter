@@ -9,6 +9,13 @@ scope: source.poe-filter
 variables:
   whitespace: '[ \t]'
   block: 'Show|Hide'
+  bool_consts: 'True|False'
+  comp_operators: '<=|>=|<|>|='
+
+  conditions: 'Class|BaseType|SocketGroup|HasExplicitMod'
+  comp_conditions: 'ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier'
+  bool_conditions: 'Identified|Corrupted|ElderItem|ShaperItem|ShapedMap'
+  actions: 'SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect'
 
 contexts:
   comment:
@@ -25,14 +32,14 @@ contexts:
     - include: comment
 
   main:
-    - match: '^{{whitespace}}*({{block}})\b'
+    - match: ^{{whitespace}}*({{block}})\b
       scope: keyword.other.poe-filter
       push: block
 
   block:
     - meta_content_scope: meta.block.poe-filter
 
-    - match: '(?=^{{whitespace}}*(?:{{block}})\b)'
+    - match: (?=^{{whitespace}}*(?:{{block}})\b)
       pop: true
 
     - match: '^{{whitespace}}*'
@@ -43,7 +50,7 @@ contexts:
       pop: true
 
     # Conditions
-    - match: (Class|BaseType|SocketGroup|HasExplicitMod)\b
+    - match: ({{conditions}})\b
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
@@ -51,8 +58,8 @@ contexts:
       embed_scope: variable.parameter.poe-filter
       escape: $
 
-      # Conditions - operators
-    - match: '(ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier)(?:{{whitespace}}*(<=|>=|<|>|=))?{{whitespace}}*(?:(\d+)|(.+))'
+      # Conditions - comparisons
+    - match: ({{comp_conditions}})(?:{{whitespace}}*({{comp_operators}}))?{{whitespace}}*(?:(\d+)|(.+))
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
@@ -60,14 +67,14 @@ contexts:
         3: constant.numeric.poe-filter
 
     # Conditions - boolean
-    - match: '(Identified|Corrupted|ElderItem|ShaperItem|ShapedMap){{whitespace}}(True|False)'
+    - match: ({{bool_conditions}}){{whitespace}}({{bool_consts}})
       scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
         2: constant.language.poe-filter
 
     # Actions
-    - match: (SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\b
+    - match: ({{actions}})\b
       scope: meta.function-call.poe-filter
       captures:
         1: variable.function.poe-filter
@@ -79,7 +86,7 @@ contexts:
     - match: \b\d+\b
       scope: constant.numeric.poe-filter
 
-    - match: \b(True|False)\b
+    - match: \b({{bool_consts}})\b
       scope: constant.language.poe-filter
 
     - match: '"'
