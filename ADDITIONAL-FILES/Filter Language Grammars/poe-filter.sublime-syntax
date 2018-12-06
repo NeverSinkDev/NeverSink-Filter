@@ -44,6 +44,7 @@ contexts:
 
     # Conditions
     - match: (Class|BaseType|SocketGroup|HasExplicitMod)\b
+      scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
       embed: parameters
@@ -52,6 +53,7 @@ contexts:
 
       # Conditions - operators
     - match: '(ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier)(?:{{whitespace}}*(<=|>=|<|>|=))?{{whitespace}}*(?:(\d+)|(.+))'
+      scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
         2: keyword.operator.comparison.poe-filter
@@ -59,6 +61,7 @@ contexts:
 
     # Conditions - boolean
     - match: '(Identified|Corrupted|ElderItem|ShaperItem|ShapedMap){{whitespace}}(True|False)'
+      scope: meta.condition.poe-filter
       captures:
         1: entity.name.constant.poe-filter
         2: constant.language.poe-filter
