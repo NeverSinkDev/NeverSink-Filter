@@ -51,7 +51,7 @@ contexts:
       escape: $
 
       # Conditions - operators
-    - match: '(ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier){{whitespace}}*(<=|>=|<|>|=){{whitespace}}*(?:(\d+)|(.+))'
+    - match: '(ItemLevel|DropLevel|Quality|Rarity|Sockets|LinkedSockets|Height|Width|StackSize|GemLevel|MapTier)(?:{{whitespace}}*(<=|>=|<|>|=))?{{whitespace}}*(?:(\d+)|(.+))'
       captures:
         1: entity.name.constant.poe-filter
         2: keyword.operator.comparison.poe-filter
