@@ -85,9 +85,6 @@ contexts:
     - match: \b\d+\b
       scope: constant.numeric.poe-filter
 
-    - match: \b({{bool_consts}})\b
-      scope: constant.language.poe-filter
-
     - match: '"'
       scope: punctuation.definition.string.begin.poe-filter
       push: double_quoted_string
