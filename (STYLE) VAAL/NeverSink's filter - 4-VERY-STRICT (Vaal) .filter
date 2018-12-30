@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:		6.51
+# VERSION:		6.6
 # TYPE:			4-VERY-STRICT
 # STYLE:			VAAL
 # AUTHOR:		NeverSink
@@ -64,12 +64,23 @@
 #   [0501] Betrayal Specific Filtering
 #   [0502] League-Specific Magic Items
 #   [0503] Magic Mod Permutations
-#   [0504] Rare Item Permutations
-# [[0600]] Explicit Mod filtering - EXPERIMENTAL
-#   [0601] Rare Item Permutations
-#   [0602] Weapons-Physical (Key: IPD)
-#   [0603] The Suffix Abomination
-#   [0604] Casters
+# [[0600]] Explicit Mod filtering
+#   [0601] Skill Staves/Bows
+#   [0602] Rare Item Permutations
+#   [0603] Weapons-Physical (Key: IPD)
+#   [0604] The Suffix Abomination
+#   [0605] Casters
+#   [0606] General Resist Gear
+#   [0607] Boots/Gloves
+#   [0608] Boots
+#   [0609] Gloves
+#   [0610] Helmets
+#   [0611] Shields
+#   [0612] Body
+#   [0613] Quiver
+#   [0614] Belts
+#   [0615] Rings
+#   [0616] Amulets
 # [[0700]] Recipes, Magic and Normal items (endgame!)
 #   [0701] Overqualitied Items
 #   [0702] 5-Linked items
@@ -613,7 +624,6 @@ Show # Stupid Beast Mod Items
 	Identified True
 	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
 	SetFontSize 45
-	SetTextColor 255 190 0               # TEXTCOLOR:	 Rare 75+
 	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Rare T1
 	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
@@ -645,8 +655,7 @@ Show # Incursion Mod Items
 Hide # Warband Mod Items %H3
 	Identified True
 	HasExplicitMod "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
-	SetFontSize 45
-	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetFontSize 40
 	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
 
 #------------------------------------
@@ -862,8 +871,12 @@ Show # Noteworthy ring rolls
 	MinimapIcon 2 Blue Diamond
 	PlayEffect Blue
 
+#===============================================================================================================
+# [[0600]] Explicit Mod filtering
+#===============================================================================================================
+
 #------------------------------------
-#   [0504] Rare Item Permutations
+#   [0601] Skill Staves/Bows
 #------------------------------------
 
 Show
@@ -879,12 +892,8 @@ Show
 	MinimapIcon 2 Blue Diamond
 	PlayEffect Blue
 
-#===============================================================================================================
-# [[0600]] Explicit Mod filtering - EXPERIMENTAL
-#===============================================================================================================
-
 #------------------------------------
-#   [0601] Rare Item Permutations
+#   [0602] Rare Item Permutations
 #------------------------------------
 
 Show # Phys DPS 3-Stat Combos (Bows/Wands)
@@ -918,7 +927,7 @@ Show # Phys DPS 2-Stat Combos (Bows/Wands)
 	PlayEffect Blue
 
 #------------------------------------
-#   [0602] Weapons-Physical (Key: IPD)
+#   [0603] Weapons-Physical (Key: IPD)
 #------------------------------------
 
 Show # Phys DPS 3-Stat Combos
@@ -963,7 +972,7 @@ Show # Phys DPS 2-Stat Combos
 	PlayEffect Blue
 
 #------------------------------------
-#   [0603] The Suffix Abomination
+#   [0604] The Suffix Abomination
 #------------------------------------
 
 Show
@@ -984,7 +993,7 @@ Show
 	PlayEffect Blue
 
 #------------------------------------
-#   [0604] Casters
+#   [0605] Casters
 #------------------------------------
 
 Show
@@ -1037,6 +1046,581 @@ Show
 	Class "Sceptres" "Daggers" "Wands"
 	HasExplicitMod "Runic" "Glyphic" "Tul's" "Cryomancer's"
 	HasExplicitMod "of Glaciation" "of Floe" "Entombing" "Lich's" "Archmage's"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0606] General Resist Gear
+#------------------------------------
+
+Show
+	Corrupted False
+	Identified True
+	Rarity Rare
+	HasExplicitMod "of Haast" "of the Ice"
+	HasExplicitMod "of Tzteosh" "of the Magma"
+	HasExplicitMod "of Ephij" "of the Lightning"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0607] Boots/Gloves
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Boots" "Gloves"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Hellion's" "Cheetah's" "Gazelle's" "Unassailable" "Indomitable" "Dauntless"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Boots" "Gloves"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Hellion's" "Cheetah's" "Gazelle's" "Unassailable" "Indomitable" "Dauntless"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Boots" "Gloves"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Hellion's" "Cheetah's" "Gazelle's" "Unassailable" "Indomitable" "Dauntless"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Boots" "Gloves"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Hellion's" "Cheetah's" "Gazelle's" "Unassailable" "Indomitable" "Dauntless"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0608] Boots
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Boots"
+	HasExplicitMod "Athlete's" "Virile"
+	HasExplicitMod "Hellion's" "Cheetah's"
+	HasExplicitMod "Urchin" "Prior's" "Fawn's" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Boots"
+	HasExplicitMod "Hellion's" "Cheetah's"
+	HasExplicitMod "Unassailable" "Indomitable" "Dauntless"
+	HasExplicitMod "Seething" "Pulsing" "Radiating"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0609] Gloves
+#------------------------------------
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Gloves"
+	HasExplicitMod "Unassailable" "Indomitable"
+	HasExplicitMod "Seething" "Pulsing"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Gloves"
+	HasExplicitMod "Honed" "Polished"
+	HasExplicitMod "of Renown" "of Mastery"
+	HasExplicitMod "of Lioneye" "of the Assassin" "of the Ranger"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Urchin" "Prior's" "Fawn's" "Seething" "Pulsing" "Radiating" "Unassailable" "Indomitable" "Dauntless" "Prior's" "Seraphim's" "Djinn's" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant" "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus" "of the Yeti" "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace" "of the Kiln" "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest" "of the Thunderhead"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Gloves"
+	HasExplicitMod "Honed"
+	HasExplicitMod "of Renown"
+	HasExplicitMod "of Lioneye" "of the Assassin"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0610] Helmets
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Helmets"
+	HasExplicitMod "Fecund" "Athlete's"
+	HasExplicitMod "Nautilus's" "Ram's" "Abbot's" "Urchin" "Prior's" "Fawn's"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of Lioneye" "of the Assassin" "Necromancer's" "of the Leviathan" "of the Jaguar" "of the Savant"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Helmets"
+	HasExplicitMod "Unassailable" "Indomitable" "Dauntless"
+	HasExplicitMod "Blazing" "Seething"
+	HasExplicitMod "Seraphim's" "Abbot's" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of Lioneye" "of the Assassin" "Necromancer's" "of the Leviathan" "of the Jaguar" "of the Savant"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0611] Shields
+#------------------------------------
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Unfaltering" "Unassailable" "Indomitable"
+	HasExplicitMod "Incandescent" "Scintillating" "Blazing"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Runic" "Glyphic" "Incanter's" "Xoph's" "Pyroclastic" "Magmatic" "Tul's" "Cryomancer's" "Crystalline" "Esh's" "Ionising" "Smiting"
+	HasExplicitMod "of Unmaking" "of Ruin" "of Calamity"
+	HasExplicitMod "Expertise" "of the Span" "of the Rainbow" "of Variegation" "Rapturous" "Vigorous" "Fecund" "Unfaltering" "Unassailable" "Indomitable" "Incandescent" "Scintillating" "Blazing"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Rapturous" "Vigorous" "Fecund" "Unfaltering" "Unassailable" "Indomitable" "Incandescent" "Scintillating" "Blazing"
+	HasExplicitMod "Runic" "Glyphic" "Incanter's" "Xoph's" "Pyroclastic" "Magmatic" "Tul's" "Cryomancer's" "Crystalline" "Esh's" "Ionising" "Smiting"
+	HasExplicitMod "of the Span" "of the Rainbow" "of Variegation" "Seraphim's" "Abbot's" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of Lioneye" "of the Assassin" "Necromancer's" "of the Leviathan" "of the Jaguar" "of the Savant" "of Blocking"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Rapturous" "Vigorous" "Fecund" "Unfaltering" "Unassailable" "Indomitable" "Incandescent" "Scintillating" "Blazing" "Runic" "Glyphic" "Incanter's" "Xoph's" "Pyroclastic" "Magmatic" "Tul's" "Cryomancer's" "Crystalline" "Esh's" "Ionising" "Smiting"
+	HasExplicitMod "of the Span" "of Unmaking" "of Ruin" "of Blocking"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Rapturous" "Vigorous" "Fecund" "Unfaltering" "Unassailable" "Indomitable" "Incandescent" "Scintillating" "Blazing" "Runic" "Glyphic" "Incanter's" "Xoph's" "Pyroclastic" "Magmatic" "Tul's" "Cryomancer's" "Crystalline" "Esh's" "Ionising" "Smiting"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus"
+	HasExplicitMod "of the Span" "of Unmaking" "of Ruin" "of Blocking"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom" "of the Tempest"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Shields"
+	HasExplicitMod "Rapturous" "Vigorous" "Fecund" "Unfaltering" "Unassailable" "Indomitable" "Incandescent" "Scintillating" "Blazing" "Runic" "Glyphic" "Incanter's" "Xoph's" "Pyroclastic" "Magmatic" "Tul's" "Cryomancer's" "Crystalline" "Esh's" "Ionising" "Smiting"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of the Walrus"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano" "of the Furnace"
+	HasExplicitMod "of the Span" "Expertise" "of Unmaking" "of Ruin" "of Blocking"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0612] Body
+#------------------------------------
+
+Show
+	Identified True
+	DropLevel > 55
+	Rarity Rare
+	Class "Body Armour"
+	HasExplicitMod "Resplendent" "Incandescent"
+	HasExplicitMod "Unfaltering" "Unassailable"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	DropLevel > 55
+	Rarity Rare
+	Class "Body Armour"
+	HasExplicitMod "Resplendent" "Incandescent" "Scintillating"
+	HasExplicitMod "Unfaltering" "Unassailable" "Indomitable"
+	HasExplicitMod "Seraphim's" "Djinn's" "Exarch's" "Abbot's" "of the Genius" "of the Virtuoso"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	DropLevel > 50
+	Rarity Rare
+	Class "Body Armour"
+	HasExplicitMod "Prime" "Rapturous"
+	HasExplicitMod "Exarch's" "Abbot's" "Crocodile's" "Nautilus's" "Ibex's" "Ram's"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of Fog" "of Numbing" "of Exuberance"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0613] Quiver
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Quivers"
+	HasExplicitMod "Fecund" "Athlete's"
+	HasExplicitMod "Devastating" "Overpowering" "Unleashed" "Empowering"
+	HasExplicitMod "of Rending" "of Incision" "of Penetrating" "of Ease" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "Honed" "of the Assassin" "of the Gale"
+	HasExplicitMod "of Destruction" "of Ferocity" "of Fury"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0614] Belts
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Belts"
+	HasExplicitMod "of the Godslayer" "of the Gods" "of the Titan" "of the Leviathan" "of Savouring" "of Sipping" "of Refilling" "of Overflowing"
+	HasExplicitMod "Fecund" "Athlete" "Virile"
+	HasExplicitMod "Devastating" "Overpowering" "Unleashed" "Empowering" "Enveloped" "Encased" "Carapaced"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Belts"
+	HasExplicitMod "of Refilling" "of Overflowing" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of the Godslayer" "of the Gods" "of the Titan" "of the Leviathan"
+	HasExplicitMod "of Savouring"
+	HasExplicitMod "of Sipping"
+	HasExplicitMod "Fecund" "Athlete" "Virile" "Devastating" "Overpowering" "Unleashed" "Empowering" "Enveloped" "Resplendent"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Belts"
+	HasExplicitMod "Fecund" "Athlete" "Virile" "Dazzling" "Devastating" "Overpowering" "Unleashed" "Enveloped" "Resplendent"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano"
+	HasExplicitMod "of the Godslayer" "of the Gods" "of the Titan" "of the Leviathan" "of Savouring" "of Sipping" "of Refilling" "of Overflowing"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Belts"
+	HasExplicitMod "Fecund" "Athlete" "Virile" "Dazzling" "Devastating" "Overpowering" "Unleashed" "Enveloped" "Resplendent"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear"
+	HasExplicitMod "of the Godslayer" "of the Gods" "of the Titan" "of the Leviathan" "of Savouring" "of Sipping" "of Refilling" "of Overflowing"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Belts"
+	HasExplicitMod "Fecund" "Athlete" "Virile" "Dazzling" "Devastating" "Overpowering" "Unleashed" "Enveloped" "Resplendent"
+	HasExplicitMod "of the Godslayer" "of the Gods" "of the Titan" "of the Leviathan" "of Savouring" "of Sipping" "of Refilling" "of Overflowing"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0615] Rings
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Rings"
+	HasExplicitMod "Virile" "Rotund" "Robust" "Resplendent"
+	HasExplicitMod "Flawless" "Overpowering" "Unleashed" "Empowering"
+	HasExplicitMod "Annealed" "Gleaming" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging"
+	HasExplicitMod "of Talent" "of Skill" "of the Rainbow" "of Variegation" "of the Assassin" "of the Ranger" "of Rime" "of Flames" "of Voltage" "of Nirvana" "of the Comet" "of the Meteor" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Rings"
+	HasExplicitMod "Virile" "Rotund" "Robust" "Resplendent"
+	HasExplicitMod "Flawless" "Overpowering" "Unleashed" "Empowering" "Annealed" "Gleaming" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "of Talent" "of Skill" "of the Rainbow" "of Variegation" "of the Assassin" "of the Ranger" "of Rime" "of Flames" "of Voltage" "of Nirvana" "of the Comet" "of the Meteor" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Rings"
+	HasExplicitMod "Virile" "Rotund" "Robust" "Resplendent"
+	HasExplicitMod "Flawless" "Overpowering" "Unleashed" "Empowering" "Annealed" "Gleaming" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "of Talent" "of Skill" "of the Rainbow" "of Variegation" "of the Assassin" "of the Ranger" "of Rime" "of Flames" "of Voltage" "of Nirvana" "of the Comet" "of the Meteor" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom"
+	HasExplicitMod "of Haast" "of the Ice" "of the Polar Bear"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Rings"
+	HasExplicitMod "Virile" "Rotund" "Robust" "Resplendent"
+	HasExplicitMod "Flawless" "Overpowering" "Unleashed" "Empowering" "Annealed" "Gleaming" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "of Talent" "of Skill" "of the Rainbow" "of Variegation" "of the Assassin" "of the Ranger" "of Rime" "of Flames" "of Voltage" "of Nirvana" "of the Comet" "of the Meteor" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	HasExplicitMod "of Tzteosh" "of the Magma" "of the Volcano"
+	HasExplicitMod "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+#------------------------------------
+#   [0616] Amulets
+#------------------------------------
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Amulets"
+	HasExplicitMod "Unassailable" "Indomitable"
+	HasExplicitMod "Dazzling" "Resplendent"
+	HasExplicitMod "of the Span" "of the Rainbow"
+	HasExplicitMod "of the Assassin" "of the Ranger" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of Destruction" "of Ferocity" "of Fury" "of Incision" "of Penetrating" "of Rupturing" "of Expertise" "of Nimbleness" "of Floe" "of Rime" "of Immolation" "of Flames" "of Discharge" "of Voltage" "Wizard's" "Thaumaturgist's" "Flaring" "Tempered" "Razor-sharp" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "Devastating" "Overpowering" "Unleashed" "of the Multiverse" "of the Infinite" "of the Universe" "of the Galaxy" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Amulets"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Dazzling" "Resplendent"
+	HasExplicitMod "of the Span" "of the Rainbow"
+	HasExplicitMod "of the Assassin" "of the Ranger" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom"
+	HasExplicitMod "of Destruction" "of Ferocity" "of Fury" "of Incision" "of Penetrating" "of Rupturing" "of Expertise" "of Nimbleness" "of Floe" "of Rime" "of Immolation" "of Flames" "of Discharge" "of Voltage" "Wizard's" "Thaumaturgist's" "Flaring" "Tempered" "Razor-sharp" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "Devastating" "Overpowering" "Unleashed" "of the Multiverse" "of the Infinite" "of the Universe" "of the Galaxy" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Amulets"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Dazzling" "Resplendent"
+	HasExplicitMod "of the Multiverse" "of the Infinite" "of the Universe" "of the Galaxy"
+	HasExplicitMod "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant"
+	HasExplicitMod "of the Assassin" "of the Ranger" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom" "of the Span" "of the Rainbow" "of Destruction" "of Ferocity" "of Fury" "of Incision" "of Penetrating" "of Rupturing" "of Expertise" "of Nimbleness" "of Floe" "of Rime" "of Immolation" "of Flames" "of Discharge" "of Voltage" "Wizard's" "Thaumaturgist's" "Flaring" "Tempered" "Razor-sharp" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "Devastating" "Overpowering" "Unleashed"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Amulets"
+	HasExplicitMod "Devastating" "Overpowering" "Unleashed"
+	HasExplicitMod "Flaring" "Tempered" "Razor-sharp" "Entombing" "Polar" "Cremating" "Blasting" "Electrocuting" "Discharging" "of the Assassin" "of the Ranger"
+	HasExplicitMod "of Destruction" "of Ferocity" "of Fury"
+	HasExplicitMod "Athlete's" "Virile" "Rotund" "Dazzling" "Resplendent" "of Floe" "of Rime" "of Immolation" "of Flames" "of Discharge" "of Voltage" "of Incision" "of Penetrating" "of Rupturing" "of the Multiverse" "of the Infinite" "of the Universe" "of the Galaxy" "of the Span" "of the Rainbow" "of the Gods" "of the Wind" "of the Genius" "of the Titan" "of the Blur" "of the Virtuoso" "of the Leviathan" "of the Jaguar" "of the Savant" "of Haast" "of the Ice" "of the Polar Bear" "of Tzteosh" "of the Magma" "of the Volcano" "of Ephij" "of the Lightning" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
+	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
+	PlayAlertSound 3 300                 # DROPSOUND:	 Unique
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show
+	Identified True
+	Rarity Rare
+	Class "Amulets"
+	HasExplicitMod "of Expertise" "of Nimbleness"
+	HasExplicitMod "of Destruction" "of Ferocity" "of Fury"
+	HasExplicitMod "Wizard's" "Thaumaturgist's"
 	SetFontSize 45
 	SetTextColor 0 240 190 240           # TEXTCOLOR:	 Special
 	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 Special Base
@@ -3321,7 +3905,7 @@ Show # $maps->T16
 	SetTextColor 100 0 122 255           # TEXTCOLOR:	 High Map
 	SetBorderColor 100 0 255 255         # BORDERCOLOR:	 T0 Map
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T0 Drop
-	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
+	PlayAlertSound 1 300                 # DROPSOUND:	 T1 Dropsound
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
@@ -4197,9 +4781,18 @@ Show # $Currency->Special %TB-Prophecy-T3
 #   [2001] Exceptions to prevent ident. mistakes
 #------------------------------------
 
-Show # $Div->T4 %TB-Divination-Exception
+Show # $Div->T4
 	Class "Divination"
-	BaseType "The Master Artisan" "The Wolf's Shadow"
+	BaseType "The Wolf's Shadow"
+	SetFontSize 45
+	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Divi T4
+	SetBackgroundColor 145 215 230 225   # BACKGROUND:	 Divi T4
+	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
+
+Show # $Div->T4
+	Class "Divination"
+	BaseType "The Master Artisan"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Divi T4
@@ -4212,7 +4805,7 @@ Show # $Div->T4 %TB-Divination-Exception
 
 Show # $Div->T1 %TB-Divination-T1
 	Class "Divination"
-	BaseType "A Dab of Ink" "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Pride Before the Fall" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Mayor" "The Nurse" "The Queen" "The Samurai's Eye" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Samurai's Eye" "The Spark and the Flame" "The Wolven King's Bite" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 0 255             # TEXTCOLOR:	 Divi T1
 	SetBorderColor 255 0 0               # BORDERCOLOR:	 Divi T1
@@ -4227,7 +4820,7 @@ Show # $Div->T1 %TB-Divination-T1
 
 Show # $Div->T2 %TB-Divination-T2
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Mawr Blaidd" "Perfection" "The Artist" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Celestial Stone" "The Endless Darkness" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Last One Standing" "The Life Thief" "The Master" "The Offering" "The Polymath" "The Professor" "The Risk" "The Sacrifice" "The Saint's Treasure" "The Sephirot" "The Undaunted" "The Valkyrie" "The Void"
+	BaseType "A Dab of Ink" "Chaotic Disposition" "Rebirth" "The Artist" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Enlightened" "The Ethereal" "The Hoarder" "The King's Heart" "The Life Thief" "The Professor" "The Sacrifice" "The Saint's Treasure" "The Sephirot" "The Undaunted" "The Void" "The Wolf" "The World Eater"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Aspect: 83plus
@@ -4242,7 +4835,7 @@ Show # $Div->T2 %TB-Divination-T2
 
 Show # $Div->T3 %TB-Divination-T3
 	Class "Divination"
-	BaseType "Atziri's Arsenal" "Boon of the First Ones" "Bowyer's Dream" "Emperor of Purity" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Hope" "Humility" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Rebirth" "Scholar of the Seas" "The Admirer" "The Beast" "The Body" "The Breach" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Dreamer" "The Dreamland" "The Encroaching Darkness" "The Fletcher" "The Formless Sea" "The Gladiator" "The Hale Heart" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Mercenary" "The Obscured" "The Penitent" "The Porcupine" "The Price of Protection" "The Soul" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Trial" "The Twilight Moon" "The Undisputed" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Wilted Rose" "The Wind" "The Wolf" "The Wretched" "Time-Lost Relic"
+	BaseType "Atziri's Arsenal" "Boon of the First Ones" "Bowyer's Dream" "Emperor of Purity" "Harmony of Souls" "Heterochromia" "Humility" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "No Traces" "Perfection" "Scholar of the Seas" "The Admirer" "The Beast" "The Body" "The Breach" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Encroaching Darkness" "The Endless Darkness" "The Fletcher" "The Formless Sea" "The Gladiator" "The Hale Heart" "The Hunger" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Last One Standing" "The Lion" "The Master" "The Mercenary" "The Obscured" "The Offering" "The Penitent" "The Polymath" "The Porcupine" "The Price of Protection" "The Thaumaturgist" "The Throne" "The Traitor" "The Twilight Moon" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Warlord" "The Wilted Rose" "The Wind" "The Wretched" "Time-Lost Relic"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 0 0               # BORDERCOLOR:	 Divi T1
@@ -4280,7 +4873,7 @@ Show # $Div->T5Currency %H4 %TB-Divination-T5Currency
 
 Hide # $Div->T5 %H3 %TB-Divination-T5
 	Class "Divination"
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Grave Knowledge" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Calling" "The Coming Storm" "The Eye of the Dragon" "The Feast" "The Fox" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Opulent" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Visionary" "The Warden" "Thunderous Skies" "Tranquillity" "Volatile Power"
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Grave Knowledge" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Calling" "The Coming Storm" "The Eye of the Dragon" "The Fox" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Opulent" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Visionary" "The Warden" "Thunderous Skies" "Tranquillity" "Volatile Power"
 	SetFontSize 36
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
@@ -4412,7 +5005,7 @@ Show # $uniques->Harbinger
 
 Show # $uniques->T1 %TB-Uniques-T1
 	Rarity Unique
-	BaseType "Arcanist Gloves" "Assassin's Boots" "Callous Mask" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Jewelled Foil" "Nightmare Mace" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Wereclaw Talisman"
+	BaseType "Ambush Mitts" "Arcanist Slippers" "Callous Mask" "Carnal Boots" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Greatwolf Talisman" "Highborn Staff" "Jewelled Foil" "Nubuck Boots" "Occultist's Vestment" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask"
 	SetFontSize 45
 	SetTextColor 175 96 37 255           # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255         # BORDERCOLOR:	 Aspect Unique
@@ -4427,7 +5020,7 @@ Show # $uniques->T1 %TB-Uniques-T1
 
 Show # $uniques->T2 %TB-Uniques-T2
 	Rarity Unique
-	BaseType "Ambush Mitts" "Ancient Gauntlets" "Arcanist Slippers" "Bismuth Flask" "Blood Sceptre" "Carnal Boots" "Carnal Sceptre" "Citadel Bow" "Cutlass" "Full Wyrmscale" "Gemstone Sword" "Gladiator Plate" "Grand Mana Flask" "Harlequin Mask" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Iron Sceptre" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Bascinet" "Nubuck Boots" "Royal Burgonet" "Sacrificial Garb" "Sanctified Mana Flask" "Savant's Robe" "Siege Axe" "Thorium Spirit Shield" "Topaz Flask" "Vaal Mask" "Vaal Spirit Shield" "Varnished Coat" "Void Axe" "Zodiac Leather"
+	BaseType "Ancient Gauntlets" "Arcanist Gloves" "Assassin's Boots" "Bismuth Flask" "Callous Mask Piece" "Cutlass" "Full Wyrmscale" "Gemstone Sword" "Grand Mana Flask" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Bascinet" "Nightmare Mace" "Sacrificial Garb" "Savant's Robe" "Thorium Spirit Shield" "Topaz Flask" "Vaal Spirit Shield" "Wereclaw Talisman"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1
@@ -4456,7 +5049,7 @@ Show # $uniques->T2
 
 Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase-League
 	Rarity Unique
-	BaseType "Amber Amulet" "Imperial Staff" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet"
+	BaseType "Amber Amulet" "Lapis Amulet" "Leather Belt" "Magistrate Crown" "Onyx Amulet"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1
@@ -4467,7 +5060,7 @@ Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase-League
 
 Show # $uniques->MultiBase %TB-Uniques-T2-MultiBase-Special
 	Rarity Unique
-	BaseType "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Hubris Circlet" "Imperial Bow" "Murder Boots" "Sadist Garb" "Sorcerer Boots" "Stibnite Flask" "Terror Claw" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
+	BaseType "Carved Wand" "Citrine Amulet" "Ebony Tower Shield" "Eternal Sword" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Imperial Bow" "Imperial Staff" "Murder Boots" "Sadist Garb" "Sage Wand" "Sorcerer Boots" "Stibnite Flask" "Terror Claw" "Tornado Wand" "Two-Stone Ring" "Unset Ring" "Vaal Sceptre"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1
