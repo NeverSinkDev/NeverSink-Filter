@@ -1,5 +1,3 @@
-[![Github All Releases](https://img.shields.io/github/downloads/NeverSinkDev/NeverSink-Filter/total.svg)](https://github.com/NeverSinkDev/NeverSink-Filter/releases)
-
 [ **[FILTERBLADE](http://www.FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[SUBVERSIONS](https://docs.google.com/spreadsheets/d/15HllTA9AumeFgJ3r6pnFKAJ904Agq9U5MPblE4HNaio/edit#gid=0)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ] - [ **[PATREON](https://www.patreon.com/user/overview?u=8230879)** ]
 
 --------------------------
@@ -70,3 +68,7 @@ I recommend using NotePad++ to edit the filter.
 For additional details, the FAQ (read it before asking questions), previous changelogs, screenshots etc. please refer to the forum thread in the POE forum ([clicky here to get there](https://www.pathofexile.com/forum/view-thread/1246208))
 
 --------------------------
+
+Test: 
+
+![](https://img.shields.io/github/downloads/NeverSinkDev/NeverSink-Filter/total.svg)
