@@ -12,6 +12,3 @@ Constrict5x:	Uber+ Strict + All Currency (EXCL. Scrolls and armourers and trash 
 Additionally all these filters show fewer crafting bases, no chancing bases and don't completely hide "outleveled" low tier maps.
 
 These filters can also be used by PC players, but players are better off going to www.filterblade.xyz and adjusting finetuning these filters to their liking.
-
-For more information, watch my video on it:
-https://youtu.be/787wi1sJZKg
