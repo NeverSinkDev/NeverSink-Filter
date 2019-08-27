@@ -2,11 +2,13 @@
 
 --------------------------
 
-**TESTING THE FILTER:**
+**QUICK START:**
 
 --------------------------
 
-The website *[filterblade.xyz](http://www.filterblade.xyz)* is a user-friendly way to install, simulate and (if you want to) modify the filter and is my recommendation. You can do the following things there
+The website *[filterblade.xyz](http://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and simulate (lootsimulator!) the filter.
+
+You can also modify it, without any code knowledge and merge changes you've made with the latest filter version. 
 
 --------------------------
 
@@ -14,7 +16,11 @@ The website *[filterblade.xyz](http://www.filterblade.xyz)* is a user-friendly w
 
 --------------------------
 
-The filter itself will always be free, including updates. There will never be any premium/donator versions or options! However, if you want to support the the development of the filter and/or filterblade or just show your appreciation feel free to **[buy me a beer / donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**. I also have a **[Patreon](https://www.patreon.com/user/overview?u=8230879)** account:
+The filter itself will always be free, including updates. There will never be any premium/donator versions or options! 
+
+If you want to support the the development of the filter and/or filterblade or just show your appreciation feel free to **[buy me a beer / donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**. I also have a **[Patreon](https://www.patreon.com/user/overview?u=8230879)** account.
+
+Your support is appreciated. Thank you!
 
 --------------------------
 
@@ -72,7 +78,4 @@ For additional details, the FAQ (read it before asking questions), previous chan
 
 --------------------------
 
-Test: 
-
-![](https://img.shields.io/github/downloads/NeverSinkDev/NeverSink-Filter/total.svg)
 [![Become a Patreon](https://img.shields.io/badge/patreon-%F0%9F%8E%AF-orange.svg)](https://www.patreon.com/Neversink)
