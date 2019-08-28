@@ -10,6 +10,35 @@ The website *[filterblade.xyz](http://www.filterblade.xyz)* is the user-friendly
 
 --------------------------
 
+**BARE MINIMUM YOU SHOULD KNOW:**
+
+--------------------------
+
+1) The filter does NOT update itself automatically. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! Get the latest version from: *[filterblade.xyz](http://www.filterblade.xyz)*
+2) The filter is always updated before the start of a new league. The update is live 4-6 hours before start. Afterwards, usually every few weeks.
+3) Filters can't distinguish between different variations of one unique base! Example: A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". Things that need manual checking have a blue icon on the minimap!
+4) If you have questions, suggestions or want to get in touch: join our discord server: discord.gg/mye6xhF
+
+--------------------------
+
+**INSTALLATION INSTRUCTIONS:**
+
+--------------------------
+
+1) Download the latest filter from *[filterblade.xyz](http://www.filterblade.xyz)* or from the "releases" section. 
+
+2) Extract the files using WinRar/7zip or a similar tool.
+
+3) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
+
+4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
+
+5) Done. Enjoy.
+
+If you want to edit the filter in a text-editor I've create a *[notepad++](https://github.com/NeverSinkDev/NotepadPP-PoE-Filter-Markup-Language)* and a *[visual studio code](https://github.com/NeverSinkDev/VS-Code-PoE-Filter-Markup-Extension)* filter highlight language!
+
+--------------------------
+
 **SUPPORT:**
 
 --------------------------
@@ -51,24 +80,6 @@ You can also design your own strictness settings on *[filterblade.xyz](http://ww
 Different styles have the same filtering pattern and also have the same filter subversions (seen above), but use different highlighting settings. The subversions can be found in the subdirectories. I recommend previewing them on FilterBlade, most styles "just" change the visuals, however the **CUSTOMSOUNDS** style is special: 
 
 Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
-
---------------------------
-
-**INSTALLATION INSTRUCTIONS:**
-
---------------------------
-
-1) Download the latest filter from *[filterblade.xyz](http://www.filterblade.xyz)* or from the "releases" section. 
-
-2) Extract the files using WinRar/7zip or a similar tool.
-
-3) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
-
-4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
-
-5) Done. Enjoy.
-
-If you want to edit the filter in a text-editor I've create a *[notepad++](https://github.com/NeverSinkDev/NotepadPP-PoE-Filter-Markup-Language)* and a *[visual studio code](https://github.com/NeverSinkDev/VS-Code-PoE-Filter-Markup-Extension)* filter highlight language!
 
 --------------------------
 
