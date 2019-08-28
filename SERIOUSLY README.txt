@@ -67,4 +67,5 @@ If you want to get in touch use one of the following methods.
 
 Email:    neversinkgaming-at-gmail.com
 Discord:  discord.gg/mye6xhF
-Twitter:  neversinkgaming
+Twitter:  https://twitter.com/neversinkgaming
+Ingame:   I no longer answer questions ingame. Thank you for your understanding. 
