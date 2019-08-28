@@ -1,4 +1,4 @@
-[ **[FILTERBLADE](http://www.FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ] - [ **[PATREON](https://www.patreon.com/user/overview?u=8230879)** ]
+[ **[FILTERBLADE](http://www.FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ] - [ **[PATREON](https://www.patreon.com/user/overview?u=8230879)** ] - [ **[TIERLISTS](https://www.filterblade.xyz/TierLists.html)** ]
 
 --------------------------
 
