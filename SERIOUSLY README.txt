@@ -1,4 +1,13 @@
-The website http://www.filterblade.xyz is the user-friendly and recommended way to download, update, install and simulate (lootsimulator!) the filter.
+--------------------------
+**BARE MINIMUM YOU SHOULD KNOW:**
+--------------------------
+
+1) The filter does NOT update itself automatically. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! 
+2) Get the latest version from: https://www.filterblade.xyz
+3) FilterBlade has explanations for colors, styles, strictnesses etc. You can also customize the entire filter to your playstyle there (no programming knowledge required), while getting updates.
+3) The filter is always updated before the start of a new league. The update is live 4-6 hours before start. Afterwards, usually every few weeks.
+4) Filters can't distinguish between different variations of one unique base! Example: A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". Things that need manual checking have a blue icon on the minimap! More info on FilterBlade
+5) If you have questions, suggestions or want to get in touch: join our discord server: discord.gg/mye6xhF
 
 --------------------------
 **INSTALLATION INSTRUCTIONS:**
@@ -9,18 +18,6 @@ The website http://www.filterblade.xyz is the user-friendly and recommended way 
 2) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
 3) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
 4) Done. Enjoy.
-
---------------------------
-**SUPPORT:**
---------------------------
-
-The filter itself will always be free, including updates.
-Still, if you want to support the development of the filter or filterblade:
-
-- You can buy me a beer via paypal: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2
-- I also have a Patreon account: https://www.patreon.com/user/overview?u=8230879
-
-Your support is appreciated. Thank you!
 
 --------------------------
 **PICKING A STRICTNESS:**
@@ -49,3 +46,25 @@ You can also design your own strictness settings on filterblade
 Different styles have the same filtering pattern and also have the same filter subversions (seen above), but use different highlighting settings. The subversions can be found in the subdirectories. I recommend previewing them on FilterBlade, most styles "just" change the visuals, however the **CUSTOMSOUNDS** style is special: 
 
 Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
+
+--------------------------
+**SUPPORT:**
+--------------------------
+
+The filter itself will always be free, including updates.
+Still, if you want to support the development of the filter or filterblade:
+
+- You can buy me a beer via paypal: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2
+- I also have a Patreon account: https://www.patreon.com/user/overview?u=8230879
+
+Your support is appreciated. Thank you!
+
+--------------------------
+**CONTACT:**
+--------------------------
+
+If you want to get in touch use one of the following methods.
+
+Email:    neversinkgaming-at-gmail.com
+Discord:  discord.gg/mye6xhF
+Twitter:  neversinkgaming
