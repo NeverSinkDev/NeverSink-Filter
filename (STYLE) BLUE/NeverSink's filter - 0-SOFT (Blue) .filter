@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  7.3
+# VERSION:  7.31
 # TYPE:     0-SOFT
 # STYLE:    BLUE
 # AUTHOR:   NeverSink
@@ -199,10 +199,9 @@
 #   [3203] Tier 1 uniques
 #   [3204] Tier 2 uniques
 #   [3205] Multi-Unique bases.
-#   [3206] Possibly expensive uniques / meta influenced
-#   [3207] Special Unique Searches
-#   [3208] Prophecy-Material Uniques
-#   [3209] Random Uniques
+#   [3206] Special Unique Searches
+#   [3207] Prophecy-Material Uniques
+#   [3208] Random Uniques
 # [[3300]] Quest Items and Shaper Orbs
 # [[3400]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
 # [[3500]] Leveling - Flasks
@@ -290,7 +289,7 @@ Show # $tier->t1ex $type->rare->shaper
 	ShaperItem True
 	ItemLevel >= 80
 	Rarity <= Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -302,7 +301,7 @@ Show # $tier->t1ex $type->rare->shaper
 Show # $tier->t1ex $type->rare->shaper
 	ShaperItem True
 	Rarity <= Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -449,7 +448,7 @@ Show # $tier->t1ex $type->rare->elder
 	ElderItem True
 	ItemLevel >= 80
 	Rarity <= Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -461,7 +460,7 @@ Show # $tier->t1ex $type->rare->elder
 Show # $tier->t1ex $type->rare->elder
 	ElderItem True
 	Rarity <= Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -2171,7 +2170,6 @@ Show # $x->abyss->jewel
 	SetBackgroundColor 120 120 0 225        # BACKGROUND:	 Rare Jewel
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Blue Temp
-	MinimapIcon 2 Blue Diamond
 
 Show # %H4 $x->abyss->jewel
 	Rarity <= Magic
@@ -2209,26 +2207,26 @@ Show # %H2
 Show # %SENDER->CRAFTING->T1 $type->normalcraft->i86 $tier->t1
 	ItemLevel >= 86
 	Rarity < Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 255 125 0 255        # BACKGROUND:	 SpecialBase T1
 	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
 	PlayEffect Red
-	MinimapIcon 0 Red Diamond
+	MinimapIcon 1 Red Hexagon
 
 Show # %H5 %SENDER->CRAFTING->T2 $type->normalcraft->i86 $tier->t2
 	ItemLevel >= 86
 	Rarity < Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 125 0 255            # BORDERCOLOR:	 Aspect High Base
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound	
-	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	PlayEffect White
+	MinimapIcon 2 White Hexagon
 
 Show # %H4 %SENDER->CRAFTING->T3 $type->normalcraft->i86 $tier->t3
 	ItemLevel >= 86
@@ -2255,26 +2253,26 @@ Show # %H3 %SENDER->CRAFTING->T4 $type->normalcraft->i86 $tier->t4
 Show # %RECEIVER->CRAFTING->T1 $type->normalcraft->i84 $tier->t1
 	ItemLevel >= 84
 	Rarity < Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 200 200 0 255
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 2 Yellow Hexagon
 
 Show # %H5 %RECEIVER->CRAFTING->T2 $type->normalcraft->i84 $tier->t2
 	ItemLevel >= 84
 	Rarity < Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 200 200 0 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound	
-	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	PlayEffect White
+	MinimapIcon 2 White Hexagon
 
 Show # %H3 %RECEIVER->CRAFTING->T3 $type->normalcraft->i84 $tier->t3
 	ItemLevel >= 84
@@ -2301,25 +2299,23 @@ Show # %H2 %RECEIVER->CRAFTING->T4 $type->normalcraft->i84 $tier->t4
 Show # %RECEIVER->CRAFTING->T1 $type->normalcraft->rest $tier->t1
 	ItemLevel >= 60
 	Rarity < Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 200 200 0 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound		
-	PlayEffect White
-	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Hexagon
 
 Show # %H4 %RECEIVER->CRAFTING->T2 $type->normalcraft->rest $tier->t2
 	ItemLevel >= 60
 	Rarity < Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 0 0 0 255
-	PlayEffect White
-	MinimapIcon 0 White Diamond
 
 #Show # %H0 %RECEIVER->CRAFTING->T3 $type->normalcraft->rest $tier->t3
 #	ItemLevel >= 60
@@ -2750,26 +2746,26 @@ Show # %RF1 %H2 %C2 $tier->t43 $type->currency
 Show # %RECEIVER->CRAFTING->T1 $type->rarecraft->i86 $tier->t1
 	ItemLevel >= 86
 	Rarity Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 255 125 0 255
 	PlayAlertSound 1 300
 	PlayEffect Red
-	MinimapIcon 0 Red Diamond
+	MinimapIcon 1 Red Hexagon
 
 Show # %RECEIVER->CRAFTING->T2 $type->rarecraft->i86 $tier->t2
 	ItemLevel >= 86
 	Rarity Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 255 125 0 255
 	PlayAlertSound 2 300
-	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	PlayEffect White
+	MinimapIcon 2 White Hexagon
 
 Show # %H4 %RECEIVER->CRAFTING->T3 $type->rarecraft->i86 $tier->t3
 	ItemLevel >= 86
@@ -2796,26 +2792,26 @@ Show # %H4 %RECEIVER->CRAFTING->T4 $type->rarecraft->i86 $tier->t4
 Show # %RECEIVER->CRAFTING->T1 $type->rarecraft->i84 $tier->t1
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 200 200 0 255
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 2 Yellow Hexagon
 
 Show # %RECEIVER->CRAFTING->T2 $type->rarecraft->i84 $tier->t2
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 200 200 0 255
 	PlayAlertSound 2 300
 	PlayEffect White
-	MinimapIcon 0 White Diamond
+	MinimapIcon 2 White Hexagon
 
 Show # %H4 %RECEIVER->CRAFTING->T3 $type->rarecraft->i84 $tier->t3
 	ItemLevel >= 84
@@ -2842,26 +2838,23 @@ Show # %H3 %RECEIVER->CRAFTING->T4 $type->rarecraft->i84 $tier->t4
 Show # %RECEIVER->CRAFTING->T1 $type->rarecraft->rest $tier->t1
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Cerulean Ring" "Convoking Wand" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 240 190 240
 	SetBackgroundColor 20 110 0 255
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 2 Yellow Hexagon
 
 Show # %RECEIVER->CRAFTING->T2 $type->rarecraft->rest $tier->t2
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 240 190 240
 	SetBackgroundColor 20 110 0 255
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 0 White Diamond
 
 #Show # %RECEIVER->CRAFTING->T3 $type->rarecraft->rest $tier->t3
 #	ItemLevel >= 65
@@ -4123,7 +4116,7 @@ Hide
 Show # $tier->t1 $type->unique->maps
 	Rarity Unique
 	Class Maps
-	BaseType "Chateau Map" "Courtyard Map" "Harbinger Map" "Maze Map" "Moon Temple Map" "Museum Map"
+	BaseType "Chateau Map" "Maze Map" "Museum Map"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -4135,7 +4128,7 @@ Show # $tier->t1 $type->unique->maps
 Show # $tier->t2 $type->unique->maps
 	Rarity Unique
 	Class Maps
-	BaseType "Cursed Crypt Map" "Reef Map" "Temple Map" "Vaal Pyramid Map"
+	BaseType "Cemetery Map" "Courtyard Map" "Cursed Crypt Map" "Harbinger Map" "Moon Temple Map" "Reef Map" "Shore Map" "Temple Map" "Vaal Pyramid Map"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -4188,7 +4181,7 @@ Show
 	SetTextColor 20 50 20 255
 	SetBorderColor 20 50 20 255
 	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 5 300                    # DROPSOUND:	 High Map Sound
+	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
 	PlayEffect Red
 	MinimapIcon 0 Red Square
 
@@ -4199,7 +4192,7 @@ Show
 	SetFontSize 45
 	SetTextColor 20 50 20 255
 	SetBorderColor 20 50 20 255
-	SetBackgroundColor 200 200 200 255      # BACKGROUND:	 High Maps
+	SetBackgroundColor 170 220 170
 	PlayAlertSound 5 300                    # DROPSOUND:	 High Map Sound
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Square
@@ -4212,7 +4205,7 @@ Show
 	SetTextColor 185 255 185 255
 	SetBackgroundColor 0 15 0 255
 	PlayAlertSound 4 300                    # DROPSOUND:	 Map Sound
-	PlayEffect White
+	PlayEffect Yellow
 	MinimapIcon 2 Yellow Square
 
 #------------------------------------
@@ -4642,23 +4635,23 @@ Show
 
 Show # $tier->t1 $type->fragments->scarabs
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Perandus Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Rusted Sulphite Scarab"
+	BaseType "Gilded Cartography Scarab" "Gilded Divination Scarab"
 	SetFontSize 45
 	SetTextColor 159 15 213 255
 	SetBorderColor 159 15 213 255
 	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
-	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
 	PlayEffect Yellow
 	MinimapIcon 0 Red Hexagon
 
 Show # $tier->t2 $type->fragments->scarabs
 	Class "Map Fragments"
-	BaseType "Gilded Ambush Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Torment Scarab" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Rusted Bestiary Scarab"
+	BaseType "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Reliquary Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Harbinger Scarab" "Polished Legion Scarab" "Polished Sulphite Scarab" "Rusted Cartography Scarab" "Rusted Sulphite Scarab"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 159 15 213 255       # BACKGROUND:	 Special
-	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Hexagon
 
@@ -4821,7 +4814,7 @@ Show # $tier->t1 $type->currency->fossil
 
 Show # $tier->t2 $type->currency->fossil
 	Class Currency
-	BaseType "Enchanted Fossil" "Gilded Fossil" "Perfect Fossil" "Prismatic Fossil" "Sanctified Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
+	BaseType "Bound Fossil" "Corroded Fossil" "Sanctified Fossil" "Serrated Fossil" "Tangled Fossil"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -4832,7 +4825,7 @@ Show # $tier->t2 $type->currency->fossil
 
 Show # $tier->t4 $type->currency->fossil
 	Class Currency
-	BaseType "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
+	BaseType "Metallic Fossil" "Scorched Fossil"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
@@ -4907,24 +4900,24 @@ Show # $tier->t2 $type->currency->oil
 
 Show # $tier->t3 $type->currency->oil
 	Class Currency
-	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Violet Oil"
+	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Verdant Oil" "Violet Oil"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
-	PlayEffect Yellow
+	PlayEffect White
 	MinimapIcon 1 Yellow Circle
 
-Show # $tier->t4 $type->currency->oil
+Show # %H5 $tier->t4 $type->currency->oil
 	Class Currency
-	BaseType "Amber Oil" "Clear Oil" "Sepia Oil" "Verdant Oil"
+	BaseType "Amber Oil" "Clear Oil" "Sepia Oil"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 213 159 0 255        # BACKGROUND:	 Currency T4
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
-	PlayEffect White
+	PlayEffect White Temp
 	MinimapIcon 2 White Circle
 
 #------------------------------------
@@ -5048,7 +5041,7 @@ Show # %H5 %C4 $tier->t2 $type->currency->legionsplinters
 
 Show # $tier->t1 $type->currency->incubators
 	Class Incubator
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator"
+	BaseType "Eldritch Incubator" "Geomancer's Incubator"
 	SetFontSize 45
 	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
 	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
@@ -5059,7 +5052,7 @@ Show # $tier->t1 $type->currency->incubators
 
 Show # $tier->t2 $type->currency->incubators
 	Class Incubator
-	BaseType "Eldritch Incubator" "Foreboding Incubator" "Thaumaturge's Incubator"
+	BaseType "Foreboding Incubator" "Thaumaturge's Incubator" "Time-Lost Incubator"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5149,7 +5142,7 @@ Show
 Show # $tier->t1 $type->currency->prophecy
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Cleanser of Sins" "Fated Connections" "Monstrous Treasure" "Possessed Foe" "The Great Leader of the North" "The Queen's Sacrifice" "Trash to Treasure" "Wind and Thunder"
+	Prophecy "A Dishonourable Death" "A Prodigious Hand" "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "Faith Exhumed" "Fated Connections" "Lost in the Pages" "Monstrous Treasure" "The Ambitious Bandit III" "The Bowstring's Music" "The Great Leader of the North" "The Hollow Pledge" "The Queen's Sacrifice" "The Servant's Heart" "The Unbreathing Queen V" "Trash to Treasure" "Wind and Thunder"
 	SetFontSize 45
 	SetTextColor 130 25 255 255             # TEXTCOLOR:	 Blessing
 	SetBorderColor 130 25 255 255           # BORDERCOLOR:	 Breach
@@ -5161,7 +5154,7 @@ Show # $tier->t1 $type->currency->prophecy
 Show # $tier->t2 $type->currency->prophecy
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "A Master Seeks Help" "A Prodigious Hand" "Ancient Doom" "Pools of Wealth" "Song of the Sekhema" "The Great Mind of the North" "The Jeweller's Touch" "Twice Enchanted" "Vaal Invasion" "Vaal Winds"
+	Prophecy "Song of the Sekhema" "The Flayed Man" "The Jeweller's Touch" "The King's Path" "The Mentor" "The Misunderstood Queen" "Vaal Winds"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -5214,7 +5207,7 @@ Show # $tier->ex $type->divination
 
 Show # $tier->t1 $type->divination
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Landing" "The Life Thief" "The Mayor" "The Nurse" "The Price of Loyalty" "The Professor" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Undaunted" "The Valkyrie" "The Vast" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "Dark Dreams" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Bargain" "The Celestial Justicar" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Ethereal" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Nurse" "The Polymath" "The Price of Loyalty" "The Sacrifice" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255                # TEXTCOLOR:	 Divi T1
 	SetBorderColor 0 0 255 255              # BORDERCOLOR:	 Divi T1
@@ -5229,7 +5222,7 @@ Show # $tier->t1 $type->divination
 
 Show # $tier->t2 $type->divination
 	Class "Divination"
-	BaseType "Azyran's Reward" "Boon of the First Ones" "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Pride Before the Fall" "Remembrance" "The Artist" "The Bargain" "The Cartographer" "The Celestial Justicar" "The Enlightened" "The Eye of Terror" "The Hoarder" "The King's Heart" "The Seeker" "The Void" "The Wolf"
+	BaseType "Azyran's Reward" "Boon of the First Ones" "Chaotic Disposition" "Pride Before the Fall" "The Cartographer" "The Celestial Stone" "The Dapper Prodigy" "The King's Heart" "The Mayor" "The Porcupine" "The Queen" "The Risk" "The Soul" "The Void" "The Wind"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255 255
@@ -5244,7 +5237,7 @@ Show # $tier->t2 $type->divination
 
 Show # $tier->t3 $type->divination
 	Class "Divination"
-	BaseType "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Bowyer's Dream" "Demigod's Wager" "Emperor of Purity" "Glimmer of Hope" "Heterochromia" "Hope" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Monochrome" "Perfection" "Rebirth" "Sambodhi's Vow" "The Breach" "The Brittle Emperor" "The Cacophony" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Deal" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hunger" "The Innocent" "The Insatiable" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Master" "The Offering" "The Old Man" "The Polymath" "The Porcupine" "The Sacrifice" "The Side Quest" "The Skeleton" "The Soul" "The Thaumaturgist" "The Throne" "The Twilight Moon" "The Undisputed" "The Valley of Steel Boxes" "The Warlord" "The Wind" "The Wretched" "Three Voices" "Time-Lost Relic" "Vanity" "Vile Power"
+	BaseType "A Dab of Ink" "Alone in the Darkness" "Bowyer's Dream" "Buried Treasure" "Emperor of Purity" "Harmony of Souls" "Heterochromia" "Hope" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Mawr Blaidd" "Monochrome" "Perfection" "Remembrance" "Sambodhi's Vow" "The Artist" "The Betrayal" "The Breach" "The Brittle Emperor" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dark Mage" "The Dreamer" "The Endless Darkness" "The Gladiator" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Hunger" "The Innocent" "The Jeweller's Boon" "The Journey" "The Landing" "The Last One Standing" "The Lion" "The Master" "The Obscured" "The Offering" "The Old Man" "The Pact" "The Price of Protection" "The Primordial" "The Professor" "The Realm" "The Scavenger" "The Seeker" "The Sephirot" "The Throne" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Warlord" "The Wilted Rose" "The Wolf" "Time-Lost Relic" "Vanity" "Vinia's Token"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255
@@ -5259,7 +5252,7 @@ Show # $tier->t3 $type->divination
 
 Show # %HS5 %C5 $tier->t4c $type->divination
 	Class "Divination"
-	BaseType "Boon of Justice" "Coveted Possession" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Loyalty" "Lucky Connections" "More is Never Enough" "No Traces" "The Catalyst" "The Flora's Gift" "The Fool" "The Gemcutter" "The Heroic Shot" "The Inventor" "The Puzzle" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Vinia's Token"
+	BaseType "Boon of Justice" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Her Mask" "Loyalty" "Lucky Connections" "More is Never Enough" "No Traces" "The Catalyst" "The Deal" "The Flora's Gift" "The Fool" "The Gemcutter" "The Inventor" "The Puzzle" "The Side Quest" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 100 150 255            # BORDERCOLOR:	 Divi T4
@@ -5282,7 +5275,7 @@ Show # %H4 %C5 $tier->t5c $type->divination
 
 Show # %H3 %C3 $tier->t5 $type->divination
 	Class "Divination"
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Dying Anguish" "Lantador's Lost Love" "Prosperity" "Struck by Lightning" "The Carrion Crow" "The Coming Storm" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Rabid Rhoa" "The Warden" "The Watcher" "Turn the Other Cheek"
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Dying Anguish" "Lantador's Lost Love" "Prosperity" "Struck by Lightning" "The Carrion Crow" "The Cataclysm" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Warden" "The Watcher" "Turn the Other Cheek"
 	SetFontSize 36
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
@@ -5370,7 +5363,7 @@ Show # $tier->ex->harbinger $type->uniques $league->harbinger
 
 Show # $tier->t1 $type->uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Full Dragonscale" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Imperial Maul" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
+	BaseType "Ambush Mitts" "Arcanist Gloves" "Assassin's Boots" "Blood Raiment" "Blue Pearl Amulet" "Callous Mask" "Cardinal Round Shield" "Carnal Boots" "Clasped Mitts" "Close Helmet" "Crusader Boots" "Cutlass" "Diamond Flask" "Elegant Ringmail" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Highborn Staff" "Hydrascale Gauntlets" "Jewelled Foil" "Jingling Spirit Shield" "Karui Maul" "Laminated Kite Shield" "Legion Gloves" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Royal Burgonet" "Ruby Amulet" "Ruby Flask" "Saint's Hauberk" "Sanctified Life Flask" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Slaughter Knife" "Soldier Helmet" "Sorcerer Boots" "Steel Ring" "Steelwood Bow" "Stibnite Flask" "Timeless Jewel" "Vaal Rapier" "Vaal Spirit Shield" "Varnished Coat" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -5385,7 +5378,7 @@ Show # $tier->t1 $type->uniques
 
 Show # $tier->t2 $type->uniques
 	Rarity Unique
-	BaseType "Ancient Gauntlets" "Ancient Spirit Shield" "Arcanist Gloves" "Archon Kite Shield Piece" "Assassin's Boots" "Bismuth Flask" "Blood Raiment" "Blood Sceptre" "Blue Pearl Amulet" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Carnal Sceptre" "Champion Kite Shield" "Citrine Amulet" "Clasped Mitts" "Cloth Belt Piece" "Coiled Staff" "Cutlass" "Deerskin Gloves" "Elegant Foil" "Ezomyte Burgonet" "Gladiator Plate" "Grand Mana Flask" "Harlequin Mask" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Claw" "Imperial Staff" "Iron Sceptre" "Jasper Chopper" "Necromancer Silks" "Occultist's Vestment" "Rawhide Tower Shield" "Ruby Flask" "Sacrificial Garb" "Sanctified Life Flask" "Steel Ring" "Steelscale Gauntlets" "Steelwood Bow" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Variscite Blade" "Varnished Coat" "Void Axe"
+	BaseType "Arcanist Slippers" "Bismuth Flask" "Blood Sceptre" "Bronzescale Boots" "Callous Mask Piece" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Clutching Talisman" "Deerskin Gloves" "Destiny Leather" "Full Dragonscale" "Full Wyrmscale" "Gladiator Plate" "Grand Mana Flask" "Granite Flask" "Hellion's Paw" "Holy Chainmail" "Imperial Maul" "Jasper Chopper" "Mirrored Spiked Shield" "Necromancer Silks" "Nightmare Mace" "Occultist's Vestment" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Rotfeather Talisman" "Sacrificial Garb" "Silken Hood" "Slink Boots" "Steel Circlet" "Steelscale Gauntlets" "Throat Stabber" "Timeworn Claw" "Two-Stone Ring" "Tyrant's Sekhem" "Vaal Blade" "Void Axe" "Zealot Gloves"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5414,7 +5407,7 @@ Show # $tier->ex->5l $type->uniques
 
 Show # $tier->multileague $type->uniques
 	Rarity Unique
-	BaseType "Agate Amulet" "Amber Amulet" "Fiend Dagger" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Ruby Ring" "Sapphire Ring" "Silver Flask" "Triumphant Lamellar" "Two-Point Arrow Quiver"
+	BaseType "Amber Amulet" "Assassin Bow" "Carnal Mitts" "Fiend Dagger" "Hubris Circlet" "Leather Belt" "Silver Flask" "Triumphant Lamellar" "Two-Point Arrow Quiver"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5425,7 +5418,7 @@ Show # $tier->multileague $type->uniques
 
 Show # $tier->multispecial $type->uniques
 	Rarity Unique
-	BaseType "Carved Wand" "Coral Amulet" "Ebony Tower Shield" "Gavel" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Heavy Belt" "Imperial Bow" "Imperial Skean" "Iron Ring" "Judgement Staff" "Lacquered Garb" "Magistrate Crown" "Murder Boots" "Nightmare Bascinet" "Onyx Amulet" "Prophet Crown" "Sadist Garb" "Sage Wand" "Stealth Boots" "Stibnite Flask" "Studded Belt" "Unset Ring"
+	BaseType "Carved Wand" "Coral Amulet" "Ebony Tower Shield" "Exquisite Leather" "Ezomyte Staff" "Gold Amulet" "Gold Ring" "Harlequin Mask" "Heavy Belt" "Imperial Bow" "Imperial Skean" "Iron Ring" "Jade Amulet" "Judgement Staff" "Lacquered Garb" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Onyx Amulet" "Prismatic Ring" "Sadist Garb" "Sage Wand" "Stealth Boots" "Studded Belt" "Sulphur Flask" "Unset Ring"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5435,22 +5428,7 @@ Show # $tier->multispecial $type->uniques
 	MinimapIcon 0 Blue Star
 
 #------------------------------------
-#   [3206] Possibly expensive uniques / meta influenced
-#------------------------------------
-
-Show # $tier->metainfluenced $type->uniques
-	Rarity Unique
-	BaseType "Abyssal Axe" "Conjurer Gloves" "Coronal Leather" "Corsair Sword" "Deicide Mask" "Destiny Leather" "Engraved Wand" "Ezomyte Staff" "Full Wyrmscale" "Hellion's Paw" "Leather Cap" "Midnight Blade" "Nubuck Gloves" "Opal Ring" "Penetrating Arrow Quiver" "Raven Mask" "Serpentscale Gauntlets" "Silken Hood" "Sinner Tricorne" "Sorcerer Gloves" "Thorium Spirit Shield" "Throat Stabber" "Tornado Wand" "Vaal Regalia"
-	SetFontSize 45
-	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
-	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
-	SetBackgroundColor 50 10 80 255         # BACKGROUND:	 Changed Uniques
-	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
-	PlayEffect Brown
-	MinimapIcon 2 Brown Star
-
-#------------------------------------
-#   [3207] Special Unique Searches
+#   [3206] Special Unique Searches
 #------------------------------------
 
 #Show # $type->uniques
@@ -5488,12 +5466,12 @@ Show # $tier->ex->jewels $type->uniques $x
 	MinimapIcon 2 Blue Star
 
 #------------------------------------
-#   [3208] Prophecy-Material Uniques
+#   [3207] Prophecy-Material Uniques
 #------------------------------------
 
 Show # %D4 $tier->prophecy $type->uniques
 	Rarity Unique
-	BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+	BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 100 37 255 200           # BORDERCOLOR:	 Prophecy Unique
@@ -5503,12 +5481,12 @@ Show # %D4 $tier->prophecy $type->uniques
 	MinimapIcon 2 Brown Star
 
 #------------------------------------
-#   [3209] Random Uniques
+#   [3208] Random Uniques
 #------------------------------------
 
 Show # %H5 %C4 $tier->hideable $type->uniques
 	Rarity Unique
-	BaseType "Ambusher" "Antique Rapier" "Assassin's Garb" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Brass Spirit Shield" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Close Helmet" "Colossal Tower Shield" "Compound Spiked Shield" "Conjurer Boots" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Belt" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Demon Dagger" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Diamond Flask" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Embroidered Gloves" "Estoc" "Ezomyte Axe" "Festival Mask" "Flaying Knife" "Fright Claw" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Laminated Kite Shield" "Large Hybrid Flask" "Lathi" "Lion Sword" "Long Staff" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Military Staff" "Mosaic Kite Shield" "Murder Mitts" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Platinum Sceptre" "Poleaxe" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Sharkskin Boots" "Short Bow" "Silk Slippers" "Slaughter Knife" "Solaris Circlet" "Soldier Boots" "Spidersilk Robe" "Spiked Club" "Spike-Point Arrow Quiver" "Steel Circlet" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Turquoise Amulet" "Twilight Blade" "Tyrant's Sekhem" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
+	BaseType "Abyssal Axe" "Ambusher" "Ancient Gauntlets" "Antique Greaves" "Antique Rapier" "Assassin's Garb" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Brass Spirit Shield" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Coiled Staff" "Colossal Tower Shield" "Compound Spiked Shield" "Conjurer Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Belt" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Deicide Mask" "Demon Dagger" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Elegant Foil" "Embroidered Gloves" "Estoc" "Ezomyte Axe" "Flaying Knife" "Fright Claw" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Iron Sceptre" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lathi" "Long Staff" "Loricated Ringmail" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Nubuck Gloves" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Serpentine Staff" "Serpentscale Gauntlets" "Shadow Axe" "Shagreen Boots" "Sharkskin Boots" "Short Bow" "Silk Slippers" "Sinner Tricorne" "Soldier Boots" "Sorcerer Gloves" "Spidersilk Robe" "Spiked Club" "Spike-Point Arrow Quiver" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
