@@ -6,7 +6,7 @@
 
 --------------------------
 
-The website *[filterblade.xyz](http://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and simulate (lootsimulator!) the filter. You can also modify the filter there, without any code knowledge and merge changes you've made into new versions.
+The website *[filterblade.xyz](http://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and simulate (lootsimulator!) the filter. It's the easiest way to download the filter and you can also modify it there, without any coding knowledge to adjust it to your playstyle.
 
 --------------------------
 
