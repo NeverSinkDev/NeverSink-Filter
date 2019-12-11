@@ -88,4 +88,4 @@ For additional details, the FAQ (read it before asking questions), previous chan
 --------------------------
 
 [![Become a Patreon](https://img.shields.io/badge/patreon-%F0%9F%8E%AF-orange.svg)](https://www.patreon.com/Neversink)
-[![Github all releases](https://img.shields.io/github/downloads/NeverSinkDev/NeverSink-Filter/total.svg)](https://GitHub.com/NeverSinkDev/NeverSink-Filter/releases/)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/NeverSinkDev/NeverSink-Filter/releases/)
