@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  7.5
+# VERSION:  7.5.1
 # TYPE:     4-VERY-STRICT
 # STYLE:    BLUE
 # AUTHOR:   NeverSink
@@ -196,60 +196,60 @@
 #   [3106] T5 - Format trash tier cards... before
 #   [3107] T4 - ...showing the remaining cards
 # [[3200]] Currency - PART 4 - remaining items
-# [[3300]] Uniques!
-#   [3301] Conquerors of the Atlas
-#   [3302] Exceptions
-#   [3303] Harbinger - Pieces
-#   [3304] Tier 1 uniques
-#   [3305] Tier 2 uniques
-#   [3306] Multi-Unique bases.
-#   [3307] Early Game Predictions
-#   [3308] Special Unique Searches
-#   [3309] Prophecy-Material Uniques
-#   [3310] Random Uniques
-# [[3400]] Quest Items and Shaper Orbs
-# [[3500]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
-# [[3600]] Leveling - Flasks
-#   [3601] Hide outdated flasks
-#   [3602] Hybrid flasks (normal)
-#   [3603] Life Flasks - Normal (Kudos to Antnee)
-#   [3604] Mana Flasks - Magic (Kudos to Antnee)
-#   [3605] Show remaining flasks
-# [[3700]] Leveling - Merged Rules
-# [[3800]] Leveling - RGB Recipes
-# [[3900]] Leveling - RARES
-#   [3901] Leveling rares - specific items
-#   [3902] Leveling rares - Armors
-#   [3903] Leveling rares - Caster
-#   [3904] Leveling rares - Melee Weapons
-#   [3905] Leveling rares - Ranged
-#   [3906] Leveling rares - Quivers
-#   [3907] Leveling rares - remaining rules
-# [[4000]] Leveling - Useful items
-#   [4001] Linked gear - 4links
-#   [4002] Linked gear - 3links
-#   [4003] Act1
-#   [4004] Act 2+3
-#   [4005] Act 4+5+6
-#   [4006] Optional Recipes
-#   [4007] 20% quality items for those strange people who want them
-# [[4100]] Leveling - natural weapon progression
-#   [4101] Quivers - Progression
-#   [4102] Progression - Part 1 1-11
-#   [4103] Progression - Part 2 11-26
-#   [4104] Progression - Part 3 26-65
-# [[4200]] Leveling - misc normal items
-#   [4201] Normal items - 3-Socketed Items
-#   [4202] Normal items - First 4-8 levels - useful items
-#   [4203] Vendor Normal items - Until level 3 (Remaining)
-# [[4300]] Leveling - misc magic items
-#   [4301] Vendor Magic items - until 3
-#   [4302] Vendor Magic items - until 16
-#   [4303] Vendor Magic items - Jewellery
-#   [4304] Vendor Magic items - Until 24
-# [[4400]] HIDE LAYER 5 - Remaining Items
-# [[4500]] CATCHALL - if you see pink items - update or revert your changes! This should not be happening!
-# [[4600]] Special thanks to!
+# [[3300]] Metamorph Items
+# [[3400]] Uniques!
+#   [3401] Exceptions
+#   [3402] Harbinger - Pieces
+#   [3403] Tier 1 uniques
+#   [3404] Tier 2 uniques
+#   [3405] Multi-Unique bases.
+#   [3406] Early Game Predictions
+#   [3407] Special Unique Searches
+#   [3408] Prophecy-Material Uniques
+#   [3409] Random Uniques
+# [[3500]] Quest Items and Event Items
+# [[3600]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
+# [[3700]] Leveling - Flasks
+#   [3701] Hide outdated flasks
+#   [3702] Hybrid flasks (normal)
+#   [3703] Life Flasks - Normal (Kudos to Antnee)
+#   [3704] Mana Flasks - Magic (Kudos to Antnee)
+#   [3705] Show remaining flasks
+# [[3800]] Leveling - Merged Rules
+# [[3900]] Leveling - RGB Recipes
+# [[4000]] Leveling - RARES
+#   [4001] Leveling rares - specific items
+#   [4002] Leveling rares - Armors
+#   [4003] Leveling rares - Caster
+#   [4004] Leveling rares - Melee Weapons
+#   [4005] Leveling rares - Ranged
+#   [4006] Leveling rares - Quivers
+#   [4007] Leveling rares - remaining rules
+# [[4100]] Leveling - Useful items
+#   [4101] Linked gear - 4links
+#   [4102] Linked gear - 3links
+#   [4103] Act1
+#   [4104] Act 2+3
+#   [4105] Act 4+5+6
+#   [4106] Optional Recipes
+#   [4107] 20% quality items for those strange people who want them
+# [[4200]] Leveling - natural weapon progression
+#   [4201] Quivers - Progression
+#   [4202] Progression - Part 1 1-11
+#   [4203] Progression - Part 2 11-26
+#   [4204] Progression - Part 3 26-65
+# [[4300]] Leveling - misc normal items
+#   [4301] Normal items - 3-Socketed Items
+#   [4302] Normal items - First 4-8 levels - useful items
+#   [4303] Vendor Normal items - Until level 3 (Remaining)
+# [[4400]] Leveling - misc magic items
+#   [4401] Vendor Magic items - until 3
+#   [4402] Vendor Magic items - until 16
+#   [4403] Vendor Magic items - Jewellery
+#   [4404] Vendor Magic items - Until 24
+# [[4500]] HIDE LAYER 5 - Remaining Items
+# [[4600]] CATCHALL - if you see pink items - update or revert your changes! This should not be happening!
+# [[4700]] Special thanks to!
 
 #===============================================================================================================
 # [[0100]] OVERRIDE AREA 1 - Override ALL rules here
@@ -426,7 +426,7 @@ Show # $tier->t1-1 $type->rare->shaper
 	HasInfluence Shaper
 	ItemLevel >= 82
 	Rarity <= Rare
-	BaseType "Crystal Belt" "Fingerless Silk Gloves" "Coronal Maul" "Leather Belt" "Opal Ring" "Vaal Mask" "Steel Ring"
+	BaseType "Crystal Belt" "Fingerless Silk Gloves" "Coronal Maul" "Leather Belt" "Opal Ring" "Vaal Mask"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -439,7 +439,7 @@ Show # $tier->t1-2 $type->rare->shaper
 	HasInfluence Shaper
 	ItemLevel >= 84
 	Rarity <= Rare
-	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Diamond Ring" "Hubris Circlet" "Onyx Amulet" "Titanium Spirit Shield" "Turquoise Amulet" "Two-Toned Boots" "Vanguard Belt" "Champion Kite Shield" "Spiraled Wand" "Conquest Chainmail"
+	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Diamond Ring" "Hubris Circlet" "Onyx Amulet" "Turquoise Amulet" "Two-Toned Boots" "Vanguard Belt" "Champion Kite Shield"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -452,7 +452,7 @@ Show # $tier->t1-3 $type->rare->shaper
 	HasInfluence Shaper
 	ItemLevel >= 86
 	Rarity <= Rare
-	BaseType "Lion Pelt" "Convoking Wand" "Coral Amulet" "Colossal Tower Shield" "Eclipse Staff" "Gold Amulet" "Sorcerer Gloves" "Jewelled Foil" "Exquisite Blade" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Paua Amulet" "Profane Wand" "Prophecy Wand" "Sorcerer Boots" "Thicket Bow" "Two-Stone Ring" "Vaal Regalia" "Jade Amulet" "Void Sceptre" "Copper Kris" "Imp Dagger" "Imperial Bow" "Platinum Kris" "Ranger Bow" "Tornado Wand" "Lapis Amulet"
+	BaseType "Lion Pelt" "Convoking Wand" "Coral Amulet" "Eclipse Staff" "Gold Amulet" "Sorcerer Gloves" "Jewelled Foil" "Exquisite Blade" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Paua Amulet" "Profane Wand" "Prophecy Wand" "Sorcerer Boots" "Thicket Bow" "Two-Stone Ring" "Vaal Regalia" "Void Sceptre" "Copper Kris" "Imp Dagger" "Imperial Bow" "Platinum Kris" "Tornado Wand" "Lapis Amulet"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -469,7 +469,7 @@ Show # $tier->t2-1 $type->rare->shaper
 	HasInfluence Shaper
 	ItemLevel >= 80
 	Rarity <= Rare
-	BaseType "Agate Amulet" "Amber Amulet" "Imp Dagger" "Citrine Amulet" "Coral Ring" "Coronal Maul" "Diamond Ring" "Eclipse Staff" "Imperial Bow" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Onyx Amulet" "Pagan Wand" "Faun's Horn" "Skean" "Ruby Ring" "Sapphire Ring" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Two-Toned Boots" "Vaal Mask" "Opal Wand" "Copper Kris" "Iron Sceptre" "Hubris Circlet" "Exquisite Blade" "Coral Amulet" "Paua Amulet" "Sorcerer Gloves" "Pinnacle Tower Shield" "Unset Ring" "Crusader Buckler" "Lacquered Buckler" "Spiny Round Shield" "Shadow Sceptre" "Opal Sceptre" "Gold Amulet"
+	BaseType "Agate Amulet" "Amber Amulet" "Imp Dagger" "Citrine Amulet" "Coral Ring" "Coronal Maul" "Diamond Ring" "Eclipse Staff" "Imperial Bow" "Lapis Amulet" "Leather Belt" "Onyx Amulet" "Pagan Wand" "Skean" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Two-Toned Boots" "Vaal Mask" "Opal Wand" "Copper Kris" "Iron Sceptre" "Hubris Circlet" "Exquisite Blade" "Coral Amulet" "Paua Amulet" "Sorcerer Gloves" "Unset Ring" "Opal Sceptre" "Gold Amulet"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -482,7 +482,7 @@ Show # $tier->t2-2 $type->rare->shaper
 	HasInfluence Shaper
 	ItemLevel >= 85
 	Rarity <= Rare
-	BaseType "Ambusher" "Archon Kite Shield" "Astral Plate" "Colossal Tower Shield" "Convoking Wand" "Moon Staff" "Sorcerer Boots" "Scholar Boots" "Crystal Wand" "Sinner Tricorne" "Deicide Mask" "Demon's Horn" "Dragon Mace" "Spiny Maul" "Redwood Spiked Shield" "Ranger Bow" "Jewelled Foil" "Golden Kris" "Harbinger Bow" "Heathen Wand" "Heavy Belt" "Imbued Wand" "Piledriver" "Imperial Buckler" "Imperial Claw" "Imperial Skean" "Iron Ring" "Spiraled Wand" "Lion Pelt" "Maelström Staff" "Ezomyte Tower Shield" "Despot Axe" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Conquest Chainmail" "Royal Burgonet" "Sekhem" "Silken Hood" "Slink Boots" "Slink Gloves" "Terror Maul" "Great Mallet" "Spike-Point Arrow Quiver" "Grinning Fetish" "Thicket Bow" "Tornado Wand" "Vaal Regalia" "Vanguard Belt" "Void Sceptre" "Cardinal Round Shield" "Sharktooth Arrow Quiver" "Sambar Sceptre" "Dragonscale Boots" "Harmonic Spirit Shield" "Titan Gauntlets" "Behemoth Mace" "Gemini Claw" "Fossilised Spirit Shield" "General's Brigandine" "Tiger Hook" "Titan Greaves" "Moonstone Ring" "Gold Ring" "Maraketh Bow" "Paua Ring" "Serpent Wand"
+	BaseType "Ambusher" "Convoking Wand" "Sorcerer Boots" "Crystal Wand" "Demon's Horn" "Dragon Mace" "Jewelled Foil" "Harbinger Bow" "Heathen Wand" "Heavy Belt" "Imbued Wand" "Imperial Claw" "Imperial Skean" "Iron Ring" "Lion Pelt" "Maelström Staff" "Ezomyte Tower Shield" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Royal Burgonet" "Slink Boots" "Slink Gloves" "Terror Maul" "Spike-Point Arrow Quiver" "Thicket Bow" "Tornado Wand" "Vaal Regalia" "Vanguard Belt" "Void Sceptre" "Sambar Sceptre" "Dragonscale Boots" "Titan Gauntlets" "Behemoth Mace" "Gemini Claw" "Fossilised Spirit Shield" "General's Brigandine" "Tiger Hook" "Titan Greaves" "Moonstone Ring" "Gold Ring" "Maraketh Bow" "Paua Ring" "Serpent Wand"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -569,7 +569,7 @@ Show # $tier->t1-2 $type->rare->elder
 	HasInfluence Elder
 	ItemLevel >= 84
 	Rarity <= Rare
-	BaseType "Agate Amulet" "Astral Plate" "Citrine Amulet" "Vanguard Belt" "Convoking Wand"
+	BaseType "Agate Amulet" "Astral Plate" "Citrine Amulet" "Convoking Wand"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -599,7 +599,7 @@ Show # $tier->t2-1 $type->rare->elder
 	HasInfluence Elder
 	ItemLevel >= 80
 	Rarity <= Rare
-	BaseType "Agate Amulet" "Amber Amulet" "Astral Plate" "Bone Helmet" "Vanguard Belt" "Citrine Amulet" "Crystal Belt" "Fingerless Silk Gloves" "Heavy Belt" "Judgement Staff" "Leather Belt" "Onyx Amulet" "Spiked Gloves" "Turquoise Amulet" "Two-Toned Boots" "Pagan Wand" "Exquisite Blade" "Royal Burgonet" "Coral Amulet" "Paua Amulet" "Ezomyte Tower Shield" "Two-Stone Ring" "Archon Kite Shield" "Slink Gloves" "Topaz Ring"
+	BaseType "Agate Amulet" "Amber Amulet" "Astral Plate" "Bone Helmet" "Citrine Amulet" "Crystal Belt" "Fingerless Silk Gloves" "Heavy Belt" "Judgement Staff" "Leather Belt" "Onyx Amulet" "Spiked Gloves" "Turquoise Amulet" "Two-Toned Boots" "Pagan Wand" "Exquisite Blade" "Coral Amulet" "Paua Amulet" "Two-Stone Ring" "Archon Kite Shield" "Slink Gloves" "Topaz Ring"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -612,7 +612,7 @@ Show # $tier->t2-2 $type->rare->elder
 	HasInfluence Elder
 	ItemLevel >= 85
 	Rarity <= Rare
-	BaseType "Platinum Kris" "Convoking Wand" "Sorcerer Gloves" "Coral Ring" "Sorcerer Boots" "Driftwood Club" "Crusader Buckler" "Eternal Burgonet" "Diamond Ring" "Sapphire Ring" "Gold Amulet" "Mind Cage" "Hubris Circlet" "Vaal Greaves" "Imperial Claw" "Maelström Staff" "Quartz Wand" "Unset Ring" "Ruby Ring" "Sinner Tricorne" "Crystal Wand" "Eclipse Staff" "Terror Maul" "Titan Gauntlets" "Imperial Buckler" "Thicket Bow" "Saint's Hauberk" "Lapis Amulet" "Jade Amulet" "Zodiac Leather" "Ezomyte Burgonet" "Dragoon Sword" "Jewelled Foil" "Iron Ring" "Murder Mitts" "Titan Greaves" "Maraketh Bow" "Amethyst Ring" "Sai" "Imperial Bow" "Vaal Regalia" "Crusader Gloves" "Omen Wand" "Royal Sceptre" "Elegant Round Shield" "Void Axe" "Moonstone Ring" "Carnal Armour"
+	BaseType "Platinum Kris" "Convoking Wand" "Sorcerer Gloves" "Coral Ring" "Sorcerer Boots" "Driftwood Club" "Eternal Burgonet" "Diamond Ring" "Sapphire Ring" "Gold Amulet" "Mind Cage" "Hubris Circlet" "Vaal Greaves" "Imperial Claw" "Maelström Staff" "Quartz Wand" "Unset Ring" "Ruby Ring" "Eclipse Staff" "Titan Gauntlets" "Imperial Buckler" "Thicket Bow" "Lapis Amulet" "Jade Amulet" "Zodiac Leather" "Dragoon Sword" "Jewelled Foil" "Iron Ring" "Murder Mitts" "Titan Greaves" "Maraketh Bow" "Amethyst Ring" "Imperial Bow" "Vaal Regalia" "Omen Wand" "Moonstone Ring" "Carnal Armour"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -4270,7 +4270,7 @@ Hide
 Show # $tier->t1 $type->unique->maps
 	Rarity Unique
 	Class Maps
-	BaseType "Chateau Map" "Courtyard Map" "Harbinger Map" "Maze Map" "Museum Map"
+	BaseType "Chateau Map" "Maze Map" "Museum Map" "Underground River Map" "Relic Chambers Map" "Siege Map" "Park Map" "Basilica Map" "Courthouse Map"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -4282,7 +4282,7 @@ Show # $tier->t1 $type->unique->maps
 Show # $tier->t2 $type->unique->maps
 	Rarity Unique
 	Class Maps
-	BaseType "Cemetery Map" "Cursed Crypt Map" "Moon Temple Map" "Reef Map" "Shore Map"
+	BaseType "Courtyard Map" "Cursed Crypt Map" "Moon Temple Map" "Reef Map" "Shore Map" "Harbinger Map" "Temple Map" "Promenade Map"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -4788,20 +4788,19 @@ Show
 #   [2910] Scarabs
 #------------------------------------
 
-Show # $tier->t1 $type->fragments->scarabs
-	Class "Map Fragments"
-	BaseType "Gilded Sulphite Scarab"
-	SetFontSize 45
-	SetTextColor 159 15 213 255
-	SetBorderColor 159 15 213 255
-	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
-	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
-	PlayEffect Yellow
-	MinimapIcon 0 Red Hexagon
+#Show # $tier->t1 $type->fragments->scarabs
+#	Class "Map Fragments"
+#	SetFontSize 45
+#	SetTextColor 159 15 213 255
+#	SetBorderColor 159 15 213 255
+#	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+#	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
+#	PlayEffect Yellow
+#	MinimapIcon 0 Red Hexagon
 
 Show # $tier->t2 $type->fragments->scarabs
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Torment Scarab" "Polished Sulphite Scarab" "Rusted Sulphite Scarab" "Polished Bestiary Scarab"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Polished Bestiary Scarab" "Gilded Sulphite Scarab"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 Neutral T1
@@ -4958,7 +4957,7 @@ Show # $type->currency->resonator $tier->t3
 
 Show # $tier->t1 $type->currency->fossil
 	Class Currency
-	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
+	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil"
 	SetFontSize 45
 	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
 	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
@@ -4969,7 +4968,7 @@ Show # $tier->t1 $type->currency->fossil
 
 Show # $tier->t2 $type->currency->fossil
 	Class Currency
-	BaseType "Bloodstained Fossil" "Sanctified Fossil" "Serrated Fossil" "Glyphic Fossil"
+	BaseType "Corroded Fossil" "Glyphic Fossil" "Tangled Fossil"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -5029,8 +5028,7 @@ Show # $type->currency->catalyst $tier->t3
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
-	DisableDropSound True
-	PlayAlertSound 10 300                   # DROPSOUND:	 New Drops
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect White
 	MinimapIcon 2 White Circle
 
@@ -5102,7 +5100,7 @@ Show # $tier->t2 $type->currency->oil
 
 Show # $tier->t3 $type->currency->oil
 	Class Currency
-	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Violet Oil" "Black Oil"
+	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Violet Oil" "Black Oil" "Verdant Oil" "Amber Oil"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5113,7 +5111,7 @@ Show # $tier->t3 $type->currency->oil
 
 Show # %H5 $tier->t4 $type->currency->oil
 	Class Currency
-	BaseType "Amber Oil" "Clear Oil" "Sepia Oil" "Verdant Oil"
+	BaseType "Clear Oil" "Sepia Oil"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 200                # BORDERCOLOR:	 Neutral T2
@@ -5253,7 +5251,7 @@ Show # $tier->t2 $type->currency->legionsplinters
 
 Show # $tier->t2 $type->currency->incubators
 	Class Incubator
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Thaumaturge's Incubator"
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5343,7 +5341,7 @@ Show
 Show # $tier->t1 $type->currency->prophecy
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "A Dishonourable Death" "Fated Connections" "The Bowstring's Music" "The Queen's Sacrifice" "Trash to Treasure" "Darktongue's Shriek"
+	Prophecy "A Dishonourable Death" "Fated Connections" "The Bowstring's Music" "The Queen's Sacrifice" "Trash to Treasure" "Darktongue's Shriek" "The Hollow Pledge" "Lost in the Pages" "The Mentor" "The Misunderstood Queen"
 	SetFontSize 45
 	SetTextColor 130 25 255 255             # TEXTCOLOR:	 Blessing
 	SetBorderColor 130 25 255 255           # BORDERCOLOR:	 Breach
@@ -5355,7 +5353,7 @@ Show # $tier->t1 $type->currency->prophecy
 Show # $tier->t2 $type->currency->prophecy
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "Monstrous Treasure" "Possessed Foe" "The Great Leader of the North" "The Jeweller's Touch" "Vaal Winds" "The King's Path" "The Misunderstood Queen" "Lost in the Pages" "The Mentor" "Anarchy's End IV"
+	Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "The Great Leader of the North" "The Jeweller's Touch" "Vaal Winds" "A Prodigious Hand" "The Bishop's Legacy" "Song of the Sekhema" "Fire and Brimstone" "A Call into the Void"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -5412,7 +5410,7 @@ Show # $tier->ex $type->divination
 
 Show # $tier->t1 $type->divination
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Damned" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Spark and the Flame" "The Mayor" "Void of the Elements" "Baited Expectations" "The Escape" "Etched in Blood" "Squandered Prosperity" "Succor of the Sinless"
+	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Damned" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Spark and the Flame" "Etched in Blood" "Succor of the Sinless" "The World Eater" "The Craving" "The Dragon's Heart" "Wealth and Power" "Burning Blood"
 	SetFontSize 45
 	SetTextColor 0 0 255 255                # TEXTCOLOR:	 Divi T1
 	SetBorderColor 0 0 255 255              # BORDERCOLOR:	 Divi T1
@@ -5427,7 +5425,7 @@ Show # $tier->t1 $type->divination
 
 Show # $tier->t2 $type->divination
 	Class "Divination"
-	BaseType "Chaotic Disposition" "Mawr Blaidd" "The Bargain" "The Cartographer" "The Eye of Terror" "Wealth and Power" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Soul" "The Undaunted" "The Void" "The Wolven King's Bite" "The Celestial Stone" "The Old Man" "The Dragon's Heart" "Burning Blood" "The Life Thief" "Azyran's Reward" "The Chosen" "Divine Justice"
+	BaseType "Chaotic Disposition" "The Cartographer" "The Eye of Terror" "Pride Before the Fall" "The Polymath" "The Queen" "The Saint's Treasure" "The Void" "The Wolven King's Bite" "The Celestial Stone" "The Offering" "The Enlightened" "The Celestial Justicar" "The Ethereal" "The Escape" "The King's Heart" "Dark Dreams" "The Sacrifice"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255 255
@@ -5442,7 +5440,7 @@ Show # $tier->t2 $type->divination
 
 Show # $tier->t3 $type->divination
 	Class "Divination"
-	BaseType "Pride Before the Fall" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Dark Dreams" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Lucky Deck" "Perfection" "Remembrance" "The Artist" "The Brittle Emperor" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Hale Heart" "The Hoarder" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Last One Standing" "The Enlightened" "The Offering" "The Landing" "The Porcupine" "The Price of Protection" "The Celestial Justicar" "The Risk" "The Sacrifice" "The Seeker" "The Throne" "The Valkyrie" "The Valley of Steel Boxes" "The Deep Ones" "The Warlord" "The World Eater" "Vanity" "Hunter's Resolve" "Time-Lost Relic" "The Professor" "The Vast" "Hubris" "The Wolf" "Left to Fate" "The Hunger" "The Thaumaturgist" "The Wind" "The Master" "The Primordial" "The Heroic Shot" "Anarchy's Price" "Earth Drinker" "The Avenger" "The Fletcher" "The Formless Sea" "The Gladiator" "The Pack Leader" "The Pact" "Tranquillity" "The Obscured" "The Deceiver" "Alone in the Darkness" "Vile Power" "The Bones" "Cameria's Cut" "The Craving" "Deathly Designs" "The Fishmonger" "Friendship" "Underground Forest"
+	BaseType "The Life Thief" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Azyran's Reward" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Lucky Deck" "Perfection" "Remembrance" "The Artist" "The Brittle Emperor" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Endless Darkness" "The Bargain" "The Hoarder" "The Jeweller's Boon" "The Mayor" "The Last One Standing" "Squandered Prosperity" "Void of the Elements" "The Landing" "The Porcupine" "The Price of Protection" "Mawr Blaidd" "The Risk" "The Soul" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Undaunted" "Vanity" "The Professor" "The Wolf" "Left to Fate" "The Primordial" "The Heroic Shot" "The Pact" "The Sephirot" "The Fishmonger" "Underground Forest" "The Scavenger" "Divine Justice" "The Realm" "The Breach" "The Old Man"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255
@@ -5457,7 +5455,7 @@ Show # $tier->t3 $type->divination
 
 Show # %HS5 %C5 $tier->t4c $type->divination
 	Class "Divination"
-	BaseType "Boon of Justice" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Imperial Legacy" "Loyalty" "Lucky Connections" "Monochrome" "More is Never Enough" "No Traces" "Sambodhi's Vow" "The Cacophony" "The Catalyst" "The Deal" "The Flora's Gift" "The Fool" "The Gemcutter" "The Innocent" "The Inventor" "The Puzzle" "The Side Quest" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
+	BaseType "Boon of Justice" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Imperial Legacy" "Loyalty" "Lucky Connections" "Monochrome" "More is Never Enough" "No Traces" "Sambodhi's Vow" "The Cacophony" "The Catalyst" "The Deal" "The Flora's Gift" "The Fool" "The Gemcutter" "The Innocent" "The Inventor" "The Puzzle" "The Side Quest" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token" "The Seeker" "Buried Treasure" "The Journey"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 100 150 255            # BORDERCOLOR:	 Divi T4
@@ -5480,7 +5478,7 @@ Show # %H4 %C5 $tier->t5c $type->divination
 
 Hide # %H3 %C3 $tier->t5 $type->divination
 	Class "Divination"
-	BaseType "A Mother's Parting Gift" "Audacity" "Birth of the Three" "The Surgeon" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Endurance" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Cartographer's Delight"
+	BaseType "A Mother's Parting Gift" "Audacity" "Birth of the Three" "The Surgeon" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Twins" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Cartographer's Delight" "Tranquillity" "The Calling" "The Deceiver" "Anarchy's Price" "Grave Knowledge" "The Opulent" "Thirst for Knowledge"
 	SetFontSize 36
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
@@ -5518,26 +5516,46 @@ Hide # %H3
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 
 #===============================================================================================================
-# [[3300]] Uniques!
+# [[3300]] Metamorph Items
+#===============================================================================================================
+
+Show
+	ItemLevel >= 80
+	Class "Metamorph"
+	SetFontSize 45
+	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
+	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect Green
+	MinimapIcon 1 Green Hexagon
+
+Show
+	Class "Metamorph"
+	BaseType "Liver" "Eye"
+	SetFontSize 45
+	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
+	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect Green
+	MinimapIcon 1 Green Hexagon
+
+Show
+	Class "Metamorph"
+	SetFontSize 45
+	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect Green Temp
+	MinimapIcon 1 Green Hexagon
+
+#===============================================================================================================
+# [[3400]] Uniques!
 #===============================================================================================================
 
 #------------------------------------
-#   [3301] Conquerors of the Atlas
-#------------------------------------
-
-Show # $type->uniques $tier->ex
-	Rarity Unique
-	BaseType "Metamorph" "Ivory Watchstone"
-	SetFontSize 45
-	SetTextColor 0 255 54 255
-	SetBorderColor 0 255 54 255
-	SetBackgroundColor 1 43 0 255
-	PlayAlertSound 3 300
-	PlayEffect Green
-	MinimapIcon 1 Green Star
-
-#------------------------------------
-#   [3302] Exceptions
+#   [3401] Exceptions
 #------------------------------------
 
 Show # $type->uniques $tier->ex
@@ -5564,7 +5582,7 @@ Show # $tier->ex->6l $type->uniques
 	MinimapIcon 0 Red Star
 
 #------------------------------------
-#   [3303] Harbinger - Pieces
+#   [3402] Harbinger - Pieces
 #------------------------------------
 
 Show # $tier->ex->harbinger $type->uniques $league->harbinger
@@ -5578,12 +5596,12 @@ Show # $tier->ex->harbinger $type->uniques $league->harbinger
 	MinimapIcon 0 Blue Star
 
 #------------------------------------
-#   [3304] Tier 1 uniques
+#   [3403] Tier 1 uniques
 #------------------------------------
 
 Show # $tier->t1 $type->uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Riveted Gloves" "Callous Mask" "Carnal Boots" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Saint's Hauberk" "Siege Axe" "Silk Gloves" "Clasped Mitts" "Timeless Jewel" "Wyrmscale Doublet" "Zodiac Leather" "Sapphire Flask" "Vaal Rapier" "Royal Axe" "Blood Raiment"
+	BaseType "Ambush Mitts" "Riveted Gloves" "Arcanist Slippers" "Carnal Boots" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Jewelled Foil" "Jingling Spirit Shield" "Nubuck Boots" "Nightmare Mace" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Saint's Hauberk" "Siege Axe" "Silk Gloves" "Two-Stone Ring" "Timeless Jewel" "Steel Ring" "Zodiac Leather" "Sapphire Flask" "Vaal Rapier" "Royal Axe" "Blood Raiment" "Highborn Staff" "Steelwood Bow" "Ruby Flask" "Gladiator Plate" "Lion Pelt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -5593,12 +5611,12 @@ Show # $tier->t1 $type->uniques
 	MinimapIcon 0 Red Star
 
 #------------------------------------
-#   [3305] Tier 2 uniques
+#   [3404] Tier 2 uniques
 #------------------------------------
 
 Show # $tier->t2 $type->uniques
 	Rarity Unique
-	BaseType "Arcanist Gloves" "Bismuth Flask" "Two-Stone Ring" "Champion Kite Shield" "Varnished Coat" "Close Helmet" "Elegant Ringmail" "Nubuck Boots" "Nubuck Gloves" "Occultist's Vestment" "Rawhide Tower Shield" "Soldier Helmet" "Sanctified Life Flask" "Ruby Flask" "Timeworn Claw" "Granite Flask" "Vaal Blade" "Imperial Maul" "Highborn Staff" "Karui Maul" "Void Axe" "Corsair Sword" "Savant's Robe" "Assassin's Boots" "Hydrascale Gauntlets" "Ancient Gauntlets" "Full Dragonscale" "Holy Chainmail" "Arcanist Slippers" "Gold Ring"
+	BaseType "Arcanist Gloves" "Bismuth Flask" "Blue Pearl Amulet" "Champion Kite Shield" "Legion Gloves" "Wyrmscale Doublet" "Sacrificial Garb" "Nubuck Gloves" "Occultist's Vestment" "Sanctified Life Flask" "Stibnite Flask" "Timeworn Claw" "Granite Flask" "Midnight Blade" "Imperial Maul" "Blood Sceptre" "Karui Maul" "Clasped Mitts" "Bronzescale Boots" "Savant's Robe" "Assassin's Boots" "Callous Mask Piece" "Lacquered Buckler" "Spine Bow" "Citadel Bow" "Fossilised Spirit Shield" "Royal Burgonet" "Archon Kite Shield Piece" "Steel Circlet" "Ivory Watchstone"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5619,7 +5637,7 @@ Show # $tier->ex->5l $type->uniques
 	MinimapIcon 0 Yellow Star
 
 #------------------------------------
-#   [3306] Multi-Unique bases.
+#   [3405] Multi-Unique bases.
 #------------------------------------
 # These bases have multiple uniques. One of the uniques, is a high value one
 # While others are cheap. We give them a high quality display, while making a normal unique
@@ -5627,7 +5645,7 @@ Show # $tier->ex->5l $type->uniques
 
 Show # $tier->multileague $type->uniques
 	Rarity Unique
-	BaseType "Amber Amulet" "Assassin Bow" "Fiend Dagger" "Leather Belt" "Sapphire Ring" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Agate Amulet" "Ezomyte Burgonet" "Solaris Circlet" "Silken Hood" "Topaz Ring" "Silver Flask"
+	BaseType "Amber Amulet" "Assassin Bow" "Fiend Dagger" "Citrine Amulet" "Sapphire Ring" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Agate Amulet" "Amethyst Ring" "Opal Ring" "Topaz Ring" "Silver Flask" "Terror Claw" "Vaal Blade" "Penetrating Arrow Quiver" "Hubris Circlet" "Carnal Mitts" "Widowsilk Robe" "Necromancer Circlet" "Carnal Armour" "Golden Plate" "Vaal Regalia" "Titan Greaves"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5638,7 +5656,7 @@ Show # $tier->multileague $type->uniques
 
 Show # $tier->multispecial $type->uniques
 	Rarity Unique
-	BaseType "Carved Wand" "Coral Amulet" "Heavy Belt" "Imperial Skean" "Iron Ring" "Jade Amulet" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Onyx Amulet" "Sadist Garb" "Stibnite Flask" "Studded Belt" "Sulphur Flask" "Turquoise Amulet" "Sage Wand" "Sorcerer Boots" "Stealth Boots" "Goathide Boots"
+	BaseType "Harlequin Mask" "Coral Amulet" "Gold Ring" "Imperial Skean" "Iron Ring" "Jade Amulet" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Onyx Amulet" "Sadist Garb" "Crusader Gloves" "Studded Belt" "Sulphur Flask" "Turquoise Amulet" "Exquisite Leather" "Sorcerer Boots" "Stealth Boots" "Leather Belt" "Nightmare Bascinet"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -5648,22 +5666,21 @@ Show # $tier->multispecial $type->uniques
 	MinimapIcon 0 Blue Star
 
 #------------------------------------
-#   [3307] Early Game Predictions
+#   [3406] Early Game Predictions
 #------------------------------------
 
-Show # $tier->earlyleague $type->uniques
-	Rarity Unique
-	BaseType "Judgement Staff" "Citrine Amulet" "Blue Pearl Amulet" "Cutlass" "Opal Ring" "Carnal Mitts" "Lacquered Garb" "Penetrating Arrow Quiver" "Exquisite Leather" "Diamond Flask" "Full Wyrmscale" "Midnight Blade" "Nightmare Bascinet" "Vaal Regalia" "Titan Greaves" "Imperial Bow" "Imperial Staff" "Hellion's Paw" "Karui Chopper" "Ezomyte Staff" "Steelwood Bow" "Citadel Bow" "Abyssal Axe" "Imperial Claw" "Ritual Sceptre" "Carnal Sceptre" "Tornado Wand" "Blood Sceptre" "Slaughter Knife" "Short Bow" "Spine Bow" "Throat Stabber" "Bronzescale Boots" "Serpentscale Gauntlets" "Gladiator Plate" "Leather Cap" "Destiny Leather" "Coronal Leather" "Thorium Spirit Shield" "Sinner Tricorne" "Assassin's Garb" "Deicide Mask" "Spike-Point Arrow Quiver" "Raven Mask" "Laminated Kite Shield" "Necromancer Silks" "Conjurer Gloves" "Sorcerer Gloves" "Sentinel Jacket"
-	SetFontSize 45
-	SetTextColor 0 255 54 255
-	SetBorderColor 0 255 54 255
-	SetBackgroundColor 1 43 0 255
-	PlayAlertSound 3 300
-	PlayEffect Green
-	MinimapIcon 1 Green Star
+#Show # $tier->earlyleague $type->uniques
+#	Rarity Unique
+#	SetFontSize 45
+#	SetTextColor 0 255 54 255
+#	SetBorderColor 0 255 54 255
+#	SetBackgroundColor 1 43 0 255
+#	PlayAlertSound 3 300
+#	PlayEffect Green
+#	MinimapIcon 1 Green Star
 
 #------------------------------------
-#   [3308] Special Unique Searches
+#   [3407] Special Unique Searches
 #------------------------------------
 
 #Show # $type->uniques
@@ -5701,7 +5718,7 @@ Show # $tier->ex->jewels $type->uniques $x
 	MinimapIcon 2 Blue Star
 
 #------------------------------------
-#   [3309] Prophecy-Material Uniques
+#   [3408] Prophecy-Material Uniques
 #------------------------------------
 
 Show # %D4 $tier->prophecy $type->uniques
@@ -5716,12 +5733,12 @@ Show # %D4 $tier->prophecy $type->uniques
 	MinimapIcon 2 Brown Star
 
 #------------------------------------
-#   [3310] Random Uniques
+#   [3409] Random Uniques
 #------------------------------------
 
 Show # %H5 %C4 $tier->hideable $type->uniques
 	Rarity Unique
-	BaseType "Elegant Foil" "Ambusher" "Antique Greaves" "Antique Rapier" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Embroidered Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Demon Dagger" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Flaying Knife" "Fright Claw" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lathi" "Lion Sword" "Long Staff" "Loricated Ringmail" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Crystal Belt" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Coiled Staff" "Soldier Boots" "Spidersilk Robe" "Spiked Club" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
+	BaseType "Elegant Foil" "Ambusher" "Antique Greaves" "Antique Rapier" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Embroidered Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Demon Dagger" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Flaying Knife" "Fright Claw" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lathi" "Lion Sword" "Long Staff" "Loricated Ringmail" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Crystal Belt" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Corsair Sword" "Soldier Boots" "Spidersilk Robe" "Spiked Club" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet" "Platinum Sceptre" "Iron Sceptre" "Tyrant's Sekhem" "Slaughter Knife" "Hellion's Paw" "Short Bow" "Abyssal Axe" "Throat Stabber" "Hallowed Hybrid Flask" "Diamond Flask" "Destiny Leather" "Serpentscale Gauntlets" "Legion Boots" "Sinner Tricorne" "Deicide Mask" "Festival Mask" "Conjurer Boots" "Brass Spirit Shield" "Spike-Point Arrow Quiver" "Laminated Kite Shield" "Necromancer Silks" "Sorcerer Gloves" "Assassin's Garb" "Conjurer Gloves" "Sentinel Jacket"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -5741,26 +5758,25 @@ Show # $tier->rest $type->uniques
 	MinimapIcon 2 Brown Star
 
 #===============================================================================================================
-# [[3400]] Quest Items and Shaper Orbs
+# [[3500]] Quest Items and Event Items
 #===============================================================================================================
-
-# TODO
 
 Show
 	BaseType "Watchstone"
 	SetFontSize 45
-	SetTextColor 0 255 54 255
-	SetBorderColor 0 255 54 255
-	SetBackgroundColor 1 43 0 255
-	PlayAlertSound 3 300
+	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
+	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Green
-	MinimapIcon 1 Green Star
+	MinimapIcon 1 Green Hexagon
 
 Show
-	Class "Incursion Item" "Atlas Region Upgrade Item" "Metamorph Sample"
+	Class "Incursion Item"
 	SetFontSize 45
 	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
 	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Green
 	MinimapIcon 1 Green Hexagon
@@ -5773,15 +5789,15 @@ Show
 	MinimapIcon 1 Green Hexagon
 
 #===============================================================================================================
-# [[3500]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
+# [[3600]] OVERRIDE AREA 4 - Insert your custom Leveling adjustments here
 #===============================================================================================================
 
 #===============================================================================================================
-# [[3600]] Leveling - Flasks
+# [[3700]] Leveling - Flasks
 #===============================================================================================================
 
 #------------------------------------
-#   [3601] Hide outdated flasks
+#   [3701] Hide outdated flasks
 #------------------------------------
 
 Hide # lvl
@@ -5809,7 +5825,7 @@ Hide # lvl
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
 #------------------------------------
-#   [3602] Hybrid flasks (normal)
+#   [3702] Hybrid flasks (normal)
 #------------------------------------
 
 #Show # %D2
@@ -5861,7 +5877,7 @@ Hide # lvl
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3603] Life Flasks - Normal (Kudos to Antnee)
+#   [3703] Life Flasks - Normal (Kudos to Antnee)
 #------------------------------------
 
 Show # %D5
@@ -5972,7 +5988,7 @@ Show # %D5
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3604] Mana Flasks - Magic (Kudos to Antnee)
+#   [3704] Mana Flasks - Magic (Kudos to Antnee)
 #------------------------------------
 
 Show # %D5
@@ -6083,7 +6099,7 @@ Show # %D5
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3605] Show remaining flasks
+#   [3705] Show remaining flasks
 #------------------------------------
 
 Show # %D4
@@ -6128,7 +6144,7 @@ Show # %D4
 #	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
 #===============================================================================================================
-# [[3700]] Leveling - Merged Rules
+# [[3800]] Leveling - Merged Rules
 #===============================================================================================================
 
 Show # %REMS1 %D5
@@ -6161,7 +6177,7 @@ Show # %REMS1 %D5
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
 #===============================================================================================================
-# [[3800]] Leveling - RGB Recipes
+# [[3900]] Leveling - RGB Recipes
 #===============================================================================================================
 
 #Show # %D3
@@ -6196,11 +6212,11 @@ Show # %REMS1 %D5
 #	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
 #===============================================================================================================
-# [[3900]] Leveling - RARES
+# [[4000]] Leveling - RARES
 #===============================================================================================================
 
 #------------------------------------
-#   [3901] Leveling rares - specific items
+#   [4001] Leveling rares - specific items
 #------------------------------------
 
 Show # %REMS1 %D4
@@ -6219,7 +6235,7 @@ Show # %REMS1 %D4
 	SetBackgroundColor 25 120 255 255       # BACKGROUND:	 Trinket T1
 
 #------------------------------------
-#   [3902] Leveling rares - Armors
+#   [4002] Leveling rares - Armors
 #------------------------------------
 
 Show # %D4
@@ -6230,7 +6246,7 @@ Show # %D4
 	SetBackgroundColor 0 40 70 255          # BACKGROUND:	 Rare T1
 
 #------------------------------------
-#   [3903] Leveling rares - Caster
+#   [4003] Leveling rares - Caster
 #------------------------------------
 
 Show # %D4
@@ -6249,7 +6265,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3904] Leveling rares - Melee Weapons
+#   [4004] Leveling rares - Melee Weapons
 #------------------------------------
 
 #Show # %D3
@@ -6351,7 +6367,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3905] Leveling rares - Ranged
+#   [4005] Leveling rares - Ranged
 #------------------------------------
 
 #Show # %D3
@@ -6453,7 +6469,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3906] Leveling rares - Quivers
+#   [4006] Leveling rares - Quivers
 #------------------------------------
 
 #Show # %D3
@@ -6472,7 +6488,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [3907] Leveling rares - remaining rules
+#   [4007] Leveling rares - remaining rules
 #------------------------------------
 
 #Show # %D2
@@ -6498,11 +6514,11 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
 #===============================================================================================================
-# [[4000]] Leveling - Useful items
+# [[4100]] Leveling - Useful items
 #===============================================================================================================
 
 #------------------------------------
-#   [4001] Linked gear - 4links
+#   [4101] Linked gear - 4links
 #------------------------------------
 
 #Show # %D3 %REMS1
@@ -6522,7 +6538,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [4002] Linked gear - 3links
+#   [4102] Linked gear - 3links
 #------------------------------------
 
 #Show # %D2
@@ -6542,7 +6558,7 @@ Show # %D4
 #	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
 
 #------------------------------------
-#   [4003] Act1
+#   [4103] Act1
 #------------------------------------
 
 # Certain trinkets in act 1 provide quite a definitive advantage and can be used for recipes
@@ -6591,7 +6607,7 @@ Show # %D4 %RVR
 #	SetBorderColor 50 50 150                # BORDERCOLOR:	 Neutral T1
 
 #------------------------------------
-#   [4004] Act 2+3
+#   [4104] Act 2+3
 #------------------------------------
 
 # We can also give boots an extra highlight, that being said, a player has likely obtained movementspeed boots at that point, so we're hiding it on higher  strictnesses
@@ -6613,7 +6629,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4005] Act 4+5+6
+#   [4105] Act 4+5+6
 #------------------------------------
 # Act 4-6 have a highly varying damage composition
 # However several of the strongest elemental attacks are fire-typed
@@ -6627,7 +6643,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4006] Optional Recipes
+#   [4106] Optional Recipes
 #------------------------------------
 
 #Show # summoner recipe shield
@@ -6636,7 +6652,7 @@ Show # %D4 %RVR
 #	SetBorderColor 100 100 100 255          # BORDERCOLOR:	 Leveling: strong highlight
 
 #------------------------------------
-#   [4007] 20% quality items for those strange people who want them
+#   [4107] 20% quality items for those strange people who want them
 #------------------------------------
 
 #Show # quality, lvl, nonmf
@@ -6648,11 +6664,11 @@ Show # %D4 %RVR
 #	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipes
 
 #===============================================================================================================
-# [[4100]] Leveling - natural weapon progression
+# [[4200]] Leveling - natural weapon progression
 #===============================================================================================================
 
 #------------------------------------
-#   [4101] Quivers - Progression
+#   [4201] Quivers - Progression
 #------------------------------------
 
 # Quivers - early gear acquisition
@@ -6690,7 +6706,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4102] Progression - Part 1 1-11
+#   [4202] Progression - Part 1 1-11
 #------------------------------------
 
 #Show # %D2
@@ -6712,7 +6728,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4103] Progression - Part 2 11-26
+#   [4203] Progression - Part 2 11-26
 #------------------------------------
 
 #Show # %D2
@@ -6764,7 +6780,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4104] Progression - Part 3 26-65
+#   [4204] Progression - Part 3 26-65
 #------------------------------------
 
 #Show # %D2
@@ -6948,11 +6964,11 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
-# [[4200]] Leveling - misc normal items
+# [[4300]] Leveling - misc normal items
 #===============================================================================================================
 
 #------------------------------------
-#   [4201] Normal items - 3-Socketed Items
+#   [4301] Normal items - 3-Socketed Items
 #------------------------------------
 
 #Show # %D2
@@ -6964,7 +6980,7 @@ Show # %D4 %RVR
 #	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
 #------------------------------------
-#   [4202] Normal items - First 4-8 levels - useful items
+#   [4302] Normal items - First 4-8 levels - useful items
 #------------------------------------
 
 #Show # %D2
@@ -6986,7 +7002,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4203] Vendor Normal items - Until level 3 (Remaining)
+#   [4303] Vendor Normal items - Until level 3 (Remaining)
 #------------------------------------
 
 #Show # %D2
@@ -7003,11 +7019,11 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
-# [[4300]] Leveling - misc magic items
+# [[4400]] Leveling - misc magic items
 #===============================================================================================================
 
 #------------------------------------
-#   [4301] Vendor Magic items - until 3
+#   [4401] Vendor Magic items - until 3
 #------------------------------------
 
 #Show # %D2
@@ -7017,7 +7033,7 @@ Show # %D4 %RVR
 #	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
 #------------------------------------
-#   [4302] Vendor Magic items - until 16
+#   [4402] Vendor Magic items - until 16
 #------------------------------------
 
 #Show # %D2
@@ -7045,7 +7061,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4303] Vendor Magic items - Jewellery
+#   [4403] Vendor Magic items - Jewellery
 #------------------------------------
 
 #Show # %D2
@@ -7064,7 +7080,7 @@ Show # %D4 %RVR
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
-#   [4304] Vendor Magic items - Until 24
+#   [4404] Vendor Magic items - Until 24
 #------------------------------------
 
 #Show # %D2
@@ -7086,7 +7102,7 @@ Show # %D4 %RVR
 # Later on keep them shown, but really small
 
 #===============================================================================================================
-# [[4400]] HIDE LAYER 5 - Remaining Items
+# [[4500]] HIDE LAYER 5 - Remaining Items
 #===============================================================================================================
 
 Hide # minimize junk instead of hiding (if "show")
@@ -7096,7 +7112,7 @@ Hide # minimize junk instead of hiding (if "show")
 	SetBackgroundColor 0 0 0 75             # BACKGROUND:	 Hidden
 
 #===============================================================================================================
-# [[4500]] CATCHALL - if you see pink items - update or revert your changes! This should not be happening!
+# [[4600]] CATCHALL - if you see pink items - update or revert your changes! This should not be happening!
 #===============================================================================================================
 
 Show # safetyline!
@@ -7105,7 +7121,7 @@ Show # safetyline!
 	SetBorderColor 255 0 255 255            # BORDERCOLOR:	 Error
 
 #===============================================================================================================
-# [[4600]] Special thanks to!
+# [[4700]] Special thanks to!
 #===============================================================================================================
 #
 # SPECIAL THANKS:
