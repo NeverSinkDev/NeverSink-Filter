@@ -65,11 +65,11 @@ You can also design your own strictness settings on *[filterblade.xyz](http://ww
 
 - **Soft** = A very low strictness version, that shows extra bases and recipes. Not recommended for most situations.
 - **Regular** = Shows all rares and some "potentially useful items", great for solo selffound environments.
-- **Semi-Strict** = Shows the top ~60% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version
-- **Strict** = Shows the top ~20% of all rares, hides most recipes and crafting bases. Hides scrolls. Designed for optimized builds, that want to farm/grind effectively.
-- **Very Strict** = Shows the top ~10% of all rares, hides scrolls, armorers, augmentations. Only shows the best crafting bases and recipes. Designed for fast, well geared builds.
-- **Uber Strict** = Shows the top ~1% of all rares, hides transmutations and whetstones. Designed for optimized for rapid content farming.
-- **Uber+ Strict** = No rares, no currency under an alch, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Customize on filterblade and don't complain if it's too strict.
+- **Semi-Strict** = Shows the top ~50% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version
+- **Strict** = Shows the top ~20% of all rares, hides most recipes and crafting bases. Hides scrolls at lvel 65+ (Shows them while leveling). Designed for optimized builds, that want to farm/grind effectively.
+- **Very Strict** = Shows the top ~8% of all rares, hides transmutation tier and lower currencies. Only shows the best crafting bases and recipes. Designed for fast, well geared builds.
+- **Uber Strict** = Shows the top <1% of all rares, hides alteration tier and lower currencies. Designed for optimized for rapid content farming.
+- **Uber+ Strict** = No rares, no currency under an alch, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Customize on filterblade and don't complain if it's too strict. Hides cheap uniques.
 
 --------------------------
 
