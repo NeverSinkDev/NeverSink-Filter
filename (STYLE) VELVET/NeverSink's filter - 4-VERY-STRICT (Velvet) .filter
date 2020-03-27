@@ -5193,7 +5193,7 @@ Show # $tier->t23 $type->currency
 
 Show # $type->vials $tier->t1
 	Class Currency
-	BaseType "Vial of Awakening" "Vial of Sacrifice" "Vial of the Ghost"
+	BaseType "Vial of Sacrifice" "Vial of the Ghost"
 	SetFontSize 45
 	SetTextColor 165 0 255 255              # TEXTCOLOR:	 T0 Item
 	SetBorderColor 154 0 255 255            # BORDERCOLOR:	 T0 Item
@@ -5204,7 +5204,7 @@ Show # $type->vials $tier->t1
 
 Show # $type->vials $tier->t2
 	Class Currency
-	BaseType "Vial of Transcendence"
+	BaseType "Vial of Awakening" "Vial of Summoning" "Vial of Transcendence"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -5216,7 +5216,7 @@ Show # $type->vials $tier->t2
 
 Show # $type->vials $tier->t3
 	Class Currency
-	BaseType "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Summoning" "Vial of the Ritual"
+	BaseType "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of the Ritual"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255              # BORDERCOLOR:	 Neutral T1
@@ -5281,7 +5281,7 @@ Show # $type->currency->resonator $tier->t3
 #   [4104] Delirium Currency
 #------------------------------------
 
-#Show # $tier->t1 $type->currency->delirium
+#Show # $tier->t1 $type->currency->deliriumorbs
 #	Class Currency
 #	SetFontSize 45
 #	SetTextColor 165 0 255 255              # TEXTCOLOR:	 T0 Item
@@ -5291,20 +5291,21 @@ Show # $type->currency->resonator $tier->t3
 #	PlayEffect Red
 #	MinimapIcon 0 Red Star
 
-#Show # $tier->t2 $type->currency->delirium
-#	Class Currency
-#	SetFontSize 45
-#	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-#	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-#	SetBackgroundColor 234 87 223 255       # BACKGROUND:	 Currency T2
-#	DisableDropSound True
-#	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
-#	PlayEffect Red
-#	MinimapIcon 0 Red Circle
-
-Show # $tier->t3 $type->currency->delirium
+Show # $tier->t2 $type->currency->deliriumorbs
 	Class Currency
-	BaseType == "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Blighted Delirium Orb" "Cartographer's Delirium Orb" "Decadent Delirium Orb" "Delirium Orb" "Diviner's Delirium Orb" "Fine Delirium Orb" "Foreboding Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Obscured Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Skittering Delirium Orb" "Thaumaturge's Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+	BaseType "Blighted Delirium Orb" "Cartographer's Delirium Orb" "Diviner's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Obscured Delirium Orb" "Skittering Delirium Orb" "Thaumaturge's Delirium Orb" "Timeless Delirium Orb"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 234 87 223 255       # BACKGROUND:	 Currency T2
+	DisableDropSound True
+	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+
+Show # $tier->t3 $type->currency->deliriumorbs
+	Class Currency
+	BaseType == "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Decadent Delirium Orb" "Delirium Orb" "Foreboding Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Whispering Delirium Orb"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255              # BORDERCOLOR:	 Neutral T1
