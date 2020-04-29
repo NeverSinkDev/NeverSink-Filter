@@ -1,30 +1,34 @@
 ----------------------------------
+NeverSink's itemfilter - version 7.8.7a
+----------------------------------
+
+- Accidently didn't hide, T1-9 maps on uber strict as promissed
+
+- Change medium/small cluster jewel extra highlight threshold to 84
+
+----------------------------------
 NeverSink's itemfilter - version 7.8.7
 ----------------------------------
 
-IF YOU'RE USING A UBERSTRICT OR UBERPLUSSTRICT FILTER I REALLY RECOMMEND READING THE CHANGELOGS.
+- Done several adjustments to higher strictnesses. 
 
-- [!!!] Fusings, Simple Sextants, Catalysts [...] are now also dynamically re-tiered in BOTH the stable and economy-updarted versions. Their bottom tier has been set to the chance orb tier.
-
-- [!!!] Fusings, Simple Sextants, Catalysts [...] (as a result) are now hidden on Uber Strict!
-
-- [!!!] UberPLUS-Strict now hides the alchemy tier!
+- [!!!] The alchemy tier is now hidden on uberPLUS strict. Use FilterBlade if that's not OK for you.
 
 - [!!!] UberPLUS Strict now HIDES ALL non-unique/blighted maps below T14
 
 - [!!!] Uber Strict now removes any highlight/sound from all maps under T11. I'll expand this concept for the next league to only apply when mapping in higher areas.
 
-- [!!!] UberPLUS strict now disables T2 influenced base rule highlight (T1 is still there). This might lead to you occassionally losing out on ~5-20c, but you'll get less screen clutter and less need for pricechecks/bothersome trading. If that sounds like too much to you, you probably shouldn't be using uber-plus strict. This is experimental.
+- [!!!] UberPLUS strict now disables T2 influenced base rules. This might lead to you occassionally losing out on ~5-15c, but you'll get less screen clutter and less need for pricechecks/bothersome trading. If that sounds like too much to you, you probably shouldn't be using uber-plus strict.
+
+- [!!!] Adjusted the tiering of most low-mid tier orbs (look at you fusings) and adjusted the filter generation as well. The stable filter currency tiering is now also created based on the currency economy. Added a EarlyLeagueTreatment to orbs to return them into higher tiers, during league starts.
 
 - Added a section for Unique Synthesis Rings.
 
-- Added an EarlyLeagueTreatment routine to orbs to return them into higher tiers, during league starts.
-
-- Several incubators have been weighted towards lower tiers. Some have had additional exceptions exceptions added for high itemlevels.
+- Several incubators have been weighted towards lower tiers. Some have been added to the high incubator level tier.
 
 - Uber Strict now hides all rare cluster jewels under ILVL 75 (they lose their highlight on very strict)
 
-- UberPLUS Strict now hides all rare large cluster jewels - regardless of itemlevel.
+- UberPLUS Strict now hides all rare large cluster jewels - regardless of itemlevel
 
 - UberPLUS Strict removes highlight (minimap/beam/sound) from memberspecific veiled items
 
@@ -34,17 +38,19 @@ IF YOU'RE USING A UBERSTRICT OR UBERPLUSSTRICT FILTER I REALLY RECOMMEND READING
 
 - Alteration Orbs no longer have any minimap highlight on Uber Strict
 
-- Done several adjustments to the Divination Cards and Prophecy aspects (meta-information files that aid filter generation), to improve the tiering. This results in several divination cards and prophecies changing their tiers.
+- Done several adjustments to the Divination Card aspects (meta-information files that aid filter generation), to improve the tiering.
 
 - T4 Divination cards are now hidden on uber-strict, instead of uberPLUS strict.
 
 - Tier 3 prophecies are now hidden on uberPLUS strict. "Mapping" prophecies (the ones that use can insta-use to juice your maps) lose their highlight, but are still shown (minimap, sound, beam).
 
-- "Mapping" prophecies, council prophecies, item upgrade prophecies have had their strictness increased and appearance slightly adjusted to distinguish them.
+- Tier 3 prophecies appearance and mapping appearance has been adjusted.
+
+- Adjusted the appearance of T3 and "Mapping" prophecies.
 
 - The boss drop uniques tier no longer has any sounds/beams/map icons on UberPLUS strict.
 
-- Removed the anchor from Jeweller's Touch. That prophecy is free to roam the tiers again, purely based on the economy, which will lead it straight into low tiers. F.
+- Removed the anchor from Jeweller's Touch. That prophecy is free to roam the tiers again, purely based on the economy, which will lead it straight into low tiers.
 
 - Slightly Adjusted the appearance of level 4 empower/enlighten. Enhance has been removed from the level 4-gem-tier. It will still be highlighted by the level 2+ enlighten/empower/enhance tier. Just with a lower intensity.
 
