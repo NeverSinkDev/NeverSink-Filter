@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  7.9
+# VERSION:  7.9.1
 # TYPE:     SEED
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
@@ -11,8 +11,8 @@
 # LINKS TO LATEST VERSION AND FILTER EDITOR
 #------------------------------------
 #
-# EDIT/CUSTOMIZE FILTER ON: 	http://www.FilterBlade.xyz
-# GET THE LATEST VERSION ON: 	http://www.FilterBlade.xyz or https://github.com/NeverSinkDev/NeverSink-Filter
+# EDIT/CUSTOMIZE FILTER ON: 	https://www.FilterBlade.xyz
+# GET THE LATEST VERSION ON: 	https://www.FilterBlade.xyz or https://github.com/NeverSinkDev/NeverSink-Filter
 # POE FORUM THREAD: 			https://goo.gl/oQn4EN
 #
 #------------------------------------
@@ -20,7 +20,7 @@
 #------------------------------------
 #
 # SUPPORT ME ON PATREON: 		https://www.patreon.com/Neversink
-# SUPPORT THE FILTERBLADE TEAM: http://www.filterblade.xyz/About
+# SUPPORT THE FILTERBLADE TEAM: https://www.filterblade.xyz/About
 #
 #------------------------------------
 # INSTALLATION / UPDATE :
@@ -4590,20 +4590,19 @@ Show
 #   [3801] Scarabs
 #------------------------------------
 
-Show # $tier->t1 $type->fragments->scarabs
-	Class "Map Fragments"
-	BaseType "Craicic Lure" "Fenumal Lure" "Saqawine Lure"
-	SetFontSize 45
-	SetTextColor 159 15 213 255
-	SetBorderColor 159 15 213 255
-	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
-	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
-	PlayEffect Yellow
-	MinimapIcon 0 Red Hexagon
+#Show # $tier->t1 $type->fragments->scarabs
+#	Class "Map Fragments"
+#	SetFontSize 45
+#	SetTextColor 159 15 213 255
+#	SetBorderColor 159 15 213 255
+#	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+#	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
+#	PlayEffect Yellow
+#	MinimapIcon 0 Red Hexagon
 
 Show # $tier->t2 $type->fragments->scarabs
 	Class "Map Fragments"
-	BaseType "Farric Lure" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Winged Ambush Scarab" "Winged Bestiary Scarab" "Winged Breach Scarab" "Winged Cartography Scarab" "Winged Divination Scarab" "Winged Elder Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Perandus Scarab" "Winged Reliquary Scarab" "Winged Shaper Scarab" "Winged Sulphite Scarab" "Winged Torment Scarab"
+	BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Saqawine Lure" "Winged Ambush Scarab" "Winged Bestiary Scarab" "Winged Breach Scarab" "Winged Cartography Scarab" "Winged Divination Scarab" "Winged Elder Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Perandus Scarab" "Winged Reliquary Scarab" "Winged Shaper Scarab" "Winged Sulphite Scarab" "Winged Torment Scarab"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 Neutral T1
@@ -5798,7 +5797,6 @@ Show # %H5
 #===============================================================================================================
 
 Show # $type->seeds $tier->lvl1w
-Show # $type->seeds $tier->lvl1
 	Class "Harvest Seed"
 	BaseType "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
 	SetFontSize 45
@@ -5810,7 +5808,6 @@ Show # $type->seeds $tier->lvl1
 	MinimapIcon 2 White Raindrop
 
 Show # $type->seeds $tier->lvl1v
-Show # $type->seeds $tier->lvl1
 	Class "Harvest Seed"
 	BaseType "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed"
 	SetFontSize 45
@@ -6145,7 +6142,7 @@ Show # %HS5 $tier->t3boss $type->uniques
 
 Show # %H5 %C4 $tier->t3 $type->uniques
 	Rarity Unique
-	BaseType == "Ancient Greaves" "Ancient Spirit Shield" "Blinder" "Blunt Arrow Quiver Piece" "Bone Bow" "Broadhead Arrow Quiver" "Callous Mask Piece" "Cedar Tower Shield" "Cloth Belt" "Cloth Belt Piece" "Coronal Leather" "Crusader Helmet" "Diamond Ring" "Enameled Buckler" "Etched Greatsword" "Ezomyte Blade" "Goathide Boots" "Gut Ripper" "Holy Chainmail" "Imperial Staff Piece" "Ironscale Gauntlets" "Lathi" "Legion Boots" "Legion Sword Piece" "Loricated Ringmail" "Opal Wand" "Paua Ring" "Rustic Sash" "Sanctified Mana Flask" "Serpentscale Boots" "Shackled Boots" "Shadow Sceptre" "Sharkskin Tunic" "Siege Helmet" "Solaris Circlet" "Soldier Helmet" "Strapped Mitts" "Timeworn Claw" "Trapper Boots" "Two-Toned Boots" "Tyrant's Sekhem" "Variscite Blade" "War Hammer"
+	BaseType == "Ancient Greaves" "Ancient Spirit Shield" "Blinder" "Blunt Arrow Quiver Piece" "Bone Bow" "Broadhead Arrow Quiver" "Callous Mask Piece" "Cedar Tower Shield" "Cloth Belt" "Cloth Belt Piece" "Coronal Leather" "Crusader Helmet" "Diamond Ring" "Enameled Buckler" "Etched Greatsword" "Ezomyte Blade" "Goathide Boots" "Gut Ripper" "Holy Chainmail" "Imperial Staff Piece" "Ironscale Gauntlets" "Lathi" "Legion Boots" "Legion Sword Piece" "Loricated Ringmail" "Opal Wand" "Paua Ring" "Rustic Sash" "Sanctified Mana Flask" "Serpentscale Boots" "Shackled Boots" "Shadow Sceptre" "Sharkskin Tunic" "Siege Helmet" "Solaris Circlet" "Soldier Helmet" "Strapped Mitts" "Trapper Boots" "Two-Toned Boots" "Tyrant's Sekhem" "Variscite Blade" "War Hammer"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
@@ -6171,7 +6168,7 @@ Show # %H4 %C4 $tier->hideable2 $type->uniques
 
 Show # %H4 %C4 $tier->hideable $type->uniques
 	Rarity Unique
-	BaseType == "Ambusher" "Ancient Gauntlets" "Antique Greaves" "Antique Rapier" "Assassin's Garb" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Coiled Staff" "Colossal Tower Shield" "Compound Spiked Shield" "Conjurer Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Deicide Mask" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Eelskin Gloves" "Elder Sword" "Elegant Foil" "Embroidered Gloves" "Engraved Wand" "Estoc" "Festival Mask" "Flaying Knife" "Fright Claw" "Full Dragonscale" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Iron Sceptre" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Mosaic Kite Shield" "Nailed Fist" "Necromancer Silks" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Platinum Sceptre" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Shagreen Gloves" "Sharkskin Boots" "Simple Robe" "Soldier Boots" "Sorcerer Gloves" "Spidersilk Robe" "Spiked Club" "Steel Gauntlets" "Steel Kite Shield" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
+	BaseType == "Ambusher" "Ancient Gauntlets" "Antique Greaves" "Antique Rapier" "Assassin's Garb" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Brass Spirit Shield" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Coiled Staff" "Colossal Tower Shield" "Compound Spiked Shield" "Conjurer Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Deicide Mask" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Eelskin Gloves" "Elder Sword" "Elegant Foil" "Embroidered Gloves" "Engraved Wand" "Estoc" "Festival Mask" "Flaying Knife" "Fright Claw" "Full Dragonscale" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Hallowed Hybrid Flask" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Iron Sceptre" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Mosaic Kite Shield" "Nailed Fist" "Necromancer Silks" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Platinum Sceptre" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Shagreen Gloves" "Sharkskin Boots" "Simple Robe" "Soldier Boots" "Sorcerer Gloves" "Spidersilk Robe" "Spiked Club" "Steel Gauntlets" "Steel Kite Shield" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Thresher Claw" "Tiger Sword" "Timeworn Claw" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
 	SetFontSize 45
 	SetTextColor 175 96 37 255              # TEXTCOLOR:	 Unique
 	SetBorderColor 175 96 37 255            # BORDERCOLOR:	 Aspect Unique
