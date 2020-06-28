@@ -294,9 +294,17 @@ Hide
 	SetTextColor 255 115 115 220
 	SetBorderColor 0 0 0 255
 
-Hide
+#Hide
+#	Class "Divination"
+#	BaseType "The Scholar" "The Sigil" "The Mountain"
+
+Show # %H3 %C5 $tier->t5c $type->divination
 	Class "Divination"
-	BaseType "The Scholar" "The Sigil" "The Mountain"
+	BaseType == "Her Mask" "Rain of Chaos" "The Flora's Gift" "The Gambler" "The Puzzle"
+	SetFontSize 45
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 175 215 230 180      # BACKGROUND:	 Divi T5
 
 Show
 	Class "Divination"
@@ -316,7 +324,7 @@ Hide # $Flasks->Utility %D2
 	
 Hide # $s->currency->low $t->3 %H4 %TB-Currency-T5
 	Class Currency
-	BaseType "Orb of Transmutation" "Orb of Augmentation" #"Blacksmith's Whetstone"
+	BaseType "Orb of Transmutation" "Orb of Augmentation" "Blacksmith's Whetstone"
 	SetFontSize 45
 	SetTextColor 170 158 130             # TEXTCOLOR:	 Currency Cosmetic
 	SetBorderColor 190 178 135 180       # BORDERCOLOR:	 Transmutation
