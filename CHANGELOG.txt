@@ -1,4 +1,185 @@
 ----------------------------------
+NeverSink's itemfilter - version 7.11.0 - ritual, new tierlists and 8.0 preparations
+----------------------------------
+
+NEW STUFF:
+- Added a massive new explicitmod section. This section is much more potent at identifying good drops. It works with all itemtypes and is probably a larger upgrade to the endgame than you might think.
+- Added all the echoes stuff! Maven items, orbs, ritual items, new basetypes etc.
+
+TIERLISTS:
+- Replica uniques now have their very own tierlist
+- Expensive awakened gems now have a tierlist (economy updated)
+- Expensive alt-quality gems now have a tierlist (economy updated, but will be empty until economy settles)
+- Gems now have a tierlist (based on quality/level combinations, economy updated)
+- Made the T1 threshold a little bit higher across all tiers (it also is scaled more by the exalted orb price)
+- Made the T2 threshold a little bit lower across all tiers
+- Breach blessings are now part of the normal currency progression and are economy tiered (Chayula blessing not allowed to drop below chaos tier, other offerings not allowed to drop below alchemy tier)
+- Annulment Shards are now "anchored" to the alchemy tier. Their economy information is absolutely unreliable and frequently tell that they are worth more than annulment orbs. 
+
+EXPLICIT MODS:
+- "of Crafting" "of Spellcraft" "of Weaponcraft" items are now hidden semi-strict and higher.
+
+ENDGAME:
+- Large and medium (2x3 and 2x4 items) are no longer highlighted in the endgame starting with regular strictness.
+- The chisel recipes are only shown on soft strictness anymore. Exception being: regular and semistrict only show 20% quality hammers
+- Changed the appearance of non-unique 6-links
+
+FLASK SECTIONS:
+- Completely reworked. It is now dynamically based on the area level. Higher strictnesses still disable the rules earlier.
+- T2 areas: stop showing life/mana/hybrid flasks without quality
+- T6 areas: stop showing high quality life/mana/hybrid flasks and utility flasks
+- T11 areas: stop showing quality utility flasks
+- Random quality flasks are hidden on semi-strict and higher. 20 qual flasks are hidden on very strict and higher.
+- Simplified and enhanced leveling flask section
+
+LEVELING:
+- Large and medium chromatics are now only shown during the first levels (medium hidden on 32, large at 45), based on area levels
+- Chromatic recipe fontsize slightly reduced and normalized
+- Slightly adjusted some leveling setups.
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.5 - Heist League adjustments
+----------------------------------
+
+- Rogue Markers are now hidden on uber strict and higher
+
+- Large cluster jewels are no longer hidden on uber-plus strict
+
+- Made abyssal jewel filtering a bit stricter
+
+- Made essence filtering slightly stricter
+
+- Offering of the goddess now has less highlight
+
+- Low tier scarabs now have more highlight
+
+- The lowest tier scarabs and lowest tier fragments now lose their map icon on very strict (instead of uber strict) and are hidden on uber strict
+
+- Adjusted T1 heist brooches to be ilvl84 (that unlocks the T1 quantity mod)
+
+- Adjusted T1 heist gear to be ilvl81 (that unlocks the T1 auras and support mods, ilvl82+ only adds more damage and some insignificant mods)
+
+- The loreweave recipe is now disabled by default and can be reenabled on demand in filterblade
+
+- Removed the prophecy upgradable unique items as a unique tier. This information has become less and less important over the past leagues and has just added additional visual clutter. Prophecy upgradable uniques will now be tiers exactly the same way other uniques are tiered. Expensive bases for prophecy upgrades (currently only atziri's mirror) receive a "PreventHiding" tag, because they're sometimes sold based on their mods.
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.4 - Heist League adjustments
+----------------------------------
+
+- More adjustments to all economy sections.
+
+- Reworked and restructured the talisman section. It is now a bit less strict. 
+
+- Added an additional section to highlight any talisman that has T1/T2/T3 life and/or T1/T2 es and/or T1 %es. These are the base requirements to make an amulet usable.
+
+- Added a section for top tier rogue gear with itemlevel 83 (highest level required for best mods). This rogue gear is highlighted on all strictnesses
+
+- T3/T4 rogue gear loses highlight on strict and is hidden on very strict.
+
+- T2 rogue gear loses highlight on very strict and is hidden on uber strict
+
+- T1 rogue gear (itemlevel < 83) loses highlight on uber strict and is hidden on uber+ strict
+
+- Changed heist gear map icon and beams. Removed the purple beams and icons from heist gear.
+
+- The 4 new heist currencies (not rogue markers) have been added into the main currency progression and are now economy-tiered.
+
+- Random influenced bases (ones that are not highlighted by the other influenced tiering rules) are no longer highlighted on uber-strict.
+
+- Strictened the filtering of gems. Non-quality gems in the endgame are now hidden on regular. Low quality gems are hidden on strict. High quality gems (14-19) lose their highlight on uber strict and are hidden on uber+.
+
+- Disabled the section for influenced 2h slam-weapons. They're now treated in the same way as all other influenced items. It can be reenabled on demand on filterblade.
+
+- Slightly changed the highlight on identified mod items
+
+- Added highlight for enchanted jewels
+
+- Added highlight for abyss jewels with T1 life or/and es.
+
+- Strictened up fractured item filtering
+
+- Strictness of the additional early endgame crafting bases introduced in harvest increased (now hidden on semi-strict)
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.3 - Heist League adjustments
+----------------------------------
+
+- Minor economy finetuning.
+
+- Added a section for highlighting delirium-infused maps that drop in Heists
+
+- Removed vaal grace and vaal haste from gems that get special highlight
+
+- High Quality enhance no longer has a white background.
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.2 - Heist League adjustments
+----------------------------------
+
+- Most tierlists have been adjusted to better match the current state of the game. Affected tierlists are: uniques, divination cards, unique maps, fossils, incubators, prophecies, scarabs, high level crafting bases, oils, fragments, shaper, elder, crusader, hunter, redeemer, warlord, vials, currencies, deliriumorbs
+
+- The appearance of synthesized bases has been adjusted. Added a list of top "synthesizable" bases that receive strong extra highlight. 
+
+- The appearance of fractured bases has been adjusted. Added a list of top "fracturable" bases that receive strong extra highlight.
+
+- Adjusted the base algorithm for tiering for a bit more accuracy.
+
+- Improved the highlight of a few misc items and fixed highlight bugs on different styles.
+
+- Minor architecture improvements.
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.1 - Heist League
+----------------------------------
+
+- Integrated the new uniques into the new filter tiering. It's still very instable, because the supply and demand keeps changing and people keep discovering the new meta.
+
+- Increased the font size of the heist follower gear and given them larger map icons
+
+- Changed the appearance of heist coins, contracts, blueprints and heist gear.
+
+- T3 rares now include more boots, gloves and helmets
+
+----------------------------------
+NeverSink's itemfilter - version 7.10.0 - Heist League
+----------------------------------
+
+- NOTE: new items mostly come with purple map icons/beams.
+
+- Retiered the rare T1/T2/T3/T4 entries using a new tool!
+
+- Retiered all uniques, divination cards, currencies etc, preparing them for the new league!
+
+- Added heist gear, brooches, cloaks and tools. Each of these come in multiple sets of 4 items. Added a tierlist for every tool, for both magic/normal and rare. The T1/T2 heist items are highlighted more. I have no way of knowing how rare they are and if it makes sense highlighting some magic/normal ones, so expect a lot of updates. You can also adjust everything on FilterBlade
+
+- Added Heist Targets - they look like quest items, which they kinda are.
+
+- Added contracts - for now all non-unique contracts look the same. They come with a new map icon
+
+- Added blueprints - for now all non-unique contracts look the same. They come with a new map icon
+
+- Added a section for unique contracts/blueprints
+
+- Added a minimal highlight section for replica uniques. These will likely get a tierlist in the future.
+
+- Added a minimal highlight section for alternative quality gems.
+
+- Added all the new divination cards. There's a small section for the 4 divination cards, where we don't know the outcome yet.
+
+- Added the "official teal-bex-approved" divination card tier!
+
+- Added a section for "experimental gear". These seem to come in 3 tiers. T1 has a separate section.
+
+- Added a section for the exclusive heist enchantments.
+
+- Added a section for the heist currencies (markers + lens + the new orbs)
+
+- Added several smol sections, such as a section for corrupted jewel with a corrupted implicit etc.
+
+- Several other changes and optimizations to many parts of filter(blade)
+
+----------------------------------
 NeverSink's itemfilter - version 7.9.3 - Harvest League - Finetuning
 ----------------------------------
 
