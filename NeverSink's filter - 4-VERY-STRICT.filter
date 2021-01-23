@@ -322,22 +322,10 @@ Hide
 	SetTextColor 255 115 115 220
 	SetBorderColor 0 0 0 255
 
-#Hide
-#	Class "Divination"
-#	BaseType "The Scholar" "The Sigil" "The Mountain"
-
 Show # %H3 %C5 $tier->t5c $type->divination
 	Class "Divination"
-	BaseType == "Rain of Chaos" "The Flora's Gift" "The Gambler" "The Puzzle" #"Her Mask"
+	BaseType == "The Catalyst" "The Flora's Gift" "The Gambler" "The Puzzle" "The Fox" "Volatile Power" "Grave Knowledge" "The Doppelganger" "The Cataclysm" # "Her Mask" "Rain of Chaos"
 	SetFontSize 45
-	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 175 215 230 180      # BACKGROUND:	 Divi T5
-
-Show
-	Class "Divination"
-	BaseType "The Fox" "Volatile Power" "Grave Knowledge" "The Flora's Gift" "The Doppelganger" "The Cataclysm"
-	SetFontSize 36
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 175 215 230 180      # BACKGROUND:	 Divi T5
@@ -391,45 +379,50 @@ Show # $Recipes->Glassblower->20% %D3
 	SetFontSize 40
 	SetBorderColor 255 255 255 255       # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipe T2
-	
-Show # $Currency->High-T1 %TB-Currency-T1.5
-	Class Currency
-	BaseType "Awakened Sextant" "Prime Sextant"
-	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 240 90 35 255     # BACKGROUND:	 Currency T2
-	#PlayAlertSound 1 300                 # DROPSOUND:	 Currency Sound
-	CustomAlertSound "GACHI_3uniques.mp3"
-	DisableDropSound True
-	MinimapIcon 1 Green Circle
-	PlayEffect Yellow
 
-Show # $Currency->High-T2 %TB-Currency-T2
+Show # %HS4 %C5 $tier->t31 $type->currency
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Stacked Deck" "Simple Sextant"
+	BaseType == "Chromatic Orb"
 	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 249 150 25 255    # BACKGROUND:	 Currency T3
-	#PlayAlertSound 1 300                 # DROPSOUND:	 Currency Sound
-	CustomAlertSound "GACHI_3uniques.mp3"
-	DisableDropSound True
-	MinimapIcon 2 Green Circle
-	PlayEffect Yellow
+	SetTextColor 45 50 130 255              # TEXTCOLOR:	 Silver Coin
+	SetBorderColor 45 50 130 255            # TEXTCOLOR:	 Silver Coin
+	SetBackgroundColor 210 178 135 255      # BACKGROUND:	 Currency T5
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
 
-Show # $Currency->High-T3 %TB-Currency-T3
+Show # %H4 %C4 $tier->t32 $type->currency
 	Class Currency
-	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb"
+	BaseType == "Blessed Orb" "Chaos Shard" "Engineer's Orb" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Orb of Chance" "Silver Coin"
 	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 213 159 0 255     # BACKGROUND:	 Currency T4
-	#PlayAlertSound 1 300                 # DROPSOUND:	 Currency Sound
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 200                # BORDERCOLOR:	 Neutral T2
+	SetBackgroundColor 210 178 135 255      # BACKGROUND:	 Currency T5
+
+Show # $tier->t22 $type->currency
+	Class Currency
+	BaseType == "Ancient Shard" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Chaos Orb" "Harbinger's Orb" "Orb of Annulment" "Ritual Splinter" "Stacked Deck" "Tempering Catalyst"
+	SetFontSize 45
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
 	CustomAlertSound "GACHI_3uniques.mp3"
 	DisableDropSound True
-	MinimapIcon 2 Green Circle
+#	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Yellow
+	MinimapIcon 2 Green Circle
+
+Show # %H5 %C4 $tier->t23 $type->currency
+	Class Currency
+	BaseType == "Abrasive Catalyst" "Annulment Shard" "Awakened Sextant" "Bestiary Orb" "Cartographer's Chisel" "Facetor's Lens" "Gemcutter's Prism" "Harbinger's Shard" "Imbued Catalyst" "Intrinsic Catalyst" "Orb of Alchemy" "Orb of Alteration" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Prime Sextant" "Regal Orb" "Simple Sextant" "Turbulent Catalyst" "Vaal Orb"
+	SetFontSize 45
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 213 159 0 255        # BACKGROUND:	 Currency T4
+	CustomAlertSound "GACHI_3uniques.mp3"
+	DisableDropSound True
+#	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect Yellow
+	MinimapIcon 2 Green Circle
 
 Show # $tier->t11 $type->currency
 	Class Currency
@@ -439,7 +432,7 @@ Show # $tier->t11 $type->currency
 	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
 	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
 	#PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
-	CustomAlertSound "za_monolit_1.mp3"
+	CustomAlertSound "mucuraeuuu.mp3"
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
@@ -455,39 +448,28 @@ Show # $Currency->Harbinger->T1 %TB-Currency-Harbinger-ShardsT1
 	MinimapIcon 2 Green Circle
 	PlayEffect Yellow
 
-Show # $Currency->Low->T1 %H5 %TB-Currency-SilverCoin
-	Class Currency
-	BaseType "Silver Coin"
-	SetFontSize 45
-	SetTextColor 45 50 130 255           # TEXTCOLOR:	 Silver Coin
-	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 210 178 135 255   # BACKGROUND:	 Currency T5
-	MinimapIcon 2 White Circle
-	PlayEffect White
-
-#Show # $Currency->Low->T1 %H4 %TB-Currency-T4
-#	Class Currency
-#	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble"
-#	SetFontSize 45
-#	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
-#	SetBorderColor 0 0 0 200             # BORDERCOLOR:	 Neutral T2
-#	SetBackgroundColor 210 178 135 255   # BACKGROUND:	 Currency T5
-#	#MinimapIcon 2 White Circle
-#	PlayEffect White
-
 Show # %D3 %C2
-	Quality >= 1
+	Quality >= 10
 	Class Gems
 	SetFontSize 40
 	SetBorderColor 30 150 180 150           # BORDERCOLOR:	 Gem T3
 
 Show # %H3 %C3 $tier->t33 $type->currency
 	Class Currency
-	BaseType == "Alchemy Shard" "Binding Shard""Engineer's Shard" "Regal Shard"
+	BaseType == "Alchemy Shard" "Binding Shard" "Engineer's Shard" "Regal Shard"
 	SetFontSize 45
 	SetTextColor 170 158 130                # TEXTCOLOR:	 Currency Cosmetic
 	SetBorderColor 190 178 135 180          # BORDERCOLOR:	 Transmutation
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+
+Show # %H3 $tier->t4drop $type->currency->prophecy
+	Class Currency
+	BaseType "Prophecy"
+	Prophecy "Kalandra's Craft" "The Mysterious Gift"
+	SetFontSize 40
+	SetTextColor 159 15 213 255
+	SetBorderColor 159 15 213 255
+	SetBackgroundColor 0 0 0 255            # BORDERCOLOR:	 Neutral T1
 
 #===============================================================================================================
 # [[0200]] 6 LINKS
