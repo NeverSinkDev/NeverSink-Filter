@@ -122,7 +122,6 @@
 #   [2501] Exceptional Gems - Awakened and AltQuality
 #   [2502] Exceptional Gems - Special gems
 #   [2503] Gems during leveling
-#   [2504] High Quality and Leveled Gems
 # [[2600]] REPLICA UNIQUES
 # [[2700]] Special Maps
 #   [2701] Unique Maps
@@ -3724,33 +3723,8 @@ Show # $type->gems-special $tier->exspecial
 #   [2503] Gems during leveling
 #------------------------------------
 # !! Override 430 : "leveling specific gem rules"
-
-Show # $type->gems-leveling $tier->firstzone
-	AreaLevel 1
-	Class "Gems"
-	SetFontSize 45
-	SetBorderColor 0 0 0
-
-Hide # %H4 $type->gems-leveling $tier->levelingvaal
-	Quality <= 5
-	GemLevel <= 5
-	AreaLevel < 65
-	Class "Gems"
-	BaseType "Vaal"
-	SetFontSize 45
-	SetBorderColor 0 0 0
-	SetBackgroundColor 55 0 0 255
-
-Hide # %H2 $type->gems-leveling $tier->leveling
-	Quality 0
-	GemLevel <= 5
-	AreaLevel < 65
-	Class "Gems"
-	SetFontSize 40
-	SetBorderColor 0 0 0
-
 #------------------------------------
-#   [2504] High Quality and Leveled Gems
+# [3902] High Quality and Leveled Gems
 #------------------------------------
 # !! Override 440 : "quality, leveled and generic gems"
 
@@ -3826,6 +3800,17 @@ Show # $type->gems-generic $tier->decogemsvaalbgdrop
 #	PlayEffect Grey
 #	MinimapIcon 1 White Triangle
 
+#Show # %D4 $type->gems-generic $tier->qt4lvl
+#	Quality >= 1
+#	AreaLevel <= 67
+#	Class "Gems"
+#	SetFontSize 45
+#	SetTextColor 30 190 190 255
+#	SetBorderColor 30 190 190 255
+#	PlayAlertSound 2 300
+#	PlayEffect Grey
+#	MinimapIcon 1 White Triangle
+
 #Show # %D2 $type->gems-generic $tier->qt4
 #	Quality >= 1
 #	Class "Gems"
@@ -3839,6 +3824,27 @@ Show # $type->gems-generic $tier->decogemsvaalbgdrop
 #	SetFontSize 40
 #	SetTextColor 30 190 190 255
 #	SetBorderColor 40 130 130 255
+
+Show # $type->gems-generic $tier->firstzone
+	AreaLevel 1
+	Class "Gems"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+
+Hide # %H4 $type->gems-generic $tier->levelingvaal
+	AreaLevel <= 67
+	Class "Gems"
+	BaseType "Vaal"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 55 0 0 255
+
+Hide # %H2 $type->gems-generic $tier->leveling
+	GemLevel <= 5
+	AreaLevel <= 67
+	Class "Gems"
+	SetFontSize 40
+	SetBorderColor 0 0 0
 
 #Show # %D3 $type->gems-generic $tier->corruptedvaalany
 #	Class "Gems"
