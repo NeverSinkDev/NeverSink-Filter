@@ -1,4 +1,61 @@
 ----------------------------------
+NeverSink's itemfilter - version 8.0 - Full filter rework, Custom Programming, Ultimatum
+----------------------------------
+
+IMPORTANT:
+
+The item filter is now generated using a small custom programming language (Exo) built by me. This makes the filter much more maintainable and enables a significantly more elegant structure.
+
+As a result of this change, the filter has been completely rewritten from the ground up. Many sections still work exactly the same way as they did before, while others are completely rewritten and modernized.
+
+Sadly, to get everything done for 3.14 (despite investing hundreds of hours), I had to cut corners. Namely: styles are currently not available (except CustomSounds) and will be remade in the future. The new structure allows for much better looking styles and there are also some new styles incoming. 
+
+The following consequences are the result of these changes. This list is not complete, but rather aims to provide a high level overview of the changes:
+- Rebalanced all strictnesses. The filter is now generally speaking more strict on all strictnesses. The highest strictnesses of the filter are significantly stricter.
+- Added all ultimatum items, the new relic key, new fragments/scarabs, new incubators, new divination cards and all the other ultimatum relevant material
+- Retiered all sections, with the early league state in mind.
+- Completely revamped the filterblade customizer. It should be a bit better looking, better structured and offer more customization
+- Completely rewritten the leveling section. It should now follow best practices for leveling standards, but still be simple and intuitive to use for new poe player. Editing it on filterblade is also easier now.
+- T1 (white background items) are a bit more exclusive now
+- The filter now uses several continue-type structures to highlight specific cases, such as corrupted items etc.
+- The filter endgame switch is now level 68 for all rules
+- The tiering of influenced bases has been improved
+- The tiering of divination cards have bene improved. Three weeks into the league, the filter will enter a "lateleague" mode, where ther efilter tiering will weigh certain divination down, similar to how there's an earlyleague mode, that weighs some items up. This is due to the fact that there's no reliable economy data on these cards and poe.ninja rounds all cards down/up to 1chaos (because there's a lot of fluctuation), making pure mathematical tiering non-functional.
+- Introduced veiled modifiers (mostly prefixes) into identified mod highlight strategies. Usually you need to find an identified item with X good mods for it to be highlighted. Now in many case it's also OK, to find one with X-1 good mods and a veiled mod.
+- Normalized the highlight strategies for "exotic" items (enchanted, veiled etc). These come in 4 tiers.
+- Reworked magic identified item highlight strats
+- Maven Invitations are now tiered and economy-updated
+- Reworked and modernized the synthesised and fractured tierlists
+- The endgame crafting section has been completely reworked and now cover both rare/normal items thanks to the new decorators.
+- Merged atlas bases completely into crafting/rare sections. Heist and ritual bases are still handled separately
+- Improved jewel highlight strategies.
+- Removed 6S highlight for certain bases of a high level section
+- Completely reworked flask highlight strategy. It is now much more level bound. Certain utility flasks will be shown in low maps and no longer shown in higher maps.
+- Removed a bunch of early map crafting rules for maps, such as jewellery etc. that are pretty much unused in poes modern gameplay
+- Completely reworked the rare highlight strategy. The green colors are now mostly reserved for jewellery.
+- Rare items now use decorators to signalize the item size, corruption state (and if it has implicit mods) and itemlevel (68+/75/84/86)
+- Reworked and strictened up Talisman highlighting
+- Retiered all rare items and merged atlas bases into them
+- Retiered all crafting bases and merged atlas bases into them
+- Retiered the synthesised basetypes
+- Retiered the fratured absetypes
+- Reworked bestiary item highlght strategy
+- Added a dedicated talisman identified mod section that can (hopefully) reliably detect strong talismans. 
+- Strictened up highlight for random talismans
+- Added a new highlight for "artefacts". These are somewhat exotic items that drop in certain locations and are pretty much always picked up. Examples are heist trinkets and craftable watchstones.
+- Reworked gem highlight strategies. There's new highlights for certain gem levels/qualities, vaal gems and other properties.
+- Reworked map highlight. The filter no longer uses the map "outleveling" mechanic. The mechanic has become trivial due to the introduction of the latest map systems. Instead the filter now shows if you find maps that are over your current maptier. That means if you find a +1 map, it'll let you know!
+- Added a new highlight for blighted, enchanted, deliriumed etc. maps
+- Same as before, higher tier filters just outright hide lower tier maps. Uber+ hides any map below T14, Uber below T11.
+- Simplified and strictened up perandus coin highlight. There's a new perandus coin tier for huge stack sizes
+- Changed the heist rogue coin highlight to a perandus-like highlight color
+- The tiering strategy for currency, oils, uniques, propechies etc. is mostly the same. Just letting you know. This is not a buff.
+- Reworked and sharpened the leveling flask highlight strategy
+- Added "of Many" and summoner (convoking wand) combinations to identified mods
+- Added topotante/shield combinations as expensive legion mod highlight strategy
+- Probably a big big bunch of other things that I have simply forgot to mention
+
+----------------------------------
 NeverSink's itemfilter - version 7.11.2 - fixes and economy
 ----------------------------------
 
