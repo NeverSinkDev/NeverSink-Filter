@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.0.0a
+# VERSION:  8.0.0b
 # TYPE:     5-UBER-STRICT
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
@@ -121,7 +121,7 @@
 # [[2500]] Gem Tierlists
 #   [2501] Exceptional Gems - Awakened and AltQuality
 #   [2502] Exceptional Gems - Special gems
-#   [2503] Gems during leveling
+#   [2503] High Quality and Leveled Gems
 # [[2600]] REPLICA UNIQUES
 # [[2700]] Special Maps
 #   [2701] Unique Maps
@@ -2815,6 +2815,7 @@ Hide # %H1 $type->endgamergb $tier->rgbmedium
 #	Quality >= 29
 #	ItemLevel >= 75
 #	DropLevel >= 50
+#	Rarity < Rare
 #	Rarity <= Rare
 #	Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptres" "Shields" "Staves" "Two Hand" "Wands" "Warstaves"
 #	SetFontSize 40
@@ -2826,6 +2827,7 @@ Hide # %H1 $type->endgamergb $tier->rgbmedium
 #	LinkedSockets >= 4
 #	AreaLevel <= 72
 #	AreaLevel >= 68
+#	Rarity < Rare
 #	Class "Body Armours" "Boots" "Gloves" "Helmets"
 #	SetBorderColor 100 100 100 150
 #	SetBackgroundColor 0 0 0 180
@@ -3759,11 +3761,7 @@ Show # $type->gems-special $tier->exspecial
 	MinimapIcon 1 Yellow Triangle
 
 #------------------------------------
-#   [2503] Gems during leveling
-#------------------------------------
-# !! Override 430 : "leveling specific gem rules"
-#------------------------------------
-# [3902] High Quality and Leveled Gems
+#   [2503] High Quality and Leveled Gems
 #------------------------------------
 # !! Override 440 : "quality, leveled and generic gems"
 
@@ -3879,7 +3877,6 @@ Hide # %H4 $type->gems-generic $tier->levelingvaal
 	SetBackgroundColor 55 0 0 255
 
 Hide # %H2 $type->gems-generic $tier->leveling
-	GemLevel <= 5
 	AreaLevel <= 67
 	Class "Gems"
 	SetFontSize 40
