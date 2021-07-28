@@ -5,7 +5,7 @@
 1) The filter does NOT update itself automatically. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! Get the latest version from: *[filterblade.xyz](https://www.filterblade.xyz)*
 2) The filter is always updated before the start of a new league. The update is live 4-6 hours before start. Afterwards, usually every few weeks.
 3) Filters can't distinguish between different variations of one unique base! Example: A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". The same goes for all unique jewels etc. Things that need manual checking have a blue icon on the minimap!
-4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 65. Additionally some items behave differently if dropped in earlier areas. Wisdom scrolls are larger for instance.
+4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 68. Additionally some items behave differently if dropped in earlier areas. Wisdom scrolls are larger for instance.
 5) If you have questions, suggestions or want to get in touch: join our discord server: discord.gg/mye6xhF
 
 --------------------------

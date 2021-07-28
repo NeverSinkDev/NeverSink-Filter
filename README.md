@@ -32,7 +32,7 @@ The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendl
 
 3) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
 
-4) INGAME: Escape -> Options -> UI -> Scroll down -> Select one of the filters from the dropdown box.
+4) INGAME: Escape -> Options -> Game -> Select one of the filters from the dropdown box.
 
 5) Done. Enjoy.
 
