@@ -1,4 +1,72 @@
 ----------------------------------
+NeverSink's itemfilter - version 8.3.0 - Scourge League
+----------------------------------
+
+STRUCTURE:
+- Added Gaia Style
+- Added Necros Style
+- Added Maven sounds to filterblade
+- Added the ItsYoji SLURP sound. You're welcome.
+
+SCOURGE LEAGUE:
+- Added all the new tainted currencies
+- Added the sacred orb
+- Added a tierlist for scourged items
+- Added the unset amulet
+- Introduced all the new uniques to tiers
+- Introduced uber blight maps, uber-emblems and uber-breachstones
+- Added all divination cards
+
+STACKED CURRENCIES (ECONOMY BASED):
+- Completely reworked stacked currency tiering
+- Stacked currency tiers are now economy based
+- Single stacked currencies like alchemy shards and horizons shards have been moved down as a result.
+- For most currencies, there's a 3+ tierlist and a 6+ stack currency tierlist
+- "Supply-Currencies" (wisdom, portals, augments, transmutes, armorers, whetstones) have their own stacked currency tiering, split from the main tiering mechanic (with tiers for 4+/7+/10+ items)
+- The "normal" currency tierlist now treat any items of stacks 1-2 or anything that is NOT listed in the stacked tiers below (for instance all exalted orbs are highlighted by it, no matter the stacksize)
+
+HIGH-LEVEL FLASKS:
+- Introduced a section for itemlevel 82 flasks (best life, mana and utility flasks), itemlevel 84+ flasks (jade, basalt, granite) and itemlevel 85+ flasks (quicksilver)
+- These sections come in two versions quality and non-quality and scale with strictness
+- Deleted the old identified mod flask section due to all modifiers getting krangled by the patchnotes
+
+CLUSTER JEWELS (ECONOMY BASED):
+- Cluster jewels received their own economy based tierlist. This tierlist will be updated every 4 hours, same as all other economy-based tierlist
+- The cluster jewel tiering is only available/activated in filters after 3 days after league start. It's too unreliable and wild before that and mostly based on previous league economy, which is a massive trap in this case.
+- The tierlist attempts to detect expensive clusters with the node size of 2/3/4-5/6/8/12 at levels 68/75/84 using poe.ninja data.
+- The filter generator now cluters the rules in 6 different optimal node configurations, 3 level configurations and 2 pricing tiers
+- Increaed the strictness on cluster jewel filtering due to good jewels being highlighted by the eco-based section
+- Moved the jewel sections lower in the filter to optimize for performance
+
+VARIABLE DEFENSES ADJUSTMENTS (refered to as "PERFECTION" in the changelogs):
+- The variable defenses that roll on items and change the base ar/ev/es/ward values on an item from 0-15% additional percent will be refered to as "perfection" in the changelog
+- Added a new NON-INFLUENCED ONLY section with 3 tiers of armours to detect high level (85+) armours with 99%+ perfection as part of the 3.16 adjustments
+- Added a new INFLUENCED ONLY seciton with 3 tiers of armours to detect high level (85+) armours with 99%+ perfection rolls as part of the 3.16 adjustments
+- Crafting bases now require 66%+ perfection to be highlighted
+- Early league crafting bases now require 66% perfection to be highlighted
+- Added a ton of perfection sliders into filterblade to customize the player requirements
+
+ECONOMY TIERING ADJUSTMENTS:
+- Very slightly lowered the T2 threshhold for uniques
+- Given several divination card the "timeless" property (such as " Arrogance of the Vaal" and "Costly Curio"). This prevents these cards from falling below T3, no matter the economy data to fight pricefixing scenarios.
+- Improved the list of divination cards that receives higher tiering at the start of the league
+- Adjusted the T4 threshhold for oils and fossils to a static of 0.7c (chaos orb threshhold for currency), instead of having an without an ex-dependent component. This results in better tiering in my tests.
+
+MISC:
+- Adjusted rare tiering to compensate for different armour changes
+- Adjusted early crafting bases tiering
+- Adjusted chancing based tiering
+- Introduced a new tierlist for scourged items.
+- Added uber blighted maps  
+- Added separated rule for breach rings level 82+
+- Very slightly desaturated T4/T5 divination card color
+- The veiled section is now split into two sub-sections. The T1/T2 veiled section has priority over the normal ID-mod section, to solve some rare priority issues with custom filterblade rules. This should have near no effect for most users.
+- Added unset amulets
+- Removed hollowed pledge prophecy
+- Migrated aura/curse/dodge cluster jewels
+- A lot of misc changes that I definitely forgot to bring up
+
+----------------------------------
 NeverSink's itemfilter - version 8.2.1 - Economy Adjustments
 ----------------------------------
 
@@ -6,7 +74,7 @@ NeverSink's itemfilter - version 8.2.1 - Economy Adjustments
 - Readded thrusting swords
 - Disabled early league mode
 - Retiered everything once again. 
-- Added propper tiering to new divination cards
+- Added proper tiering to new divination cards
 - Added runic uniques to the tierlists (previously were appearing in the "unknown unique color")
 - Added abyss jewels to the jewel tier
 - Fixed rustic sash appearance while leveling on azurite style
