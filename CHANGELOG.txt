@@ -1,4 +1,29 @@
 ----------------------------------
+NeverSink's itemfilter - version 8.3.1 - BaseDefencePercentile bug-fixes and scourged item handling
+----------------------------------
+
+PERFECION/BASE-DEFENCE-PERCENTILE FILTERING BUG:
+
+Currently the 3.16 version of the game includes a bug that displays weapons and jewellery ingame with the perfection rating (basedefencepercentile) of 0, instead of 100 as stated in GGG's descriptions ( https://www.pathofexile.com/item-filter/about )
+
+This bug has caused certain items to be hidden, when they should've been shown. This practically mostly affects the highlight of normal/magic atlas-base-jewellery, such as opal rings, vermillion rings, crystal belts etc. Rare versions very still shown consistently, but were given the wrong highlight. To address this issue, I've removed the perfection rating filtering from high level crafting bases.
+
+Perfect influenced and perfect non-influenced selected armours of itemlevel 85+ will still be highlighted correctly with a purple moon.
+
+SCOURGED ITEMS: 
+
+Scourged items are way less potent than expected. The vast majority of dropped scourged item drops is sadly not worth using. This is due to dropped items requiring a good explicit roll (without the ability to mastercraft them and improve by conventional methods). On top of that one is often stuck with link and color prblems and the scourged item implicit is usually detrimental to the item usefullness.
+
+Due to this situation as of now, I'm reducing the highlight of all scourged items, hiding them early on lower strictnesses and minimizing the number of "useful scourge" bases in the filter.
+
+ECO-BASED TIERING:
+
+- Tainted currencies are now economy-tiered by POE.ninja data. They both have single orb and stacked drop tiering
+- Added aspects and handling for different new basetypes and items.
+- Added handling for all the new divinaiton cards
+- Fixed a few bugs for economy based cluster jewel tiering. The filter now attempts to highlight Cluster jewels if they're expensive
+
+----------------------------------
 NeverSink's itemfilter - version 8.3.0 - Scourge League
 ----------------------------------
 
