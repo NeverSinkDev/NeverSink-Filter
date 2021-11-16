@@ -1,4 +1,64 @@
 ----------------------------------
+NeverSink's itemfilter - version 8.4.0 - Strictness and ID-Mod Filtering overhaul
+----------------------------------
+
+MAJOR GOALS:
+- Establish a solid strictness progression with "very strict" being for comfortable farming for well equipped characters in the league endgame.
+- Rework identified mod filtering to be more flexible and reliable highlight rares of interest (this only works with non-influenced explicit mods, not implicits/corruptions). Additional modules will be added in the future to expand it's functionality.
+- Polish up existing sections and economy tiering for scourge-league long-term.
+
+STRICTNESS CHANGES:
+- [IMPORTANT] Strictened up all versions of the filter significantly with the focus of making "very strict" a solid allrounder setup for the endgame. Due to the number of changes the changes below might not be 100% complete, but should outline the most important differences
+- [IMPORTANT] Every single rule in the filter (except the leveling section) has been reviewed and it's strictness adjusted if necessary.
+- [IMPORTANT] All "generic" rare gear with the exception of T1 amulets/rings is now hidden on very-strict.
+- [IMPORTANT] The "perfection-based-highlight" is now changed to itemlevel 86 instead of 85 and it's strictness adjusted as well
+- [IMPORTANT] Significantly increased the strictness for filtering leveled gems
+- [IMPORTANT] Slightly adjusted strictness for all currency with the focus of normalizing strictnesses.
+- [IMPORTANT] All scourged items are hidden even earlier. Scourged items are now hidden on higher strictnesses instead of disabled to prevent them to "Leak through" into regular rares. This is much more intuitive and simpifies filterblade editing.
+- [IMPORTANT] Uber strict now hides all cluster jewels that didn't get picked up by the economy-based cluster jewel tiering, except 8-node jewels.
+- [IMPORTANT] Random influenced items are now hidden on very strict filters (instead of uber strict). This excludes economy tiered items, jewellery, special bases etc.
+- [IMPORTANT] Strict now hides small stacks (less than 5) of wisdoms/portals
+- [IMPORTANT] Very strict now hides large stacks of wisdoms/portals (less than 10)
+- [IMPORTANT] Many sections lose their notification (mapicon, beam, sound) on very strict, but are still shown, such as 6S items and trashy uniques, to minimize distractions
+- All chancing bases are now hidden on semi-strict
+- T2 veiled items are now hidden earlier on uber+ strict.
+- Slightly strictened low tier oil highlight.
+- Trash divination cards are hidden even earlier (semi-strict)
+- Uber strict now hides more veiled items
+- Very strict now hides large/random veiled items
+- All incursion items that don't create "strong" combinations are now hidden on uber+ strict
+- Increased strictness on fractured items
+- Increased strictness on random crafting bases
+- Increased the strictness on the early-league-harvest bases section
+- Increased strictness on high level flasks
+- Increased strictness on rules of items with quality 29-30%
+- Increased strictness of sub-level 82 breach rings
+
+IDENTIFIED MOD TIERING OVERHAUL:
+- [IMPORTANT] All identified mod tiering sections have been completely reworked
+- [IMPORTANT] All items caught by the identified mod filtering now have a faint purple background
+- [IMPORTANT] The system is not perfect. It's also rather demanding of potential item drops. It's not designed to "drop items from inventory and check if they're expensive". It's somewhat finetuned vs corrupted/veiled items. That said it's pretty sophisticated and robust. It'll monitor and improve it over the next updates.
+- Currently supported item slots are: all equipment slots. Flasks and most jewels, are not supported yet.
+- The new system is capable of detecting strong combinations with much higher precision
+- Some sections require more mods/rolls if the item is corrupted.
+- The new system relies on a "core-mod" concept. This means, the system assumes that most ID mod items have some mods that are much more important than other. For instance for boots movementspeed is the core mod. Items need to have a total of 1 coremod and 3-4 aux mods (the coremod being one of them) to be good enough for ID mod filtering. 
+- The system is also capable of somewhat compensating. For instance, if you roll a wand with "+1 to fire gems", "30% burn damage" and "30% dot multiplier" (1 core mod + 2 aux mods) the system will match it a a good fire wand. However, if it'll roll +1 to cold gems instead of fire, it'll require 3 aux mods instead of 2 to compensate for the lacking match.
+- The setup is much more maintainable than the old version.
+
+OTHER CHANGES:
+- Updated all 24 economy-based tierlists such as uniques, divination cards etc. (Popquiz: Can you guess all 24?)
+- Extended the gem-tiering with functionality for Empower-class tiering. If they're expensive enough (such as empower/enlighen right now), they'll land in a special tiergroup.
+- Added section for better detection of the new "Squire" unique. I doubt you'll get to see it. The Oppressor shield now lives permanenty in the trash tier though, so this is a buff.
+- Added section for better scourged unique highlight. This way you can observe your -60% global defenses && -2 to all gems bramblejack in all of it's glory
+- Adjusted the aspect-tiering of many divination cards. This gives divination cards a "nudge" into the right direciton, if the economy data is not clear. For instance "The Wretched" will be pushed into a higher tier.
+- Added a separate section for sacrificial garbs for that sweet Shadowstitch krangle action.
+- Added a section for 6 socketed unique highlight.
+- Blight ravaged maps now have the same highlight as blighted maps since their value is "meh".
+- Adjusted talisman section to use the improved identified mod filtering code.
+- Adjusted highlighting for stacked currencies
+- Fixed a bug where stacks of certain splinters were hidden earlier than individual splinters in regards to tiering
+
+----------------------------------
 NeverSink's itemfilter - version 8.3.1 - BaseDefencePercentile bug-fixes and scourged item handling
 ----------------------------------
 
