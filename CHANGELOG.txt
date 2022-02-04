@@ -1,4 +1,56 @@
 ----------------------------------
+NeverSink's itemfilter - version 8.5.0 - Archnemesis - 
+----------------------------------
+
+NEW STYLE:
+
+- ABYSS - Strong colors, dark backgrounds, with a lot of greens. Fairly constant font size across all tiers. Very clean. Strong contrasts, value based tiering, colored maps. It's like a lovechild of Elder and Gaia styles.
+
+3.17 INTEGRATION:
+
+- [IMPORTANT] Removed prophecy. Added special treatment for atlas-boss-dropped-fated-items (read below)
+- [IMPORTANT] Introduced Archnemesis. Currently, it's just one rule highlighting all "reagents" equally. A tierlist will be introduced, once we know the names and more data. These are currently unhidable by the game.
+- Added all new currency items, invitations, fragments, voidstones [...]
+- Added a tierlist for reports. 
+- Introduced new quivers into the filter
+- Added and tiered all known divination cards. Unknown divination cards go into the "new-card" tier
+- Reviewed the early game state of all uniques and divination cards. Improved tiering.
+- Integrated exarch/eater influenced items into the filter. The tiering is temporary and very "generous" in terms of strictness, until we know more.
+- Added a special section for the exarch/eater items for basetypes that lack implicits, but have very high base stats (such as Glorious Plate).
+
+NEW FEATURES:
+
+- [IMPORTANT] Not all uniques in 3.17 are known. New or unknown new uniques will be added to the filter in the first economy update. I don't recommend hiding any uniques during the first days until we know all the new bases!
+- [IMPORTANT] Added a new section for uniques with a blue border/star (same appearance as jewels) for previously fated uniques that only drop from atlas map bosses.
+- [IMPORTANT] Reworked the entire logic for influenced item tiering. It should be easier to edit and hopefully a bit more accurate. Rebalanced all itemlevels levels, changed the way prices are checked vs realism (system is better at detecting things like: 10000c shaper Iron Staff being a bogus price), added 3 hardcoded common tiers. You should not lose any changes on filterblade, but I personally recomend resetting this section to defaults.
+- [IMPORTANT] 20+ quality vaal gems that are either expensive already or are worth leveling are now highlighted
+- [IMPORTANT] Implemented economy-based currency tiering for currency-shards.
+- Added economy tiering for 9/10/11 sized large cluster jewels (8/12 were already handled). This helps detecting second tier, yet super expensive jewels like 11 node large minion jewels that are still worth 2ex.
+- Introduced a whole bunch of improvements to increase the accuracy of the economy based tiering. Also retiered all items based on that system. This affects all ~25 tierlists (uniques, currency...)
+- Introduced the new quivers and attempted to retier quiver bases.
+
+MAJOR FILTERBLADE FEATURES:
+
+- FilterBlade now relies on an updated poe database. It will now accurately show item stats, implicits, explicit modifiers etc.
+- FilterBlade sortable lists have been completely reworked. This is part of a larger overhaul to increase stability and performance of systems
+- We recently released a filterblade auto-update feature: https://www.youtube.com/watch?v=i8RJx0s0zsA . Spoiler: awesome feature, but costs us a ton, so as of now - not free. It's a neat way to support us and get something out of it. I'm a bit ashamed and worried about promoting something paid (for the first time in 7 years), but it might be a road to becoming a full-time tool dev, which would be a dream come true.
+- Ctrl+clicking or rightclicking on filterblade is now much more powerful. It can detect rules that are disabled but *would* highlight the item.
+- Removed the command builder. It tended to create problems within savestates with hundreds of changes and was costing a ton of additional development time.
+
+MISC:
+- Improved essence-modded item highlight
+- Reviewed the rare tiering and resorted it based on probable skill and defense usage. This adds a lot of focus to things like ar/ev bases, claws and other things that were a bit underrepresented before
+- Adjusted chancing bases, early crafting bases, endgame crafting bases etc. as part of this process
+- Further improvements to identified mod tiering.
+- Slightly changed the color used for archer-items while leveling to make it less confusable with flasks.
+- Removed perfection (variable defense) for influenced items. High perfection items were picked up by default influenced rules anyway, low drop level perfect items did not matter. This section was nearly 100% redundant. It did confuse everyone though.
+- Reduce the strictness on high level flask highlight
+- Finetuned the economy tiering strategy for alt.quality gems
+- Minor structural improvements to all tierlists in the filter and massively reworked the handling of tierlists on filterblade.
+- Changed the sound of all low tier uniques
+- A ton of small changes and minor improvements to improve consistency, such as fixing border colors on certain styles, improving tiering for exotic cases etc.
+
+----------------------------------
 NeverSink's itemfilter - version 8.4.1a - minor adjustments
 ----------------------------------
 
