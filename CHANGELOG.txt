@@ -1,24 +1,23 @@
 ----------------------------------
-NeverSink's itemfilter - version 8.5.3 - NOT LIVE YET!!!
+NeverSink's itemfilter - version 8.5.3 - Archnemesis Finetuning and Eco-Update
 ----------------------------------
 
-Finetuned endgame flask highlight and strictness a little bit. It's a bit tricky to end up with a distribution that works well for most strictnesses and use cases here, but I think we're getting there. Added back quality requirements for high level life/mana flask to prevent them spamming lower strictnesses.
-Fragment splinters tiering have been entirely reworked. It now only has 2 tiers instead of 3 and these are economy tiered.
-Improved the calculations for the eco-tiering of stacked currency shards. Previously, the algorithm was using the baseprice of the orb, divided by 20 to get the shard price and added a very minor value (click value for saving time by clicking a stack instead of a single shard) per stack size to calculate the stacked currency price. This algorithm was working great for normal orbs, but for shards ironically some orbs have dropped so much in price, that the "time saving click value bonus" was exceeding the full orb price (looking at you orb of binding). This could cause 6 binding shards to be valued higher than a single orb of binding. This is now corrected.
-Adjusted the tiering algorithm for divination cards a bit
-Reduced highlight for T5 currency divination cards on strict
-Moved amethyst ring base from T2 rare to T1 rare
-ID Mod Section: Improved identified mod filtering sections for ES helmets and caster weapons
-ID Mod Section: Spellslinger Wands - increased tier requirements
-ID Mod Section: BodyArmour 2x Defense + 4x Aux - enforced "corrupted false" status
-ID Mod Section: Added new Body Armour Recipe: 2x Defense + 1x Life + 4x Aux
-Unique timeless and large cluster jewels (voices) have been moved from T1 to T2. They are still brightly notified on all strictnesses, but the majority of them are not too valuable
-Adjusted some edge cases where the unique tiering has been placing items into the "T3" tier instead of the "T4" tier (such as Bramblejack)
-Improved alt. quality gem tiering a bit
-Alchemy tier currencies lose their highlight (sound, icon, beam) on uber-strict, but are still visible. They're hidden on uber-plus strict, same as before.
-Hollowpoint Arrowhead is now correctly classified as the T2 heist tool, instead of Fragmenting Arrowhead
-Loreweave recipe now overrides T3 rings highlight.
-The internal structure of the filter is now correctly enumerated. Thanks to LordBlick for notifying me of that. This has no gameplay impact, but improves code readability
+- Fine-tuned endgame flask highlight and strictness a little bit. It's a bit tricky to end up with a distribution that works well for most strictnesses and use cases here, but I think we're getting there. Added back quality requirements for high level life/mana flask to prevent them spamming lower strictnesses.
+- Fragment splinter tiering has been entirely reworked. It now only has 2 tiers instead of 3 and these are economy tiered.
+- Improved the eco-tiering of stacked currency shards by making it more precise. Previously, the algorithm was using the base price of the orb, divided by 20 to get the shard price and added a very minor value ('click value' for saving time by clicking a stack instead of a single item) per stack size to calculate the stacked currency price. This algorithm was working great for normal orbs, but for shards some orbs have dropped so much in price, that the "time saving click value bonus" was exceeding the full orb price (looking at you orb of binding). This could cause 6 binding shards to be valued higher than a single orb of binding. This is now corrected.
+- Adjusted the tiering algorithm for divination cards a bit.
+- Reduced highlight for T5 currency divination cards on strict.
+- Moved amethyst ring base from T2 rare to T1 rare.
+- ID Mod Section: Improved identified mod filtering sections for ES helmets and caster weapons.
+- ID Mod Section: Spellslinger Wands - increased tier requirements.
+- ID Mod Section: BodyArmour 2x Defense + 4x Aux - enforced "corrupted false" status.
+- ID Mod Section: Added new Body Armour Recipe: 2x Defense + 1x Life + 4x Aux (any corrupted state).
+- Unique timeless and large cluster jewels (voices) have been moved from T1 to T2. They are still brightly notified on all strictnesses, but most of them don't warrant the T1 notification anymore due to their plummeting price.
+- Adjusted some edge cases where the unique tiering has been placing items into the "T3" tier, instead of the "T4" tier (such as Bramblejack).
+- Alchemy tier currencies lose their highlight (sound, icon, beam) on uber-strict, but are still visible. They're hidden on uber-plus strict, same as before.
+- Hollowpoint Arrowhead is now correctly classified as the T2 heist tool, instead of Fragmenting Arrowhead.
+- Loreweave recipe now overrides T3 rings highlight.
+- The internal structure of the filter is now correctly enumerated. Thanks to LordBlick for notifying us of that. This has no gameplay impact, but improves code readability and fixes bug in filterblade's advanced screen.
 
 ----------------------------------
 NeverSink's itemfilter - version 8.5.2a - HOTFIX for new patch
