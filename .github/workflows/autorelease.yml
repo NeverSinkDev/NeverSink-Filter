@@ -39,6 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           name: ${{ env.prefix }}${{ env.version }} - ${{ env.suffix }}
           version: ${{ env.version }}
+          tag: ${{ env.version }}
           publish: false
           prerelease: false
           disable-autolabeler: true
