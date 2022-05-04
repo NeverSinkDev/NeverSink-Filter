@@ -36,7 +36,8 @@ jobs:
         # uses: release-drafter/release-drafter@e9ee02fbac03d922bac6212003695e8358dd88b0
         uses: release-drafter/release-drafter@v5.19.0
         with:
-          name: ${{ env.prefix }}${{ env.version }}${{ env.suffix }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ env.prefix }}${{ env.version }} - ${{ env.suffix }}
           version: ${{ env.version }}
           publish: false
           prerelease: false
