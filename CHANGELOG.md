@@ -1,5 +1,3 @@
-[comment]: <> ( https://github.com/NeverSinkDev/NeverSink-Filter )
-----------------------------------
 ## **CHANGELOG - NeverSink's Filter**
 ----------------------------------
 
