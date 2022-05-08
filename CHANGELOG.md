@@ -1,4 +1,4 @@
-## **CHANGELOG - NeverSink's Filter**
+# **CHANGELOG - NeverSink's Filter**
 ----------------------------------
 
 Every 4 hours we generate a "economy-updated" version of the filter based on the current meta and league economy. These filters are based on the latest version of the filter, but their "tiering" of currencies, uniques, cards (and ~25 other sections) are much more precise.
@@ -6,7 +6,7 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-## **VERSION 8.6.0** - Sentinel League
+# **VERSION 8.6.0** - Sentinel League
 ----------------------------------
 
 ## SHORT OVERVIEW
@@ -35,7 +35,7 @@ Say hi to your Sentinel! The filter incorporates all of the new league features 
 - Did a lot of general clean up to the source code of the tiering algorithm. Improved a few niches and calculations
 
 ----------------------------------
-## **OLDER CHANGELOGS:**
+# **OLDER CHANGELOGS:**
 ----------------------------------
 
 The old non-markdown formatted 2000+ lines of changelogs can be found in the ["ADDITIONAL-FILES"](https://github.com/NeverSinkDev/NeverSink-Filter/blob/master/ADDITIONAL-FILES/changelog.json) folder.
@@ -43,7 +43,7 @@ The old non-markdown formatted 2000+ lines of changelogs can be found in the ["A
 These changelogs include changes from version 3.X.X to 8.5.3
 
 ----------------------------------
-## **SPECIAL THANKS:**
+# **SPECIAL THANKS:**
 ----------------------------------
 
 - GGG for the awesome game
