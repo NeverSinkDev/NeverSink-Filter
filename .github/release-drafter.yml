@@ -5,6 +5,9 @@ template: |
   Say hi to your Sentinel! The filter incorporates all of the new league features and a bunch of precedural upgrades!
   
   ## NEW FEATURES
+  - Added all new divination cards
+  - Added a simple section to highlight sentinels. For now I'm keeping it simple, but I'll release a more sophisticated version, once we know more about the league
+  - Aded all new currencies.
   - EXPEDITION reroll currencies are now economy-tiered
   - Their display depends on the current market price and on the dropped stack. The algoritms currently has special safeguards in place to prevent them from ever dropping below alchemy tier.
   
@@ -25,6 +28,21 @@ template: |
   - This is not perfect, but likely better than not doing anything or accepting highly noisy early league data. I have a better algorithm in mind, but that one will take more time to develop
   - FRAGMENT-lures are now economy-tiered, but are disallowed from being hidden as a safeguard
   - Did a lot of general clean up to the source code of the tiering algorithm. Improved a few niches and calculations
+  
+  ## FilterBlade and technical improvements
+  - IMPROVED BASETYPE MATRIX: These have become a central tool of FilterBlade and we've invested effort to enhance these with new options
+  - Matrixes are now available for many more sections, such as synthesised, fractured bases and other sections
+  - The matrix for endgame rares now no longer handles the T3 by droplevel, this allows you to finetune T3 rares much better
+  - Improved the general visualization strategy
+  - You now have the option to show all items at once grouped by tier. This is very useful if you want to remove specific items from a specific tier
+  - ADDED +1 SKILL RECIPE SECTION: 5 new (optional) gem sections to show specific quality gems for specific +1to all gems recipes. These can be enabled in filterblade easily
+  - ADDED GLOBAL STYLE EDITS SECTION: A new tool in the style section. It enables global edits across the whole filter.
+  - It allows you to remove all backgrounds, borders (etc), scale font sizes, minimize and maximize item fonts, edit sound options and many more.
+  - It also edits 'the base filter' and doesn't cause your customizer to become "fully blue"
+  - It's great for large style modifications of the filter
+  - Significantly improved the filter deployment and release pipeline. It now has a dozen of utiltiy steps to ensure version number consistency, better changelogs, better github releases, auto-refreshes my token to prevent the system requiring manual cranking every month etc.
+  - Reworked the attached changelog. It's now stored in markdown format and is much more structured.
+  - Added ad-related cookie consent UI and improved privacy policy. We don't collect any personal data on FilterBlade (or want it), but we're legally bound to show the UI, since ads might do that.
   
   ------
 
