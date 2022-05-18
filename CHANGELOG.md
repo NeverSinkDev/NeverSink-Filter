@@ -6,6 +6,40 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.6.1** - Sentinel League Finetuning
+----------------------------------
+
+## SHORT OVERVIEW
+This patch implements better sentinel filtering in the endgame, improvements to fractured items treatment, essence items treamtent and all the retiering required!
+
+## NEW LEAGUE FEATURES
+- Expanded the sentinel section. Each of the 3 sentinels (non-unique) has 5 rules:
+    - T1 - highlights RARE obsidian and special basetypes. Has a special textcolor.
+    - T2 - highlights RARE emberstone basetypes. Disabled on uber-strict.
+    - T3 - highlights all rare basetypes. Disabled on strict.
+    - T4 - highlights all magic basetypes. Disabled on semi-strict.
+    - leveling - all sentinels are shown until level 68. Disabled on uber-strict.
+    - Author's note: *I could make the section more elegant, but changing that will reset all existing filterblade customizations in this section, so I'm moving a restructure to the end of the league, if sentinel will stay*
+- Intentionally did not touch the tiering on the power cores or recombinators yet. The current setup seems good and I'd like more feedback.
+
+## TIERING
+- Introduced all new uniques into the tiering
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+- Increased the breakpoint for T2 cluster jewels to be marked as valuable
+
+## IDENTIFIED MOD FILTERING
+- Items with an essence mod have less highlight now
+- Items with an essence mod are not highlighted starting with strict, unless...
+- Essence mods are now always treated as an auxillary mod for identified item checks.
+    - Example: a helmet rule requires 1x core and 4x aux mods. The core mod could be T1 life, T1-T3 res are aux mods. If an item is dropped with an essence mod, such as mana reservation or one of the corrupted essences the item will pass the test and will be highlighted. This is particullary useful to players who have specced into the essence tree, but discovered that 99% of the essence-modded items are trash.
+- Veiled mods (both prefixes and suffixes) are now always treated as an auxillary mod for identified item checks.
+
+## CRAFTING AND RARES
+- Fractured items have a bit more highlight
+- Poor fractured item bases are now hidden on uber-strict instead of strict.
+
+----------------------------------
 # **VERSION 8.6.0** - Sentinel League
 ----------------------------------
 
