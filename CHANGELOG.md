@@ -6,6 +6,47 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.6.2** - Recombinator Mod Filtering, Sentinel Strictness Adjustments, Tiering Finetuning
+----------------------------------
+
+## SHORT OVERVIEW
+
+This update focuses on 2 topics: sentinel strictness and recombinator gear.
+
+**SENTINELS:** I've made the magic sentinel filtering way less strict. There seems to be two different view-points on this problem, with half of the community finding magic sentinel identification not worthwhile, due to rares being more than easily sustainable and the second half capitalizing on chances of rolling high value magic rolls for recombination (particullary the Grimro gang is in a bit of a 'goldrush'). Personally I find the first approach more efficient, due to the somewhat expensive rolls having an average total chance of ~1.5% to appear and the common ones in this group are worth around-ish 10c, an effort I don't find worthwhile on higher strictnesses. The higher tiers of rolls appear once every few hundred IDs.
+
+That being said, I see value in recombinding other magics and it's certainly fun, since it adds a bit more dynamic to the league gameplay and power cores are very abundant anyway. In order to support both strategies I've revamped the strictness progression on sentinels once again. You can find the full new progression in the changelog. I've also hidden normal sentinels in the endgame. I'll reevaluate this in the future (if sentinels stay in that form, which is unlikely), but this will likely be the strategy for the remainder of the league.
+
+**RECOMBINATION**: Recombinators likely changed the crafting meta more than than the last year combined and have an impact similar to harvest. On top of that they are fun. To support the usage of recombinators, I've added a new special section that looks for rare items with high tier mods. Most rules require the item to be uncorrupted (with the exception of ultra-rare mods, such as +1 to all spell gems or +2 arrows, that also accept corrupted items). These rules will occasionally trigger with strongboxes, certain heist mods, ritual rewards and many cases.
+
+The full list of mods can be found in the changelogs. If you can think of other mods I should filter for, please let me know, ideally on the discord.
+
+## NEW LEAGUE FEATURES
+- Reviewed strictness setup
+    - T1 - highlights RARE obsidian and special basetypes. Has a special textcolor. Shown on all strictnesses
+    - T2 - highlights RARE emberstone basetypes.
+    - T3 - highlights all (other) rare basetypes. Disabled on uber-plus-strict.
+    - T4 - highlights all (other) magic basetypes. Disabled on uber-plus-strict.
+    - Normal rarity sentinels are hidden in the endgame
+    - leveling - all sentinels are shown until level 68. Disabled on uber-strict.
+
+## IDENTIFIED MOD FILTERING
+- Added a large new identified mod filtering section for recombinator bases. It looks for really rare single mods on ided bases on both magic and rare items. Most rules only look for non-corrupted items, while some very rare/mods include corrupted items. Here's a rundown:
+    - +1 to all spell gem wand - includes corrupted
+    - +1 to all minion gem wand - includes corrupted
+    - +1 to all spell gem amu - includes corrupted
+    - +2 to all projectile bow - includes corrupted
+    - +1 to specific tag wand - excludes corrupted
+    - T1 spell damage wand (runic) - excludes corrupted 
+    - +1 to specific tag amu - excludes corrupted
+    - +2% to all max resistances - excludes corrupted
+    - T1 spell suppression gloves, boots and helmets - excludes corrupted
+    - T1 phys dot or general dot wand - excludes corrupted
+    - T1 fire dot or general dot sceptre - excludes corrupted
+    - T1 flat fire, cold, light damage weapon (foil, claw, wand, bow) - excludes corrupted
+- Identified mod filtering *combinations* now include more tiers of suppression rolls
+
+----------------------------------
 # **VERSION 8.6.1** - Sentinel League Finetuning
 ----------------------------------
 
