@@ -6,6 +6,53 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.6.3** - Identified sentinels, Tiering
+----------------------------------
+
+## SHORT OVERVIEW
+
+Insted of boring you with changelogs: here are some pictures of what the update does: https://imgur.com/a/T19KhOs
+
+Text version: This update expands on the existing sentinel filtering and identified mod filtering. It adds filtering for items with multiple select T1 mods, detect worthwhile stalker and pandemonium sentinel, adds optional rules for oil-extractor targets and improves the general tiering! This is likely the last stable update for this league. The economy based filters will continue receiving updates every 4 hours.
+
+## NEW LEAGUE FEATURES
+- Added a new section for "identified sentinels"
+    - The T1 rule highlights Stalker and Pandemonium sentinels that grant scarab, expedition, fossil or sentinel rewards
+    - The T2 rule highlights Stalker and Pandemonium sentinels that grant any tier of currency, metamorph, heist or divination card rewards. It also highlights T1 rules for increased reward chances and quantity.
+    - Note that it's impossible for the filter to distinguish between different tiers of individual specific rewards, such as t1-currency and t2-currency.
+
+## IDENTIFIED MOD FILTERING
+- Added and modified a few additional rules for detecting valuable items for recombination
+    - Arrow quiver rule (any rarity, non-corrupted)
+    - Double T1 elemental damage weapon rule (any rarity claws, bows, wands)
+    - Added 4 rules to search for caster weapons with T2 exceptional elemental mods (any rarity)
+        - All 4 rules search for +1 to all gems, T1 spell damage, T1 hybrid spell damage
+        - The fire rule also searches for T1 fire% damage, T1 fire dot, T1 dot and +1 fire
+        - The cold rule also searches for T1 cold% damage, T1 cold dot, T1 dot and +1 cold
+        - The lightning rule also searches for T1 lightning% damage and +1 lightning
+        - The phys rule also searches for +1 phys, T1 phys dot and T1 dot
+    - Double T1 rolls for boots, gloves, helmets, rings - include T1 stat rolls, T1 life, T1 chaos res.
+        - Boots additionlly search for 35% MS
+        - Gloves additionally search for T1 attack speed
+        - Rings additionally search for T1 WED
+- The T1 phys damage rule now also searches for hybrid T1 phys damage
+
+## TIERING
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+- Added an exception rule to detect double influenced impresence amulets dropped by the ooba-ooba-elder fights
+- Cleaned up the code on the backend side and improved some niche tiering scenarios.
+
+## STRICTNESS
+- Enchanted helmets are now hidden on uber-plus strict
+- Identified mod filtered body armors are hidden on uber-plus strict
+
+## FILTERBLADE
+- Added an optional rule (disabled by default) to show enchanted rings (from blight) that yield a gold or silver oil upon using the oil extractor. Thank you to /u/developershins for compiling these.
+- Added UIs for all new features
+- Readded arealevel sliders for map hiding (CHECK!)
+
+----------------------------------
 # **VERSION 8.6.2** - Recombinator Mod Filtering, Sentinel Strictness Adjustments, Tiering Finetuning
 ----------------------------------
 

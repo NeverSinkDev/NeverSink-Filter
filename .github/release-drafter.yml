@@ -3,40 +3,46 @@ template: |
   
   ## SHORT OVERVIEW
   
-  This update focuses on 2 topics: sentinel strictness and recombinator gear.
+  Insted of boring you with changelogs: here are some pictures of what the update does: https://imgur.com/a/T19KhOs
   
-  **SENTINELS:** I've made the magic sentinel filtering way less strict. There seems to be two different view-points on this problem, with half of the community finding magic sentinel identification not worthwhile, due to rares being more than easily sustainable and the second half capitalizing on chances of rolling high value magic rolls for recombination (particullary the Grimro gang is in a bit of a 'goldrush'). Personally I find the first approach more efficient, due to the somewhat expensive rolls having an average total chance of ~1.5% to appear and the common ones in this group are worth around-ish 10c, an effort I don't find worthwhile on higher strictnesses. The higher tiers of rolls appear once every few hundred IDs.
-  
-  That being said, I see value in recombinding other magics and it's certainly fun, since it adds a bit more dynamic to the league gameplay and power cores are very abundant anyway. In order to support both strategies I've revamped the strictness progression on sentinels once again. You can find the full new progression in the changelog. I've also hidden normal sentinels in the endgame. I'll reevaluate this in the future (if sentinels stay in that form, which is unlikely), but this will likely be the strategy for the remainder of the league.
-  
-  **RECOMBINATION**: Recombinators likely changed the crafting meta more than than the last year combined and have an impact similar to harvest. On top of that they are fun. To support the usage of recombinators, I've added a new special section that looks for rare items with high tier mods. Most rules require the item to be uncorrupted (with the exception of ultra-rare mods, such as +1 to all spell gems or +2 arrows, that also accept corrupted items). These rules will occasionally trigger with strongboxes, certain heist mods, ritual rewards and many cases.
-  
-  The full list of mods can be found in the changelogs. If you can think of other mods I should filter for, please let me know, ideally on the discord.
+  Text version: This update expands on the existing sentinel filtering and identified mod filtering. It adds filtering for items with multiple select T1 mods, detect worthwhile stalker and pandemonium sentinel, adds optional rules for oil-extractor targets and improves the general tiering! This is likely the last stable update for this league. The economy based filters will continue receiving updates every 4 hours.
   
   ## NEW LEAGUE FEATURES
-  - Reviewed strictness setup
-  - T1 - highlights RARE obsidian and special basetypes. Has a special textcolor. Shown on all strictnesses
-  - T2 - highlights RARE emberstone basetypes.
-  - T3 - highlights all (other) rare basetypes. Disabled on uber-plus-strict.
-  - T4 - highlights all (other) magic basetypes. Disabled on uber-plus-strict.
-  - Normal rarity sentinels are hidden in the endgame
-  - leveling - all sentinels are shown until level 68. Disabled on uber-strict.
+  - Added a new section for "identified sentinels"
+  - The T1 rule highlights Stalker and Pandemonium sentinels that grant scarab, expedition, fossil or sentinel rewards
+  - The T2 rule highlights Stalker and Pandemonium sentinels that grant any tier of currency, metamorph, heist or divination card rewards. It also highlights T1 rules for increased reward chances and quantity.
+  - Note that it's impossible for the filter to distinguish between different tiers of individual specific rewards, such as t1-currency and t2-currency.
   
   ## IDENTIFIED MOD FILTERING
-  - Added a large new identified mod filtering section for recombinator bases. It looks for really rare single mods on ided bases on both magic and rare items. Most rules only look for non-corrupted items, while some very rare/mods include corrupted items. Here's a rundown:
-  - +1 to all spell gem wand - includes corrupted
-  - +1 to all minion gem wand - includes corrupted
-  - +1 to all spell gem amu - includes corrupted
-  - +2 to all projectile bow - includes corrupted
-  - +1 to specific tag wand - excludes corrupted
-  - T1 spell damage wand (runic) - excludes corrupted
-  - +1 to specific tag amu - excludes corrupted
-  - +2% to all max resistances - excludes corrupted
-  - T1 spell suppression gloves, boots and helmets - excludes corrupted
-  - T1 phys dot or general dot wand - excludes corrupted
-  - T1 fire dot or general dot sceptre - excludes corrupted
-  - T1 flat fire, cold, light damage weapon (foil, claw, wand, bow) - excludes corrupted
-  - Identified mod filtering *combinations* now include more tiers of suppression rolls
+  - Added and modified a few additional rules for detecting valuable items for recombination
+  - Arrow quiver rule (any rarity, non-corrupted)
+  - Double T1 elemental damage weapon rule (any rarity claws, bows, wands)
+  - Added 4 rules to search for caster weapons with T2 exceptional elemental mods (any rarity)
+  - All 4 rules search for +1 to all gems, T1 spell damage, T1 hybrid spell damage
+  - The fire rule also searches for T1 fire% damage, T1 fire dot, T1 dot and +1 fire
+  - The cold rule also searches for T1 cold% damage, T1 cold dot, T1 dot and +1 cold
+  - The lightning rule also searches for T1 lightning% damage and +1 lightning
+  - The phys rule also searches for +1 phys, T1 phys dot and T1 dot
+  - Double T1 rolls for boots, gloves, helmets, rings - include T1 stat rolls, T1 life, T1 chaos res.
+  - Boots additionlly search for 35% MS
+  - Gloves additionally search for T1 attack speed
+  - Rings additionally search for T1 WED
+  - The T1 phys damage rule now also searches for hybrid T1 phys damage
+  
+  ## TIERING
+  - All tierlists have been adjusted based on the current economy
+  - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+  - Added an exception rule to detect double influenced impresence amulets dropped by the ooba-ooba-elder fights
+  - Cleaned up the code on the backend side and improved some niche tiering scenarios.
+  
+  ## STRICTNESS
+  - Enchanted helmets are now hidden on uber-plus strict
+  - Identified mod filtered body armors are hidden on uber-plus strict
+  
+  ## FILTERBLADE
+  - Added an optional rule (disabled by default) to show enchanted rings (from blight) that yield a gold or silver oil upon using the oil extractor. Thank you to /u/developershins for compiling these.
+  - Added UIs for all new features
+  - Readded arealevel sliders for map hiding (CHECK!)
   
   ------
 
