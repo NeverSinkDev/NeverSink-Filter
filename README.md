@@ -1,8 +1,10 @@
-[ **[FILTERBLADE](https://www.FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ] - [ **[PATREON](https://www.patreon.com/join/Neversink)** ]
+[![Follow me on Twitter](https://img.shields.io/badge/twitter-grey.svg?style=for-the-badge&logo=twitter)](https://twitter.com/NeverSinkDev) [![FilterBlade Discord](https://img.shields.io/badge/discord-grey.svg?style=for-the-badge&logo=discord)](https://discord.gg/mye6xhF) [![Watch FB Dev on Twitch](https://img.shields.io/badge/twitch-grey.svg?style=for-the-badge&logo=twitch)](https://twitch.tv/neversink) [![Support development on Patreon](https://img.shields.io/badge/patreon-grey.svg?style=for-the-badge&logo=patreon)](https://www.patreon.com/Neversink)
 
 ## **QUICK START:**
 
-This is an "ItemFilter" - a script for the game Path of Exile to mark expensive items, hide pointless drops, enhances items with beams, minimap icons and enhance your gameplay speed and experience. It's *NOT* a hack/mod, but rather uses the official POE filter language. This particular filter has been developed since over 7+ years to provide you with the best possible experience and a ton of customization options.
+This is an "ItemFilter" - a script for the game Path of Exile to mark expensive items, hide pointless drops and enhance gameplay experience.
+
+This is *NOT* a hack/mod. It uses the official POE filter language. This script is also used by default on the console versions of the game.
 
 Here is the basic feature set of NeverSink's filter:
 - Over 500 different rules that highlight, hide and decorate items.
@@ -19,7 +21,7 @@ Here is the basic feature set of NeverSink's filter:
 - Comes in many different styles. Pick one that matches your playstyle, taste or visual impairment best. [STYLEOVERVIEW](https://filterblade.xyz?styles=1)
 - The filter is and always will be completely free! The only paid feature we offer is the: 3$/month for the [auto-update service](https://www.youtube.com/watch?v=i8RJx0s0zsA) to support the development of NeverSink's filter and help pay for the server costs on filterblade.xyz.
 
-The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and simulate (lootsimulator!) the filter. It's the easiest way to download the filter and you can also modify it there, without any coding knowledge to adjust it to your playstyle.
+The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and preview (lootsimulator!) the filter. You can also modify it there, without any coding knowledge to adjust it to your playstyle.
 
 ## **BARE MINIMUM YOU SHOULD KNOW:**
 
@@ -29,7 +31,7 @@ The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendl
 4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 68.
 5) Join our [Discord Server]](discord.gg/mye6xhF) to get updates and ask questions.
 
-## **HOW TO INSTALL? WHAT'S THE DIFFERENCE?**
+## **HOW TO INSTALL?**
 
 Currently there are multiple sources:
 
@@ -37,16 +39,15 @@ Currently there are multiple sources:
 - *[FILTERBLADE](https://www.filterblade.xyz)* - you can adjust the filter to your preferences here, change the appearance, style and finetune everything to your liking.
     - [FilterBlade Update Guide](https://www.youtube.com/watch?v=3T5yLf-rFfc&lc=UgyZ-z1xso1OXdiNMQZ4AaABAg)
     - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy but heavy on our servers, so it costs a few bucks. Plus you support the project.
-- You can also just download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. Instructions below
+- You can also download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. 
 
-## **MANUAL INSTALLATION INSTRUCTIONS:**
+Manual installation instructiopns:
 
-0) Get the latest filter from  *[filterblade.xyz](https://www.filterblade.xyz)* or [GitHub](https://github.com/NeverSinkDev/NeverSink-Filter/releases/latest).
+0) Get the latest filter file from  *[filterblade.xyz](https://www.filterblade.xyz)* or [GitHub](https://github.com/NeverSinkDev/NeverSink-Filter/releases/latest).
 1) Extract the files using WinRar/7zip or a similar tool.
 2) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
 3) INGAME: Escape -> Options -> Game -> Filters -> Select one of the filters from the dropdown box.
 4) Done. Enjoy.
-
 
 ## **SUPPORT:**
 
