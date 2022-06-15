@@ -1,88 +1,82 @@
 [ **[FILTERBLADE](https://www.FilterBlade.xyz)** ] - [ **[FORUM THREAD](https://www.pathofexile.com/forum/view-thread/1246208)** ] - [ **[DEMO VIDEO](https://www.youtube.com/watch?v=Dr6zy1mV0qY)** ] - [ **[DONATIONS](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)** ] - [ **[PATREON](https://www.patreon.com/join/Neversink)** ]
 
---------------------------
+## **QUICK START:**
 
-**QUICK START:**
+This is an "ItemFilter" - a script for the game Path of Exile to mark expensive items, hide pointless drops, enhances items with beams, minimap icons and enhance your gameplay speed and experience. It's *NOT* a hack/mod, but rather uses the official POE filter language. This particular filter has been developed since over 7+ years to provide you with the best possible experience and a ton of customization options.
 
---------------------------
+Here is the basic feature set of NeverSink's filter:
+- Over 500 different rules that highlight, hide and decorate items.
+- Covers both leveling and endgame and dynamically adjusts itself based on your area level
+- Highlights valuable and useful leveling equipment.
+- Highlights endgame crafting gear and special basetypes.
+- Marks valuable drops on the minimap and gives items beams and sounds.
+- Uses specific color-patterns and sounds to mark items of certain values and types.
+- Tiers every single unique, currency, divination card, fragment and items from 20+ other item types based on the current meta and prices in the league economy
+- Has safety checks to not accidently hide new and unknown items from new leagues
+- Detects rare and special item properties such as synthesised items, temple-mod items and identified items with multiple good mods.
+- Comes in 7 different strictnesses. Start with **SEMI-STRICT** if you're new. Increase the strictness as you become faster, stronger and more experienced and feel like the clutter is slowing you down. [STRICTNESSOVERVIEW](https://filterblade.xyz?strictness=1)
+- Updated every league
+- Comes in many different styles. Pick one that matches your playstyle, taste or visual impairment best. [STYLEOVERVIEW](https://filterblade.xyz?styles=1)
+- The filter is and always will be completely free! The only paid feature we offer is the: 3$/month for the [auto-update service](https://www.youtube.com/watch?v=i8RJx0s0zsA) to support the development of NeverSink's filter and help pay for the server costs on filterblade.xyz.
 
 The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and simulate (lootsimulator!) the filter. It's the easiest way to download the filter and you can also modify it there, without any coding knowledge to adjust it to your playstyle.
 
---------------------------
+## **BARE MINIMUM YOU SHOULD KNOW:**
 
-**BARE MINIMUM YOU SHOULD KNOW:**
+1) The filter does NOT update itself automatically by default. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! There is an auto-updater, read about it below.
+2) The filter is ALWAYS updated before the start of a new league (4-6 hours before start). Afterwards, usually every few weeks.
+3) Filters can't distinguish between different variations of one unique base! A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". The same goes for all unique jewels etc. Things that need manual checking have a blue icon on the minimap!
+4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 68.
+5) Join our [Discord Server]](discord.gg/mye6xhF) to get updates and ask questions.
 
---------------------------
+## **HOW TO INSTALL? WHAT'S THE DIFFERENCE?**
 
-1) The filter does NOT update itself automatically. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! Get the latest version from: *[filterblade.xyz](https://www.filterblade.xyz)*
-2) The filter is always updated before the start of a new league. The update is live 4-6 hours before start. Afterwards, usually every few weeks.
-3) Filters can't distinguish between different variations of one unique base! Example: A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". The same goes for all unique jewels etc. Things that need manual checking have a blue icon on the minimap!
-4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 65. Additionally some items behave differently if dropped in earlier areas. Wisdom scrolls are larger for instance.
-5) If you have questions, suggestions or want to get in touch: join our discord server: discord.gg/mye6xhF
+Currently there are multiple sources:
 
---------------------------
+- [FILTER LADDER](https://www.pathofexile.com/item-filter/ladder/follower) - Are you new to the game and don't care about styles and finetuning the filter to your gameplay experience? I recommend subscribing to my filters on the ladder. It's just a click, fast and auto-updates. Just restart the game and select the subscribed filter in the options menu. The downside is that you can't edit these filters or use styles. Once you're more experienced you can switch to...
+- *[FILTERBLADE](https://www.filterblade.xyz)* - you can adjust the filter to your preferences here, change the appearance, style and finetune everything to your liking.
+    - [FilterBlade Update Guide](https://www.youtube.com/watch?v=3T5yLf-rFfc&lc=UgyZ-z1xso1OXdiNMQZ4AaABAg)
+    - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy but heavy on our servers, so it costs a few bucks. Plus you support the project.
+- You can also just download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. Instructions below
 
-**INSTALLATION INSTRUCTIONS:**
+## **MANUAL INSTALLATION INSTRUCTIONS:**
 
---------------------------
+0) Get the latest filter from  *[filterblade.xyz](https://www.filterblade.xyz)* or [GitHub](https://github.com/NeverSinkDev/NeverSink-Filter/releases/latest).
+1) Extract the files using WinRar/7zip or a similar tool.
+2) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
+3) INGAME: Escape -> Options -> Game -> Filters -> Select one of the filters from the dropdown box.
+4) Done. Enjoy.
 
-1) Download the latest filter from *[filterblade.xyz](https://www.filterblade.xyz)* or from the "releases" section.
 
-2) Extract the files using WinRar/7zip or a similar tool.
+## **SUPPORT:**
 
-3) Paste the .filter files (or just the folder content, if you want to use a specific style, paste the files from one of the (STYLE) folders instead) into the following folder: *%userprofile%/Documents/My Games/Path of Exile*
+The filter itself will always be free, including updates.
 
-4) INGAME: Escape -> Options -> Game -> Select one of the filters from the dropdown box.
+Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA). You can also [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2). Your support is appreciated. Thank you!
 
-5) Done. Enjoy.
+## **PICKING A STRICTNESS:**
 
-If you want to edit the filter in a text-editor I've create a *[notepad++](https://github.com/NeverSinkDev/NotepadPP-PoE-Filter-Markup-Language)* and a *[visual studio code](https://github.com/NeverSinkDev/VS-Code-PoE-Filter-Markup-Extension)* filter highlight language!
+The strictness defines how many items are filtered. A higher strictness means less items will be shown. I recommend using the **SEMI-STRICT** version if you're just starting.
 
---------------------------
-
-**SUPPORT:**
-
---------------------------
-
-The filter itself will always be free, including updates. There will never be any premium/donator versions or options!
-
-If you want to support the the development of the filter and/or filterblade or just show your appreciation feel free to **[buy me a beer / donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2)**. I also have a **[Patreon](https://www.patreon.com/join/Neversink)** account.
-
-Your support is appreciated. Thank you!
-
---------------------------
-
-**PICKING A STRICTNESS:**
-
---------------------------
-
-The strictness defines how many items are filtered. A higher strictness means less items will be shown. I recommend using the regular or semi-strict version if you're just starting.
-
-Path of Exile is a game, where speed matters a lot. Every time you pick up an item - you slow down. As your character becomes more and more optimized, it's a much better strategy to focus on clearing fast and only pick up the best items. This way you get more experience, less stash-sorting and more chances for big drops.
+Path of Exile is a game, where speed matters a lot. Every time you pick up an item - you slow down. As your character becomes more and more optimized, it's a much better strategy to focus on clearing fast and only pick up the best items. This way you get more experience, less stash-sorting and more chances for big drops!
 
 The filter strictness setup is designed to reflect that philosophy. You can start with regular/semi-strict and just increase your strictness as you improve your build. Alternatively if you feel like farming slow content, just go down a strictness.
 
 You can also design your own strictness settings on *[filterblade.xyz](https://www.filterblade.xyz)*
 
 - **Soft** = A very low strictness version, that shows extra bases and recipes. Not recommended for most situations.
-- **Regular** = Shows all rares and some "potentially useful items", great for solo selffound environments.
-- **Semi-Strict** = Shows the top ~50% of all rares, hides less popular recipes and crafting bases. This is a good allrounder version
-- **Strict** = Shows the top ~20% of all rares, hides most recipes and crafting bases. Hides scrolls at lvel 65+ (Shows them while leveling). Designed for optimized builds, that want to farm/grind effectively.
-- **Very Strict** = Shows the top ~5% of all rares, hides transmutation tier and lower currencies. Only shows the best crafting bases and recipes. Designed for fast, well geared builds.
-- **Uber Strict** = Shows the top <1% of all rares, no currency under an alch. Designed for optimized for rapid content farming.
+- **Regular** = Shows all rares and some "potentially useful items".
+- **Semi-Strict** = Shows the top ~50% of all rares, hides less popular recipes and crafting bases. This is a good starter strictness. Not recommended for yellow and higher maps.
+- **Strict** = Shows the top ~15% of all rares, hides most recipes and crafting bases. Hides scrolls at lvel 65+ (Shows them while leveling). Not recommended for red and higher maps.
+- **Very Strict** = Shows the top ~5% of all rares, hides transmutation tier and lower currencies. Only shows the best crafting bases and recipes. Designed for well geared builds for most endgame situations.
+- **Uber Strict** = No regular rares, no currency under an alch. Designed for endgame farming once you have your build and atlas completely set up and well optimized and acquired enough low currency items.
 - **Uber+ Strict** = No rares, no currency under a chaos, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Not recommended for most situations.
 
---------------------------
-
-**STYLE VARIATIONS:**
-
---------------------------
+## **STYLE VARIATIONS:**
 
 Different styles have the same filtering pattern and also have the same filter subversions (seen above), but use different highlighting settings. The subversions can be found in the subdirectories. I recommend previewing them on FilterBlade, most styles "just" change the visuals, however the **CUSTOMSOUNDS** style is special:
 
 Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
-
---------------------------
 
 For additional details, the FAQ (read it before asking questions), previous changelogs, screenshots etc. please refer to the forum thread in the POE forum ([clicky here to get there](https://www.pathofexile.com/forum/view-thread/1246208))
 
