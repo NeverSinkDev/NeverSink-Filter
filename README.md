@@ -15,13 +15,15 @@ Here is the basic feature set of NeverSink's filter:
 - Uses specific color-patterns and sounds to mark items of certain values and types.
 - Tiers every single unique, currency, divination card, fragment and items from 20+ other item types based on the current meta and prices in the league economy
 - Has safety checks to not accidently hide new and unknown items from new leagues
-- Detects rare and special item properties such as synthesised items, temple-mod items and identified items with multiple good mods.
+- Detects rare and special item properties such as synthesised items
+- Highlights identified items with multiple good or exclusive mods.
 - Comes in 7 different strictnesses. Start with **SEMI-STRICT** if you're new. Increase the strictness as you become faster, stronger and more experienced and feel like the clutter is slowing you down. [STRICTNESSOVERVIEW](https://filterblade.xyz?strictness=1)
 - Updated every league
 - Comes in many different styles. Pick one that matches your playstyle, taste or visual impairment best. [STYLEOVERVIEW](https://filterblade.xyz?styles=1)
-- The filter is and always will be completely free! The only paid feature we offer is the: 3$/month for the [auto-update service](https://www.youtube.com/watch?v=i8RJx0s0zsA) to support the development of NeverSink's filter and help pay for the server costs on filterblade.xyz.
 
 The website *[filterblade.xyz](https://www.filterblade.xyz)* is the user-friendly and recommended way to download, install and preview (lootsimulator!) the filter. You can also modify it there, without any coding knowledge to adjust it to your playstyle.
+
+The filter is and always will be completely free! The only paid feature we offer is the: 3$/month for the [auto-update service](https://www.youtube.com/watch?v=i8RJx0s0zsA) to support the development of NeverSink's filter and help pay for the server costs on filterblade.xyz.
 
 ## **BARE MINIMUM YOU SHOULD KNOW:**
 
@@ -57,29 +59,18 @@ Major thanks to all patreon supports to help us fund the continious development.
 
 ## **PICKING A STRICTNESS:**
 
-The strictness defines how many items are filtered. A higher strictness means less items will be shown. I recommend using the **SEMI-STRICT** version if you're just starting.
+The strictness defines what items are shown or hidden. A higher strictness means less items will be shown. I recommend using the **SEMI-STRICT** version if you're just starting. The hidden items are always the the cheapest layer. You don't have to worry about expensive drops, these are always shown.
 
-Path of Exile is a game, where speed matters a lot. Every time you pick up an item - you slow down. As your character becomes more and more optimized, it's a much better strategy to focus on clearing fast and only pick up the best items. This way you get more experience, less stash-sorting and more chances for big drops!
+Path of Exile is a game, where speed matters a lot. Every time you pick up an item - you slow down. You also need to potentially identify, sort, sell and manage the item. As your character becomes more and more optimized, it's a much better strategy to focus on clearing fast and only pick up the best items. This way you get more experience, less stash-sorting and more chances for big drops!
 
 The filter strictness setup is designed to reflect that philosophy. You can start with regular/semi-strict and just increase your strictness as you improve your build. Alternatively if you feel like farming slow content, just go down a strictness.
 
-You can also design your own strictness settings on *[filterblade.xyz](https://www.filterblade.xyz)*
-
-- **Soft** = A very low strictness version, that shows extra bases and recipes. Not recommended for most situations.
-- **Regular** = Shows all rares and some "potentially useful items".
-- **Semi-Strict** = Shows the top ~50% of all rares, hides less popular recipes and crafting bases. This is a good starter strictness. Not recommended for yellow and higher maps.
-- **Strict** = Shows the top ~15% of all rares, hides most recipes and crafting bases. Hides scrolls at lvel 65+ (Shows them while leveling). Not recommended for red and higher maps.
-- **Very Strict** = Shows the top ~5% of all rares, hides transmutation tier and lower currencies. Only shows the best crafting bases and recipes. Designed for well geared builds for most endgame situations.
-- **Uber Strict** = No regular rares, no currency under an alch. Designed for endgame farming once you have your build and atlas completely set up and well optimized and acquired enough low currency items.
-- **Uber+ Strict** = No rares, no currency under a chaos, hides a ton of other things. Designed to keep your screen clean in the most extreme of environments. Not recommended for most situations.
-
+*[Filterblade.xyz](https://www.filterblade.xyz)* allows finetuning the strictness of the filter. You can also **[[preview all strictnesses to understand what these exactly do](https://filterblade.xyz?strictness=1)]**.
 ## **STYLE VARIATIONS:**
 
-Different styles have the same filtering pattern and also have the same filter subversions (seen above), but use different highlighting settings. The subversions can be found in the subdirectories. I recommend previewing them on FilterBlade, most styles "just" change the visuals, however the **CUSTOMSOUNDS** style is special:
+Different styles have the same filtering pattern, but have altered visual appearance. You can **[[preview all styles on FilterBlade](https://filterblade.xyz?styles=1)]**.
 
-Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
-
-For additional details, the FAQ (read it before asking questions), previous changelogs, screenshots etc. please refer to the forum thread in the POE forum ([clicky here to get there](https://www.pathofexile.com/forum/view-thread/1246208))
+The **CUSTOMSOUNDS** style is special: Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
 
 --------------------------
 
