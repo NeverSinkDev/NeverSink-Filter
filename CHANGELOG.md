@@ -6,6 +6,12 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.6.3a** - Technical prep
+----------------------------------
+
+Changed the used rarity format as a prep for 8.7.0
+
+----------------------------------
 # **VERSION 8.6.3** - Identified sentinels, Tiering
 ----------------------------------
 
