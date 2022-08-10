@@ -39,7 +39,7 @@ Currently there are multiple sources:
 
 - [FILTER LADDER](https://www.pathofexile.com/item-filter/ladder/follower) - Are you new to the game and don't care about styles and finetuning the filter to your gameplay experience? I recommend subscribing to my filters on the ladder. It's just a click, fast and auto-updates. Just restart the game and select the subscribed filter in the options menu. The downside is that you can't edit these filters or use styles. Once you're more experienced you can switch to...
 - *[FILTERBLADE](https://www.filterblade.xyz)* - you can adjust the filter to your preferences here, change the appearance, style and finetune everything to your liking.
-    - [FilterBlade Update Guide](https://www.youtube.com/watch?v=3T5yLf-rFfc&lc=UgyZ-z1xso1OXdiNMQZ4AaABAg)
+    - [FilterBlade Update Guide](https://www.youtube.com/watch?v=RA27aUdWQb8)
     - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy but heavy on our servers, so it costs a few bucks. Plus you support the project.
 - You can also download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. 
 
