@@ -6,10 +6,75 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.6.3a** - Technical prep
+# **VERSION 8.6.3a** - Lake of Kalandra League - Fake version number expedition
 ----------------------------------
 
-Changed the used rarity format as a prep for 8.7.0
+## SHORT OVERVIEW
+
+FilterBlade received a bunch of small and large upgrades. Most notably a much faster workflow: We made a 4 min video about it - https://www.youtube.com/watch?v=RA27aUdWQb8 . Highly recommended to watch.
+
+## MAJOR FEATURES / SUMMARY
+- Introduced all the new items added from the Mirror of Kalandra league ***
+- Reworked the filter generation in regards to how Divine/Exalted orbs are treated. At the start both orbs will be in T1. My filters used a fraction of the ex-orb price to scale the tier thresholds in all tierlists. Instead my filter will now be calculating that fraction based on the higher of the two prices (exalted or divine orb). 
+- Most exotic high orbs are also no longer tied to their tiers. That means Exalted Orbs, Divine Orbs, Conqueror Orbs and Domination orbs etc. could now also theoratically drop into T2, if their price drops low enough. None of the aformentioned orbs is allowed to drop beyond T2 to prevent scenarios where automation potentially fails. This does not include Mirrors and Mirror Shards
+- The filter generation algorithm now attempts to 'resolve' divination card prices. It looks at the current price of the card, stacksize, rewardcount and compares it to the price of the actual reward. If there's a significant difference, it will prefere the reward price, as divination card seem to contain a lot of faulty economy and there's way more price fixing going on as well.
+- Massive changes and improvements to the FilterBlade workflow (details below)
+- Reworked gem tiering. Details below.
+- Reworked flask highlight. Details below.
+
+## ECONOMY BASED GEM TIERING REWORK
+- Redefined the gem threshholds. The gem T2 threshhold is higher that that of most sections, since gem economy is more fluctuating. Valid prices are confirmed at 2-3 listings, depending on the section:
+    - T1-price is around 32c + 10% of EXprice
+    - T2-price is around 12c + 04% of EXprice
+- The rework focuses on the following gem level/quality combinations: 20/20, 21/20, 20/23, X/23 and X/20/Vaal. Alt-quality/awakened/exceptional gems are not affected by htis.
+- These gems have become a much more accessable over the course of the past leagues. Their highlight has been reduced to compensate for that, but they're tested against economy-based lists to find expensive drops.
+- Gems that pass the T2-price test get higlight with the "red gem pattern".
+- Additionally there's a rule that tests if a 20%Q vaal gem of any level is expensive (0.75 * T1price) at level 20 to warrant leveling it to sell it.
+- The goal is to alert the user that they found a valuable ~15c+ gem.
+- Gems that don't pass the test receive the the blue gem highlight pattern - the same appearance as 20% qual gems receive.
+
+## NEW FILTERBLADE WORKFLOW
+- The general filterblade workflow has been completely redesigned. The new workflow is much more straight forward and faster. 
+- FilterBlade now merges the concepts of 'saves' and 'filters'. Whenever you sync/download a filter it also updates your save. This means you don't have to save manually anymore, you won't accidently override the wrong save etc. It's also just much more intuitive.
+- The save/load tab has been renamed to 'my filters'. It's also opened by default if you have any saves already.
+- Saves now remember your 'sync target'. This makes saving by syncing a much faster and straightforward process
+- All features still exist and work. We did remove the 'save' button though, as it's not really needed anymore and we don't want users to think that they should.
+
+## OTHER NEW FILTERBLADE FEATURES:
+- FilterBlade presets are now compatible with 'locks'. This allows advanced users to save their tiering in a preset and publish and/or reuse it in multiple filters.
+- FilterBlade basetype matrixes can now be 'locked' similary to tierlists. All locked (and moved) items will stay in their tier. Meaning your changes have priority over the the filter updates.
+- FilterBlade basetype matrixes now have 'sets' of items, such as 'Atlas' items and 'Minion' items. These items come with tiny icons to signalize them and you can also show all items in a set.
+- Introducing the "ItemBuilder". You can find it at the bottom of the simulate screen and it allows you to build any item ingame to test how your filter responds to it.
+- Vastly improved the item tests on the download screen. The filter will be tested for more items, the tests are split into 'notice', 'warning' and 'error'. Errors stop the filter from working, warnings hide expensive items, notices inform you that potentially expensive items are hidden often due to high strictness
+- A glowing chaos orb icon is shown next to sections that are economy-tiered. Hovering over it provides more insights.
+- Improved/fixed some tierlist behaviors and tiers/hide tiers generation.
+- Improved displayed message, when a loaded save receives an update.
+
+## FLASK SECTION CHANGES:
+- The endgame flask rules have been restructured. This might cause a few invalidations in your saves, but overall the goal is to keep strictness transparent and simple
+- The rules that highlight utility flasks now include *all* utility flasks. This (also somewhat sadly) means gold and corrundum flasks, but it seems all flasks find their niches in the endgame (even if some are somewhat tiny) and at least most flasks are somewhat useful. These are very easily editable on FilterBlade
+- ILVL 85 util flask highlight: disabled on uber-plus-strict (technically only enables highest movementspeed tier)
+- ILVL 84 util flask highlight: disabled on uber-plus-strict
+- ILVL 82 util flask highlight: disabled on uber-strict
+- Any utility flask in endgame areas between 68-75: disabled on uber-strict (designed as a entry-tier rule)
+- Any other utility flask in the endgame: disabled on very strict
+- Removed several extra rules to highlight specific utility flasks by quality in the endgame to reduce complexity. The availability of glassblowers in the endgame is high enough to ignore that. The deciding factor is the flask and the itemlevel.
+
+
+## STRICTNESS
+- Reduces the strictness on T3 fragments (uber plus strict reduces their highlight now, instead of hiding)
+- The high level agnerod staff rule is now disabled by default as vinktar square is no longer interesting for the atlas.
+
+## MISC
+- Added a new section that highlights stacks of divination cards. It overrides the tiers T5/T4/T4currency and requires a stacksize of 3+ to be highlighted.
+- Merged the Labyrinth offering items with the generic fragment tierlist. These items are now economy tiered. Removed the old secetions.
+- Move the anchored divination cards "Chaotic Disposition" "The Void" from T2 to T3.
+- Improved replica jewel highlighting
+- Removed Poacher's Mark from the +1 fire gems recipe list... I'm not sure how it got there.
+- Set the +1 recipe list to be an exact list
+- Cleaned up the github repository, deleted a lot of old and outdated files, improved descriptions and readme files
+- Added a misc rule to highlight heist quest contracts
+- The filter now uses the enum-rarity format instead of the operator rarity format. This simplifies filterblade handling and is more precise.
 
 ----------------------------------
 # **VERSION 8.6.3** - Identified sentinels, Tiering
