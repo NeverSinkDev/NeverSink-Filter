@@ -6,12 +6,28 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.8.0a** - Divine Orb Improvement
+# **VERSION 8.8.2** - Economy update
 ----------------------------------
 
 ## SHORT OVERVIEW
 
-SInce the current economy data was unavailable divines orb ended up in T2 instead of T1. Technically not a drama, but I've an override to prevent this from happening. willremove it later.
+This is the first economy update for the kalandra league. We've retiered all existing items and have added the new uniques and content into the tierlists. Additionally there are some small fixes and improvements
+
+## DETAILS
+
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+- Added new uniques to the tiering algorithm
+- Moved the convoking wand from "atlas bases" to regular bases (as this was changed in 3.19)
+- Glued house of mirrors and some other cards to T1, previously it was allowed to drop down to T3 (but not lower).
+
+----------------------------------
+# **VERSION 8.8.1** - Divine Orb Improvement
+----------------------------------
+
+## SHORT OVERVIEW
+
+Since the current economy data was unavailable divines orb ended up in T2 instead of T1. Technically not a drama, but I've an override to prevent this from happening. willremove it later.
 
 ----------------------------------
 # **VERSION 8.8.0** - Lake of Kalandra League
