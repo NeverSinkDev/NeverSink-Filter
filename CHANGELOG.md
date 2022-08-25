@@ -20,6 +20,7 @@ This is the first economy update for the kalandra league. We've retiered all exi
 - Added new uniques to the tiering algorithm
 - Moved the convoking wand from "atlas bases" to regular bases (as this was changed in 3.19)
 - Glued house of mirrors and some other cards to T1, previously it was allowed to drop down to T3 (but not lower).
+- Sacred lifeforce is now economy tiered
 
 ----------------------------------
 # **VERSION 8.8.1** - Divine Orb Improvement
