@@ -6,6 +6,46 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.8.3** - Economy update, strictness and tiering adjustments
+----------------------------------
+
+## SHORT OVERVIEW
+
+Overall I'm quite happy with the current state of the filter. Most non-tiering sections seem to be operating really well. However, the devil is frequently in the detail. This update fleshes out a bunch of small scale detail interactions, polishes up the strictness, improves tierlist generation, refines fractured, identified and synthesised mod highlight and in general puts some love into all of the small details that you'd expect from a quality product.
+
+## TIERING IMPROVEMENTS
+
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+- Improved the tiering algorithm to ignore relic items for the pricing of uniques
+- Reworked the unique map tiering algorithm. It should place more maps into the T4 tier, unless it's the start of a new league
+- Given ascetic and black sun crest (their unique basetypes to be precise) a more favorable treatment due to high rolled ones being very expensive.
+- Awakened gems now have a much higher T1 threshhold. Context: if you find a divination card worth 50c, you're happy about the find. If you find a awakened gem worth 50c, you definitely don't want to hear the 'shwing' sound.
+- Added a ton of improved handling for divination cards - such as unique sceptres/wands that are sometimes turned in on low level to create low level high quality bases for crafting.
+
+## IDENTIFIED MOD FILTERING
+
+- ID-Mod abyss jewels now consider T3 life to be a good core mod, not just T1 and T2 life.
+- Identified +2 to all minion gems helmets are being detected
+- +1/+2 minion gems are now being detected as part of the 'valuable mod combination'
+
+## FRACTURED / SYNTHESISED ITEMS
+
+- Adjusted the class list of extra-highlighted fractured classes. Added fractured flasks. Added fractured heist items. 
+- Adjusted the basetype lists of extra-highlighted fractured items. The list now features many more evasion items.
+- Adjusted thc class list of extra-highlighted synth classes
+
+## STRICTNESS
+
+- random 19%+ qual gems lose their highlight on uber strict (hidden on uber+ strict as before)
+- the loreweave ring recipe highlight is now disabled by default and can be enabled on filterblade
+- the high level agnerod staff extra highlight is now disabled by default and can be enabled on filterblade
+- I'm intentionally not changing anything to the highlight/strictness of stacked blacksmith/armorer scraps and endgame flask highlight yet. These only occure during specific archnemesis fights and I hope these will change/be adressed (copium?). Plus I want you to know what happened to your last solaris touched mob.
+- Increased the strictness on the 3 white socket weapon highlight.
+- The lowest tier of talismans (random talismans without any noteworthy mods) are now hidden on semi-strict, instead of strict
+- Stacked low tier divination cards are disabled instead of hidden on uber-strict
+
+----------------------------------
 # **VERSION 8.8.2** - Economy update
 ----------------------------------
 
