@@ -11,6 +11,8 @@ The "economy-based" versions are available through [FilterBlade](www.filterblade
 
 ## SHORT OVERVIEW
 
+The major changes in image form: [https://imgur.com/a/zCGNanx](https://imgur.com/a/zCGNanx)!
+
 Overall I'm quite happy with the current state of the filter. Most non-tiering sections seem to be operating really well. However, the devil is frequently in the detail. This update fleshes out a bunch of small scale detail interactions, polishes up the strictness, improves tierlist generation, refines fractured, identified and synthesised mod highlight and in general puts some love into all of the small details that you'd expect from a quality product.
 
 ## TIERING IMPROVEMENTS
