@@ -31,7 +31,7 @@ The filter is and always will be completely free! The only paid feature we offer
 2) The filter is ALWAYS updated before the start of a new league (4-6 hours before start). Afterwards, usually every few weeks.
 3) Filters can't distinguish between different variations of one unique base! A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". The same goes for all unique jewels etc. Things that need manual checking have a blue icon on the minimap!
 4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 68.
-5) Join our [Discord Server](discord.gg/mye6xhF) to get updates and ask questions.
+5) Join our [Discord Server](https://discord.gg/mye6xhF) to get updates and ask questions.
 
 ## **HOW TO INSTALL?**
 
