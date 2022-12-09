@@ -40,7 +40,7 @@ Currently there are multiple sources:
 - [FILTER LADDER](https://www.pathofexile.com/item-filter/ladder/follower) - Are you new to the game and don't care about styles and finetuning the filter to your gameplay experience? I recommend subscribing to my filters on the ladder. It's just a click, fast and auto-updates. Just restart the game and select the subscribed filter in the options menu. The downside is that you can't edit these filters or use styles. Once you're more experienced you can switch to...
 - *[FILTERBLADE](https://www.filterblade.xyz)* - you can adjust the filter to your preferences here, change the appearance, style and finetune everything to your liking.
     - [FilterBlade Update Guide](https://www.youtube.com/watch?v=RA27aUdWQb8)
-    - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy but heavy on our servers, so it costs a few bucks. Plus you support the project.
+    - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy and you don't have to install anything, but heavy on our servers, so it costs a few bucks. Plus you support the project.
 - You can also download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. 
 
 Manual installation instructiopns:
@@ -55,7 +55,7 @@ Manual installation instructiopns:
 
 The filter itself will always be free, including updates.
 
-Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA). You can also [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2). Your support is appreciated. Thank you!
+Major thanks to all patreon support to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA). You can also [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6J3S7PBNDQGY2). Your support is appreciated. Thank you!
 
 ## **PICKING A STRICTNESS:**
 

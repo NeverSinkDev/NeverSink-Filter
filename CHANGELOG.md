@@ -6,6 +6,81 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.9.0** - Forbidden Sanctum, Ruthless Version, Tiering and Leveling improvements
+----------------------------------
+
+## SHORT OVERVIEW
+
+This update implements necessary Forbidden Sanctum logic, a ruthless version of the filter, tiering improvements and leveling improvements. It also features a whole bunch of other changes big and small and a plethora of improvements to FilterBlade!
+
+We've put a lot of work into this patch and hope you're just as excited for the upcoming league!
+
+[We also made visual Summary of the most important changes!](https://imgur.com/a/RBtVsqr)
+
+## FORBIDDEN SANCTUM
+- Added a new section for the highlight of sanctified and normal relics. As of now all relics are shown on all strictness.
+- Introduced Fracturing orbs and shards into the filter
+
+## RUTHLESS FILTER
+- We've added a ruthless-specific filter to FilterBlade. Behind the scenes, it's technically my 'semi-strict regular' filter with around ~1000 changes to finetune everything to the ruthless playstyle. As of now it's only available on FilterBlade and does not support styles and strictnesses as it changes too much for those to work correctly. Depending on the popularity of ruthless we might change the acquisition method, structure or even remake the filter in the future. As ruthless is more targetted at experienced players the user is fully expected to make their own adjustments to the filter on filterblade.
+- When the Ruthless filter is selected, every 'hide' rule is automatically converted into a 'minimal' rule and the ruthless-filter is exported in the right format.
+- We'll likely allow converting normal filters into ruthless format on FilterBlade in the future. For now this is disabled as using my regular filter on Ruthless will likely result in a bad experience (and we havn't finished the UI yet).
+
+## TIERING IMPROVEMENTS
+- Reworked the algorithm for divination card tiering. It has a much stronger bias against cards marked with internal "poordrop" and "lateleaguevalueloss" aspects. The result of this is that dozens of cards (such as 'the web', 'the oppulent'...) will be tiered lower than before. This only affects cards that were previously in T4.
+- The compass item has been 'anchored' to the chaos tier. I'm not sure why it was rising in price (pricefixers?), since you can buy it from Kirac, but no more of that within the filter.
+- Reviewed uniques and divination cards with the new and rebalanced unique in mind
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+- Added a new section for corrupted jewels. It uses the old appearance.
+- The normal jewel section uses the multibase appearance now!
+
+## CURRENCY STRICTNESS CHANGES
+- The strictness of currency tiering has been rebalanced on the lower end. This has been done to compensate for the lost of the 'necromancer' quality currency convertion effect and to make the filter more consistent.
+- The following changes specifically apply to 'supplies-tier currency' in the endgame (NOT leveling!): wisdoms, portals, armourer, transmutes, augments, whetstones
+    - Stacksizes for supplies have been adjusted: small stacks are 3-5, medium stacks are 6-10, large stacks are 10+ items.
+    - Regular: all shown
+    - Semi-Strict: all stacks shown. Single portals, wisdoms, armourers hidden.
+    - Strict: all singles hidden, all small stacks hidden.
+    - Very-Strict: all singles hidden, medium portal/wisdom stacks hidden. small armourers/whetstones hidden. At this strictness level most players will and are expected to use thier large transmutes/blacksmith whetstones supplies to convert to scrolls if needed.
+    - Uber-Strict: all non-large stacks are hidden
+    - Uber-Plus-Strict: all supplies are hidden.
+
+## LEVELING ADJUSTMETNS
+- Standardized a lot of fontsizes during leveling. The goal is to clearly prioritize important drops, while keeping the screen clean. The General philosophy behind this rework: 
+    - FontSize 45 items are outstanding pickups such as rare boots, rare jewellery, utility flasks, 4links
+    - FontSize 40 are useful pickups, such as 3links early on, random rares, life flasks etc
+    - FontSize 35 are other things, such as 3links later on, potential crafting pickups, vendor magic items etc.
+- Flask, currency and other items are still highlighted in the old way
+- Early level normal body armours (without 3+ sockets) are now shown again from level 2-9 during campaign. They're still hidden on strict+. The motivation behind this change is to not force racing-like optimizations (slower movementspeed with body equipped) to new players who start with semi-strict, which is now the default on filterblade.
+- Added a new section to highlight magic items between zone level 1 and 4 in a larger font
+- Thrusting one hand swords added to default item progression (fix, previously only shown normal swords)
+- Added a dedicated section for highlighting stacks (3+) of wisdoms, portals, armourer, transmutes, augments, whetstones during leveling.
+- Added a dedicated section for highlighting jewels during leveling
+
+## FILTERBLADE CHANGES (short overview, full changelog in discord)
+- Added ruthless support
+- Implemented highlighting by total socket count and color (independent of links). Very useful for leveling.
+- Reworked class selection UI
+- Improved and sorted many UIs
+- Added a ton of other polish and fixes. Check the changelog in discord for more details.
+
+## OTHER STRICTNESS CHANGES
+- ILVL84 T2 engame normal and rare crafting items (ok, it's a mouthful, something like level 84 normal vaal regalias) are no longer highlighted on strict. This does not apply on exotic bases (atlas bases, runic bases...) or items of ILVL86+
+- Reviewed the flask tiering and adjusted it, now that the flask-splosion is gone
+- Decreased the strictness on scarab tiering. Only uber-plus stirct now hides the lowest economy based tier of scarabs
+- All non-unique 6L armours/weapons now have the same 'red' appearance, they no longer get the T1 appearance and 'shwing' sound
+- Medium sized chrom recipes in the endgame are hidden on regular, instead of semi-strict
+- Adjusted the strictnesses of some identified mod filtering rules. This shouldn't affect anything below uber-strict.
+- The high quality gem section has been changed from 19 to 20 quality
+
+## MINOR CHANGES
+- Removed 2 unused rules for High tier exarch/eater items that were highlighting lvl 5+ items. These items don't drop naturally.
+- Identified DOT jewels are now limitted and require exactly one specific dot mod.
+- Improved delve mod magic item higlighting.
+- Split the crafting decorator for normal/magic gear in the endgame into a jewellery and non-jewellery section
+
+----------------------------------
 # **VERSION 8.8.3** - Economy update, strictness and tiering adjustments
 ----------------------------------
 
@@ -26,7 +101,6 @@ Overall I'm quite happy with the current state of the filter. Most non-tiering s
 - Added a ton of improved handling for divination cards - such as unique sceptres/wands that are sometimes turned in on low level to create low level high quality bases for crafting.
 
 ## IDENTIFIED MOD FILTERING
-
 - ID-Mod abyss jewels now consider T3 life to be a good core mod, not just T1 and T2 life.
 - Identified +2 to all minion gems helmets are being detected
 - +1/+2 minion gems are now being detected as part of the 'valuable mod combination'
@@ -367,10 +441,8 @@ These changelogs include changes from version 3.X.X to 8.5.3
 # **SPECIAL THANKS:**
 ----------------------------------
 
-- GGG for the awesome game
-- Bex for the assistance and the patch notes
-- Chris for being awesome and answering questions about the item font corruption problem (note: it's not fixed)
-- Tobnac/Haggis for the constant help and support + support on the FilterBlade project (will be released during the next monthes)
-- My awesome stream viewers, who helped while I was updating the filter. A special thanks to the supporters.
-- C4pture for being C4pture
-- You
+- Tobnac/Haggis for their amazing contribution to the project development and support
+- GGG for the awesome game with a special shoutout to Bex, Chris, Rory, Zeyra and Jatin for their assistance!
+- A massive thank you to all the [PATREONS](https://www.patreon.com/Neversink), [DISCORD](https://discord.gg/mye6xhF) and [TWITCH](https://www.twitch.tv/neversink) community!
+- The FilterBlade Team on discord - Abyxcos, Cdr, Mellontoss, Really Evil bunny, TarrasqueSorcerer, Thesenzei, VenomsAssassin
+- The community (that includes you!) for using the filter and providing feedback and support!
