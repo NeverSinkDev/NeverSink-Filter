@@ -6,6 +6,28 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.9.1** - Economy improvements
+----------------------------------
+
+## SHORT OVERVIEW
+
+Overall I'm quite happy with the performance of the filter. The general filtering and strictness adjustments feel quite good to me. 
+
+This update mostly focuses on the economy side of things, integrating the new divination cards and giving treatment to all the new uniques.
+
+On top of that I've added an algorithm to improve the handling of new uniques at the start of the league, which should help with situations like the new uber-sirus flask.
+
+## TIERING CHANGES
+- Integrated all of the new unique items into the economy tiering
+- Integrated all of the new divination cards into the economy tiering
+- Improved handling for Fracturing Orbs and shards.
+- Introduced a much more sophisticated special algorithm that will prevent expensive new unknown uniques to be handled incorrectly. The algorithm will treat previously unknown uniques on an already known unique basetype as bossdrops until further checking. In practice the economy updater will know how to handle items like the uber-sirus flask better in the future
+
+## MINOR CHANGES
+
+- Fixed a bug where stacked portal and stacked wisdom scrolls while leveling had their highlights swapped.
+
+----------------------------------
 # **VERSION 8.9.0a** - Forbidden Sanctum, Ruthless Version, Tiering and Leveling improvements
 ----------------------------------
 

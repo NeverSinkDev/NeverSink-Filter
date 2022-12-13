@@ -3,11 +3,21 @@ template: |
   
   ## SHORT OVERVIEW
   
-  Improved the tiering of some good divination cards for early league.
+  Overall I'm quite happy with the performance of the filter. The general filtering and strictness adjustments feel quite good to me.
   
-  ## STRICTNESS CHANGES
+  This update mostly focuses on the economy side of things, integrating the new divination cards and giving treatment to all the new uniques.
   
-  - Moved some divination cards to the early league tier
+  On top of that I've added an algorithm to improve the handling of new uniques at the start of the league, which should help with situations like the new uber-sirus flask.
+  
+  ## TIERING CHANGES
+  - Integrated all of the new unique items into the economy tiering
+  - Integrated all of the new divination cards into the economy tiering
+  - Improved handling for Fracturing Orbs and shards.
+  - Introduced a much more sophisticated special algorithm that will prevent expensive new unknown uniques to be handled incorrectly. The algorithm will treat previously unknown uniques on an already known unique basetype as bossdrops until further checking. In practice the economy updater will know how to handle items like the uber-sirus flask better in the future
+  
+  ## MINOR CHANGES
+  
+  - Fixed a bug where stacked portal and stacked wisdom scrolls while leveling had their highlights swapped.
   
   ------
 
