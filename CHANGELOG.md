@@ -6,6 +6,66 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.9.2** - Economy improvements
+----------------------------------
+
+## SHORT OVERVIEW
+
+Sanctum has changed a lot of aspects in regards to droprates and economy. This update focuses on improving the economy tiering to reflect the new meta.
+
+On top of general tiering improvement I've overhauled the treatment of: fractured items, cluster jewels, influenced items and boss-dropped uniques.
+
+Feedback is always appreciated. Please let me know if you think something is wrong or missing or needs updating.
+
+## GENERAL CHANGES
+- Made all economy based T2 tiers slightly less strict (dominant orb scaling factor changed from 0.25 to 0.2). This will lead to a few more items being caught by the 'exalted orb tier' (prev. divine orb tier: the goonng, not the shwing sound).
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+
+## FRACTURED ITEM TIERING OVERHAUL
+- Motivation behind changes:
+    - Fractured items drop fairly frequently in very large batches. Sorting through these is cumbersome
+    - The previous handpicked bases valued the basetype tier too much over the basetype class.
+- Reworked the tiering for fractured bases:
+    - T1 - handpicked bases
+        - Filter by basetype and are now more inclusive. These include most wands, sceptres and significantly more bases that can roll suppression. These also favour boots and shields over helmets, body armours and gloves (even though top items are still highlighted). They also now include amulets, belts and rings, which were previously only caught through the class based fractured tiering. They feature less staves and other mostly physically played bases.
+        - Now have stronger highlighting
+        - Shown on all strictnesses
+    - T2 - class based filtering. Shows all bases as long as they're part of the class
+        - Currently includes: "Amulets" "Belts" "Boots" "Bows" "Flask" "Gloves" "Heist" "Jewel" "Maps" "Shields" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Wands". 
+        - Shown on all strictnesses except on uber-plus-strict
+    - T3 fractured bases - all other fractured items:
+        - Now hidden on very strict
+- While the system is flexible, it's not perfect by any means. I'm reliant on your feedback to get it right. Please let me know if you think something is wrong or missing or needs updating.
+
+## UNIQUE TIERING
+- Added special treatment to the internal 'HighVariety' tag on unqiues. If a unique that drops from a boss has this tag it will never be allowed to drop below the 'boss-drop-uniques' tier. This will prevent items that end up super cheap in certain scenarios, but expensive in others (such as cinderswallow urn depending upon if it's unveiled or not) from dropping to a lower tier.
+- Added a special treatment for uniques that only consist of non-world-drops (such as unique boss drops)
+- Expanded the additional protection to new/unknown uniques
+
+## INFLUENCED TIERING OVERHAUL
+- Motivation behind changes:
+    - The general number of uses for shaper/elder/conqueror items has gone down and so did their demand as most meta builds run a lot more fractured+eldritch or unique items in their equipment. Still certain influenced items are still quite valuable - just are less of a chase base as they were before
+    - On top of that these items are more accessable and drop in bulk at a high level from conqueror/shaper/elder maps and invitations.
+    - The player is generally a bit overloaded with the number of drops
+- Specific changes:
+    - T1 drops:
+        - Now all produce an 'exalted orb' sound (T2)
+    - T2 drops: 
+        - No longer produces the 'exalted orb' sound, but instead play the unique sound. These are generally good items that MAY sell, but no longer a near garantueed money maker as it was leagues before
+        - Changed the T2 common useful influenced bases section to require ILVL 84 instead of ILVL 86
+        - Changed the T2 common useful influenced bases section to T1+T2 basetypes from the general rare section. In layman's terms: the filter will highlight best crafting bases, such as vaal regalias, two-stone rings and eternal burgonets as T2 drops, if they're ILVL 85 and are influenced.
+            - This rule is disabled on uber-strict
+            - Uber-strict will only use economy based information to determine if an item is a T2 drop
+            - T2 drops from economy tiering will still be shown on uber-strict
+        - Reduced the threshhold for T2 drops
+
+## CLUSTER JEWEL TIERING OVERHAUL
+- Vastly improved cluster jewel tiering and done a lot of cleanup in the economy updater.
+- On top of a general cleanup and improvements. fixed a bug that caused previously expensive cluster jewels to 'stick around' in the tierlist. It will now detect a lot less false positives.
+- With the problem above fixed, reduced the threshhold for expensive cluster jewels.
+
+----------------------------------
 # **VERSION 8.9.1** - Economy improvements
 ----------------------------------
 
