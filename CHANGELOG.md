@@ -6,7 +6,23 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.9.2** - Economy improvements
+# **VERSION 8.9.3** - New Sanctum Invocations
+----------------------------------
+
+## SHORT OVERVIEW
+
+This patch adds new unique relics and invocations dropped by Lycia at the end of the sanctum to the filter. For now they're all added with the exalted orb tier, but they're not hidden on any strictness
+
+## GENERAL CHANGES
+- Added new invocations to the filter
+- Added a virtual tierlist to the invocations - the structure for the tierlist is already there, but it does not tier anything yet (until invocation economy data will be available)
+- Added a section for the new unique relics
+- Did nothing for the new original sin ring as it'll be already highlighted, just letting you know it's all good :)
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+
+----------------------------------
+# **VERSION 8.9.2** - Better fractured, influenced, unique and cluster jewel tiering
 ----------------------------------
 
 ## SHORT OVERVIEW
