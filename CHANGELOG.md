@@ -6,7 +6,23 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.9.3** - New Sanctum Invocations
+# **VERSION 8.9.4** - Adjustments for weird 200+ divine economy (eco-update only)
+----------------------------------
+
+## SHORT OVERVIEW
+
+This patch fixes some problems with economy updated filters, related to stacked and currencies and some anomalies related to the 200c+ economy. 
+
+This update only affects eco-updated filters. Stable version is not affected.
+
+## GENERAL CHANGES
+- Reworked the handling of stacked currencies. They're now using exactly the same threshhold as the non-stacked currencies.
+- Slightly increased the minimum threshhold for T1 currencies (50->60). This is mostly to prevent elevated sextants and single fracturing orbs from dinging on maven kills. If they rise even further - well, the economy has spoken :p.
+- Increased the minimum threshhold for T3 currencies from 3.0c to 3.1c. While this may sound small, this will lead to currencies that claim to be 'exactly' 1c (but usually are below from experience), to not be able to reach the T3 tier if dropped in stacks of 3+
+- Introduced a bunch of other improvements related to chaos prices rising over 200+ and causing tiering anomalies. If all fails, the generator will assume that the chaos price is 200c for the sake for tiering uniques and divination cards (only if the chaos price is above 200c).
+
+----------------------------------
+# **VERSION 8.9.3** - New Sanctum Items
 ----------------------------------
 
 ## SHORT OVERVIEW
