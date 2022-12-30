@@ -6,6 +6,19 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.9.5** - Over-Quality Flasks (eco-update only)
+----------------------------------
+
+## SHORT OVERVIEW
+
+Addresses the discovery of flasks now dropping naturally (from rares) with up to 30% quality.
+
+This update only affects eco-updated filters. Stable version is not affected.
+
+## GENERAL CHANGES
+- Added a new rule that highlights the best life/mana and all util flasks of ilvl82 with 29%+ quality.
+
+----------------------------------
 # **VERSION 8.9.4** - Adjustments for weird 200+ divine economy (eco-update only)
 ----------------------------------
 
