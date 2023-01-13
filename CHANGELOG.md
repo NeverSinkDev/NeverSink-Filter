@@ -6,6 +6,31 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.9.6** - Voidborne keys, Corrupted uniques and minor modifications
+----------------------------------
+
+## SHORT OVERVIEW
+
+Added voidborne keys, improved the tiering of gems and corrupted uniques and made some minor modifications to the filter.
+
+## NEW CONTENT
+- Added highlight for the voidborne reliquary keys.
+
+## UNIQUE TIERING
+- Added a new rule to highlight corrupted uniques that would otherwise be caught by the T3/T4 uniques section. This rule is disabled on uber strict. The rule currently highlights the following classes:  "Amulets" "Belts" "Boots" "Gloves" "Helmets" "Rings" "Shields" "Quivers". Weapons/body armours are excluded - due to the low usage rate of random-non-expensive unique weapons with single corruptions and the need to 6socket/link these. Note that ALL double corrupted items were and are still highlighted, no matter the class
+
+## GEM TIERING
+- Improved the gem tiering algorithm in multiple was
+- The gem tiering rule for 20/20 gems, now only highlights uncorrupted gems
+- The gem tiering rule for 21/20+ and 20/23+ gems now includes gems that both pass and don't pass the 20/20 test
+- Removed the 21/23 tiering rule as these gems don't drop naturally anymore. These gems are highlighted 
+- Added a general 21/23 rule that highlights any 21/23 gem
+
+## MISC CHANGES
+- Further Improved the algorithms for divination card and stacked currency tiering.
+- Increased the strictness of exarch/eater rares. They're now all hidden on very strict.
+
+----------------------------------
 # **VERSION 8.9.5** - Over-Quality Flasks (eco-update only)
 ----------------------------------
 

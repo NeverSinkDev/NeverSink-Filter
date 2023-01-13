@@ -3,15 +3,24 @@ template: |
   
   ## SHORT OVERVIEW
   
-  This patch adds new unique relics and invocations dropped by Lycia at the end of the sanctum to the filter. For now they're all added with the exalted orb tier, but they're not hidden on any strictness
+  Added voidborne keys, improved the tiering of gems and corrupted uniques and made some minor modifications to the filter.
   
-  ## GENERAL CHANGES
-  - Added new invocations to the filter
-  - Added a virtual tierlist to the invocations - the structure for the tierlist is already there, but it does not tier anything yet (until invocation economy data will be available)
-  - Added a section for the new unique relics
-  - Did nothing for the new original sin ring as it'll be already highlighted, just letting you know it's all good :)
-  - All tierlists have been adjusted based on the current economy
-  - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+  ## NEW CONTENT
+  - Added highlight for the voidborne reliquary keys.
+  
+  ## UNIQUE TIERING
+  - Added a new rule to highlight corrupted uniques that would otherwise be caught by the T3/T4 uniques section. This rule is disabled on uber strict. The rule currently highlights the following classes:  "Amulets" "Belts" "Boots" "Gloves" "Helmets" "Rings" "Shields" "Quivers". Weapons/body armours are excluded - due to the low usage rate of random-non-expensive unique weapons with single corruptions and the need to 6socket/link these. Note that ALL double corrupted items were and are still highlighted, no matter the class
+  
+  ## GEM TIERING
+  - Improved the gem tiering algorithm in multiple was
+  - The gem tiering rule for 20/20 gems, now only highlights uncorrupted gems
+  - The gem tiering rule for 21/20+ and 20/23+ gems now includes gems that both pass and don't pass the 20/20 test
+  - Removed the 21/23 tiering rule as these gems don't drop naturally anymore. These gems are highlighted
+  - Added a general 21/23 rule that highlights any 21/23 gem
+  
+  ## MISC CHANGES
+  - Further Improved the algorithms for divination card and stacked currency tiering.
+  - Increased the strictness of exarch/eater rares. They're now all hidden on very strict.
   
   ------
 
