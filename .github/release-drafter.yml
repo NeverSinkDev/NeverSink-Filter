@@ -1,26 +1,20 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
-  ## SHORT OVERVIEW
-  
-  Added voidborne keys, improved the tiering of gems and corrupted uniques and made some minor modifications to the filter.
-  
-  ## NEW CONTENT
-  - Added highlight for the voidborne reliquary keys.
-  
   ## UNIQUE TIERING
-  - Added a new rule to highlight corrupted uniques that would otherwise be caught by the T3/T4 uniques section. This rule is disabled on uber strict. The rule currently highlights the following classes:  "Amulets" "Belts" "Boots" "Gloves" "Helmets" "Rings" "Shields" "Quivers". Weapons/body armours are excluded - due to the low usage rate of random-non-expensive unique weapons with single corruptions and the need to 6socket/link these. Note that ALL double corrupted items were and are still highlighted, no matter the class
+  - Removed a bunch of aspects from no-longer-dropping uniques. This will lead to a bunch of uniques that were previously landingg in the "non-drop-category" to land into the hideable category (thanks @mellontoss)
+  - Removed around 10 basetypes from the unique tierlist that no longer drops (usually due to their basetypes being changed). Has no ingame effect, but reduces file size and helps filterblade clarity.
+  - Marked the alt-art asphyxia's wrath with non-drop. (thanks @mellontoss)
   
-  ## GEM TIERING
-  - Improved the gem tiering algorithm in multiple was
-  - The gem tiering rule for 20/20 gems, now only highlights uncorrupted gems
-  - The gem tiering rule for 21/20+ and 20/23+ gems now includes gems that both pass and don't pass the 20/20 test
-  - Removed the 21/23 tiering rule as these gems don't drop naturally anymore. These gems are highlighted
-  - Added a general 21/23 rule that highlights any 21/23 gem
+  ## UNIQUE JEWEL TIERING
+  - Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
+  - Rational doctrine drops are now highlighted as T1 (using the fact that they're the only synthesised jewel)
+  
+  ## DIVINATION TIERING
+  - Cleaned and improved the aspects (meta-information) of the divination cards. This should lead to some improved tiering in some niche cases.
   
   ## MISC CHANGES
-  - Further Improved the algorithms for divination card and stacked currency tiering.
-  - Increased the strictness of exarch/eater rares. They're now all hidden on very strict.
+  - Increased the stack size requirement on all simulacrum splinters to create high tier sounds/highlights.
   
   ------
 

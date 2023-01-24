@@ -6,6 +6,31 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.0** - BOAT LEAGUE
+----------------------------------
+
+## UNIQUE TIERING
+- Made a ton of adjustments to the unique tiering aspects (meta-information).
+    - Removed a bunch of aspects from no-longer-dropping uniques. This will lead to a bunch of uniques that were previously landingg in the "non-drop-category" to land into the hideable category
+    - Marked the alt-art asphyxia's wrath with non-drop.
+    - Reviewed and adjusted the tiering strategy for a lot of uniques
+    - A huge thank you to @mellontoss for compiling tons of data and suggestions regarding these changes
+- Removed around 10 basetypes from the unique tierlist that no longer drops (usually due to their basetypes being changed). Has no ingame effect, but reduces file size and helps filterblade clarity.
+- Megalomaniac jewel moved to T2
+
+## UNIQUE JEWEL TIERING
+- Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
+- Rational doctrine drops are now highlighted as T1 (using the fact that they're the only synthesised jewel)
+
+## DIVINATION TIERING
+- Cleaned and improved the aspects (meta-information) of the divination cards. This should lead to some improved tiering in some niche cases.
+
+## MISC CHANGES
+- Increased the stack size requirement on all simulacrum splinters to create high tier sounds/highlights.
+- Removed a bunch of unique map bases that no longer drop
+- Removed lures from the fragment tab as these have been removed.
+
+----------------------------------
 # **VERSION 8.9.6** - Voidborne keys, Corrupted uniques and minor modifications
 ----------------------------------
 
@@ -13,8 +38,10 @@ The "economy-based" versions are available through [FilterBlade](www.filterblade
 
 Added voidborne keys, improved the tiering of gems and corrupted uniques and made some minor modifications to the filter.
 
-## NEW CONTENT
+## GENERAL
 - Added highlight for the voidborne reliquary keys.
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
 
 ## UNIQUE TIERING
 - Added a new rule to highlight corrupted uniques that would otherwise be caught by the T3/T4 uniques section. This rule is disabled on uber strict. The rule currently highlights the following classes:  "Amulets" "Belts" "Boots" "Gloves" "Helmets" "Rings" "Shields" "Quivers". Weapons/body armours are excluded - due to the low usage rate of random-non-expensive unique weapons with single corruptions and the need to 6socket/link these. Note that ALL double corrupted items were and are still highlighted, no matter the class
