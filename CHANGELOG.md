@@ -11,12 +11,11 @@ The "economy-based" versions are available through [FilterBlade](www.filterblade
 
 ## UNIQUE TIERING
 - Made a ton of adjustments to the unique tiering aspects (meta-information).
+    - Reviewed and adjusted the tiering strategy for a lot of uniques. This includes over 50 aspect changes and will improve tiering in many cases!
     - Removed a bunch of aspects from no-longer-dropping uniques. This will lead to a bunch of uniques that were previously landingg in the "non-drop-category" to land into the hideable category
     - Marked the alt-art asphyxia's wrath with non-drop.
-    - Reviewed and adjusted the tiering strategy for a lot of uniques
     - A huge thank you to @mellontoss for compiling tons of data and suggestions regarding these changes
-- Removed around 10 basetypes from the unique tierlist that no longer drops (usually due to their basetypes being changed). Has no ingame effect, but reduces file size and helps filterblade clarity.
-- Megalomaniac jewel moved to T2
+- Megalomaniac jewel moved to T2 from multibase
 
 ## UNIQUE JEWEL TIERING
 - Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
@@ -28,7 +27,7 @@ The "economy-based" versions are available through [FilterBlade](www.filterblade
 ## MISC CHANGES
 - Increased the stack size requirement on all simulacrum splinters to create high tier sounds/highlights.
 - Removed a bunch of unique map bases that no longer drop
-- Removed lures from the fragment tab as these have been removed.
+- Removed lures from the fragment tab as these no longer drop ingame.
 
 ----------------------------------
 # **VERSION 8.9.6** - Voidborne keys, Corrupted uniques and minor modifications
