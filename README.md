@@ -59,7 +59,7 @@ Major thanks to all patreon support to help us fund the continious development. 
 
 ## **PICKING A STRICTNESS:**
 
-The strictness defines what items are shown or hidden. A higher strictness means less items will be shown. I recommend using the **SEMI-STRICT** version if you're just starting. The hidden items are always the the cheapest layer. You don't have to worry about expensive drops, these are always shown.
+The strictness defines what items are shown or hidden. A higher strictness means less items will be shown. I recommend using the **SEMI-STRICT** version if you're just starting. The hidden items are always the cheapest layer. You don't have to worry about expensive drops, these are always shown.
 
 Path of Exile is a game, where speed matters a lot. Every time you pick up an item - you slow down. You also need to potentially identify, sort, sell and manage the item. As your character becomes more and more optimized, it's a much better strategy to focus on clearing fast and only pick up the best items. This way you get more experience, less stash-sorting and more chances for big drops!
 
