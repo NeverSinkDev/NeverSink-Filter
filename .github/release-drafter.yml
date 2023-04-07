@@ -1,11 +1,20 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
+  ## SHORT OVERVIEW
+  All the crucible content has been added! Importantly: we added a new section that is specifically there to highlight some white/magic items in the endgame to have some food for the crucible forge/krangler. Currently this section contains generally good bases or bases that share a good unique (for the chance of a unique sell node). The current list is: "Convoking Wand" "Champion Kite Shield" "Spine Bow" "Imperial Claw" "Opal Sceptre" "Prophecy Wand" "Short Bow" "Siege Axe". You can customize it on FilterBlade. This rule is disabled on Very strict.
+  
+  This patch contains MAJOR tiering improvements to unique, divination card and other tiering types and a TON of other changes (check the patch notes for more info). It also contains major improvements to the FilterBlade UI and FilterBlade meta data!
+  
+  Good luck in the crucible league!
+  
   ## NEW LEAGUE ITEMS
   - Added the new crucible currencies
   - Added a section to highlight items (rare or lower) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
   - Added a section to highlight items (unique) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
   - Added new divination cards
+  - Added a new section that is specifically there to highlight some white/magic items in the endgame to have some food for the crucible forge/krangler. Currently this section contains generally good bases or bases that share a good unique (for the chance of a unique sell node). The current list is: "Convoking Wand" "Champion Kite Shield" "Spine Bow" "Imperial Claw" "Opal Sceptre" "Prophecy Wand" "Short Bow" "Siege Axe". You can cusotmize it on FilterBlade. This rule is disabled on Very strict.
+  - Added special tiering to new uniques
   
   ## MAJOR FILTERBLADE IMPROVEMENTS
   - Tierlists hover-information is vastly improved. It contains additional data, filters out relics and is much more concise.
@@ -37,15 +46,18 @@ template: |
   - Slightly increased the price requirement for multibase uniques
   - Slightly increased the price scaling for semi-expensive uniques
   
+  ## DIVINATION CARD ALGORITHM
+  - I scrapped the old algorithm and rewrote it from scratch. Divination card tiering data coming from the economy is still dirtier than the infinite hunger fight, but the new algorthm seems be performing much better overall.
+  - Cleaned and improved the aspects (meta-information) of the divination cards. This should lead to some improved tiering in some niche cases.
+  - The Lingering Remnants Divination card is no longer allowed to drop below T4
+  
   ## UNIQUE JEWEL TIERING
-  - Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
+  - [DISABLED, feature will be readded soon] Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
   - Rational doctrine drops are now highlighted as T1 (using the fact that they're the only synthesised jewel)
   - Megalomaniac jewel moved to T2 from multibase
   
   ## OTHER TIERING CHANGES
   - Standardized and clean up all tiering algorithms. This should lead to a more consistent tiering in the future.
-  - Cleaned and improved the aspects (meta-information) of the divination cards. This should lead to some improved tiering in some niche cases.
-  - The Lingering Remnants Divination card is no longer allowed to drop below T4
   - Breachstones and splinters have received some temporary adjustments to improve their tiering in regards to the 3.21 changes
   - Further improved cluster jewel tiering. The tiering algorithm is now more reluctant to put cluster jewels into the T1 category during the early league (as the data is super hazy)
   

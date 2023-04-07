@@ -9,11 +9,20 @@ The "economy-based" versions are available through [FilterBlade](www.filterblade
 # **VERSION 8.10.0** - CRUCIBLE LEAGUE
 ----------------------------------
 
+## SHORT OVERVIEW
+All the crucible content has been added! Importantly: we added a new section that is specifically there to highlight some white/magic items in the endgame to have some food for the crucible forge/krangler. Currently this section contains generally good bases or bases that share a good unique (for the chance of a unique sell node). The current list is: "Convoking Wand" "Champion Kite Shield" "Spine Bow" "Imperial Claw" "Opal Sceptre" "Prophecy Wand" "Short Bow" "Siege Axe". You can customize it on FilterBlade. This rule is disabled on Very strict.
+
+This patch contains MAJOR tiering improvements to unique, divination card and other tiering types and a TON of other changes (check the patch notes for more info). It also contains major improvements to the FilterBlade UI and FilterBlade meta data!
+
+Good luck in the crucible league!
+
 ## NEW LEAGUE ITEMS
 - Added the new crucible currencies
 - Added a section to highlight items (rare or lower) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
 - Added a section to highlight items (unique) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
 - Added new divination cards
+- Added a new section that is specifically there to highlight some white/magic items in the endgame to have some food for the crucible forge/krangler. Currently this section contains generally good bases or bases that share a good unique (for the chance of a unique sell node). The current list is: "Convoking Wand" "Champion Kite Shield" "Spine Bow" "Imperial Claw" "Opal Sceptre" "Prophecy Wand" "Short Bow" "Siege Axe". You can cusotmize it on FilterBlade. This rule is disabled on Very strict.
+- Added special tiering to new uniques
 
 ## MAJOR FILTERBLADE IMPROVEMENTS
 - Tierlists hover-information is vastly improved. It contains additional data, filters out relics and is much more concise.
