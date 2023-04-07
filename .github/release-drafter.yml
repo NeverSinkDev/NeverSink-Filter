@@ -1,26 +1,61 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
+  ## NEW LEAGUE ITEMS
+  - Added the new crucible currencies
+  - Added a section to highlight items (rare or lower) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
+  - Added a section to highlight items (unique) with crucible trees (these should not drop by default, but I've learned that things tend to change over time, so it's good to be on the safe side)
+  - Added new divination cards
+  
+  ## MAJOR FILTERBLADE IMPROVEMENTS
+  - Tierlists hover-information is vastly improved. It contains additional data, filters out relics and is much more concise.
+  - Tierlists now can show extra-data about a certain item or a specific unique. This is for instance used to visualize where a certain unique drops, the rewards of incubators etc. Also it just looks really rad.
+  - Reworked all hover-UIs on FilterBlade. These are much more concise and useful now
+  
+  ## LEAGUE RELATED ADJUSTMENTS
+  - Added a section to detect maps with 'implicit' mods that can drop under some circumstances (like the shadow shaping node)
+  - Removed the 'of Unwavering' abyss jewel ID detection mod
+  - Removed 'Serpent Wand' that was causing issues with the new patch for some reason
+  - Renamed 'The Iron Bard' divination card
+  - Moved breachstones to it's own tierlist
+  
+  ## MAP LIKE ITEM CHANGES
+  - Disabled the section for detecting nemesis+beyond maps as this combo no longer has any value after the last 2 leagues
+  
   ## UNIQUE TIERING
   - Made a ton of adjustments to the unique tiering aspects (meta-information).
-  - Removed a bunch of aspects from no-longer-dropping uniques. This will lead to a bunch of uniques that were previously landingg in the "non-drop-category" to land into the hideable category
-  - Marked the alt-art asphyxia's wrath with non-drop.
-  - Reviewed and adjusted the tiering strategy for a lot of uniques
-  - A huge thank you to @mellontoss for compiling tons of data and suggestions regarding these changes
-  - Removed around 10 basetypes from the unique tierlist that no longer drops (usually due to their basetypes being changed). Has no ingame effect, but reduces file size and helps filterblade clarity.
-  - Megalomaniac jewel moved to T2
+  - Reviewed and adjusted the tiering strategy for a lot of uniques. This includes over 50 aspect changes and will improve tiering in many cases!
+  - Removed a bunch of aspects from no-longer-dropping uniques. This will lead to a bunch of uniques that were previously landing in the "non-drop-category" to land into the hideable category
+  - Cleaned up and added special exceptions to handle no longer dropping basetypes and race rewards better.
+  - A huge thank you to @mellontoss for compiling tons of data and suggestions for the unique changes!
+  - Added an exception to highlight starforge/voidforge drops based on their influence! Note that we can't recommend disabling unique infernal sword drops as Echoforge can't be detected.
+  - Revamped the algorithm to be slightly more exclusive when it comes to 'semi-expensive' and 'multi-base' uniques. Items found in this section should be significantly better than the hidable uniques on average.
+  - Improved the 'early league unique tiering'. Cleaned up the list of early league uniques to be a bit more strict.
+  - Marked most abyss and most breach items as 'buffed'. They'll be tiered slightly better than their previous tiering was in the last league and are not allowed to enter the 'hideable' uniques during the first days of the league.
+  - Marked all sanctum items as 'non-drop'
+  - Slightly increased the divine price component of the price requirement for T1 uniques
+  - Slightly increased the price requirement for multibase uniques
+  - Slightly increased the price scaling for semi-expensive uniques
   
   ## UNIQUE JEWEL TIERING
   - Added minimal unique jewel tiering where possible. In the case of most jewels this does not work as too many jewels share the same base. However, some jewels such as abyss jewels are now economy-tiered.
   - Rational doctrine drops are now highlighted as T1 (using the fact that they're the only synthesised jewel)
+  - Megalomaniac jewel moved to T2 from multibase
   
-  ## DIVINATION TIERING
+  ## OTHER TIERING CHANGES
+  - Standardized and clean up all tiering algorithms. This should lead to a more consistent tiering in the future.
   - Cleaned and improved the aspects (meta-information) of the divination cards. This should lead to some improved tiering in some niche cases.
+  - The Lingering Remnants Divination card is no longer allowed to drop below T4
+  - Breachstones and splinters have received some temporary adjustments to improve their tiering in regards to the 3.21 changes
+  - Further improved cluster jewel tiering. The tiering algorithm is now more reluctant to put cluster jewels into the T1 category during the early league (as the data is super hazy)
   
   ## MISC CHANGES
+  - Added a new section on FilterBlade (and a disabled by default rule in the filter) that highlights quality minion gems for +1 helmet recipes!
+  - Added 3.21 and 3.20 gems to the +1 recipe highlight sections
   - Increased the stack size requirement on all simulacrum splinters to create high tier sounds/highlights.
   - Removed a bunch of unique map bases that no longer drop
-  - Removed lures from the fragment tab as these have been removed.
+  - Removed lures from the fragment tab as these no longer drop ingame.
+  - Added new abyss mods to the identified abyss jewel section
   
   ------
 
