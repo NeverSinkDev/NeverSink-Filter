@@ -6,6 +6,21 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.1** - Economy Update
+----------------------------------
+
+## SHORT OVERVIEW
+Improves the tiering of all tierlsits. Also fixed the filter economy update/generation scripts, that were broken by GGG's APIs changing.
+
+## GENERAL
+- All tierlists have been adjusted based on the current economy
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
+
+## ARCHITECTURE
+- Fixed the filter economy update/generation scripts, that were broken by GGG's APIs changing.
+- Added additional checks to the filter economy update/generation scripts to prevent future issues.
+
+----------------------------------
 # **VERSION 8.10.0** - CRUCIBLE LEAGUE
 ----------------------------------
 
