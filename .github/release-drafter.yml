@@ -1,16 +1,15 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
-  ## SHORT OVERVIEW
-  Improves the tiering of all tierlsits. Also fixed the filter economy update/generation scripts, that were broken by GGG's APIs changing.
+  - Slightly decreased the threshold for T2 uniques
+  - Standardized the show/hide/disable ruling in a lot of rules. Most crafting and exotic bases rule now tend to use disable, instead of hide to prevent accidental hiding of items that are actually worth something. This is an ongoing process.
+  - Disabled the 2 rules for influenced rare items that were highlighting "top-droplevel" and atlas basetyped items. Instead all of the influenced data is now economy driven to improve the filtering of influenced items. The rules can be manually enabled on FilterBlade. We'll keep the situation under observation and might re-enable them if they are still needed.
+  - Fractured bases are now only highlighted if they're not corrupted. This is to prevent the filter from highlighting corrupted bases that are not worth anything.
+  - Added gloves to the list of favored double corrupted rare items
+  - Double corrupted rares now have a red color, instead of the teal one
+  - Added a rule to highlight 3x abyss socket shrouds
   
-  ## GENERAL
-  - All tierlists have been adjusted based on the current economy
-  - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Replicas and Gems.
-  
-  ## ARCHITECTURE
-  - Fixed the filter economy update/generation scripts, that were broken by GGG's APIs changing.
-  - Added additional checks to the filter economy update/generation scripts to prevent future issues.
+  - UNFINISHED - Increased the highlight of Rot Head talismans (fishing exclusive super strong secret item)
   
   ------
 

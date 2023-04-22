@@ -6,6 +6,20 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.2** - Economy Update
+----------------------------------
+
+- Slightly decreased the threshold for T2 uniques
+- Standardized the show/hide/disable ruling in a lot of rules. Most crafting and exotic bases rule now tend to use disable, instead of hide to prevent accidental hiding of items that are actually worth something. This is an ongoing process.
+- Disabled the 2 rules for influenced rare items that were highlighting "top-droplevel" and atlas basetyped items. Instead all of the influenced data is now economy driven to improve the filtering of influenced items. The rules can be manually enabled on FilterBlade. We'll keep the situation under observation and might re-enable them if they are still needed.
+- Fractured bases are now only highlighted if they're not corrupted. This is to prevent the filter from highlighting corrupted bases that are not worth anything.
+- Added gloves to the list of favored double corrupted rare items
+- Double corrupted rares now have a red color, instead of the teal one
+- Added a rule to highlight 3x abyss socket shrouds
+
+- UNFINISHED - Increased the highlight of Rot Head talismans (fishing exclusive super strong secret item)
+
+----------------------------------
 # **VERSION 8.10.1** - Economy Update
 ----------------------------------
 
