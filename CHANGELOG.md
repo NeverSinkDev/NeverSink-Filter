@@ -6,6 +6,17 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.2a** - Finetuning - Eco-Updated only.
+----------------------------------
+
+## SHORT OVERVIEW
+
+Divination card finetuning!
+
+## TIERING ADJUSTMENTS:
+- Six-link rewarding div cards no longer can drop below T4 (previously T3), but are now treated as currency type cards (as random late-league random six link cards have barely any value beyond the 20 fusings). This also includes tabula cards. These cards have the 'earlyleague' aspect, so they'll go back to T3 (or higher) during the first days of the league, when 6-links are in high demand
+
+----------------------------------
 # **VERSION 8.10.2** - Economy Update, Jewels, Breachstones, Corruptions and Enhanced Efficiency
 ----------------------------------
 
