@@ -6,15 +6,25 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.10.2a** - Finetuning - Eco-Updated only.
+# **VERSION 8.10.3** - split six sockets, corrupted rule bugfix and misc adjustments
 ----------------------------------
 
 ## SHORT OVERVIEW
 
-Divination card finetuning!
+The new ID mod rule to detect potentially useful quivers and gloves lacked the class scope and was accidently showing a bunch of random corrupted items. Sorry. Fixed.
+
+## NEW RULES:
+- Split the 6Socket rule into 6S-4height and 6S-3height. The 4 height rule is disabled on very strict, the 3 height one on uber-strict. This will hopefully help smoothen the transition a bit.
 
 ## TIERING ADJUSTMENTS:
+- All tierlists have been adjusted based on the current economy:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas and Gems.
 - Six-link rewarding div cards no longer can drop below T4 (previously T3), but are now treated as currency type cards (as random late-league random six link cards have barely any value beyond the 20 fusings). This also includes tabula cards. These cards have the 'earlyleague' aspect, so they'll go back to T3 (or higher) during the first days of the league, when 6-links are in high demand
+- Moved artillery quivers from T3 to T2 in the crafting bases
+
+## MISC RULES:
+- Increased the strictness of the newly introduced quiver and glove rules (both with id-mod checking and without)
+- Fixed a bug with the new ID mod rule for quivers and gloves that was showing all classes, instead of scoping on the right one resulting in some needless clutter.
 
 ----------------------------------
 # **VERSION 8.10.2** - Economy Update, Jewels, Breachstones, Corruptions and Enhanced Efficiency

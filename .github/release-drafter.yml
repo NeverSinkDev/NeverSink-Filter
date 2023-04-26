@@ -3,42 +3,20 @@ template: |
   
   ## SHORT OVERVIEW
   
-  This update includes economy-based adjustments, eco-updated breachstone tiering, improved filtering of influenced items, lots of tiering improvements and updated quality flask checks. It also brings tailored rules for identified quivers and gloves and 3x abyss socket shrouds. Also dozens of architecture enhancements to improve performance and potential edge cases have also been implemented, with special thanks to Mellontoss for valuable contributions.
-  
-  I may have used chatgpt to build the title & short description above.
+  The new ID mod rule to detect potentially useful quivers and gloves lacked the class scope and was accidently showing a bunch of random corrupted items. Sorry. Fixed.
   
   ## NEW RULES:
-  - Added a section to specifically search for identified quivers and gloves with a few useful mods AND a corrupted implicit. The number of mods required is lower than with the regular identified mod section. Quivers require ilvl 80+
-  - Added a rule to highlight ilvl 80+ rare corrupted quivers with 1+ corrupted implicit. This rule is designed to help players find those sweet sweet chain-corrupted-quivers. The rule is disabled on uber strict.
-  - Added a rule to highlight 3x abyss socket shrouds
+  - Split the 6Socket rule into 6S-4height and 6S-3height. The 4 height rule is disabled on very strict, the 3 height one on uber-strict. This will hopefully help smoothen the transition a bit.
   
-  ## STRICTNESS, TIERING AND ECONOMY RELATED IMPROVEMENTS:
-  - Breachstones are now also economy-tiered
+  ## TIERING ADJUSTMENTS:
   - All tierlists have been adjusted based on the current economy:
   - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas and Gems.
-  - Increased the threshhold price for T1 splinters (this will result in Xoph, Esh, Tul and Templar splinter moving from T1->T2 and changes to stacked splinters)
-  - Adjusted the meta-aspects for a bunch of div cards. This has a lot of small results, but most notably around ~20 T3 cards were downgraded to T4 or T4currency to improve tiering accuracy.
-  - Increased the tiering of 'regular' jewels to the T2 tier as almost all of those are worth something, often a lot. Additionally the corrupted jewel section now also tests if the jewel has exactly 0 corrupted implicits. All corrupted jewels with 1 or more corrupted implicits are the 'regular' expensive jewels! Yes this means that the alva-temple 'roomba' boss and the heist boss that drop cheap jewels will be baiting players.
-  - Slightly increased the highlight of corrupted jewels
-  - Slightly decreased the threshold for T2 uniques.
-  - Disabled the 2 rules for influenced rare items that were highlighting "top-droplevel" and atlas basetyped items. Instead all of the influenced data is now economy driven to improve the filtering of influenced items. The rules can be manually enabled on FilterBlade. We'll keep the situation under observation and might re-enable them if they are still needed.
-  - Implemented a few overrides for start-of-league scenarios that will help prevent currency from being overtiered in the future.
-  - Minor adjustments to unique and currency aspects
+  - Six-link rewarding div cards no longer can drop below T4 (previously T3), but are now treated as currency type cards (as random late-league random six link cards have barely any value beyond the 20 fusings). This also includes tabula cards. These cards have the 'earlyleague' aspect, so they'll go back to T3 (or higher) during the first days of the league, when 6-links are in high demand
+  - Moved artillery quivers from T3 to T2 in the crafting bases
   
-  ## MISC IMPROVEMENTS:
-  - Fractured bases are now only highlighted if they're not corrupted. This is to prevent the filter from highlighting corrupted bases that are not worth anything.
-  - Added gloves and quivers to the list of favored double corrupted rare items
-  - Double corrupted rares now have a red color, instead of the teal one
-  - High level overquality flasks are now checked starting with 26%+ quality instead of 29%+. While 26-28% is creatable with betrayal, those are still a welcome find.
-  - High level flasks now also check for being non-mirrored
-  - The identified item handling rule for rares between T2 and T3 rares is now disabled on semi-strict instead of very strict. It was created during ultimatum when the game used to roll well rolled rares and filter idented-mod checking capabilities were still quite limited. Right now I don't know anyone really liking this rule.
-  
-  ## ARCHITECTURE IMPROVEMENTS:
-  - Designed a system to detect and remove outdated basetypes from tierlists. This removes items that no longer drop (such as disabled divination cards).
-  - Standardized the show/hide/disable ruling in a lot of rules. Most crafting and exotic bases rule now tend to use disable, instead of hide to prevent accidental hiding of items that are actually worth something. This is an ongoing process.
-  - Done a large series of improvements related to filter parsing performance, filter generation and filterblade related changes. This usually includes changes like sorting of rules, usage of "==" operators and sorting of selectors within the rules.
-  - Most rules that check for "Corrupted False" now also check for "Mirrored False"
-  - Special thanks to Mellontoss for helping out with this update, he has collected a large number of various improvements!
+  ## MISC RULES:
+  - Increased the strictness of the newly introduced quiver and glove rules (both with id-mod checking and without)
+  - Fixed a bug with the new ID mod rule for quivers and gloves that was showing all classes, instead of scoping on the right one resulting in some needless clutter.
   
   ------
 
