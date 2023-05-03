@@ -24,7 +24,6 @@ This update mostly contains structural improvements, cleanups and minor fixes.
 - Fixed a bug where early endgame 4links (arealevel 68-71) with 4links would also match uniques. This only affected soft and regular strictness.
 - Most places that have been requiring an item to not be corrupted also now require the non-mirrored state
 - The low tier quality flask rule now requires the flask to be normal
-- 
 
 
 ----------------------------------
