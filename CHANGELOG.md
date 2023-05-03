@@ -6,6 +6,28 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.3a** - finetunings, fixes and economy
+----------------------------------
+
+## SHORT OVERVIEW
+
+This update mostly contains structural improvements, cleanups and minor fixes.
+
+## NEW RULES:
+- Added a rule to detect 4-white socket triad grip gloves.
+
+## TIERING ADJUSTMENTS:
+- All tierlists have been adjusted based on the current economy:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas and Gems.
+
+## MISC IMPROVEMENTS AND FIXES:
+- Fixed a bug where early endgame 4links (arealevel 68-71) with 4links would also match uniques. This only affected soft and regular strictness.
+- Most places that have been requiring an item to not be corrupted also now require the non-mirrored state
+- The low tier quality flask rule now requires the flask to be normal
+- 
+
+
+----------------------------------
 # **VERSION 8.10.3** - split six sockets, corrupted rule bugfix and misc adjustments
 ----------------------------------
 
@@ -24,7 +46,7 @@ The new ID mod rule to detect potentially useful quivers and gloves lacked the c
 
 ## MISC RULES:
 - Increased the strictness of the newly introduced quiver and glove rules (both with id-mod checking and without)
-- Fixed a bug with the new ID mod rule for quivers and gloves that was showing all classes, instead of scoping on the right one resulting in some needless clutter.
+- Fixed a bug with the new ID mod rule for quivers and gloves that was showing all classes, instead of scoping on the right one resulting in some needless clutter. 
 
 ----------------------------------
 # **VERSION 8.10.2** - Economy Update, Jewels, Breachstones, Corruptions and Enhanced Efficiency
