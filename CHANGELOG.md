@@ -6,6 +6,21 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.4** - architecture update
+----------------------------------
+
+## SHORT OVERVIEW
+This update implements mostly technical preparations to enable some future features and also implements some improvements to tiering and performance.
+
+## TIERING ADJUSTMENTS:
+- re-enabled unique jewels tiering. This currently only applies to (some) unique cluster jewels and all abyss jewels
+- divination cards that award fragments and unique jewels now attempt to use the economy information about the card reward (+ the stack size and some other data) to figure out the price of the card and detect potential cases of noisy data or pricefixing in the economy data
+
+## ARCHITECTURE IMPROVEMENTS
+- Turned over 100 sections that were checking for basetype into equal match sections ( using the  '==' operators ). This should have no impact on the actual filtering, but will improve performance and reduce ambiguity (Highlighting "Saintly Chainmails" won't highlight "Sai"s anymore etc). This might cause some filterblade savestates to throw errors, if non-exact wording has been used to do changes.
+- Essences, Oils, Incubators and Contracts have received a dedicated hide section. This is to enable users to use conditional operators (such as arealevel and stacksize) in the rules, without the remaining items appearing pink. New and unknown items will still be highlighted.
+
+----------------------------------
 # **VERSION 8.10.3a** - finetunings, fixes and economy
 ----------------------------------
 
