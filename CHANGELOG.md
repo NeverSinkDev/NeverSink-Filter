@@ -6,6 +6,24 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.10.5** - custom rule update
+----------------------------------
+
+## SHORT OVERVIEW
+This is a major update to one of FilterBlade's best advanced features - custom rules! We've added support for duplicating, reording, renaming rules and much more. This was one of our major goals for the next league, but with ExileCon and Diablo4 being on the horizon, we've decided to prioritize our FilterBlade dev sprint and release earlier.
+
+## TIERING ADJUSTMENTS:
+- All tierlists have been adjusted based on the current economy:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas and Gems.
+
+## IDENTIFIED MOD FILTERING
+- Many identified mod filtering rules now also filter for 'negative mods'. For instnace identified boots rules will not highlight boots anymore with 4 good mods, but low tier movement speed. Similary an identified physical damage weapon, won't be highlighted if it has a very low tier flat phys mods, even if it has other good mods.
+
+## ARCHITECTURE IMPROVEMENTS:
+- Reworked the 'Waypoint' system within the filter. This system enables FilterBlade to use a ton of different locations for custom rules that are forward compatible with future filter update versions.
+- Further improvements to filter structure and generation
+
+----------------------------------
 # **VERSION 8.10.4** - architecture update
 ----------------------------------
 
