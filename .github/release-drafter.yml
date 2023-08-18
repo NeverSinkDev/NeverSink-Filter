@@ -7,12 +7,13 @@ template: |
   We hope you'll enjoy the new league and the new filter!
   
   ## TRIAL OF THE ANCESTOR CHANGES:
+  - Added a new rule for silver coins. The appearance for the silver coins has been decided by a democratic election. Thanks twitch chat. They'll likely wander into the currency tierlist if trial goes core.
   - Added a tierlist for all the tattoos (with safety section in case some were missed)
   - Added a tierlist for all the omen (with safety section in case some were missed)
-  - Added a new rule for silver coins. They'll likely wander into the currency tierlist if trial goes core.
   - Added a new rule for hinekor's locks. They'll likely wander into the currency tierlist if trial goes core.
   - Added a rule to highlight forbidden tomes and related sanctum items
   - Wiped the dust of the sanctum relic rules
+  - Added aspects to uniques that have a new unique attached to them to minimize the risk of them being hidden
   
   ## TIERING ADJUSTMENTS:
   - All tierlists have been adjusted based on the current economy:
@@ -22,9 +23,13 @@ template: |
   > *NeverSink's notes: I'm aware that stacked currency tiering on filterblade is currently in a bad spot, we're looking for a good UI to improve that situation. We're looking for good UI/UX suggestions for that. If you have any, please approach us on our discord!*
   
   - Anchored Exalted Orbs and Elevated Sextants to the T2 currency tier. This is to prevent economy anomalies early on in the league and them sometimes shifting to T1.
-  - Delayed until next patch, it was giving us too many technical difficulties with existing filterblade savestates: ~~Moved ritual and crescent splinters into their own category out of currency~~
+  - ~~Moved ritual and crescent splinters into their own category out of currency~~ (Delayed until next patch, it was giving us too many technical difficulties with existing filterblade savestates)
   - Removed the atlas base status from some atlas bases that are not used at all
+  - Trying out a new strategy to tiering divination cards. The strategy won't be active during the first days of the league, but will afterwards attempt to weight all cards down (because the economy data for it is super noisy) with an offset based on the stacksize.
   - Expanded the selection of 'good' eater/exarch bases with the focus on gloves and boots, especially ones that can roll suppression. All other ones are hidden on semi-strict and up.
+  - Adjusted the list of early league uniques
+  - Adjusted the list of early league divination cards
+  - Adjusted early endgame crafting bases.
   
   > *NeverSink's notes: In the future I'll likely rework the algorithm alltogether. That being said, I still count for influenced items to get reworked evenutally, with them barely seeing any use compared to fractured/eldritch bases, with some very few niche exceptions, such as some boots, helmets and gloves (usually elevated/awakened ultra-endgame bases). Maybe the atlas expansion will change them.*
   
@@ -97,13 +102,15 @@ template: |
   - Small chromatic (RGB) items while leveling now have  higher font size
   - Wands and sceptres have been added to the list of early-items (until level 9) that receive extra highlight when 3 sockets. Previously this list only included gloves, shields, boots and helmets.
   - Until level 9 all random non-tiny magic items have a slightly stronger border
+  - Low level flasks (small, medium, large) are now displayed until a higher zone level.
   
   ## IDENTIFIED MOD FILTERING:
   - Many identified mod filtering rules now also filter for 'negative mods'. For instnace identified boots rules will not highlight boots anymore with 4 good mods, but low tier movement speed. Similary an identified physical damage weapon, won't be highlighted if it has a very low tier flat phys mods, even if it has other good mods (this has been already part of 8.10.5, but now also affects the stable branch)
   
   ## FILTERBLADE:
-  - This filter supports adds further support to a major FilterBlade's best advanced features - custom rules! We've added and expanded support for duplicating, reording, renaming rules and much more. This was one of our major goals for the next league, but with ExileCon and Diablo4 being on the horizon, we've decided to prioritize our FilterBlade dev sprint and release earlier
-  - FilterBlade tierlist
+  - This filter supports adds further support to one of FilterBlade's coolest systems - custom rules! We've added and expanded support for duplicating, reording, renaming rules and much more. This was released ahead of time to get it test well.
+  - FilterBlade currency, divination and unique tierlists now support 'tags'. You can ui-filter by those on filterblade! These tags are sourced from a public repository on my github
+  - Dozens of small improvements to filterblade, such as a general customizer cleanup, performance improvements, loot simulator improvements etc.
   
   ## MISC CHANGES:
   
