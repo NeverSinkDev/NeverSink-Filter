@@ -6,6 +6,24 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.11.1** - First Economy Update
+----------------------------------
+
+## SHORT OVERVIEW
+Tattoos and omens are now tiered. Adjusted tier tiering algorithm and updated the tiering for unique and unique map tierlists. This update affects the stable filter as well as the unique/currency tiering was pretty messy before that. 
+
+## TIERING ADJUSTMENTS:
+- All tierlists have been adjusted based on the current economy:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas, Omen, Tattoos and Gems.
+- The tattoos are now all economy tiered! (thanks Rasmus for the quick poe.ninja integration)
+- The Omen are now all economy tiered! (thanks Rasmus for the quick poe.ninja integration - AGAIN)
+- Changed the tiering threshholds on unique maps. In general higher tiers require higher prices now.
+- Changed the tiering of T1 uniques. They now require a slightly higher price.
+- Adjusted the early league tiering algorithm. It should no longer overprice stacks of sextants and similar items in future leagues.
+- Added the new uniques into the tierlist
+- Adjusted previous sanctum unique tiering
+
+----------------------------------
 # **VERSION 8.11.0** - Trial of the Ancestors League Update
 ----------------------------------
 
