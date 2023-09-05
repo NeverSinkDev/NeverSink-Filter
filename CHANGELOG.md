@@ -6,6 +6,22 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.11.2** - New Tattoos
+----------------------------------
+
+## SHORT OVERVIEW
+Added new tattoos into the tierlist. I intentionally did NOT do any tiering changes to the stable version. Economy-updated versions of course are retiered.
+
+## TIERING ADJUSTMENTS:
+- 6 New tattoos added (these were NOT hidden in the old filter, but were not tiered)
+- The tierlists have NOT been adjusted on the stable filter. This is intentional. The economy-updated versions are retiered. In the future goal is to limit re-tiering processes on the stable filter to 2 per league (1 at release and 1 during first eco-update). This is experimental.
+
+## MISC CHANGES:
+- Synthesised unique rings are now highlight by basetype, instead of class
+- Flasks are now consistently highlighted via class, instead of basetype
+- Quality flasks for vendor recipe are highlighted started with 14 quality instead of 15 quality.
+
+----------------------------------
 # **VERSION 8.11.1** - First Economy Update
 ----------------------------------
 
