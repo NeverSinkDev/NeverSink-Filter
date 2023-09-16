@@ -27,8 +27,8 @@ The filter is and always will be completely free! The only paid feature we offer
 
 ## **BARE MINIMUM YOU SHOULD KNOW:**
 
-1) The filter does NOT update itself automatically by default. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! There is an auto-updater, read about it below.
-2) The filter is ALWAYS updated before the start of a new league (4-6 hours before start). Afterwards, usually every few weeks.
+1) The filters from this GitHub project do NOT auto-update. At least redownload the latest version once a league - better once a month - to stay up-to-date and not miss out on valuable drops! There is an auto-updater, read about it below.
+2) The filters in this GitHub project are ALWAYS updated before the start of a new league (4-6 hours before start). Afterwards, usually every few weeks.
 3) Filters can't distinguish between different variations of one unique base! A unique "Leather Belt" can be an expensive "Headhunter" or a cheap "Wurm's Molt". The same goes for all unique jewels etc. Things that need manual checking have a blue icon on the minimap!
 4) The filter has a "leveling mode" and an "endgame mode". The switch happens at itemlevel 68.
 5) Join our [Discord Server](https://discord.gg/mye6xhF) to get updates and ask questions.
@@ -43,7 +43,7 @@ Currently there are multiple sources:
     - We also offer a [FilterBlade Auto-Updater](https://www.youtube.com/watch?v=i8RJx0s0zsA), it's super comfy and you don't have to install anything, but heavy on our servers, so it costs a few bucks. Plus you support the project.
 - You can also download the latest release from github. Note that it doesn't auto-update though and unlike my filterblade/ladder is not adjusted every 4 hours to match the economy perfectly. 
 
-Manual installation instructiopns:
+Manual installation instructions:
 
 0) Get the latest filter file from  *[filterblade.xyz](https://www.filterblade.xyz)* or [GitHub](https://github.com/NeverSinkDev/NeverSink-Filter/releases/latest).
 1) Extract the files using WinRar/7zip or a similar tool.
@@ -68,7 +68,7 @@ The filter strictness setup is designed to reflect that philosophy. You can star
 *[Filterblade.xyz](https://www.filterblade.xyz)* allows finetuning the strictness of the filter. You can also **[[preview all strictnesses to understand what these exactly do](https://filterblade.xyz?strictness=1)]**.
 ## **STYLE VARIATIONS:**
 
-Different styles have the same filtering pattern, but have altered visual appearance. You can **[[preview all styles on FilterBlade](https://filterblade.xyz?styles=1)]**.
+Different styles have the same filtering pattern, but have altered visual appearance. You can **[[preview all styles on FilterBlade](https://filterblade.xyz?styles=1)]**. As a beginner do not use the following styles: Krangled, WoW, Tabula Rasa.
 
 The **CUSTOMSOUNDS** style is special: Same visuals, but all sounds are different. Designed for streamers or viewers so that they don't get confused when the other side is getting an expensive drop. You can also replace the sound files with your own files (filterblade offers streamer-sound packs and tools to assist you with custom soundpacks)
 
