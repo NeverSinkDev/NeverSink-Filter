@@ -6,6 +6,36 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.12.0** - Kalandra & Sentinel + incubator rework + minor changes
+----------------------------------
+
+## SHORT OVERVIEW
+
+These filters reintroduce a whole bunch of kalandra-league and sentinel-league rules.
+
+Additionally there's the large requested incubator tiering rework and some unique tiering improvements. All other larger changes (that are still WIP / testing) will be released during the December league. There's also some minor structural changes and improvements.
+
+Important: This update does NOT change anything about unique/divination card tiering for the event. It usues exactly the same tiering as on the live league. You might want to fine-tune it for your strategy on FilterBlade.
+
+## INCUBATOR REWORK:
+- Reworked. No longer bad. Now good. This is a buff. (hopefully)
+
+## TIERING ADJUSTMENTS:
+- All tierlists have been adjusted based on the current economy:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Invitations, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas, Omen, Tattoos and Gems.
+- Due to the nature of the structural update this update also affects the stable version
+
+## FLASHBACK LEAGUE ITEMS
+- Readded sentinel section
+- Readded sentinel leveling rules
+- Readded sentinel power core, special cores and recombinators
+- Readded unique sentinels
+- Activated ID-mod section for useful sentinel recombinations
+
+## UNIQUE RETIERING:
+- Lot's of aspects and rule adjustments thanks to the massive help of the filterblade team (special thanks to melontoss)
+
+----------------------------------
 # **VERSION 8.11.2** - New Tattoos
 ----------------------------------
 
