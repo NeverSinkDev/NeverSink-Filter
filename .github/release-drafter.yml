@@ -2,84 +2,13 @@ template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
   ## SHORT OVERVIEW
-  Affliction is upon us! This filter introduces all of the affliction related items, removes all enchantement/metamorph related things, introduces sanctum unique and memory tiering. It also completely revamps all tierlists and thresholds. We've introduced dozens upon dozens of architecture improvements. Find out more in the changelog!
+  Valdo's Puzzle Box is now part of the T1 tier. Affects both stable and economy. This is the stable version for this league, unless something major will need changes. All of the tiering and thresholds adjustments have been highly succesful. I found the tiering this league to be very accurate and I hope you did too. I'll be keeping a close eye on the economy and will adjust the thresholds if needed.
   
-  ## DIRECT CHANGES OF NEW LEAGUE
-  - Introduced new currency-like items relating to ultimatum (scarabs, incubators, delirium orbs)
-  - Added the new catalyst type
-  - Adjusted the heist experimental bases and added new ones
-  - Adjusted the Ultimatum Aspect section
-  - Introduced a new section to match any Charm, Corpse and Tincture. I don't know if they drop, but they'll be highlighted.
-  - Added new divination cards
-  - Metamorph and Ancestor uniques are now world-drops - aspects have been adjusted
-  - Removed the low level heist-experimental bases that no longer drop
-  - Removed all alt-gem type sections
-  - Removed all sections for helmet, glove and boot enchants
-  - All items relating to enchanted item rewards (incubator, delirium orbs etc.) have been removed from tierlists
-  - All sections relating to metamorph item rewards (incubator, delirium, orbs etc) have been removed from tierlists
-  
-  ## INDIRECT CHANGES OF NEW LEAGUE
-  - Increased the highlight and decreased the strictness of all quality-gem rules
-  - Low quality gems are now highlighted up to and including Very Strict (1-13%). They now also have a higher textsize and come with a map icon (grey triangle, small) and a temporary grey beam.
-  - Mid quality gems are now highlighted up to and including Uber Strict (14-19%)
-  - Decreased the strictness of level 18-19 gems. I'm not sure if there is a practical use case for those in the lab/league, but I'd rather not risk those getting hidden too early.
-  - I will keep a close eye on the usefulness of the gems over the next week and will potentially increase their strictness depending on the GCP demand and supply
-  
-  ## NEW FEATURES
-  - Added the PURPLE style!
-  - Atlas memories now have a economy-based T1 tier. That means memories that cost more than ~55chaos will ding on drop! Other memories are still highlighted on all strictness.
-  - ~~Helmet enchantments now come with an experimental economy-based tierlist.~~ This feature has been canceled due to the removal of enchantments from the game.
-  - The unique tierlist now includes economy-based Sanctum Relics tiering.
-  - Reworked the six-link highlight. It now has 2 tiers. One for a bunch of handpicked higher tier, non-corrupted six-links of ILVL 75+ and one for the rest.
-  - Added a small rule to highlight bricked corrupted rare versions of ornate quivers, kalandra rings and other special unique-exclusive basetypes. You'll hate it when it happens. You're welcome
-  - As part of the structural upgrade to turn most class-combinations into variables and using exact matching, lots of sections have been modernized and updated.
-  
-  ### TIERING OVERHAUL:
-  - Completely revamped the tiering algorithm. It now uses a more standardized set of thresholds, instead of having individual thresholds per tierlist.
-  - The thresholds scale with the progression of the economy.
-  - The higher tier thresholds are:
-  - T1: 55c   (40c at league start)
-  - T2: 14.9c (10c at league start) - lower for uniques and currency
-  - T3: 4.9c  (3.1c at league start) - lower for uniques and currency
-  - Some exceptions apply: for instance awakened gems have 3x the T1 threshold, because finding a 100c awakened gem upon killing maven is much less exciting than fiding a 100c exceptional gem (such as empower).
-  - Added several new rules to unique and divination tiering, such as if all expensive versions of the unique are world drop ones and non-expensive ones are boss-drop ones, this unique is allowed to be added to T2. This currently only affects Hyrri's Ire (would've affected Rathpith Globe, a few weeks back)
-  - The 'aspect' (meta-information about individual items) system has been reworked and simplified. Meta-information (aspects) about uniques has been highly adjusted. High variety and uncommon uniques have been re-shuffled to be more accurate, multi-base tiering has been adjusted, lots of small and large improvements. Overall this should be much better now. Thanks to Melontoss for the help!
-  - Reworked the list of 'EarlyLeagueUniques'
-  - Divination card tiering and reward interpratation (system that calculates the price of the reward to check if the div-card price is pricefixed/off) has been vastly expanded
-  - Adjusted divination card tiering. Rasmuskl (poe.ninja author) has vastly improved the quality of the divination card economy data, so the divination card tiering is MUCH better now. Thanks Rasmuskl!
-  - Kaom's heart now has it's own section (marked as T2) since it can be detected by it's socketless-ness
-  - Added some experimental features to help early league tiering, such as cards that don't have value early on, limited-early league mode for certain currency (such as life catalysts) and more. I'll keep a close eye on those.
-  - 'Anchored' the gemcutter prisms into the annulment tier for now. I'm not sure if this is where they should live, but I'll keep an eye on it. I'll remove the pin after 2 days.
-  - Adjusted all rare, synthesised, chancing, crafting, fractured bases tiering based on the poll results during the filter release stream. Thank you twitch and twitter for your votes and support!
-  
-  ## IDENTIFIED ITEM HIGHLIGHT
-  - ID quivers: The engine is now better at seeking out good combinations.
-  - ID gloves, boots and helmets: ES variants require more solid ES rolls. Both life and es variants don't overvalue hybrid rolls anymore.
-  - ID rings: recoup is now valued as a valuable mod, T1 rarity prefix is valued as a solid mod. Increased the requirements for life and es rolls.
-  - ID amulets: T1 rarity prefix is valued as a solid mod.
-  - ID elemental weapons: Now consistently only use the following classes: bows, foils, wands, claws
-  - Added some additional abyss jewel mod combinations
-  - Added a new rule to detect daggers with multiple very high tier elemental attack mods and caster suffixes for the usage with the new blade blast
-  
-  ## LEVELING ADJUSTMENTS:
-  - The progressions for rare archer/melee weapons have been simplified and the level thresholds increased. They also now use Arealevel instead of itemlevel.
-  
-  ## MINOR CHANGES:
-  - Added a new rule that highlights all fractured items (indendent of base) for low strictnesses. This rule is disabled staring with strict and then the Tierlist applies.
-  - Added some low priority rules that highlight rares with RGB sockets.
-  - Added new optional sections to easily disable corrupted and mirrored (magic) maps
-  
-  ## MISC AND ARCHITECTURE CHANGES:
-  - The identified rule is now placed much higher in the internal sorting of conditions. This is a performance optimization and should have no effectr on the actual filtering.
-  - Replaced most class checks with exact matching (==), standardized the class checks to use specific variable sets. This should have a positive impact on performance and quality of potential updates.
-  - Added un-corrupted and un-mirrored requirements to veiled items and some other cases
-  - High level incubator exceptions are now disabled instead of hidden on high strictnesses.
-  - Removed the sentinel code and sections once again (after the event)
-  - Dozens of other small changes
-  
-  ## DELAYED (will be part of next update):
-  - [TODO] Add solution for RGB/Endgame rare compatibility
-  - [TODO] Flask progression now has more priority than quality flasks during leveling. Added a new decorator to highlight quality-progression flasks.
+  ## CHANGES
+  - All tiers have been adjusted to the current economy
+  - Added Valdo's Puzzle Box to T1 (were never hidden, but now have appropriate tiers, instead of 'pink unknown item color')
+  - Added tiering to new uniques/divination cards (were never hidden, but now have appropriate tiers, instead of 'pink unknown item color')
+  - Disabled the random 28%+ quality rule by default (except for flasks) as it no longer holds any real value
   
   ------
 

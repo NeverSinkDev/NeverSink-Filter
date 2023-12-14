@@ -6,6 +6,19 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.13.1** - Affliction League
+----------------------------------
+
+## SHORT OVERVIEW
+Valdo's Puzzle Box is now part of the T1 tier. Affects both stable and economy. This is the stable version for this league, unless something major will need changes. All of the tiering and thresholds adjustments have been highly succesful. I found the tiering this league to be very accurate and I hope you did too. I'll be keeping a close eye on the economy and will adjust the thresholds if needed.
+
+## CHANGES
+- All tiers have been adjusted to the current economy
+- Added Valdo's Puzzle Box to T1 (were never hidden, but now have appropriate tiers, instead of 'pink unknown item color')
+- Added tiering to new uniques/divination cards (were never hidden, but now have appropriate tiers, instead of 'pink unknown item color')
+- Disabled the random 28%+ quality rule by default (except for flasks) as it no longer holds any real value
+
+----------------------------------
 # **VERSION 8.13.0** - Affliction League
 ----------------------------------
 
