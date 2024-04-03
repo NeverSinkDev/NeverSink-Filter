@@ -6,6 +6,23 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.14.2** - Necropolis Revamp Update
+----------------------------------
+
+Integrated the new allflames, retiered everything! Allflames are *not* economy tiered (yet), since everything has been revamped.
+
+## NECROPOLIS CHANGES:
+
+- Added new allflames
+- Moved frogs and meatsacks to T2
+- Added a leveling rule for allflames
+
+## TIERING CHANGES:
+
+- All tierlists have been adjusted:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas, Omen, Tattoos and Gems.
+
+----------------------------------
 # **VERSION 8.14.1** - Economy Update
 ----------------------------------
 
