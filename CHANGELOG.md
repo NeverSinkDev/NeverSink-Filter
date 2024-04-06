@@ -6,6 +6,23 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.14.3** - Necropolis Finetuning
+----------------------------------
+
+This version focuses on improving the tiering of allflames and polishing. It affects stable as well, but only the allflame tiering is changed!
+
+## NECROPOLIS CHANGES:
+
+- Reviewed the tiering of allflames
+
+## MISC CHANGES AND BUG FIXES:
+
+- The new corrupted jewel section now correctly highlights all magic 1-corrupted-mod jewels.
+- Added the flask class to high level life/mana flasks to prevent some niche bugs on filterblade
+- Added deicide mask to the T1 perfection based items. 
+- Added full dragonscale to the T1 perfection based items
+
+----------------------------------
 # **VERSION 8.14.2** - Necropolis Revamp Update
 ----------------------------------
 

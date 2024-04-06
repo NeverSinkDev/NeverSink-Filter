@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.14.2
+# VERSION:  8.14.3
 # TYPE:     1-REGULAR
 # STYLE:    CRIMSON
 # AUTHOR:   NeverSink
@@ -2877,7 +2877,7 @@ Show # %D4 $type->crafting->perfectarmours $tier->t1
 	BaseDefencePercentile >= 99
 	Rarity Normal Magic Rare
 	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-	BaseType == "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Boots" "Crusader Gloves" "Dragonscale Boots" "Dragonscale Gauntlets" "Glorious Plate" "Hubris Circlet" "Lacquered Buckler" "Lion Pelt" "Murder Boots" "Murder Mitts" "Pig-Faced Bascinet" "Praetor Crown" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Supreme Spiked Shield" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Triumphant Lamellar" "Vaal Mask" "Vaal Regalia" "Zodiac Leather"
+	BaseType == "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Dragonscale Boots" "Dragonscale Gauntlets" "Full Dragonscale" "Glorious Plate" "Hubris Circlet" "Lacquered Buckler" "Lion Pelt" "Murder Boots" "Murder Mitts" "Pig-Faced Bascinet" "Praetor Crown" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Supreme Spiked Shield" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
 	SetFontSize 45
 	SetTextColor 255 140 0 255
 	SetBorderColor 176 0 198 255
@@ -2892,7 +2892,7 @@ Show # %D4 $type->crafting->perfectarmours $tier->t1
 #	BaseDefencePercentile >= 99
 #	Rarity Normal Magic Rare
 #	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-#	BaseType == "Apothecary's Gloves" "Archon Kite Shield" "Astral Plate" "Bone Helmet" "Carnal Armour" "Deicide Mask" "Eternal Burgonet" "Fingerless Silk Gloves" "Fugitive Boots" "Gripped Gloves" "Nightmare Bascinet" "Saint's Hauberk" "Spiked Gloves" "Two-Toned Boots"
+#	BaseType == "Apothecary's Gloves" "Archon Kite Shield" "Astral Plate" "Bone Helmet" "Carnal Armour" "Eternal Burgonet" "Fingerless Silk Gloves" "Fugitive Boots" "Gripped Gloves" "Nightmare Bascinet" "Saint's Hauberk" "Spiked Gloves" "Two-Toned Boots" "Vaal Mask"
 #	SetFontSize 45
 #	SetTextColor 255 140 0 255
 #	SetBorderColor 176 0 198 255
@@ -3379,6 +3379,7 @@ Show # %D3 $type->endgameflasks $tier->lifemana82
 	Quality >= 10
 	ItemLevel >= 82
 	Rarity Normal Magic
+	Class == "Life Flasks" "Mana Flasks"
 	BaseType == "Divine Life Flask" "Divine Mana Flask" "Eternal Life Flask" "Eternal Mana Flask" "Hallowed Hybrid Flask"
 	AreaLevel >= 68
 	SetFontSize 40
@@ -4155,7 +4156,6 @@ Hide # $type->hidelayer $tier->raresendgame
 
 Show # %D4 $type->jewels->special $tier->1modcorrupted
 	Corrupted True
-	Identified True
 	CorruptedMods >= 1
 	Rarity Rare
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel" "Viridian Jewel"
@@ -4169,8 +4169,6 @@ Show # %D4 $type->jewels->special $tier->1modcorrupted
 	MinimapIcon 2 Blue Diamond
 
 Show # %D4 $type->jewels->special $tier->1moduncorrupted
-	Mirrored False
-	Corrupted False
 	Identified True
 	Rarity Normal Magic Rare
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
@@ -4183,7 +4181,6 @@ Show # %D4 $type->jewels->special $tier->1moduncorrupted
 
 Show # %D3 $type->jewels->special $tier->any
 	Corrupted True
-	Identified True
 	CorruptedMods >= 1
 	Rarity Magic
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
@@ -8556,7 +8553,7 @@ Show # $type->necropolis $tier->leveling
 
 Show # $type->necropolis $tier->t2
 	Class == "Embers of the Allflame"
-	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Meatsacks" "Flaring Allflame Ember of Abyss" "Flaring Allflame Ember of Breachlords" "Flaring Allflame Ember of Kalguurans" "Flaring Allflame Ember of Scientists" "Flaring Allflame Ember of The First Ones" "Flaring Allflame Ember of the Vaal" "Flaring Allflame Ember of Wildwood Cultists"
+	BaseType == "Allflame Ember of Anarchy" "Allflame Ember of Manifested Wealth" "Flaring Allflame Ember of Breachlords" "Flaring Allflame Ember of Kalguurans" "Flaring Allflame Ember of Scientists" "Flaring Allflame Ember of The First Ones" "Flaring Allflame Ember of the Vaal"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -8567,7 +8564,7 @@ Show # $type->necropolis $tier->t2
 
 Show # $type->necropolis $tier->t3
 	Class == "Embers of the Allflame"
-	BaseType == "Allflame Ember of Abyss" "Allflame Ember of Anarchy" "Allflame Ember of Arohongui" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Beidat" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Chayula" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of Esh" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Ghorr" "Allflame Ember of Hinekora" "Allflame Ember of Kitava" "Allflame Ember of K'tash" "Allflame Ember of Manifested Wealth" "Allflame Ember of Ngamahu" "Allflame Ember of Ramako" "Allflame Ember of Rats" "Allflame Ember of Rongokurai" "Allflame Ember of Sulphite" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Syndicate Guards" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Synthetic Fury" "Allflame Ember of Tasalio" "Allflame Ember of Tawhoa" "Allflame Ember of The Black Scythe" "Allflame Ember of The Broken Circle" "Allflame Ember of The Crusader" "Allflame Ember of The Elder" "Allflame Ember of The Eternal Legion" "Allflame Ember of the False God" "Allflame Ember of The Hunter" "Allflame Ember of The Karui Legion" "Allflame Ember of The Knights of the Sun" "Allflame Ember of The Maraketh Legion" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Redeemer" "Allflame Ember of The Shaper" "Allflame Ember of The Templar Legion" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Warlord" "Allflame Ember of Trial Cores" "Allflame Ember of Trial Guards" "Allflame Ember of Tukohama" "Allflame Ember of Tul" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Uul-Netol" "Allflame Ember of Valako" "Allflame Ember of Wildwood Beasts" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Wildwood Treants" "Allflame Ember of Xoph"
+	BaseType == "Allflame Ember of Chayula" "Allflame Ember of Frogs" "Allflame Ember of Meatsacks" "Allflame Ember of Rats" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Syndicate Guards" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Synthetic Fury" "Allflame Ember of The Knights of the Sun" "Allflame Ember of Trial Cores" "Allflame Ember of Trial Guards" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Flaring Allflame Ember of Abyss" "Flaring Allflame Ember of Wildwood Cultists"
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -8576,15 +8573,16 @@ Show # $type->necropolis $tier->t3
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Cross
 
-#Show # $type->necropolis $tier->t4
-#	Class == "Embers of the Allflame"
-#	SetFontSize 45
-#	SetTextColor 144 0 113 255
-#	SetBorderColor 144 0 113 255
-#	SetBackgroundColor 20 20 0 255
-#	PlayAlertSound 2 300
-#	PlayEffect White
-#	MinimapIcon 2 White Cross
+Show # $type->necropolis $tier->t4
+	Class == "Embers of the Allflame"
+	BaseType == "Allflame Ember of Abyss" "Allflame Ember of Arohongui" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Beidat" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of Esh" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Ghorr" "Allflame Ember of Hinekora" "Allflame Ember of Kitava" "Allflame Ember of K'tash" "Allflame Ember of Ngamahu" "Allflame Ember of Ramako" "Allflame Ember of Rongokurai" "Allflame Ember of Sulphite" "Allflame Ember of Tasalio" "Allflame Ember of Tawhoa" "Allflame Ember of The Black Scythe" "Allflame Ember of The Broken Circle" "Allflame Ember of The Crusader" "Allflame Ember of The Elder" "Allflame Ember of The Eternal Legion" "Allflame Ember of the False God" "Allflame Ember of The Hunter" "Allflame Ember of The Karui Legion" "Allflame Ember of The Maraketh Legion" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Redeemer" "Allflame Ember of The Shaper" "Allflame Ember of The Templar Legion" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Warlord" "Allflame Ember of Tukohama" "Allflame Ember of Tul" "Allflame Ember of Uul-Netol" "Allflame Ember of Valako" "Allflame Ember of Wildwood Beasts" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Wildwood Treants" "Allflame Ember of Xoph"
+	SetFontSize 45
+	SetTextColor 144 0 113 255
+	SetBorderColor 144 0 113 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Cross
 
 Show # $type->necropolis $tier->restex
 	Class == "Embers of the Allflame"
