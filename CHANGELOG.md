@@ -6,6 +6,16 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.14.3a** - Tattoos and finetuning
+----------------------------------
+
+This version focuses on improving the tiering of allflames and polishing. It does not affect stable.
+
+## SHORT OVERVIEW:
+
+Tattoo tiering has been fixed and cleaned. I've also improved tiering for a lot of niche scenarios (looking at your Cloak of Tawm'r Isley pricefixers).
+
+----------------------------------
 # **VERSION 8.14.3** - Necropolis Finetuning
 ----------------------------------
 
