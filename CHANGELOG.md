@@ -5,6 +5,84 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
+## SHORT OVERVIEW:
+
+----------------------------------
+# **VERSION 8.15.0** - Settlers of Kalgur
+----------------------------------
+
+## NEW ITEMS:
+- Added prismatic oil (to the oil tierlist), maven's chisels, reflective mist (to the general currency),An Audience With The King (fragment)
+- Added new divination cards and reintroduced some old ones.
+- Added a rune tierlist
+- Added a corpse tierlist (wow...)
+- Renamed a ton of items according to the patch notes.
+
+## RARE, CRAFTING, NEW BASES QUALITY:
+
+- Added a new section (currently included "Riveted Boots" "Steel Kite Shield") for high prospect omen of chancing targets. This section requires 29 quality or higher for items to get highlighted
+- Entirely reworked the previous 'perfection' section:
+    - Added 15 new rules to detect the best available shields, gloves, helmets, armors and boots (3x each) with optimal item levels (85-86) and high quality. The top rule also requires defense perfection level
+    - Added 4 new rules to detect ilvl83+ weapons with 24+ and 29+ quality
+- Due to the new basetypes introduced, quality changes and other adjustments I'm completely reworking the way rares and crafting bases are treated in the filter.
+    - New endgame bases have been added into T1
+    - Rare gear T1,T2,T3,T4 are now each 1 rule and not multiple rules as it was before
+    - The rare section has been completely retiered
+    - Added a new decorator that adds a special border to the current (itemlevel based) best bases (from those added in 3.25)
+    - Added 4 new rules that are only active on higher strictnesses. These will hide the lower layers of armor-class drops as you progress further into the endgame.
+    - Very Strict will hide ALL non-remarkable non-jewellery (fractured, 6l, 6s...) rares in alvl82 and higher areas except for bases with droplevel of 75 and higher. Note that this will also hide weapons.
+    - Rare armours are now hidden on uber strict instead of very strict
+- Changed the tiering of Whetstones and Armorers (both consistently a tier higher), due to higher usefulness and expected rarity
+- Changed stacked armorer scrap tier appearance during the campaign
+- High level, high quality magic corrupted flasks have an improved appearance now
+- Adjusted the tiering of endgame crafting bases
+
+## TINCTURES:
+- These rules are HIGHLY temporary and will be adjusted once we know more about the rarity, mods and usefulness of tinctures
+- Added a tincture leveling rule (it will highlight any tincture that drops while leveling)
+- Added a tincture endgame rule: highly any tincture of quality 26%+
+- Added a tincture endgame rule: highly any tincture of itemlevel 82+
+- Added a tincture endgame rule: highly any tincture (disabled on uber strict)
+
+## GOLD:
+- Added several new rules to highlight gold depending on stack size
+- Since gold is autpickup and doesn't take inventory slots, it's color, font size etc is designed to be more subtle
+
+## TIERING ADJUSTMENTS:
+- Scarabs, fragments and similar items now have a slightly different color style to support larger tierlists.
+- Scarabs now have 6 tiers instead of 4. Rebalanced the tiering of scarabs.
+- Rebalanced the apperance and strictness of essences. 
+- Oils now have 5 tiers instead of 4.
+- Stacked Divination Card: Added a new rule for stacked divination card tiering
+- Adjusted the tiering of Augmentation Orbs
+- Lowest tier of fragments (usually only affectes sacrifice fragments) are now hidden on uber-strict
+- Made stacked sacrifice fragment tiering more strict
+- Increased the S-tier threshold for the Sacred Orb to be 1.5x higher.
+
+## MAP ADJUSTMENTS:
+- Added a special rule to highlight 8-mod corrupted maps
+- The Vaal Temple Map now has dedicated rule.
+- Resorted the order of map rules
+- Maps with any implicit and maps with 1 corrupted modifier rules are now disabled by default (they wil be shown if the map tier is shown)
+- Added a decorator to highlight with any implicit and maps with 1 corrupted modifier (special border)
+
+## MISC CHANGES:
+- Added 2 new leveling rules for dedicated highlight for the following orbs: "Chromatic Orb" "Orb of Chance" "Orb of Alteration" "Blacksmith's Whetstone"
+- Added a dedicated rule for stygian vise and stygian vise ilvl 86
+- Split the rare weapon melee rules into 1h and 2h. 1h melee items have a yellow-orange-brown highlight (not super happy with the color), while 2h melee uses the old red one.
+- Removed extractable ring annointments for gold oils and silver oils (as oil extractor has been removed)
+- Added the new prefix-shield-block mods into the identified item tiering system
+- Changed the campaign general-crafting rule from act3 start to act2 start.
+- The rule that checks if the item is fractured AND veiled now checks for incursion mods as well.
+- Chisel recipe now only accepts gavels.
+- Unique non-corrupted jewels now have a diffrent map icon color
+- Removed a lot of old and outdated bases
+- Added prismatic ring to the list of synthesised unique exceptions 
+- The 'all other' cluster jewel rule is set to hidden instead of disabled on higher strictnesses now
+- Deleted a lot of old bases
+- Adjusted +1 recipe gems
+- A lot of smaller structure changes
+
 ----------------------------------
 # **VERSION 8.14.4** - New Scarabs
 ----------------------------------
