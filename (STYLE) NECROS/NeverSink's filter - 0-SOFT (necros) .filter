@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.0
+# VERSION:  8.15.0b
 # TYPE:     0-SOFT
 # STYLE:    NECROS
 # AUTHOR:   NeverSink
@@ -3116,7 +3116,7 @@ Show # %D5 $type->crafting->qualityperfection $tier->weapont1q1
 	Corrupted False
 	Quality >= 29
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3130,7 +3130,7 @@ Show # %D4 $type->crafting->qualityperfection $tier->weapont2q1
 	Corrupted False
 	Quality >= 29
 	ItemLevel >= 83
-	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Coronal Maul" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Fleshripper" "Grove Bow" "Harbinger Bow" "Jewelled Foil" "Judgement Staff" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Piledriver" "Runic Hatchet" "Spiraled Foil" "Vaal Axe"
+	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Coronal Maul" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Fleshripper" "Grove Bow" "Harbinger Bow" "Jewelled Foil" "Judgement Staff" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Piledriver" "Royal Axe" "Runic Hatchet" "Spiraled Foil" "Vaal Axe"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3144,7 +3144,7 @@ Show # %D4 $type->crafting->qualityperfection $tier->weapont1q2
 	Corrupted False
 	Quality >= 24
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3158,7 +3158,7 @@ Show # %D3 $type->crafting->qualityperfection $tier->weapont2q2
 	Corrupted False
 	Quality >= 24
 	ItemLevel >= 83
-	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Coronal Maul" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Fleshripper" "Grove Bow" "Harbinger Bow" "Jewelled Foil" "Judgement Staff" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Piledriver" "Runic Hatchet" "Spiraled Foil" "Vaal Axe"
+	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Coronal Maul" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Fleshripper" "Grove Bow" "Harbinger Bow" "Jewelled Foil" "Judgement Staff" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Piledriver" "Royal Axe" "Runic Hatchet" "Spiraled Foil" "Vaal Axe"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3994,14 +3994,14 @@ Hide # $type->hidelayer $tier->normalmagicendgame
 #	SetBorderColor 250 0 0 255
 #	Continue
 
-Show # $type->rare->utility->droppeditems $tier->any
-	Identified True
-	ItemLevel >= 4
-	Rarity Rare
-	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
-	AreaLevel 1
-	SetFontSize 45
-	SetBorderColor 0 0 0
+#Show # $type->rare->utility->droppeditems $tier->any
+#	Identified True
+#	ItemLevel >= 4
+#	Rarity Rare
+#	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+#	AreaLevel 1
+#	SetFontSize 45
+#	SetBorderColor 0 0 0
 
 #===============================================================================================================
 # [[1900]] Endgame - Rare - Exotic Corrupted Items
