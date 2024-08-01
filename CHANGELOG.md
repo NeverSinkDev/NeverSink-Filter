@@ -6,6 +6,14 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.15.1a** - Overquality Level Reduction
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Reduced the itemlevel requirement of all overquality bases to be 84 instead of the optimal level (84-86). This is done because the itemlevel can be then increased using recombination techniques to achieve the optimal level.
+
+----------------------------------
 # **VERSION 8.15.1** - Settlers Economy Update
 ----------------------------------
 
