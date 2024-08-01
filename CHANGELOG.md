@@ -6,12 +6,27 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
-# **VERSION 8.15.0a** - Hotfix1
+# **VERSION 8.15.1** - Settlers Economy Update
 ----------------------------------
 
 ## SHORT OVERVIEW:
 
-- Added Reaper Axe to the Overquality tierlist
+Tiered all the new uniques, economy findings and discoveries. Unless more things will be added, this will be the stable version for the rest of the league (economy based verisons will of course continue receiving updates). On top of that tinctures and gold received better integration.
+
+## TIERING
+- All tierlists have been adjusted:
+    - This currently includes the following tierlists: Uniques, Divination Cards, Fragments (incl. splinters), Currency (incl. stacked currency and shards), Scarabs, Unique Maps, Fossils, Incubators, Oils, Vials, Delirium Orbs, Influenced Items, Expensive Atlas Bases, Cluster Jewels, Breachstones, Replicas, Omen, Tattoos and Gems.
+    - Added all unique tinctures to uniques T3. These are not yet economy tiered.
+
+## OTHER CHANGES:
+- Removed the 1-useful mod requirement from the corrupted-rare standard-jewel section, because they now mostly drop unidentified.
+- Added a tiny map icon to all gold drops
+- Increased fontsize of T5 and T6 tier scarabs
+- Stacked Scarab rule now correctly matches T4+T5+T6 rules
+- Glassblower recipe rules now also look for quality tincutres
+- Improved the tincture leveling rule by scoping on itemlevel
+- Pinnacle and Collossal tower shields are now both T1 in the rare armor tierlist
+- Fixed high level tincture fontsize being off by 3
 
 ----------------------------------
 # **VERSION 8.15.0** - Settlers of Kalguur
