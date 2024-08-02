@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.1a
+# VERSION:  8.15.1b
 # TYPE:     4-VERY-STRICT
 # STYLE:    TABULA RASA
 # AUTHOR:   NeverSink
@@ -1448,10 +1448,12 @@ Show # %H6 $type->exotic->invitation $tier->t3
 #------------------------------------
 
 Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
+	Rarity Normal Magic Rare
 	Class == "Relics"
 	BaseType == "Candlestick Relic" "Censer Relic" "Coffer Relic" "Papyrus Relic" "Processional Relic" "Tome Relic" "Urn Relic"
 
 Show # $type->artefact->sanctifiedrelics $tier->anyrelic
+	Rarity Normal Magic Rare
 	Class == "Relics"
 
 #===============================================================================================================
@@ -1781,7 +1783,7 @@ Show # %D5 $type->crafting->qualityperfection $tier->weapont1q1
 	Corrupted False
 	Quality >= 29
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Sundering Axe" "Thicket Bow" "Void Sceptre"
 
 Show # %D4 $type->crafting->qualityperfection $tier->weapont2q1
 	Mirrored False
@@ -1795,7 +1797,7 @@ Show # %D4 $type->crafting->qualityperfection $tier->weapont1q2
 	Corrupted False
 	Quality >= 24
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Sundering Axe" "Thicket Bow" "Void Sceptre"
 
 #Show # %D3 $type->crafting->qualityperfection $tier->weapont2q2
 #	Mirrored False
@@ -2099,7 +2101,7 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 	Class == "Tinctures"
 	AreaLevel >= 68
 
-Show # %D6 $type->endgametinctures $tier->overqual2
+Show # %D5 $type->endgametinctures $tier->overqual2
 	Mirrored False
 	Corrupted False
 	Quality >= 21
@@ -2108,7 +2110,7 @@ Show # %D6 $type->endgametinctures $tier->overqual2
 	Class == "Tinctures"
 	AreaLevel >= 68
 
-Show # %D5 $type->endgametinctures $tier->tinc82
+Show # %D4 $type->endgametinctures $tier->tinc82
 	ItemLevel >= 82
 	Rarity Normal Magic
 	Class == "Tinctures"

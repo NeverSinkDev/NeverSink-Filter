@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.1a
+# VERSION:  8.15.1b
 # TYPE:     2-SEMI-STRICT
 # STYLE:    ELDER
 # AUTHOR:   NeverSink
@@ -2514,6 +2514,7 @@ Show # %H6 $type->exotic->invitation $tier->t3
 #------------------------------------
 
 Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
+	Rarity Normal Magic Rare
 	Class == "Relics"
 	BaseType == "Candlestick Relic" "Censer Relic" "Coffer Relic" "Papyrus Relic" "Processional Relic" "Tome Relic" "Urn Relic"
 	SetFontSize 40
@@ -2525,6 +2526,7 @@ Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
 	MinimapIcon 1 Blue Diamond
 
 Show # $type->artefact->sanctifiedrelics $tier->anyrelic
+	Rarity Normal Magic Rare
 	Class == "Relics"
 	SetFontSize 35
 	SetBorderColor 0 240 190 255
@@ -3108,7 +3110,7 @@ Show # %D5 $type->crafting->qualityperfection $tier->weapont1q1
 	Corrupted False
 	Quality >= 29
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Sundering Axe" "Thicket Bow" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3136,7 +3138,7 @@ Show # %D4 $type->crafting->qualityperfection $tier->weapont1q2
 	Corrupted False
 	Quality >= 24
 	ItemLevel >= 83
-	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Void Sceptre"
+	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Sundering Axe" "Thicket Bow" "Void Sceptre"
 	SetFontSize 40
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -3544,7 +3546,7 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
 
-Show # %D6 $type->endgametinctures $tier->overqual2
+Show # %D5 $type->endgametinctures $tier->overqual2
 	Mirrored False
 	Corrupted False
 	Quality >= 21
@@ -3560,7 +3562,7 @@ Show # %D6 $type->endgametinctures $tier->overqual2
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
 
-Show # %D5 $type->endgametinctures $tier->tinc82
+Show # %D4 $type->endgametinctures $tier->tinc82
 	ItemLevel >= 82
 	Rarity Normal Magic
 	Class == "Tinctures"

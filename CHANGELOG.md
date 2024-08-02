@@ -6,6 +6,15 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.15.1b** - Further Adjustments
+----------------------------------
+
+- Tinctures now have stricter filtering
+- Sundering axe has been moved to a higher tier in multiple tierlists
+- Reflecting Mist is now T1
+- Fixed currency tiering being weird around the alchemy tiering and vastly prefering to put items into either chaos or chrom tier.
+
+----------------------------------
 # **VERSION 8.15.1a** - Overquality Level Reduction
 ----------------------------------
 
