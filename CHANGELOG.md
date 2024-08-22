@@ -6,6 +6,12 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.15.2b** - Of Dust, Omen and Perfection
+----------------------------------
+
+Fixed Dust tierlist being broken and showing wrong items. Oops.
+
+----------------------------------
 # **VERSION 8.15.2a** - Of Dust, Omen and Perfection
 ----------------------------------
 
