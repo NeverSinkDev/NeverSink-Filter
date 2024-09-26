@@ -14,7 +14,7 @@ Feature highlights
 - Tiers every single unique, currency, divination card, fragment, scarab and 20+ other tierlists types based on the current meta and prices in the league economy
 - Marks noteworthy drops on the minimap and gives items beams and sounds.
 - Color-codes values and item types. Scroll down on *[filterblade.xyz](https://www.filterblade.xyz)* to learn the colorcoding.
-- Has safety checks to not accidently hide new and unknown items from new leagues
+- Has safety checks to not accidently hide new and unknown items from new leagues.
 - Detects rare and special item properties such as synthesised items
 - Highlights identified items with multiple good or exclusive mods.
 - Comes in 7 different strictnesses, each hiding more items. Start with **SEMI-STRICT** if you're new. Increase the strictness as you become faster, stronger and more experienced and feel like the clutter is slowing you down. [STRICTNESSOVERVIEW](https://filterblade.xyz?strictness=1)

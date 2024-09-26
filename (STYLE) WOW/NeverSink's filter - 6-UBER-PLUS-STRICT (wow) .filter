@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.2b
+# VERSION:  8.15.4
 # TYPE:     6-UBER-PLUS-STRICT
 # STYLE:    WOW
 # AUTHOR:   NeverSink
@@ -3043,19 +3043,19 @@ Show # %D6 $type->crafting->qualityperfection $tier->boots2
 	PlayEffect Blue
 	MinimapIcon 1 Blue Kite
 
-#Show # %D5 $type->crafting->qualityperfection $tier->shields2
-#	Mirrored False
-#	Corrupted False
-#	Quality >= 29
-#	ItemLevel >= 84
-#	Class == "Shields"
-#	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
-#	SetFontSize 40
-#	SetTextColor 30 235 0 255
-#	SetBorderColor 0 0 0 255
-#	SetBackgroundColor 20 20 0 255
-#	PlayEffect Green
-#	MinimapIcon 2 Green Kite
+Show # %D6 $type->crafting->qualityperfection $tier->shields2
+	Mirrored False
+	Corrupted False
+	Quality >= 29
+	ItemLevel >= 84
+	Class == "Shields"
+	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
+	SetFontSize 40
+	SetTextColor 30 235 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 20 20 0 255
+	PlayEffect Green
+	MinimapIcon 2 Green Kite
 
 Show # %D6 $type->crafting->qualityperfection $tier->gloves2
 	Mirrored False
@@ -3101,7 +3101,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D5 $type->crafting->qualityperfection $tier->boots3
+#Show # %D6 $type->crafting->qualityperfection $tier->boots3
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3117,7 +3117,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D4 $type->crafting->qualityperfection $tier->shields3
+#Show # %D6 $type->crafting->qualityperfection $tier->shields3
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3133,7 +3133,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D4 $type->crafting->qualityperfection $tier->gloves3
+#Show # %D6 $type->crafting->qualityperfection $tier->gloves3
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3149,7 +3149,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D4 $type->crafting->qualityperfection $tier->helmets3
+#Show # %D6 $type->crafting->qualityperfection $tier->helmets3
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3245,7 +3245,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D5 $type->crafting->qualityperfection $tier->weapont1q1
+#Show # %D6 $type->crafting->qualityperfection $tier->weapont1q1
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 29
@@ -3260,7 +3260,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D4 $type->crafting->qualityperfection $tier->weapont2q1
+#Show # %D6 $type->crafting->qualityperfection $tier->weapont2q1
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 29
@@ -3275,7 +3275,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D4 $type->crafting->qualityperfection $tier->weapont1q2
+#Show # %D6 $type->crafting->qualityperfection $tier->weapont1q2
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3290,7 +3290,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets2
 #	PlayEffect White
 #	MinimapIcon 2 White Kite
 
-#Show # %D3 $type->crafting->qualityperfection $tier->weapont2q2
+#Show # %D5 $type->crafting->qualityperfection $tier->weapont2q2
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 24
@@ -3855,21 +3855,34 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 	PlayEffect Orange
 	MinimapIcon 0 Orange Star
 
-#Show # %D5 $type->endgametinctures $tier->overqual2
-#	Mirrored False
-#	Corrupted False
-#	Quality >= 21
-#	ItemLevel >= 82
+Show # %D6 $type->endgametinctures $tier->overqual2
+	Mirrored False
+	Corrupted False
+	Quality >= 21
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Tinctures"
+	AreaLevel >= 68
+	SetFontSize 45
+	SetTextColor 163 53 238 255
+	SetBorderColor 163 53 238 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 1 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Star
+
+#Show # %D5 $type->endgametinctures $tier->tinc85
+#	ItemLevel >= 85
 #	Rarity Normal Magic
 #	Class == "Tinctures"
 #	AreaLevel >= 68
-#	SetFontSize 45
-#	SetTextColor 163 53 238 255
-#	SetBorderColor 163 53 238 255
+#	SetFontSize 40
+#	SetTextColor 0 112 221 255
+#	SetBorderColor 0 112 221 255
 #	SetBackgroundColor 20 20 0 255
-#	PlayAlertSound 1 300
-#	PlayEffect Purple
-#	MinimapIcon 1 Purple Star
+#	PlayAlertSound 2 300
+#	PlayEffect Blue
+#	MinimapIcon 1 Blue Kite
 
 #Show # %D4 $type->endgametinctures $tier->tinc82
 #	ItemLevel >= 82
@@ -3906,6 +3919,7 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 #	Quality >= 30
 #	Rarity Magic
 #	Class == "Utility Flasks"
+#	BaseType == "Amethyst Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Gold Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
 #	AreaLevel >= 68
 #	SetFontSize 45
 #	SetTextColor 163 53 238 255
@@ -3933,13 +3947,14 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 #	PlayEffect Orange
 #	MinimapIcon 0 Orange Star
 
-#Show # %D4 $type->endgameflasks $tier->overqualutil2
+#Show # %D6 $type->endgameflasks $tier->overqualutil2
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 21
 #	ItemLevel >= 82
 #	Rarity Normal Magic
 #	Class == "Utility Flasks"
+#	BaseType == "Amethyst Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Gold Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
 #	AreaLevel >= 68
 #	SetFontSize 40
 #	SetTextColor 0 112 221 255
@@ -3967,7 +3982,7 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 #	PlayEffect Purple
 #	MinimapIcon 1 Purple Star
 
-#Show # %D4 $type->endgameflasks $tier->overquallife2
+#Show # %D5 $type->endgameflasks $tier->overquallife2
 #	Mirrored False
 #	Corrupted False
 #	Quality >= 21
@@ -3992,6 +4007,7 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 #	ItemLevel >= 85
 #	Rarity Normal Magic
 #	Class == "Utility Flasks"
+#	BaseType == "Amethyst Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Gold Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
 #	AreaLevel >= 68
 #	SetFontSize 45
 #	SetTextColor 163 53 238 255
@@ -4002,12 +4018,13 @@ Show # %D6 $type->endgametinctures $tier->overqual1
 #	PlayEffect Purple
 #	MinimapIcon 1 Purple Star
 
-#Show # %D5 $type->endgameflasks $tier->utility84
+#Show # %D4 $type->endgameflasks $tier->utility84
 #	Mirrored False
 #	Corrupted False
 #	ItemLevel >= 84
 #	Rarity Normal Magic
 #	Class == "Utility Flasks"
+#	BaseType == "Amethyst Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Gold Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
 #	AreaLevel >= 68
 #	SetFontSize 40
 #	SetTextColor 0 112 221 255
@@ -6346,6 +6363,7 @@ Show # $type->gems-generic $tier->qt1
 #Show # %D4 $type->gems-generic $tier->qt4lvl
 #	Quality >= 1
 #	Class == "Skill Gems" "Support Gems"
+#	AreaLevel >= 2
 #	AreaLevel <= 67
 #	SetFontSize 40
 #	SetTextColor 30 235 0 255
@@ -6376,7 +6394,10 @@ Show # $type->gems-generic $tier->qt1
 # !! Waypoint c8.gems.low : "Gem Rules - First Zones, Leveling, Vaal"
 
 Show # $type->gems-generic $tier->firstzone
+	Quality 0
+	GemLevel 1
 	Class == "Skill Gems" "Support Gems"
+	BaseType == "Arcane Surge Support" "Burning Arrow" "Chance to Bleed Support" "Chance to Poison Support" "Double Strike" "Elemental Proliferation Support" "Fireball" "Glacial Hammer" "Heavy Strike" "Momentum Support" "Prismatic Burst Support" "Ruthless Support" "Spectral Throw" "Viper Strike"
 	AreaLevel 1
 	SetFontSize 40
 	SetTextColor 0 204 255 255
@@ -6389,6 +6410,7 @@ Show # $type->gems-generic $tier->firstzone
 Hide # %H4 $type->gems-generic $tier->levelingvaal
 	Class == "Skill Gems" "Support Gems"
 	BaseType "Vaal"
+	AreaLevel >= 2
 	AreaLevel <= 67
 	SetFontSize 40
 	SetTextColor 0 112 221 255
@@ -6397,6 +6419,7 @@ Hide # %H4 $type->gems-generic $tier->levelingvaal
 
 Hide # %H2 $type->gems-generic $tier->leveling
 	Class == "Skill Gems" "Support Gems"
+	AreaLevel >= 2
 	AreaLevel <= 67
 	SetFontSize 35
 	SetTextColor 235 235 235 255
@@ -8007,7 +8030,7 @@ Show # $type->currency $tier->t3annul
 
 Show # $type->currency $tier->t4chaos
 	Class == "Stackable Currency"
-	BaseType == "Abrasive Catalyst" "Accelerating Catalyst" "Blighted Scouting Report" "Burial Medallion" "Cartographer's Chisel" "Chaos Orb" "Comprehensive Scouting Report" "Delirious Scouting Report" "Engineer's Orb" "Exalted Shard" "Explorer's Scouting Report" "Gemcutter's Prism" "Glassblower's Bauble" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Harbinger's Orb" "Imbued Catalyst" "Intrinsic Catalyst" "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Maven's Chisel of Avarice" "Maven's Chisel of Divination" "Maven's Chisel of Procurement" "Noxious Catalyst" "Operative's Scouting Report" "Orb of Unmaking" "Primal Crystallised Lifeforce" "Ritual Splinter" "Scrap Metal" "Singular Scouting Report" "Stacked Deck" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Jeweller's Orb" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Vaal Scouting Report" "Veiled Scarab" "Vivid Crystallised Lifeforce" "Wild Crystallised Lifeforce"
+	BaseType == "Abrasive Catalyst" "Accelerating Catalyst" "Blighted Scouting Report" "Burial Medallion" "Cartographer's Chisel" "Chaos Orb" "Comprehensive Scouting Report" "Delirious Scouting Report" "Engineer's Orb" "Exalted Shard" "Gemcutter's Prism" "Glassblower's Bauble" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Harbinger's Orb" "Imbued Catalyst" "Intrinsic Catalyst" "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Maven's Chisel of Avarice" "Maven's Chisel of Divination" "Maven's Chisel of Procurement" "Noxious Catalyst" "Operative's Scouting Report" "Orb of Unmaking" "Primal Crystallised Lifeforce" "Ritual Splinter" "Scrap Metal" "Singular Scouting Report" "Stacked Deck" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Jeweller's Orb" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Veiled Scarab" "Vivid Crystallised Lifeforce" "Wild Crystallised Lifeforce"
 	SetFontSize 40
 	SetTextColor 0 112 221 255
 	SetBorderColor 0 112 221 255
@@ -8018,7 +8041,7 @@ Show # $type->currency $tier->t4chaos
 
 Hide # %HS4 $type->currency $tier->t5alchemy
 	Class == "Stackable Currency"
-	BaseType == "Ancient Shard" "Annulment Shard" "Astragali" "Bestiary Orb" "Blessed Orb" "Enkindling Orb" "Facetor's Lens" "Instilling Orb" "Orb of Alchemy" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb"
+	BaseType == "Ancient Shard" "Annulment Shard" "Astragali" "Bestiary Orb" "Blessed Orb" "Enkindling Orb" "Explorer's Scouting Report" "Facetor's Lens" "Instilling Orb" "Orb of Alchemy" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb" "Vaal Scouting Report"
 	SetFontSize 40
 	SetTextColor 0 112 221 255
 	SetBorderColor 0 112 221 255
@@ -9270,7 +9293,7 @@ Show # $type->uniques $tier->multispecialhigh
 
 #Show # $type->uniques $tier->exdust1
 #	Rarity Unique
-#	BaseType == "Arcanist Gloves" "Arcanist Slippers" "Clutching Talisman" "Crystal Belt" "Deerskin Gloves" "Deicide Mask" "Demon Dagger" "Diamond Ring" "Eternal Sword" "Ezomyte Dagger" "Fiend Dagger" "Glorious Plate" "Harlequin Mask" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Marble Amulet" "Mind Cage" "Omen Wand" "Ornate Quiver" "Prismatic Ring" "Rotfeather Talisman" "Sadist Garb" "Sage Wand" "Sinner Tricorne" "Sorcerer Boots" "Titanium Spirit Shield" "Two-Point Arrow Quiver" "Two-Toned Boots" "Vaal Gauntlets" "Wereclaw Talisman" "Widowsilk Robe"
+#	BaseType == "Arcanist Gloves" "Arcanist Slippers" "Clutching Talisman" "Crystal Belt" "Deerskin Gloves" "Deicide Mask" "Demon Dagger" "Diamond Ring" "Eternal Sword" "Ezomyte Dagger" "Fiend Dagger" "Glorious Plate" "Harlequin Mask" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Marble Amulet" "Mind Cage" "Omen Wand" "Ornate Quiver" "Prismatic Ring" "Rotfeather Talisman" "Sadist Garb" "Sinner Tricorne" "Sorcerer Boots" "Titanium Spirit Shield" "Two-Point Arrow Quiver" "Two-Toned Boots" "Vaal Gauntlets" "Wereclaw Talisman" "Widowsilk Robe"
 #	SetFontSize 45
 #	SetTextColor 163 53 238 255
 #	SetBorderColor 163 53 238 255
@@ -9598,7 +9621,7 @@ Show # $type->leveling->flasks->utility $tier->quicksilver
 	MinimapIcon 1 Purple Star
 
 Show # $type->leveling->flasks->utility $tier->asortedutility
-	BaseType == "Amethyst Flask" "Aquamarine Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
+	BaseType == "Amethyst Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Gold Flask" "Granite Flask" "Iron Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
 	SetFontSize 40
 	SetTextColor 0 112 221 255
 	SetBorderColor 0 112 221 255
@@ -10410,7 +10433,7 @@ Show # $type->leveling->flasks->mana $tier->t12
 #	SetBackgroundColor 20 20 0 110
 
 #Show # %D2 $type->leveling->rare->remaining $tier->underlevel42 class == "body armours" "gloves" "boots" "helmets" "shields" "staves" "rune daggers" "sceptres" "wands" "daggers" "claws" "thrusting one hand swords" "one hand swords" "one hand maces" "one hand axes" "warstaves" "two hand swords" "two hand axes" "two hand maces" "bows" "quivers" "amulets" "belts" "rings"
-#	ItemLevel <= 42
+#	ItemLevel <= 44
 #	Rarity Rare
 #	AreaLevel >= 24
 #	SetFontSize 35
@@ -10419,7 +10442,7 @@ Show # $type->leveling->flasks->mana $tier->t12
 #	SetBackgroundColor 20 20 0 110
 
 #Show # %D2 $type->leveling->rare->remaining $tier->underlevel24 class == "body armours" "gloves" "boots" "helmets" "shields" "staves" "rune daggers" "sceptres" "wands" "daggers" "claws" "thrusting one hand swords" "one hand swords" "one hand maces" "one hand axes" "warstaves" "two hand swords" "two hand axes" "two hand maces" "bows" "quivers" "amulets" "belts" "rings"
-#	ItemLevel <= 24
+#	ItemLevel <= 26
 #	Rarity Rare
 #	AreaLevel >= 16
 #	SetFontSize 35
@@ -10428,7 +10451,7 @@ Show # $type->leveling->flasks->mana $tier->t12
 #	SetBackgroundColor 20 20 0 110
 
 #Show # %D3 $type->leveling->rare->remaining $tier->underlevel16 class == "body armours" "gloves" "boots" "helmets" "shields" "staves" "rune daggers" "sceptres" "wands" "daggers" "claws" "thrusting one hand swords" "one hand swords" "one hand maces" "one hand axes" "warstaves" "two hand swords" "two hand axes" "two hand maces" "bows" "quivers" "amulets" "belts" "rings"
-#	ItemLevel <= 16
+#	ItemLevel <= 18
 #	Rarity Rare
 #	AreaLevel >= 1
 #	SetFontSize 35

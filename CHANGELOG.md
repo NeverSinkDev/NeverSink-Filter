@@ -6,6 +6,24 @@ Every 4 hours we generate a "economy-updated" version of the filter based on the
 The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
 
 ----------------------------------
+# **VERSION 8.15.4** - Kalguur League Finetuning
+----------------------------------
+
+## SHORT OVERVIEW:
+
+I wanted to address a large number of small issues and QOL improvements in this update.
+
+## NEW FEATURES
+- Leveling gem rules now require arealevel of 2+ in order to exclude them from popping up in kingsmarch inventories.
+- The rule for gems you receive at level 1, now requires the gems to have 0 quality and gem level 1. Additionally it requires the gem to be one of the active and support gems that can drop in twilight strand. This minimizes chances of them appearing in kingsmarch rewards.
+- Removed corrundum flask from most utility flask lists.
+- Normalized overquality rule treatment: pretty much any best basetype of 21%+ quality will not be hidden on any strictness now (tinctures, flasks, weapons, armors). This may show some items that are not worth much.
+- Reduced the tiering of scouting reports in the stable version. Economy based versions should be tiered based on the economy correctly already.
+- Added a new rule to highlight ILVL85 tinctures (disabled on uber-plus-strict)
+- Gave explorer scouting reports an extra bonk, since they were still overtiered
+- Increased the itemlevel offsets for generic rare items in the leveling section to prevent inconsistencies that could result in boss-drop rares being unintentionally hidden a few levels to early (this will likely receive a rework in the upcoming league). Thanks to CDR for pointing out the issue.
+
+----------------------------------
 # **VERSION 8.15.2c** - Of Dust, Omen and Perfection
 ----------------------------------
 
