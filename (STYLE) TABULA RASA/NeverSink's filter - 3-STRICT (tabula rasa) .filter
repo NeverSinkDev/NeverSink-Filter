@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.4
+# VERSION:  8.16.0
 # TYPE:     3-STRICT
 # STYLE:    TABULA RASA
 # AUTHOR:   NeverSink
@@ -38,7 +38,7 @@
 #------------------------------------
 # For feedback, questions and suggestions please join our discord!
 #
-# DISCORD: https://discord.gg/mye6xhF
+# DISCORD: https://discord.gg/zFEx92a
 # TWITTER: @NeverSinkDev
 # TWITCH:  https://www.twitch.tv/neversink
 # GITHUB:  NeverSinkDev
@@ -94,6 +94,7 @@
 #   [1004] Pieces
 #   [1005] Craftable Invitations
 #   [1006] Relics
+#   [1007] Relics
 # [[1100]] Exotic Item Variations
 #   [1101] Double Corruptions
 #   [1102] Specific Single Corruptions
@@ -243,7 +244,7 @@ Show # %D5 $type->6l $tier->others
 #===============================================================================================================
 
 Show # $type->gold $tier->stack3
-	StackSize >= 3000
+	StackSize >= 3001
 	BaseType == "Gold"
 
 Show # $type->gold $tier->stack2
@@ -1447,6 +1448,76 @@ Show # %H6 $type->exotic->invitation $tier->t3
 #   [1006] Relics
 #------------------------------------
 
+# 1x3 Idols
+
+Show # %H6 $type->event->idols $tier->minorrare
+	Rarity Rare
+	BaseType == "Minor Idol"
+
+Show # %H5 $type->event->idols $tier->minormagic
+	Rarity Magic
+	BaseType == "Minor Idol"
+
+# 1x2 Idols
+
+Show # %H6 $type->event->idols $tier->kamasanrare
+	Rarity Rare
+	BaseType == "Kamasan Idol"
+
+Show # %H5 $type->event->idols $tier->kamasanmagic
+	Rarity Magic
+	BaseType == "Kamasan Idol"
+
+# 1x3 Idols
+
+Show # %H6 $type->event->idols $tier->totemicrare
+	Rarity Rare
+	BaseType == "Totemic Idol"
+
+Show # %H5 $type->event->idols $tier->totemicmagic
+	Rarity Magic
+	BaseType == "Totemic Idol"
+
+# 2x1 Idols
+
+Show # %H6 $type->event->idols $tier->noblerare
+	Rarity Rare
+	BaseType == "Noble Idol"
+
+Show # %H5 $type->event->idols $tier->noblemagic
+	Rarity Magic
+	BaseType == "Noble Idol"
+
+# 3x1 Idols
+
+Show # %H6 $type->event->idols $tier->burialrare
+	Rarity Rare
+	BaseType == "Burial Idol"
+
+Show # %H5 $type->event->idols $tier->burialmagic
+	Rarity Magic
+	BaseType == "Burial Idol"
+
+# 2x2 Idols
+
+Show # %H6 $type->event->idols $tier->conquerorrare
+	Rarity Rare
+	BaseType == "Conqueror Idol"
+
+Show # %H5 $type->event->idols $tier->conquerormagic
+	Rarity Magic
+	BaseType == "Conqueror Idol"
+
+# These should not exist
+
+Show # $type->event->idols $tier->normalidols
+	Rarity Normal
+	Class == "Idols"
+
+#------------------------------------
+#   [1007] Relics
+#------------------------------------
+
 Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
 	Rarity Normal Magic Rare
 	Class == "Relics"
@@ -1658,7 +1729,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->body1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Body Armours"
 	BaseType == "Conquest Lamellar" "Necrotic Armour" "Royal Plate" "Sacred Chainmail" "Syndicate's Garb" "Twilight Regalia"
 
@@ -1667,7 +1737,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->boots1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Boots"
 	BaseType == "Leviathan Greaves" "Paladin Boots" "Phantom Boots" "Velour Boots" "Warlock Boots" "Wyvernscale Boots"
 
@@ -1676,7 +1745,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->shields1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Shields"
 	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
 
@@ -1685,7 +1753,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->gloves1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Gloves"
 	BaseType == "Leviathan Gauntlets" "Paladin Gloves" "Phantom Mitts" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets"
 
@@ -1694,7 +1761,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Helmets"
 	BaseType == "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Lich's Circlet" "Majestic Pelt" "Torturer's Mask"
 
@@ -1839,7 +1905,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->weapont1q2
 	ItemLevel >= 83
 	BaseType == "Battered Foil" "Convoking Wand" "Copper Kris" "Despot Axe" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Sundering Axe" "Thicket Bow" "Void Sceptre"
 
-Show # %D5 $type->crafting->qualityperfection $tier->weapont2q2
+Show # %D6 $type->crafting->qualityperfection $tier->weapont2q2
 	Mirrored False
 	Corrupted False
 	Quality >= 24
@@ -4824,6 +4890,10 @@ Show # $type->uniques $tier->t2
 #   [4203] Exceptions #2
 #------------------------------------
 
+Show # $type->uniques $tier->exuniqueidols
+	Rarity Unique
+	Class == "Idols"
+
 Show # $type->uniques $tier->2xcorrupteduniques
 	Corrupted True
 	CorruptedMods >= 2
@@ -5010,12 +5080,12 @@ Show # %D3 $type->leveling->flasks->quality $tier->max
 
 #Show # %D1 $type->leveling->flasks->quality $tier->high
 #	Quality >= 14
-#	Rarity Normal
+#	Rarity Normal Magic
 #	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
 
 #Show # %D0 $type->leveling->flasks->quality $tier->any
 #	Quality >= 1
-#	Rarity Normal
+#	Rarity Normal Magic
 #	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
 
 Show # $type->leveling->tincture $tier->any
@@ -5801,7 +5871,7 @@ Show # %H3 $type->leveling->magic->remaining $tier->firstlevels
 #------------------------------------
 
 Hide # $type->hidelayer $tier->final
-	Class "Amulets" "Belts" "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Heist Brooch" "Heist Cloak" "Heist Gear" "Heist Tool" "Helmets" "Jewel" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptre" "Sentinel Drone" "Shields" "Staves" "Tinctures" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wand" "Warstaves"
+	Class "Amulets" "Belts" "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Heist Brooch" "Heist Cloak" "Heist Gear" "Heist Tool" "Helmets" "Idols" "Jewel" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptre" "Shields" "Staves" "Tinctures" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wand" "Warstaves"
 
 #------------------------------------
 #   [4906] Show All unknown Section

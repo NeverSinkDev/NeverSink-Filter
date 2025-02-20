@@ -1,9 +1,30 @@
-# **CHANGELOG - NeverSink's Filter**
+# **CHANGELOG - NeverSink's Filter 2**
 ----------------------------------
 
-Every 4 hours we generate a "economy-updated" version of the filter based on the current meta and league economy. These filters are based on the latest version of the filter, but their "tiering" of currencies, uniques, cards (and ~25 other sections) are much more precise.
+PoE2 is currently in an early access. As the game changes and adjusts you can expect large changes in the filter as well. Please make sure to update frequently.
 
-The "economy-based" versions are available through [FilterBlade](www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).
+Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
+
+----------------------------------
+# **VERSION 8.16.0** - Legacy of Phrecia Support
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Idols dropping in the Legacy of Phrecia league have been added to the filter!
+
+## NEW FEATURES:
+- Added a rule for every of 6 idol types - Magic version
+- Added a rule for every of 6 idol types - Rare version
+- Added a rule for unique idols dropping
+- Added a safety rule for normal idols dropping. Just in case.
+
+## IMPORTANT TECHNICAL CHANGES:
+
+I've massively improved my filter-generation tooling, this enables some new capabilities!
+
+- I can now support even-specific filters: The legacy of phrecia - of Phrecia Event now has full economy support! FilterBlade will have 2 legacy of phrecia dedicated versions of the filter for the duration of the event. The stable filter supports both legacy/main league event gameplay.
+- Added a new system to create whitelist/blacklist tiers for individual items during a specific league state. This helps with making better and safer tiering decisions at the start of new leagues!
 
 ----------------------------------
 # **VERSION 8.15.4** - Kalguur League Finetuning

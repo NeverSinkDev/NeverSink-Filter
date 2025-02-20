@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.15.4
+# VERSION:  8.16.0
 # TYPE:     2-SEMI-STRICT
 # STYLE:    NECROS
 # AUTHOR:   NeverSink
@@ -38,7 +38,7 @@
 #------------------------------------
 # For feedback, questions and suggestions please join our discord!
 #
-# DISCORD: https://discord.gg/mye6xhF
+# DISCORD: https://discord.gg/zFEx92a
 # TWITTER: @NeverSinkDev
 # TWITCH:  https://www.twitch.tv/neversink
 # GITHUB:  NeverSinkDev
@@ -94,6 +94,7 @@
 #   [1004] Pieces
 #   [1005] Craftable Invitations
 #   [1006] Relics
+#   [1007] Relics
 # [[1100]] Exotic Item Variations
 #   [1101] Double Corruptions
 #   [1102] Specific Single Corruptions
@@ -257,7 +258,7 @@ Show # %D5 $type->6l $tier->others
 #===============================================================================================================
 
 Show # $type->gold $tier->stack3
-	StackSize >= 3000
+	StackSize >= 3001
 	BaseType == "Gold"
 	SetFontSize 45
 	SetTextColor 235 200 110 255
@@ -2520,6 +2521,167 @@ Show # %H6 $type->exotic->invitation $tier->t3
 #   [1006] Relics
 #------------------------------------
 
+# 1x3 Idols
+
+Show # %H6 $type->event->idols $tier->minorrare
+	Rarity Rare
+	BaseType == "Minor Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->minormagic
+	Rarity Magic
+	BaseType == "Minor Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# 1x2 Idols
+
+Show # %H6 $type->event->idols $tier->kamasanrare
+	Rarity Rare
+	BaseType == "Kamasan Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->kamasanmagic
+	Rarity Magic
+	BaseType == "Kamasan Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# 1x3 Idols
+
+Show # %H6 $type->event->idols $tier->totemicrare
+	Rarity Rare
+	BaseType == "Totemic Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->totemicmagic
+	Rarity Magic
+	BaseType == "Totemic Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# 2x1 Idols
+
+Show # %H6 $type->event->idols $tier->noblerare
+	Rarity Rare
+	BaseType == "Noble Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->noblemagic
+	Rarity Magic
+	BaseType == "Noble Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# 3x1 Idols
+
+Show # %H6 $type->event->idols $tier->burialrare
+	Rarity Rare
+	BaseType == "Burial Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->burialmagic
+	Rarity Magic
+	BaseType == "Burial Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# 2x2 Idols
+
+Show # %H6 $type->event->idols $tier->conquerorrare
+	Rarity Rare
+	BaseType == "Conqueror Idol"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 120 200 160 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Moon
+
+Show # %H5 $type->event->idols $tier->conquerormagic
+	Rarity Magic
+	BaseType == "Conqueror Idol"
+	SetFontSize 45
+	SetTextColor 120 200 160 255
+	SetBorderColor 120 200 160 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Moon
+
+# These should not exist
+
+Show # $type->event->idols $tier->normalidols
+	Rarity Normal
+	Class == "Idols"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
+
+#------------------------------------
+#   [1007] Relics
+#------------------------------------
+
 Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
 	Rarity Normal Magic Rare
 	Class == "Relics"
@@ -2887,7 +3049,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->body1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Body Armours"
 	BaseType == "Conquest Lamellar" "Necrotic Armour" "Royal Plate" "Sacred Chainmail" "Syndicate's Garb" "Twilight Regalia"
 	SetFontSize 45
@@ -2903,7 +3064,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->boots1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Boots"
 	BaseType == "Leviathan Greaves" "Paladin Boots" "Phantom Boots" "Velour Boots" "Warlock Boots" "Wyvernscale Boots"
 	SetFontSize 45
@@ -2919,7 +3079,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->shields1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Shields"
 	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
 	SetFontSize 45
@@ -2935,7 +3094,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->gloves1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Gloves"
 	BaseType == "Leviathan Gauntlets" "Paladin Gloves" "Phantom Mitts" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets"
 	SetFontSize 45
@@ -2951,7 +3109,6 @@ Show # %D6 $type->crafting->qualityperfection $tier->helmets1
 	Corrupted False
 	Quality >= 30
 	ItemLevel >= 84
-	BaseDefencePercentile >= 96
 	Class == "Helmets"
 	BaseType == "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Lich's Circlet" "Majestic Pelt" "Torturer's Mask"
 	SetFontSize 45
@@ -3229,7 +3386,7 @@ Show # %D6 $type->crafting->qualityperfection $tier->weapont1q2
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
 
-Show # %D5 $type->crafting->qualityperfection $tier->weapont2q2
+Show # %D6 $type->crafting->qualityperfection $tier->weapont2q2
 	Mirrored False
 	Corrupted False
 	Quality >= 24
@@ -8858,6 +9015,17 @@ Show # $type->uniques $tier->t2
 #   [4203] Exceptions #2
 #------------------------------------
 
+Show # $type->uniques $tier->exuniqueidols
+	Rarity Unique
+	Class == "Idols"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 169 46 0 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star
+
 Show # $type->uniques $tier->2xcorrupteduniques
 	Corrupted True
 	CorruptedMods >= 2
@@ -9277,7 +9445,7 @@ Show # %D3 $type->leveling->flasks->quality $tier->max
 
 #Show # %D1 $type->leveling->flasks->quality $tier->high
 #	Quality >= 14
-#	Rarity Normal
+#	Rarity Normal Magic
 #	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
 #	SetFontSize 40
 #	SetTextColor 200 200 200 200
@@ -9286,7 +9454,7 @@ Show # %D3 $type->leveling->flasks->quality $tier->max
 
 #Show # %D0 $type->leveling->flasks->quality $tier->any
 #	Quality >= 1
-#	Rarity Normal
+#	Rarity Normal Magic
 #	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
 #	SetFontSize 35
 #	SetTextColor 200 200 200 200
@@ -10417,7 +10585,7 @@ Show # %H3 $type->leveling->magic->remaining $tier->firstlevels
 #------------------------------------
 
 Hide # $type->hidelayer $tier->final
-	Class "Amulets" "Belts" "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Heist Brooch" "Heist Cloak" "Heist Gear" "Heist Tool" "Helmets" "Jewel" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptre" "Sentinel Drone" "Shields" "Staves" "Tinctures" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wand" "Warstaves"
+	Class "Amulets" "Belts" "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Heist Brooch" "Heist Cloak" "Heist Gear" "Heist Tool" "Helmets" "Idols" "Jewel" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptre" "Shields" "Staves" "Tinctures" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wand" "Warstaves"
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 20 20 0 0
