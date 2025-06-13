@@ -1,9 +1,134 @@
-# **CHANGELOG - NeverSink's Filter 2**
+# **CHANGELOG - NeverSink's Filter**
 ----------------------------------
 
 PoE2 is currently in an early access. As the game changes and adjusts you can expect large changes in the filter as well. Please make sure to update frequently.
 
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
+
+----------------------------------
+# **VERSION 8.17.0** - Secrets of the Atlas
+----------------------------------
+
+This is a huge updated, involving massive changes for 'Secrets of the Atlas', identified tiering, rares, influenced bases, general economy based tiering and a lot of other changes! Good luck in the new league! Also a new style!
+
+## HIGH LEVEL OVERVIEW OF CHANGES:
+
+- Added a new style: COBALT. It's a gradient of blue, purple and red hues, with strong white texts, smaller and strongly standardized fontsizes and a lot of finetuning. Visually I think it's a stunning and very satisfying style to play with! This style has been designed for the filter's 10th birthday!
+- Retiered EVERYTHING. Rares, uniques, divination cards, scarabs etc.
+- Use a new set of 'safeguards' to improve early league tiering, while still considering economy (think of items being 'attracted' to certain tiers at the start of the league until eco-data is available)
+- Added a new tier of uniques specifically designed for mercenary item highlight! Useful items (that don't carry much value otherwise) for your mercenaries will be highlighted by the unique tiering now!
+- Most T5 and T3 scarabs have been put into T4 tier until the economy and meta is settled
+- Added a lot of changes specifically for mercenary league and secrets of the atlas
+- Overhauled rares (details below)
+- Overhauled crafting bases, veiled items, overquality items (details below)
+- Overhauled influenced bases (details below)
+
+## RETIERING
+
+- Retiered all currencies, uniques, scarabs, fragments, divination cards etc. using previous economy snapshots and carefully constructed safeguards.
+- Adjusted tiering to represent mercenary equipment needs! Special thanks to Mellontoss & the filterblade team for helping with the aspect/tiering work!
+
+## MEMORY STRAND GEAR
+
+Memory strand tiering currently considers 2 factors: the basetype and the number of memory strands (itemlevel can be specified optionally). Memory-strand gear has significantly better rolls upon identifying (scaling with number of strands) and consumes strands to enhance crafting operations. 
+
+The current implementation has 4 tiers, each with a 'high' (60+) and a 'low' number of strands (anything else) subtiers. It comes with a basetype matrix and reuses the combined crafting/rare tiering. It's likely worth identifying most stranded items as they roll significantly better, but likely only the good basetype are worth crafting on. Don't forget that you can (likely) chaos,  essence or scour-alch these bases to reroll them with better outcomes. You can expect a lot of changes and retiering to this system as we learn more about it.
+
+The structure is built in a way that it can be adjusted quickly, so the visual differences and strictness config is currently minimal.
+
+Additionally I added 2 extra rules to always highlight any stranded items that are veiled or fractured as I suspect those should be droppable.
+
+## REWORKED RARE / VEILED / CRAFTING TIERING
+
+As PoE changes, the filter needs to adjust. Normal rares lose most of their use after the first days and even high level crafting bases are rarely the bases you craft on nowdays (usually this is done via fractured, overquality, synthesised, influence items and stranded items in the next league specifically). I'm extensively reworking the rare/crafting tiering to reflect this state.
+
+Rare tiering have been reworked and comes with and extra tier.
+- T1 are 'exceptional rares'. These are the best atlas basetypes, such as the top armors added in 3.25.
+- T2, T3, T4 and T5 correspond to the previous tiers - 1
+- Removed the orange regal highlight (75+) from rares. Instead the orange highlight is now used when the rare can roll the best mods. You can find a table below that shows how this level is determined.
+
+Veiled items have been reworked in this patch. The filter adresses the new veiled items by a mix of 3 approaches.
+- 1. Veiled items have been more tightly integrated into the identified mod rules to detect worthwhile candidates
+- 2. A list of lucrative member specific veiled mods (such as Elreon) still exists, because unveiled mods are inherently stronger than crafted ones
+- 3. There's a veiled items tierlist that reuses the top tiers from the rare tiering to highlight other potentially interesting unveils. It has separate visibility/strictness controls, but shares the same tiering as the rare tiering. That being said, these items become hidden fairly quickly because the approaches 1 and 2 are better at finding interesting veiled items in a high pace gameplay.
+
+Crafting bases have been reworked from the ground up.
+They now have less priority than rares and focus on highlighting the very best bases in a class with the optimal itemlevel.
+You can find the table used for base distribution below. Crafting bases come in 3 tiers (exclusive-bases, top-bases, niche-bases)
+
+Their highlight has been also vastly reduced.
+
+You can find the class/level distribution below
+- ItemLevel 86: "Body Armours" "Boots" "Shields" "Bows" "Belts" "Quivers";
+- ItemLevel 85: "Amulets" "Gloves" "Helmets";
+- ItemLevel 84: "Rings" "Wands" "Staves" "Rune Daggers" "Sceptres";
+- ItemLevel 83: "Daggers" "Claws" "Thrusting One Hand Swords" "One Hand Swords" "One Hand Maces" "One Hand Axes" "Warstaves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces";
+- Note that amulets and rings have one more mod (WED and mana) that they can roll if you get them with an extra level, but due to pragmatic concerns I've put them a level lower
+
+## INFLUENCED ITEM TIERING
+
+The influenced tiering has been completely rewritten. It now has less rules (we're talking about influenced bases, so there's still a lot) and has the goal of being much simpler to understand, maintain and edit. Note that if/when these rules are disabled (such as on higher strictnesses), the rare/crafting sections can still pick up the bases.
+
+The influenced item tiering comes in 3 layers:
+
+Layer 1. ANY influence, Demanded bases. The influenced tiering has the following rules:
+- T1 bases (any influence) - any atlas exclusive top tier or armor or jewellery. 
+- T2 bases (any influence) - top tier shields & quivers, most rings, most amulets, select belts. Disabled on uberplus strict.
+- T3 bases (any influence) - best crafting weapon bases and second grade armors. Requires itemlevel 84. Disabled on very strict
+
+Layer 2. Class based filtering. This has 7 rules. All of these rules are disabled on Uber-Strict.
+- ANY influence. Itemlevel 85. Highlights any: "Body Armours" "Helmets" "Rings" "Amulets" "Wands" "Sceptres" "Quivers"
+- Shaper (Any itemlevel): "Rings" "Amulets" "Bows" "Gloves"
+- Elder (Any itemlevel): "Rings" "Amulets" "Belts"
+- Crusader (Any itemlevel): "Rings" "Amulets" "Belts"
+- Hunter (Any itemlevel): "Rings" "Amulets" "Gloves" "Belts" "Boots" "Shields" "Quivers"
+- Warlord (Any itemlevel): "Rings" "Amulets" "Gloves" "Boots"
+- Redeemer (Any itemlevel): "Rings" "Amulets" "Boots" "Shields"
+
+Layer 3: Low strictness filtering/other rules.
+- Any itemlevel 86 influenced item (Disabled on very strict)
+- Any random influence item (Disabled on strict)
+
+## IDENTIFIED MOD IMPROVEMENTS
+
+With mercs wearing identified gear, veiled items being identified, kingsmarch returning identified items and endgame mapping and ritual doing their part, I think it's time to revisit the statistical puzzle that is designing identified item filtering. The details are a bit hard to describe, as it's a hundreds of small modifications, but here's the general overview:
+
+To understand the following notes, here is the core terminology you need to know. 
+My implementation of identified mod crafting (considering PoE-filter limitations) searches for 1-2 core mods (from a list) on an item and 3-5 support mods. Usually those 2 overlap (every core mod is a support mod). For example on boots 30% and 35% movement speed are core mods. If they spawn, the boots additionally require three other relevant lower mods, such as 29% fire resistance to be highlighted.
+
+1) Review minion items and some other underrepresented archetypes. Minion wands now have a dedicated rule
+2) Better integration of veiled mods and incursion mods. Veiled mods are now always considered a 'support' mod and in some cases even a 'core' mod.
+3) Integration of member specific veiled mods into select rules. Depending on the power they are treated as core or support.
+4) General review of desired mods like chaos resistance and suppression and giving them appropriate priority when evaluating rare items. High tier chaos and suppression is now treated as core mods on certain items.
+5) Jewels and abyss jewels received a major review and several mods have been added.
+6) Reworked the bone ring rule
+7) Most rules that focus on armors now only look for uncorrupted items
+
+A huge thanks to Cdr and their contributions!
+
+## OTHER NEW LEAGUE CHANGES
+
+- The Trarthus gems are handled by the TransfiguredGem section (no change was doone, just noting, they've not been forgotten)
+- Added a section to detect mercenary-exclusive mods
+- Removed items that are leaving the game: memories, certian scarabs.
+- Removed runes and added runegrafts
+- Added allflames into the scarab tierlist (as they serve the same function)
+- Added new orbs and fragments
+- Added new and returning divination cards
+- Put the Gold Flask and Vermillion Ring uniques into the S tier.
+
+## MISC CHANGES, STREAMLINING AND SIMPLIFICATION
+
+- Merged Brachstones into Fragments 
+- The overquality section now has less rules
+- Merged several rules in the overquality crafting section
+- Merged the 29 and 30 quality rules in the overquality section
+- Stacked Scarab rule has been moved
+- Adjusted the quality threshold for high level and quality gems to be 13% instead of 14%
+- The rules to highlight items with eldritch implicits are now disabled.
+- Made the early endgame quality flask less strict (15%->10%)
+- Streamlined a lot of filter configuration and structure
+- Changed ideal heist gear level 81->83
 
 ----------------------------------
 # **VERSION 8.16.0** - Legacy of Phrecia Support
@@ -1444,7 +1569,7 @@ These changelogs include changes from version 3.X.X to 8.5.3
 # **SPECIAL THANKS:**
 ----------------------------------
 
-- Tobnac/Haggis for their amazing contribution to the project development and support
+- ZoeyFloat/Haggis for their amazing contribution to the project development and support
 - GGG for the awesome game with a special shoutout to Bex, Chris, Rory, Zeyra and Jatin for their assistance!
 - A massive thank you to all the [PATREONS](https://www.patreon.com/Neversink), [DISCORD](https://discord.gg/mye6xhF) and [TWITCH](https://www.twitch.tv/neversink) community!
 - The FilterBlade Team on discord - Abyxcos, Cdr, Mellontoss, Really Evil bunny, TarrasqueSorcerer, Thesenzei, VenomsAssassin
