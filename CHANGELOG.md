@@ -1,9 +1,18 @@
 # **CHANGELOG - NeverSink's Filter**
 ----------------------------------
 
-PoE2 is currently in an early access. As the game changes and adjusts you can expect large changes in the filter as well. Please make sure to update frequently.
-
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
+
+----------------------------------
+# **VERSION 8.17.1** - Secrets of the Atlas - Economy (First Update)
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Added economy based tiering for all new uniques and divination cards.
+Additionally I've resolved some issues with identified mod filtering and vastly reduced the highlight for member-based veiled mod highlight.
+
+This update only affects economy filters. Stable will receive an update over the next days, when the economy settles a bit more.
 
 ----------------------------------
 # **VERSION 8.17.0** - Secrets of the Atlas
