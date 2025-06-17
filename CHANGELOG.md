@@ -4,7 +4,25 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
-# **VERSION 8.17.1** - Secrets of the Atlas - Economy (First Update)
+# **VERSION 8.17.2** - Secrets of the Atlas - Economy & Stable Update
+----------------------------------
+
+This update focuses on improving tiering for all the new items, improves the strictness handling of certain rares and does some fixes here and there.
+
+This is the stable tiering/economy version for this league. The stable filters will preserve their tiering for the rest of the league.
+
+## SHORT OVERVIEW:
+
+- Retiered all items (uniques, currency, divination cards etc)
+- Fixed an issue where 'of Infamy' normal mods and merc mods shared the same name resulting in weapons with attack speed being highlighted way too hard (ggg probably forgot that they already used the mod name?). Added a new section for infamy weapons.
+- Made mod-based veiled highlight a lot less strong and is treated like a normal veiled mod (except for elreon). You can enable specific highlights on filterblade.
+- Done a lot of fixes and improvements to the tiering safeguards. The system has proven itself to be very powerful and useful so far.
+- Added tiering for runegrafts
+- Added tiering for allflames
+- Adjusted strictnesses for veiled items
+
+----------------------------------
+# **VERSION 8.17.1** - Secrets of the Atlas - Economy Only Update
 ----------------------------------
 
 ## SHORT OVERVIEW:
