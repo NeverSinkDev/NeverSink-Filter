@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.17.2
+# VERSION:  8.17.3
 # TYPE:     0-SOFT
 # STYLE:    VELVET
 # AUTHOR:   NeverSink
@@ -115,8 +115,8 @@
 # [[2300]] Endgame Flasks & Tinctures
 #   [2301] Endgame Flasks
 #   [2302] Quality High
-#   [2303] Utility OR quality flasks
-#   [2304] Quality Low
+#   [2303] Quality Low
+#   [2304] Utility flasks
 #   [2305] Early mapping life/mana/utility flasks
 # [[2400]] Misc Rules
 #   [2401] RGB Endgame
@@ -289,7 +289,7 @@ Show # $type->gold $tier->stacklvl1
 	SetBackgroundColor 20 20 0 255
 	MinimapIcon 2 Grey Cross
 
-Show # $type->gold $tier->anyother
+Show # %H4 $type->gold $tier->anyother
 	BaseType == "Gold"
 	SetFontSize 35
 	SetTextColor 180 180 180 255
@@ -303,9 +303,19 @@ Show # $type->gold $tier->anyother
 #------------------------------------
 #   [0301] Influenced Maps
 #------------------------------------
+# !! Waypoint c1.infl.allplusmaps : "All rules - except gold and six-links"
+
+#Hide # $type->maps->influenced $tier->zanacorrupthider
+#	ZanaMemory True
+#	Corrupted True
+#	Rarity Normal Magic
+#	Class == "Maps"
+#	SetFontSize 35
+#	SetBorderColor 0 0 0
 
 Show # $type->maps->influenced $tier->zanamap
 	ZanaMemory True
+	MapTier >= 14
 	Rarity Normal Magic Rare
 	Class == "Maps"
 	SetFontSize 45
@@ -315,6 +325,18 @@ Show # $type->maps->influenced $tier->zanamap
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Square
+
+Show # $type->maps->influenced $tier->zanamaplow
+	ZanaMemory True
+	Rarity Normal Magic Rare
+	Class == "Maps"
+	SetFontSize 45
+	SetTextColor 145 30 220 255
+	SetBorderColor 145 30 220 255
+	SetBackgroundColor 200 200 200 255
+	PlayAlertSound 5 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
 
 Show # $type->maps->influenced $tier->infshaper
 	HasInfluence Shaper
@@ -1503,7 +1525,7 @@ Show # $type->rareid $tier->idjewel_minion
 	Class == "Abyss Jewels" "Jewels"
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 	HasExplicitMod >=2 "Vivid" "Shimmering" "Leadership" "Master's" "of Resilience" "Decrepifying"
-	HasExplicitMod >=3 "Vivid" "Shimmering" "Leadership" "Master's" "of Resilience" "Decrepifying" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting" "of Training" "Enlightened" "of Efficiency"
+	HasExplicitMod >=3 "Vivid" "Shimmering" "Leadership" "Master's" "of Resilience" "Decrepifying" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting" "of Training" "Enlightened" "of Efficiency"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -1519,7 +1541,7 @@ Show # $type->rareid $tier->idjewel_dot
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 	HasExplicitMod >=1 "Vivid" "Shimmering" "of Acrimony" "Decrepifying"
 	HasExplicitMod =1 "of Exsanguinating" "of Zealousness" "of Atrophy" "of Gelidity"
-	HasExplicitMod >=3 "Vivid" "Shimmering" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting" "of Entropy" "Decrepifying" "of Acrimony" "of Exsanguinating" "of Zealousness" "of Atrophy" "of Gelidity"
+	HasExplicitMod >=3 "Vivid" "Shimmering" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting" "of Entropy" "Decrepifying" "of Acrimony" "of Exsanguinating" "of Zealousness" "of Atrophy" "of Gelidity"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -1534,8 +1556,8 @@ Show # $type->rareid $tier->idjewel_critattack
 	Class == "Abyss Jewels" "Jewels"
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 	HasExplicitMod >=1 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Demolishing"
-	HasExplicitMod >=2 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Demolishing" "Piercing" "Rupturing" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting"
-	HasExplicitMod >=3 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Demolishing" "Piercing" "Rupturing" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting" "of Berserking" "Sharpened" "Humming" "Chaotic" "Flaming" "Chilling" "of Zeal"
+	HasExplicitMod >=2 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Demolishing" "Piercing" "Rupturing" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting"
+	HasExplicitMod >=3 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Demolishing" "Piercing" "Rupturing" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting" "of Berserking" "Sharpened" "Humming" "Chaotic" "Flaming" "Chilling" "of Zeal"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -1550,8 +1572,8 @@ Show # $type->rareid $tier->idjewel_critspell
 	Class == "Abyss Jewels" "Jewels"
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 	HasExplicitMod >=1 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Unmaking"
-	HasExplicitMod >=2 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Unmaking" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting"
-	HasExplicitMod >=3 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Unmaking" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaptation" "of Wounding" "Thwarting" "of Mysticism" "of Blasting" "of Archery" "Chilling" "Trapping" "Sharpened" "Humming" "Chaotic" "Flaming" "Battlemage's" "Warding" "Sorcerer's"
+	HasExplicitMod >=2 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Unmaking" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting"
+	HasExplicitMod >=3 "of Potency" "of the Elements" "Vivid" "Shimmering" "of Unmaking" "of Menace" "Arctic" "Surging" "Infernal" "Puncturing" "Expediting" "Prolonging" "Cerebral" "of the Phoenix" "of the Kraken" "of the Leviathan" "of Order" "of Resistance" "of Insulation" "of the Hearth" "of Shelter" "of Spirit" "of Athletics" "of Cunning" "of Adaption" "of Wounding" "Thwarting" "of Mysticism" "of Blasting" "of Archery" "Chilling" "Trapping" "Sharpened" "Humming" "Chaotic" "Flaming" "Battlemage's" "Warding" "Sorcerer's"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -1595,8 +1617,8 @@ Show # $type->rareid $tier->idaj_minion
 	Rarity Rare
 	Class == "Abyss Jewels" "Jewels"
 	BaseType == "Ghastly Eye Jewel"
-	HasExplicitMod >=1 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile"
-	HasExplicitMod >=3 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile" "of the Dragon" "of Dexterity" "of Intelligence" "of Strength" "Fleet" "Seething" "Sapphire" "Carapaced" "Encased" "Vaporous" "Expediting" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of Shelter" "of Grounding" "of the Hearth" "of Resistance" "of Order" "of Potency" "of the Inquisitor" "of Menace" "of Blinding" "of the Assassin" "of Taunting" "of Phasing" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of the Inferno" "of Venom" "of Stifling" "of Distraction" "of Delaying" "of Training" "of Vampirism" "of Command" "of Acclimatisation" "of Authority" "of Shocking" "of Chilling" "Resonating" "Motivating" "Foul-tongued"
+	HasExplicitMod >=1 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile" "Malicious"
+	HasExplicitMod >=3 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile" "of the Dragon" "of Dexterity" "of Intelligence" "of Strength" "Fleet" "Seething" "Sapphire" "Carapaced" "Encased" "Vaporous" "Expediting" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of Shelter" "of Grounding" "of the Hearth" "of Resistance" "of Order" "of Potency" "of the Inquisitor" "of Menace" "of Blinding" "of the Assassin" "of Taunting" "of Phasing" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of the Inferno" "of Venom" "of Stifling" "of Distraction" "of Delaying" "of Training" "of Vampirism" "of Command" "of Acclimatisation" "of Authority" "Malicious" "Tempered" "of Shocking" "of Chilling" "Resonating" "Motivating" "Foul-tongued"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -1610,7 +1632,7 @@ Show # $type->rareid $tier->idaj_mixer
 	Rarity Rare
 	Class == "Abyss Jewels" "Jewels"
 	BaseType == "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel"
-	HasExplicitMod >=4 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile" "of the Dragon" "of Dexterity" "of Intelligence" "of Strength" "Fleet" "Seething" "Sapphire" "Carapaced" "Encased" "Vaporous" "Expediting" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of Shelter" "of Grounding" "of the Hearth" "of Resistance" "of Order" "of Potency" "of the Inquisitor" "of Menace" "of Blinding" "of the Assassin" "of Taunting" "of Phasing" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of the Inferno" "of Opportunity" "of Berserking" "of the Ranger" "Lancing" "of Unholy Might" "of Abuse" "of Enchanting" "of Hindering" "of Venom" "of Stifling" "of Distraction" "of Delaying" "of Training" "of Vampirism" "of Command" "of Acclimatisation" "of Authority" "of Shocking" "of Chilling" "Resonating" "Motivating" "Foul-tongued" "of Insulating" "of Fireproofing" "of Heating" "of Poise" "of the Tourniquet"
+	HasExplicitMod >=4 "of the Lightning Rod" "Beclouded" "Sanguine" "Stalwart" "Healthy" "Resplendent" "Incandescent" "of the Deadeye" "Acuminate" "Flaring" "Electrocuting" "Discharging" "Cremating" "Blasting" "Entombing" "Polar" "Vile" "of the Dragon" "of Dexterity" "of Intelligence" "of Strength" "Fleet" "Seething" "Sapphire" "Carapaced" "Encased" "Vaporous" "Expediting" "of Athletics" "of Spirit" "of Cunning" "of Adaption" "of Shelter" "of Grounding" "of the Hearth" "of Resistance" "of Order" "of Potency" "of the Inquisitor" "of Menace" "of Blinding" "of the Assassin" "of Taunting" "of Phasing" "of Ashes" "of Glaciation" "of Arcing" "of Collision" "of the Inferno" "of Opportunity" "of Berserking" "of the Ranger" "Lancing" "of Unholy Might" "of Abuse" "of Enchanting" "of Hindering" "of Venom" "of Stifling" "of Distraction" "of Delaying" "of Training" "of Vampirism" "of Command" "of Acclimatisation" "of Authority" "Malicious" "Tempered" "of Shocking" "of Chilling" "Resonating" "Motivating" "Foul-tongued" "of Insulating" "of Fireproofing" "of Heating" "of Poise" "of the Tourniquet"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
@@ -2152,10 +2174,10 @@ Show # %D6 $type->exoticmods $tier->mercenaryweapons
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
-	SetBackgroundColor 20 20 0 255
+	SetBackgroundColor 0 75 30 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
-	MinimapIcon 1 Blue Diamond
+	MinimapIcon 0 Blue Diamond
 
 Show # %D6 $type->exoticmods $tier->mercenaryothers
 	Identified True
@@ -2165,10 +2187,10 @@ Show # %D6 $type->exoticmods $tier->mercenaryothers
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
-	SetBackgroundColor 20 20 0 255
+	SetBackgroundColor 0 75 30 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
-	MinimapIcon 1 Blue Diamond
+	MinimapIcon 0 Blue Diamond
 
 Show # %D3 $type->exoticmods $tier->warband
 	Identified True
@@ -2600,15 +2622,17 @@ Show # %D3 $type->socketslinks $tier->5links
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
 
-Show # %DS4 $type->socketslinks $tier->whitesocketweapons2h
+Show # %DS6 $type->socketslinks $tier->whitesocketweapons2h
 	Sockets >= 6WWWWWW
 	Rarity Normal Magic Rare
 	Class == "Bows" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Warstaves"
 	SetFontSize 45
+	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 75 30 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
-	MinimapIcon 2 Blue Diamond
+	MinimapIcon 0 Blue Diamond
 
 Show # %D3 $type->socketslinks $tier->6sockets4h
 	Sockets >= 6
@@ -3193,7 +3217,7 @@ Show # %D2 $type->rr->belts $tier->t3
 #	ItemLevel >= 68
 #	DropLevel < 75
 #	Rarity Rare
-#	Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+#	Class == "Body Armours" "Boots" "Gloves" "Helmets"
 #	AreaLevel >= 82
 #	SetFontSize 18
 #	SetBorderColor 0 0 0 0
@@ -3205,7 +3229,7 @@ Show # %D2 $type->rr->belts $tier->t3
 #	DropLevel < 60
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Gloves" "Helmets"
-#	AreaLevel >= 82
+#	AreaLevel >= 80
 #	SetFontSize 18
 #	SetBorderColor 0 0 0 0
 #	SetBackgroundColor 20 20 0 0
@@ -3749,7 +3773,33 @@ Show # %D2 $type->endgameflasks $tier->any20qualflask
 	PlayEffect Grey Temp
 
 #------------------------------------
-#   [2303] Utility OR quality flasks
+#   [2303] Quality Low
+#------------------------------------
+
+#Show # %D1 $type->endgameflasks $tier->qualityhigh
+#	Quality >= 10
+#	Rarity Normal Magic
+#	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
+#	AreaLevel >= 68
+#	AreaLevel <= 77
+#	SetFontSize 40
+#	SetTextColor 0 0 0 255
+#	SetBorderColor 200 200 200 255
+#	SetBackgroundColor 80 133 135 210
+
+#Show # %D0 $type->endgameflasks $tier->qualitylow
+#	Quality >= 1
+#	Rarity Normal Magic
+#	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
+#	AreaLevel >= 68
+#	AreaLevel <= 77
+#	SetFontSize 35
+#	SetTextColor 0 0 0 255
+#	SetBorderColor 0 0 0 255
+#	SetBackgroundColor 80 133 135 210
+
+#------------------------------------
+#   [2304] Utility flasks
 #------------------------------------
 
 Show # %D4 $type->endgameflasks $tier->earlymappingflasks
@@ -3774,32 +3824,6 @@ Show # %D3 $type->endgameflasks $tier->anyutility
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 25 100 75
 	PlayEffect Grey Temp
-
-#------------------------------------
-#   [2304] Quality Low
-#------------------------------------
-
-#Show # %D1 $type->endgameflasks $tier->qualityhigh
-#	Quality >= 10
-#	Rarity Normal Magic
-#	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
-#	AreaLevel >= 68
-#	AreaLevel <= 77
-#	SetFontSize 40
-#	SetTextColor 0 0 0 255
-#	SetBorderColor 200 200 200 255
-#	SetBackgroundColor 80 133 135 210
-
-#Show # %D0 $type->endgameflasks $tier->qualitylow
-#	Quality >= 1
-#	Rarity Normal Magic
-#	Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Tinctures" "Utility Flasks"
-#	AreaLevel >= 68
-#	AreaLevel <= 77
-#	SetFontSize 35
-#	SetTextColor 0 0 0 255
-#	SetBorderColor 0 0 0 255
-#	SetBackgroundColor 80 133 135 210
 
 #------------------------------------
 #   [2305] Early mapping life/mana/utility flasks
@@ -6304,7 +6328,7 @@ Show # $type->exoticmap->sanctum $tier->any
 
 Show # $type->fragments->scarabs $tier->t1
 	Class == "Breachstones" "Map Fragments"
-	BaseType == "Ambush Scarab of Containment" "Horned Scarab of Preservation" "Ultimatum Scarab of Catalysing"
+	BaseType == "Allflame Ember of the Ethereal" "Ambush Scarab of Containment" "Horned Scarab of Preservation" "Ultimatum Scarab of Catalysing"
 	SetFontSize 45
 	SetTextColor 180 0 255 255
 	SetBorderColor 180 0 255 255
@@ -6315,7 +6339,7 @@ Show # $type->fragments->scarabs $tier->t1
 
 Show # $type->fragments->scarabs $tier->t2
 	Class == "Breachstones" "Map Fragments"
-	BaseType == "Allflame Ember of the Ethereal" "Allflame Ember of the Gilded" "Domination Scarab of Terrors" "Essence Scarab of Calcification" "Horned Scarab of Awakening" "Horned Scarab of Bloodlines" "Horned Scarab of Glittering" "Horned Scarab of Pandemonium"
+	BaseType == "Allflame Ember of the Gilded" "Domination Scarab of Terrors" "Essence Scarab of Calcification" "Horned Scarab of Awakening" "Horned Scarab of Bloodlines" "Horned Scarab of Glittering" "Horned Scarab of Pandemonium"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -7376,7 +7400,7 @@ Show # $type->runesgrafts $tier->t4
 
 Show # $type->runesgrafts $tier->restex
 	Class == "Stackable Currency"
-	BaseType "Rune"
+	BaseType "Runegraft"
 	SetFontSize 45
 	SetTextColor 255 0 255 255
 	SetBorderColor 255 0 255 255
@@ -8080,7 +8104,7 @@ Show # %HS3 $type->divination $tier->t4
 
 Show # %H0 $type->divination $tier->t5
 	Class == "Divination Cards"
-	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Audacity" "Call to the First Ones" "Cartographer's Delight" "Destined to Crumble" "Echoes of Love" "Forbidden Power" "From Bone to Ashes" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Adventuring Spirit" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Carrion Crow" "The Coming Storm" "The Conduit" "The Cursed King" "The Deceiver" "The Demoness" "The Drunken Aristocrat" "The Fathomless Depths" "The Feast" "The Fletcher" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Harvester" "The Hermit" "The Hive of Knowledge" "The Incantation" "The Inoculated" "The Insatiable" "The Jester" "The Journalist" "The King's Blade" "The Lich" "The Lord in Black" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Master" "The Metalsmith's Gift" "The Oath" "The Opulent" "The Pack Leader" "The Poet" "The Rabid Rhoa" "The Return of the Rat" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Sun" "The Surgeon" "The Sword King's Salute" "The Throne" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Witch" "The Wolf's Shadow" "Thirst for Knowledge" "Thunderous Skies" "Turn the Other Cheek"
+	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Audacity" "Call to the First Ones" "Cartographer's Delight" "Destined to Crumble" "Echoes of Love" "Forbidden Power" "From Bone to Ashes" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Adventuring Spirit" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Carrion Crow" "The Coming Storm" "The Conduit" "The Cursed King" "The Deceiver" "The Demoness" "The Drunken Aristocrat" "The Fathomless Depths" "The Feast" "The Fletcher" "The Forsaken" "The Fox in the Brambles" "The Golden Era" "The Harvester" "The Hermit" "The Hive of Knowledge" "The Incantation" "The Inoculated" "The Insatiable" "The Jester" "The Journalist" "The King's Blade" "The Lich" "The Lord in Black" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Opulent" "The Pack Leader" "The Poet" "The Rabid Rhoa" "The Return of the Rat" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Sun" "The Surgeon" "The Sword King's Salute" "The Throne" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Witch" "The Wolf's Shadow" "Thirst for Knowledge" "Thunderous Skies" "Turn the Other Cheek"
 	SetFontSize 35
 	SetTextColor 175 230 186 255
 	SetBorderColor 175 230 186 255

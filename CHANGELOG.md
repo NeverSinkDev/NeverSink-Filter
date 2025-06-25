@@ -4,6 +4,23 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.17.3** - Fixed and improvements
+----------------------------------
+
+- Further improved the tiering of many items and added more safeguards
+- Added a new optional rule to hide corrupted + magic/normal zana maps
+- Added a rule for low tier zana maps
+- Added economy based tiering for runegrafts and allflames
+- Several filterblade specific improvements
+- Several smaller itemlevel changes
+- Improved the highlight of 6WhiteSocket weapons
+- Mercenary modded items have more highlight now
+- Adjusted several identified mod rules
+- The conditional hide rules that activate as you progess further in maps now only affect armors (caused confusion when working with rare weapons on filterblade on very-strict)
+- Low quality flasks now have more priority than some other early endgame flask rules
+- Small gold piles are no longer shown on uberstrict and up
+
+----------------------------------
 # **VERSION 8.17.2** - Secrets of the Atlas - Economy & Stable Update
 ----------------------------------
 
