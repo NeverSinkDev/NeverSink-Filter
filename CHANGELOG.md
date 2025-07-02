@@ -4,6 +4,13 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.17.3a** - Tiering Improvements (Economy only)
+----------------------------------
+
+- Large scale adjustments for divination card tiering and unique tiering
+- Divinatinon cards now have a slightly higher price threshold and treat cards with large stacksizes and low value rewards as even less valuable for the sake of tiering
+
+----------------------------------
 # **VERSION 8.17.3** - Fixed and improvements
 ----------------------------------
 
