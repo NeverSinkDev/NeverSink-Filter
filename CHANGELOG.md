@@ -4,6 +4,14 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.17.3b** - Minor Adjustments
+----------------------------------
+
+- The optional loreweave rule now has more priority than the mercenary unique rule
+- Adjusted the strictness of memory strand gear rules and changed them to only highlight non corrupted items
+- Further tiering finetuning
+
+----------------------------------
 # **VERSION 8.17.3a** - Tiering Improvements (Economy only)
 ----------------------------------
 
