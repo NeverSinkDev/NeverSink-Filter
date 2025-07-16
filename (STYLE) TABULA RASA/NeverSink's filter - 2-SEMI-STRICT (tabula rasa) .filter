@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.17.3a
+# VERSION:  8.17.3c
 # TYPE:     2-SEMI-STRICT
 # STYLE:    TABULA RASA
 # AUTHOR:   NeverSink
@@ -52,8 +52,7 @@
 # [[0200]] Gold
 # [[0300]] Influenced Items
 #   [0301] Influenced Maps
-#   [0302] Memory Stranded Equipment
-#   [0303] Influenced Gear
+#   [0302] Influenced Gear
 # [[0400]] ELDRITCH ITEMS
 # [[0500]] Exotic Bases
 # [[0600]] IDENTIFIED MOD FILTERING - COMBINATIONS
@@ -77,142 +76,144 @@
 # [[0700]] IDENTIFIED MOD FILTERING - SINGLE MODS
 #   [0701] Top Value
 #   [0702] Uncorrupted Mods
-# [[0800]] IDENTIFIED MOD - CORRUPTED ITEMS
-# [[0900]] Exotic Mods Filtering
-#   [0901] Veiled/Betrayal - low prio veiled items
-#   [0902] Incursion/Temple Mods
-#   [0903] Necropolis
-#   [0904] Bestiary
-#   [0905] Other
-# [[1000]] Exotic Item Classes
-#   [1001] Craftable Invitations
-#   [1002] Relics
-# [[1100]] Exotic Item Variations
-#   [1101] Double Corruptions
-#   [1102] Abyss Jeweled Rares
-#   [1103] Synthesised
-#   [1104] Fractured
-#   [1105] Enchanted
-#   [1106] Crucible
-# [[1200]] Recipes and 5links
-#   [1201] Link Based
-# [[1300]] High Level Crafting Bases
-#   [1301] Expensive Atlas 86 Bases - matched by economy
-#   [1302] Perfection and Overquality Filtering
-# [[1400]] Endgame - Rare - Gear
-# [[1500]] Endgame - Rare - Decorators
-# [[1600]] Endgame - Rare - Exotic Veiled
-# [[1700]] Endgame - Rare - Exotic Corrupted
-# [[1800]] Endgame - Rare - Conditional Hide Rules
-# [[1900]] Endgame - Rare - Amulets, Rings, Boots
-# [[2000]] Endgame - Rare - Gear - Droplevel Hiding
-#   [2001] Endgame - Rare - Gear
-# [[2100]] Endgame - Crafting
-#   [2101] Early Endgame Crafting projects
-#   [2102] Crafting Matrix
-#   [2103] Chisel Recipes
-# [[2200]] Chancing Bases
-# [[2300]] Endgame Flasks & Tinctures
-#   [2301] Endgame Flasks
-#   [2302] Quality High
-#   [2303] Quality Low
-#   [2304] Utility flasks
-#   [2305] Early mapping life/mana/utility flasks
-# [[2400]] Misc Rules
-#   [2401] RGB Endgame
-#   [2402] Remaining Rares
-# [[2500]] Hide Layer 1 - Rare & Magic Gear
-# [[2600]] Jewels
-#   [2601] Special Cases
-#   [2602] Leveling Exceptions
-#   [2603] Abyss Jewels
-#   [2604] Generic Jewels
-#   [2605] Cluster Jewels: Eco-Based-Large
-#   [2606] Cluster Jewels: Random
-# [[2700]] Heist Gear
-#   [2701] Heist Cloak
-#   [2702] Heist Brooch
-#   [2703] Heist Gear
-#   [2704] Heist Tool
-# [[2800]] Gem Tierlists
-#   [2801] Exceptional Gems - Awakened and AltQuality
-#   [2802] Exceptional Gems - Special gems
-#   [2803] High Quality and Leveled Gems
-# [[2900]] REPLICA UNIQUES
-# [[3000]] Special Maps
-#   [3001] Unique Maps
-#   [3002] T17
-#   [3003] Blighted maps
-#   [3004] Special Maps
-# [[3100]] Normal Map Progression
-#   [3101] Generic Decorators
-#   [3102] Map progression
-# [[3200]] Pseudo-Map-Items
-# [[3300]] Fragments
-#   [3301] Scarabs
-#   [3302] Exceptions
-#   [3303] Regular Fragment Tiering
-# [[3400]] Currency - Exceptions - Leveling Currencies
-# [[3500]] Currency - Exceptions - Stacked Currency
-#   [3501] Supplies: High Stacking
-#   [3502] Supplies: Low Stacking
-#   [3503] Supplies: Portal Stacking
-#   [3504] Supplies: Wisdom Stacking
-#   [3505] Stacked Currencies: 6x
-#   [3506] Stacked Currencies: 3x
-#   [3507] Heist Coins
-# [[3600]] Currency - Regular Currency Tiering
-# [[3700]] Currency - SPECIAL
-#   [3701] Incursion - Vials
-#   [3702] Delirum Orbs
-#   [3703] Delve - Resonators
-#   [3704] Delve - Fossils
-#   [3705] Blight - Oils
-#   [3706] Runes
-#   [3707] Corpses
-#   [3708] Essences
-#   [3709] Trial of the Ancestors
-#   [3710] Others
-#   [3711] Incubators
-# [[3800]] Currency - Splinters
-#   [3801] Breach and Legion Splinters - stacked
-#   [3802] Breach and Legion Splinters - single
-#   [3803] Simulacrum Splinters
-# [[3900]] Divination Cards
-# [[4000]] Remaining Currency
-# [[4100]] Questlike-Items1 (override uniques)
-# [[4200]] Idols (Event Leagues Only)
-# [[4300]] Uniques
-#   [4301] Exceptions #1
-#   [4302] Tier 1 and 2 uniques
-#   [4303] Exceptions #2
-#   [4304] Multi-Unique bases.
-#   [4305] Low tier exceptions
-#   [4306] Tier 3 uniques 
-#   [4307] Tier 4 uniques
-# [[4400]] Misc Map Items
-# [[4500]] Questlike-Items2
-# [[4600]] Hide outdated leveling flasks
-# [[4700]] Leveling - Utility Flasks and Tinctures
-# [[4800]] Leveling - Life, Mana, Hybrid
-#   [4801] Hybrid Flasks
-#   [4802] Life flasks
-#   [4803] Mana flasks
-# [[4900]] Leveling - Rules
-#   [4901] Links and Sockets
-#   [4902] Rares - Decorators
-#   [4903] Rares - Universal
-#   [4904] Rares - Caster
-#   [4905] Rares - Archer
-#   [4906] Rares - Melee
-#   [4907] Rares - Other
-# [[5000]] Leveling - Useful magic and normal items
-#   [5001] Purpose Picked Items
-#   [5002] Normals
-#   [5003] Weapon Progression
-#   [5004] Remaining Magics
-#   [5005] Hide All known Section
-#   [5006] Show All unknown Section
+# [[0800]] High Priority Equipment Properties
+#   [0801] Perfection and Overquality Filtering
+#   [0802] Memory Strand Gear
+# [[0900]] IDENTIFIED MOD - CORRUPTED ITEMS
+# [[1000]] Exotic Mods Filtering
+#   [1001] Veiled/Betrayal - low prio veiled items
+#   [1002] Incursion/Temple Mods
+#   [1003] Necropolis
+#   [1004] Bestiary
+#   [1005] Other
+# [[1100]] Exotic Item Classes
+#   [1101] Craftable Invitations
+#   [1102] Relics
+# [[1200]] Exotic Item Variations
+#   [1201] Double Corruptions
+#   [1202] Abyss Jeweled Rares
+#   [1203] Synthesised
+#   [1204] Fractured
+#   [1205] Enchanted
+#   [1206] Crucible
+# [[1300]] Recipes and 5links
+#   [1301] Link Based
+# [[1400]] High Level Crafting Bases
+#   [1401] Expensive Atlas 86 Bases - matched by economy
+# [[1500]] Endgame - Rare - Gear
+# [[1600]] Endgame - Rare - Decorators
+# [[1700]] Endgame - Rare - Exotic Veiled
+# [[1800]] Endgame - Rare - Exotic Corrupted
+# [[1900]] Endgame - Rare - Conditional Hide Rules
+# [[2000]] Endgame - Rare - Amulets, Rings, Boots
+# [[2100]] Endgame - Rare - Gear - Droplevel Hiding
+#   [2101] Endgame - Rare - Gear
+# [[2200]] Endgame - Crafting
+#   [2201] Early Endgame Crafting projects
+#   [2202] Crafting Matrix
+#   [2203] Chisel Recipes
+# [[2300]] Chancing Bases
+# [[2400]] Endgame Flasks & Tinctures
+#   [2401] Endgame Flasks
+#   [2402] Quality High
+#   [2403] Quality Low
+#   [2404] Utility flasks
+#   [2405] Early mapping life/mana/utility flasks
+# [[2500]] Misc Rules
+#   [2501] RGB Endgame
+#   [2502] Remaining Rares
+# [[2600]] Hide Layer 1 - Rare & Magic Gear
+# [[2700]] Jewels
+#   [2701] Special Cases
+#   [2702] Leveling Exceptions
+#   [2703] Abyss Jewels
+#   [2704] Generic Jewels
+#   [2705] Cluster Jewels: Eco-Based-Large
+#   [2706] Cluster Jewels: Random
+# [[2800]] Heist Gear
+#   [2801] Heist Cloak
+#   [2802] Heist Brooch
+#   [2803] Heist Gear
+#   [2804] Heist Tool
+# [[2900]] Gem Tierlists
+#   [2901] Exceptional Gems - Awakened and AltQuality
+#   [2902] Exceptional Gems - Special gems
+#   [2903] High Quality and Leveled Gems
+# [[3000]] REPLICA UNIQUES
+# [[3100]] Special Maps
+#   [3101] Unique Maps
+#   [3102] T17
+#   [3103] Blighted maps
+#   [3104] Special Maps
+# [[3200]] Normal Map Progression
+#   [3201] Generic Decorators
+#   [3202] Map progression
+# [[3300]] Pseudo-Map-Items
+# [[3400]] Fragments
+#   [3401] Scarabs
+#   [3402] Exceptions
+#   [3403] Regular Fragment Tiering
+# [[3500]] Currency - Exceptions - Leveling Currencies
+# [[3600]] Currency - Exceptions - Stacked Currency
+#   [3601] Supplies: High Stacking
+#   [3602] Supplies: Low Stacking
+#   [3603] Supplies: Portal Stacking
+#   [3604] Supplies: Wisdom Stacking
+#   [3605] Stacked Currencies: 6x
+#   [3606] Stacked Currencies: 3x
+#   [3607] Heist Coins
+# [[3700]] Currency - Regular Currency Tiering
+# [[3800]] Currency - SPECIAL
+#   [3801] Incursion - Vials
+#   [3802] Delirum Orbs
+#   [3803] Delve - Resonators
+#   [3804] Delve - Fossils
+#   [3805] Blight - Oils
+#   [3806] Runes
+#   [3807] Corpses
+#   [3808] Essences
+#   [3809] Trial of the Ancestors
+#   [3810] Others
+#   [3811] Incubators
+# [[3900]] Currency - Splinters
+#   [3901] Breach and Legion Splinters - stacked
+#   [3902] Breach and Legion Splinters - single
+#   [3903] Simulacrum Splinters
+# [[4000]] Divination Cards
+# [[4100]] Remaining Currency
+# [[4200]] Questlike-Items1 (override uniques)
+# [[4300]] Idols (Event Leagues Only)
+# [[4400]] Uniques
+#   [4401] Exceptions #1
+#   [4402] Tier 1 and 2 uniques
+#   [4403] Exceptions #2
+#   [4404] Multi-Unique bases.
+#   [4405] Low tier exceptions
+#   [4406] Tier 3 uniques 
+#   [4407] Tier 4 uniques
+# [[4500]] Misc Map Items
+# [[4600]] Questlike-Items2
+# [[4700]] Hide outdated leveling flasks
+# [[4800]] Leveling - Utility Flasks and Tinctures
+# [[4900]] Leveling - Life, Mana, Hybrid
+#   [4901] Hybrid Flasks
+#   [4902] Life flasks
+#   [4903] Mana flasks
+# [[5000]] Leveling - Rules
+#   [5001] Links and Sockets
+#   [5002] Rares - Decorators
+#   [5003] Rares - Universal
+#   [5004] Rares - Caster
+#   [5005] Rares - Archer
+#   [5006] Rares - Melee
+#   [5007] Rares - Other
+# [[5100]] Leveling - Useful magic and normal items
+#   [5101] Purpose Picked Items
+#   [5102] Normals
+#   [5103] Weapon Progression
+#   [5104] Remaining Magics
+#   [5105] Hide All known Section
+#   [5106] Show All unknown Section
 
 #===============================================================================================================
 # [[0100]] Global overriding rules
@@ -296,82 +297,9 @@ Show # $type->maps->influenced $tier->infconquerors
 	Class == "Maps"
 
 #------------------------------------
-#   [0302] Memory Stranded Equipment
+#   [0302] Influenced Gear
 #------------------------------------
 # !! Waypoint c1.infl.all : "All rules - except 6links and influenced maps"
-
-Show # $type->gear->memorystrand $tier->strandedfractured
-	FracturedItem True
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-
-Show # $type->gear->memorystrand $tier->strandedveiled
-	Mirrored False
-	Corrupted False
-	Identified True
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-	HasExplicitMod "Veil"
-
-Show # $type->gear->memorystrand $tier->t1high
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 60
-	Rarity Normal Magic Rare
-	BaseType == "Agate Amulet" "Amethyst Ring" "Blue Pearl Amulet" "Cerulean Ring" "Citrine Amulet" "Conquest Lamellar" "Crystal Belt" "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Iolite Ring" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Onyx Amulet" "Opal Ring" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Prismatic Ring" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Steel Ring" "Stygian Vise" "Syndicate's Garb" "Torturer's Mask" "Turquoise Amulet" "Twilight Regalia" "Two-Stone Ring" "Velour Boots" "Velour Gloves" "Vermillion Ring" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
-
-Show # $type->gear->memorystrand $tier->t1
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-	BaseType == "Agate Amulet" "Amethyst Ring" "Blue Pearl Amulet" "Cerulean Ring" "Citrine Amulet" "Conquest Lamellar" "Crystal Belt" "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Iolite Ring" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Onyx Amulet" "Opal Ring" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Prismatic Ring" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Steel Ring" "Stygian Vise" "Syndicate's Garb" "Torturer's Mask" "Turquoise Amulet" "Twilight Regalia" "Two-Stone Ring" "Velour Boots" "Velour Gloves" "Vermillion Ring" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
-
-Show # $type->gear->memorystrand $tier->t2high
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 60
-	Rarity Normal Magic Rare
-	BaseType == "Amber Amulet" "Ancient Mask" "Apothecary's Gloves" "Arcane Vestment" "Archon Kite Shield" "Artillery Quiver" "Assassin's Boots" "Assassin's Mitts" "Astral Leather" "Battered Foil" "Bone Helmet" "Bone Ring" "Broadhead Arrow Quiver" "Cardinal Round Shield" "Chimerascale Boots" "Chimerascale Gauntlets" "Colossal Tower Shield" "Conqueror's Helmet" "Conquest Helmet" "Convening Wand" "Convoking Wand" "Copper Kris" "Coral Ring" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Despot Axe" "Diamond Ring" "Dire Pelt" "Dragonscale Boots" "Dragonscale Gauntlets" "Eternal Burgonet" "Ezomyte Tower Shield" "Faithful Helmet" "Feathered Arrow Quiver" "Fingerless Silk Gloves" "Fossilised Spirit Shield" "Fugitive Boots" "Full Wyvernscale" "Gemini Claw" "General's Helmet" "Golden Kris" "Goliath Greaves" "Grand Ringmail" "Gripped Gloves" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Heathen Wand" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Imbued Wand" "Imperial Claw" "Infiltrator Boots" "Infiltrator Mitts" "Jade Amulet" "Jester Mask" "Jewelled Foil" "Knight Helm" "Lacquered Buckler" "Lapis Amulet" "Leather Belt" "Legion Boots" "Legion Plate" "Lion Pelt" "Marble Amulet" "Marshall's Brigandine" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Nightweave Robe" "Opal Sceptre" "Opal Wand" "Paladin Crown" "Paladin's Hauberk" "Pig-Faced Bascinet" "Pinnacle Tower Shield" "Platinum Kris" "Praetor Crown" "Precursor Gauntlets" "Precursor Greaves" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Royal Burgonet" "Ruby Ring" "Sage Gloves" "Sage Slippers" "Sambar Sceptre" "Sanguine Raiment" "Sapphire Ring" "Shagreen Boots" "Short Bow" "Siege Axe" "Sinner Tricorne" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spiked Gloves" "Spine Bow" "Stealth Boots" "Stealth Gloves" "Sunfire Circlet" "Supreme Leather" "Supreme Spiked Shield" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Titan Plate" "Titanium Spirit Shield" "Topaz Ring" "Torturer Garb" "Two-Toned Boots" "Unset Ring" "Vaal Axe" "Vaal Greaves" "Vaal Mask" "Vanguard Belt" "Void Sceptre" "Wyrmscale Boots"
-
-Show # %D5 $type->gear->memorystrand $tier->t2
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-	BaseType == "Amber Amulet" "Ancient Mask" "Apothecary's Gloves" "Arcane Vestment" "Archon Kite Shield" "Artillery Quiver" "Assassin's Boots" "Assassin's Mitts" "Astral Leather" "Battered Foil" "Bone Helmet" "Bone Ring" "Broadhead Arrow Quiver" "Cardinal Round Shield" "Chimerascale Boots" "Chimerascale Gauntlets" "Colossal Tower Shield" "Conqueror's Helmet" "Conquest Helmet" "Convening Wand" "Convoking Wand" "Copper Kris" "Coral Ring" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Despot Axe" "Diamond Ring" "Dire Pelt" "Dragonscale Boots" "Dragonscale Gauntlets" "Eternal Burgonet" "Ezomyte Tower Shield" "Faithful Helmet" "Feathered Arrow Quiver" "Fingerless Silk Gloves" "Fossilised Spirit Shield" "Fugitive Boots" "Full Wyvernscale" "Gemini Claw" "General's Helmet" "Golden Kris" "Goliath Greaves" "Grand Ringmail" "Gripped Gloves" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Heathen Wand" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Imbued Wand" "Imperial Claw" "Infiltrator Boots" "Infiltrator Mitts" "Jade Amulet" "Jester Mask" "Jewelled Foil" "Knight Helm" "Lacquered Buckler" "Lapis Amulet" "Leather Belt" "Legion Boots" "Legion Plate" "Lion Pelt" "Marble Amulet" "Marshall's Brigandine" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Nightweave Robe" "Opal Sceptre" "Opal Wand" "Paladin Crown" "Paladin's Hauberk" "Pig-Faced Bascinet" "Pinnacle Tower Shield" "Platinum Kris" "Praetor Crown" "Precursor Gauntlets" "Precursor Greaves" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Royal Burgonet" "Ruby Ring" "Sage Gloves" "Sage Slippers" "Sambar Sceptre" "Sanguine Raiment" "Sapphire Ring" "Shagreen Boots" "Short Bow" "Siege Axe" "Sinner Tricorne" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spiked Gloves" "Spine Bow" "Stealth Boots" "Stealth Gloves" "Sunfire Circlet" "Supreme Leather" "Supreme Spiked Shield" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Titan Plate" "Titanium Spirit Shield" "Topaz Ring" "Torturer Garb" "Two-Toned Boots" "Unset Ring" "Vaal Axe" "Vaal Greaves" "Vaal Mask" "Vanguard Belt" "Void Sceptre" "Wyrmscale Boots"
-
-Show # %D5 $type->gear->memorystrand $tier->t3high
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 60
-	Rarity Normal Magic Rare
-	BaseType == "Agate Amulet" "Ambush Boots" "Ambush Mitts" "Ambusher" "Ancient Greaves" "Antique Greaves" "Arcanist Gloves" "Arcanist Slippers" "Astral Plate" "Behemoth Mace" "Bronzescale Boots" "Calling Wand" "Callous Mask" "Carnal Boots" "Carnal Mitts" "Carnal Sceptre" "Chain Belt" "Champion Kite Shield" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coral Amulet" "Corsair Sword" "Crusader Buckler" "Demon Dagger" "Demon's Horn" "Eclipse Staff" "Eelskin Boots" "Elegant Round Shield" "Eternal Sword" "Exquisite Blade" "Eye Gouger" "Ezomyte Axe" "Ezomyte Blade" "Ezomyte Burgonet" "Ezomyte Staff" "Fencer Helm" "Fiend Dagger" "Fleshripper" "Fluted Bascinet" "Full Dragonscale" "Glorious Plate" "Gold Amulet" "Gold Ring" "Goliath Gauntlets" "Grove Bow" "Harbinger Bow" "Harlequin Mask" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Hellion's Paw" "Imperial Bow" "Imperial Buckler" "Iron Ring" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Lacquered Helmet" "Legion Gloves" "Maelström Staff" "Magistrate Crown" "Maraketh Bow" "Meatgrinder" "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Nubuck Boots" "Omen Wand" "Paua Amulet" "Paua Ring" "Piledriver" "Prophet Crown" "Regicide Mask" "Royal Axe" "Runic Hatchet" "Rustic Sash" "Sadist Garb" "Sai" "Saintly Chainmail" "Samnite Helmet" "Seaglass Amulet" "Serpentscale Boots" "Serpentscale Gauntlets" "Shagreen Gloves" "Sharkskin Boots" "Silken Hood" "Soldier Boots" "Soldier Gloves" "Spiraled Foil" "Steelscale Boots" "Steelscale Gauntlets" "Studded Belt" "Sundering Axe" "Tornado Wand" "Triumphant Lamellar" "Turquoise Amulet" "Ursine Pelt" "Vaal Gauntlets" "Vaal Sceptre" "Vaal Spirit Shield" "Vile Arrow Quiver" "Wyrmscale Gauntlets" "Zealot Boots" "Zodiac Leather"
-
-Show # %D4 $type->gear->memorystrand $tier->t3
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-	BaseType == "Agate Amulet" "Ambush Boots" "Ambush Mitts" "Ambusher" "Ancient Greaves" "Antique Greaves" "Arcanist Gloves" "Arcanist Slippers" "Astral Plate" "Behemoth Mace" "Bronzescale Boots" "Calling Wand" "Callous Mask" "Carnal Boots" "Carnal Mitts" "Carnal Sceptre" "Chain Belt" "Champion Kite Shield" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coral Amulet" "Corsair Sword" "Crusader Buckler" "Demon Dagger" "Demon's Horn" "Eclipse Staff" "Eelskin Boots" "Elegant Round Shield" "Eternal Sword" "Exquisite Blade" "Eye Gouger" "Ezomyte Axe" "Ezomyte Blade" "Ezomyte Burgonet" "Ezomyte Staff" "Fencer Helm" "Fiend Dagger" "Fleshripper" "Fluted Bascinet" "Full Dragonscale" "Glorious Plate" "Gold Amulet" "Gold Ring" "Goliath Gauntlets" "Grove Bow" "Harbinger Bow" "Harlequin Mask" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Hellion's Paw" "Imperial Bow" "Imperial Buckler" "Iron Ring" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Lacquered Helmet" "Legion Gloves" "Maelström Staff" "Magistrate Crown" "Maraketh Bow" "Meatgrinder" "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Nubuck Boots" "Omen Wand" "Paua Amulet" "Paua Ring" "Piledriver" "Prophet Crown" "Regicide Mask" "Royal Axe" "Runic Hatchet" "Rustic Sash" "Sadist Garb" "Sai" "Saintly Chainmail" "Samnite Helmet" "Seaglass Amulet" "Serpentscale Boots" "Serpentscale Gauntlets" "Shagreen Gloves" "Sharkskin Boots" "Silken Hood" "Soldier Boots" "Soldier Gloves" "Spiraled Foil" "Steelscale Boots" "Steelscale Gauntlets" "Studded Belt" "Sundering Axe" "Tornado Wand" "Triumphant Lamellar" "Turquoise Amulet" "Ursine Pelt" "Vaal Gauntlets" "Vaal Sceptre" "Vaal Spirit Shield" "Vile Arrow Quiver" "Wyrmscale Gauntlets" "Zealot Boots" "Zodiac Leather"
-
-Show # %D4 $type->gear->memorystrand $tier->anyhigh
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 60
-	Rarity Normal Magic Rare
-
-Show # %D4 $type->gear->memorystrand $tier->any
-	Mirrored False
-	Corrupted False
-	MemoryStrands >= 1
-	Rarity Normal Magic Rare
-
-#------------------------------------
-#   [0303] Influenced Gear
-#------------------------------------
 
 # Selected exclusive bases
 
@@ -1146,7 +1074,144 @@ Show # %D5 $type->magicid $tier->t2amu
 #	HasExplicitMod >=1 "Carbonising" "Crystalising" "Vapourising"
 
 #===============================================================================================================
-# [[0800]] IDENTIFIED MOD - CORRUPTED ITEMS
+# [[0800]] High Priority Equipment Properties
+#===============================================================================================================
+#------------------------------------
+#   [0801] Perfection and Overquality Filtering
+#------------------------------------
+# !! Waypoint c3.gear.perfectionbased.all : "Crafting Bases - Perfection & Quality filtering"
+
+Show # %D6 $type->crafting->qualityperfection $tier->qualchancing
+	Mirrored False
+	Corrupted False
+	Quality >= 27
+	BaseType == "Riveted Boots" "Steel Kite Shield"
+
+Show # %D6 $type->crafting->qualityperfection $tier->armors1q1
+	Mirrored False
+	Corrupted False
+	Quality >= 28
+	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+
+Show # %D6 $type->crafting->qualityperfection $tier->armors1q2
+	Mirrored False
+	Corrupted False
+	Quality >= 24
+	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+
+Show # %D6 $type->crafting->qualityperfection $tier->weapont1q1
+	Mirrored False
+	Corrupted False
+	Quality >= 28
+	ItemLevel >= 83
+	BaseType == "Artillery Quiver" "Battered Foil" "Broadhead Arrow Quiver" "Convoking Wand" "Copper Kris" "Despot Axe" "Feathered Arrow Quiver" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Jewelled Foil" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Vaal Axe" "Void Sceptre"
+
+Show # %D6 $type->crafting->qualityperfection $tier->weapont2q1
+	Mirrored False
+	Corrupted False
+	Quality >= 28
+	ItemLevel >= 83
+	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Convening Wand" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Ezomyte Staff" "Fleshripper" "Grove Bow" "Harbinger Bow" "Heavy Arrow Quiver" "Imperial Bow" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Meatgrinder" "Piledriver" "Royal Axe" "Runic Hatchet" "Sai" "Spiraled Foil" "Sundering Axe" "Vile Arrow Quiver"
+
+Show # %D6 $type->crafting->qualityperfection $tier->weapont1q2
+	Mirrored False
+	Corrupted False
+	Quality >= 24
+	ItemLevel >= 83
+	BaseType == "Artillery Quiver" "Battered Foil" "Broadhead Arrow Quiver" "Convoking Wand" "Copper Kris" "Despot Axe" "Feathered Arrow Quiver" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Jewelled Foil" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Vaal Axe" "Void Sceptre"
+
+Show # %D6 $type->crafting->qualityperfection $tier->weapont2q2
+	Mirrored False
+	Corrupted False
+	Quality >= 24
+	ItemLevel >= 83
+	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Convening Wand" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Ezomyte Staff" "Fleshripper" "Grove Bow" "Harbinger Bow" "Heavy Arrow Quiver" "Imperial Bow" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Meatgrinder" "Piledriver" "Royal Axe" "Runic Hatchet" "Sai" "Spiraled Foil" "Sundering Axe" "Vile Arrow Quiver"
+
+#Show # %D5 $type->crafting->qualityperfection $tier->perfectioncrafting
+#	Mirrored False
+#	Corrupted False
+#	ItemLevel >= 84
+#	BaseDefencePercentile >= 99
+#	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+#	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+
+#------------------------------------
+#   [0802] Memory Strand Gear
+#------------------------------------
+
+Show # %D6 $type->gear->memorystrand $tier->strandedfractured
+	FracturedItem True
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+
+Show # %D6 $type->gear->memorystrand $tier->strandedveiled
+	Mirrored False
+	Corrupted False
+	Identified True
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+	HasExplicitMod "Veil"
+
+Show # %D6 $type->gear->memorystrand $tier->t1high
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 60
+	Rarity Normal Magic Rare
+	BaseType == "Agate Amulet" "Amethyst Ring" "Blue Pearl Amulet" "Cerulean Ring" "Citrine Amulet" "Conquest Lamellar" "Crystal Belt" "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Iolite Ring" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Onyx Amulet" "Opal Ring" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Prismatic Ring" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Steel Ring" "Stygian Vise" "Syndicate's Garb" "Torturer's Mask" "Turquoise Amulet" "Twilight Regalia" "Two-Stone Ring" "Velour Boots" "Velour Gloves" "Vermillion Ring" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+
+Show # %D6 $type->gear->memorystrand $tier->t1
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+	BaseType == "Agate Amulet" "Amethyst Ring" "Blue Pearl Amulet" "Cerulean Ring" "Citrine Amulet" "Conquest Lamellar" "Crystal Belt" "Divine Crown" "Giantslayer Helmet" "Haunted Bascinet" "Iolite Ring" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Onyx Amulet" "Opal Ring" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Prismatic Ring" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Steel Ring" "Stygian Vise" "Syndicate's Garb" "Torturer's Mask" "Turquoise Amulet" "Twilight Regalia" "Two-Stone Ring" "Velour Boots" "Velour Gloves" "Vermillion Ring" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
+
+Show # %D6 $type->gear->memorystrand $tier->t2high
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 60
+	Rarity Normal Magic Rare
+	BaseType == "Amber Amulet" "Ancient Mask" "Apothecary's Gloves" "Arcane Vestment" "Archon Kite Shield" "Artillery Quiver" "Assassin's Boots" "Assassin's Mitts" "Astral Leather" "Battered Foil" "Bone Helmet" "Bone Ring" "Broadhead Arrow Quiver" "Cardinal Round Shield" "Chimerascale Boots" "Chimerascale Gauntlets" "Colossal Tower Shield" "Conqueror's Helmet" "Conquest Helmet" "Convening Wand" "Convoking Wand" "Copper Kris" "Coral Ring" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Despot Axe" "Diamond Ring" "Dire Pelt" "Dragonscale Boots" "Dragonscale Gauntlets" "Eternal Burgonet" "Ezomyte Tower Shield" "Faithful Helmet" "Feathered Arrow Quiver" "Fingerless Silk Gloves" "Fossilised Spirit Shield" "Fugitive Boots" "Full Wyvernscale" "Gemini Claw" "General's Helmet" "Golden Kris" "Goliath Greaves" "Grand Ringmail" "Gripped Gloves" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Heathen Wand" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Imbued Wand" "Imperial Claw" "Infiltrator Boots" "Infiltrator Mitts" "Jade Amulet" "Jester Mask" "Jewelled Foil" "Knight Helm" "Lacquered Buckler" "Lapis Amulet" "Leather Belt" "Legion Boots" "Legion Plate" "Lion Pelt" "Marble Amulet" "Marshall's Brigandine" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Nightweave Robe" "Opal Sceptre" "Opal Wand" "Paladin Crown" "Paladin's Hauberk" "Pig-Faced Bascinet" "Pinnacle Tower Shield" "Platinum Kris" "Praetor Crown" "Precursor Gauntlets" "Precursor Greaves" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Royal Burgonet" "Ruby Ring" "Sage Gloves" "Sage Slippers" "Sambar Sceptre" "Sanguine Raiment" "Sapphire Ring" "Shagreen Boots" "Short Bow" "Siege Axe" "Sinner Tricorne" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spiked Gloves" "Spine Bow" "Stealth Boots" "Stealth Gloves" "Sunfire Circlet" "Supreme Leather" "Supreme Spiked Shield" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Titan Plate" "Titanium Spirit Shield" "Topaz Ring" "Torturer Garb" "Two-Toned Boots" "Unset Ring" "Vaal Axe" "Vaal Greaves" "Vaal Mask" "Vanguard Belt" "Void Sceptre" "Wyrmscale Boots"
+
+Show # %D5 $type->gear->memorystrand $tier->t2
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+	BaseType == "Amber Amulet" "Ancient Mask" "Apothecary's Gloves" "Arcane Vestment" "Archon Kite Shield" "Artillery Quiver" "Assassin's Boots" "Assassin's Mitts" "Astral Leather" "Battered Foil" "Bone Helmet" "Bone Ring" "Broadhead Arrow Quiver" "Cardinal Round Shield" "Chimerascale Boots" "Chimerascale Gauntlets" "Colossal Tower Shield" "Conqueror's Helmet" "Conquest Helmet" "Convening Wand" "Convoking Wand" "Copper Kris" "Coral Ring" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Despot Axe" "Diamond Ring" "Dire Pelt" "Dragonscale Boots" "Dragonscale Gauntlets" "Eternal Burgonet" "Ezomyte Tower Shield" "Faithful Helmet" "Feathered Arrow Quiver" "Fingerless Silk Gloves" "Fossilised Spirit Shield" "Fugitive Boots" "Full Wyvernscale" "Gemini Claw" "General's Helmet" "Golden Kris" "Goliath Greaves" "Grand Ringmail" "Gripped Gloves" "Grizzly Pelt" "Harpyskin Boots" "Harpyskin Gloves" "Heathen Wand" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Imbued Wand" "Imperial Claw" "Infiltrator Boots" "Infiltrator Mitts" "Jade Amulet" "Jester Mask" "Jewelled Foil" "Knight Helm" "Lacquered Buckler" "Lapis Amulet" "Leather Belt" "Legion Boots" "Legion Plate" "Lion Pelt" "Marble Amulet" "Marshall's Brigandine" "Martyr Boots" "Martyr Gloves" "Moonlit Circlet" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Nightweave Robe" "Opal Sceptre" "Opal Wand" "Paladin Crown" "Paladin's Hauberk" "Pig-Faced Bascinet" "Pinnacle Tower Shield" "Platinum Kris" "Praetor Crown" "Precursor Gauntlets" "Precursor Greaves" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Royal Burgonet" "Ruby Ring" "Sage Gloves" "Sage Slippers" "Sambar Sceptre" "Sanguine Raiment" "Sapphire Ring" "Shagreen Boots" "Short Bow" "Siege Axe" "Sinner Tricorne" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spiked Gloves" "Spine Bow" "Stealth Boots" "Stealth Gloves" "Sunfire Circlet" "Supreme Leather" "Supreme Spiked Shield" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Titan Plate" "Titanium Spirit Shield" "Topaz Ring" "Torturer Garb" "Two-Toned Boots" "Unset Ring" "Vaal Axe" "Vaal Greaves" "Vaal Mask" "Vanguard Belt" "Void Sceptre" "Wyrmscale Boots"
+
+Show # %D5 $type->gear->memorystrand $tier->t3high
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 60
+	Rarity Normal Magic Rare
+	BaseType == "Agate Amulet" "Ambush Boots" "Ambush Mitts" "Ambusher" "Ancient Greaves" "Antique Greaves" "Arcanist Gloves" "Arcanist Slippers" "Astral Plate" "Behemoth Mace" "Bronzescale Boots" "Calling Wand" "Callous Mask" "Carnal Boots" "Carnal Mitts" "Carnal Sceptre" "Chain Belt" "Champion Kite Shield" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coral Amulet" "Corsair Sword" "Crusader Buckler" "Demon Dagger" "Demon's Horn" "Eclipse Staff" "Eelskin Boots" "Elegant Round Shield" "Eternal Sword" "Exquisite Blade" "Eye Gouger" "Ezomyte Axe" "Ezomyte Blade" "Ezomyte Burgonet" "Ezomyte Staff" "Fencer Helm" "Fiend Dagger" "Fleshripper" "Fluted Bascinet" "Full Dragonscale" "Glorious Plate" "Gold Amulet" "Gold Ring" "Goliath Gauntlets" "Grove Bow" "Harbinger Bow" "Harlequin Mask" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Hellion's Paw" "Imperial Bow" "Imperial Buckler" "Iron Ring" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Lacquered Helmet" "Legion Gloves" "Maelström Staff" "Magistrate Crown" "Maraketh Bow" "Meatgrinder" "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Nubuck Boots" "Omen Wand" "Paua Amulet" "Paua Ring" "Piledriver" "Prophet Crown" "Regicide Mask" "Royal Axe" "Runic Hatchet" "Rustic Sash" "Sadist Garb" "Sai" "Saintly Chainmail" "Samnite Helmet" "Seaglass Amulet" "Serpentscale Boots" "Serpentscale Gauntlets" "Shagreen Gloves" "Sharkskin Boots" "Silken Hood" "Soldier Boots" "Soldier Gloves" "Spiraled Foil" "Steelscale Boots" "Steelscale Gauntlets" "Studded Belt" "Sundering Axe" "Tornado Wand" "Triumphant Lamellar" "Turquoise Amulet" "Ursine Pelt" "Vaal Gauntlets" "Vaal Sceptre" "Vaal Spirit Shield" "Vile Arrow Quiver" "Wyrmscale Gauntlets" "Zealot Boots" "Zodiac Leather"
+
+Show # %D4 $type->gear->memorystrand $tier->t3
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+	BaseType == "Agate Amulet" "Ambush Boots" "Ambush Mitts" "Ambusher" "Ancient Greaves" "Antique Greaves" "Arcanist Gloves" "Arcanist Slippers" "Astral Plate" "Behemoth Mace" "Bronzescale Boots" "Calling Wand" "Callous Mask" "Carnal Boots" "Carnal Mitts" "Carnal Sceptre" "Chain Belt" "Champion Kite Shield" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coral Amulet" "Corsair Sword" "Crusader Buckler" "Demon Dagger" "Demon's Horn" "Eclipse Staff" "Eelskin Boots" "Elegant Round Shield" "Eternal Sword" "Exquisite Blade" "Eye Gouger" "Ezomyte Axe" "Ezomyte Blade" "Ezomyte Burgonet" "Ezomyte Staff" "Fencer Helm" "Fiend Dagger" "Fleshripper" "Fluted Bascinet" "Full Dragonscale" "Glorious Plate" "Gold Amulet" "Gold Ring" "Goliath Gauntlets" "Grove Bow" "Harbinger Bow" "Harlequin Mask" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Hellion's Paw" "Imperial Bow" "Imperial Buckler" "Iron Ring" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Lacquered Helmet" "Legion Gloves" "Maelström Staff" "Magistrate Crown" "Maraketh Bow" "Meatgrinder" "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Nubuck Boots" "Omen Wand" "Paua Amulet" "Paua Ring" "Piledriver" "Prophet Crown" "Regicide Mask" "Royal Axe" "Runic Hatchet" "Rustic Sash" "Sadist Garb" "Sai" "Saintly Chainmail" "Samnite Helmet" "Seaglass Amulet" "Serpentscale Boots" "Serpentscale Gauntlets" "Shagreen Gloves" "Sharkskin Boots" "Silken Hood" "Soldier Boots" "Soldier Gloves" "Spiraled Foil" "Steelscale Boots" "Steelscale Gauntlets" "Studded Belt" "Sundering Axe" "Tornado Wand" "Triumphant Lamellar" "Turquoise Amulet" "Ursine Pelt" "Vaal Gauntlets" "Vaal Sceptre" "Vaal Spirit Shield" "Vile Arrow Quiver" "Wyrmscale Gauntlets" "Zealot Boots" "Zodiac Leather"
+
+Show # %D4 $type->gear->memorystrand $tier->anyhigh
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 60
+	Rarity Normal Magic Rare
+
+Show # %D4 $type->gear->memorystrand $tier->any
+	Mirrored False
+	Corrupted False
+	MemoryStrands >= 1
+	Rarity Normal Magic Rare
+
+#===============================================================================================================
+# [[0900]] IDENTIFIED MOD - CORRUPTED ITEMS
 #===============================================================================================================
 # !! Waypoint c1.idmod.corruptedmod : "Identified Mods - Items with corrupted implicits"
 
@@ -1177,11 +1242,11 @@ Show # %D4 $type->corruptedid $tier->quiv_dot
 	HasExplicitMod >=3 "Impaling" "Lacerating" "Incisive" "of the Underground" "Subterranean" "Elevated " "of Splintering" "Fecund" "Athlete's" "Virile" "of the Blur" "of the Wind" "of Tzteosh" "of the Magma" "of Haast" "of the Ice" "of Ephij" "of the Lightning" "of Bameth" "of Exile" "of the Essence" "Essences" "of Tacati" "of Puhuarte" "Veil" "Cremating" "Flaring" "Devastating" "of Grandmastery" "of Mastery" "of Ease" "of Lioneye" "of the Ranger" "of Dissolution" "of Melting" "of Liquefaction" "of the Gale" "of Destruction" "of Rending"
 
 #===============================================================================================================
-# [[0900]] Exotic Mods Filtering
+# [[1000]] Exotic Mods Filtering
 #===============================================================================================================
 
 #------------------------------------
-#   [0901] Veiled/Betrayal - low prio veiled items
+#   [1001] Veiled/Betrayal - low prio veiled items
 #------------------------------------
 # !! Waypoint c1.idmod.veil.all : "Identified Mods - Low priority veiled items (not member specific)"
 
@@ -1202,7 +1267,7 @@ Show # %D4 $type->exoticmods $tier->duoveil
 	HasExplicitMod "of the Veil"
 
 #------------------------------------
-#   [0902] Incursion/Temple Mods
+#   [1002] Incursion/Temple Mods
 #------------------------------------
 # !! Waypoint c1.idmod.league.all : "Identified Mods - Incursion mod filtering"
 
@@ -1265,7 +1330,7 @@ Show # %D2 $type->exoticmods $tier->incursionrandom
 	HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 
 #------------------------------------
-#   [0903] Necropolis
+#   [1003] Necropolis
 #------------------------------------
 
 Show # $type->exoticmods $tier->necropoliscraft
@@ -1274,7 +1339,7 @@ Show # $type->exoticmods $tier->necropoliscraft
 	HasExplicitMod "Haunted" "of Haunting"
 
 #------------------------------------
-#   [0904] Bestiary
+#   [1004] Bestiary
 #------------------------------------
 
 Show # $type->exoticmods $tier->bestiaryvaluable
@@ -1288,7 +1353,7 @@ Show # %D4 $type->exoticmods $tier->bestiaryother
 	HasExplicitMod "of Craiceann" "of Saqawal"
 
 #------------------------------------
-#   [0905] Other
+#   [1005] Other
 #------------------------------------
 
 Show # $type->exoticmods $tier->delvefractured
@@ -1330,7 +1395,7 @@ Show # %D2 $type->exoticmods $tier->essence
 #	HasExplicitMod "of Crafting" "of Spellcraft" "of Weaponcraft"
 
 #===============================================================================================================
-# [[1000]] Exotic Item Classes
+# [[1100]] Exotic Item Classes
 #===============================================================================================================
 # !! Waypoint c2.exotic.artefacts.all : "Exotic - Voidstones, Trinkets, Fishing items, Pieces"
 
@@ -1352,7 +1417,7 @@ Show # $type->artefact->misc $tier->pieces
 	Class == "Pieces"
 
 #------------------------------------
-#   [1001] Craftable Invitations
+#   [1101] Craftable Invitations
 #------------------------------------
 # !! Waypoint c2.exotic.invitations.all : "Exotic - Invitations and Quest items"
 
@@ -1375,7 +1440,7 @@ Show # %H6 $type->exotic->invitation $tier->t3
 	BaseType == "Polaric Invitation" "Writhing Invitation"
 
 #------------------------------------
-#   [1002] Relics
+#   [1102] Relics
 #------------------------------------
 
 Show # $type->artefact->sanctifiedrelics $tier->selectedrelics
@@ -1388,12 +1453,12 @@ Show # $type->artefact->sanctifiedrelics $tier->anyrelic
 	Class == "Relics"
 
 #===============================================================================================================
-# [[1100]] Exotic Item Variations
+# [[1200]] Exotic Item Variations
 #===============================================================================================================
 # !! Waypoint c2.exotic.doublecorrupted.all : "SpecialGear - Double corrupted rare items"
 
 #------------------------------------
-#   [1101] Double Corruptions
+#   [1201] Double Corruptions
 #------------------------------------
 
 Show # %D6 $type->exotic->corruptions $tier->doublecorruptedjwlry
@@ -1416,7 +1481,7 @@ Show # %D3 $type->exotic->corruptions $tier->singlecorruptedquivers
 	Class == "Quivers"
 
 #------------------------------------
-#   [1102] Abyss Jeweled Rares
+#   [1202] Abyss Jeweled Rares
 #------------------------------------
 # !! Waypoint c2.exotic.abysssocketed : "SpecialGear - Rares with Abyss Sockets"
 
@@ -1426,7 +1491,7 @@ Show # $type->exotic->sockets $tier->anynonbelt
 	Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 
 #------------------------------------
-#   [1103] Synthesised
+#   [1203] Synthesised
 #------------------------------------
 # !! Waypoint c2.exotic.synthesised.all : "SpecialGear - All synthesised items"
 
@@ -1445,7 +1510,7 @@ Show # %D5 $type->exotic->synthesised $tier->synthrandom
 	Rarity Normal Magic Rare
 
 #------------------------------------
-#   [1104] Fractured
+#   [1204] Fractured
 #------------------------------------ 	
 # !! Waypoint c2.exotic.fractured.all : "SpecialGear - All fractured items"
 
@@ -1484,7 +1549,7 @@ Show # %D2 $type->exotic->fractured $tier->fractothers
 	Rarity Normal Magic Rare
 
 #------------------------------------
-#   [1105] Enchanted
+#   [1205] Enchanted
 #------------------------------------
 # !! Waypoint c2.exotic.enchanted.all : "SpecialGear - All enchanted items"
 
@@ -1508,7 +1573,7 @@ Show # %D3 $type->exotic->enchanted $tier->anointedrings
 	Class == "Rings"
 
 #------------------------------------
-#   [1106] Crucible
+#   [1206] Crucible
 #------------------------------------
 # !! Waypoint c2.exotic.others : "SpecialGear - Others exotic items"
 
@@ -1517,11 +1582,11 @@ Show # %D3 $type->exotic->crucible $tier->crucibleany
 	Rarity Normal Magic Rare
 
 #===============================================================================================================
-# [[1200]] Recipes and 5links
+# [[1300]] Recipes and 5links
 #===============================================================================================================
 # !! Waypoint c3.gear.alllinks.all : "SpecialGear - 5-links and 6-socketed items"
 #------------------------------------
-#   [1201] Link Based
+#   [1301] Link Based
 #------------------------------------
 
 Show # %D4 $type->socketslinks $tier->5linksleveling
@@ -1556,11 +1621,11 @@ Show # %DS3 $type->socketslinks $tier->6sockets
 	Rarity Normal Magic Rare
 
 #===============================================================================================================
-# [[1300]] High Level Crafting Bases
+# [[1400]] High Level Crafting Bases
 #===============================================================================================================
 # !! Waypoint c3.gear.valuableilvl86 : "Crafting Bases - ilvl86 crafting bases"
 #------------------------------------
-#   [1301] Expensive Atlas 86 Bases - matched by economy
+#   [1401] Expensive Atlas 86 Bases - matched by economy
 #------------------------------------
 
 Show # %D5 $type->crafting->expensive $tier->any
@@ -1570,73 +1635,12 @@ Show # %D5 $type->crafting->expensive $tier->any
 	Rarity Normal Magic Rare
 	BaseType == "Sacrificial Garb"
 
-#------------------------------------
-#   [1302] Perfection and Overquality Filtering
-#------------------------------------
-# !! Waypoint c3.gear.perfectionbased.all : "Crafting Bases - Perfection & Quality filtering"
-
-Show # %D6 $type->crafting->qualityperfection $tier->qualchancing
-	Mirrored False
-	Corrupted False
-	Quality >= 27
-	BaseType == "Riveted Boots" "Steel Kite Shield"
-
-Show # %D6 $type->crafting->qualityperfection $tier->armors1q1
-	Mirrored False
-	Corrupted False
-	Quality >= 28
-	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
-
-Show # %D6 $type->crafting->qualityperfection $tier->armors1q2
-	Mirrored False
-	Corrupted False
-	Quality >= 24
-	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
-
-Show # %D6 $type->crafting->qualityperfection $tier->weapont1q1
-	Mirrored False
-	Corrupted False
-	Quality >= 28
-	ItemLevel >= 83
-	BaseType == "Artillery Quiver" "Battered Foil" "Broadhead Arrow Quiver" "Convoking Wand" "Copper Kris" "Despot Axe" "Feathered Arrow Quiver" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Jewelled Foil" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Vaal Axe" "Void Sceptre"
-
-Show # %D6 $type->crafting->qualityperfection $tier->weapont2q1
-	Mirrored False
-	Corrupted False
-	Quality >= 28
-	ItemLevel >= 83
-	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Convening Wand" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Ezomyte Staff" "Fleshripper" "Grove Bow" "Harbinger Bow" "Heavy Arrow Quiver" "Imperial Bow" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Meatgrinder" "Piledriver" "Royal Axe" "Runic Hatchet" "Sai" "Spiraled Foil" "Sundering Axe" "Vile Arrow Quiver"
-
-Show # %D6 $type->crafting->qualityperfection $tier->weapont1q2
-	Mirrored False
-	Corrupted False
-	Quality >= 24
-	ItemLevel >= 83
-	BaseType == "Artillery Quiver" "Battered Foil" "Broadhead Arrow Quiver" "Convoking Wand" "Copper Kris" "Despot Axe" "Feathered Arrow Quiver" "Gemini Claw" "Golden Kris" "Imbued Wand" "Imperial Claw" "Jewelled Foil" "Opal Sceptre" "Opal Wand" "Platinum Kris" "Primal Arrow Quiver" "Profane Wand" "Prophecy Wand" "Reaver Axe" "Reaver Sword" "Reflex Bow" "Sambar Sceptre" "Short Bow" "Siege Axe" "Spine Bow" "Thicket Bow" "Vaal Axe" "Void Sceptre"
-
-Show # %D6 $type->crafting->qualityperfection $tier->weapont2q2
-	Mirrored False
-	Corrupted False
-	Quality >= 24
-	ItemLevel >= 83
-	BaseType == "Ambusher" "Behemoth Mace" "Citadel Bow" "Convening Wand" "Corsair Sword" "Eclipse Staff" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Ezomyte Staff" "Fleshripper" "Grove Bow" "Harbinger Bow" "Heavy Arrow Quiver" "Imperial Bow" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Maelström Staff" "Maraketh Bow" "Meatgrinder" "Piledriver" "Royal Axe" "Runic Hatchet" "Sai" "Spiraled Foil" "Sundering Axe" "Vile Arrow Quiver"
-
-#Show # %D5 $type->crafting->qualityperfection $tier->perfectioncrafting
-#	Mirrored False
-#	Corrupted False
-#	ItemLevel >= 84
-#	BaseDefencePercentile >= 99
-#	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
-#	BaseType == "Archon Kite Shield" "Cardinal Round Shield" "Colossal Tower Shield" "Conquest Lamellar" "Divine Crown" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Giantslayer Helmet" "Haunted Bascinet" "Lacquered Buckler" "Leviathan Gauntlets" "Leviathan Greaves" "Lich's Circlet" "Majestic Pelt" "Necrotic Armour" "Paladin Boots" "Paladin Gloves" "Phantom Boots" "Phantom Mitts" "Royal Plate" "Sacred Chainmail" "Sacrificial Garb" "Supreme Spiked Shield" "Syndicate's Garb" "Titanium Spirit Shield" "Torturer's Mask" "Twilight Regalia" "Velour Boots" "Velour Gloves" "Warlock Boots" "Warlock Gloves" "Wyvernscale Boots" "Wyvernscale Gauntlets"
-
 #===============================================================================================================
-# [[1400]] Endgame - Rare - Gear
+# [[1500]] Endgame - Rare - Gear
 #===============================================================================================================
 # !! Waypoint c4.rare.decorator.all : "Rare Endgame Items - decorators"
 #------------------------------------
-# [[1500]] Endgame - Rare - Decorators
+# [[1600]] Endgame - Rare - Decorators
 #------------------------------------
 
 Show # $type->decorators->rareeg $tier->largerares
@@ -1742,7 +1746,7 @@ Show # $type->decorators->rareeg $tier->corruptedraresimplicit
 #	AreaLevel 1
 
 #------------------------------------
-# [[1600]] Endgame - Rare - Exotic Veiled
+# [[1700]] Endgame - Rare - Exotic Veiled
 #------------------------------------
 # !! Waypoint c4.rare.veiled.generic : "Rare Endgame Items - Veiled"
 
@@ -1781,7 +1785,7 @@ Show # %D2 $type->rare->exotic->veiled $tier->any
 	HasExplicitMod "Veil"
 
 #------------------------------------
-# [[1700]] Endgame - Rare - Exotic Corrupted
+# [[1800]] Endgame - Rare - Exotic Corrupted
 #------------------------------------
 # !! Waypoint c4.rare.breach.all : "Rare Endgame Items - Breach rings"
 
@@ -1850,7 +1854,7 @@ Hide # %H0 $type->rare->exotic->talisman $tier->any
 	BaseType "Talisman"
 
 #------------------------------------
-# [[1800]] Endgame - Rare - Conditional Hide Rules
+# [[1900]] Endgame - Rare - Conditional Hide Rules
 #------------------------------------
 # !! Waypoint c4.rare.generic.all : "Rare Endgame Items - (Optional) Hiding identified rares"
 
@@ -1879,7 +1883,7 @@ Hide # $type->hidelayer $tier->mirroredrares
 	Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 
 #------------------------------------
-# [[1900]] Endgame - Rare - Amulets, Rings, Boots
+# [[2000]] Endgame - Rare - Amulets, Rings, Boots
 #------------------------------------
 # !! Waypoint c4.rare.trinkets.all : "Rare Endgame Items - Amulets, Rings"
 
@@ -1922,7 +1926,7 @@ Show # %D2 $type->rr->belts $tier->t3
 	BaseType == "Chain Belt" "Cloth Belt" "Rustic Sash" "Studded Belt"
 
 #------------------------------------
-# [[2000]] Endgame - Rare - Gear - Droplevel Hiding
+# [[2100]] Endgame - Rare - Gear - Droplevel Hiding
 #------------------------------------
 # !! Waypoint c4.rare.drophiders : "Rare Endgame Items - Hide low items on high levels"
 
@@ -1955,7 +1959,7 @@ Hide # %RH1 $type->hidelayer $tier->rrihide4
 	AreaLevel >= 73
 
 #------------------------------------
-#   [2001] Endgame - Rare - Gear
+#   [2101] Endgame - Rare - Gear
 #------------------------------------
 # !! Waypoint c4.rare.t1.all : "Rare Endgame Items - T1"
 
@@ -1996,10 +2000,10 @@ Show # %D2 $type->rr $tier->t4
 	BaseType == "Abyssal Sceptre" "Ancient Gauntlets" "Angelic Kite Shield" "Antique Gauntlets" "Artillery Quiver" "Assassin's Garb" "Aventail Helmet" "Battle Buckler" "Behemoth Mace" "Blood Raiment" "Blood Sceptre" "Bone Bow" "Branded Kite Shield" "Bronze Tower Shield" "Bronzescale Gauntlets" "Butcher Axe" "Carnal Armour" "Chiming Spirit Shield" "Citadel Bow" "Clasped Boots" "Clasped Mitts" "Coiled Wand" "Conjurer Boots" "Conjurer Gloves" "Conquest Chainmail" "Copper Kris" "Coronal Maul" "Corsair Sword" "Crusader Helmet" "Crystal Sceptre" "Crystal Wand" "Deerskin Boots" "Desert Brigandine" "Destiny Leather" "Dragonscale Doublet" "Ebony Tower Shield" "Eclipse Staff" "Eelskin Gloves" "Elegant Foil" "Elegant Ringmail" "Engraved Hatchet" "Engraved Wand" "Exquisite Blade" "Exquisite Leather" "Ezomyte Blade" "Ezomyte Dagger" "Ezomyte Spiked Shield" "Festival Mask" "Fleshripper" "General's Brigandine" "Gilded Sallet" "Gladiator Plate" "Goathide Boots" "Golden Kris" "Golden Mask" "Great Crown" "Grove Bow" "Gutting Knife" "Harbinger Bow" "Hunter Hood" "Imp Dagger" "Imperial Skean" "Infernal Axe" "Ironscale Boots" "Ironscale Gauntlets" "Ivory Bow" "Jewelled Foil" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Lacewood Spirit Shield" "Maelström Staff" "Meatgrinder" "Mesh Boots" "Midnight Blade" "Mind Cage" "Nightmare Mace" "Noble Tricorne" "Pagan Wand" "Penetrating Arrow Quiver" "Piledriver" "Plated Greaves" "Platinum Sceptre" "Polished Spiked Shield" "Raven Mask" "Reaver Helmet" "Reinforced Greaves" "Riveted Boots" "Riveted Gloves" "Royal Sceptre" "Royal Skean" "Sai" "Saint's Hauberk" "Sambar Sceptre" "Samite Gloves" "Samite Slippers" "Satin Slippers" "Scholar Boots" "Secutor Helm" "Serrated Foil" "Shackled Boots" "Sharkskin Gloves" "Sharktooth Arrow Quiver" "Siege Helmet" "Slaughter Knife" "Solaris Circlet" "Sovereign Spiked Shield" "Spiked Round Shield" "Spike-Point Arrow Quiver" "Spiny Round Shield" "Spiraled Foil" "Teak Round Shield" "Terror Claw" "Thorium Spirit Shield" "Throat Stabber" "Trapper Boots" "Trapper Mitts" "Twin Claw" "Two-Point Arrow Quiver" "Tyrant's Sekhem" "Vaal Buckler" "Vaal Greatsword" "Vaal Hatchet" "Vaal Regalia" "Vile Arrow Quiver" "Visored Sallet" "Void Axe" "Widowsilk Robe" "Zealot Gloves" "Zealot Helmet"
 
 #===============================================================================================================
-# [[2100]] Endgame - Crafting
+# [[2200]] Endgame - Crafting
 #===============================================================================================================
 #------------------------------------
-#   [2101] Early Endgame Crafting projects
+#   [2201] Early Endgame Crafting projects
 #------------------------------------
 # Minimal list of bases crafting. This list is really not conclusive, but you can adjust it yourself on filterblade or here.
 # Having this list too long will lead to being too flooded with these drops.
@@ -2022,7 +2026,7 @@ Show # %D2 $type->rr $tier->t4
 #	AreaLevel >= 68
 
 #------------------------------------
-#   [2102] Crafting Matrix
+#   [2202] Crafting Matrix
 #------------------------------------
 
 # !! Waypoint c5.gear.crafting86.all : "Crafting Bases - High level basetypes - ILVL86"
@@ -2142,7 +2146,7 @@ Show # %D3 $type->crafting->generalgear $tier->t1_rest
 #	BaseType == "Agate Amulet" "Ambusher" "Behemoth Mace" "Champion Kite Shield" "Citadel Bow" "Citrine Amulet" "Convening Wand" "Corsair Sword" "Crusader Buckler" "Eclipse Staff" "Elegant Round Shield" "Eternal Sword" "Exquisite Blade" "Ezomyte Blade" "Ezomyte Staff" "Fleshripper" "Grove Bow" "Harbinger Bow" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Heavy Belt" "Imperial Bow" "Imperial Buckler" "Judgement Staff" "Karui Chopper" "Karui Sceptre" "Leather Belt" "Maelström Staff" "Maraketh Bow" "Meatgrinder" "Mirrored Spiked Shield" "Moonstone Ring" "Piledriver" "Pinnacle Tower Shield" "Royal Axe" "Runic Hatchet" "Rustic Sash" "Sai" "Seaglass Amulet" "Spiraled Foil" "Sundering Axe" "Turquoise Amulet" "Vile Arrow Quiver"
 
 #------------------------------------
-#   [2103] Chisel Recipes
+#   [2203] Chisel Recipes
 #------------------------------------
 # !! Waypoint c5.recipes.chisel.all : "Recipes - Chisel recipe"
 
@@ -2178,7 +2182,7 @@ Show # %D3 $type->crafting->generalgear $tier->t1_rest
 #	BaseType == "Gavel"
 
 #===============================================================================================================
-# [[2200]] Chancing Bases
+# [[2300]] Chancing Bases
 #===============================================================================================================
 # !! Waypoint c5.chancing : "Chancing bases"
 
@@ -2195,7 +2199,7 @@ Show # %D3 $type->crafting->generalgear $tier->t1_rest
 #	BaseType == "Champion Kite Shield" "Elegant Round Shield"
 
 #===============================================================================================================
-# [[2300]] Endgame Flasks & Tinctures
+# [[2400]] Endgame Flasks & Tinctures
 #===============================================================================================================
 
 Show # %D6 $type->endgametinctures $tier->overqual1
@@ -2234,7 +2238,7 @@ Show # %D4 $type->endgametinctures $tier->any
 	AreaLevel >= 68
 
 #------------------------------------
-#   [2301] Endgame Flasks
+#   [2401] Endgame Flasks
 #------------------------------------
 # !! Waypoint c6.flasks.all : "Endgame Flasks - All non-unique"
 
@@ -2322,7 +2326,7 @@ Show # %D3 $type->endgameflasks $tier->lifemana82
 	AreaLevel >= 68
 
 #------------------------------------
-#   [2302] Quality High
+#   [2402] Quality High
 #------------------------------------
 # !! Waypoint c6.flasks.others : "Endgame Flasks - Other flasks"
 
@@ -2333,7 +2337,7 @@ Show # %D2 $type->endgameflasks $tier->any20qualflask
 	AreaLevel >= 68
 
 #------------------------------------
-#   [2303] Quality Low
+#   [2403] Quality Low
 #------------------------------------
 
 #Show # %D1 $type->endgameflasks $tier->qualityhigh
@@ -2351,7 +2355,7 @@ Show # %D2 $type->endgameflasks $tier->any20qualflask
 #	AreaLevel <= 77
 
 #------------------------------------
-#   [2304] Utility flasks
+#   [2404] Utility flasks
 #------------------------------------
 
 Show # %D4 $type->endgameflasks $tier->earlymappingflasks
@@ -2370,7 +2374,7 @@ Show # %D3 $type->endgameflasks $tier->anyutility
 	AreaLevel >= 68
 
 #------------------------------------
-#   [2305] Early mapping life/mana/utility flasks
+#   [2405] Early mapping life/mana/utility flasks
 #------------------------------------
 
 Show # %D2 $type->endgameflasks $tier->earlymappinglifemana
@@ -2382,7 +2386,7 @@ Show # %D2 $type->endgameflasks $tier->earlymappinglifemana
 	AreaLevel <= 70
 
 #===============================================================================================================
-# [[2400]] Misc Rules
+# [[2500]] Misc Rules
 #===============================================================================================================
 # !! Waypoint c6.misc.others : "SpecialGear - Overquality items and optional animated weapon module"
 
@@ -2411,7 +2415,7 @@ Show # %D3 $type->miscendgamerules $tier->whitesocketweapons1h
 #	Class == "Bows" "Wands"
 
 #------------------------------------
-#   [2401] RGB Endgame
+#   [2501] RGB Endgame
 #------------------------------------
 # !! Waypoint c6.recipes.rgb.all : "Recipes - Endgame chromatic recipes (normal and magic RGBs)"
 
@@ -2448,7 +2452,7 @@ Show # %D2 $type->endgamergb $tier->rgbsmall2
 #	AreaLevel <= 83
 
 #------------------------------------
-#   [2402] Remaining Rares
+#   [2502] Remaining Rares
 #------------------------------------
 # !! Waypoint c6.rares.remaining : "Rares - lowest tier"
 
@@ -2458,7 +2462,7 @@ Show # %D2 $type->endgamergb $tier->rgbsmall2
 #	Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 
 #===============================================================================================================
-# [[2500]] Hide Layer 1 - Rare & Magic Gear
+# [[2600]] Hide Layer 1 - Rare & Magic Gear
 #===============================================================================================================
 # !! Waypoint c6.hidelayer.endgame : "HIDELAYER - all endgame and magic and normal items"
 
@@ -2473,12 +2477,12 @@ Hide # $type->hidelayer $tier->raresendgame
 	Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 
 #===============================================================================================================
-# [[2600]] Jewels
+# [[2700]] Jewels
 #===============================================================================================================
 # !! Waypoint c7.jewels.identified : "Jewels - Identified with interesting mods"
 
 #------------------------------------
-#   [2601] Special Cases
+#   [2701] Special Cases
 #------------------------------------
 
 Show # %D4 $type->jewels->special $tier->1modcorrupted
@@ -2500,7 +2504,7 @@ Show # %D3 $type->jewels->special $tier->any
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 
 #------------------------------------
-#   [2602] Leveling Exceptions
+#   [2702] Leveling Exceptions
 #------------------------------------
 # !! Waypoint c7.jewels.leveling : "Jewels - Leveling Overrides"
 
@@ -2515,7 +2519,7 @@ Show # %D3 $type->jewels->leveling $tier->generic
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 
 #------------------------------------
-#   [2603] Abyss Jewels
+#   [2703] Abyss Jewels
 #------------------------------------
 # !! Waypoint c7.jewels.abyss.all : "Jewels - Abyss Jewels"
 
@@ -2553,7 +2557,7 @@ Show # %H2 $type->jewels->abyss $tier->anymagic
 	Class == "Abyss Jewels"
 
 #------------------------------------
-#   [2604] Generic Jewels
+#   [2704] Generic Jewels
 #------------------------------------
 # !! Waypoint c7.jewels.generic.all : "Jewels - Generic Jewels"
 
@@ -2566,7 +2570,7 @@ Show # %H2 $type->jewels->generic $tier->anymagic
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 
 #------------------------------------
-#   [2605] Cluster Jewels: Eco-Based-Large
+#   [2705] Cluster Jewels: Eco-Based-Large
 #------------------------------------
 # !! Waypoint c7.jewels.cluster.all : "Jewels - Cluster - Economy-Based-Tiering"
 
@@ -2579,12 +2583,14 @@ Show # $type->jewels->clustereco $tier->n12_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n12_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 12
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n12_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 12
 #	BaseType == "Large Cluster Jewel"
@@ -2598,12 +2604,14 @@ Show # $type->jewels->clustereco $tier->n11_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n11_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 11
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n11_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 11
 #	BaseType == "Large Cluster Jewel"
@@ -2617,12 +2625,14 @@ Show # $type->jewels->clustereco $tier->n10_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n10_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 10
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n10_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 10
 #	BaseType == "Large Cluster Jewel"
@@ -2635,12 +2645,14 @@ Show # $type->jewels->clustereco $tier->n10_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n9_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 9
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n9_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 9
 #	BaseType == "Large Cluster Jewel"
@@ -2654,6 +2666,7 @@ Show # $type->jewels->clustereco $tier->n8_i84_t1
 
 Show # $type->jewels->clustereco $tier->n8_i75_t1
 	ItemLevel >= 75
+	ItemLevel <= 83
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 8
 	BaseType == "Large Cluster Jewel"
@@ -2661,6 +2674,7 @@ Show # $type->jewels->clustereco $tier->n8_i75_t1
 
 Show # $type->jewels->clustereco $tier->n8_i68_t1
 	ItemLevel >= 68
+	ItemLevel <= 74
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 8
 	BaseType == "Large Cluster Jewel"
@@ -2674,12 +2688,14 @@ Show # $type->jewels->clustereco $tier->n8_i68_t1
 
 #Show # $type->jewels->clustereco $tier->n6_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 6
 #	BaseType == "Medium Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n6_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 6
 #	BaseType == "Medium Cluster Jewel"
@@ -2693,6 +2709,7 @@ Show # $type->jewels->clustereco $tier->n4_i84_t1
 
 Show # $type->jewels->clustereco $tier->n4_i75_t1
 	ItemLevel >= 75
+	ItemLevel <= 83
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum <= 5
 	BaseType == "Medium Cluster Jewel"
@@ -2700,6 +2717,7 @@ Show # $type->jewels->clustereco $tier->n4_i75_t1
 
 Show # $type->jewels->clustereco $tier->n4_i68_t1
 	ItemLevel >= 68
+	ItemLevel <= 74
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum <= 5
 	BaseType == "Medium Cluster Jewel"
@@ -2714,12 +2732,14 @@ Show # $type->jewels->clustereco $tier->n3_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n3_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 3
 #	BaseType == "Small Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n3_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 3
 #	BaseType == "Small Cluster Jewel"
@@ -2732,12 +2752,14 @@ Show # $type->jewels->clustereco $tier->n3_i84_t1
 
 #Show # $type->jewels->clustereco $tier->n2_i75_t1
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 2
 #	BaseType == "Small Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n2_i68_t1
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 2
 #	BaseType == "Small Cluster Jewel"
@@ -2751,12 +2773,14 @@ Show # $type->jewels->clustereco $tier->n12_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n12_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 12
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n12_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 12
 #	BaseType == "Large Cluster Jewel"
@@ -2770,12 +2794,14 @@ Show # $type->jewels->clustereco $tier->n11_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n11_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 11
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n11_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 11
 #	BaseType == "Large Cluster Jewel"
@@ -2789,12 +2815,14 @@ Show # $type->jewels->clustereco $tier->n10_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n10_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 10
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n10_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 10
 #	BaseType == "Large Cluster Jewel"
@@ -2808,12 +2836,14 @@ Show # $type->jewels->clustereco $tier->n9_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n9_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 9
 #	BaseType == "Large Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n9_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 9
 #	BaseType == "Large Cluster Jewel"
@@ -2827,6 +2857,7 @@ Show # $type->jewels->clustereco $tier->n8_i84_t2
 
 Show # $type->jewels->clustereco $tier->n8_i75_t2
 	ItemLevel >= 75
+	ItemLevel <= 83
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 8
 	BaseType == "Large Cluster Jewel"
@@ -2834,6 +2865,7 @@ Show # $type->jewels->clustereco $tier->n8_i75_t2
 
 Show # $type->jewels->clustereco $tier->n8_i68_t2
 	ItemLevel >= 68
+	ItemLevel <= 74
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 8
 	BaseType == "Large Cluster Jewel"
@@ -2848,12 +2880,14 @@ Show # $type->jewels->clustereco $tier->n6_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n6_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 6
 #	BaseType == "Medium Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n6_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 6
 #	BaseType == "Medium Cluster Jewel"
@@ -2867,6 +2901,7 @@ Show # $type->jewels->clustereco $tier->n4_i84_t2
 
 Show # $type->jewels->clustereco $tier->n4_i75_t2
 	ItemLevel >= 75
+	ItemLevel <= 83
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum <= 5
 	BaseType == "Medium Cluster Jewel"
@@ -2874,6 +2909,7 @@ Show # $type->jewels->clustereco $tier->n4_i75_t2
 
 Show # $type->jewels->clustereco $tier->n4_i68_t2
 	ItemLevel >= 68
+	ItemLevel <= 74
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum <= 5
 	BaseType == "Medium Cluster Jewel"
@@ -2888,6 +2924,7 @@ Show # $type->jewels->clustereco $tier->n3_i84_t2
 
 Show # $type->jewels->clustereco $tier->n3_i75_t2
 	ItemLevel >= 75
+	ItemLevel <= 83
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 3
 	BaseType == "Small Cluster Jewel"
@@ -2895,6 +2932,7 @@ Show # $type->jewels->clustereco $tier->n3_i75_t2
 
 Show # $type->jewels->clustereco $tier->n3_i68_t2
 	ItemLevel >= 68
+	ItemLevel <= 74
 	Rarity Normal Magic Rare
 	EnchantmentPassiveNum 3
 	BaseType == "Small Cluster Jewel"
@@ -2909,19 +2947,21 @@ Show # $type->jewels->clustereco $tier->n2_i84_t2
 
 #Show # $type->jewels->clustereco $tier->n2_i75_t2
 #	ItemLevel >= 75
+#	ItemLevel <= 83
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 2
 #	BaseType == "Small Cluster Jewel"
 
 #Show # $type->jewels->clustereco $tier->n2_i68_t2
 #	ItemLevel >= 68
+#	ItemLevel <= 74
 #	Rarity Normal Magic Rare
 #	EnchantmentPassiveNum 2
 #	BaseType == "Small Cluster Jewel"
 
 # !! Waypoint c7.jewels.cluster.good : "Jewels - Cluster - Others"
 #------------------------------------
-#   [2606] Cluster Jewels: Random
+#   [2706] Cluster Jewels: Random
 #------------------------------------
 
 Show # %D5 $type->jewels->cluster $tier->optimal1highlarge
@@ -2970,12 +3010,12 @@ Show # %H3 $type->jewels->cluster $tier->small
 	BaseType == "Small Cluster Jewel"
 
 #===============================================================================================================
-# [[2700]] Heist Gear
+# [[2800]] Heist Gear
 #===============================================================================================================
 
 # !! Waypoint c7.heist.all : "Heist Gear"
 #------------------------------------
-#   [2701] Heist Cloak
+#   [2801] Heist Cloak
 #------------------------------------
 
 Show # %HS5 $type->heist->cloak $tier->t1highlevel
@@ -2999,7 +3039,7 @@ Show # %H3 $type->heist->cloak $tier->t3any
 	Class == "Heist Cloaks"
 
 #------------------------------------
-#   [2702] Heist Brooch
+#   [2802] Heist Brooch
 #------------------------------------
 
 Show # %HS5 $type->heist->brooch $tier->t1highlevel
@@ -3023,7 +3063,7 @@ Show # %H3 $type->heist->brooch $tier->t3any
 	Class == "Heist Brooches"
 
 #------------------------------------
-#   [2703] Heist Gear
+#   [2803] Heist Gear
 #------------------------------------
 
 Show # %HS5 $type->heist->gear $tier->t1highlevel
@@ -3047,7 +3087,7 @@ Show # %H3 $type->heist->gear $tier->t3any
 	Class == "Heist Gear"
 
 #------------------------------------
-#   [2704] Heist Tool
+#   [2804] Heist Tool
 #------------------------------------
 
 Show # %HS5 $type->heist->tool $tier->t1highlevel
@@ -3071,12 +3111,12 @@ Show # %H3 $type->heist->tool $tier->t3any
 	Class == "Heist Tools"
 
 #===============================================================================================================
-# [[2800]] Gem Tierlists
+# [[2900]] Gem Tierlists
 #===============================================================================================================
 # !! Waypoint c8.gems.all : "Gem Rules - Override All"
 
 #------------------------------------
-#   [2801] Exceptional Gems - Awakened and AltQuality
+#   [2901] Exceptional Gems - Awakened and AltQuality
 #------------------------------------
 
 Show # $type->gems-exceptional $tier->awat1
@@ -3121,7 +3161,7 @@ Show # $type->gems-exceptional $tier->vaal20
 	BaseType == "Vaal Arc" "Vaal Blade Flurry" "Vaal Blade Vortex" "Vaal Blight" "Vaal Breach" "Vaal Caustic Arrow" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Flameblast" "Vaal Flicker Strike" "Vaal Ice Nova" "Vaal Lightning Arrow" "Vaal Lightning Strike" "Vaal Reap" "Vaal Rejuvenation Totem" "Vaal Righteous Fire" "Vaal Smite" "Vaal Summon Skeletons" "Vaal Volcanic Fissure"
 
 #------------------------------------
-#   [2802] Exceptional Gems - Special gems
+#   [2902] Exceptional Gems - Special gems
 #------------------------------------
 # !! Waypoint c8.gems.empowerclass : "Gem Rules - Empower Class"
 
@@ -3155,7 +3195,7 @@ Show # $type->gems-special $tier->exportal
 	BaseType == "Portal"
 
 #------------------------------------
-#   [2803] High Quality and Leveled Gems
+#   [2903] High Quality and Leveled Gems
 #------------------------------------
 # !! Waypoint c8.gems.qualityandlevel : "Gem Rules - Quality and Leveled versions"
 
@@ -3260,7 +3300,7 @@ Hide # %H0 $type->gems-generic $tier->any
 	Class == "Skill Gems" "Support Gems"
 
 #===============================================================================================================
-# [[2900]] REPLICA UNIQUES
+# [[3000]] REPLICA UNIQUES
 #===============================================================================================================
 # !! Waypoint c9.replicas.all : "Tierlists - Replicas"
 
@@ -3289,12 +3329,12 @@ Show # $type->uniques->replicas $tier->restex
 	Rarity Unique
 
 #===============================================================================================================
-# [[3000]] Special Maps
+# [[3100]] Special Maps
 #===============================================================================================================
 # !! Waypoint c9.maps.all : "Maps - All"
 
 #------------------------------------
-#   [3001] Unique Maps
+#   [3101] Unique Maps
 #------------------------------------
 
 Show # $type->uniques->maps $tier->exharbinger
@@ -3329,7 +3369,7 @@ Show # $type->uniques->maps $tier->restex
 	Class == "Maps"
 
 #------------------------------------
-#   [3002] T17
+#   [3102] T17
 #------------------------------------
 # !! Waypoint c9.maps.special.t17 : "Maps - T17 purple tier maps"
 
@@ -3338,7 +3378,7 @@ Show # $type->maps->t17uber $tier->any
 	Class == "Maps"
 
 #------------------------------------
-#   [3003] Blighted maps
+#   [3103] Blighted maps
 #------------------------------------
 # !! Waypoint c9.maps.special.all : "Maps - Blighted, Enchanted, Delirium maps"
 
@@ -3356,7 +3396,7 @@ Show # %H5 $type->maps->blighted $tier->any
 	Class == "Maps"
 
 #------------------------------------
-#   [3004] Special Maps
+#   [3104] Special Maps
 #------------------------------------
 
 Show # $type->maps->vaaltemple $tier->any
@@ -3399,7 +3439,7 @@ Show # %D5 $type->maps->enchanted $tier->any
 #	Class == "Maps"
 
 #===============================================================================================================
-# [[3100]] Normal Map Progression
+# [[3200]] Normal Map Progression
 #===============================================================================================================
 # !! Waypoint c9.maps.generic.specialcases : "Maps - generic - optional special cases"
 
@@ -3414,7 +3454,7 @@ Show # %D5 $type->maps->enchanted $tier->any
 #	Class == "Maps"
 
 #------------------------------------
-#   [3101] Generic Decorators
+#   [3201] Generic Decorators
 #------------------------------------
 # !! Waypoint c9.maps.decorators.all : "Maps - decorators"
 
@@ -3548,7 +3588,7 @@ Show # $type->maps $tier->deco_corruptedmod
 	Continue
 
 #------------------------------------
-#   [3102] Map progression
+#   [3202] Map progression
 #------------------------------------
 # !! Waypoint c9.maps.generic.t16 : "Maps - t14-t16 - high reds"
 
@@ -3626,7 +3666,7 @@ Show # $type->maps $tier->restex
 	Class == "Maps"
 
 #===============================================================================================================
-# [[3200]] Pseudo-Map-Items
+# [[3300]] Pseudo-Map-Items
 #===============================================================================================================
 # !! Waypoint c9.maplike.all : "Maplike - contracts, logbooks, blueprints, memories"
 
@@ -3660,12 +3700,12 @@ Show # $type->exoticmap->sanctum $tier->any
 	Class == "Sanctum Research"
 
 #===============================================================================================================
-# [[3300]] Fragments
+# [[3400]] Fragments
 #===============================================================================================================
 # !! Waypoint c9.fragments.all : "Tierlist - Fragments"
 
 #------------------------------------
-#   [3301] Scarabs
+#   [3401] Scarabs
 #------------------------------------
 
 Show # $type->fragments->scarabs $tier->t1
@@ -3701,7 +3741,7 @@ Show # $type->fragments->scarabs $tier->restex
 	BaseType "Scarab"
 
 #------------------------------------
-#   [3302] Exceptions
+#   [3402] Exceptions
 #------------------------------------
 
 Show # %DS3 $type->fragments->stacked $tier->t3
@@ -3710,7 +3750,7 @@ Show # %DS3 $type->fragments->stacked $tier->t3
 	BaseType == "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon"
 
 #------------------------------------
-#   [3303] Regular Fragment Tiering
+#   [3403] Regular Fragment Tiering
 #------------------------------------
 
 Show # $type->fragments $tier->t1
@@ -3733,7 +3773,7 @@ Show # $type->fragments $tier->restex
 	Class == "Breachstones" "Map Fragments"
 
 #===============================================================================================================
-# [[3400]] Currency - Exceptions - Leveling Currencies
+# [[3500]] Currency - Exceptions - Leveling Currencies
 #===============================================================================================================
 # !! Waypoint c9.currency.leveling.all : "Tierlist - Currency - Leveling Stacked Currency"
 
@@ -3805,10 +3845,10 @@ Show # %D3 $type->currency->leveling $tier->wisdom
 	AreaLevel <= 67
 
 #===============================================================================================================
-# [[3500]] Currency - Exceptions - Stacked Currency
+# [[3600]] Currency - Exceptions - Stacked Currency
 #===============================================================================================================
 #------------------------------------
-#   [3501] Supplies: High Stacking
+#   [3601] Supplies: High Stacking
 #------------------------------------
 # !! Waypoint c9.currency.stacked.all : "Tierlist - Currency - Endgame Stacked"
 
@@ -3828,7 +3868,7 @@ Show # %D2 $type->currency->stackedsupplieshigh $tier->t3
 	BaseType == "Orb of Transmutation"
 
 #------------------------------------
-#   [3502] Supplies: Low Stacking
+#   [3602] Supplies: Low Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsupplieslow $tier->t1
@@ -3847,7 +3887,7 @@ Show # %D2 $type->currency->stackedsupplieslow $tier->t3
 	BaseType == "Orb of Augmentation"
 
 #------------------------------------
-#   [3503] Supplies: Portal Stacking
+#   [3603] Supplies: Portal Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsuppliesportal $tier->t1
@@ -3866,7 +3906,7 @@ Show # %D2 $type->currency->stackedsuppliesportal $tier->t3
 	BaseType == "Portal Scroll"
 
 #------------------------------------
-#   [3504] Supplies: Wisdom Stacking
+#   [3604] Supplies: Wisdom Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsupplieswisdom $tier->t1
@@ -3885,7 +3925,7 @@ Show # %D2 $type->currency->stackedsupplieswisdom $tier->t3
 	BaseType == "Scroll of Wisdom"
 
 #------------------------------------
-#   [3505] Stacked Currencies: 6x
+#   [3605] Stacked Currencies: 6x
 #------------------------------------
 
 Show # %D9 $type->currency->stackedsix $tier->t1
@@ -3924,7 +3964,7 @@ Show # %DS2 $type->currency->stackedsix $tier->t7
 	BaseType == "Alteration Shard"
 
 #------------------------------------
-#   [3506] Stacked Currencies: 3x
+#   [3606] Stacked Currencies: 3x
 #------------------------------------
 
 Show # %D9 $type->currency->stackedthree $tier->t1
@@ -3964,7 +4004,7 @@ Show # %DS2 $type->currency->stackedthree $tier->t7
 
 # !! Waypoint c9.currency.heistcoins : "Tierlist - Currency - Heist Coins"
 #------------------------------------
-#   [3507] Heist Coins
+#   [3607] Heist Coins
 #------------------------------------
 
 Show # %H5 $type->currency->heist $tier->highstack
@@ -3981,7 +4021,7 @@ Hide # $type->currency->heist $tier->exhide
 	BaseType == "Rogue's Marker"
 
 #===============================================================================================================
-# [[3600]] Currency - Regular Currency Tiering
+# [[3700]] Currency - Regular Currency Tiering
 #===============================================================================================================
 # !! Waypoint c9.currency.single : "Tierlist - Currency - General"
 
@@ -4030,10 +4070,10 @@ Hide # %H1 $type->currency $tier->twisdom
 	BaseType == "Scroll of Wisdom"
 
 #===============================================================================================================
-# [[3700]] Currency - SPECIAL
+# [[3800]] Currency - SPECIAL
 #===============================================================================================================
 #------------------------------------
-#   [3701] Incursion - Vials
+#   [3801] Incursion - Vials
 #------------------------------------
 # !! Waypoint c9.currency.vials.all : "Tierlist - Currency - Vials"
 
@@ -4054,7 +4094,7 @@ Show # $type->vials $tier->restex
 	BaseType "Vial of"
 
 #------------------------------------
-#   [3702] Delirum Orbs
+#   [3802] Delirum Orbs
 #------------------------------------
 # !! Waypoint c9.currency.delirium.all : "Tierlist - Currency - Delirium Orbs"
 
@@ -4073,7 +4113,7 @@ Show # $type->currency->deliriumorbs $tier->restex
 	BaseType "Delirium Orb"
 
 #------------------------------------
-#   [3703] Delve - Resonators
+#   [3803] Delve - Resonators
 #------------------------------------
 # !! Waypoint c9.currency.resonators.all : "Tierlist - Resonators"
 
@@ -4092,7 +4132,7 @@ Show # $type->currency->resonator $tier->restex
 	Class == "Delve Stackable Socketable Currency"
 
 #------------------------------------
-#   [3704] Delve - Fossils
+#   [3804] Delve - Fossils
 #------------------------------------
 # !! Waypoint c9.currency.fossils.all : "Tierlist - Fossils"
 
@@ -4116,7 +4156,7 @@ Show # $type->currency->fossil $tier->restex
 	BaseType "Fossil"
 
 #------------------------------------
-#   [3705] Blight - Oils
+#   [3805] Blight - Oils
 #------------------------------------
 # !! Waypoint c9.currency.oils.all : "Tierlist - Oils"
 
@@ -4149,7 +4189,7 @@ Show # $type->currency->oil $tier->restex
 	BaseType "Oil"
 
 #------------------------------------
-#   [3706] Runes
+#   [3806] Runes
 #------------------------------------
 # !! Waypoint c9.runes.all : "Tierlist - Runes"
 
@@ -4177,7 +4217,7 @@ Show # $type->runesgrafts $tier->restex
 	BaseType "Runegraft"
 
 #------------------------------------
-#   [3707] Corpses
+#   [3807] Corpses
 #------------------------------------
 
 Show # $type->corpses $tier->t1
@@ -4203,7 +4243,7 @@ Show # $type->corpses $tier->restex
 	Class == "Corpses"
 
 #------------------------------------
-#   [3708] Essences
+#   [3808] Essences
 #------------------------------------
 # !! Waypoint c9.currency.essences.all : "Tierlist - Essences"
 
@@ -4236,7 +4276,7 @@ Hide # $type->currency->essence $tier->exhide
 	BaseType "Essence of"
 
 #------------------------------------
-#   [3709] Trial of the Ancestors
+#   [3809] Trial of the Ancestors
 #------------------------------------
 
 Show # $type->currency->trial->omen $tier->t1
@@ -4283,7 +4323,7 @@ Show # $type->currency->trial->tattoo $tier->restex
 	BaseType "Tattoo of"
 
 #------------------------------------
-#   [3710] Others
+#   [3810] Others
 #------------------------------------
 
 Show # $type->currency->others $tier->harbinger
@@ -4299,7 +4339,7 @@ Show # $type->currency->others $tier->campaignonlycurrency
 	BaseType == "Imprint" "Unshaping Orb"
 
 #------------------------------------
-#   [3711] Incubators
+#   [3811] Incubators
 #------------------------------------
 # !! Waypoint c9.currency.incubators.all : "Tierlist - Incubators"
 
@@ -4331,10 +4371,10 @@ Show # $type->currency->incubators $tier->restex
 	Class == "Incubators"
 
 #===============================================================================================================
-# [[3800]] Currency - Splinters
+# [[3900]] Currency - Splinters
 #===============================================================================================================
 #------------------------------------
-#   [3801] Breach and Legion Splinters - stacked
+#   [3901] Breach and Legion Splinters - stacked
 #------------------------------------
 # !! Waypoint c9.splinters.all : "Tierlist - Splinters"
 
@@ -4389,7 +4429,7 @@ Show # %DS4 $type->currency->stackedsplinterslow $tier->t5
 	BaseType == "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 
 #------------------------------------
-#   [3802] Breach and Legion Splinters - single
+#   [3902] Breach and Legion Splinters - single
 #------------------------------------
 
 Show # %HS4 $type->currency->splinter $tier->t1
@@ -4401,7 +4441,7 @@ Show # %HS3 $type->currency->splinter $tier->t3
 	BaseType == "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 
 #------------------------------------
-#   [3803] Simulacrum Splinters
+#   [3903] Simulacrum Splinters
 #------------------------------------
 
 Show # %D6 $type->currency->splinter->simulacrum $tier->t1
@@ -4429,7 +4469,7 @@ Show # %H4 $type->currency->splinter->simulacrum $tier->t5
 	BaseType == "Simulacrum Splinter"
 
 #===============================================================================================================
-# [[3900]] Divination Cards
+# [[4000]] Divination Cards
 #===============================================================================================================
 # !! Waypoint c9.divination.all : "Tierlist - Cards - All"
 
@@ -4479,7 +4519,7 @@ Show # $type->divination $tier->restex
 	Class == "Divination Cards"
 
 #===============================================================================================================
-# [[4000]] Remaining Currency
+# [[4100]] Remaining Currency
 #===============================================================================================================
 
 #Hide # $type->currency $tier->untiereditems
@@ -4493,7 +4533,7 @@ Show # $type->currency $tier->restex
 	Class == "Stackable Currency"
 
 #===============================================================================================================
-# [[4100]] Questlike-Items1 (override uniques)
+# [[4200]] Questlike-Items1 (override uniques)
 #===============================================================================================================
 # !! Waypoint c9.metamorph.all : "Heist Targets"
 
@@ -4501,7 +4541,7 @@ Show # $type->heisttarget $tier->any
 	Class == "Heist Targets"
 
 #===============================================================================================================
-# [[4200]] Idols (Event Leagues Only)
+# [[4300]] Idols (Event Leagues Only)
 #===============================================================================================================
 
 # 1x3 Idols
@@ -4571,12 +4611,12 @@ Show # $type->event->idols $tier->normalidols
 	Class == "Idols"
 
 #===============================================================================================================
-# [[4300]] Uniques
+# [[4400]] Uniques
 #===============================================================================================================
 # !! Waypoint c10.uniques.all : "Tierlist - Uniques - All Tiering + Exceptions"
 
 #------------------------------------
-#   [4301] Exceptions #1
+#   [4401] Exceptions #1
 #------------------------------------
 
 Show # $type->uniques $tier->exuberimpresence
@@ -4635,7 +4675,7 @@ Show # $type->uniques $tier->3xabyss
 	BaseType == "Carnal Armour"
 
 #------------------------------------
-#   [4302] Tier 1 and 2 uniques
+#   [4402] Tier 1 and 2 uniques
 #------------------------------------
 # !! Waypoint c10.uniques.t1 : "Tierlist - Uniques - All tiering"
 
@@ -4648,7 +4688,7 @@ Show # $type->uniques $tier->t2
 	BaseType == "Amethyst Flask" "Assassin's Boots" "Blood Raiment" "Crusader Boots" "Fluted Bascinet" "Hypnotic Eye Jewel" "Karui Maul" "Lacewood Spirit Shield" "Large Cluster Jewel" "Leather Hood" "Medium Cluster Jewel" "Murderous Eye Jewel" "Prophecy Wand" "Quarterstaff" "Rawhide Boots" "Riveted Gloves" "Runic Crown" "Searching Eye Jewel" "Silk Gloves" "Slaughter Knife" "Studded Belt" "Stygian Vise" "Timeless Jewel" "Titanium Spirit Shield" "Topaz Flask" "Wyrmscale Boots"
 
 #------------------------------------
-#   [4303] Exceptions #2
+#   [4403] Exceptions #2
 #------------------------------------
 
 Show # $type->uniques $tier->exuniqueidols
@@ -4670,7 +4710,7 @@ Show # $type->uniques $tier->excrucibleunique
 	Rarity Unique
 
 #------------------------------------
-#   [4304] Multi-Unique bases.
+#   [4404] Multi-Unique bases.
 #------------------------------------
 
 Show # $type->uniques $tier->multispecialhigh
@@ -4702,7 +4742,7 @@ Show # %D4 $type->uniques $tier->6s
 	Rarity Unique
 
 #------------------------------------
-#   [4305] Low tier exceptions
+#   [4405] Low tier exceptions
 #------------------------------------
 # !! Waypoint c10.uniques.low : "Tierlist - Uniques - C Tier, Boss-Tier and lower"
 
@@ -4739,7 +4779,7 @@ Show # %D5 $type->uniques $tier->corrupteduniques
 	Class == "Amulets" "Belts" "Boots" "Gloves" "Helmets" "Quivers" "Rings" "Shields"
 
 #------------------------------------
-#   [4306] Tier 3 uniques 
+#   [4406] Tier 3 uniques 
 #------------------------------------
 
 Show # %H5 $type->uniques $tier->t3boss
@@ -4751,7 +4791,7 @@ Show # %H4 $type->uniques $tier->t3
 	BaseType == "Ashbark Tincture" "Astral Plate" "Blue Pearl Amulet" "Bone Helmet" "Citrine Amulet" "Crude Bow" "Crusader Gloves" "Desert Brigandine" "Devout Chainmail" "Dusk Blade" "Ebony Tower Shield" "Ezomyte Burgonet" "Full Wyrmscale" "Gemstone Sword" "Gladiator Plate" "Granite Flask" "Harmonic Spirit Shield" "Highborn Staff" "Imbued Wand" "Imperial Maul" "Imperial Staff" "Iron Ring" "Ironwood Tincture" "Jingling Spirit Shield" "Karui Sceptre" "Lacquered Buckler" "Lacquered Garb" "Large Hybrid Flask" "Legion Boots" "Maelström Staff" "Majestic Plate" "Mirrored Spiked Shield" "Oakbranch Tincture" "Occultist's Vestment" "Ornate Quiver" "Pagan Wand" "Plated Greaves" "Prismatic Tincture" "Raven Mask" "Royal Bow" "Sacrificial Garb" "Saintly Chainmail" "Sapphire Flask" "Scholar's Robe" "Sorcerer Boots" "Sporebloom Tincture" "Turquoise Amulet" "Vaal Gauntlets" "Vaal Sceptre" "Vile Arrow Quiver" "Void Axe" "Wolf Pelt"
 
 #------------------------------------
-#   [4307] Tier 4 uniques
+#   [4407] Tier 4 uniques
 #------------------------------------
 
 Show # %H3 $type->uniques $tier->hideable2
@@ -4766,7 +4806,7 @@ Show # $type->uniques $tier->restex
 	Rarity Unique
 
 #===============================================================================================================
-# [[4400]] Misc Map Items
+# [[4500]] Misc Map Items
 #===============================================================================================================
 # !! Waypoint c10.relics.all : "Relic Keys, Itemized Leagues"
 
@@ -4783,7 +4823,7 @@ Show # $type->miscmapitems $tier->restex
 	Class == "Misc Map Items"
 
 #===============================================================================================================
-# [[4500]] Questlike-Items2
+# [[4600]] Questlike-Items2
 #===============================================================================================================
 
 Show # $type->questlike $tier->invitations
@@ -4796,7 +4836,7 @@ Show # $type->questlike $tier->incursionconsumable
 	Class == "Incursion Items"
 
 #===============================================================================================================
-# [[4600]] Hide outdated leveling flasks
+# [[4700]] Hide outdated leveling flasks
 #===============================================================================================================
 # !! Waypoint c11.leveling.all : "Leveling - ALL rules"
 
@@ -4825,7 +4865,7 @@ Hide # $type->hidelayer $tier->outdatedlevelflaskd
 	AreaLevel >= 60
 
 #===============================================================================================================
-# [[4700]] Leveling - Utility Flasks and Tinctures
+# [[4800]] Leveling - Utility Flasks and Tinctures
 #===============================================================================================================
 # !! Waypoint c11.leveling.utilflasks : "Leveling - Utility flasks and Quality Flasks"
 
@@ -4858,10 +4898,10 @@ Show # $type->leveling->tincture $tier->any
 	Class == "Tinctures"
 
 #===============================================================================================================
-# [[4800]] Leveling - Life, Mana, Hybrid
+# [[4900]] Leveling - Life, Mana, Hybrid
 #===============================================================================================================
 #------------------------------------
-#   [4801] Hybrid Flasks
+#   [4901] Hybrid Flasks
 #------------------------------------
 # !! Waypoint c11.leveling.lifeflasks : "Leveling - life and mana flasks"
 
@@ -4896,7 +4936,7 @@ Show # %H2 $type->leveling->flasks->hybrid $tier->t6
 	AreaLevel <= 67
 
 #------------------------------------
-#   [4802] Life flasks
+#   [4902] Life flasks
 #------------------------------------
 
 Show # $type->leveling->flasks->life $tier->t1
@@ -4960,7 +5000,7 @@ Show # $type->leveling->flasks->life $tier->t12
 	AreaLevel <= 68
 
 #------------------------------------
-#   [4803] Mana flasks
+#   [4903] Mana flasks
 #------------------------------------
 
 Show # $type->leveling->flasks->mana $tier->t1
@@ -5024,11 +5064,11 @@ Show # $type->leveling->flasks->mana $tier->t12
 	AreaLevel <= 68
 
 #===============================================================================================================
-# [[4900]] Leveling - Rules
+# [[5000]] Leveling - Rules
 #===============================================================================================================
 # !! Waypoint c11.leveling.gear.all : "Leveling - Gear - All non-unique"
 #------------------------------------
-#   [4901] Links and Sockets
+#   [5001] Links and Sockets
 #------------------------------------
 
 Show # %D4 $type->leveling->rare->socketslinks $tier->4linkrares
@@ -5037,7 +5077,7 @@ Show # %D4 $type->leveling->rare->socketslinks $tier->4linkrares
 	Rarity Rare
 
 #------------------------------------
-#   [4902] Rares - Decorators
+#   [5002] Rares - Decorators
 #------------------------------------
 # !! Waypoint c11.leveling.decorators.all : "Leveling - Rares - Decorators"
 
@@ -5070,7 +5110,7 @@ Show # $type->decorators->leveling->rare $tier->tinyrares
 	Continue
 
 #------------------------------------
-#   [4903] Rares - Universal
+#   [5003] Rares - Universal
 #------------------------------------
 
 # !! Waypoint c11.leveling.rares.minions : "Leveling - Rares - Minion Items"
@@ -5108,7 +5148,7 @@ Show # %D4 $type->leveling->rare->armours $tier->quivers
 	Class == "Quivers"
 
 #------------------------------------
-#   [4904] Rares - Caster
+#   [5004] Rares - Caster
 #------------------------------------
 # !! Waypoint c11.leveling.rares.caster : "Leveling - Rares - Caster"
 
@@ -5122,7 +5162,7 @@ Show # %D4 $type->leveling->rare->caster $tier->general
 	Class == "Rune Daggers" "Sceptres" "Staves" "Wands"
 
 #------------------------------------
-#   [4905] Rares - Archer
+#   [5005] Rares - Archer
 #------------------------------------
 # !! Waypoint c11.leveling.rares.archer : "Leveling - Gear - Archer"
 
@@ -5174,7 +5214,7 @@ Show # %D4 $type->leveling->rare->archer $tier->l8
 	AreaLevel <= 70
 
 #------------------------------------
-#   [4906] Rares - Melee
+#   [5006] Rares - Melee
 #------------------------------------
 # !! Waypoint c11.leveling.rares.melee : "Leveling - Gear - Melee"
 
@@ -5273,7 +5313,7 @@ Show # %D4 $type->leveling->rare->melee1h $tier->l8
 	AreaLevel <= 70
 
 #------------------------------------
-#   [4907] Rares - Other
+#   [5007] Rares - Other
 #------------------------------------
 # !! Waypoint c11.leveling.rares.low : "Leveling - Gear - Low Tier"
 
@@ -5302,11 +5342,11 @@ Show # %D3 $type->leveling->rare->remaining $tier->underlevel16 class == "body a
 	AreaLevel >= 1
 
 #===============================================================================================================
-# [[5000]] Leveling - Useful magic and normal items
+# [[5100]] Leveling - Useful magic and normal items
 #===============================================================================================================
 # !! Waypoint c11.leveling.linked.all : "Leveling - Linked - 4link"
 #------------------------------------
-#   [5001] Purpose Picked Items
+#   [5101] Purpose Picked Items
 #------------------------------------
 
 Show # %D4 $type->leveling->normalmagic->4l $tier->general
@@ -5427,7 +5467,7 @@ Show # %D2 $type->leveling->normalmagic->minion $tier->miniongear
 #	BaseType == "Bone Spirit Shield" "Fossilised Spirit Shield" "Ivory Spirit Shield"
 
 #------------------------------------
-#   [5002] Normals
+#   [5102] Normals
 #------------------------------------
 # !! Waypoint c11.leveling.firstlevels.all : "Leveling - Normal and Magic - First Levels"
 
@@ -5448,7 +5488,7 @@ Show # %H3 $type->leveling->firstlevels $tier->firstareas
 	AreaLevel <= 4
 
 #------------------------------------
-#   [5003] Weapon Progression
+#   [5103] Weapon Progression
 #------------------------------------
 # !! Waypoint c11.leveling.progression.all : "Leveling - Normal and Magic - Item Progression"
 
@@ -5558,7 +5598,7 @@ Show # %H2 $type->leveling->weaponprogression $tier->r15bas
 	Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 
 #------------------------------------
-#   [5004] Remaining Magics
+#   [5104] Remaining Magics
 #------------------------------------
 # !! Waypoint c11.leveling.magicvendor.all : "Leveling - Normal and Magic - Magic Vendor Items"
 
@@ -5633,14 +5673,14 @@ Show # %H3 $type->leveling->magic->remaining $tier->firstlevels
 
 # !! Waypoint c12.hide.all : "HIDELAYER - Hide all known untiered items"
 #------------------------------------
-#   [5005] Hide All known Section
+#   [5105] Hide All known Section
 #------------------------------------
 
 Hide # $type->hidelayer $tier->final
 	Class "Abyss Jewels" "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Tools" "Helmets" "Hybrid Flasks" "Idols" "Jewels" "Life Flasks" "Mana Flasks" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Tinctures" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Utility Flasks" "Wands" "Warstaves"
 
 #------------------------------------
-#   [5006] Show All unknown Section
+#   [5106] Show All unknown Section
 #------------------------------------
 # !! Waypoint c13.show.all : "SAFETYLAYER - Show all unknown items"
 # THIS ENTRY IS CAUGHT IN 3 CASES:

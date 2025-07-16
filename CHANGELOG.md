@@ -4,6 +4,14 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.17.3c** - Memory strand & cluster jewel tiering
+----------------------------------
+
+- Economy-based Cluster jewels are now correctly tiered using level ranges (eg. 68-74) instead of broad levels (68+). This matters in cases where a lower level jewel is more expenisve than a higher level one
+- Adjusted the priority of memory strand and overquality gear to solve some niche priority issues
+- Fixed related to cluster jewel economy based tiering
+
+----------------------------------
 # **VERSION 8.17.3b** - Minor Adjustments
 ----------------------------------
 
