@@ -4,6 +4,56 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.18.0** - Keepers of the Flame League
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This update adds all the keeprs of the flame data, prepares to use currency exchange (a couple of days into the league), adjusts leveling, adjusting identified mod filtering, does a lot of general tiering and a lot goodies on top of that! FilterBlade receives the Auto-Adjuster!
+
+Have a great Keepers of the Flame league!
+
+Major thanks (no particular order) to CDR, Rasmus, S1D3WYZ, Zoey, Haggis, Mellontoss, VenomAssassin for the suggestions, data, testing and development help they provided!
+
+## KEEPERS OF THE FLAME CHANGES:
+- Added a rule to highlight foulborn uniques.
+- Added wombgifts, very minimal tiering for now, until economy data is available and some sort of meta emerges
+- Added grafts, very minimal tiering for now, until economy data is available and some sort of meta emerges
+- Added new divination cards
+- Integrated new rings (increased their highlight for now until we know more)
+- Added all the other misc. new items (currency, fragments etc)
+
+## TIERING CHANGES:
+- Major adjustments to the early-league exclusive settings to improve the filter during the first days of the league
+- Done preparation to use poe.ninja's currency exchange API for the tiering of all currencies, fragments etc. The tiering via this APi will be enabled 2-3 days into the league once stability is ensured. Thanks to Rasmus for providing the amazing poe.ninja service!
+- Added several new bits of logic to improve the economy-based tiering of items.
+- Added advanced logic for early league tiering of currency and stacked currency
+- Fossil tiering now comes with an extra tier and has had it's thresholds adjusted.
+- Added a new economy based gem rule for qual23 gems with neglible level
+- Added a new economy based gem rule for lvl21 gems with neglible quality
+- Added a dedicated section for harvest lifeforce with individual visuals for different stacksizes. Larger stacksizes -> more dopamine!
+
+## IDENTIFIED MOD FILTERING:
+- Added 6 'blend' rules. These require the item to have 3 very high mods (usually T1-T2 all). Very helpful for kingsmarch
+- Activated more single-mod identified rules. These are usually very desirable and rare recombination mods, such as +2 proj, T1 suppression etc.
+
+## LEVELING IMPROVEMENTS:
+- Reworked currency highlights during leveling. There's now stronger emphasis on Chance Orbs (whole campaign) and Transmutation and Alteration Orbs (first 3 acts). A lot of other small improvements related to leveling currency/stacked currency.
+- Added a small new rule to highlight level exclusive incubators. Added some a balistic nuke type of code to purge the stupid leveling incubators from entering the normal tierlists. Seriously, they keep creeping back in into economy data in unexpected ways every single league.
+- Added a new rule that highlights normal attack wands while leveling. This rule is disabled on strict.
+
+## MISC:
+- Added a rule that highlights ANY gear item with Quality 26% (disabled on very strict). This is in addition to the existing overquality rules that highlight actually useful bases
+- Added a rule that highlights ANY gear item with Quality 21%+ (disabled by default)
+- Added a new rule that highlights any unique of quality 27%+, if it's not already highlighted by the S,A or mulitbase rules (the goal is to catch otherwise near worthless uniques with quality). Disabled on uber-plus strict.
+- Adjusted rare talisman items strictness. Random rare talismans are now hidden on Regular. Selected bases are now hidden on very strict. If this will be annoying, I'll put them back on strict
+- Split Ultimatium and Incursion rules
+- Added an optional rule to highlight specific T17 maps
+- Added extra highlight to shaper wands
+- Removed the mercenary unique section for now.
+- Removed a bunch of old and outdated rules
+
+----------------------------------
 # **VERSION 8.17.3c** - Memory strand & cluster jewel tiering
 ----------------------------------
 

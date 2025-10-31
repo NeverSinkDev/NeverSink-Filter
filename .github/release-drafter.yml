@@ -1,8 +1,49 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
-  - Economy-based Cluster jewels are now correctly tiered using level ranges (eg. 68-74) instead of broad levels (68+). This matters in cases where a lower level jewel is more expenisve than a higher level one
-  - Adjusted the priority of memory strand and overquality gear to solve some niche priority issues
+  ## SHORT OVERVIEW:
+  
+  TODO
+  
+  Major thanks (no particular order) to CDR, Rasmus, S1D3WYZ, Zoey, Haggis, Mellontoss, VenomAssassin for the suggestions, data, testing and development help they provided!
+  
+  ## KEEPERS OF THE FLAME CHANGES:
+  - Added a rule to highlight foulborn uniques.
+  - Added wombgifts, very minimal tiering for now, until economy data is available and some sort of meta emerges
+  - Added grafts, very minimal tiering for now, until economy data is available and some sort of meta emerges
+  - Added new divination cards
+  - Integrated new rings (increased their highlight for now until we know more)
+  - Added all the other misc. new items (currency, fragments etc)
+  
+  ## TIERING CHANGES:
+  - Major adjustments to the early-league exclusive settings to improve the filter during the first days of the league
+  - Done preparation to use poe.ninja's currency exchange API for the tiering of all currencies, fragments etc. The tiering via this APi will be enabled 2-3 days into the league once stability is ensured. Thanks to Rasmus for providing the amazing poe.ninja service!
+  - Added several new bits of logic to improve the economy-based tiering of items.
+  - Added advanced logic for early league tiering of currency and stacked currency
+  - Fossil tiering now comes with an extra tier and has had it's thresholds adjusted.
+  - Added a new economy based gem rule for qual23 gems with neglible level
+  - Added a new economy based gem rule for lvl21 gems with neglible quality
+  - Added a dedicated section for harvest lifeforce with individual visuals for different stacksizes. Larger stacksizes -> more dopamine!
+  
+  ## IDENTIFIED MOD FILTERING:
+  - Added 6 'blend' rules. These require the item to have 3 very high mods (usually T1-T2 all). Very helpful for kingsmarch
+  - Activated more single-mod identified rules. These are usually very desirable and rare recombination mods, such as +2 proj, T1 suppression etc.
+  
+  ## LEVELING IMPROVEMENTS:
+  - Reworked currency highlights during leveling. There's now stronger emphasis on Chance Orbs (whole campaign) and Transmutation and Alteration Orbs (first 3 acts). A lot of other small improvements related to leveling currency/stacked currency.
+  - Added a small new rule to highlight level exclusive incubators. Added some a balistic nuke type of code to purge the stupid leveling incubators from entering the normal tierlists. Seriously, they keep creeping back in into economy data in unexpected ways every single league.
+  - Added a new rule that highlights normal attack wands while leveling. This rule is disabled on strict.
+  
+  ## MISC:
+  - Added a rule that highlights ANY gear item with Quality 26% (disabled on very strict). This is in addition to the existing overquality rules that highlight actually useful bases
+  - Added a rule that highlights ANY gear item with Quality 21%+ (disabled by default)
+  - Added a new rule that highlights any unique of quality 27%+, if it's not already highlighted by the S,A or mulitbase rules (the goal is to catch otherwise near worthless uniques with quality). Disabled on uber-plus strict.
+  - Adjusted rare talisman items strictness. Random rare talismans are now hidden on Regular. Selected bases are now hidden on very strict. If this will be annoying, I'll put them back on strict
+  - Split Ultimatium and Incursion rules
+  - Added an optional rule to highlight specific T17 maps
+  - Added extra highlight to shaper wands
+  - Removed the mercenary unique section for now.
+  - Removed a bunch of old and outdated rules
   
   ------
 
