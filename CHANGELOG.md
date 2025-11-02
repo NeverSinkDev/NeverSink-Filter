@@ -4,6 +4,14 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.18.0b** - Keepers of the Flame League
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Economy only update, improved initial tiering and added correct handling to foulborn items to not mess with economy data.
+
+----------------------------------
 # **VERSION 8.18.0** - Keepers of the Flame League
 ----------------------------------
 
