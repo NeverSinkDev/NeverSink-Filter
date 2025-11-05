@@ -4,12 +4,38 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
-# **VERSION 8.18.0b** - Keepers of the Flame League
+# **VERSION 8.18.1** - Keepers of the Flame League
 ----------------------------------
 
 ## SHORT OVERVIEW:
 
 Economy only update, improved initial tiering and added correct handling to foulborn items to not mess with economy data.
+
+## EXCHANGE BASED TIERING
+
+The following items are now tiered using EXCHANGE data (preprocessed and provided by poe.ninja): Currency, scarabs, runegrafts, fossils, allflames, fragments, oils, omen and tattos.
+
+I'll be monitoring the situation closely and adjust the tiering if needed.
+
+Notably excluded are divination cards. My initial analysis showed that the data for the low value cards is very noise and prone to overtiering. I'll revisit this later in the league.
+
+## KEEPERS RELATED CHANGES:
+
+- Added tiering, economy integration, safeguards etc for foulborn currencies and implants.
+- Retiered wombgifts slightly. Lavish and ancient are now the T2 wombgifts, rest T3.
+- The new breach rings are now hidden earlier (depending on strictness). Higher itemlevel breach rings are hidden later.
+- All new and added items are now tiered
+
+I intend to revisit graft tiering and jewel tiering in the coming weeks and look into designing some identified rules for each.
+
+## GENERAL BALANCE OF RARES, VEILED ITEMS, FRACTURED ITEMS
+
+In this league groundloot related to regular gear is worth almost nothing. However, I don't want to adjust it midleague, when a lot of people have already created their filters, so the adjustments right now are minimal. If the genesis-tree crafting will stay in the game in a similar way longterm, I'll do a more thorough rework of rares and related items.
+
+- Reduced the size of some endgame rares
+- Veiled items highlight is a bit more strict now
+- Memory strand items are now a bit more strict towards the worst bases on very strict and up
+- Regular tinctures (ones without optimal itemlevel etc) are now hidden on very strict instead of uber strict
 
 ----------------------------------
 # **VERSION 8.18.0** - Keepers of the Flame League
