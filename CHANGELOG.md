@@ -7,6 +7,8 @@ Major thanks to all patreon supports to help us fund the continious development.
 # **VERSION 8.18.1a** - Finetuning
 ----------------------------------
 
+## SHORT OVERVIEW:
+
 - Improved the treatment for the monochrome card
 - Unique tinctures are now tiered correctly using economy data
 - Added some missing old wands to the tiering that changed their base, such as Twyzel
