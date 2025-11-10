@@ -4,7 +4,19 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
-# **VERSION 8.18.1** - Keepers of the Flame League
+# **VERSION 8.18.1a** - Finetuning
+----------------------------------
+
+- Improved the treatment for the monochrome card
+- Unique tinctures are now tiered correctly using economy data
+- Added some missing old wands to the tiering that changed their base, such as Twyzel
+- Reduced the large heist coin pile size from 500 to 400 to better account for locker contents
+- Added some selected level 3 heist gear pieces to the T2 heist items to help guff out (and prevent level 3 items from costing half a divine)
+- Hivebrain gland is now economy tiered (but not allowed to drop below T3)
+- Other minor changes
+
+----------------------------------
+# **VERSION 8.18.1** - Keepers of the Flame League - Economy Update
 ----------------------------------
 
 ## SHORT OVERVIEW:
