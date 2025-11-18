@@ -4,6 +4,18 @@
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 8.18.2** - Divination card tiering improvements
+----------------------------------
+
+This is an economy only update and does not affect the stable version.
+
+## SHORT OVERVIEW:
+
+- The divination card tiering has been reviewed and significantly improved.
+- The divination card tiering now considers: stash data, exchange data and reward data
+- All divination card aspects and rules have been reviewed
+
+----------------------------------
 # **VERSION 8.18.1a** - Finetuning
 ----------------------------------
 
