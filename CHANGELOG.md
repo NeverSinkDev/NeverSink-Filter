@@ -8,6 +8,19 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.19.0b** - Divination Cards
+----------------------------------
+
+- Tiered the new div cards (almost all of them are S or A tier)
+- Removed old breach splinters and some obsolete fossilized items (they were not doing any harm, but they were just cluttering the filter and the tiering)
+
+----------------------------------
+# **VERSION 8.19.0a** - Hotfix
+----------------------------------
+
+Rules for valdo/nightmare maps was accidently disabled (would not be hidden, but not highlighted correctly)
+
+----------------------------------
 # **VERSION 8.19.0** - Mirage League
 ----------------------------------
 

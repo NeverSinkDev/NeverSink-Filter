@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.19.0
+# VERSION:  8.19.0b
 # TYPE:     3-STRICT
 # STYLE:    PURPLE
 # AUTHOR:   NeverSink
@@ -6035,16 +6035,16 @@ Show # $type->uniques->maps $tier->restex
 #------------------------------------
 # !! Waypoint c9.maps.special.t17 : "Maps - Exceptional Types" : "Maps"
 
-#Show # %D6 $type->maps->nightmare $tier->specialmaps
-#	Class == "Maps"
-#	BaseType == "Nightmare Map" "Shaper Guardian Map" "Valdo Map"
-#	SetFontSize 45
-#	SetTextColor 100 0 122 255
-#	SetBorderColor 100 0 122 255
-#	SetBackgroundColor 255 255 255 255
-#	PlayAlertSound 1 300
-#	PlayEffect Red
-#	MinimapIcon 0 Red Square
+Show # %D6 $type->maps->nightmare $tier->specialmaps
+	Class == "Maps"
+	BaseType == "Nightmare Map" "Shaper Guardian Map" "Valdo Map"
+	SetFontSize 45
+	SetTextColor 100 0 122 255
+	SetBorderColor 100 0 122 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Square
 
 #------------------------------------
 #   [3203] Blighted maps
@@ -7580,7 +7580,7 @@ Show # %H8 $type->currency->deliriumorbs $tier->t2
 
 Show # %H7 $type->currency->deliriumorbs $tier->t3
 	Class == "Stackable Currency"
-	BaseType == "Abyssal Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Blighted Delirium Orb" "Cartographer's Delirium Orb" "Diviner's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Fragmented Delirium Orb" "Jeweller's Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+	BaseType == "Abyssal Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Blighted Delirium Orb" "Cartographer's Delirium Orb" "Diviner's Delirium Orb" "Fine Delirium Orb" "Fragmented Delirium Orb" "Jeweller's Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
 	SetFontSize 45
 	SetTextColor 20 0 40 255
 	SetBorderColor 20 0 40 255
@@ -8226,7 +8226,7 @@ Show # %H7 $type->currency->incubators $tier->t3
 
 Show # %H5 $type->currency->incubators $tier->t4
 	Class == "Incubators"
-	BaseType == "Abyssal Incubator" "Blighted Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Diviner's Incubator" "Fossilised Incubator" "Infused Incubator" "Kalguuran Incubator" "Maddening Incubator" "Mysterious Incubator" "Otherworldly Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator"
+	BaseType == "Abyssal Incubator" "Blighted Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Diviner's Incubator" "Infused Incubator" "Kalguuran Incubator" "Maddening Incubator" "Mysterious Incubator" "Otherworldly Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator"
 	SetFontSize 45
 	SetTextColor 20 0 40 255
 	SetBorderColor 20 0 40 255
@@ -8245,7 +8245,7 @@ Hide # %H2 $type->currency->incubators $tier->t5
 
 Hide # $type->currency->incubators $tier->exhide
 	Class == "Incubators"
-	BaseType == "Abyssal Incubator" "Blighted Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Diviner's Incubator" "Fossilised Incubator" "Fragmented Incubator" "Geomancer's Incubator" "Honoured Incubator" "Infused Incubator" "Kalguuran Incubator" "Maddening Incubator" "Miraged Incubator" "Mysterious Incubator" "Ornate Incubator" "Otherworldly Incubator" "Primal Incubator" "Sacred Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator"
+	BaseType == "Abyssal Incubator" "Blighted Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Diviner's Incubator" "Fragmented Incubator" "Geomancer's Incubator" "Honoured Incubator" "Infused Incubator" "Kalguuran Incubator" "Maddening Incubator" "Miraged Incubator" "Mysterious Incubator" "Ornate Incubator" "Otherworldly Incubator" "Primal Incubator" "Sacred Incubator" "Singular Incubator" "Skittering Incubator" "Thaumaturge's Incubator"
 	SetFontSize 35
 	SetBorderColor 0 0 0
 
@@ -8267,65 +8267,60 @@ Show # $type->currency->incubators $tier->restex
 #------------------------------------
 # !! Waypoint c9.splinters.all : "Tierlist - Splinters" : "Scarabs and Fragments"
 
-Show # %D6 $type->currency->stackedsplintershigh $tier->t1
-	StackSize >= 80
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
+#Show # %D6 $type->currency->stackedsplintershigh $tier->t1
+#	StackSize >= 80
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 255 0 0 255
+#	SetBorderColor 255 0 0 255
+#	SetBackgroundColor 255 255 255 255
+#	PlayAlertSound 6 300
+#	PlayEffect Red
+#	MinimapIcon 0 Red Star
 
-Show # %D6 $type->currency->stackedsplintershigh $tier->t2
-	StackSize >= 25
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
-	PlayAlertSound 1 300
-	PlayEffect Red
-	MinimapIcon 0 Red Circle
+#Show # %D6 $type->currency->stackedsplintershigh $tier->t2
+#	StackSize >= 25
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 255 255
+#	SetBackgroundColor 240 90 35 255
+#	PlayAlertSound 1 300
+#	PlayEffect Red
+#	MinimapIcon 0 Red Circle
 
-Show # %D6 $type->currency->stackedsplintershigh $tier->t3
-	StackSize >= 10
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 20 0 40 255
-	SetBorderColor 20 0 40 255
-	SetBackgroundColor 240 90 35 255
-	PlayAlertSound 2 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Circle
+#Show # %D6 $type->currency->stackedsplintershigh $tier->t3
+#	StackSize >= 10
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 20 0 40 255
+#	SetBorderColor 20 0 40 255
+#	SetBackgroundColor 240 90 35 255
+#	PlayAlertSound 2 300
+#	PlayEffect Yellow
+#	MinimapIcon 1 Yellow Circle
 
-Show # %D6 $type->currency->stackedsplintershigh $tier->t4
-	StackSize >= 5
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 20 0 40 255
-	SetBorderColor 20 0 40 255
-	SetBackgroundColor 249 150 25 255
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 2 White Circle
+#Show # %D6 $type->currency->stackedsplintershigh $tier->t4
+#	StackSize >= 5
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 20 0 40 255
+#	SetBorderColor 20 0 40 255
+#	SetBackgroundColor 249 150 25 255
+#	PlayAlertSound 2 300
+#	PlayEffect White
+#	MinimapIcon 2 White Circle
 
-Show # %DS5 $type->currency->stackedsplintershigh $tier->t5
-	StackSize >= 2
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 20 0 40 255
-	SetBorderColor 20 0 40 255
-	SetBackgroundColor 223 223 130 255
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 2 White Circle
+#Show # %DS5 $type->currency->stackedsplintershigh $tier->t5
+#	StackSize >= 2
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 20 0 40 255
+#	SetBorderColor 20 0 40 255
+#	SetBackgroundColor 223 223 130 255
+#	PlayAlertSound 2 300
+#	PlayEffect White
+#	MinimapIcon 2 White Circle
 
 Show # %D5 $type->currency->stackedsplinterslow $tier->t1
 	StackSize >= 66
@@ -8391,16 +8386,15 @@ Show # %DS4 $type->currency->stackedsplinterslow $tier->t5
 #   [4102] Breach and Legion Splinters - single
 #------------------------------------
 
-Show # %HS4 $type->currency->splinter $tier->t1
-	Class == "Stackable Currency"
-	BaseType == "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Timeless Maraketh Splinter" "Timeless Templar Splinter"
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 210 20 210 255
-	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
-	PlayEffect Purple Temp
-	MinimapIcon 1 Grey Kite
+#Show # %HS4 $type->currency->splinter $tier->t1
+#	Class == "Stackable Currency"
+#	SetFontSize 45
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 210 20 210 255
+#	SetBackgroundColor 65 20 80
+#	PlayAlertSound 2 300
+#	PlayEffect Purple Temp
+#	MinimapIcon 1 Grey Kite
 
 Show # %HS3 $type->currency->splinter $tier->t3
 	Class == "Stackable Currency"
@@ -8494,7 +8488,7 @@ Show # $type->divination $tier->excustomstack
 
 Show # $type->divination $tier->t1
 	Class == "Divination Cards"
-	BaseType == "Assassin's Gift" "Auspicious Ambitions" "Beauty Through Death" "Brother's Gift" "Brother's Stash" "Choking Guilt" "Damnation" "Desecrated Virtue" "Divine Beauty" "Divine Justice" "Father's Love" "Fire Of Unknown Origin" "History" "House of Mirrors" "I See Brothers" "Last Stand" "Lonely Warrior" "Love Through Ice" "Matryoshka" "One Last Score" "Outfoxed" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Apothecary" "The Demon" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Greatest Intentions" "The Immortal" "The Insane Cat" "The Lake" "The Nurse" "The Price of Devotion" "The Progeny of Lunaris" "The Rabbit's Foot" "The Samurai's Eye" "The Sephirot" "The Shieldbearer" "The Soul" "Unrequited Love" "Wealth and Power"
+	BaseType == "Apocalypse" "Assassin's Gift" "Auspicious Ambitions" "Beauty Through Death" "Brother's Gift" "Brother's Stash" "Choking Guilt" "Damnation" "Desecrated Virtue" "Divine Beauty" "Divine Justice" "Father's Love" "Fire Of Unknown Origin" "History" "House of Mirrors" "I See Brothers" "Last Stand" "Lonely Warrior" "Love Through Ice" "Matryoshka" "One Last Score" "Outfoxed" "Reflection of the Heart" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Apothecary" "The Demon" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Fiend" "The Greatest Intentions" "The Immortal" "The Insane Cat" "The Lake" "The Miracle" "The Nurse" "The Price of Devotion" "The Progeny of Lunaris" "The Rabbit's Foot" "The Samurai's Eye" "The Sephirot" "The Shieldbearer" "The Slumbering Beast" "The Soul" "Unrequited Love" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 0 0 255 255
 	SetBorderColor 0 0 255 255
@@ -8505,7 +8499,7 @@ Show # $type->divination $tier->t1
 
 Show # %H8 $type->divination $tier->t2
 	Class == "Divination Cards"
-	BaseType == "A Familiar Call" "A Modest Request" "A Stone Perfected" "Anarchy's Price" "Avian Pursuit" "Broken Promises" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Duality" "Fateful Meeting" "Friendship" "Further Invention" "Gemcutter's Mercy" "Home" "Imperfect Memories" "Lethean Temptation" "Luminous Trove" "Magnum Opus" "Misery in Darkness" "Monochrome" "Remembrance" "Temperance" "The Artist" "The Astromancer" "The Damned" "The Destination" "The Dreamer" "The Endless Darkness" "The Eternal War" "The Formless Sea" "The Fortunate" "The Gulf" "The Hook" "The Journey" "The Last One Standing" "The Last Supper" "The Leviathan" "The Long Con" "The Mad King" "The Mayor" "The Old Man" "The Sacrifice" "The Skeleton" "The Strategist" "The Vast" "The Wedding Gift" "The World Eater" "Tranquillity" "Winter's Embrace"
+	BaseType == "A Familiar Call" "A Modest Request" "A Stone Perfected" "Anarchy's Price" "Avian Pursuit" "Broken Promises" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Duality" "Fateful Meeting" "Friendship" "Further Invention" "Gemcutter's Mercy" "Home" "Imperfect Memories" "Lethean Temptation" "Lucky Bastion" "Luminous Trove" "Magnum Opus" "Misery in Darkness" "Monochrome" "Remembrance" "Temperance" "The Artist" "The Astromancer" "The Damned" "The Destination" "The Dreamer" "The Endless Darkness" "The Eternal War" "The Everlasting" "The Forbidden Fruit" "The Formless Sea" "The Fortunate" "The Gulf" "The Hook" "The Journey" "The Last One Standing" "The Last Supper" "The Leviathan" "The Long Con" "The Mad King" "The Mayor" "The Old Man" "The Sacrifice" "The Silly Boy" "The Skeleton" "The Strategist" "The Vast" "The Wedding Gift" "The World Eater" "Tranquillity" "Winter's Embrace"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -8525,16 +8519,15 @@ Show # %HS6 $type->divination $tier->t3
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Triangle
 
-Show # $type->divination $tier->tnew
-	Class == "Divination Cards"
-	BaseType == "Apocalypse" "Lucky Bastion" "Reflection of the Heart" "The Everlasting" "The Forbidden Fruit" "The Miracle" "The Silly Boy" "The Slumbering Beast"
-	SetFontSize 45
-	SetTextColor 20 0 40 255
-	SetBorderColor 20 0 40 255
-	SetBackgroundColor 40 255 217
-	PlayAlertSound 2 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Triangle
+#Show # $type->divination $tier->tnew
+#	Class == "Divination Cards"
+#	SetFontSize 45
+#	SetTextColor 20 0 40 255
+#	SetBorderColor 20 0 40 255
+#	SetBackgroundColor 40 255 217
+#	PlayAlertSound 2 300
+#	PlayEffect Yellow
+#	MinimapIcon 1 Yellow Triangle
 
 # !! Waypoint c9.divination.t4 : "Tierlist - Cards - T4, T4c and lower" : "Divination Cards"
 
