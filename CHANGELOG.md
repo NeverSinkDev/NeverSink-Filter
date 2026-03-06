@@ -1,7 +1,65 @@
 # **CHANGELOG - NeverSink's Filter**
 ----------------------------------
 
-Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
+This is the changelog for NeverSink's PoE 1 Filter - the filter itself is available on [www.filterblade.xyz](https://www.filterblade.xyz/).
+
+Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to help us fund the continious development.
+
+Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
+
+----------------------------------
+# **VERSION 8.19.0** - Mirage League
+----------------------------------
+
+## MIRAGE LEAGUE CHANGES:
+- Removed or Renamed the ~200 items from the filter and all related tierlists
+- Added all the new mirage items such as currency items, the cord belt, the barya, runegrafts, new coins, astrolabes etc.
+- Removed all old exceptional gems and added the new set of gems into it's own dedicated tierlist
+
+## TIERING CHANGES:
+- Adjusted the tiering for uniques, divination cards and all other tierlists in order to match the (projected) meta better!
+- Moved some 2Handed maces and staves into higher tier to account for the new strike skills. If you're not interested in using or selling them you may want to tier them down.
+- Adjusted crafting and rare items to match the projected meta better
+- Foulborn uniques now have their own section. This tiering in this section is likely not perfectly accurate yet as foulborn uniques come in many variants. More improvements to come.
+- Merged Invitations into the Fragments tierlist
+- Essences tiering got overhauled (read below)
+- Gems tiering got overhauled (read below)
+- Merged Resonators and Fossils into one tierlist
+
+## STRICTNESS OVERHAUL:
+- The filter is now capable of generating higher strictness levels (up to 3 higher levels) with absurd strictness settings, such as only showing near-divine tier items on the highest level. These are designed for affliciton-style scenarios, crazy magic farming etc. These are only available on FilterBlade.
+- FilterBlade can now mix strictnesses (eg. Strict Currency + Uber Strict Rares)
+The stricness settings of many rules have been reviewed, the settings below are the most noteworthy changes
+- Regular rare strictness is now higher. Semi-Strict, Strict and Very-Strict each show significantly fewer regular rares in the endgame. The game has simply evolved past the point where picking them up is useful. This does not affect Jewellery, Jewels, 6Links, Veiled, Memory, Fractured items etc. (though these sections may be affected by other changes)
+- Small stacks of supplies (transmutes and similar) in the endgame are now hidden on Very Strict instead of Strict
+- Memory Stranded gear progression has been reviewed. Low tier memory stranded gear is hidden earlier. This section is subject to a larger review, as I need to play the league first for a better assessment.
+
+## GEMS OVERHAUL:
+- Streamlined the structure of the gems section
+- All Droponly-Support gems (+portal) are now part of one tierlist with 4 tiers. This tierlist does NOT include transfigured or trarthus gems (also technically transfigured).
+- Replaced all exceptional gems with level/quality rules with 2 unified rules
+- Added a special rule for exceptional gems with bad corruptions (lower than level 3 and less than 20 qual) that prevents them from getting S tier visuals
+- Economy based tiering for them has been disabled until we have more data on them, I expect to add economy based tiering in 3-4 days after launch again. Until then, I've put "Awakened Empower Support" "Awakened Enhance Support" "Awakened Enlighten Support" "Greater Chain Support" "Greater Multistrike Support" "Greater Spell Cascade Support" "Greater Spell Echo Support" "Empower Support"  "Enlighten Support" into S tier. 
+- B tier consists out of "Vaal Breach" "Enhance Support" "Portal"
+- Every other new Exceptional support goes into A tier until we know more.
+
+## ESSENCE TIERING OVERHAUL:
+- Essences are now a real tierlist with economy integration and 6 tiers. 
+- At the start of every league and during the first 3-4 days essences will be in their 'standard formation' and not economy based. 
+- After the first days of the league essences will be economy tiered. 
+- Note that the Stable version will NEVER receive the economy based tiering and will always have the 'standard formation' tiering.
+
+## MISC CHANGES:
+- Added a set of Identified Mod rules for life flasks with a good bleed mod and a T1 prefix. 
+- Added a set of Identified Mod rules for Utility flasks (select bases only). One for a single T1 suffix/prefix and one for the combination of suffix/prefix.
+- Added a set of Identified Mod rules for Tinctures flasks (select bases only). One for a single T1 suffix/prefix and one for the combination of suffix/prefix.
+- Adjusted tincture and flask tiering a bit
+- Lower tier memory stranded items require more strands to be highlighted now
+- Adjustments to rare decorators that accidently had double class lines
+- Cleaned up the identified magic item rule for +1 spells
+- Added section for 5+ mods corrupted abyss jewel (this is not foolproof as some of them seem to drop unidentified, but it should catch some of them and the others have their own rule)
+- Added a veiled rare leveling rule
+- Added a leveling rule to highlight identified boots with movement speed mods (two tiers)
 
 ----------------------------------
 # **VERSION 8.18.2** - Divination card tiering improvements
