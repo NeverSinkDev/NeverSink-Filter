@@ -8,6 +8,23 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.19.1** - Mirage Economy Update
+----------------------------------
+
+- Added tiering, economy integration, safeguards for all new items. Ensured all new cards and uniques are economy tiered correctly.
+- Retiered all 20+ sections (uniques, curency, div cards etc). Barring drastic changes, new content and bugs, this is now the stable tiering for the league. Eco filters will of course keep receiving updates
+- Improved the economy-tiering of essences
+- Exceptional gems are now economy tiered
+- Reduced mercenary mod rare items in visuals and increased strictness for them.
+- A lot of smaller changes and improvements
+
+----------------------------------
+# **VERSION 8.19.0c** - Splinter Fix
+----------------------------------
+
+- Fix a little splinter mess up
+ 
+----------------------------------
 # **VERSION 8.19.0b** - Divination Cards
 ----------------------------------
 
