@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.19.1
+# VERSION:  8.19.2
 # TYPE:     0-SOFT
 # STYLE:    COBALT
 # AUTHOR:   NeverSink
@@ -149,50 +149,50 @@
 #   [3301] Generic Decorators
 #   [3302] Map progression
 # [[3400]] Pseudo-Map-Items
-# [[3500]] Fragments
-#   [3501] Scarabs
-#   [3502] Exceptions
-#   [3503] Regular Fragment Tiering
-# [[3600]] Currency - Special
-# [[3700]] Currency - Leveling Exceptions
-# [[3800]] Currency - Exceptions - Stacked Currency
-#   [3801] Supplies: High Stacking
-#   [3802] Supplies: Low Stacking
-#   [3803] Supplies: Portal Stacking
-#   [3804] Supplies: Wisdom Stacking
-#   [3805] Stacked Currencies: 6x
-#   [3806] Stacked Currencies: 3x
-#   [3807] Heist Coins
-# [[3900]] Currency - Regular Currency Tiering
-# [[4000]] Currency - SPECIAL
-#   [4001] Incursion - Vials
-#   [4002] Delirum Orbs
-#   [4003] Delve - Fossils and Resonators
-#   [4004] Blight - Oils
-#   [4005] Runes
-#   [4006] Corpses
-#   [4007] Essences
-#   [4008] Trial of the Ancestors
-#   [4009] Others
-#   [4010] Wombgifts
-#   [4011] Incubators
-# [[4100]] Currency - Splinters
-#   [4101] Breach and Legion Splinters - stacked
-#   [4102] Breach and Legion Splinters - single
-#   [4103] Simulacrum Splinters
-# [[4200]] Divination Cards
-# [[4300]] Remaining Currency
-# [[4400]] Questlike-Items1 (override uniques)
-# [[4500]] Idols (Event Leagues Only)
-# [[4600]] Uniques
-#   [4601] Exceptions #1
-#   [4602] Tier 1 and 2 uniques
-#   [4603] Exceptions #2
-#   [4604] Multi-Unique bases.
-#   [4605] Low tier exceptions
-#   [4606] Tier 3 uniques 
-#   [4607] Tier 4 uniques
-# [[4700]] Misc Map Items
+# [[3500]] Misc Map Items
+# [[3600]] Fragments
+#   [3601] Scarabs
+#   [3602] Exceptions
+#   [3603] Regular Fragment Tiering
+# [[3700]] Currency - Special
+# [[3800]] Currency - Leveling Exceptions
+# [[3900]] Currency - Exceptions - Stacked Currency
+#   [3901] Supplies: High Stacking
+#   [3902] Supplies: Low Stacking
+#   [3903] Supplies: Portal Stacking
+#   [3904] Supplies: Wisdom Stacking
+#   [3905] Stacked Currencies: 6x
+#   [3906] Stacked Currencies: 3x
+#   [3907] Heist Coins
+# [[4000]] Currency - Regular Currency Tiering
+# [[4100]] Currency - SPECIAL
+#   [4101] Incursion - Vials
+#   [4102] Delirum Orbs
+#   [4103] Delve - Fossils and Resonators
+#   [4104] Blight - Oils
+#   [4105] Runes
+#   [4106] Corpses
+#   [4107] Essences
+#   [4108] Trial of the Ancestors
+#   [4109] Others
+#   [4110] Wombgifts
+#   [4111] Incubators
+# [[4200]] Currency - Splinters
+#   [4201] Breach and Legion Splinters - stacked
+#   [4202] Breach and Legion Splinters - single
+#   [4203] Simulacrum Splinters
+# [[4300]] Divination Cards
+# [[4400]] Remaining Currency
+# [[4500]] Questlike-Items1 (override uniques)
+# [[4600]] Idols (Event Leagues Only)
+# [[4700]] Uniques
+#   [4701] Exceptions #1
+#   [4702] Tier 1 and 2 uniques
+#   [4703] Exceptions #2
+#   [4704] Multi-Unique bases.
+#   [4705] Low tier exceptions
+#   [4706] Tier 3 uniques 
+#   [4707] Tier 4 uniques
 # [[4800]] Questlike-Items2
 # [[4900]] Hide outdated leveling flasks
 # [[5000]] Leveling - Utility Flasks and Tinctures
@@ -652,6 +652,33 @@ Show # %D3 $type->rare->eater $tier->anyhigh
 # !! Waypoint c1.exotic.all : "Exotic - Expedition, Ritual, Kalandra etc" : "Gear - Exotic"
 # These bases don't usually drop during normal gameplay and are usually only acquired form certain sources
 # These are bases such as heist and ritual bases.
+
+Show # %D9 $type->exoticbases $tier->ecotinkbases84
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 84
+	Rarity Normal Magic Rare
+	BaseType == "Iron Flask"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # %D9 $type->exoticbases $tier->ecotinkbases
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	BaseType == "Iron Flask"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
 
 Show # %D9 $type->exoticbases $tier->exoticheistbases
 	Rarity Normal Magic Rare
@@ -6660,12 +6687,57 @@ Show # %H6 $type->exoticmap->sanctum $tier->any
 	MinimapIcon 1 Yellow UpsideDownHouse
 
 #===============================================================================================================
-# [[3500]] Fragments
+# [[3500]] Misc Map Items
+#===============================================================================================================
+# !! Waypoint c10.relics.all : "Relic Keys, Itemized Leagues" : "Scarabs and Fragments"
+
+Show # $type->miscmapitemsextra $tier->relickeys
+	BaseType == "Ancient Reliquary Key" "Archive Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key" "Forgotten Reliquary Key" "Lonely Reliquary Key" "Oubliette Reliquary Key" "Reverent Reliquary Key" "Shiny Reliquary Key" "Timeworn Reliquary Key" "Traumatic Reliquary Key" "Vaal Reliquary Key" "Visceral Reliquary Key" "Voidborn Reliquary Key"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # $type->miscmapitemsextra $tier->relickeyssafe
+	Class == "Vault Keys"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # $type->miscmapitemsextra $tier->itemizedleaguesincursion
+	BaseType == "Chronicle of Atzoatl"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 185 0 120
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+Show # $type->miscmapitemsextra $tier->itemizedleaguesultimatum
+	BaseType == "Inscribed Ultimatum"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 185 0 120
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+#===============================================================================================================
+# [[3600]] Fragments
 #===============================================================================================================
 # !! Waypoint c9.fragments.all : "Tierlist - Fragments" : "Scarabs and Fragments"
 
 #------------------------------------
-#   [3501] Scarabs
+#   [3601] Scarabs
 #------------------------------------
 
 Show # $type->fragments->scarabs $tier->t1
@@ -6754,7 +6826,7 @@ Show # $type->fragments->scarabs $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [3502] Exceptions
+#   [3602] Exceptions
 #------------------------------------
 
 Show # %DS3 $type->fragments->stacked $tier->t3
@@ -6770,7 +6842,7 @@ Show # %DS3 $type->fragments->stacked $tier->t3
 	MinimapIcon 1 Yellow Hexagon
 
 #------------------------------------
-#   [3503] Regular Fragment Tiering
+#   [3603] Regular Fragment Tiering
 #------------------------------------
 
 Show # $type->fragments $tier->t1
@@ -6826,8 +6898,18 @@ Show # $type->fragments $tier->restex
 	PlayEffect Pink
 	MinimapIcon 0 Pink Circle
 
+Show # $type->miscmapitems $tier->restex
+	Class == "Misc Map Items"
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+
 #===============================================================================================================
-# [[3600]] Currency - Special
+# [[3700]] Currency - Special
 #===============================================================================================================
 # !! Waypoint c9.currency.lifeforce : "Tierlist - Currency - Lifeforce" : "Currency and Currency-Likes"
 
@@ -6910,7 +6992,7 @@ Hide # $type->currency->harvest $tier->exhide
 	SetBorderColor 0 0 0
 
 #===============================================================================================================
-# [[3700]] Currency - Leveling Exceptions
+# [[3800]] Currency - Leveling Exceptions
 #===============================================================================================================
 # !! Waypoint c9.currency.leveling.all : "Tierlist - Currency - Leveling Stacked Currency" : "Leveling"
 
@@ -7078,10 +7160,10 @@ Show # %D3 $type->currency->leveling $tier->wisdom
 	SetBackgroundColor 20 20 0 255
 
 #===============================================================================================================
-# [[3800]] Currency - Exceptions - Stacked Currency
+# [[3900]] Currency - Exceptions - Stacked Currency
 #===============================================================================================================
 #------------------------------------
-#   [3801] Supplies: High Stacking
+#   [3901] Supplies: High Stacking
 #------------------------------------
 # !! Waypoint c9.currency.stacked.all : "Tierlist - Currency - Endgame Stacked" : "Currency and Currency-Likes"
 
@@ -7116,7 +7198,7 @@ Show # %D3 $type->currency->stackedsupplieshigh $tier->t3
 	SetBackgroundColor 80 120 160
 
 #------------------------------------
-#   [3802] Supplies: Low Stacking
+#   [3902] Supplies: Low Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsupplieslow $tier->t1
@@ -7150,7 +7232,7 @@ Show # %D3 $type->currency->stackedsupplieslow $tier->t3
 	SetBackgroundColor 80 120 160
 
 #------------------------------------
-#   [3803] Supplies: Portal Stacking
+#   [3903] Supplies: Portal Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsuppliesportal $tier->t1
@@ -7178,7 +7260,7 @@ Show # %D2 $type->currency->stackedsuppliesportal $tier->t3
 	SetBackgroundColor 20 20 0 255
 
 #------------------------------------
-#   [3804] Supplies: Wisdom Stacking
+#   [3904] Supplies: Wisdom Stacking
 #------------------------------------
 
 Show # %DS4 $type->currency->stackedsupplieswisdom $tier->t1
@@ -7206,7 +7288,7 @@ Show # %D2 $type->currency->stackedsupplieswisdom $tier->t3
 	SetBackgroundColor 20 20 0 255
 
 #------------------------------------
-#   [3805] Stacked Currencies: 6x
+#   [3905] Stacked Currencies: 6x
 #------------------------------------
 
 #Show # %D9 $type->currency->stackedsix $tier->t1
@@ -7290,7 +7372,7 @@ Show # %DS2 $type->currency->stackedsix $tier->t7
 	SetBackgroundColor 80 120 160
 
 #------------------------------------
-#   [3806] Stacked Currencies: 3x
+#   [3906] Stacked Currencies: 3x
 #------------------------------------
 
 #Show # %D9 $type->currency->stackedthree $tier->t1
@@ -7375,7 +7457,7 @@ Show # %DS2 $type->currency->stackedthree $tier->t7
 
 # !! Waypoint c9.currency.heistcoins : "Tierlist - Currency - Heist Coins" : "Heist, Expedition, Sanctum"
 #------------------------------------
-#   [3807] Heist Coins
+#   [3907] Heist Coins
 #------------------------------------
 
 Show # %H5 $type->currency->heist $tier->highstack
@@ -7404,7 +7486,7 @@ Hide # $type->currency->heist $tier->exhide
 	SetBorderColor 0 0 0
 
 #===============================================================================================================
-# [[3900]] Currency - Regular Currency Tiering
+# [[4000]] Currency - Regular Currency Tiering
 #===============================================================================================================
 # !! Waypoint c9.currency.single : "Tierlist - Currency - General" : "Currency and Currency-Likes"
 
@@ -7513,10 +7595,10 @@ Show # %H1 $type->currency $tier->twisdom
 	SetBackgroundColor 20 20 0 255
 
 #===============================================================================================================
-# [[4000]] Currency - SPECIAL
+# [[4100]] Currency - SPECIAL
 #===============================================================================================================
 #------------------------------------
-#   [4001] Incursion - Vials
+#   [4101] Incursion - Vials
 #------------------------------------
 # !! Waypoint c9.currency.vials.all : "Tierlist - Currency - Vials" : "Currency and Currency-Likes"
 
@@ -7565,7 +7647,7 @@ Show # $type->vials $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4002] Delirum Orbs
+#   [4102] Delirum Orbs
 #------------------------------------
 # !! Waypoint c9.currency.delirium.all : "Tierlist - Currency - Delirium Orbs" : "Currency and Currency-Likes"
 
@@ -7612,13 +7694,13 @@ Show # $type->currency->deliriumorbs $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4003] Delve - Fossils and Resonators
+#   [4103] Delve - Fossils and Resonators
 #------------------------------------
 # !! Waypoint c9.currency.fossils.all : "Tierlist - Fossils and Resonators" : "Currency and Currency-Likes"
 
 Show # $type->currency->fossil $tier->t1
 	Class == "Delve Stackable Socketable Currency" "Stackable Currency"
-	BaseType == "Hollow Fossil"
+	BaseType == "Hollow Fossil" "Prime Chaotic Resonator"
 	SetFontSize 45
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
@@ -7629,7 +7711,7 @@ Show # $type->currency->fossil $tier->t1
 
 Show # %H8 $type->currency->fossil $tier->t2
 	Class == "Delve Stackable Socketable Currency" "Stackable Currency"
-	BaseType == "Faceted Fossil" "Glyphic Fossil" "Prime Chaotic Resonator" "Shuddering Fossil"
+	BaseType == "Faceted Fossil" "Glyphic Fossil" "Shuddering Fossil"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -7688,7 +7770,7 @@ Show # $type->currency->fossil $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4004] Blight - Oils
+#   [4104] Blight - Oils
 #------------------------------------
 # !! Waypoint c9.currency.oils.all : "Tierlist - Oils" : "Currency and Currency-Likes"
 
@@ -7765,7 +7847,7 @@ Show # $type->currency->oil $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4005] Runes
+#   [4105] Runes
 #------------------------------------
 # !! Waypoint c9.runes.all : "Tierlist - Runes and Corpses" : "Currency and Currency-Likes"
 
@@ -7834,7 +7916,7 @@ Show # $type->runesgrafts $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4006] Corpses
+#   [4106] Corpses
 #------------------------------------
 
 Show # $type->corpses $tier->t1
@@ -7902,7 +7984,7 @@ Show # $type->corpses $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4007] Essences
+#   [4107] Essences
 #------------------------------------
 # !! Waypoint c9.currency.essences.all : "Tierlist - Essences, Omen, Tattoos" : "Currency and Currency-Likes"
 
@@ -7986,7 +8068,7 @@ Show # $type->currency->essence $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4008] Trial of the Ancestors
+#   [4108] Trial of the Ancestors
 #------------------------------------
 
 Show # $type->currency->trial->omen $tier->t1
@@ -8111,7 +8193,7 @@ Show # $type->currency->trial->tattoo $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #------------------------------------
-#   [4009] Others
+#   [4109] Others
 #------------------------------------
 
 Show # $type->currency->others $tier->misc
@@ -8126,7 +8208,7 @@ Show # $type->currency->others $tier->misc
 	MinimapIcon 0 Red Circle
 
 #------------------------------------
-#   [4010] Wombgifts
+#   [4110] Wombgifts
 #------------------------------------
 
 #Show # $type->exotic->wombgifts $tier->exgiftshigh
@@ -8184,7 +8266,7 @@ Show # %H5 $type->exotic->wombgifts $tier->t4
 #	MinimapIcon 2 Grey Circle
 
 #------------------------------------
-#   [4011] Incubators
+#   [4111] Incubators
 #------------------------------------
 # !! Waypoint c9.currency.incubators.all : "Tierlist - Incubators" : "Currency and Currency-Likes"
 
@@ -8272,10 +8354,10 @@ Show # $type->currency->incubators $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #===============================================================================================================
-# [[4100]] Currency - Splinters
+# [[4200]] Currency - Splinters
 #===============================================================================================================
 #------------------------------------
-#   [4101] Breach and Legion Splinters - stacked
+#   [4201] Breach and Legion Splinters - stacked
 #------------------------------------
 # !! Waypoint c9.splinters.all : "Tierlist - Splinters" : "Scarabs and Fragments"
 
@@ -8400,7 +8482,7 @@ Show # %DS4 $type->currency->stackedsplinterslow $tier->t5
 	MinimapIcon 2 White Circle
 
 #------------------------------------
-#   [4102] Breach and Legion Splinters - single
+#   [4202] Breach and Legion Splinters - single
 #------------------------------------
 
 Show # %HS4 $type->currency->splinter $tier->t1
@@ -8425,7 +8507,7 @@ Show # %HS3 $type->currency->splinter $tier->t3
 	MinimapIcon 2 Grey Kite
 
 #------------------------------------
-#   [4103] Simulacrum Splinters
+#   [4203] Simulacrum Splinters
 #------------------------------------
 
 Show # %D6 $type->currency->splinter->simulacrum $tier->t1
@@ -8488,7 +8570,7 @@ Show # %H4 $type->currency->splinter->simulacrum $tier->t5
 	MinimapIcon 2 Grey Kite
 
 #===============================================================================================================
-# [[4200]] Divination Cards
+# [[4300]] Divination Cards
 #===============================================================================================================
 # !! Waypoint c9.divination.all : "Tierlist - Cards - All" : "Divination Cards"
 
@@ -8528,7 +8610,7 @@ Show # %H8 $type->divination $tier->t2
 
 Show # %HS6 $type->divination $tier->t3
 	Class == "Divination Cards"
-	BaseType == "A Fate Worse Than Death" "A Modest Request" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Alluring Bounty" "Altered Perception" "Broken Promises" "Brother's Stash" "Burning Blood" "Chaotic Disposition" "Costly Curio" "Council of Cats" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Eternal Bonds" "Gemcutter's Mercy" "Gift of Asenath" "Hunter's Reward" "Imperfect Memories" "Judging Voices" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Rebirth and Renewal" "Remembrance" "Silence and Frost" "Temperance" "Terrible Secret of Space" "The Admirer" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Escape" "The Eternal War" "The Everlasting" "The Eye of the Dragon" "The Fishmonger" "The Formless Sea" "The Garish Power" "The Journey" "The Last Laugh" "The Life Thief" "The Long Con" "The Mad King" "The Offspring" "The One That Got Away" "The Polymath" "The Price of Loyalty" "The Professor" "The Saint's Treasure" "The Scout" "The Tumbleweed" "The Void" "Tranquillity" "Who Asked"
+	BaseType == "A Fate Worse Than Death" "A Modest Request" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Alluring Bounty" "Altered Perception" "Broken Promises" "Brother's Stash" "Burning Blood" "Chaotic Disposition" "Costly Curio" "Council of Cats" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Eternal Bonds" "Gemcutter's Mercy" "Gift of Asenath" "Hunter's Reward" "Imperfect Memories" "Judging Voices" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Rebirth and Renewal" "Remembrance" "Silence and Frost" "Temperance" "Terrible Secret of Space" "The Admirer" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Escape" "The Eternal War" "The Everlasting" "The Eye of the Dragon" "The Fishmonger" "The Formless Sea" "The Garish Power" "The Journey" "The Last Laugh" "The Life Thief" "The Long Con" "The Mad King" "The Offspring" "The One That Got Away" "The Polymath" "The Price of Loyalty" "The Professor" "The Saint's Treasure" "The Scout" "The Side Quest" "The Tumbleweed" "The Void" "Tranquillity" "Who Asked"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -8610,7 +8692,7 @@ Show # $type->divination $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #===============================================================================================================
-# [[4300]] Remaining Currency
+# [[4400]] Remaining Currency
 #===============================================================================================================
 
 #Hide # $type->currency $tier->untiereditems
@@ -8635,7 +8717,7 @@ Show # $type->currency $tier->restex
 	MinimapIcon 0 Pink Circle
 
 #===============================================================================================================
-# [[4400]] Questlike-Items1 (override uniques)
+# [[4500]] Questlike-Items1 (override uniques)
 #===============================================================================================================
 # !! Waypoint c9.metamorph.all : "Heist Targets"
 
@@ -8650,7 +8732,7 @@ Show # $type->heisttarget $tier->any
 	MinimapIcon 0 Green Pentagon
 
 #===============================================================================================================
-# [[4500]] Idols (Event Leagues Only)
+# [[4600]] Idols (Event Leagues Only)
 #===============================================================================================================
 
 # 1x3 Idols
@@ -8811,12 +8893,12 @@ Show # $type->event->idols $tier->normalidols
 	MinimapIcon 1 Blue Diamond
 
 #===============================================================================================================
-# [[4600]] Uniques
+# [[4700]] Uniques
 #===============================================================================================================
 # !! Waypoint c10.uniques.all : "Tierlist - Uniques - All Tiering + Exceptions" : "Uniques"
 
 #------------------------------------
-#   [4601] Exceptions #1
+#   [4701] Exceptions #1
 #------------------------------------
 
 Show # $type->uniques $tier->exuberimpresence
@@ -8952,7 +9034,7 @@ Show # $type->uniques $tier->3xabyss
 	MinimapIcon 0 Red Star
 
 #------------------------------------
-#   [4602] Tier 1 and 2 uniques
+#   [4702] Tier 1 and 2 uniques
 #------------------------------------
 # !! Waypoint c10.uniques.t1 : "Tierlist - Uniques - All tiering" : "Uniques"
 
@@ -8979,7 +9061,7 @@ Show # %H8 $type->uniques $tier->t2
 	MinimapIcon 0 Yellow Star
 
 #------------------------------------
-#   [4603] Exceptions #2
+#   [4703] Exceptions #2
 #------------------------------------
 # !! Waypoint c10.uniques.undert1t2 : "Tierlist - Uniques - All tiering, except T1 and T2" : "Uniques"
 
@@ -9030,7 +9112,7 @@ Show # $type->uniques $tier->excrucibleunique
 	MinimapIcon 1 Blue Star
 
 #------------------------------------
-#   [4604] Multi-Unique bases.
+#   [4704] Multi-Unique bases.
 #------------------------------------
 
 Show # $type->uniques $tier->multispecialhigh
@@ -9133,7 +9215,7 @@ Show # %D4 $type->uniques $tier->6s
 	MinimapIcon 2 Blue Star
 
 #------------------------------------
-#   [4605] Low tier exceptions
+#   [4705] Low tier exceptions
 #------------------------------------
 # !! Waypoint c10.uniques.low : "Tierlist - Uniques - C Tier, Boss-Tier and lower" : "Uniques"
 
@@ -9208,7 +9290,7 @@ Show # %D5 $type->uniques $tier->corrupteduniques
 	MinimapIcon 2 Blue Star
 
 #------------------------------------
-#   [4606] Tier 3 uniques 
+#   [4706] Tier 3 uniques 
 #------------------------------------
 
 Show # %H5 $type->uniques $tier->t3boss
@@ -9234,7 +9316,7 @@ Show # %H4 $type->uniques $tier->t3
 	MinimapIcon 2 Brown Star
 
 #------------------------------------
-#   [4607] Tier 4 uniques
+#   [4707] Tier 4 uniques
 #------------------------------------
 
 Show # %H3 $type->uniques $tier->hideable2
@@ -9261,61 +9343,6 @@ Show # %H3 $type->uniques $tier->hideable
 
 Show # $type->uniques $tier->restex
 	Rarity Unique
-	SetFontSize 45
-	SetTextColor 255 0 255 255
-	SetBorderColor 255 0 255 255
-	SetBackgroundColor 100 0 100 255
-	PlayAlertSound 3 300
-	PlayEffect Pink
-	MinimapIcon 0 Pink Circle
-
-#===============================================================================================================
-# [[4700]] Misc Map Items
-#===============================================================================================================
-# !! Waypoint c10.relics.all : "Relic Keys, Itemized Leagues" : "Scarabs and Fragments"
-
-Show # $type->miscmapitemsextra $tier->relickeys
-	BaseType == "Ancient Reliquary Key" "Archive Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key" "Forgotten Reliquary Key" "Lonely Reliquary Key" "Oubliette Reliquary Key" "Reverent Reliquary Key" "Shiny Reliquary Key" "Timeworn Reliquary Key" "Traumatic Reliquary Key" "Vaal Reliquary Key" "Visceral Reliquary Key" "Voidborn Reliquary Key"
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-
-Show # $type->miscmapitemsextra $tier->relickeyssafe
-	Class == "Vault Keys"
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-
-Show # $type->miscmapitemsextra $tier->itemizedleaguesincursion
-	BaseType == "Chronicle of Atzoatl"
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 185 0 120
-	PlayAlertSound 1 300
-	PlayEffect Red
-	MinimapIcon 0 Red Hexagon
-
-Show # $type->miscmapitemsextra $tier->itemizedleaguesultimatum
-	BaseType == "Inscribed Ultimatum"
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 185 0 120
-	PlayAlertSound 1 300
-	PlayEffect Red
-	MinimapIcon 0 Red Hexagon
-
-Show # $type->miscmapitems $tier->restex
-	Class == "Misc Map Items"
 	SetFontSize 45
 	SetTextColor 255 0 255 255
 	SetBorderColor 255 0 255 255

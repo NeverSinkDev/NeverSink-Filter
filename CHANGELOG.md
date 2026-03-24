@@ -8,6 +8,16 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.19.2** - Mirage Economy update 2
+----------------------------------
+
+- This update does NOT affect the tiering of the stable filter
+- Added 2 new temp rules for the handling of Iron Flasks. These rules will be in the future used to put ABSURDLY valuable 'normal-rare' bases in there, based on economy data.
+- Added a Chaos threshhold after which the filter will double the scaling based on the Divine Orb. Currently this is set to 150c. The result is that the overall strictness of the filter is now a bit higher than before.
+- Prime Resonator explicitely moved to S tier
+- Improved the tiering of all mirage items.
+
+----------------------------------
 # **VERSION 8.19.1** - Mirage Economy Update
 ----------------------------------
 
