@@ -8,6 +8,16 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.19.2a** - Mirage Economy update 2
+----------------------------------
+
+- Improved some niche scenarios in economy tiering
+- Added breach rings to the economy-based expensive item whitelist
+- Improvements to maven's writ tiering
+- Decreased the strictness of breach rings
+- Black Baryas are now economy tiered
+
+----------------------------------
 # **VERSION 8.19.2** - Mirage Economy update 2
 ----------------------------------
 
