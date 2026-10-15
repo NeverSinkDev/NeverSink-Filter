@@ -8,16 +8,19 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
-# **VERSION 8.20.2** - Event Support
+# **VERSION 8.20.2** - Technical preparations
 ----------------------------------
 
-- Added PoE2 event support
-- Added new PoE2 soul cores
-- Added the bloom
-- Added the new expedition tablet
-- The economy is based on the stable PoE2 filter, but will adjust once economy data is available (on FilterBlade, the follow-filters follow the main PoE2 league)
-- Several improvements to the tiering algorithm
-- Finally added proper PoE2 datamining, so that all of the FilterBlade descriptions, implicits are now correct (some minor improvements still needed, like for the new breach bases)
+This update focuses on finetuning the filter for the upcoming leagues and preparing for some long-term goals.
+
+# CHANGES:
+- Improved wombgift tiering and added economy integration
+- Added 2 new special wombgift rules
+- Improved cluster jewel tiering and added exact cluster jewel matching ( NOTE: As part of the update we have to reset the tiering of cluster jewels for all PoE1 saves. That said the new tiering is better and avoids previous issues where a rule would catch unrelated enchantments )
+- Cleaned up some disabled items
+- Clean up of some stlyes as a preparation for a larger rework
+
+
 
 ----------------------------------
 # **VERSION 8.20.1e** - Minor adjustments
