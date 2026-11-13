@@ -8,6 +8,50 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.21.0** - Atlas rework and Umbra league
+----------------------------------
+
+# NEW CONTENT:
+- Added viscera tiering
+- Allflame Embers now have their own tierlist: "Allflames and Map Enchantments" (economy based), which also covers Royal Visage and Divine Vessel.
+- (Re)Added all the new items and classes
+- Added a new 'Unidentified Item Tier' section. It's a matrix that covers rare/magic UNID-Tier items based on their rank.
+- Added several special cases for Unidentified item tier
+- Maps with special exotic modifiers are now highlighted
+- Threads added
+
+# TIERING MAJOR CHANGES:
+- The tiering for uniques and other classes has been much improved. New systems have been added, such as 'economic memory' to improve treatment of low volume trades
+- Major cleanup of the current meta-information (aspects) on all items (thanks to @mellontoss).
+- Overhauled the early game unique and divination card tiering
+
+# STRICTNESS MAJOR CHANGES:
+- The filter has become more strict. Specifically: Very Strict, Uber Strict have become more strict based on user feedback. Very strict will now hide a lot more.
+- Lower-tier currencies (alchemy, chromatic, chance, transmutation), low oils, essences, omens, corpses, lifeforce, and low divination cards now step down earlier on the stricter levels
+- ItemLevel 83/84 crafting bases and different rare rules are now stricter
+- A plethore of minor strictness adjustments focused on Very trict/Uber Strict optimization.
+
+# FATED ITEMS:
+- Fated items receive an extra border using decorators
+- Fated items in the endgame have extra rules that follow the typical rare item tiering. Modifying the rare gear/jewellery tiering on filterblade will also adjust preferred fated items
+
+# EXOTIC BASTYPE TREATMENT:
+- All exotic basetypes (special bases that don't typically drop from random monsters in maps), such as Heist bases, Talismans, Expedition bases have all been merged into one large tierlist. This helps the ever growing sprawl of tiny rules and makes it easy to modify
+- The separate Talisman, Breach rings etc. sections have all been folded into the new section
+
+# MISC CHANGES:
+- Removed several now obsolete and removed basetypes, currencies and orbs
+- Scarabs removed
+- Vials removed
+- Corruped 8+ map rule now also works with 7+ maps (due to corruption changes)
+- Merc Warrants are now their own rule
+- Fossil & Oil tiering adjustments
+- Orb of Chance and Sacred Orbs are now treated differently
+- A ton of smaller changes
+
+Huge thanks to @Mellontoss for helping with managing the unique (and other section) cleanup and reviewing the early league meta-rules.
+
+----------------------------------
 # **VERSION 8.20.2** - Technical preparations
 ----------------------------------
 
@@ -19,8 +63,6 @@ This update focuses on finetuning the filter for the upcoming leagues and prepar
 - Improved cluster jewel tiering and added exact cluster jewel matching ( NOTE: As part of the update we have to reset the tiering of cluster jewels for all PoE1 saves. That said the new tiering is better and avoids previous issues where a rule would catch unrelated enchantments )
 - Cleaned up some disabled items
 - Clean up of some stlyes as a preparation for a larger rework
-
-
 
 ----------------------------------
 # **VERSION 8.20.1e** - Minor adjustments
