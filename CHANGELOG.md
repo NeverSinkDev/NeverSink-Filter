@@ -8,6 +8,15 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.21.0d** - Improvements and filter balance
+----------------------------------
+
+# CHANGES:
+- Increased strictness of low UnidTier items. Way too many of them show (always hard to predict before league start)
+- Moved divine vessels to the new map enchantment currency section
+- Disabled the 'fated overrides'. Fated items still show, but are treated with the same strictness as every other rare drop. Previously they would 'bypass' 1 strictness tier.
+
+----------------------------------
 # **VERSION 8.21.0** - Atlas rework and Umbra league
 ----------------------------------
 
