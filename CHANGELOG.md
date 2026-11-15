@@ -8,6 +8,14 @@ Major thanks to all [Patreon](https://www.patreon.com/Neversink) supports to hel
 Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 ----------------------------------
+# **VERSION 8.21.0e** - 
+----------------------------------
+
+# CHANGES:
+- Economy only: disabled early league mode
+- Integrated all new uniques (thanks to mellontoss!)
+
+----------------------------------
 # **VERSION 8.21.0d** - Improvements and filter balance
 ----------------------------------
 
