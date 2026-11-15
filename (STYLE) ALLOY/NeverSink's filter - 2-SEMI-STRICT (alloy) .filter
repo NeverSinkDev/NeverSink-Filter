@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.21.0d
+# VERSION:  8.21.0e
 # TYPE:     2-SEMI-STRICT
 # STYLE:    ALLOY
 # AUTHOR:   NeverSink
@@ -2780,6 +2780,19 @@ Show # %D4 $type->exoticmods $tier->duoveil !exotics_t3
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
+
+Show # %D7 $type->exoticmods $tier->exoticveiled !exotics_t2
+	Identified True
+	Rarity Rare
+	Class == "Abyss Jewels" "Jewels"
+	HasExplicitMod "Veil"
+	SetFontSize 45
+	SetTextColor 0 200 250 255
+	SetBorderColor 0 200 250 255
+	SetBackgroundColor 53 53 53 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
 
 #------------------------------------
 #   [1102] Incursion/Temple Mods

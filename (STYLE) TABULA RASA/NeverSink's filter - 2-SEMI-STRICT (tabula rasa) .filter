@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  8.21.0d
+# VERSION:  8.21.0e
 # TYPE:     2-SEMI-STRICT
 # STYLE:    TABULA RASA
 # AUTHOR:   NeverSink
@@ -1608,6 +1608,12 @@ Show # %D4 $type->exoticmods $tier->duoveil !exotics_t3
 	Rarity Rare
 	HasExplicitMod "Veiled"
 	HasExplicitMod "of the Veil"
+
+Show # %D7 $type->exoticmods $tier->exoticveiled !exotics_t2
+	Identified True
+	Rarity Rare
+	Class == "Abyss Jewels" "Jewels"
+	HasExplicitMod "Veil"
 
 #------------------------------------
 #   [1102] Incursion/Temple Mods
